@@ -1,2870 +1,3235 @@
 # PacEdu English Subject Box — Class 5 Daily Activities (Days 1–115)
-**Status:** ORIGINAL PACEDU DRAFT — `PENDING_TEACHER_REVIEW` — `PENDING_OFFICIAL_INDICATOR_VERIFICATION`. Not an official Fiji Ministry scheme. No official indicator IDs, exact Ministry wording, edition/page mapping or approved week/day sequence are claimed.
-## Programme structure
-- 23 planning weeks × 5 learning days = 115 activities. Term 1: Weeks 1–9; Term 2: Weeks 10–18; Term 3: Weeks 19–23. Reconcile with the approved school calendar and teaching days.
-- Copper, Bronze, Silver and Gold are differentiated pathways for the same objective; they are not fixed ability labels.
-- PacEdu planning strands are Listening and Speaking; Reading and Viewing; Writing and Shaping; Vocabulary/Language. Exact official strand names and learning objectives must be checked against the authorised syllabus for this level.
-- Daily record: school-local date ____ | term/week/day ____ | official indicator + source edition/page (after verification) ____ | evidence ____ | next step ____.
-## Curriculum alignment safeguard
-The Fiji National Curriculum Framework provides a broad framework, not a substitute for current class/subject indicators. The Ministry's 2020–2021 Annual Report describes Y1–Y8 literacy/numeracy syllabus changes and work on scope-and-sequence overviews and teacher guides. The Revised Secondary English Curriculum teacher guide surfaced in public search describes Language, Text Types and Critical Literacy strands for Years 9–10; the school must confirm its authorised edition and current implementation for Forms 3–4. Form 5–7 English syllabus and assessment requirements must be verified separately. Do not copy framework outcomes into the official indicator field.
-## Differentiation and assessment
-- Copper: modelled, chunked task; visual/tactile support; short text; word bank; accept accessible communication modes.
-- Bronze: guided example, planning frame and word bank; gradually reduce prompts.
-- Silver: independent completion and self-check.
-- Gold: extend the same objective through evidence, comparison, counter-view or revision.
-- Do not score accent or disability-related speech differences as errors. Do not force speech. Assess the skill intended, not the response mode.
 
-### Term 1 — Week 1 (programme Week 1): Our stories and identities
+**Status:** ORIGINAL PACEDU DRAFT — `PENDING_TEACHER_REVIEW` — `PENDING_OFFICIAL_INDICATOR_VERIFICATION`. This is not a Ministry-issued scheme. No official indicator IDs or verbatim Ministry outcomes are claimed.
 
-**Weekly learning intention:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
+## Programme and alignment safeguards
+- 23 planning weeks × 5 learning days = 115 planned learning days. Term pattern: 9/9/5 weeks; reconcile with the approved school calendar.
+- This Class 5 programme has its own progression, text demand and writing expectations; it must not be substituted for another class level.
+- Four flexible pathways share the same daily objective. Support changes; the intended learning objective does not.
+- Record the exact current authorized Fiji English outcome, edition, page and reviewer only after checking the school's Ministry-authorized document.
+- Accept appropriate oral, signed, AAC, pointing, dictated or written responses. Do not force speech or penalise accent/disability-related speech differences.
 
-#### Day 1 — Listening and speaking
-**Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
+## Daily activities
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+### Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about identity and belonging.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to identity and belonging, demonstrating a relevant oral response with one supporting detail.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Teacher-led activity:** Listen to a short teacher-selected account about identity and belonging; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Worked example:** Teacher reads a short account about identity and belonging, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-#### Day 2 — Vocabulary and language
-**Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new identity and belonging example. Record the next step for the learner.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+### Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about identity and belonging.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to identity and belonging, demonstrating an accurate inference supported by two details.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Teacher-led activity:** Read or view a level-appropriate text about identity and belonging; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about identity and belonging, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-#### Day 3 — Reading and viewing
-**Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new identity and belonging example. Record the next step for the learner.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+### Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about identity and belonging.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to identity and belonging, demonstrating three context-appropriate words explained or used accurately.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher-led activity:** Select three important words from a text about identity and belonging; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-#### Day 4 — Text craft and critical thinking
-**Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about identity and belonging, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new identity and belonging example. Record the next step for the learner.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+### Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft
 
-#### Day 5 — Writing and sharing
-**Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about identity and belonging.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to identity and belonging, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Teacher-led activity:** Examine sentence choices in a short text about identity and belonging; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Worked example:** Teacher models the target sentence feature in a text about identity and belonging, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new identity and belonging example. Record the next step for the learner.
 
-### Term 1 — Week 2 (programme Week 2): Community and belonging
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Weekly learning intention:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-#### Day 6 — Listening and speaking
-**Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
+### Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about identity and belonging.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to identity and belonging, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Teacher-led activity:** Write a focused paragraph about identity and belonging; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Worked example:** Teacher models a planning frame for a paragraph about identity and belonging, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-#### Day 7 — Vocabulary and language
-**Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new identity and belonging example. Record the next step for the learner.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+### Day 6 — Term 1, Week 2 — family and community stories — Listening and speaking
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about family and community stories.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to family and community stories, demonstrating a relevant oral response with one supporting detail.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher-led activity:** Listen to a short teacher-selected account about family and community stories; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Worked example:** Teacher reads a short account about family and community stories, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-#### Day 8 — Reading and viewing
-**Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new family and community stories example. Record the next step for the learner.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+### Day 7 — Term 1, Week 2 — family and community stories — Reading and viewing
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about family and community stories.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to family and community stories, demonstrating an accurate inference supported by two details.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher-led activity:** Read or view a level-appropriate text about family and community stories; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about family and community stories, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-#### Day 9 — Text craft and critical thinking
-**Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new family and community stories example. Record the next step for the learner.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+### Day 8 — Term 1, Week 2 — family and community stories — Vocabulary and language
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about family and community stories.
 
-#### Day 10 — Writing and sharing
-**Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to family and community stories, demonstrating three context-appropriate words explained or used accurately.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Teacher-led activity:** Select three important words from a text about family and community stories; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about family and community stories, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new family and community stories example. Record the next step for the learner.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-### Term 1 — Week 3 (programme Week 3): Coasts, rivers and islands
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Weekly learning intention:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
+### Day 9 — Term 1, Week 2 — family and community stories — Grammar and sentence craft
 
-#### Day 11 — Listening and speaking
-**Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about family and community stories.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to family and community stories, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Teacher-led activity:** Examine sentence choices in a short text about family and community stories; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Worked example:** Teacher models the target sentence feature in a text about family and community stories, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new family and community stories example. Record the next step for the learner.
 
-#### Day 12 — Vocabulary and language
-**Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+### Day 10 — Term 1, Week 2 — family and community stories — Writing and shaping
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about family and community stories.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to family and community stories, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Teacher-led activity:** Write a focused paragraph about family and community stories; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Worked example:** Teacher models a planning frame for a paragraph about family and community stories, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-#### Day 13 — Reading and viewing
-**Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new family and community stories example. Record the next step for the learner.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+### Day 11 — Term 1, Week 3 — Fiji places and environments — Listening and speaking
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about Fiji places and environments.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to Fiji places and environments, demonstrating a relevant oral response with one supporting detail.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Teacher-led activity:** Listen to a short teacher-selected account about Fiji places and environments; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Worked example:** Teacher reads a short account about Fiji places and environments, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-#### Day 14 — Text craft and critical thinking
-**Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new Fiji places and environments example. Record the next step for the learner.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+### Day 12 — Term 1, Week 3 — Fiji places and environments — Reading and viewing
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about Fiji places and environments.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to Fiji places and environments, demonstrating an accurate inference supported by two details.
 
-#### Day 15 — Writing and sharing
-**Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
+**Teacher-led activity:** Read or view a level-appropriate text about Fiji places and environments; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about Fiji places and environments, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new Fiji places and environments example. Record the next step for the learner.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-### Term 1 — Week 4 (programme Week 4): Food, farming and sustainability
+### Day 13 — Term 1, Week 3 — Fiji places and environments — Vocabulary and language
 
-**Weekly learning intention:** Procedural texts; instructions; cause and effect; reports and recommendations.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about Fiji places and environments.
 
-#### Day 16 — Listening and speaking
-**Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to Fiji places and environments, demonstrating three context-appropriate words explained or used accurately.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Teacher-led activity:** Select three important words from a text about Fiji places and environments; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about Fiji places and environments, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new Fiji places and environments example. Record the next step for the learner.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-#### Day 17 — Vocabulary and language
-**Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+### Day 14 — Term 1, Week 3 — Fiji places and environments — Grammar and sentence craft
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about Fiji places and environments.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to Fiji places and environments, demonstrating two accurate revised sentences showing the target feature.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Teacher-led activity:** Examine sentence choices in a short text about Fiji places and environments; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Worked example:** Teacher models the target sentence feature in a text about Fiji places and environments, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-#### Day 18 — Reading and viewing
-**Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new Fiji places and environments example. Record the next step for the learner.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+### Day 15 — Term 1, Week 3 — Fiji places and environments — Writing and shaping
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about Fiji places and environments.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to Fiji places and environments, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Teacher-led activity:** Write a focused paragraph about Fiji places and environments; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Worked example:** Teacher models a planning frame for a paragraph about Fiji places and environments, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-#### Day 19 — Text craft and critical thinking
-**Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new Fiji places and environments example. Record the next step for the learner.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+### Day 16 — Term 1, Week 4 — friendship and cooperation — Listening and speaking
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about friendship and cooperation.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to friendship and cooperation, demonstrating a relevant oral response with one supporting detail.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher-led activity:** Listen to a short teacher-selected account about friendship and cooperation; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-#### Day 20 — Writing and sharing
-**Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
+**Worked example:** Teacher reads a short account about friendship and cooperation, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new friendship and cooperation example. Record the next step for the learner.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+### Day 17 — Term 1, Week 4 — friendship and cooperation — Reading and viewing
 
-### Term 1 — Week 5 (programme Week 5): Weather, climate and preparedness
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about friendship and cooperation.
 
-**Weekly learning intention:** Compare information; interpret simple data in texts; explain and justify; report writing.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to friendship and cooperation, demonstrating an accurate inference supported by two details.
 
-#### Day 21 — Listening and speaking
-**Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
+**Teacher-led activity:** Read or view a level-appropriate text about friendship and cooperation; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about friendship and cooperation, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new friendship and cooperation example. Record the next step for the learner.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-#### Day 22 — Vocabulary and language
-**Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
+### Day 18 — Term 1, Week 4 — friendship and cooperation — Vocabulary and language
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about friendship and cooperation.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to friendship and cooperation, demonstrating three context-appropriate words explained or used accurately.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Teacher-led activity:** Select three important words from a text about friendship and cooperation; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about friendship and cooperation, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-#### Day 23 — Reading and viewing
-**Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new friendship and cooperation example. Record the next step for the learner.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+### Day 19 — Term 1, Week 4 — friendship and cooperation — Grammar and sentence craft
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about friendship and cooperation.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to friendship and cooperation, demonstrating two accurate revised sentences showing the target feature.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher-led activity:** Examine sentence choices in a short text about friendship and cooperation; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Worked example:** Teacher models the target sentence feature in a text about friendship and cooperation, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-#### Day 24 — Text craft and critical thinking
-**Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new friendship and cooperation example. Record the next step for the learner.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+### Day 20 — Term 1, Week 4 — friendship and cooperation — Writing and shaping
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about friendship and cooperation.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to friendship and cooperation, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher-led activity:** Write a focused paragraph about friendship and cooperation; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Worked example:** Teacher models a planning frame for a paragraph about friendship and cooperation, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-#### Day 25 — Writing and sharing
-**Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new friendship and cooperation example. Record the next step for the learner.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+### Day 21 — Term 1, Week 5 — traditional knowledge and oral histories — Listening and speaking
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about traditional knowledge and oral histories.
 
-### Term 1 — Week 6 (programme Week 6): Traditional knowledge and innovation
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to traditional knowledge and oral histories, demonstrating a relevant oral response with one supporting detail.
 
-**Weekly learning intention:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
+**Teacher-led activity:** Listen to a short teacher-selected account about traditional knowledge and oral histories; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-#### Day 26 — Listening and speaking
-**Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
+**Worked example:** Teacher reads a short account about traditional knowledge and oral histories, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new traditional knowledge and oral histories example. Record the next step for the learner.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+### Day 22 — Term 1, Week 5 — traditional knowledge and oral histories — Reading and viewing
 
-#### Day 27 — Vocabulary and language
-**Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about traditional knowledge and oral histories.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to traditional knowledge and oral histories, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Teacher-led activity:** Read or view a level-appropriate text about traditional knowledge and oral histories; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about traditional knowledge and oral histories, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new traditional knowledge and oral histories example. Record the next step for the learner.
 
-#### Day 28 — Reading and viewing
-**Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+### Day 23 — Term 1, Week 5 — traditional knowledge and oral histories — Vocabulary and language
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about traditional knowledge and oral histories.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to traditional knowledge and oral histories, demonstrating three context-appropriate words explained or used accurately.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Teacher-led activity:** Select three important words from a text about traditional knowledge and oral histories; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about traditional knowledge and oral histories, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-#### Day 29 — Text craft and critical thinking
-**Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new traditional knowledge and oral histories example. Record the next step for the learner.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+### Day 24 — Term 1, Week 5 — traditional knowledge and oral histories — Grammar and sentence craft
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about traditional knowledge and oral histories.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to traditional knowledge and oral histories, demonstrating two accurate revised sentences showing the target feature.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Teacher-led activity:** Examine sentence choices in a short text about traditional knowledge and oral histories; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Worked example:** Teacher models the target sentence feature in a text about traditional knowledge and oral histories, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-#### Day 30 — Writing and sharing
-**Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new traditional knowledge and oral histories example. Record the next step for the learner.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+### Day 25 — Term 1, Week 5 — traditional knowledge and oral histories — Writing and shaping
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about traditional knowledge and oral histories.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to traditional knowledge and oral histories, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-### Term 1 — Week 7 (programme Week 7): Health, choices and wellbeing
+**Teacher-led activity:** Write a focused paragraph about traditional knowledge and oral histories; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Weekly learning intention:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
+**Worked example:** Teacher models a planning frame for a paragraph about traditional knowledge and oral histories, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-#### Day 31 — Listening and speaking
-**Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new traditional knowledge and oral histories example. Record the next step for the learner.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+### Day 26 — Term 1, Week 6 — weather and climate — Listening and speaking
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about weather and climate.
 
-#### Day 32 — Vocabulary and language
-**Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to weather and climate, demonstrating a relevant oral response with one supporting detail.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Teacher-led activity:** Listen to a short teacher-selected account about weather and climate; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Worked example:** Teacher reads a short account about weather and climate, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new weather and climate example. Record the next step for the learner.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-#### Day 33 — Reading and viewing
-**Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+### Day 27 — Term 1, Week 6 — weather and climate — Reading and viewing
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about weather and climate.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to weather and climate, demonstrating an accurate inference supported by two details.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Teacher-led activity:** Read or view a level-appropriate text about weather and climate; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about weather and climate, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-#### Day 34 — Text craft and critical thinking
-**Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new weather and climate example. Record the next step for the learner.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+### Day 28 — Term 1, Week 6 — weather and climate — Vocabulary and language
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about weather and climate.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to weather and climate, demonstrating three context-appropriate words explained or used accurately.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Teacher-led activity:** Select three important words from a text about weather and climate; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about weather and climate, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-#### Day 35 — Writing and sharing
-**Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new weather and climate example. Record the next step for the learner.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+### Day 29 — Term 1, Week 6 — weather and climate — Grammar and sentence craft
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about weather and climate.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to weather and climate, demonstrating two accurate revised sentences showing the target feature.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher-led activity:** Examine sentence choices in a short text about weather and climate; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-### Term 1 — Week 8 (programme Week 8): Oceans and environmental care
+**Worked example:** Teacher models the target sentence feature in a text about weather and climate, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Weekly learning intention:** Information synthesis; source awareness; summaries; persuasive messages.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-#### Day 36 — Listening and speaking
-**Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new weather and climate example. Record the next step for the learner.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+### Day 30 — Term 1, Week 6 — weather and climate — Writing and shaping
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about weather and climate.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to weather and climate, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-#### Day 37 — Vocabulary and language
-**Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
+**Teacher-led activity:** Write a focused paragraph about weather and climate; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Worked example:** Teacher models a planning frame for a paragraph about weather and climate, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new weather and climate example. Record the next step for the learner.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-#### Day 38 — Reading and viewing
-**Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
+### Day 31 — Term 1, Week 7 — plants and food systems — Listening and speaking
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about plants and food systems.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to plants and food systems, demonstrating a relevant oral response with one supporting detail.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Teacher-led activity:** Listen to a short teacher-selected account about plants and food systems; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Worked example:** Teacher reads a short account about plants and food systems, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-#### Day 39 — Text craft and critical thinking
-**Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new plants and food systems example. Record the next step for the learner.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+### Day 32 — Term 1, Week 7 — plants and food systems — Reading and viewing
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about plants and food systems.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to plants and food systems, demonstrating an accurate inference supported by two details.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher-led activity:** Read or view a level-appropriate text about plants and food systems; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about plants and food systems, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-#### Day 40 — Writing and sharing
-**Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new plants and food systems example. Record the next step for the learner.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+### Day 33 — Term 1, Week 7 — plants and food systems — Vocabulary and language
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about plants and food systems.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to plants and food systems, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher-led activity:** Select three important words from a text about plants and food systems; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about plants and food systems, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-### Term 1 — Week 9 (programme Week 9): Technology and communication
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Weekly learning intention:** Media forms; audience and purpose; captions; digital communication and safety.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-#### Day 41 — Listening and speaking
-**Shared objective:** Media forms; audience and purpose; captions; digital communication and safety.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new plants and food systems example. Record the next step for the learner.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+### Day 34 — Term 1, Week 7 — plants and food systems — Grammar and sentence craft
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about plants and food systems.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to plants and food systems, demonstrating two accurate revised sentences showing the target feature.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher-led activity:** Examine sentence choices in a short text about plants and food systems; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-#### Day 42 — Vocabulary and language
-**Shared objective:** Media forms; audience and purpose; captions; digital communication and safety.
+**Worked example:** Teacher models the target sentence feature in a text about plants and food systems, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new plants and food systems example. Record the next step for the learner.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+### Day 35 — Term 1, Week 7 — plants and food systems — Writing and shaping
 
-#### Day 43 — Reading and viewing
-**Shared objective:** Media forms; audience and purpose; captions; digital communication and safety.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about plants and food systems.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to plants and food systems, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Teacher-led activity:** Write a focused paragraph about plants and food systems; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Worked example:** Teacher models a planning frame for a paragraph about plants and food systems, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new plants and food systems example. Record the next step for the learner.
 
-#### Day 44 — Text craft and critical thinking
-**Shared objective:** Media forms; audience and purpose; captions; digital communication and safety.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+### Day 36 — Term 1, Week 8 — water and ocean care — Listening and speaking
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about water and ocean care.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to water and ocean care, demonstrating a relevant oral response with one supporting detail.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Teacher-led activity:** Listen to a short teacher-selected account about water and ocean care; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Worked example:** Teacher reads a short account about water and ocean care, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-#### Day 45 — Writing and sharing
-**Shared objective:** Media forms; audience and purpose; captions; digital communication and safety.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new water and ocean care example. Record the next step for the learner.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+### Day 37 — Term 1, Week 8 — water and ocean care — Reading and viewing
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about water and ocean care.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to water and ocean care, demonstrating an accurate inference supported by two details.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Teacher-led activity:** Read or view a level-appropriate text about water and ocean care; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about water and ocean care, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-### Term 2 — Week 1 (programme Week 10): People, work and enterprise
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Weekly learning intention:** Interviews; formal/informal register; profiles; proposals and reports.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-#### Day 46 — Listening and speaking
-**Shared objective:** Interviews; formal/informal register; profiles; proposals and reports.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new water and ocean care example. Record the next step for the learner.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+### Day 38 — Term 1, Week 8 — water and ocean care — Vocabulary and language
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about water and ocean care.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to water and ocean care, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher-led activity:** Select three important words from a text about water and ocean care; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about water and ocean care, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-#### Day 47 — Vocabulary and language
-**Shared objective:** Interviews; formal/informal register; profiles; proposals and reports.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new water and ocean care example. Record the next step for the learner.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+### Day 39 — Term 1, Week 8 — water and ocean care — Grammar and sentence craft
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about water and ocean care.
 
-#### Day 48 — Reading and viewing
-**Shared objective:** Interviews; formal/informal register; profiles; proposals and reports.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to water and ocean care, demonstrating two accurate revised sentences showing the target feature.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Teacher-led activity:** Examine sentence choices in a short text about water and ocean care; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Worked example:** Teacher models the target sentence feature in a text about water and ocean care, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new water and ocean care example. Record the next step for the learner.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-#### Day 49 — Text craft and critical thinking
-**Shared objective:** Interviews; formal/informal register; profiles; proposals and reports.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+### Day 40 — Term 1, Week 8 — water and ocean care — Writing and shaping
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about water and ocean care.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to water and ocean care, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Teacher-led activity:** Write a focused paragraph about water and ocean care; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Worked example:** Teacher models a planning frame for a paragraph about water and ocean care, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-#### Day 50 — Writing and sharing
-**Shared objective:** Interviews; formal/informal register; profiles; proposals and reports.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new water and ocean care example. Record the next step for the learner.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+### Day 41 — Term 1, Week 9 — health and wellbeing — Listening and speaking
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about health and wellbeing.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to health and wellbeing, demonstrating a relevant oral response with one supporting detail.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Teacher-led activity:** Listen to a short teacher-selected account about health and wellbeing; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Worked example:** Teacher reads a short account about health and wellbeing, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-### Term 2 — Week 2 (programme Week 11): Fiji's heritage and languages
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Weekly learning intention:** Respectful comparison; oral histories; language awareness; reflective writing.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-#### Day 51 — Listening and speaking
-**Shared objective:** Respectful comparison; oral histories; language awareness; reflective writing.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new health and wellbeing example. Record the next step for the learner.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+### Day 42 — Term 1, Week 9 — health and wellbeing — Reading and viewing
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about health and wellbeing.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to health and wellbeing, demonstrating an accurate inference supported by two details.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Teacher-led activity:** Read or view a level-appropriate text about health and wellbeing; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about health and wellbeing, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-#### Day 52 — Vocabulary and language
-**Shared objective:** Respectful comparison; oral histories; language awareness; reflective writing.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new health and wellbeing example. Record the next step for the learner.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+### Day 43 — Term 1, Week 9 — health and wellbeing — Vocabulary and language
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about health and wellbeing.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to health and wellbeing, demonstrating three context-appropriate words explained or used accurately.
 
-#### Day 53 — Reading and viewing
-**Shared objective:** Respectful comparison; oral histories; language awareness; reflective writing.
+**Teacher-led activity:** Select three important words from a text about health and wellbeing; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about health and wellbeing, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new health and wellbeing example. Record the next step for the learner.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-#### Day 54 — Text craft and critical thinking
-**Shared objective:** Respectful comparison; oral histories; language awareness; reflective writing.
+### Day 44 — Term 1, Week 9 — health and wellbeing — Grammar and sentence craft
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about health and wellbeing.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to health and wellbeing, demonstrating two accurate revised sentences showing the target feature.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Teacher-led activity:** Examine sentence choices in a short text about health and wellbeing; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Worked example:** Teacher models the target sentence feature in a text about health and wellbeing, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-#### Day 55 — Writing and sharing
-**Shared objective:** Respectful comparison; oral histories; language awareness; reflective writing.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new health and wellbeing example. Record the next step for the learner.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+### Day 45 — Term 1, Week 9 — health and wellbeing — Writing and shaping
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about health and wellbeing.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to health and wellbeing, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher-led activity:** Write a focused paragraph about health and wellbeing; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Worked example:** Teacher models a planning frame for a paragraph about health and wellbeing, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-### Term 2 — Week 3 (programme Week 12): Stories across cultures
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Weekly learning intention:** Literary response; character and setting; theme; evidence-supported interpretation.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-#### Day 56 — Listening and speaking
-**Shared objective:** Literary response; character and setting; theme; evidence-supported interpretation.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new health and wellbeing example. Record the next step for the learner.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+### Day 46 — Term 2, Week 10 — sports and fair play — Listening and speaking
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about sports and fair play.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to sports and fair play, demonstrating a relevant oral response with one supporting detail.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Teacher-led activity:** Listen to a short teacher-selected account about sports and fair play; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Worked example:** Teacher reads a short account about sports and fair play, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-#### Day 57 — Vocabulary and language
-**Shared objective:** Literary response; character and setting; theme; evidence-supported interpretation.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new sports and fair play example. Record the next step for the learner.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+### Day 47 — Term 2, Week 10 — sports and fair play — Reading and viewing
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about sports and fair play.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to sports and fair play, demonstrating an accurate inference supported by two details.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher-led activity:** Read or view a level-appropriate text about sports and fair play; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-#### Day 58 — Reading and viewing
-**Shared objective:** Literary response; character and setting; theme; evidence-supported interpretation.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about sports and fair play, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new sports and fair play example. Record the next step for the learner.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+### Day 48 — Term 2, Week 10 — sports and fair play — Vocabulary and language
 
-#### Day 59 — Text craft and critical thinking
-**Shared objective:** Literary response; character and setting; theme; evidence-supported interpretation.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about sports and fair play.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to sports and fair play, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Teacher-led activity:** Select three important words from a text about sports and fair play; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about sports and fair play, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new sports and fair play example. Record the next step for the learner.
 
-#### Day 60 — Writing and sharing
-**Shared objective:** Literary response; character and setting; theme; evidence-supported interpretation.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+### Day 49 — Term 2, Week 10 — sports and fair play — Grammar and sentence craft
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about sports and fair play.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to sports and fair play, demonstrating two accurate revised sentences showing the target feature.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Teacher-led activity:** Examine sentence choices in a short text about sports and fair play; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Worked example:** Teacher models the target sentence feature in a text about sports and fair play, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-### Term 2 — Week 4 (programme Week 13): News and public information
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-**Weekly learning intention:** Headline and lead; fact/opinion; source clues; concise news report.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-#### Day 61 — Listening and speaking
-**Shared objective:** Headline and lead; fact/opinion; source clues; concise news report.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new sports and fair play example. Record the next step for the learner.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+### Day 50 — Term 2, Week 10 — sports and fair play — Writing and shaping
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about sports and fair play.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to sports and fair play, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher-led activity:** Write a focused paragraph about sports and fair play; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Worked example:** Teacher models a planning frame for a paragraph about sports and fair play, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-#### Day 62 — Vocabulary and language
-**Shared objective:** Headline and lead; fact/opinion; source clues; concise news report.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new sports and fair play example. Record the next step for the learner.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+### Day 51 — Term 2, Week 11 — local occupations — Listening and speaking
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about local occupations.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to local occupations, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher-led activity:** Listen to a short teacher-selected account about local occupations; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Worked example:** Teacher reads a short account about local occupations, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-#### Day 63 — Reading and viewing
-**Shared objective:** Headline and lead; fact/opinion; source clues; concise news report.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new local occupations example. Record the next step for the learner.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+### Day 52 — Term 2, Week 11 — local occupations — Reading and viewing
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about local occupations.
 
-#### Day 64 — Text craft and critical thinking
-**Shared objective:** Headline and lead; fact/opinion; source clues; concise news report.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to local occupations, demonstrating an accurate inference supported by two details.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Teacher-led activity:** Read or view a level-appropriate text about local occupations; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about local occupations, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new local occupations example. Record the next step for the learner.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-#### Day 65 — Writing and sharing
-**Shared objective:** Headline and lead; fact/opinion; source clues; concise news report.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+### Day 53 — Term 2, Week 11 — local occupations — Vocabulary and language
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about local occupations.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to local occupations, demonstrating three context-appropriate words explained or used accurately.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Teacher-led activity:** Select three important words from a text about local occupations; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about local occupations, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-### Term 2 — Week 5 (programme Week 14): Poetry, performance and voice
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Weekly learning intention:** Sound and imagery; figurative language; performance choices; original composition.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new local occupations example. Record the next step for the learner.
 
-#### Day 66 — Listening and speaking
-**Shared objective:** Sound and imagery; figurative language; performance choices; original composition.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+### Day 54 — Term 2, Week 11 — local occupations — Grammar and sentence craft
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about local occupations.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to local occupations, demonstrating two accurate revised sentences showing the target feature.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Teacher-led activity:** Examine sentence choices in a short text about local occupations; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Worked example:** Teacher models the target sentence feature in a text about local occupations, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-#### Day 67 — Vocabulary and language
-**Shared objective:** Sound and imagery; figurative language; performance choices; original composition.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new local occupations example. Record the next step for the learner.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+### Day 55 — Term 2, Week 11 — local occupations — Writing and shaping
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about local occupations.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to local occupations, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Teacher-led activity:** Write a focused paragraph about local occupations; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Worked example:** Teacher models a planning frame for a paragraph about local occupations, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-#### Day 68 — Reading and viewing
-**Shared objective:** Sound and imagery; figurative language; performance choices; original composition.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new local occupations example. Record the next step for the learner.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+### Day 56 — Term 2, Week 12 — inventions and technology — Listening and speaking
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about inventions and technology.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to inventions and technology, demonstrating a relevant oral response with one supporting detail.
 
-#### Day 69 — Text craft and critical thinking
-**Shared objective:** Sound and imagery; figurative language; performance choices; original composition.
+**Teacher-led activity:** Listen to a short teacher-selected account about inventions and technology; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Worked example:** Teacher reads a short account about inventions and technology, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new inventions and technology example. Record the next step for the learner.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-#### Day 70 — Writing and sharing
-**Shared objective:** Sound and imagery; figurative language; performance choices; original composition.
+### Day 57 — Term 2, Week 12 — inventions and technology — Reading and viewing
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about inventions and technology.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to inventions and technology, demonstrating an accurate inference supported by two details.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Teacher-led activity:** Read or view a level-appropriate text about inventions and technology; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about inventions and technology, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-### Term 2 — Week 6 (programme Week 15): Learning, goals and future pathways
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new inventions and technology example. Record the next step for the learner.
 
-**Weekly learning intention:** Research questions; organise notes; explain learning; reflective portfolio.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-#### Day 71 — Listening and speaking
-**Shared objective:** Research questions; organise notes; explain learning; reflective portfolio.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+### Day 58 — Term 2, Week 12 — inventions and technology — Vocabulary and language
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about inventions and technology.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to inventions and technology, demonstrating three context-appropriate words explained or used accurately.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Teacher-led activity:** Select three important words from a text about inventions and technology; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about inventions and technology, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-#### Day 72 — Vocabulary and language
-**Shared objective:** Research questions; organise notes; explain learning; reflective portfolio.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new inventions and technology example. Record the next step for the learner.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+### Day 59 — Term 2, Week 12 — inventions and technology — Grammar and sentence craft
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about inventions and technology.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to inventions and technology, demonstrating two accurate revised sentences showing the target feature.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Teacher-led activity:** Examine sentence choices in a short text about inventions and technology; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Worked example:** Teacher models the target sentence feature in a text about inventions and technology, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-#### Day 73 — Reading and viewing
-**Shared objective:** Research questions; organise notes; explain learning; reflective portfolio.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new inventions and technology example. Record the next step for the learner.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+### Day 60 — Term 2, Week 12 — inventions and technology — Writing and shaping
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about inventions and technology.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to inventions and technology, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher-led activity:** Write a focused paragraph about inventions and technology; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-#### Day 74 — Text craft and critical thinking
-**Shared objective:** Research questions; organise notes; explain learning; reflective portfolio.
+**Worked example:** Teacher models a planning frame for a paragraph about inventions and technology, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new inventions and technology example. Record the next step for the learner.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+### Day 61 — Term 2, Week 13 — media and messages — Listening and speaking
 
-#### Day 75 — Writing and sharing
-**Shared objective:** Research questions; organise notes; explain learning; reflective portfolio.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about media and messages.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to media and messages, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Teacher-led activity:** Listen to a short teacher-selected account about media and messages; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Worked example:** Teacher reads a short account about media and messages, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new media and messages example. Record the next step for the learner.
 
-### Term 2 — Week 7 (programme Week 16): Our stories and identities
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Weekly learning intention:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-#### Day 76 — Listening and speaking
-**Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
+### Day 62 — Term 2, Week 13 — media and messages — Reading and viewing
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about media and messages.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to media and messages, demonstrating an accurate inference supported by two details.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Teacher-led activity:** Read or view a level-appropriate text about media and messages; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about media and messages, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-#### Day 77 — Vocabulary and language
-**Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new media and messages example. Record the next step for the learner.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+### Day 63 — Term 2, Week 13 — media and messages — Vocabulary and language
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about media and messages.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to media and messages, demonstrating three context-appropriate words explained or used accurately.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher-led activity:** Select three important words from a text about media and messages; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about media and messages, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-#### Day 78 — Reading and viewing
-**Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new media and messages example. Record the next step for the learner.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+### Day 64 — Term 2, Week 13 — media and messages — Grammar and sentence craft
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about media and messages.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to media and messages, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher-led activity:** Examine sentence choices in a short text about media and messages; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Worked example:** Teacher models the target sentence feature in a text about media and messages, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-#### Day 79 — Text craft and critical thinking
-**Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new media and messages example. Record the next step for the learner.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+### Day 65 — Term 2, Week 13 — media and messages — Writing and shaping
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about media and messages.
 
-#### Day 80 — Writing and sharing
-**Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to media and messages, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Teacher-led activity:** Write a focused paragraph about media and messages; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Worked example:** Teacher models a planning frame for a paragraph about media and messages, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new media and messages example. Record the next step for the learner.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-### Term 2 — Week 8 (programme Week 17): Community and belonging
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Weekly learning intention:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
+### Day 66 — Term 2, Week 14 — animals and habitats — Listening and speaking
 
-#### Day 81 — Listening and speaking
-**Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about animals and habitats.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to animals and habitats, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Teacher-led activity:** Listen to a short teacher-selected account about animals and habitats; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Worked example:** Teacher reads a short account about animals and habitats, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new animals and habitats example. Record the next step for the learner.
 
-#### Day 82 — Vocabulary and language
-**Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+### Day 67 — Term 2, Week 14 — animals and habitats — Reading and viewing
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about animals and habitats.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to animals and habitats, demonstrating an accurate inference supported by two details.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Teacher-led activity:** Read or view a level-appropriate text about animals and habitats; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about animals and habitats, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-#### Day 83 — Reading and viewing
-**Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new animals and habitats example. Record the next step for the learner.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+### Day 68 — Term 2, Week 14 — animals and habitats — Vocabulary and language
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about animals and habitats.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to animals and habitats, demonstrating three context-appropriate words explained or used accurately.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Teacher-led activity:** Select three important words from a text about animals and habitats; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about animals and habitats, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-#### Day 84 — Text craft and critical thinking
-**Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new animals and habitats example. Record the next step for the learner.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+### Day 69 — Term 2, Week 14 — animals and habitats — Grammar and sentence craft
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about animals and habitats.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to animals and habitats, demonstrating two accurate revised sentences showing the target feature.
 
-#### Day 85 — Writing and sharing
-**Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
+**Teacher-led activity:** Examine sentence choices in a short text about animals and habitats; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Worked example:** Teacher models the target sentence feature in a text about animals and habitats, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new animals and habitats example. Record the next step for the learner.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-### Term 2 — Week 9 (programme Week 18): Coasts, rivers and islands
+### Day 70 — Term 2, Week 14 — animals and habitats — Writing and shaping
 
-**Weekly learning intention:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about animals and habitats.
 
-#### Day 86 — Listening and speaking
-**Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to animals and habitats, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Teacher-led activity:** Write a focused paragraph about animals and habitats; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Worked example:** Teacher models a planning frame for a paragraph about animals and habitats, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new animals and habitats example. Record the next step for the learner.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-#### Day 87 — Vocabulary and language
-**Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+### Day 71 — Term 2, Week 15 — celebrations and culture — Listening and speaking
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about celebrations and culture.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to celebrations and culture, demonstrating a relevant oral response with one supporting detail.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Teacher-led activity:** Listen to a short teacher-selected account about celebrations and culture; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Worked example:** Teacher reads a short account about celebrations and culture, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-#### Day 88 — Reading and viewing
-**Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new celebrations and culture example. Record the next step for the learner.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+### Day 72 — Term 2, Week 15 — celebrations and culture — Reading and viewing
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about celebrations and culture.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to celebrations and culture, demonstrating an accurate inference supported by two details.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Teacher-led activity:** Read or view a level-appropriate text about celebrations and culture; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about celebrations and culture, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-#### Day 89 — Text craft and critical thinking
-**Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new celebrations and culture example. Record the next step for the learner.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+### Day 73 — Term 2, Week 15 — celebrations and culture — Vocabulary and language
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about celebrations and culture.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to celebrations and culture, demonstrating three context-appropriate words explained or used accurately.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher-led activity:** Select three important words from a text about celebrations and culture; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-#### Day 90 — Writing and sharing
-**Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about celebrations and culture, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new celebrations and culture example. Record the next step for the learner.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+### Day 74 — Term 2, Week 15 — celebrations and culture — Grammar and sentence craft
 
-### Term 3 — Week 1 (programme Week 19): Food, farming and sustainability
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about celebrations and culture.
 
-**Weekly learning intention:** Procedural texts; instructions; cause and effect; reports and recommendations.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to celebrations and culture, demonstrating two accurate revised sentences showing the target feature.
 
-#### Day 91 — Listening and speaking
-**Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
+**Teacher-led activity:** Examine sentence choices in a short text about celebrations and culture; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Worked example:** Teacher models the target sentence feature in a text about celebrations and culture, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new celebrations and culture example. Record the next step for the learner.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-#### Day 92 — Vocabulary and language
-**Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
+### Day 75 — Term 2, Week 15 — celebrations and culture — Writing and shaping
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about celebrations and culture.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to celebrations and culture, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Teacher-led activity:** Write a focused paragraph about celebrations and culture; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Worked example:** Teacher models a planning frame for a paragraph about celebrations and culture, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-#### Day 93 — Reading and viewing
-**Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new celebrations and culture example. Record the next step for the learner.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+### Day 76 — Term 2, Week 16 — problem solving — Listening and speaking
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about problem solving.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to problem solving, demonstrating a relevant oral response with one supporting detail.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher-led activity:** Listen to a short teacher-selected account about problem solving; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Worked example:** Teacher reads a short account about problem solving, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-#### Day 94 — Text craft and critical thinking
-**Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new problem solving example. Record the next step for the learner.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+### Day 77 — Term 2, Week 16 — problem solving — Reading and viewing
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about problem solving.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to problem solving, demonstrating an accurate inference supported by two details.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher-led activity:** Read or view a level-appropriate text about problem solving; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about problem solving, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-#### Day 95 — Writing and sharing
-**Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new problem solving example. Record the next step for the learner.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+### Day 78 — Term 2, Week 16 — problem solving — Vocabulary and language
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about problem solving.
 
-### Term 3 — Week 2 (programme Week 20): Weather, climate and preparedness
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to problem solving, demonstrating three context-appropriate words explained or used accurately.
 
-**Weekly learning intention:** Compare information; interpret simple data in texts; explain and justify; report writing.
+**Teacher-led activity:** Select three important words from a text about problem solving; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-#### Day 96 — Listening and speaking
-**Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about problem solving, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new problem solving example. Record the next step for the learner.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+### Day 79 — Term 2, Week 16 — problem solving — Grammar and sentence craft
 
-#### Day 97 — Vocabulary and language
-**Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about problem solving.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to problem solving, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Teacher-led activity:** Examine sentence choices in a short text about problem solving; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Worked example:** Teacher models the target sentence feature in a text about problem solving, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new problem solving example. Record the next step for the learner.
 
-#### Day 98 — Reading and viewing
-**Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+### Day 80 — Term 2, Week 16 — problem solving — Writing and shaping
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about problem solving.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to problem solving, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Teacher-led activity:** Write a focused paragraph about problem solving; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Worked example:** Teacher models a planning frame for a paragraph about problem solving, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-#### Day 99 — Text craft and critical thinking
-**Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new problem solving example. Record the next step for the learner.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+### Day 81 — Term 2, Week 17 — journeys and transport — Listening and speaking
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about journeys and transport.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to journeys and transport, demonstrating a relevant oral response with one supporting detail.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Teacher-led activity:** Listen to a short teacher-selected account about journeys and transport; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Worked example:** Teacher reads a short account about journeys and transport, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-#### Day 100 — Writing and sharing
-**Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new journeys and transport example. Record the next step for the learner.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+### Day 82 — Term 2, Week 17 — journeys and transport — Reading and viewing
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about journeys and transport.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to journeys and transport, demonstrating an accurate inference supported by two details.
 
-### Term 3 — Week 3 (programme Week 21): Traditional knowledge and innovation
+**Teacher-led activity:** Read or view a level-appropriate text about journeys and transport; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Weekly learning intention:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about journeys and transport, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-#### Day 101 — Listening and speaking
-**Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new journeys and transport example. Record the next step for the learner.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+### Day 83 — Term 2, Week 17 — journeys and transport — Vocabulary and language
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about journeys and transport.
 
-#### Day 102 — Vocabulary and language
-**Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to journeys and transport, demonstrating three context-appropriate words explained or used accurately.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Teacher-led activity:** Select three important words from a text about journeys and transport; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about journeys and transport, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new journeys and transport example. Record the next step for the learner.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-#### Day 103 — Reading and viewing
-**Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+### Day 84 — Term 2, Week 17 — journeys and transport — Grammar and sentence craft
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about journeys and transport.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to journeys and transport, demonstrating two accurate revised sentences showing the target feature.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Teacher-led activity:** Examine sentence choices in a short text about journeys and transport; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Worked example:** Teacher models the target sentence feature in a text about journeys and transport, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-#### Day 104 — Text craft and critical thinking
-**Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new journeys and transport example. Record the next step for the learner.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+### Day 85 — Term 2, Week 17 — journeys and transport — Writing and shaping
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about journeys and transport.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to journeys and transport, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Teacher-led activity:** Write a focused paragraph about journeys and transport; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Worked example:** Teacher models a planning frame for a paragraph about journeys and transport, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-#### Day 105 — Writing and sharing
-**Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new journeys and transport example. Record the next step for the learner.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+### Day 86 — Term 2, Week 18 — stories of courage — Listening and speaking
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about stories of courage.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to stories of courage, demonstrating a relevant oral response with one supporting detail.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher-led activity:** Listen to a short teacher-selected account about stories of courage; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-### Term 3 — Week 4 (programme Week 22): Health, choices and wellbeing
+**Worked example:** Teacher reads a short account about stories of courage, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Weekly learning intention:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-#### Day 106 — Listening and speaking
-**Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new stories of courage example. Record the next step for the learner.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+### Day 87 — Term 2, Week 18 — stories of courage — Reading and viewing
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about stories of courage.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to stories of courage, demonstrating an accurate inference supported by two details.
 
-#### Day 107 — Vocabulary and language
-**Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
+**Teacher-led activity:** Read or view a level-appropriate text about stories of courage; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about stories of courage, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new stories of courage example. Record the next step for the learner.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-#### Day 108 — Reading and viewing
-**Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
+### Day 88 — Term 2, Week 18 — stories of courage — Vocabulary and language
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about stories of courage.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to stories of courage, demonstrating three context-appropriate words explained or used accurately.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Teacher-led activity:** Select three important words from a text about stories of courage; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about stories of courage, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-#### Day 109 — Text craft and critical thinking
-**Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new stories of courage example. Record the next step for the learner.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+### Day 89 — Term 2, Week 18 — stories of courage — Grammar and sentence craft
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about stories of courage.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to stories of courage, demonstrating two accurate revised sentences showing the target feature.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher-led activity:** Examine sentence choices in a short text about stories of courage; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Worked example:** Teacher models the target sentence feature in a text about stories of courage, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-#### Day 110 — Writing and sharing
-**Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new stories of courage example. Record the next step for the learner.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+### Day 90 — Term 2, Week 18 — stories of courage — Writing and shaping
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about stories of courage.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to stories of courage, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher-led activity:** Write a focused paragraph about stories of courage; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Worked example:** Teacher models a planning frame for a paragraph about stories of courage, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-### Term 3 — Week 5 (programme Week 23): Oceans and environmental care
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Weekly learning intention:** Information synthesis; source awareness; summaries; persuasive messages.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-#### Day 111 — Listening and speaking
-**Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
-**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new stories of courage example. Record the next step for the learner.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+### Day 91 — Term 3, Week 19 — rights and responsibilities — Listening and speaking
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about rights and responsibilities.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to rights and responsibilities, demonstrating a relevant oral response with one supporting detail.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Teacher-led activity:** Listen to a short teacher-selected account about rights and responsibilities; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-#### Day 112 — Vocabulary and language
-**Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
+**Worked example:** Teacher reads a short account about rights and responsibilities, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
-**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new rights and responsibilities example. Record the next step for the learner.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+### Day 92 — Term 3, Week 19 — rights and responsibilities — Reading and viewing
 
-#### Day 113 — Reading and viewing
-**Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about rights and responsibilities.
 
-**Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
-**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to rights and responsibilities, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
+**Teacher-led activity:** Read or view a level-appropriate text about rights and responsibilities; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Worked example:** Teacher annotates a a connected multi-paragraph text about rights and responsibilities, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new rights and responsibilities example. Record the next step for the learner.
 
-#### Day 114 — Text craft and critical thinking
-**Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
-**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
+### Day 93 — Term 3, Week 19 — rights and responsibilities — Vocabulary and language
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about rights and responsibilities.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to rights and responsibilities, demonstrating three context-appropriate words explained or used accurately.
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+**Teacher-led activity:** Select three important words from a text about rights and responsibilities; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about rights and responsibilities, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
 
-#### Day 115 — Writing and sharing
-**Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
 
-**Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
-**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
 
-**Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new rights and responsibilities example. Record the next step for the learner.
 
-**Worked example:** Teacher models the process using a short, level-appropriate example: identify the task and audience → locate relevant information or ideas → plan an answer → model one response → explain why it meets the objective. The teacher chooses a text and language feature from the authorised level sequence.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
 
-**Copper:** Teacher models each step; chunk the task; use a short accessible text, visual/tactile cue, word bank and two-choice prompts. Accept speech, sign, AAC, pointing, gesture, drawing, dictation or writing as appropriate.
+**Teacher review:** PENDING_TEACHER_REVIEW
 
-**Bronze:** Provide one worked example, a planning frame, vocabulary bank and guided practice; reduce prompts as the learner gains confidence.
+### Day 94 — Term 3, Week 19 — rights and responsibilities — Grammar and sentence craft
 
-**Silver:** Complete the shared objective with minimal prompts; select relevant evidence, organise ideas and independently review the response.
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about rights and responsibilities.
 
-**Gold:** Extend the same objective with a more nuanced interpretation, comparison, counter-view, precise vocabulary or independent revision. Do not change the learning objective or assume untaught content.
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to rights and responsibilities, demonstrating two accurate revised sentences showing the target feature.
 
-**Achievement evidence:** Record an observable outcome linked to today's focus (for example, a relevant spoken/signed contribution, accurate vocabulary use, a text detail with evidence, an explanation of viewpoint, or a revised written response). Use the learner's accessible communication mode.
+**Teacher-led activity:** Examine sentence choices in a short text about rights and responsibilities; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
 
-**Teacher answer guidance:** Accept accurate responses supported by the selected text and taught content. For interpretive questions, accept alternative interpretations when supported by relevant evidence. Credit equivalent vocabulary and sensible paraphrase; note misconceptions for reteaching.
+**Worked example:** Teacher models the target sentence feature in a text about rights and responsibilities, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
-**Official indicator mapping:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION` — insert exact approved indicator/outcome, edition and page only after checking the authorised school/Ministry guide. Review: `PENDING_TEACHER_REVIEW`.
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new rights and responsibilities example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 95 — Term 3, Week 19 — rights and responsibilities — Writing and shaping
+
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about rights and responsibilities.
+
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to rights and responsibilities, demonstrating a coherent paragraph with a clear purpose and supporting detail.
+
+**Teacher-led activity:** Write a focused paragraph about rights and responsibilities; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher models a planning frame for a paragraph about rights and responsibilities, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new rights and responsibilities example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 96 — Term 3, Week 20 — local history and change — Listening and speaking
+
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about local history and change.
+
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to local history and change, demonstrating a relevant oral response with one supporting detail.
+
+**Teacher-led activity:** Listen to a short teacher-selected account about local history and change; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher reads a short account about local history and change, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new local history and change example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 97 — Term 3, Week 20 — local history and change — Reading and viewing
+
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about local history and change.
+
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to local history and change, demonstrating an accurate inference supported by two details.
+
+**Teacher-led activity:** Read or view a level-appropriate text about local history and change; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher annotates a a connected multi-paragraph text about local history and change, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new local history and change example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 98 — Term 3, Week 20 — local history and change — Vocabulary and language
+
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about local history and change.
+
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to local history and change, demonstrating three context-appropriate words explained or used accurately.
+
+**Teacher-led activity:** Select three important words from a text about local history and change; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about local history and change, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new local history and change example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 99 — Term 3, Week 20 — local history and change — Grammar and sentence craft
+
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about local history and change.
+
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to local history and change, demonstrating two accurate revised sentences showing the target feature.
+
+**Teacher-led activity:** Examine sentence choices in a short text about local history and change; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher models the target sentence feature in a text about local history and change, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new local history and change example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 100 — Term 3, Week 20 — local history and change — Writing and shaping
+
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about local history and change.
+
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to local history and change, demonstrating a coherent paragraph with a clear purpose and supporting detail.
+
+**Teacher-led activity:** Write a focused paragraph about local history and change; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher models a planning frame for a paragraph about local history and change, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new local history and change example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 101 — Term 3, Week 21 — arts and performance — Listening and speaking
+
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about arts and performance.
+
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to arts and performance, demonstrating a relevant oral response with one supporting detail.
+
+**Teacher-led activity:** Listen to a short teacher-selected account about arts and performance; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher reads a short account about arts and performance, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new arts and performance example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 102 — Term 3, Week 21 — arts and performance — Reading and viewing
+
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about arts and performance.
+
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to arts and performance, demonstrating an accurate inference supported by two details.
+
+**Teacher-led activity:** Read or view a level-appropriate text about arts and performance; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher annotates a a connected multi-paragraph text about arts and performance, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new arts and performance example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 103 — Term 3, Week 21 — arts and performance — Vocabulary and language
+
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about arts and performance.
+
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to arts and performance, demonstrating three context-appropriate words explained or used accurately.
+
+**Teacher-led activity:** Select three important words from a text about arts and performance; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about arts and performance, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new arts and performance example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 104 — Term 3, Week 21 — arts and performance — Grammar and sentence craft
+
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about arts and performance.
+
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to arts and performance, demonstrating two accurate revised sentences showing the target feature.
+
+**Teacher-led activity:** Examine sentence choices in a short text about arts and performance; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher models the target sentence feature in a text about arts and performance, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new arts and performance example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 105 — Term 3, Week 21 — arts and performance — Writing and shaping
+
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about arts and performance.
+
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to arts and performance, demonstrating a coherent paragraph with a clear purpose and supporting detail.
+
+**Teacher-led activity:** Write a focused paragraph about arts and performance; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher models a planning frame for a paragraph about arts and performance, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new arts and performance example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 106 — Term 3, Week 22 — sustainability and action — Listening and speaking
+
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about sustainability and action.
+
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to sustainability and action, demonstrating a relevant oral response with one supporting detail.
+
+**Teacher-led activity:** Listen to a short teacher-selected account about sustainability and action; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher reads a short account about sustainability and action, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new sustainability and action example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 107 — Term 3, Week 22 — sustainability and action — Reading and viewing
+
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about sustainability and action.
+
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to sustainability and action, demonstrating an accurate inference supported by two details.
+
+**Teacher-led activity:** Read or view a level-appropriate text about sustainability and action; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher annotates a a connected multi-paragraph text about sustainability and action, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new sustainability and action example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 108 — Term 3, Week 22 — sustainability and action — Vocabulary and language
+
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about sustainability and action.
+
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to sustainability and action, demonstrating three context-appropriate words explained or used accurately.
+
+**Teacher-led activity:** Select three important words from a text about sustainability and action; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about sustainability and action, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new sustainability and action example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 109 — Term 3, Week 22 — sustainability and action — Grammar and sentence craft
+
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about sustainability and action.
+
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to sustainability and action, demonstrating two accurate revised sentences showing the target feature.
+
+**Teacher-led activity:** Examine sentence choices in a short text about sustainability and action; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher models the target sentence feature in a text about sustainability and action, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new sustainability and action example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 110 — Term 3, Week 22 — sustainability and action — Writing and shaping
+
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about sustainability and action.
+
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to sustainability and action, demonstrating a coherent paragraph with a clear purpose and supporting detail.
+
+**Teacher-led activity:** Write a focused paragraph about sustainability and action; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher models a planning frame for a paragraph about sustainability and action, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new sustainability and action example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 111 — Term 3, Week 23 — future hopes and plans — Listening and speaking
+
+**Learning intention:** listen, summarise and respond in a meaningful text or discussion about future hopes and plans.
+
+**PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to future hopes and plans, demonstrating a relevant oral response with one supporting detail.
+
+**Teacher-led activity:** Listen to a short teacher-selected account about future hopes and plans; identify its main message, record two details, then respond to a partner's question. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher reads a short account about future hopes and plans, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: a relevant oral response with one supporting detail. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new future hopes and plans example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 112 — Term 3, Week 23 — future hopes and plans — Reading and viewing
+
+**Learning intention:** interpret and locate evidence in a meaningful text or discussion about future hopes and plans.
+
+**PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to future hopes and plans, demonstrating an accurate inference supported by two details.
+
+**Teacher-led activity:** Read or view a level-appropriate text about future hopes and plans; identify the central idea, locate two supporting details and explain one inference. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher annotates a a connected multi-paragraph text about future hopes and plans, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: an accurate inference supported by two details. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new future hopes and plans example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 113 — Term 3, Week 23 — future hopes and plans — Vocabulary and language
+
+**Learning intention:** analyse word choice and meaning in a meaningful text or discussion about future hopes and plans.
+
+**PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to future hopes and plans, demonstrating three context-appropriate words explained or used accurately.
+
+**Teacher-led activity:** Select three important words from a text about future hopes and plans; use context to explain each meaning and replace one word with a suitable alternative. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher selects three words from a a connected multi-paragraph text about future hopes and plans, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: three context-appropriate words explained or used accurately. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new future hopes and plans example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 114 — Term 3, Week 23 — future hopes and plans — Grammar and sentence craft
+
+**Learning intention:** construct and revise sentences in a meaningful text or discussion about future hopes and plans.
+
+**PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to future hopes and plans, demonstrating two accurate revised sentences showing the target feature.
+
+**Teacher-led activity:** Examine sentence choices in a short text about future hopes and plans; identify the target language feature and revise two sentences for clarity and accuracy. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher models the target sentence feature in a text about future hopes and plans, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: two accurate revised sentences showing the target feature. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new future hopes and plans example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+### Day 115 — Term 3, Week 23 — future hopes and plans — Writing and shaping
+
+**Learning intention:** plan, draft and improve writing in a meaningful text or discussion about future hopes and plans.
+
+**PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to future hopes and plans, demonstrating a coherent paragraph with a clear purpose and supporting detail.
+
+**Teacher-led activity:** Write a focused paragraph about future hopes and plans; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a connected multi-paragraph text. Target paragraph cohesion, precise vocabulary and varied sentence structures.
+
+**Worked example:** Teacher models a planning frame for a paragraph about future hopes and plans, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+
+**Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
+
+**Bronze:** Provide one worked model, a planning frame and a small word bank. Learner completes a parallel example with prompts reduced after the first step.
+
+**Silver:** Complete the shared task with minimal prompts; select relevant details independently and check the response against the success criteria.
+
+**Gold:** Extend the same objective by evaluating an alternative interpretation, comparing evidence or revising for a more precise audience and purpose. Do not replace the shared objective with a different syllabus objective.
+
+**Evidence:** Record the learner's actual response: a coherent paragraph with a clear purpose and supporting detail. Note text used, response mode, accuracy and level of prompting.
+
+**Answer / marking guidance:** Credit accurate meaning and relevant evidence; accept equivalent wording and sensible paraphrase. For interpretation, accept alternative conclusions when supported by the text. Do not require one memorised sentence.
+
+**Next teaching step:** If the learner is not yet secure, reteach the same feature with a shorter text and explicit model. If secure, reduce prompts and use a new future hopes and plans example. Record the next step for the learner.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized outcome, source edition and page only after verification.
+
+**Teacher review:** PENDING_TEACHER_REVIEW
 
 ## Release gate
-A qualified Fiji English teacher must review progression, reading level, local cultural relevance, language demands, assessment expectations, accessibility and school calendar. For secondary levels, confirm the current syllabus, examination/assessment specifications and approved text requirements. This draft is not a Ministry-issued scheme and must not be represented as officially aligned until source mapping is complete.
+A qualified Fiji English teacher must verify Class 5 progression, text complexity, local relevance, accessibility, assessment and current authorized syllabus alignment. This is an original PacEdu planning draft, not a Ministry-issued scheme.
