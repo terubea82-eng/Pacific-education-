@@ -13,7 +13,7 @@
 
 **Shared learning intention:** Myself, name and identity
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -43,7 +43,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Myself, name and identity
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -73,7 +73,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Myself, name and identity
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -103,7 +103,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Myself, name and identity
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -133,7 +133,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Myself, name and identity
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -163,7 +163,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Myself, name and identity
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -193,7 +193,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Myself, name and identity
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -223,7 +223,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Myself, name and identity
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -253,7 +253,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Myself, name and identity
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -283,7 +283,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Myself, name and identity
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -313,7 +313,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Myself, name and identity
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -343,7 +343,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Myself, name and identity
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -373,7 +373,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Myself, name and identity
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -403,7 +403,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Myself, name and identity
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -433,7 +433,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Myself, name and identity
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -463,7 +463,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Myself, name and identity
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -493,7 +493,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use greetings, polite requests and classroom expressions in meaningful exchanges.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -523,7 +523,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use greetings, polite requests and classroom expressions in meaningful exchanges.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -553,7 +553,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use greetings, polite requests and classroom expressions in meaningful exchanges.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -583,7 +583,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use greetings, polite requests and classroom expressions in meaningful exchanges.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -613,7 +613,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Greetings and classroom language
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -643,7 +643,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Greetings and classroom language
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -673,7 +673,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Greetings and classroom language
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -703,7 +703,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Greetings and classroom language
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -733,7 +733,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Greetings and classroom language
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -763,7 +763,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Greetings and classroom language
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -793,7 +793,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Greetings and classroom language
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -823,7 +823,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Greetings and classroom language
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -853,7 +853,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Greetings and classroom language
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -883,7 +883,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Greetings and classroom language
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -913,7 +913,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Greetings and classroom language
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -943,7 +943,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Greetings and classroom language
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -973,7 +973,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Greetings and classroom language
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -1003,7 +1003,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Greetings and classroom language
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -1033,7 +1033,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Greetings and classroom language
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -1063,7 +1063,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Greetings and classroom language
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -1093,7 +1093,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for key words and follow familiar one- and two-step instructions.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -1123,7 +1123,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for key words and follow familiar one- and two-step instructions.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -1153,7 +1153,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for key words and follow familiar one- and two-step instructions.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -1183,7 +1183,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for key words and follow familiar one- and two-step instructions.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -1213,7 +1213,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listening carefully and following directions
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -1243,7 +1243,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listening carefully and following directions
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -1273,7 +1273,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listening carefully and following directions
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -1303,7 +1303,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listening carefully and following directions
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -1333,7 +1333,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listening carefully and following directions
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -1363,7 +1363,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listening carefully and following directions
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -1393,7 +1393,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listening carefully and following directions
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -1423,7 +1423,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listening carefully and following directions
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -1453,7 +1453,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listening carefully and following directions
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -1483,7 +1483,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listening carefully and following directions
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -1513,7 +1513,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listening carefully and following directions
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -1543,7 +1543,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listening carefully and following directions
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -1573,7 +1573,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listening carefully and following directions
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -1603,7 +1603,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listening carefully and following directions
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -1633,7 +1633,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listening carefully and following directions
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -1663,7 +1663,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listening carefully and following directions
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -1693,7 +1693,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Notice environmental sounds, rhyme and repeated sound patterns in spoken words.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -1723,7 +1723,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Notice environmental sounds, rhyme and repeated sound patterns in spoken words.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -1753,7 +1753,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Notice environmental sounds, rhyme and repeated sound patterns in spoken words.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -1783,7 +1783,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Notice environmental sounds, rhyme and repeated sound patterns in spoken words.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -1813,7 +1813,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sounds around us and rhyme
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -1843,7 +1843,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sounds around us and rhyme
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -1873,7 +1873,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sounds around us and rhyme
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -1903,7 +1903,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sounds around us and rhyme
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -1933,7 +1933,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sounds around us and rhyme
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -1963,7 +1963,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sounds around us and rhyme
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -1993,7 +1993,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sounds around us and rhyme
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -2023,7 +2023,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sounds around us and rhyme
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -2053,7 +2053,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sounds around us and rhyme
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -2083,7 +2083,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sounds around us and rhyme
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -2113,7 +2113,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sounds around us and rhyme
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -2143,7 +2143,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sounds around us and rhyme
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -2173,7 +2173,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sounds around us and rhyme
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -2203,7 +2203,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sounds around us and rhyme
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -2233,7 +2233,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sounds around us and rhyme
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -2263,7 +2263,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sounds around us and rhyme
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -2293,7 +2293,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Recognise and use the previously introduced S/s and A/a in meaningful words.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -2323,7 +2323,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Recognise and use the previously introduced S/s and A/a in meaningful words.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -2353,7 +2353,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Recognise and use the previously introduced S/s and A/a in meaningful words.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -2383,7 +2383,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Recognise and use the previously introduced S/s and A/a in meaningful words.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -2413,7 +2413,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Letter Ss and short a review
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -2443,7 +2443,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Letter Ss and short a review
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -2473,7 +2473,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Letter Ss and short a review
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -2503,7 +2503,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Letter Ss and short a review
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -2533,7 +2533,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Letter Ss and short a review
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -2563,7 +2563,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Letter Ss and short a review
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -2593,7 +2593,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Letter Ss and short a review
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -2623,7 +2623,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Letter Ss and short a review
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -2653,7 +2653,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Letter Ss and short a review
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -2683,7 +2683,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Letter Ss and short a review
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -2713,7 +2713,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Letter Ss and short a review
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -2743,7 +2743,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Letter Ss and short a review
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -2773,7 +2773,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Letter Ss and short a review
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -2803,7 +2803,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Letter Ss and short a review
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -2833,7 +2833,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Letter Ss and short a review
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -2863,7 +2863,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Letter Ss and short a review
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -2893,7 +2893,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Recognise that print carries meaning and distinguish letters from words.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -2923,7 +2923,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Recognise that print carries meaning and distinguish letters from words.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -2953,7 +2953,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Recognise that print carries meaning and distinguish letters from words.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -2983,7 +2983,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Recognise that print carries meaning and distinguish letters from words.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -3013,7 +3013,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Print concepts and alphabet knowledge
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -3043,7 +3043,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Print concepts and alphabet knowledge
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -3073,7 +3073,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Print concepts and alphabet knowledge
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -3103,7 +3103,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Print concepts and alphabet knowledge
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -3133,7 +3133,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Print concepts and alphabet knowledge
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -3163,7 +3163,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Print concepts and alphabet knowledge
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -3193,7 +3193,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Print concepts and alphabet knowledge
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -3223,7 +3223,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Print concepts and alphabet knowledge
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -3253,7 +3253,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Print concepts and alphabet knowledge
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -3283,7 +3283,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Print concepts and alphabet knowledge
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -3313,7 +3313,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Print concepts and alphabet knowledge
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -3343,7 +3343,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Print concepts and alphabet knowledge
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -3373,7 +3373,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Print concepts and alphabet knowledge
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -3403,7 +3403,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Print concepts and alphabet knowledge
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -3433,7 +3433,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Print concepts and alphabet knowledge
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -3463,7 +3463,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Print concepts and alphabet knowledge
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -3493,7 +3493,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Hear initial sounds and orally blend simple sound sequences taught by the teacher.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -3523,7 +3523,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Hear initial sounds and orally blend simple sound sequences taught by the teacher.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -3553,7 +3553,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Hear initial sounds and orally blend simple sound sequences taught by the teacher.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -3583,7 +3583,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Hear initial sounds and orally blend simple sound sequences taught by the teacher.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -3613,7 +3613,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Beginning sounds and oral blending
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -3643,7 +3643,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Beginning sounds and oral blending
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -3673,7 +3673,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Beginning sounds and oral blending
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -3703,7 +3703,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Beginning sounds and oral blending
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -3733,7 +3733,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Beginning sounds and oral blending
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -3763,7 +3763,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Beginning sounds and oral blending
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -3793,7 +3793,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Beginning sounds and oral blending
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -3823,7 +3823,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Beginning sounds and oral blending
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -3853,7 +3853,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Beginning sounds and oral blending
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -3883,7 +3883,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Beginning sounds and oral blending
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -3913,7 +3913,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Beginning sounds and oral blending
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -3943,7 +3943,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Beginning sounds and oral blending
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -3973,7 +3973,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Beginning sounds and oral blending
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -4003,7 +4003,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Beginning sounds and oral blending
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -4033,7 +4033,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Beginning sounds and oral blending
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -4063,7 +4063,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Beginning sounds and oral blending
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -4093,7 +4093,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Build and read simple consonant-vowel-consonant words only from correspondences already taught.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -4123,7 +4123,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Build and read simple consonant-vowel-consonant words only from correspondences already taught.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -4153,7 +4153,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Build and read simple consonant-vowel-consonant words only from correspondences already taught.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -4183,7 +4183,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Build and read simple consonant-vowel-consonant words only from correspondences already taught.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -4213,7 +4213,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** CVC word building: taught correspondences
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -4243,7 +4243,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** CVC word building: taught correspondences
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -4273,7 +4273,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** CVC word building: taught correspondences
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -4303,7 +4303,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** CVC word building: taught correspondences
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -4333,7 +4333,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** CVC word building: taught correspondences
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -4363,7 +4363,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** CVC word building: taught correspondences
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -4393,7 +4393,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** CVC word building: taught correspondences
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -4423,7 +4423,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** CVC word building: taught correspondences
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -4453,7 +4453,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** CVC word building: taught correspondences
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -4483,7 +4483,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** CVC word building: taught correspondences
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -4513,7 +4513,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** CVC word building: taught correspondences
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -4543,7 +4543,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** CVC word building: taught correspondences
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -4573,7 +4573,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** CVC word building: taught correspondences
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -4603,7 +4603,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** CVC word building: taught correspondences
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -4633,7 +4633,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** CVC word building: taught correspondences
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -4663,7 +4663,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** CVC word building: taught correspondences
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -4693,7 +4693,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Recognise selected common words from the current class reading texts.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -4723,7 +4723,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Recognise selected common words from the current class reading texts.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -4753,7 +4753,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Recognise selected common words from the current class reading texts.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -4783,7 +4783,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Recognise selected common words from the current class reading texts.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -4813,7 +4813,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** High-frequency words in context
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -4843,7 +4843,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** High-frequency words in context
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -4873,7 +4873,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** High-frequency words in context
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -4903,7 +4903,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** High-frequency words in context
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -4933,7 +4933,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** High-frequency words in context
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -4963,7 +4963,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** High-frequency words in context
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -4993,7 +4993,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** High-frequency words in context
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -5023,7 +5023,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** High-frequency words in context
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -5053,7 +5053,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** High-frequency words in context
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -5083,7 +5083,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** High-frequency words in context
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -5113,7 +5113,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** High-frequency words in context
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -5143,7 +5143,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** High-frequency words in context
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -5173,7 +5173,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** High-frequency words in context
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -5203,7 +5203,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** High-frequency words in context
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -5233,7 +5233,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** High-frequency words in context
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -5263,7 +5263,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** High-frequency words in context
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -5293,7 +5293,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Understand and use words for people, places and familiar community settings.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -5323,7 +5323,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Understand and use words for people, places and familiar community settings.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -5353,7 +5353,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Understand and use words for people, places and familiar community settings.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -5383,7 +5383,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Understand and use words for people, places and familiar community settings.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -5413,7 +5413,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: people and places
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -5443,7 +5443,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: people and places
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -5473,7 +5473,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: people and places
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -5503,7 +5503,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: people and places
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -5533,7 +5533,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: people and places
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -5563,7 +5563,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: people and places
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -5593,7 +5593,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: people and places
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -5623,7 +5623,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: people and places
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -5653,7 +5653,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: people and places
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -5683,7 +5683,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: people and places
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -5713,7 +5713,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: people and places
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -5743,7 +5743,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: people and places
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -5773,7 +5773,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: people and places
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -5803,7 +5803,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: people and places
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -5833,7 +5833,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: people and places
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -5863,7 +5863,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: people and places
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -5893,7 +5893,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use nouns and verbs to describe familiar objects and actions.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -5923,7 +5923,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use nouns and verbs to describe familiar objects and actions.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -5953,7 +5953,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use nouns and verbs to describe familiar objects and actions.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -5983,7 +5983,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use nouns and verbs to describe familiar objects and actions.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -6013,7 +6013,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: objects and actions
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -6043,7 +6043,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: objects and actions
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -6073,7 +6073,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: objects and actions
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -6103,7 +6103,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: objects and actions
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -6133,7 +6133,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: objects and actions
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -6163,7 +6163,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: objects and actions
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -6193,7 +6193,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: objects and actions
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -6223,7 +6223,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: objects and actions
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -6253,7 +6253,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: objects and actions
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -6283,7 +6283,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: objects and actions
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -6313,7 +6313,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: objects and actions
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -6343,7 +6343,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: objects and actions
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -6373,7 +6373,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: objects and actions
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -6403,7 +6403,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: objects and actions
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -6433,7 +6433,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: objects and actions
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -6463,7 +6463,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Vocabulary: objects and actions
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -6493,7 +6493,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Understand a simple sentence and practise capital letters, spacing and full stops.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -6523,7 +6523,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Understand a simple sentence and practise capital letters, spacing and full stops.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -6553,7 +6553,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Understand a simple sentence and practise capital letters, spacing and full stops.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -6583,7 +6583,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Understand a simple sentence and practise capital letters, spacing and full stops.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -6613,7 +6613,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sentence meaning and punctuation
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -6643,7 +6643,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sentence meaning and punctuation
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -6673,7 +6673,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sentence meaning and punctuation
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -6703,7 +6703,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sentence meaning and punctuation
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -6733,7 +6733,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sentence meaning and punctuation
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -6763,7 +6763,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sentence meaning and punctuation
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -6793,7 +6793,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sentence meaning and punctuation
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -6823,7 +6823,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sentence meaning and punctuation
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -6853,7 +6853,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sentence meaning and punctuation
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -6883,7 +6883,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sentence meaning and punctuation
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -6913,7 +6913,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sentence meaning and punctuation
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -6943,7 +6943,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sentence meaning and punctuation
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -6973,7 +6973,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sentence meaning and punctuation
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -7003,7 +7003,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sentence meaning and punctuation
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -7033,7 +7033,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sentence meaning and punctuation
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -7063,7 +7063,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sentence meaning and punctuation
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -7093,7 +7093,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Identify a story's characters and setting using words and illustrations.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -7123,7 +7123,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Identify a story's characters and setting using words and illustrations.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -7153,7 +7153,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Identify a story's characters and setting using words and illustrations.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -7183,7 +7183,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Identify a story's characters and setting using words and illustrations.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -7213,7 +7213,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: characters and setting
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -7243,7 +7243,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: characters and setting
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -7273,7 +7273,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: characters and setting
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -7303,7 +7303,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: characters and setting
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -7333,7 +7333,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: characters and setting
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -7363,7 +7363,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: characters and setting
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -7393,7 +7393,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: characters and setting
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -7423,7 +7423,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: characters and setting
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -7453,7 +7453,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: characters and setting
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -7483,7 +7483,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: characters and setting
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -7513,7 +7513,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: characters and setting
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -7543,7 +7543,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: characters and setting
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -7573,7 +7573,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: characters and setting
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -7603,7 +7603,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: characters and setting
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -7633,7 +7633,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: characters and setting
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -7663,7 +7663,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: characters and setting
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -7693,7 +7693,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell a familiar story or event using first, next and last.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -7723,7 +7723,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell a familiar story or event using first, next and last.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -7753,7 +7753,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell a familiar story or event using first, next and last.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -7783,7 +7783,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell a familiar story or event using first, next and last.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -7813,7 +7813,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: sequence and retell
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -7843,7 +7843,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: sequence and retell
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -7873,7 +7873,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: sequence and retell
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -7903,7 +7903,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: sequence and retell
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -7933,7 +7933,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: sequence and retell
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -7963,7 +7963,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: sequence and retell
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -7993,7 +7993,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: sequence and retell
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -8023,7 +8023,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: sequence and retell
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -8053,7 +8053,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: sequence and retell
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -8083,7 +8083,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: sequence and retell
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -8113,7 +8113,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: sequence and retell
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -8143,7 +8143,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: sequence and retell
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -8173,7 +8173,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: sequence and retell
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -8203,7 +8203,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: sequence and retell
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -8233,7 +8233,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: sequence and retell
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -8263,7 +8263,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Shared reading: sequence and retell
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -8293,7 +8293,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Answer who, what, where and when questions using details in a text.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -8323,7 +8323,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Answer who, what, where and when questions using details in a text.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -8353,7 +8353,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Answer who, what, where and when questions using details in a text.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -8383,7 +8383,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Answer who, what, where and when questions using details in a text.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -8413,7 +8413,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: literal questions
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -8443,7 +8443,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: literal questions
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -8473,7 +8473,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: literal questions
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -8503,7 +8503,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: literal questions
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -8533,7 +8533,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: literal questions
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -8563,7 +8563,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: literal questions
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -8593,7 +8593,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: literal questions
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -8623,7 +8623,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: literal questions
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -8653,7 +8653,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: literal questions
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -8683,7 +8683,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: literal questions
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -8713,7 +8713,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: literal questions
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -8743,7 +8743,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: literal questions
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -8773,7 +8773,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: literal questions
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -8803,7 +8803,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: literal questions
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -8833,7 +8833,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: literal questions
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -8863,7 +8863,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: literal questions
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -8893,7 +8893,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Make a sensible prediction and connect text to familiar experience.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -8923,7 +8923,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Make a sensible prediction and connect text to familiar experience.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -8953,7 +8953,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Make a sensible prediction and connect text to familiar experience.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -8983,7 +8983,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Make a sensible prediction and connect text to familiar experience.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -9013,7 +9013,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: prediction and connection
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -9043,7 +9043,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: prediction and connection
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -9073,7 +9073,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: prediction and connection
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -9103,7 +9103,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: prediction and connection
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -9133,7 +9133,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: prediction and connection
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -9163,7 +9163,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: prediction and connection
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -9193,7 +9193,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: prediction and connection
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -9223,7 +9223,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: prediction and connection
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -9253,7 +9253,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: prediction and connection
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -9283,7 +9283,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: prediction and connection
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -9313,7 +9313,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: prediction and connection
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -9343,7 +9343,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: prediction and connection
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -9373,7 +9373,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: prediction and connection
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -9403,7 +9403,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: prediction and connection
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -9433,7 +9433,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: prediction and connection
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -9463,7 +9463,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Comprehension: prediction and connection
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -9493,7 +9493,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use describing words to add relevant detail to a noun.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -9523,7 +9523,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use describing words to add relevant detail to a noun.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -9553,7 +9553,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use describing words to add relevant detail to a noun.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -9583,7 +9583,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use describing words to add relevant detail to a noun.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -9613,7 +9613,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describing words and expanded noun groups
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -9643,7 +9643,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describing words and expanded noun groups
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -9673,7 +9673,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describing words and expanded noun groups
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -9703,7 +9703,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describing words and expanded noun groups
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -9733,7 +9733,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describing words and expanded noun groups
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -9763,7 +9763,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describing words and expanded noun groups
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -9793,7 +9793,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describing words and expanded noun groups
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -9823,7 +9823,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describing words and expanded noun groups
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -9853,7 +9853,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describing words and expanded noun groups
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -9883,7 +9883,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describing words and expanded noun groups
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -9913,7 +9913,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describing words and expanded noun groups
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -9943,7 +9943,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describing words and expanded noun groups
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -9973,7 +9973,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describing words and expanded noun groups
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -10003,7 +10003,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describing words and expanded noun groups
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -10033,7 +10033,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describing words and expanded noun groups
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -10063,7 +10063,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describing words and expanded noun groups
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -10093,7 +10093,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer simple questions and respond with relevant information.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -10123,7 +10123,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer simple questions and respond with relevant information.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -10153,7 +10153,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer simple questions and respond with relevant information.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -10183,7 +10183,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer simple questions and respond with relevant information.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -10213,7 +10213,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Questions and complete responses
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -10243,7 +10243,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Questions and complete responses
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -10273,7 +10273,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Questions and complete responses
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -10303,7 +10303,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Questions and complete responses
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -10333,7 +10333,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Questions and complete responses
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -10363,7 +10363,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Questions and complete responses
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -10393,7 +10393,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Questions and complete responses
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -10423,7 +10423,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Questions and complete responses
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -10453,7 +10453,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Questions and complete responses
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -10483,7 +10483,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Questions and complete responses
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -10513,7 +10513,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Questions and complete responses
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -10543,7 +10543,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Questions and complete responses
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -10573,7 +10573,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Questions and complete responses
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -10603,7 +10603,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Questions and complete responses
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -10633,7 +10633,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Questions and complete responses
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -10663,7 +10663,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Questions and complete responses
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -10693,7 +10693,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Plan a sentence orally or with pictures and write a meaningful simple sentence.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -10723,7 +10723,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Plan a sentence orally or with pictures and write a meaningful simple sentence.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -10753,7 +10753,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Plan a sentence orally or with pictures and write a meaningful simple sentence.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -10783,7 +10783,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Plan a sentence orally or with pictures and write a meaningful simple sentence.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -10813,7 +10813,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: plan and compose a sentence
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -10843,7 +10843,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: plan and compose a sentence
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -10873,7 +10873,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: plan and compose a sentence
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -10903,7 +10903,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: plan and compose a sentence
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -10933,7 +10933,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: plan and compose a sentence
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -10963,7 +10963,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: plan and compose a sentence
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -10993,7 +10993,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: plan and compose a sentence
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -11023,7 +11023,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: plan and compose a sentence
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -11053,7 +11053,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: plan and compose a sentence
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -11083,7 +11083,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: plan and compose a sentence
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -11113,7 +11113,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: plan and compose a sentence
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -11143,7 +11143,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: plan and compose a sentence
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -11173,7 +11173,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: plan and compose a sentence
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -11203,7 +11203,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: plan and compose a sentence
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -11233,7 +11233,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: plan and compose a sentence
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -11263,7 +11263,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: plan and compose a sentence
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -11293,7 +11293,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sequence and communicate a short personal recount.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -11323,7 +11323,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sequence and communicate a short personal recount.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -11353,7 +11353,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sequence and communicate a short personal recount.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -11383,7 +11383,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Sequence and communicate a short personal recount.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -11413,7 +11413,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: recount a familiar experience
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -11443,7 +11443,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: recount a familiar experience
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -11473,7 +11473,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: recount a familiar experience
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -11503,7 +11503,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: recount a familiar experience
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -11533,7 +11533,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: recount a familiar experience
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -11563,7 +11563,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: recount a familiar experience
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -11593,7 +11593,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: recount a familiar experience
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -11623,7 +11623,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: recount a familiar experience
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -11653,7 +11653,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: recount a familiar experience
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -11683,7 +11683,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: recount a familiar experience
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -11713,7 +11713,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: recount a familiar experience
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -11743,7 +11743,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: recount a familiar experience
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -11773,7 +11773,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: recount a familiar experience
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -11803,7 +11803,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: recount a familiar experience
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -11833,7 +11833,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: recount a familiar experience
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -11863,7 +11863,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: recount a familiar experience
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -11893,7 +11893,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Understand and create simple ordered instructions.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -11923,7 +11923,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Understand and create simple ordered instructions.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -11953,7 +11953,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Understand and create simple ordered instructions.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -11983,7 +11983,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Understand and create simple ordered instructions.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -12013,7 +12013,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: instructions and procedural language
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -12043,7 +12043,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: instructions and procedural language
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -12073,7 +12073,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: instructions and procedural language
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -12103,7 +12103,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: instructions and procedural language
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -12133,7 +12133,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: instructions and procedural language
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -12163,7 +12163,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: instructions and procedural language
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -12193,7 +12193,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: instructions and procedural language
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -12223,7 +12223,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: instructions and procedural language
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -12253,7 +12253,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: instructions and procedural language
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -12283,7 +12283,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: instructions and procedural language
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -12313,7 +12313,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: instructions and procedural language
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -12343,7 +12343,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: instructions and procedural language
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -12373,7 +12373,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: instructions and procedural language
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -12403,7 +12403,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: instructions and procedural language
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -12433,7 +12433,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: instructions and procedural language
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -12463,7 +12463,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: instructions and procedural language
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -12493,7 +12493,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Create a short description or information text for a clear audience.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -12523,7 +12523,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Create a short description or information text for a clear audience.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -12553,7 +12553,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Create a short description or information text for a clear audience.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -12583,7 +12583,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Create a short description or information text for a clear audience.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -12613,7 +12613,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: description and information
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -12643,7 +12643,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: description and information
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -12673,7 +12673,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: description and information
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -12703,7 +12703,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: description and information
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -12733,7 +12733,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: description and information
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -12763,7 +12763,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: description and information
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -12793,7 +12793,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: description and information
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -12823,7 +12823,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: description and information
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -12853,7 +12853,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: description and information
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -12883,7 +12883,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: description and information
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -12913,7 +12913,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: description and information
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -12943,7 +12943,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: description and information
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -12973,7 +12973,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: description and information
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -13003,7 +13003,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: description and information
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -13033,7 +13033,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: description and information
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -13063,7 +13063,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Writing: description and information
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -13093,7 +13093,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Revisit taught skills and present selected reading, speaking and writing evidence.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -13123,7 +13123,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Revisit taught skills and present selected reading, speaking and writing evidence.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -13153,7 +13153,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Revisit taught skills and present selected reading, speaking and writing evidence.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -13183,7 +13183,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Revisit taught skills and present selected reading, speaking and writing evidence.
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -13213,7 +13213,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -13243,7 +13243,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -13273,7 +13273,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -13303,7 +13303,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
 
@@ -13333,7 +13333,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -13363,7 +13363,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -13393,7 +13393,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -13423,7 +13423,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
 
@@ -13453,7 +13453,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -13483,7 +13483,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -13513,7 +13513,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -13543,7 +13543,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
 
@@ -13573,7 +13573,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -13603,7 +13603,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -13633,7 +13633,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -13663,7 +13663,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
 
@@ -13693,7 +13693,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -13723,7 +13723,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -13753,7 +13753,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
@@ -13783,7 +13783,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Review, fluency and portfolio presentation
 
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Your task:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
 
