@@ -2,7 +2,7 @@
 
 **Status:** ORIGINAL PACEDU DRAFT — `PENDING_TEACHER_REVIEW` — `PENDING_OFFICIAL_INDICATOR_VERIFICATION`. Not a Ministry-issued worksheet pack.
 
-**Printing rule:** Each learning day has four separate versions. Print only the selected learner pathway. Confirm Android Chrome print preview produces one selected worksheet per page. School-local dates and approved calendar control learning-day progression; holidays and weekends do not auto-advance the sequence.
+**Printing:** Each day has four separate pathway versions. Print only the selected learner version. Confirm Android Chrome print preview produces one selected worksheet per page. Use the school's approved calendar and configured local timezone; weekends and holidays do not auto-advance the learning sequence.
 
 
 ---
@@ -13,11 +13,11 @@
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -27,11 +27,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -43,11 +43,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -57,11 +57,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -73,11 +73,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -87,11 +87,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -103,11 +103,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -117,11 +117,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -133,11 +133,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -147,11 +147,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -163,11 +163,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -177,11 +177,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -193,11 +193,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -207,11 +207,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -223,11 +223,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -237,11 +237,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -253,11 +253,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -267,11 +267,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -283,11 +283,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -297,11 +297,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -313,11 +313,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -327,11 +327,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -343,11 +343,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -357,11 +357,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -373,11 +373,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -387,11 +387,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -403,11 +403,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -417,11 +417,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -433,11 +433,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -447,11 +447,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -463,11 +463,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -477,11 +477,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -493,11 +493,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -507,11 +507,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -523,11 +523,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -537,11 +537,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -553,11 +553,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -567,11 +567,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -583,11 +583,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -597,11 +597,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -613,11 +613,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -627,11 +627,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -643,11 +643,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -657,11 +657,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -673,11 +673,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -687,11 +687,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -703,11 +703,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -717,11 +717,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -733,11 +733,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -747,11 +747,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -763,11 +763,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -777,11 +777,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -793,11 +793,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -807,11 +807,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -823,11 +823,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -837,11 +837,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -853,11 +853,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -867,11 +867,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -883,11 +883,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -897,11 +897,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -913,11 +913,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -927,11 +927,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -943,11 +943,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -957,11 +957,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -973,11 +973,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -987,11 +987,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1003,11 +1003,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -1017,11 +1017,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1033,11 +1033,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -1047,11 +1047,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1063,11 +1063,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -1077,11 +1077,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1093,11 +1093,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -1107,11 +1107,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1123,11 +1123,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -1137,11 +1137,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1153,11 +1153,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -1167,11 +1167,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1183,11 +1183,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -1197,11 +1197,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1213,11 +1213,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -1227,11 +1227,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1243,11 +1243,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -1257,11 +1257,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1273,11 +1273,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -1287,11 +1287,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1303,11 +1303,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -1317,11 +1317,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1333,11 +1333,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -1347,11 +1347,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1363,11 +1363,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -1377,11 +1377,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1393,11 +1393,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -1407,11 +1407,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1423,11 +1423,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -1437,11 +1437,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1453,11 +1453,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -1467,11 +1467,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1483,11 +1483,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -1497,11 +1497,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1513,11 +1513,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -1527,11 +1527,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1543,11 +1543,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -1557,11 +1557,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1573,11 +1573,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -1587,11 +1587,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1603,11 +1603,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -1617,11 +1617,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1633,11 +1633,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -1647,11 +1647,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1663,11 +1663,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -1677,11 +1677,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1693,11 +1693,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -1707,11 +1707,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1723,11 +1723,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -1737,11 +1737,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1753,11 +1753,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -1767,11 +1767,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1783,11 +1783,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -1797,11 +1797,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1813,11 +1813,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -1827,11 +1827,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1843,11 +1843,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -1857,11 +1857,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1873,11 +1873,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -1887,11 +1887,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1903,11 +1903,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -1917,11 +1917,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1933,11 +1933,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -1947,11 +1947,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1963,11 +1963,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -1977,11 +1977,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -1993,11 +1993,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -2007,11 +2007,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2023,11 +2023,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -2037,11 +2037,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2053,11 +2053,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -2067,11 +2067,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2083,11 +2083,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -2097,11 +2097,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2113,11 +2113,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -2127,11 +2127,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2143,11 +2143,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -2157,11 +2157,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2173,11 +2173,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -2187,11 +2187,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2203,11 +2203,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -2217,11 +2217,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2233,11 +2233,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -2247,11 +2247,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2263,11 +2263,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -2277,11 +2277,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2293,11 +2293,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -2307,11 +2307,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2323,11 +2323,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -2337,11 +2337,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2353,11 +2353,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -2367,11 +2367,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2383,11 +2383,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -2397,11 +2397,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2413,11 +2413,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -2427,11 +2427,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2443,11 +2443,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -2457,11 +2457,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2473,11 +2473,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -2487,11 +2487,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2503,11 +2503,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -2517,11 +2517,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2533,11 +2533,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -2547,11 +2547,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2563,11 +2563,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -2577,11 +2577,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2593,11 +2593,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -2607,11 +2607,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2623,11 +2623,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -2637,11 +2637,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2653,11 +2653,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -2667,11 +2667,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2683,11 +2683,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -2697,11 +2697,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2713,11 +2713,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -2727,11 +2727,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2743,11 +2743,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -2757,11 +2757,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2773,11 +2773,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -2787,11 +2787,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2803,11 +2803,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -2817,11 +2817,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2833,11 +2833,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -2847,11 +2847,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2863,11 +2863,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -2877,11 +2877,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2893,11 +2893,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -2907,11 +2907,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2923,11 +2923,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -2937,11 +2937,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2953,11 +2953,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -2967,11 +2967,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -2983,11 +2983,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -2997,11 +2997,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3013,11 +3013,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -3027,11 +3027,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3043,11 +3043,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -3057,11 +3057,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3073,11 +3073,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -3087,11 +3087,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3103,11 +3103,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -3117,11 +3117,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3133,11 +3133,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -3147,11 +3147,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3163,11 +3163,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -3177,11 +3177,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3193,11 +3193,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -3207,11 +3207,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3223,11 +3223,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -3237,11 +3237,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3253,11 +3253,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -3267,11 +3267,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3283,11 +3283,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -3297,11 +3297,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3313,11 +3313,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -3327,11 +3327,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3343,11 +3343,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -3357,11 +3357,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3373,11 +3373,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -3387,11 +3387,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3403,11 +3403,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -3417,11 +3417,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3433,11 +3433,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -3447,11 +3447,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3463,11 +3463,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -3477,11 +3477,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3493,11 +3493,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -3507,11 +3507,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3523,11 +3523,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -3537,11 +3537,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3553,11 +3553,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -3567,11 +3567,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3583,11 +3583,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -3597,11 +3597,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3613,11 +3613,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -3627,11 +3627,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3643,11 +3643,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -3657,11 +3657,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3673,11 +3673,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -3687,11 +3687,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3703,11 +3703,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -3717,11 +3717,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3733,11 +3733,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -3747,11 +3747,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3763,11 +3763,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -3777,11 +3777,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3793,11 +3793,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -3807,11 +3807,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3823,11 +3823,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -3837,11 +3837,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3853,11 +3853,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -3867,11 +3867,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3883,11 +3883,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -3897,11 +3897,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3913,11 +3913,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -3927,11 +3927,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3943,11 +3943,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -3957,11 +3957,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -3973,11 +3973,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -3987,11 +3987,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4003,11 +4003,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -4017,11 +4017,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4033,11 +4033,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -4047,11 +4047,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4063,11 +4063,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -4077,11 +4077,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4093,11 +4093,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -4107,11 +4107,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4123,11 +4123,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -4137,11 +4137,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4153,11 +4153,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -4167,11 +4167,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4183,11 +4183,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -4197,11 +4197,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4213,11 +4213,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -4227,11 +4227,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4243,11 +4243,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -4257,11 +4257,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4273,11 +4273,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -4287,11 +4287,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4303,11 +4303,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -4317,11 +4317,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4333,11 +4333,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -4347,11 +4347,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4363,11 +4363,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -4377,11 +4377,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4393,11 +4393,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -4407,11 +4407,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4423,11 +4423,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -4437,11 +4437,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4453,11 +4453,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -4467,11 +4467,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4483,11 +4483,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -4497,11 +4497,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4513,11 +4513,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -4527,11 +4527,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4543,11 +4543,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -4557,11 +4557,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4573,11 +4573,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -4587,11 +4587,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4603,11 +4603,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -4617,11 +4617,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4633,11 +4633,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -4647,11 +4647,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4663,11 +4663,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -4677,11 +4677,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4693,11 +4693,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -4707,11 +4707,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4723,11 +4723,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -4737,11 +4737,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4753,11 +4753,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -4767,11 +4767,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4783,11 +4783,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -4797,11 +4797,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4813,11 +4813,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -4827,11 +4827,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4843,11 +4843,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -4857,11 +4857,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4873,11 +4873,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -4887,11 +4887,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4903,11 +4903,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -4917,11 +4917,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4933,11 +4933,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -4947,11 +4947,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4963,11 +4963,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -4977,11 +4977,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -4993,11 +4993,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -5007,11 +5007,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5023,11 +5023,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -5037,11 +5037,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5053,11 +5053,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -5067,11 +5067,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5083,11 +5083,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -5097,11 +5097,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5113,11 +5113,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -5127,11 +5127,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5143,11 +5143,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -5157,11 +5157,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5173,11 +5173,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -5187,11 +5187,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5203,11 +5203,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -5217,11 +5217,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5233,11 +5233,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -5247,11 +5247,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5263,11 +5263,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -5277,11 +5277,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5293,11 +5293,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -5307,11 +5307,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5323,11 +5323,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -5337,11 +5337,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5353,11 +5353,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -5367,11 +5367,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5383,11 +5383,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -5397,11 +5397,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5413,11 +5413,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -5427,11 +5427,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5443,11 +5443,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -5457,11 +5457,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5473,11 +5473,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -5487,11 +5487,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5503,11 +5503,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -5517,11 +5517,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5533,11 +5533,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -5547,11 +5547,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5563,11 +5563,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -5577,11 +5577,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5593,11 +5593,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -5607,11 +5607,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5623,11 +5623,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -5637,11 +5637,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5653,11 +5653,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -5667,11 +5667,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5683,11 +5683,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -5697,11 +5697,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5713,11 +5713,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -5727,11 +5727,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5743,11 +5743,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -5757,11 +5757,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5773,11 +5773,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -5787,11 +5787,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5803,11 +5803,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -5817,11 +5817,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5833,11 +5833,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -5847,11 +5847,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5863,11 +5863,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -5877,11 +5877,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5893,11 +5893,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -5907,11 +5907,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5923,11 +5923,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -5937,11 +5937,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5953,11 +5953,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -5967,11 +5967,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -5983,11 +5983,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -5997,11 +5997,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6013,11 +6013,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -6027,11 +6027,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6043,11 +6043,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -6057,11 +6057,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6073,11 +6073,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -6087,11 +6087,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6103,11 +6103,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -6117,11 +6117,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6133,11 +6133,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -6147,11 +6147,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6163,11 +6163,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -6177,11 +6177,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6193,11 +6193,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -6207,11 +6207,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6223,11 +6223,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -6237,11 +6237,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6253,11 +6253,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -6267,11 +6267,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6283,11 +6283,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -6297,11 +6297,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6313,11 +6313,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -6327,11 +6327,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6343,11 +6343,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -6357,11 +6357,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6373,11 +6373,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -6387,11 +6387,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6403,11 +6403,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -6417,11 +6417,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6433,11 +6433,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -6447,11 +6447,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6463,11 +6463,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -6477,11 +6477,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6493,11 +6493,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -6507,11 +6507,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6523,11 +6523,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -6537,11 +6537,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6553,11 +6553,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -6567,11 +6567,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6583,11 +6583,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -6597,11 +6597,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6613,11 +6613,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -6627,11 +6627,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6643,11 +6643,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -6657,11 +6657,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6673,11 +6673,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -6687,11 +6687,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6703,11 +6703,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -6717,11 +6717,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6733,11 +6733,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -6747,11 +6747,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6763,11 +6763,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -6777,11 +6777,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6793,11 +6793,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -6807,11 +6807,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6823,11 +6823,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -6837,11 +6837,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6853,11 +6853,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -6867,11 +6867,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6883,11 +6883,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -6897,11 +6897,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6913,11 +6913,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -6927,11 +6927,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6943,11 +6943,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -6957,11 +6957,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -6973,11 +6973,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -6987,11 +6987,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7003,11 +7003,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -7017,11 +7017,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7033,11 +7033,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -7047,11 +7047,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7063,11 +7063,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -7077,11 +7077,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7093,11 +7093,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -7107,11 +7107,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7123,11 +7123,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -7137,11 +7137,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7153,11 +7153,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -7167,11 +7167,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7183,11 +7183,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -7197,11 +7197,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7213,11 +7213,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -7227,11 +7227,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7243,11 +7243,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -7257,11 +7257,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7273,11 +7273,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -7287,11 +7287,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7303,11 +7303,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -7317,11 +7317,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7333,11 +7333,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -7347,11 +7347,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7363,11 +7363,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -7377,11 +7377,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7393,11 +7393,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -7407,11 +7407,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7423,11 +7423,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -7437,11 +7437,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7453,11 +7453,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -7467,11 +7467,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7483,11 +7483,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -7497,11 +7497,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7513,11 +7513,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -7527,11 +7527,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7543,11 +7543,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -7557,11 +7557,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7573,11 +7573,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -7587,11 +7587,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7603,11 +7603,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -7617,11 +7617,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7633,11 +7633,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -7647,11 +7647,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7663,11 +7663,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -7677,11 +7677,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7693,11 +7693,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -7707,11 +7707,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7723,11 +7723,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -7737,11 +7737,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7753,11 +7753,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -7767,11 +7767,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7783,11 +7783,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -7797,11 +7797,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7813,11 +7813,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -7827,11 +7827,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7843,11 +7843,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -7857,11 +7857,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7873,11 +7873,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -7887,11 +7887,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7903,11 +7903,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -7917,11 +7917,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7933,11 +7933,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -7947,11 +7947,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7963,11 +7963,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -7977,11 +7977,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -7993,11 +7993,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -8007,11 +8007,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8023,11 +8023,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -8037,11 +8037,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8053,11 +8053,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -8067,11 +8067,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8083,11 +8083,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -8097,11 +8097,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8113,11 +8113,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -8127,11 +8127,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8143,11 +8143,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -8157,11 +8157,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8173,11 +8173,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -8187,11 +8187,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8203,11 +8203,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -8217,11 +8217,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8233,11 +8233,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -8247,11 +8247,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8263,11 +8263,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -8277,11 +8277,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8293,11 +8293,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -8307,11 +8307,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8323,11 +8323,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -8337,11 +8337,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8353,11 +8353,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -8367,11 +8367,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8383,11 +8383,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -8397,11 +8397,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8413,11 +8413,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -8427,11 +8427,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8443,11 +8443,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -8457,11 +8457,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8473,11 +8473,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -8487,11 +8487,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8503,11 +8503,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -8517,11 +8517,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8533,11 +8533,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -8547,11 +8547,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8563,11 +8563,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -8577,11 +8577,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8593,11 +8593,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -8607,11 +8607,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8623,11 +8623,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -8637,11 +8637,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8653,11 +8653,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -8667,11 +8667,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8683,11 +8683,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -8697,11 +8697,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8713,11 +8713,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -8727,11 +8727,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8743,11 +8743,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -8757,11 +8757,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8773,11 +8773,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -8787,11 +8787,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8803,11 +8803,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -8817,11 +8817,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8833,11 +8833,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -8847,11 +8847,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8863,11 +8863,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -8877,11 +8877,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8893,11 +8893,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -8907,11 +8907,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8923,11 +8923,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -8937,11 +8937,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8953,11 +8953,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -8967,11 +8967,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -8983,11 +8983,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -8997,11 +8997,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9013,11 +9013,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -9027,11 +9027,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9043,11 +9043,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -9057,11 +9057,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9073,11 +9073,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -9087,11 +9087,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9103,11 +9103,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -9117,11 +9117,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9133,11 +9133,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -9147,11 +9147,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9163,11 +9163,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -9177,11 +9177,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9193,11 +9193,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -9207,11 +9207,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9223,11 +9223,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -9237,11 +9237,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9253,11 +9253,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -9267,11 +9267,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9283,11 +9283,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -9297,11 +9297,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9313,11 +9313,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -9327,11 +9327,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9343,11 +9343,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -9357,11 +9357,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9373,11 +9373,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -9387,11 +9387,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9403,11 +9403,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -9417,11 +9417,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9433,11 +9433,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -9447,11 +9447,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9463,11 +9463,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -9477,11 +9477,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9493,11 +9493,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -9507,11 +9507,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9523,11 +9523,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -9537,11 +9537,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9553,11 +9553,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -9567,11 +9567,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9583,11 +9583,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -9597,11 +9597,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9613,11 +9613,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -9627,11 +9627,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9643,11 +9643,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -9657,11 +9657,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9673,11 +9673,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -9687,11 +9687,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9703,11 +9703,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -9717,11 +9717,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9733,11 +9733,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -9747,11 +9747,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9763,11 +9763,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -9777,11 +9777,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9793,11 +9793,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -9807,11 +9807,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9823,11 +9823,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -9837,11 +9837,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9853,11 +9853,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -9867,11 +9867,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9883,11 +9883,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -9897,11 +9897,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9913,11 +9913,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -9927,11 +9927,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9943,11 +9943,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -9957,11 +9957,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -9973,11 +9973,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -9987,11 +9987,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10003,11 +10003,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -10017,11 +10017,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10033,11 +10033,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -10047,11 +10047,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10063,11 +10063,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -10077,11 +10077,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10093,11 +10093,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -10107,11 +10107,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10123,11 +10123,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -10137,11 +10137,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10153,11 +10153,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -10167,11 +10167,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10183,11 +10183,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -10197,11 +10197,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10213,11 +10213,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -10227,11 +10227,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10243,11 +10243,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -10257,11 +10257,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10273,11 +10273,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -10287,11 +10287,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10303,11 +10303,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -10317,11 +10317,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10333,11 +10333,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -10347,11 +10347,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10363,11 +10363,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -10377,11 +10377,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10393,11 +10393,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -10407,11 +10407,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10423,11 +10423,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -10437,11 +10437,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10453,11 +10453,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -10467,11 +10467,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10483,11 +10483,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -10497,11 +10497,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10513,11 +10513,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -10527,11 +10527,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10543,11 +10543,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -10557,11 +10557,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10573,11 +10573,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -10587,11 +10587,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10603,11 +10603,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -10617,11 +10617,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10633,11 +10633,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -10647,11 +10647,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10663,11 +10663,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -10677,11 +10677,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10693,11 +10693,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -10707,11 +10707,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10723,11 +10723,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -10737,11 +10737,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10753,11 +10753,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -10767,11 +10767,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10783,11 +10783,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -10797,11 +10797,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10813,11 +10813,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -10827,11 +10827,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10843,11 +10843,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -10857,11 +10857,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10873,11 +10873,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -10887,11 +10887,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10903,11 +10903,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -10917,11 +10917,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10933,11 +10933,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -10947,11 +10947,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10963,11 +10963,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -10977,11 +10977,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -10993,11 +10993,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -11007,11 +11007,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11023,11 +11023,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -11037,11 +11037,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11053,11 +11053,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -11067,11 +11067,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11083,11 +11083,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -11097,11 +11097,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11113,11 +11113,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -11127,11 +11127,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11143,11 +11143,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -11157,11 +11157,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11173,11 +11173,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -11187,11 +11187,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11203,11 +11203,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -11217,11 +11217,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11233,11 +11233,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -11247,11 +11247,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11263,11 +11263,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -11277,11 +11277,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11293,11 +11293,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -11307,11 +11307,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11323,11 +11323,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -11337,11 +11337,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11353,11 +11353,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -11367,11 +11367,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11383,11 +11383,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -11397,11 +11397,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11413,11 +11413,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -11427,11 +11427,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11443,11 +11443,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -11457,11 +11457,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11473,11 +11473,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -11487,11 +11487,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11503,11 +11503,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -11517,11 +11517,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11533,11 +11533,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -11547,11 +11547,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11563,11 +11563,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -11577,11 +11577,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11593,11 +11593,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -11607,11 +11607,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11623,11 +11623,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -11637,11 +11637,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11653,11 +11653,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -11667,11 +11667,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11683,11 +11683,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -11697,11 +11697,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11713,11 +11713,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -11727,11 +11727,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11743,11 +11743,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -11757,11 +11757,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11773,11 +11773,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -11787,11 +11787,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11803,11 +11803,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -11817,11 +11817,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11833,11 +11833,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -11847,11 +11847,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11863,11 +11863,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -11877,11 +11877,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11893,11 +11893,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -11907,11 +11907,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11923,11 +11923,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -11937,11 +11937,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11953,11 +11953,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -11967,11 +11967,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -11983,11 +11983,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -11997,11 +11997,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12013,11 +12013,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -12027,11 +12027,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12043,11 +12043,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -12057,11 +12057,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12073,11 +12073,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -12087,11 +12087,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12103,11 +12103,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -12117,11 +12117,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12133,11 +12133,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -12147,11 +12147,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12163,11 +12163,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -12177,11 +12177,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12193,11 +12193,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -12207,11 +12207,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12223,11 +12223,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -12237,11 +12237,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12253,11 +12253,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -12267,11 +12267,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12283,11 +12283,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -12297,11 +12297,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12313,11 +12313,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -12327,11 +12327,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12343,11 +12343,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -12357,11 +12357,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12373,11 +12373,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -12387,11 +12387,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12403,11 +12403,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -12417,11 +12417,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12433,11 +12433,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -12447,11 +12447,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12463,11 +12463,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -12477,11 +12477,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12493,11 +12493,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -12507,11 +12507,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12523,11 +12523,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -12537,11 +12537,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12553,11 +12553,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -12567,11 +12567,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12583,11 +12583,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -12597,11 +12597,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12613,11 +12613,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -12627,11 +12627,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12643,11 +12643,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -12657,11 +12657,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12673,11 +12673,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -12687,11 +12687,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12703,11 +12703,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -12717,11 +12717,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12733,11 +12733,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -12747,11 +12747,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12763,11 +12763,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -12777,11 +12777,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12793,11 +12793,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -12807,11 +12807,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12823,11 +12823,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -12837,11 +12837,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12853,11 +12853,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -12867,11 +12867,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12883,11 +12883,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -12897,11 +12897,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12913,11 +12913,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -12927,11 +12927,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12943,11 +12943,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -12957,11 +12957,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -12973,11 +12973,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -12987,11 +12987,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13003,11 +13003,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -13017,11 +13017,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13033,11 +13033,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -13047,11 +13047,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13063,11 +13063,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -13077,11 +13077,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13093,11 +13093,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -13107,11 +13107,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13123,11 +13123,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -13137,11 +13137,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13153,11 +13153,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -13167,11 +13167,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13183,11 +13183,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -13197,11 +13197,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13213,11 +13213,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -13227,11 +13227,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13243,11 +13243,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -13257,11 +13257,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13273,11 +13273,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -13287,11 +13287,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13303,11 +13303,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -13317,11 +13317,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13333,11 +13333,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -13347,11 +13347,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13363,11 +13363,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -13377,11 +13377,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13393,11 +13393,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -13407,11 +13407,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13423,11 +13423,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -13437,11 +13437,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13453,11 +13453,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -13467,11 +13467,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13483,11 +13483,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -13497,11 +13497,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13513,11 +13513,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -13527,11 +13527,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13543,11 +13543,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -13557,11 +13557,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13573,11 +13573,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -13587,11 +13587,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13603,11 +13603,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -13617,11 +13617,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13633,11 +13633,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -13647,11 +13647,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13663,11 +13663,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -13677,11 +13677,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13693,11 +13693,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Copper task:** Use the model, a short text, a visual or tactile cue and a word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
 
 **My answer / working:**
 
@@ -13707,11 +13707,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13723,11 +13723,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Bronze task:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
 
 **My answer / working:**
 
@@ -13737,11 +13737,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13753,11 +13753,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Silver task:** Complete the shared task independently, select relevant evidence and check the success criteria.
+**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
 
 **My answer / working:**
 
@@ -13767,11 +13767,11 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -13783,11 +13783,11 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Read / listen / discuss:** 
+**Task:** 
 
 **Worked example:** 
 
-**Your Gold task:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
 
 **My answer / working:**
 
@@ -13797,13 +13797,13 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, text or example used, accuracy, communication mode and prompt level. Expected evidence: 
+**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION. Add exact authorized source, edition and page after verification.
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ## Release gate
-A qualified Fiji English teacher must check each daily task for Class 5 level suitability, progression, accessibility and local relevance. Confirm the authorized syllabus source and physical Android Chrome print output before learner release.
+A qualified Fiji English teacher must review all 115 Class 5 days for level suitability, progression, accessibility and local relevance. Confirm official source mapping and physical Android Chrome printing before learner release.
