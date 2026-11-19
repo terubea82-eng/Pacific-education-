@@ -28,7 +28,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -48,7 +48,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -68,7 +68,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -88,7 +88,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -108,7 +108,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -132,7 +132,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe familiar foods; sort and explain choices; read short informational text.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -152,7 +152,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe familiar foods; sort and explain choices; read short informational text.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -172,7 +172,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe familiar foods; sort and explain choices; read short informational text.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -192,7 +192,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe familiar foods; sort and explain choices; read short informational text.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -212,7 +212,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe familiar foods; sort and explain choices; read short informational text.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -236,7 +236,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Use polite questions; read labels/lists; write a simple shopping list.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -256,7 +256,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Use polite questions; read labels/lists; write a simple shopping list.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -276,7 +276,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Use polite questions; read labels/lists; write a simple shopping list.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -296,7 +296,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Use polite questions; read labels/lists; write a simple shopping list.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -316,7 +316,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Use polite questions; read labels/lists; write a simple shopping list.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -340,7 +340,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe people and places respectfully; sequence familiar routines.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -360,7 +360,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe people and places respectfully; sequence familiar routines.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -380,7 +380,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe people and places respectfully; sequence familiar routines.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -400,7 +400,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe people and places respectfully; sequence familiar routines.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -420,7 +420,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe people and places respectfully; sequence familiar routines.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -444,7 +444,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Follow and give simple instructions; read procedural language; write steps.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -464,7 +464,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Follow and give simple instructions; read procedural language; write steps.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -484,7 +484,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Follow and give simple instructions; read procedural language; write steps.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -504,7 +504,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Follow and give simple instructions; read procedural language; write steps.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -524,7 +524,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Follow and give simple instructions; read procedural language; write steps.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -548,7 +548,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Talk about feelings and care; sequence a story; identify key details.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -568,7 +568,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Talk about feelings and care; sequence a story; identify key details.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -588,7 +588,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Talk about feelings and care; sequence a story; identify key details.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -608,7 +608,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Talk about feelings and care; sequence a story; identify key details.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -628,7 +628,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Talk about feelings and care; sequence a story; identify key details.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -652,7 +652,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Use time/order words; read a short timetable; write connected sentences.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -672,7 +672,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Use time/order words; read a short timetable; write connected sentences.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -692,7 +692,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Use time/order words; read a short timetable; write connected sentences.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -712,7 +712,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Use time/order words; read a short timetable; write connected sentences.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -732,7 +732,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Use time/order words; read a short timetable; write connected sentences.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -756,7 +756,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Listen to different views; describe actions; write a kind message.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -776,7 +776,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Listen to different views; describe actions; write a kind message.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -796,7 +796,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Listen to different views; describe actions; write a kind message.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -816,7 +816,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Listen to different views; describe actions; write a kind message.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -836,7 +836,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Listen to different views; describe actions; write a kind message.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -860,7 +860,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe features and habitats; sort information; write factual sentences.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -880,7 +880,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe features and habitats; sort information; write factual sentences.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -900,7 +900,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe features and habitats; sort information; write factual sentences.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -920,7 +920,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe features and habitats; sort information; write factual sentences.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -940,7 +940,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe features and habitats; sort information; write factual sentences.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -964,7 +964,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Observe and explain growth; read labels; record observations.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -984,7 +984,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Observe and explain growth; read labels; record observations.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1004,7 +1004,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Observe and explain growth; read labels; record observations.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1024,7 +1024,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Observe and explain growth; read labels; record observations.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1044,7 +1044,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Observe and explain growth; read labels; record observations.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1068,7 +1068,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe weather; compare observations; write a short weather report.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1088,7 +1088,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe weather; compare observations; write a short weather report.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1108,7 +1108,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe weather; compare observations; write a short weather report.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1128,7 +1128,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe weather; compare observations; write a short weather report.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1148,7 +1148,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe weather; compare observations; write a short weather report.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1172,7 +1172,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1192,7 +1192,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1212,7 +1212,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1232,7 +1232,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1252,7 +1252,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1276,7 +1276,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Explain rules; identify action words; write instructions.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1296,7 +1296,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Explain rules; identify action words; write instructions.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1316,7 +1316,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Explain rules; identify action words; write instructions.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1336,7 +1336,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Explain rules; identify action words; write instructions.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1356,7 +1356,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Explain rules; identify action words; write instructions.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1380,7 +1380,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe coastal places; read a short factual text; identify main ideas.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1400,7 +1400,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe coastal places; read a short factual text; identify main ideas.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1420,7 +1420,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe coastal places; read a short factual text; identify main ideas.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1440,7 +1440,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe coastal places; read a short factual text; identify main ideas.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1460,7 +1460,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Describe coastal places; read a short factual text; identify main ideas.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1484,7 +1484,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Give and follow directions; read signs; write safety instructions.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1504,7 +1504,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Give and follow directions; read signs; write safety instructions.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1524,7 +1524,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Give and follow directions; read signs; write safety instructions.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1544,7 +1544,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Give and follow directions; read signs; write safety instructions.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1564,7 +1564,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Give and follow directions; read signs; write safety instructions.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1588,7 +1588,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Retell events; identify characters and setting; create a changed ending.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1608,7 +1608,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Retell events; identify characters and setting; create a changed ending.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1628,7 +1628,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Retell events; identify characters and setting; create a changed ending.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1648,7 +1648,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Retell events; identify characters and setting; create a changed ending.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1668,7 +1668,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Retell events; identify characters and setting; create a changed ending.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1692,7 +1692,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1712,7 +1712,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1732,7 +1732,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1752,7 +1752,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1772,7 +1772,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1796,7 +1796,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1816,7 +1816,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1836,7 +1836,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1856,7 +1856,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1876,7 +1876,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1900,7 +1900,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Ask questions; read simple information; write a short description.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1920,7 +1920,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Ask questions; read simple information; write a short description.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1940,7 +1940,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Ask questions; read simple information; write a short description.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1960,7 +1960,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Ask questions; read simple information; write a short description.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -1980,7 +1980,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Ask questions; read simple information; write a short description.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2004,7 +2004,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Explain a process; use sequence words; write a simple procedure.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2024,7 +2024,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Explain a process; use sequence words; write a simple procedure.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2044,7 +2044,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Explain a process; use sequence words; write a simple procedure.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2064,7 +2064,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Explain a process; use sequence words; write a simple procedure.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2084,7 +2084,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Explain a process; use sequence words; write a simple procedure.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2108,7 +2108,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2128,7 +2128,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2148,7 +2148,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2168,7 +2168,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2188,7 +2188,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2212,7 +2212,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2232,7 +2232,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2252,7 +2252,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2272,7 +2272,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2292,7 +2292,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2316,7 +2316,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
 **Teacher-led activity:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2336,7 +2336,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
 **Teacher-led activity:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2356,7 +2356,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
 **Teacher-led activity:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2376,7 +2376,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
 **Teacher-led activity:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
@@ -2396,7 +2396,7 @@ The Fiji Ministry's Policy on Free Educational Resources lists *English Communic
 **Shared objective:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
 **Teacher-led activity:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Worked example:** Teacher models one theme-related example aloud and visually, thinks through the steps, then completes a second example with the class. Select words, text and spelling patterns already taught in the authorised school sequence.
 
