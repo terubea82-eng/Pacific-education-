@@ -38,7 +38,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -63,7 +63,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -88,7 +88,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -113,7 +113,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -138,7 +138,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Myself, name and identity, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -175,7 +175,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -200,7 +200,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -225,7 +225,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -250,7 +250,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -275,7 +275,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Greetings and classroom language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -312,7 +312,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -337,7 +337,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -362,7 +362,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -387,7 +387,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -412,7 +412,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Listening carefully and following directions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -449,7 +449,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -474,7 +474,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -499,7 +499,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -524,7 +524,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -549,7 +549,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Sounds around us and rhyme, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -586,7 +586,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -611,7 +611,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -636,7 +636,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -661,7 +661,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -686,7 +686,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Letter Ss and short a review, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -723,7 +723,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -748,7 +748,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -773,7 +773,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -798,7 +798,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -823,7 +823,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Print concepts and alphabet knowledge, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -860,7 +860,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -885,7 +885,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -910,7 +910,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -935,7 +935,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -960,7 +960,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Beginning sounds and oral blending, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -997,7 +997,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1022,7 +1022,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1047,7 +1047,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1072,7 +1072,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1097,7 +1097,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about taught correspondences, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1134,7 +1134,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1159,7 +1159,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1184,7 +1184,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1209,7 +1209,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1234,7 +1234,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about High-frequency words in context, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1271,7 +1271,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1296,7 +1296,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1321,7 +1321,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1346,7 +1346,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1371,7 +1371,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about people and places, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1408,7 +1408,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1433,7 +1433,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1458,7 +1458,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1483,7 +1483,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1508,7 +1508,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about objects and actions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1545,7 +1545,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1570,7 +1570,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1595,7 +1595,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1620,7 +1620,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1645,7 +1645,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Sentence meaning and punctuation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1682,7 +1682,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1707,7 +1707,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1732,7 +1732,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1757,7 +1757,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1782,7 +1782,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about characters and setting, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1819,7 +1819,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1844,7 +1844,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1869,7 +1869,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1894,7 +1894,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1919,7 +1919,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about sequence and retell, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1956,7 +1956,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -1981,7 +1981,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2006,7 +2006,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2031,7 +2031,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2056,7 +2056,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about literal questions, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2093,7 +2093,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2118,7 +2118,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2143,7 +2143,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2168,7 +2168,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2193,7 +2193,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about prediction and connection, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2230,7 +2230,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2255,7 +2255,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2280,7 +2280,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2305,7 +2305,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2330,7 +2330,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Describing words and expanded noun groups, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2367,7 +2367,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2392,7 +2392,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2417,7 +2417,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2442,7 +2442,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2467,7 +2467,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Questions and complete responses, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2504,7 +2504,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2529,7 +2529,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2554,7 +2554,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2579,7 +2579,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2604,7 +2604,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about plan and compose a sentence, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2641,7 +2641,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2666,7 +2666,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2691,7 +2691,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2716,7 +2716,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2741,7 +2741,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about recount a familiar experience, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2778,7 +2778,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2803,7 +2803,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2828,7 +2828,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2853,7 +2853,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2878,7 +2878,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about instructions and procedural language, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2915,7 +2915,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2940,7 +2940,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2965,7 +2965,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -2990,7 +2990,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -3015,7 +3015,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about description and information, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -3052,7 +3052,7 @@
 **Teacher model:** Teacher models the target language/skill; learners listen, point to or identify examples.
 
 **Student worksheet/activity:** Circle, point to, match or sort the target examples. Show the response through speech, sign, gesture, AAC, drawing or writing.
-**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
+**PacEdu working achievement indicator:** The learner can identify or communicate a taught sound, word or idea connected with Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -3077,7 +3077,7 @@
 **Teacher model:** Teacher demonstrates one worked example aloud, thinking through the steps.
 
 **Student worksheet/activity:** Complete a guided example using objects, picture cards, word cards or letter tiles. Explain, show or dictate one step in the example.
-**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
+**PacEdu working achievement indicator:** The learner can complete a modelled literacy task using taught patterns related to Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -3102,7 +3102,7 @@
 **Teacher model:** Teacher leads a partner or small-group task and models turn-taking.
 
 **Student worksheet/activity:** Complete two or three scaffolded practice items connected to the same target. Read, build, sequence, answer or compose according to the weekly objective.
-**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
+**PacEdu working achievement indicator:** The learner can read, listen to or identify information about Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -3127,7 +3127,7 @@
 **Teacher model:** Teacher gives a fresh example and reminds learners of the success criteria.
 
 **Student worksheet/activity:** Complete a short application task with accessible response options. Create a new example, sentence, retell, answer or labelled representation.
-**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
+**PacEdu working achievement indicator:** The learner can use a taught word, sentence feature or sequence to communicate about Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
@@ -3152,7 +3152,7 @@
 **Teacher model:** Teacher revisits the week's learning and models one final check item.
 
 **Student worksheet/activity:** Complete a short review, then select one piece of work for the portfolio. Demonstrate the week's target and say/dictate/write one reflection.
-**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
+**PacEdu working achievement indicator:** The learner can create or improve a short response about Review, fluency and portfolio presentation, using only the sounds, words and spelling patterns taught in the approved sequence.
 
 **Worked example:** Teacher completes one example using this week's target, says or shows each step, then completes a second example together with learners. Select the actual word, sound, text or sentence from the current approved teaching sequence; do not introduce untaught correspondences.
 
