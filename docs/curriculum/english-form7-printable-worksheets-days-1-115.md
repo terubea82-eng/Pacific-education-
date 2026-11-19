@@ -2,7 +2,7 @@
 
 **Status:** ORIGINAL PACEDU DRAFT — `PENDING_TEACHER_REVIEW` — `PENDING_OFFICIAL_INDICATOR_VERIFICATION`. Not a Ministry-issued or examination-authorized worksheet pack.
 
-**Secondary safeguard:** Confirm the current authorized Form 7 syllabus, cohort, prescribed texts, assessment specifications and criteria separately. Do not apply the Forms 3–4 model to Forms 5–7 without official confirmation.
+**Secondary safeguard:** Confirm the current authorized Form 7 syllabus, cohort, prescribed texts, assessment specifications and criteria separately. Forms 5–7 must not be treated as Forms 3–4.
 
 **Printing:** Each day has four separate pathway versions. Print only the selected learner's version. Physical Android Chrome print preview must confirm one selected worksheet per page.
 
@@ -15,7 +15,7 @@
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -47,7 +47,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -79,7 +79,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -111,7 +111,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -143,7 +143,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -175,7 +175,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -207,7 +207,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -239,7 +239,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -271,7 +271,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -303,7 +303,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -335,7 +335,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -367,7 +367,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -399,7 +399,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -431,7 +431,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -463,7 +463,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -495,7 +495,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -527,7 +527,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -559,7 +559,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -591,7 +591,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -623,7 +623,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -655,7 +655,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -687,7 +687,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -719,7 +719,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -751,7 +751,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -783,7 +783,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -815,7 +815,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -847,7 +847,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -879,7 +879,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -911,7 +911,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -943,7 +943,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -975,7 +975,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1007,7 +1007,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1039,7 +1039,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1071,7 +1071,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1103,7 +1103,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1135,7 +1135,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1167,7 +1167,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1199,7 +1199,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1231,7 +1231,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1263,7 +1263,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1295,7 +1295,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1327,7 +1327,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1359,7 +1359,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1391,7 +1391,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1423,7 +1423,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1455,7 +1455,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1487,7 +1487,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1519,7 +1519,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1551,7 +1551,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1583,7 +1583,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1615,7 +1615,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1647,7 +1647,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1679,7 +1679,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1711,7 +1711,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1743,7 +1743,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1775,7 +1775,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1807,7 +1807,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1839,7 +1839,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1871,7 +1871,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1903,7 +1903,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1935,7 +1935,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1967,7 +1967,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -1999,7 +1999,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2031,7 +2031,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2063,7 +2063,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2095,7 +2095,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2127,7 +2127,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2159,7 +2159,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2191,7 +2191,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2223,7 +2223,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2255,7 +2255,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2287,7 +2287,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2319,7 +2319,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2351,7 +2351,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2383,7 +2383,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2415,7 +2415,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2447,7 +2447,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2479,7 +2479,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2511,7 +2511,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2543,7 +2543,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2575,7 +2575,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2607,7 +2607,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2639,7 +2639,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2671,7 +2671,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2703,7 +2703,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2735,7 +2735,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2767,7 +2767,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2799,7 +2799,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2831,7 +2831,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2863,7 +2863,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2895,7 +2895,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2927,7 +2927,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2959,7 +2959,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -2991,7 +2991,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3023,7 +3023,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3055,7 +3055,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3087,7 +3087,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3119,7 +3119,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3151,7 +3151,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3183,7 +3183,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3215,7 +3215,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3247,7 +3247,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3279,7 +3279,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3311,7 +3311,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3343,7 +3343,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3375,7 +3375,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3407,7 +3407,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3439,7 +3439,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3471,7 +3471,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3503,7 +3503,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3535,7 +3535,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3567,7 +3567,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3599,7 +3599,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3631,7 +3631,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3663,7 +3663,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3695,7 +3695,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3727,7 +3727,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3759,7 +3759,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3791,7 +3791,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3823,7 +3823,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3855,7 +3855,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3887,7 +3887,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3919,7 +3919,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3951,7 +3951,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -3983,7 +3983,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4015,7 +4015,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4047,7 +4047,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4079,7 +4079,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4111,7 +4111,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4143,7 +4143,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4175,7 +4175,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4207,7 +4207,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4239,7 +4239,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4271,7 +4271,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4303,7 +4303,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4335,7 +4335,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4367,7 +4367,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4399,7 +4399,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4431,7 +4431,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4463,7 +4463,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4495,7 +4495,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4527,7 +4527,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4559,7 +4559,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4591,7 +4591,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4623,7 +4623,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4655,7 +4655,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4687,7 +4687,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4719,7 +4719,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4751,7 +4751,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4783,7 +4783,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4815,7 +4815,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4847,7 +4847,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4879,7 +4879,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4911,7 +4911,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4943,7 +4943,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -4975,7 +4975,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5007,7 +5007,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5039,7 +5039,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5071,7 +5071,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5103,7 +5103,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5135,7 +5135,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5167,7 +5167,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5199,7 +5199,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5231,7 +5231,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5263,7 +5263,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5295,7 +5295,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5327,7 +5327,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5359,7 +5359,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5391,7 +5391,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5423,7 +5423,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5455,7 +5455,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5487,7 +5487,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5519,7 +5519,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5551,7 +5551,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5583,7 +5583,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5615,7 +5615,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5647,7 +5647,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5679,7 +5679,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5711,7 +5711,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5743,7 +5743,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5775,7 +5775,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5807,7 +5807,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5839,7 +5839,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5871,7 +5871,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5903,7 +5903,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5935,7 +5935,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5967,7 +5967,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -5999,7 +5999,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6031,7 +6031,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6063,7 +6063,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6095,7 +6095,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6127,7 +6127,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6159,7 +6159,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6191,7 +6191,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6223,7 +6223,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6255,7 +6255,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6287,7 +6287,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6319,7 +6319,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6351,7 +6351,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6383,7 +6383,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6415,7 +6415,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6447,7 +6447,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6479,7 +6479,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6511,7 +6511,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6543,7 +6543,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6575,7 +6575,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6607,7 +6607,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6639,7 +6639,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6671,7 +6671,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6703,7 +6703,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6735,7 +6735,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6767,7 +6767,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6799,7 +6799,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6831,7 +6831,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6863,7 +6863,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6895,7 +6895,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6927,7 +6927,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6959,7 +6959,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -6991,7 +6991,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7023,7 +7023,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7055,7 +7055,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7087,7 +7087,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7119,7 +7119,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7151,7 +7151,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7183,7 +7183,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7215,7 +7215,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7247,7 +7247,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7279,7 +7279,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7311,7 +7311,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7343,7 +7343,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7375,7 +7375,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7407,7 +7407,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7439,7 +7439,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7471,7 +7471,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7503,7 +7503,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7535,7 +7535,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7567,7 +7567,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7599,7 +7599,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7631,7 +7631,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7663,7 +7663,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7695,7 +7695,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7727,7 +7727,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7759,7 +7759,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7791,7 +7791,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7823,7 +7823,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7855,7 +7855,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7887,7 +7887,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7919,7 +7919,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7951,7 +7951,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -7983,7 +7983,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8015,7 +8015,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8047,7 +8047,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8079,7 +8079,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8111,7 +8111,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8143,7 +8143,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8175,7 +8175,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8207,7 +8207,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8239,7 +8239,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8271,7 +8271,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8303,7 +8303,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8335,7 +8335,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8367,7 +8367,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8399,7 +8399,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8431,7 +8431,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8463,7 +8463,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8495,7 +8495,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8527,7 +8527,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8559,7 +8559,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8591,7 +8591,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8623,7 +8623,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8655,7 +8655,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8687,7 +8687,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8719,7 +8719,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8751,7 +8751,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8783,7 +8783,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8815,7 +8815,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8847,7 +8847,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8879,7 +8879,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8911,7 +8911,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8943,7 +8943,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -8975,7 +8975,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9007,7 +9007,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9039,7 +9039,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9071,7 +9071,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9103,7 +9103,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9135,7 +9135,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9167,7 +9167,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9199,7 +9199,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9231,7 +9231,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9263,7 +9263,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9295,7 +9295,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9327,7 +9327,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9359,7 +9359,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9391,7 +9391,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9423,7 +9423,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9455,7 +9455,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9487,7 +9487,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9519,7 +9519,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9551,7 +9551,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9583,7 +9583,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9615,7 +9615,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9647,7 +9647,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9679,7 +9679,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9711,7 +9711,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9743,7 +9743,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9775,7 +9775,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9807,7 +9807,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9839,7 +9839,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9871,7 +9871,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9903,7 +9903,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9935,7 +9935,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9967,7 +9967,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -9999,7 +9999,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10031,7 +10031,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10063,7 +10063,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10095,7 +10095,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10127,7 +10127,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10159,7 +10159,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10191,7 +10191,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10223,7 +10223,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10255,7 +10255,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10287,7 +10287,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10319,7 +10319,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10351,7 +10351,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10383,7 +10383,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10415,7 +10415,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10447,7 +10447,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10479,7 +10479,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10511,7 +10511,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10543,7 +10543,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10575,7 +10575,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10607,7 +10607,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10639,7 +10639,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10671,7 +10671,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10703,7 +10703,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10735,7 +10735,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10767,7 +10767,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10799,7 +10799,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10831,7 +10831,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10863,7 +10863,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10895,7 +10895,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10927,7 +10927,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10959,7 +10959,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -10991,7 +10991,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11023,7 +11023,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11055,7 +11055,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11087,7 +11087,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11119,7 +11119,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11151,7 +11151,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11183,7 +11183,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11215,7 +11215,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11247,7 +11247,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11279,7 +11279,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11311,7 +11311,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11343,7 +11343,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11375,7 +11375,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11407,7 +11407,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11439,7 +11439,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11471,7 +11471,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11503,7 +11503,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11535,7 +11535,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11567,7 +11567,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11599,7 +11599,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11631,7 +11631,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11663,7 +11663,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11695,7 +11695,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11727,7 +11727,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11759,7 +11759,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11791,7 +11791,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11823,7 +11823,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11855,7 +11855,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11887,7 +11887,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11919,7 +11919,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11951,7 +11951,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -11983,7 +11983,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12015,7 +12015,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12047,7 +12047,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12079,7 +12079,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12111,7 +12111,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12143,7 +12143,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12175,7 +12175,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12207,7 +12207,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12239,7 +12239,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12271,7 +12271,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12303,7 +12303,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12335,7 +12335,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12367,7 +12367,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12399,7 +12399,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12431,7 +12431,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12463,7 +12463,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12495,7 +12495,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12527,7 +12527,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12559,7 +12559,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12591,7 +12591,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12623,7 +12623,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12655,7 +12655,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12687,7 +12687,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12719,7 +12719,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12751,7 +12751,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12783,7 +12783,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12815,7 +12815,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12847,7 +12847,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12879,7 +12879,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12911,7 +12911,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12943,7 +12943,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -12975,7 +12975,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13007,7 +13007,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13039,7 +13039,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13071,7 +13071,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13103,7 +13103,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13135,7 +13135,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13167,7 +13167,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13199,7 +13199,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13231,7 +13231,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13263,7 +13263,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13295,7 +13295,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13327,7 +13327,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13359,7 +13359,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13391,7 +13391,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13423,7 +13423,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13455,7 +13455,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13487,7 +13487,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13519,7 +13519,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13551,7 +13551,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13583,7 +13583,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13615,7 +13615,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13647,7 +13647,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13679,7 +13679,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13711,7 +13711,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13743,7 +13743,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13775,7 +13775,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13807,7 +13807,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13839,7 +13839,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13871,7 +13871,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13903,7 +13903,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13935,7 +13935,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13967,7 +13967,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -13999,7 +13999,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14031,7 +14031,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14063,7 +14063,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14095,7 +14095,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14127,7 +14127,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14159,7 +14159,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14191,7 +14191,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14223,7 +14223,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14255,7 +14255,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14287,7 +14287,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14319,7 +14319,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14351,7 +14351,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14383,7 +14383,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14415,7 +14415,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14447,7 +14447,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14479,7 +14479,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14511,7 +14511,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14543,7 +14543,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14575,7 +14575,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14607,7 +14607,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14639,7 +14639,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14671,7 +14671,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
@@ -14703,7 +14703,7 @@ ____________________________________________________________________
 
 **PacEdu working achievement indicator:** 
 
-**Text / source used:** Teacher records the authorized text, author/source, edition and page: ____________________
+**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
 
 **Task:** 
 
