@@ -30,7 +30,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about My name, identity and belonging, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -49,7 +49,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with My name, identity and belonging, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -68,7 +68,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about My name, identity and belonging, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -87,7 +87,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about My name, identity and belonging, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -106,7 +106,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about My name, identity and belonging, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -133,7 +133,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Greetings and friendly conversations, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -152,7 +152,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Greetings and friendly conversations, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -171,7 +171,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Greetings and friendly conversations, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -190,7 +190,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Greetings and friendly conversations, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -209,7 +209,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Greetings and friendly conversations, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -236,7 +236,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Listening to familiar sounds, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -255,7 +255,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Listening to familiar sounds, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -274,7 +274,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Listening to familiar sounds, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -293,7 +293,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Listening to familiar sounds, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -312,7 +312,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Listening to familiar sounds, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -339,7 +339,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Following simple instructions, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -358,7 +358,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Following simple instructions, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -377,7 +377,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Following simple instructions, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -396,7 +396,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Following simple instructions, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -415,7 +415,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Following simple instructions, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -442,7 +442,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about People who care for us, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -461,7 +461,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with People who care for us, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -480,7 +480,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about People who care for us, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -499,7 +499,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about People who care for us, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -518,7 +518,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about People who care for us, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -545,7 +545,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Naming and describing familiar objects, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -564,7 +564,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Naming and describing familiar objects, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -583,7 +583,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Naming and describing familiar objects, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -602,7 +602,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Naming and describing familiar objects, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -621,7 +621,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Naming and describing familiar objects, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -648,7 +648,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Songs, rhythm and rhyme, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -667,7 +667,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Songs, rhythm and rhyme, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -686,7 +686,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Songs, rhythm and rhyme, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -705,7 +705,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Songs, rhythm and rhyme, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -724,7 +724,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Songs, rhythm and rhyme, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -751,7 +751,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about characters, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -770,7 +770,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with characters, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -789,7 +789,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about characters, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -808,7 +808,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about characters, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -827,7 +827,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about characters, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -854,7 +854,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about events and retelling, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -873,7 +873,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with events and retelling, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -892,7 +892,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about events and retelling, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -911,7 +911,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about events and retelling, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -930,7 +930,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about events and retelling, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -957,7 +957,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Books and how they work, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -976,7 +976,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Books and how they work, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -995,7 +995,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Books and how they work, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1014,7 +1014,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Books and how they work, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1033,7 +1033,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Books and how they work, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1060,7 +1060,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Pictures carry meaning, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1079,7 +1079,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Pictures carry meaning, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1098,7 +1098,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Pictures carry meaning, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1117,7 +1117,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Pictures carry meaning, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1136,7 +1136,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Pictures carry meaning, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1163,7 +1163,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Print in our environment, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1182,7 +1182,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Print in our environment, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1201,7 +1201,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Print in our environment, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1220,7 +1220,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Print in our environment, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1239,7 +1239,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Print in our environment, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1266,7 +1266,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Rhyme and repeated language, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1285,7 +1285,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Rhyme and repeated language, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1304,7 +1304,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Rhyme and repeated language, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1323,7 +1323,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Rhyme and repeated language, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1342,7 +1342,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Rhyme and repeated language, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1369,7 +1369,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Syllables and beats in words, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1388,7 +1388,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Syllables and beats in words, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1407,7 +1407,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Syllables and beats in words, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1426,7 +1426,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Syllables and beats in words, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1445,7 +1445,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Syllables and beats in words, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1472,7 +1472,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Listening for first sounds, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1491,7 +1491,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Listening for first sounds, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1510,7 +1510,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Listening for first sounds, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1529,7 +1529,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Listening for first sounds, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1548,7 +1548,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Listening for first sounds, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1575,7 +1575,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Letters in meaningful contexts, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1594,7 +1594,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Letters in meaningful contexts, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1613,7 +1613,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Letters in meaningful contexts, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1632,7 +1632,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Letters in meaningful contexts, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1651,7 +1651,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Letters in meaningful contexts, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1678,7 +1678,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Story language and new vocabulary, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1697,7 +1697,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Story language and new vocabulary, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1716,7 +1716,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Story language and new vocabulary, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1735,7 +1735,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Story language and new vocabulary, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1754,7 +1754,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Story language and new vocabulary, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1781,7 +1781,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Questions and answering, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1800,7 +1800,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Questions and answering, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1819,7 +1819,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Questions and answering, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1838,7 +1838,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Questions and answering, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1857,7 +1857,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Questions and answering, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1884,7 +1884,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Speaking to share an idea, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1903,7 +1903,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Speaking to share an idea, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1922,7 +1922,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Speaking to share an idea, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1941,7 +1941,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Speaking to share an idea, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1960,7 +1960,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Speaking to share an idea, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -1987,7 +1987,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Drawing to communicate, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2006,7 +2006,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Drawing to communicate, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2025,7 +2025,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Drawing to communicate, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2044,7 +2044,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Drawing to communicate, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2063,7 +2063,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Drawing to communicate, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2090,7 +2090,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Purposeful mark-making, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2109,7 +2109,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Purposeful mark-making, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2128,7 +2128,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Purposeful mark-making, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2147,7 +2147,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Purposeful mark-making, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2166,7 +2166,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Purposeful mark-making, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2193,7 +2193,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about name and message, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2212,7 +2212,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with name and message, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2231,7 +2231,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about name and message, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2250,7 +2250,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about name and message, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2269,7 +2269,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about name and message, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2296,7 +2296,7 @@
 **Teacher activity:** Introduce the weekly idea through a welcoming circle and a short play invitation. Welcome each child by name; invite them to find, point to, say or show their name card.
 
 **Child activity:** Choose or match own name/photo card; communicate one thing about self.
-**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
+**PacEdu working achievement indicator:** The child can choose, match or communicate one familiar idea about Celebrate and share learning, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2315,7 +2315,7 @@
 **Teacher activity:** Build shared understanding through sensory exploration and repeated language. Model the week's key words/concept with real objects, pictures, gestures and a short oral model.
 
 **Child activity:** Explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
-**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
+**PacEdu working achievement indicator:** The child can explore and identify a sound, object, picture or word connected with Celebrate and share learning, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2334,7 +2334,7 @@
 **Teacher activity:** Practise the concept in a child-led or small-group game. Set up a short guided game or role-play that practises the weekly concept.
 
 **Child activity:** Take turns in the game; repeat, sort, sequence, act or communicate a choice.
-**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
+**PacEdu working achievement indicator:** The child can take a turn and respond to a familiar prompt about Celebrate and share learning, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2353,7 +2353,7 @@
 **Teacher activity:** Apply the concept through a creative response. Model a simple way to show learning through talk, movement, picture, construction or marks.
 
 **Child activity:** Make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
-**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
+**PacEdu working achievement indicator:** The child can represent an idea through play, movement, drawing or communication about Celebrate and share learning, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
@@ -2372,7 +2372,7 @@
 **Teacher activity:** Consolidate through choice, recall and a fresh observation. Revisit the week's story, song, objects or language; invite child choice and recall.
 
 **Child activity:** Choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
-**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
+**PacEdu working achievement indicator:** The child can choose and show one thing learned about Celebrate and share learning, using an individual communication or play-based response.
 
 **Copper:** Adult models the action; child responds by looking, touching, matching, moving, choosing or using their preferred communication.
 
