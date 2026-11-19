@@ -4,9 +4,9 @@
 
 ## Programme and secondary curriculum safeguards
 - 23 planning weeks × 5 learning days = 115 planned days; reconcile with the approved school calendar.
-- Form 3 is planned separately. Do not copy Forms 3–4 Years 9–10 RSEC requirements into Forms 5–7. Confirm the current authorized syllabus, prescribed texts, assessment specifications and cohort before use.
+- Form 3 has a distinct demand: a short literary, media or non-fiction text; expected product: a structured paragraph or short oral presentation. This draft must be checked against the current authorized cohort syllabus and assessment specification.
+- Do not copy Forms 3–4 Years 9–10 RSEC requirements into Forms 5–7. Confirm senior Form 5, 6 and 7 syllabi, prescribed texts and assessment criteria separately.
 - Four pathways share the same daily objective; scaffolding and independence vary, not the intended learning outcome.
-- Use the school's current authorized texts and assessment criteria. Any placeholder text must be replaced by a teacher-approved source.
 - Accept appropriate signed, AAC, oral, dictated or written communication. Do not score accent or disability-related speech differences as errors.
 
 ## Daily activities
@@ -15,9 +15,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to identity, language and society.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to identity, language and society, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about identity, language and society; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about identity, language and society; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about identity, language and society: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -29,11 +29,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new identity, language and society text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new identity, language and society text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -43,11 +43,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to identity, language and society.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to identity, language and society, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about identity, language and society; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about identity, language and society; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -57,11 +57,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new identity, language and society text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new identity, language and society text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -71,11 +71,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to identity, language and society.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to identity, language and society, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about identity, language and society; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about identity, language and society; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -85,11 +85,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new identity, language and society text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new identity, language and society text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -99,9 +99,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to identity, language and society.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to identity, language and society, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about identity, language and society; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about identity, language and society; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on identity, language and society; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -113,11 +113,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new identity, language and society text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new identity, language and society text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -127,9 +127,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to identity, language and society.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to identity, language and society, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about identity, language and society; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about identity, language and society; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on identity, language and society; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -141,11 +141,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new identity, language and society text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new identity, language and society text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -155,9 +155,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to community narratives and oral histories.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to community narratives and oral histories, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to community narratives and oral histories, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about community narratives and oral histories; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about community narratives and oral histories; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about community narratives and oral histories: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -169,11 +169,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new community narratives and oral histories text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new community narratives and oral histories text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -183,11 +183,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to community narratives and oral histories.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to community narratives and oral histories, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to community narratives and oral histories, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about community narratives and oral histories; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about community narratives and oral histories; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -197,11 +197,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new community narratives and oral histories text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new community narratives and oral histories text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -211,11 +211,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to community narratives and oral histories.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to community narratives and oral histories, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to community narratives and oral histories, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about community narratives and oral histories; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about community narratives and oral histories; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -225,11 +225,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new community narratives and oral histories text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new community narratives and oral histories text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -239,9 +239,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to community narratives and oral histories.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to community narratives and oral histories, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to community narratives and oral histories, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about community narratives and oral histories; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about community narratives and oral histories; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on community narratives and oral histories; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -253,11 +253,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new community narratives and oral histories text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new community narratives and oral histories text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -267,9 +267,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to community narratives and oral histories.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to community narratives and oral histories, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to community narratives and oral histories, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about community narratives and oral histories; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about community narratives and oral histories; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on community narratives and oral histories; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -281,11 +281,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new community narratives and oral histories text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new community narratives and oral histories text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -295,9 +295,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to place, environment and belonging.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to place, environment and belonging, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to place, environment and belonging, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about place, environment and belonging; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about place, environment and belonging; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about place, environment and belonging: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -309,11 +309,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new place, environment and belonging text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new place, environment and belonging text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -323,11 +323,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to place, environment and belonging.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to place, environment and belonging, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to place, environment and belonging, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about place, environment and belonging; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about place, environment and belonging; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -337,11 +337,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new place, environment and belonging text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new place, environment and belonging text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -351,11 +351,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to place, environment and belonging.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to place, environment and belonging, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to place, environment and belonging, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about place, environment and belonging; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about place, environment and belonging; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -365,11 +365,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new place, environment and belonging text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new place, environment and belonging text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -379,9 +379,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to place, environment and belonging.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to place, environment and belonging, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to place, environment and belonging, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about place, environment and belonging; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about place, environment and belonging; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on place, environment and belonging; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -393,11 +393,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new place, environment and belonging text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new place, environment and belonging text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -407,9 +407,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to place, environment and belonging.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to place, environment and belonging, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to place, environment and belonging, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about place, environment and belonging; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about place, environment and belonging; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on place, environment and belonging; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -421,11 +421,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new place, environment and belonging text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new place, environment and belonging text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -435,9 +435,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to power, voice and representation.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to power, voice and representation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to power, voice and representation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about power, voice and representation; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about power, voice and representation; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about power, voice and representation: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -449,11 +449,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new power, voice and representation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new power, voice and representation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -463,11 +463,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to power, voice and representation.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to power, voice and representation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to power, voice and representation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about power, voice and representation; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about power, voice and representation; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -477,11 +477,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new power, voice and representation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new power, voice and representation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -491,11 +491,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to power, voice and representation.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to power, voice and representation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to power, voice and representation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about power, voice and representation; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about power, voice and representation; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -505,11 +505,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new power, voice and representation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new power, voice and representation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -519,9 +519,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to power, voice and representation.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to power, voice and representation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to power, voice and representation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about power, voice and representation; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about power, voice and representation; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on power, voice and representation; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -533,11 +533,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new power, voice and representation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new power, voice and representation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -547,9 +547,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to power, voice and representation.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to power, voice and representation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to power, voice and representation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about power, voice and representation; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about power, voice and representation; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on power, voice and representation; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -561,11 +561,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new power, voice and representation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new power, voice and representation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -575,9 +575,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to culture, tradition and change.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to culture, tradition and change, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to culture, tradition and change, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about culture, tradition and change; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about culture, tradition and change; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about culture, tradition and change: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -589,11 +589,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new culture, tradition and change text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new culture, tradition and change text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -603,11 +603,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to culture, tradition and change.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to culture, tradition and change, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to culture, tradition and change, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about culture, tradition and change; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about culture, tradition and change; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -617,11 +617,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new culture, tradition and change text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new culture, tradition and change text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -631,11 +631,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to culture, tradition and change.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to culture, tradition and change, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to culture, tradition and change, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about culture, tradition and change; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about culture, tradition and change; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -645,11 +645,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new culture, tradition and change text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new culture, tradition and change text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -659,9 +659,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to culture, tradition and change.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to culture, tradition and change, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to culture, tradition and change, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about culture, tradition and change; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about culture, tradition and change; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on culture, tradition and change; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -673,11 +673,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new culture, tradition and change text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new culture, tradition and change text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -687,9 +687,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to culture, tradition and change.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to culture, tradition and change, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to culture, tradition and change, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about culture, tradition and change; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about culture, tradition and change; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on culture, tradition and change; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -701,11 +701,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new culture, tradition and change text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new culture, tradition and change text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -715,9 +715,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to climate, evidence and public debate.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to climate, evidence and public debate, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to climate, evidence and public debate, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about climate, evidence and public debate; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about climate, evidence and public debate; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about climate, evidence and public debate: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -729,11 +729,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new climate, evidence and public debate text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new climate, evidence and public debate text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -743,11 +743,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to climate, evidence and public debate.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to climate, evidence and public debate, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to climate, evidence and public debate, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about climate, evidence and public debate; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about climate, evidence and public debate; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -757,11 +757,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new climate, evidence and public debate text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new climate, evidence and public debate text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -771,11 +771,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to climate, evidence and public debate.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to climate, evidence and public debate, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to climate, evidence and public debate, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about climate, evidence and public debate; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about climate, evidence and public debate; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -785,11 +785,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new climate, evidence and public debate text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new climate, evidence and public debate text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -799,9 +799,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to climate, evidence and public debate.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to climate, evidence and public debate, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to climate, evidence and public debate, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about climate, evidence and public debate; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about climate, evidence and public debate; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on climate, evidence and public debate; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -813,11 +813,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new climate, evidence and public debate text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new climate, evidence and public debate text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -827,9 +827,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to climate, evidence and public debate.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to climate, evidence and public debate, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to climate, evidence and public debate, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about climate, evidence and public debate; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about climate, evidence and public debate; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on climate, evidence and public debate; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -841,11 +841,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new climate, evidence and public debate text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new climate, evidence and public debate text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -855,9 +855,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to science communication and ethics.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to science communication and ethics, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to science communication and ethics, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about science communication and ethics; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about science communication and ethics; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about science communication and ethics: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -869,11 +869,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new science communication and ethics text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new science communication and ethics text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -883,11 +883,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to science communication and ethics.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to science communication and ethics, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to science communication and ethics, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about science communication and ethics; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about science communication and ethics; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -897,11 +897,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new science communication and ethics text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new science communication and ethics text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -911,11 +911,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to science communication and ethics.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to science communication and ethics, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to science communication and ethics, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about science communication and ethics; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about science communication and ethics; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -925,11 +925,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new science communication and ethics text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new science communication and ethics text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -939,9 +939,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to science communication and ethics.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to science communication and ethics, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to science communication and ethics, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about science communication and ethics; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about science communication and ethics; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on science communication and ethics; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -953,11 +953,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new science communication and ethics text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new science communication and ethics text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -967,9 +967,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to science communication and ethics.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to science communication and ethics, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to science communication and ethics, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about science communication and ethics; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about science communication and ethics; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on science communication and ethics; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -981,11 +981,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new science communication and ethics text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new science communication and ethics text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -995,9 +995,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to media literacy and misinformation.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to media literacy and misinformation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to media literacy and misinformation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about media literacy and misinformation; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about media literacy and misinformation; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about media literacy and misinformation: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1009,11 +1009,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new media literacy and misinformation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new media literacy and misinformation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1023,11 +1023,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to media literacy and misinformation.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to media literacy and misinformation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to media literacy and misinformation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about media literacy and misinformation; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about media literacy and misinformation; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -1037,11 +1037,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new media literacy and misinformation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new media literacy and misinformation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1051,11 +1051,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to media literacy and misinformation.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to media literacy and misinformation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to media literacy and misinformation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about media literacy and misinformation; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about media literacy and misinformation; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -1065,11 +1065,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new media literacy and misinformation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new media literacy and misinformation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1079,9 +1079,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to media literacy and misinformation.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to media literacy and misinformation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to media literacy and misinformation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about media literacy and misinformation; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about media literacy and misinformation; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on media literacy and misinformation; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1093,11 +1093,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new media literacy and misinformation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new media literacy and misinformation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1107,9 +1107,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to media literacy and misinformation.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to media literacy and misinformation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to media literacy and misinformation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about media literacy and misinformation; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about media literacy and misinformation; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on media literacy and misinformation; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1121,11 +1121,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new media literacy and misinformation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new media literacy and misinformation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1135,9 +1135,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to health, wellbeing and public communication.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to health, wellbeing and public communication, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to health, wellbeing and public communication, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about health, wellbeing and public communication; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about health, wellbeing and public communication; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about health, wellbeing and public communication: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1149,11 +1149,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new health, wellbeing and public communication text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new health, wellbeing and public communication text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1163,11 +1163,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to health, wellbeing and public communication.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to health, wellbeing and public communication, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to health, wellbeing and public communication, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about health, wellbeing and public communication; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about health, wellbeing and public communication; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -1177,11 +1177,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new health, wellbeing and public communication text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new health, wellbeing and public communication text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1191,11 +1191,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to health, wellbeing and public communication.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to health, wellbeing and public communication, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to health, wellbeing and public communication, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about health, wellbeing and public communication; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about health, wellbeing and public communication; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -1205,11 +1205,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new health, wellbeing and public communication text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new health, wellbeing and public communication text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1219,9 +1219,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to health, wellbeing and public communication.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to health, wellbeing and public communication, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to health, wellbeing and public communication, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about health, wellbeing and public communication; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about health, wellbeing and public communication; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on health, wellbeing and public communication; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1233,11 +1233,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new health, wellbeing and public communication text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new health, wellbeing and public communication text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1247,9 +1247,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to health, wellbeing and public communication.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to health, wellbeing and public communication, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to health, wellbeing and public communication, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about health, wellbeing and public communication; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about health, wellbeing and public communication; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on health, wellbeing and public communication; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1261,11 +1261,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new health, wellbeing and public communication text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new health, wellbeing and public communication text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1275,9 +1275,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to work, enterprise and opportunity.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to work, enterprise and opportunity, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to work, enterprise and opportunity, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about work, enterprise and opportunity; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about work, enterprise and opportunity; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about work, enterprise and opportunity: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1289,11 +1289,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new work, enterprise and opportunity text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new work, enterprise and opportunity text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1303,11 +1303,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to work, enterprise and opportunity.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to work, enterprise and opportunity, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to work, enterprise and opportunity, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about work, enterprise and opportunity; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about work, enterprise and opportunity; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -1317,11 +1317,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new work, enterprise and opportunity text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new work, enterprise and opportunity text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1331,11 +1331,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to work, enterprise and opportunity.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to work, enterprise and opportunity, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to work, enterprise and opportunity, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about work, enterprise and opportunity; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about work, enterprise and opportunity; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -1345,11 +1345,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new work, enterprise and opportunity text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new work, enterprise and opportunity text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1359,9 +1359,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to work, enterprise and opportunity.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to work, enterprise and opportunity, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to work, enterprise and opportunity, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about work, enterprise and opportunity; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about work, enterprise and opportunity; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on work, enterprise and opportunity; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1373,11 +1373,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new work, enterprise and opportunity text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new work, enterprise and opportunity text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1387,9 +1387,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to work, enterprise and opportunity.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to work, enterprise and opportunity, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to work, enterprise and opportunity, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about work, enterprise and opportunity; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about work, enterprise and opportunity; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on work, enterprise and opportunity; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1401,11 +1401,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new work, enterprise and opportunity text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new work, enterprise and opportunity text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1415,9 +1415,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to technology, privacy and responsibility.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to technology, privacy and responsibility, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to technology, privacy and responsibility, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about technology, privacy and responsibility; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about technology, privacy and responsibility; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about technology, privacy and responsibility: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1429,11 +1429,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new technology, privacy and responsibility text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new technology, privacy and responsibility text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1443,11 +1443,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to technology, privacy and responsibility.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to technology, privacy and responsibility, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to technology, privacy and responsibility, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about technology, privacy and responsibility; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about technology, privacy and responsibility; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -1457,11 +1457,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new technology, privacy and responsibility text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new technology, privacy and responsibility text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1471,11 +1471,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to technology, privacy and responsibility.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to technology, privacy and responsibility, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to technology, privacy and responsibility, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about technology, privacy and responsibility; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about technology, privacy and responsibility; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -1485,11 +1485,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new technology, privacy and responsibility text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new technology, privacy and responsibility text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1499,9 +1499,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to technology, privacy and responsibility.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to technology, privacy and responsibility, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to technology, privacy and responsibility, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about technology, privacy and responsibility; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about technology, privacy and responsibility; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on technology, privacy and responsibility; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1513,11 +1513,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new technology, privacy and responsibility text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new technology, privacy and responsibility text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1527,9 +1527,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to technology, privacy and responsibility.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to technology, privacy and responsibility, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to technology, privacy and responsibility, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about technology, privacy and responsibility; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about technology, privacy and responsibility; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on technology, privacy and responsibility; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1541,11 +1541,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new technology, privacy and responsibility text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new technology, privacy and responsibility text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1555,9 +1555,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to migration, journeys and belonging.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to migration, journeys and belonging, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to migration, journeys and belonging, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about migration, journeys and belonging; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about migration, journeys and belonging; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about migration, journeys and belonging: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1569,11 +1569,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new migration, journeys and belonging text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new migration, journeys and belonging text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1583,11 +1583,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to migration, journeys and belonging.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to migration, journeys and belonging, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to migration, journeys and belonging, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about migration, journeys and belonging; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about migration, journeys and belonging; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -1597,11 +1597,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new migration, journeys and belonging text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new migration, journeys and belonging text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1611,11 +1611,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to migration, journeys and belonging.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to migration, journeys and belonging, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to migration, journeys and belonging, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about migration, journeys and belonging; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about migration, journeys and belonging; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -1625,11 +1625,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new migration, journeys and belonging text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new migration, journeys and belonging text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1639,9 +1639,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to migration, journeys and belonging.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to migration, journeys and belonging, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to migration, journeys and belonging, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about migration, journeys and belonging; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about migration, journeys and belonging; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on migration, journeys and belonging; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1653,11 +1653,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new migration, journeys and belonging text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new migration, journeys and belonging text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1667,9 +1667,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to migration, journeys and belonging.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to migration, journeys and belonging, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to migration, journeys and belonging, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about migration, journeys and belonging; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about migration, journeys and belonging; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on migration, journeys and belonging; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1681,11 +1681,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new migration, journeys and belonging text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new migration, journeys and belonging text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1695,9 +1695,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to conflict, peace and reconciliation.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to conflict, peace and reconciliation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to conflict, peace and reconciliation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about conflict, peace and reconciliation; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about conflict, peace and reconciliation; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about conflict, peace and reconciliation: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1709,11 +1709,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new conflict, peace and reconciliation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new conflict, peace and reconciliation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1723,11 +1723,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to conflict, peace and reconciliation.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to conflict, peace and reconciliation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to conflict, peace and reconciliation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about conflict, peace and reconciliation; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about conflict, peace and reconciliation; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -1737,11 +1737,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new conflict, peace and reconciliation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new conflict, peace and reconciliation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1751,11 +1751,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to conflict, peace and reconciliation.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to conflict, peace and reconciliation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to conflict, peace and reconciliation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about conflict, peace and reconciliation; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about conflict, peace and reconciliation; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -1765,11 +1765,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new conflict, peace and reconciliation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new conflict, peace and reconciliation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1779,9 +1779,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to conflict, peace and reconciliation.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to conflict, peace and reconciliation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to conflict, peace and reconciliation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about conflict, peace and reconciliation; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about conflict, peace and reconciliation; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on conflict, peace and reconciliation; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1793,11 +1793,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new conflict, peace and reconciliation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new conflict, peace and reconciliation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1807,9 +1807,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to conflict, peace and reconciliation.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to conflict, peace and reconciliation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to conflict, peace and reconciliation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about conflict, peace and reconciliation; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about conflict, peace and reconciliation; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on conflict, peace and reconciliation; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1821,11 +1821,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new conflict, peace and reconciliation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new conflict, peace and reconciliation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1835,9 +1835,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to rights, justice and civic participation.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to rights, justice and civic participation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to rights, justice and civic participation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about rights, justice and civic participation; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about rights, justice and civic participation; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about rights, justice and civic participation: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1849,11 +1849,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new rights, justice and civic participation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new rights, justice and civic participation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1863,11 +1863,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to rights, justice and civic participation.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to rights, justice and civic participation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to rights, justice and civic participation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about rights, justice and civic participation; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about rights, justice and civic participation; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -1877,11 +1877,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new rights, justice and civic participation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new rights, justice and civic participation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1891,11 +1891,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to rights, justice and civic participation.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to rights, justice and civic participation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to rights, justice and civic participation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about rights, justice and civic participation; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about rights, justice and civic participation; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -1905,11 +1905,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new rights, justice and civic participation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new rights, justice and civic participation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1919,9 +1919,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to rights, justice and civic participation.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to rights, justice and civic participation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to rights, justice and civic participation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about rights, justice and civic participation; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about rights, justice and civic participation; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on rights, justice and civic participation; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1933,11 +1933,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new rights, justice and civic participation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new rights, justice and civic participation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1947,9 +1947,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to rights, justice and civic participation.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to rights, justice and civic participation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to rights, justice and civic participation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about rights, justice and civic participation; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about rights, justice and civic participation; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on rights, justice and civic participation; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1961,11 +1961,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new rights, justice and civic participation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new rights, justice and civic participation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -1975,9 +1975,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to literature and human experience.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to literature and human experience, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to literature and human experience, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about literature and human experience; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about literature and human experience; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about literature and human experience: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -1989,11 +1989,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new literature and human experience text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new literature and human experience text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2003,11 +2003,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to literature and human experience.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to literature and human experience, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to literature and human experience, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about literature and human experience; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about literature and human experience; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -2017,11 +2017,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new literature and human experience text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new literature and human experience text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2031,11 +2031,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to literature and human experience.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to literature and human experience, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to literature and human experience, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about literature and human experience; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about literature and human experience; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -2045,11 +2045,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new literature and human experience text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new literature and human experience text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2059,9 +2059,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to literature and human experience.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to literature and human experience, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to literature and human experience, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about literature and human experience; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about literature and human experience; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on literature and human experience; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2073,11 +2073,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new literature and human experience text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new literature and human experience text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2087,9 +2087,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to literature and human experience.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to literature and human experience, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to literature and human experience, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about literature and human experience; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about literature and human experience; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on literature and human experience; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2101,11 +2101,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new literature and human experience text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new literature and human experience text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2115,9 +2115,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to language, register and audience.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to language, register and audience, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to language, register and audience, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about language, register and audience; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about language, register and audience; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about language, register and audience: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2129,11 +2129,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new language, register and audience text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new language, register and audience text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2143,11 +2143,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to language, register and audience.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to language, register and audience, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to language, register and audience, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about language, register and audience; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about language, register and audience; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -2157,11 +2157,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new language, register and audience text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new language, register and audience text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2171,11 +2171,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to language, register and audience.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to language, register and audience, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to language, register and audience, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about language, register and audience; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about language, register and audience; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -2185,11 +2185,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new language, register and audience text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new language, register and audience text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2199,9 +2199,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to language, register and audience.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to language, register and audience, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to language, register and audience, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about language, register and audience; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about language, register and audience; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on language, register and audience; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2213,11 +2213,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new language, register and audience text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new language, register and audience text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2227,9 +2227,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to language, register and audience.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to language, register and audience, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to language, register and audience, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about language, register and audience; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about language, register and audience; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on language, register and audience; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2241,11 +2241,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new language, register and audience text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new language, register and audience text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2255,9 +2255,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to persuasion and public argument.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to persuasion and public argument, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to persuasion and public argument, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about persuasion and public argument; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about persuasion and public argument; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about persuasion and public argument: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2269,11 +2269,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new persuasion and public argument text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new persuasion and public argument text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2283,11 +2283,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to persuasion and public argument.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to persuasion and public argument, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to persuasion and public argument, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about persuasion and public argument; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about persuasion and public argument; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -2297,11 +2297,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new persuasion and public argument text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new persuasion and public argument text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2311,11 +2311,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to persuasion and public argument.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to persuasion and public argument, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to persuasion and public argument, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about persuasion and public argument; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about persuasion and public argument; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -2325,11 +2325,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new persuasion and public argument text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new persuasion and public argument text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2339,9 +2339,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to persuasion and public argument.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to persuasion and public argument, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to persuasion and public argument, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about persuasion and public argument; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about persuasion and public argument; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on persuasion and public argument; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2353,11 +2353,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new persuasion and public argument text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new persuasion and public argument text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2367,9 +2367,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to persuasion and public argument.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to persuasion and public argument, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to persuasion and public argument, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about persuasion and public argument; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about persuasion and public argument; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on persuasion and public argument; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2381,11 +2381,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new persuasion and public argument text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new persuasion and public argument text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2395,9 +2395,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to global connections and Pacific perspectives.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to global connections and Pacific perspectives, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to global connections and Pacific perspectives, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about global connections and Pacific perspectives; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about global connections and Pacific perspectives; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about global connections and Pacific perspectives: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2409,11 +2409,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new global connections and Pacific perspectives text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new global connections and Pacific perspectives text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2423,11 +2423,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to global connections and Pacific perspectives.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to global connections and Pacific perspectives, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to global connections and Pacific perspectives, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about global connections and Pacific perspectives; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about global connections and Pacific perspectives; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -2437,11 +2437,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new global connections and Pacific perspectives text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new global connections and Pacific perspectives text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2451,11 +2451,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to global connections and Pacific perspectives.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to global connections and Pacific perspectives, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to global connections and Pacific perspectives, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about global connections and Pacific perspectives; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about global connections and Pacific perspectives; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -2465,11 +2465,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new global connections and Pacific perspectives text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new global connections and Pacific perspectives text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2479,9 +2479,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to global connections and Pacific perspectives.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to global connections and Pacific perspectives, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to global connections and Pacific perspectives, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about global connections and Pacific perspectives; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about global connections and Pacific perspectives; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on global connections and Pacific perspectives; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2493,11 +2493,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new global connections and Pacific perspectives text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new global connections and Pacific perspectives text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2507,9 +2507,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to global connections and Pacific perspectives.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to global connections and Pacific perspectives, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to global connections and Pacific perspectives, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about global connections and Pacific perspectives; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about global connections and Pacific perspectives; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on global connections and Pacific perspectives; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2521,11 +2521,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new global connections and Pacific perspectives text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new global connections and Pacific perspectives text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2535,9 +2535,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to sustainability and intergenerational choices.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to sustainability and intergenerational choices, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to sustainability and intergenerational choices, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about sustainability and intergenerational choices; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about sustainability and intergenerational choices; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about sustainability and intergenerational choices: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2549,11 +2549,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new sustainability and intergenerational choices text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new sustainability and intergenerational choices text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2563,11 +2563,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to sustainability and intergenerational choices.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to sustainability and intergenerational choices, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to sustainability and intergenerational choices, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about sustainability and intergenerational choices; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about sustainability and intergenerational choices; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -2577,11 +2577,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new sustainability and intergenerational choices text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new sustainability and intergenerational choices text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2591,11 +2591,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to sustainability and intergenerational choices.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to sustainability and intergenerational choices, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to sustainability and intergenerational choices, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about sustainability and intergenerational choices; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about sustainability and intergenerational choices; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -2605,11 +2605,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new sustainability and intergenerational choices text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new sustainability and intergenerational choices text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2619,9 +2619,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to sustainability and intergenerational choices.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to sustainability and intergenerational choices, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to sustainability and intergenerational choices, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about sustainability and intergenerational choices; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about sustainability and intergenerational choices; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on sustainability and intergenerational choices; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2633,11 +2633,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new sustainability and intergenerational choices text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new sustainability and intergenerational choices text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2647,9 +2647,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to sustainability and intergenerational choices.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to sustainability and intergenerational choices, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to sustainability and intergenerational choices, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about sustainability and intergenerational choices; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about sustainability and intergenerational choices; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on sustainability and intergenerational choices; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2661,11 +2661,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new sustainability and intergenerational choices text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new sustainability and intergenerational choices text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2675,9 +2675,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to leadership and social change.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to leadership and social change, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to leadership and social change, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about leadership and social change; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about leadership and social change; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about leadership and social change: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2689,11 +2689,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new leadership and social change text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new leadership and social change text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2703,11 +2703,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to leadership and social change.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to leadership and social change, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to leadership and social change, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about leadership and social change; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about leadership and social change; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -2717,11 +2717,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new leadership and social change text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new leadership and social change text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2731,11 +2731,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to leadership and social change.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to leadership and social change, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to leadership and social change, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about leadership and social change; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about leadership and social change; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -2745,11 +2745,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new leadership and social change text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new leadership and social change text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2759,9 +2759,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to leadership and social change.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to leadership and social change, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to leadership and social change, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about leadership and social change; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about leadership and social change; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on leadership and social change; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2773,11 +2773,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new leadership and social change text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new leadership and social change text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2787,9 +2787,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to leadership and social change.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to leadership and social change, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to leadership and social change, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about leadership and social change; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about leadership and social change; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on leadership and social change; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2801,11 +2801,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new leadership and social change text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new leadership and social change text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2815,9 +2815,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to art, performance and interpretation.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to art, performance and interpretation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to art, performance and interpretation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about art, performance and interpretation; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about art, performance and interpretation; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about art, performance and interpretation: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2829,11 +2829,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new art, performance and interpretation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new art, performance and interpretation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2843,11 +2843,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to art, performance and interpretation.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to art, performance and interpretation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to art, performance and interpretation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about art, performance and interpretation; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about art, performance and interpretation; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -2857,11 +2857,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new art, performance and interpretation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new art, performance and interpretation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2871,11 +2871,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to art, performance and interpretation.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to art, performance and interpretation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to art, performance and interpretation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about art, performance and interpretation; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about art, performance and interpretation; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -2885,11 +2885,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new art, performance and interpretation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new art, performance and interpretation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2899,9 +2899,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to art, performance and interpretation.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to art, performance and interpretation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to art, performance and interpretation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about art, performance and interpretation; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about art, performance and interpretation; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on art, performance and interpretation; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2913,11 +2913,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new art, performance and interpretation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new art, performance and interpretation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2927,9 +2927,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to art, performance and interpretation.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to art, performance and interpretation, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to art, performance and interpretation, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about art, performance and interpretation; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about art, performance and interpretation; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on art, performance and interpretation; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2941,11 +2941,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new art, performance and interpretation text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new art, performance and interpretation text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2955,9 +2955,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to research, sources and credibility.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to research, sources and credibility, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to research, sources and credibility, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about research, sources and credibility; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about research, sources and credibility; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about research, sources and credibility: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -2969,11 +2969,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new research, sources and credibility text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new research, sources and credibility text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -2983,11 +2983,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to research, sources and credibility.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to research, sources and credibility, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to research, sources and credibility, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about research, sources and credibility; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about research, sources and credibility; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -2997,11 +2997,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new research, sources and credibility text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new research, sources and credibility text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -3011,11 +3011,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to research, sources and credibility.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to research, sources and credibility, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to research, sources and credibility, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about research, sources and credibility; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about research, sources and credibility; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -3025,11 +3025,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new research, sources and credibility text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new research, sources and credibility text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -3039,9 +3039,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to research, sources and credibility.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to research, sources and credibility, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to research, sources and credibility, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about research, sources and credibility; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about research, sources and credibility; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on research, sources and credibility; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -3053,11 +3053,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new research, sources and credibility text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new research, sources and credibility text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -3067,9 +3067,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to research, sources and credibility.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to research, sources and credibility, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to research, sources and credibility, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about research, sources and credibility; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about research, sources and credibility; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on research, sources and credibility; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -3081,11 +3081,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new research, sources and credibility text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new research, sources and credibility text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -3095,9 +3095,9 @@
 
 **Learning intention:** present and defend a clear interpretation in a context connected to future pathways and personal agency.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to future pathways and personal agency, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to future pathways and personal agency, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Deliver a structured response to a prompt about future pathways and personal agency; state a position, support it with two relevant details and respond to a counter-question. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Deliver a structured response to a prompt about future pathways and personal agency; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a 60–90 second response to a prompt about future pathways and personal agency: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -3109,11 +3109,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new future pathways and personal agency text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new future pathways and personal agency text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -3123,11 +3123,11 @@
 
 **Learning intention:** analyse how textual choices shape meaning in a context connected to future pathways and personal agency.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to future pathways and personal agency, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to future pathways and personal agency, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Annotate an authorised or teacher-selected text about future pathways and personal agency; identify the central claim, examine two language choices and explain their effects. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Annotate an authorized text about future pathways and personal agency; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Annotate a passage from a level-appropriate literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -3137,11 +3137,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new future pathways and personal agency text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new future pathways and personal agency text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -3151,11 +3151,11 @@
 
 **Learning intention:** analyse register, syntax and rhetorical choices in a context connected to future pathways and personal agency.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to future pathways and personal agency, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to future pathways and personal agency, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Select three significant language choices in a text about future pathways and personal agency; explain their connotations, register and effect on a defined audience. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Select three significant language choices in a text about future pathways and personal agency; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
-**Worked example:** Compare three expressions from a a level-appropriate literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
 
 **Copper:** Model the task in short stages; provide an accessible excerpt, vocabulary gloss, annotated example and structured choices. Accept accessible response modes and record the support used.
 
@@ -3165,11 +3165,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new future pathways and personal agency text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new future pathways and personal agency text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -3179,9 +3179,9 @@
 
 **Learning intention:** evaluate perspective, evidence and reliability in a context connected to future pathways and personal agency.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to future pathways and personal agency, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to future pathways and personal agency, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Compare two sources about future pathways and personal agency; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Compare two sources about future pathways and personal agency; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Use a source comparison grid for two sources on future pathways and personal agency; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -3193,11 +3193,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new future pathways and personal agency text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new future pathways and personal agency text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
@@ -3207,9 +3207,9 @@
 
 **Learning intention:** construct and revise a purposeful analytical text in a context connected to future pathways and personal agency.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to future pathways and personal agency, using clear claim, relevant detail and explanation.
+**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to future pathways and personal agency, demonstrating a clear claim, one relevant detail and an explanation.
 
-**Teacher-led activity:** Develop a coherent analytical or discursive response about future pathways and personal agency; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a level-appropriate literary, media or non-fiction text. The teacher records the exact authorized text/source and edition used.
+**Teacher-led activity:** Develop an analytical response about future pathways and personal agency; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
 
 **Worked example:** Model a plan for a structured paragraph or short oral presentation on future pathways and personal agency; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
 
@@ -3221,11 +3221,11 @@
 
 **Gold:** Extend the same objective through synthesis, qualification, counterargument or a more nuanced evaluation of evidence and audience. Do not substitute an unrelated or different syllabus objective.
 
-**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for clear claim, relevant detail and explanation and record independence and response mode.
+**Evidence:** Collect the actual oral or written response, annotations, evidence selection or revision. Check for a clear claim, one relevant detail and an explanation and record independence and response mode.
 
 **Answer / marking guidance:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
 
-**Next teaching step:** If the evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new future pathways and personal agency text or prompt.
+**Next teaching step:** If evidence is weak, reteach the relevant analytical move with a shorter excerpt and explicit modelling. If secure, remove the frame and apply the same move to a new future pathways and personal agency text or prompt.
 
 **Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized syllabus outcome, source title, edition, page and cohort only after verification.
 
