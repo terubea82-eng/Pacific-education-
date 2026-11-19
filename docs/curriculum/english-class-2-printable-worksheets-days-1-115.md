@@ -13,7 +13,7 @@
 
 **Shared learning intention:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -43,7 +43,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -73,7 +73,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -103,7 +103,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -133,7 +133,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -163,7 +163,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -193,7 +193,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -223,7 +223,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -253,7 +253,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -283,7 +283,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -313,7 +313,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -343,7 +343,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -373,7 +373,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -403,7 +403,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -433,7 +433,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -463,7 +463,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Introduce self; ask and answer simple questions; recognise names and familiar words.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -493,7 +493,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -523,7 +523,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -553,7 +553,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -583,7 +583,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Myself and my community, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -613,7 +613,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -643,7 +643,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -673,7 +673,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -703,7 +703,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -733,7 +733,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -763,7 +763,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -793,7 +793,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -823,7 +823,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -853,7 +853,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -883,7 +883,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -913,7 +913,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -943,7 +943,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -973,7 +973,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -1003,7 +1003,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -1033,7 +1033,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -1063,7 +1063,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe familiar foods; sort and explain choices; read short informational text.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -1093,7 +1093,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -1123,7 +1123,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -1153,7 +1153,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -1183,7 +1183,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Healthy food, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -1213,7 +1213,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -1243,7 +1243,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -1273,7 +1273,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -1303,7 +1303,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -1333,7 +1333,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -1363,7 +1363,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -1393,7 +1393,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -1423,7 +1423,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -1453,7 +1453,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -1483,7 +1483,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -1513,7 +1513,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -1543,7 +1543,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -1573,7 +1573,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -1603,7 +1603,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -1633,7 +1633,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -1663,7 +1663,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use polite questions; read labels/lists; write a simple shopping list.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -1693,7 +1693,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -1723,7 +1723,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -1753,7 +1753,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -1783,7 +1783,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about At the market, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -1813,7 +1813,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -1843,7 +1843,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -1873,7 +1873,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -1903,7 +1903,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -1933,7 +1933,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -1963,7 +1963,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -1993,7 +1993,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -2023,7 +2023,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -2053,7 +2053,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -2083,7 +2083,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -2113,7 +2113,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -2143,7 +2143,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -2173,7 +2173,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -2203,7 +2203,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -2233,7 +2233,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -2263,7 +2263,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe people and places respectfully; sequence familiar routines.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -2293,7 +2293,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -2323,7 +2323,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -2353,7 +2353,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -2383,7 +2383,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about My family and home, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -2413,7 +2413,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -2443,7 +2443,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -2473,7 +2473,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -2503,7 +2503,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -2533,7 +2533,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -2563,7 +2563,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -2593,7 +2593,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -2623,7 +2623,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -2653,7 +2653,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -2683,7 +2683,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -2713,7 +2713,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -2743,7 +2743,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -2773,7 +2773,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -2803,7 +2803,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -2833,7 +2833,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -2863,7 +2863,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Follow and give simple instructions; read procedural language; write steps.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -2893,7 +2893,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -2923,7 +2923,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -2953,7 +2953,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -2983,7 +2983,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Keeping clean, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -3013,7 +3013,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -3043,7 +3043,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -3073,7 +3073,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -3103,7 +3103,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -3133,7 +3133,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -3163,7 +3163,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -3193,7 +3193,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -3223,7 +3223,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -3253,7 +3253,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -3283,7 +3283,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -3313,7 +3313,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -3343,7 +3343,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -3373,7 +3373,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -3403,7 +3403,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -3433,7 +3433,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -3463,7 +3463,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Talk about feelings and care; sequence a story; identify key details.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -3493,7 +3493,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -3523,7 +3523,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -3553,7 +3553,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -3583,7 +3583,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Visiting the dentist, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -3613,7 +3613,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -3643,7 +3643,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -3673,7 +3673,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -3703,7 +3703,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -3733,7 +3733,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -3763,7 +3763,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -3793,7 +3793,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -3823,7 +3823,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -3853,7 +3853,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -3883,7 +3883,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -3913,7 +3913,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -3943,7 +3943,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -3973,7 +3973,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -4003,7 +4003,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -4033,7 +4033,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -4063,7 +4063,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Use time/order words; read a short timetable; write connected sentences.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -4093,7 +4093,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -4123,7 +4123,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -4153,7 +4153,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -4183,7 +4183,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about My school day, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -4213,7 +4213,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -4243,7 +4243,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -4273,7 +4273,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -4303,7 +4303,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -4333,7 +4333,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -4363,7 +4363,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -4393,7 +4393,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -4423,7 +4423,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -4453,7 +4453,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -4483,7 +4483,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -4513,7 +4513,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -4543,7 +4543,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -4573,7 +4573,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -4603,7 +4603,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -4633,7 +4633,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -4663,7 +4663,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen to different views; describe actions; write a kind message.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -4693,7 +4693,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -4723,7 +4723,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -4753,7 +4753,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -4783,7 +4783,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Friends and kindness, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -4813,7 +4813,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -4843,7 +4843,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -4873,7 +4873,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -4903,7 +4903,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -4933,7 +4933,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -4963,7 +4963,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -4993,7 +4993,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -5023,7 +5023,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -5053,7 +5053,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -5083,7 +5083,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -5113,7 +5113,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -5143,7 +5143,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -5173,7 +5173,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -5203,7 +5203,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -5233,7 +5233,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -5263,7 +5263,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe features and habitats; sort information; write factual sentences.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -5293,7 +5293,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -5323,7 +5323,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -5353,7 +5353,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -5383,7 +5383,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Animals around us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -5413,7 +5413,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -5443,7 +5443,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -5473,7 +5473,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -5503,7 +5503,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -5533,7 +5533,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -5563,7 +5563,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -5593,7 +5593,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -5623,7 +5623,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -5653,7 +5653,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -5683,7 +5683,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -5713,7 +5713,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -5743,7 +5743,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -5773,7 +5773,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -5803,7 +5803,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -5833,7 +5833,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -5863,7 +5863,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Observe and explain growth; read labels; record observations.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -5893,7 +5893,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -5923,7 +5923,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -5953,7 +5953,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -5983,7 +5983,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Plants and gardens, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -6013,7 +6013,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -6043,7 +6043,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -6073,7 +6073,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -6103,7 +6103,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -6133,7 +6133,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -6163,7 +6163,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -6193,7 +6193,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -6223,7 +6223,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -6253,7 +6253,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -6283,7 +6283,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -6313,7 +6313,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -6343,7 +6343,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -6373,7 +6373,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -6403,7 +6403,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -6433,7 +6433,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -6463,7 +6463,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe weather; compare observations; write a short weather report.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -6493,7 +6493,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -6523,7 +6523,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -6553,7 +6553,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -6583,7 +6583,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Weather and seasons, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -6613,7 +6613,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -6643,7 +6643,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -6673,7 +6673,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -6703,7 +6703,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -6733,7 +6733,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -6763,7 +6763,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -6793,7 +6793,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -6823,7 +6823,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -6853,7 +6853,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -6883,7 +6883,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -6913,7 +6913,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -6943,7 +6943,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -6973,7 +6973,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -7003,7 +7003,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -7033,7 +7033,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -7063,7 +7063,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask and answer questions; read dialogue; write a new dialogue ending.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -7093,7 +7093,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -7123,7 +7123,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -7153,7 +7153,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -7183,7 +7183,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about At the playground, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -7213,7 +7213,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -7243,7 +7243,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -7273,7 +7273,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -7303,7 +7303,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -7333,7 +7333,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -7363,7 +7363,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -7393,7 +7393,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -7423,7 +7423,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -7453,7 +7453,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -7483,7 +7483,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -7513,7 +7513,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -7543,7 +7543,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -7573,7 +7573,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -7603,7 +7603,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -7633,7 +7633,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -7663,7 +7663,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain rules; identify action words; write instructions.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -7693,7 +7693,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -7723,7 +7723,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -7753,7 +7753,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -7783,7 +7783,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Sports and movement, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -7813,7 +7813,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -7843,7 +7843,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -7873,7 +7873,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -7903,7 +7903,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -7933,7 +7933,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -7963,7 +7963,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -7993,7 +7993,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -8023,7 +8023,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -8053,7 +8053,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -8083,7 +8083,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -8113,7 +8113,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -8143,7 +8143,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -8173,7 +8173,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -8203,7 +8203,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -8233,7 +8233,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -8263,7 +8263,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Describe coastal places; read a short factual text; identify main ideas.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -8293,7 +8293,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -8323,7 +8323,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -8353,7 +8353,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -8383,7 +8383,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Our sea and waterways, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -8413,7 +8413,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -8443,7 +8443,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -8473,7 +8473,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -8503,7 +8503,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -8533,7 +8533,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -8563,7 +8563,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -8593,7 +8593,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -8623,7 +8623,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -8653,7 +8653,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -8683,7 +8683,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -8713,7 +8713,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -8743,7 +8743,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -8773,7 +8773,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -8803,7 +8803,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -8833,7 +8833,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -8863,7 +8863,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Give and follow directions; read signs; write safety instructions.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -8893,7 +8893,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -8923,7 +8923,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -8953,7 +8953,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -8983,7 +8983,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Transport and safety, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -9013,7 +9013,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -9043,7 +9043,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -9073,7 +9073,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -9103,7 +9103,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -9133,7 +9133,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -9163,7 +9163,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -9193,7 +9193,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -9223,7 +9223,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -9253,7 +9253,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -9283,7 +9283,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -9313,7 +9313,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -9343,7 +9343,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -9373,7 +9373,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -9403,7 +9403,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -9433,7 +9433,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -9463,7 +9463,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Retell events; identify characters and setting; create a changed ending.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -9493,7 +9493,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -9523,7 +9523,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -9553,7 +9553,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -9583,7 +9583,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Stories with a beginning, middle and end, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -9613,7 +9613,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -9643,7 +9643,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -9673,7 +9673,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -9703,7 +9703,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -9733,7 +9733,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -9763,7 +9763,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -9793,7 +9793,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -9823,7 +9823,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -9853,7 +9853,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -9883,7 +9883,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -9913,7 +9913,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -9943,7 +9943,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -9973,7 +9973,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -10003,7 +10003,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -10033,7 +10033,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -10063,7 +10063,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Listen for rhythm; identify rhyme and repeated language; create short patterned lines.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -10093,7 +10093,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -10123,7 +10123,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -10153,7 +10153,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -10183,7 +10183,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Poems, rhythm and rhyme, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -10213,7 +10213,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -10243,7 +10243,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -10273,7 +10273,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -10303,7 +10303,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -10333,7 +10333,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -10363,7 +10363,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -10393,7 +10393,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -10423,7 +10423,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -10453,7 +10453,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -10483,7 +10483,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -10513,7 +10513,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -10543,7 +10543,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -10573,7 +10573,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -10603,7 +10603,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -10633,7 +10633,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -10663,7 +10663,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Share language and cultural knowledge respectfully; compare words without ranking languages.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -10693,7 +10693,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -10723,7 +10723,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -10753,7 +10753,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -10783,7 +10783,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Fiji's languages and cultures, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -10813,7 +10813,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -10843,7 +10843,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -10873,7 +10873,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -10903,7 +10903,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -10933,7 +10933,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -10963,7 +10963,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -10993,7 +10993,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -11023,7 +11023,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -11053,7 +11053,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -11083,7 +11083,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -11113,7 +11113,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -11143,7 +11143,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -11173,7 +11173,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -11203,7 +11203,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -11233,7 +11233,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -11263,7 +11263,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Ask questions; read simple information; write a short description.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -11293,7 +11293,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -11323,7 +11323,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -11353,7 +11353,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -11383,7 +11383,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about People who help us, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -11413,7 +11413,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -11443,7 +11443,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -11473,7 +11473,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -11503,7 +11503,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -11533,7 +11533,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -11563,7 +11563,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -11593,7 +11593,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -11623,7 +11623,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -11653,7 +11653,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -11683,7 +11683,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -11713,7 +11713,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -11743,7 +11743,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -11773,7 +11773,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -11803,7 +11803,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -11833,7 +11833,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -11863,7 +11863,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Explain a process; use sequence words; write a simple procedure.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -11893,7 +11893,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -11923,7 +11923,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -11953,7 +11953,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -11983,7 +11983,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Making and building, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -12013,7 +12013,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -12043,7 +12043,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -12073,7 +12073,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -12103,7 +12103,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -12133,7 +12133,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -12163,7 +12163,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -12193,7 +12193,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -12223,7 +12223,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -12253,7 +12253,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -12283,7 +12283,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -12313,7 +12313,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -12343,7 +12343,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -12373,7 +12373,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -12403,7 +12403,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -12433,7 +12433,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -12463,7 +12463,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Discuss care and responsibility; read persuasive messages; write a suggestion.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -12493,7 +12493,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -12523,7 +12523,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -12553,7 +12553,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -12583,7 +12583,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Our environment, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -12613,7 +12613,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -12643,7 +12643,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -12673,7 +12673,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -12703,7 +12703,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -12733,7 +12733,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -12763,7 +12763,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -12793,7 +12793,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -12823,7 +12823,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -12853,7 +12853,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -12883,7 +12883,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -12913,7 +12913,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -12943,7 +12943,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -12973,7 +12973,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -13003,7 +13003,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -13033,7 +13033,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -13063,7 +13063,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Interpret simple notices and captions; distinguish message purpose; create a caption.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -13093,7 +13093,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -13123,7 +13123,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -13153,7 +13153,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -13183,7 +13183,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Messages and media, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -13213,7 +13213,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -13243,7 +13243,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -13273,7 +13273,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -13303,7 +13303,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
+**PacEdu working achievement indicator:** The learner can listen, take turns and communicate a relevant idea about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Teacher models a short exchange connected to the weekly theme. Learners listen, take turns and respond to a question using a complete idea.
 
@@ -13333,7 +13333,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -13363,7 +13363,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -13393,7 +13393,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -13423,7 +13423,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
+**PacEdu working achievement indicator:** The learner can identify and use familiar vocabulary connected with Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Explore 4–6 theme words. Sort, match, clap syllables, identify taught sound patterns, and explain one word using a picture, gesture or sentence. Use only patterns already taught in the approved school sequence.
 
@@ -13453,7 +13453,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -13483,7 +13483,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -13513,7 +13513,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -13543,7 +13543,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
+**PacEdu working achievement indicator:** The learner can locate and explain information in a short text about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Read or listen to a short teacher-selected text about the theme. Identify who or what it is about, locate two details, and retell one event or fact.
 
@@ -13573,7 +13573,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -13603,7 +13603,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -13633,7 +13633,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -13663,7 +13663,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
+**PacEdu working achievement indicator:** The learner can identify and use a taught language feature when writing about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words). Practise it in a new example.
 
@@ -13693,7 +13693,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -13723,7 +13723,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -13753,7 +13753,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
@@ -13783,7 +13783,7 @@ ____________________________________________________________________
 
 **Shared learning intention:** Select evidence; reread and improve work; present a short spoken, signed, AAC or written piece.
 
-**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
+**PacEdu working achievement indicator:** The learner can create and review a short meaningful text about Review and share learning, showing meaning through an accurate oral, signed, AAC, drawn, dictated or written response.
 
 **Your task:** Create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph. Reread and improve one part.
 
