@@ -1,10 +1,10 @@
 # PacEdu English Subject Box — Class 4 Daily Activities (Days 1–115)
 
-**Status:** ORIGINAL PACEDU DRAFT — `PENDING_TEACHER_REVIEW` — `PENDING_OFFICIAL_INDICATOR_VERIFICATION`. This is not a Ministry-issued scheme. No official indicator IDs or verbatim Ministry outcomes are claimed.
+**Status:** ORIGINAL PACEDU DRAFT — `PENDING_TEACHER_REVIEW` — `PENDING_OFFICIAL_INDICATOR_VERIFICATION`. Not a Ministry-issued scheme. No official indicator IDs or verbatim Ministry outcomes are claimed.
 
 ## Programme and alignment safeguards
 - 23 planning weeks × 5 learning days = 115 planned learning days. Term pattern: 9/9/5 weeks; reconcile with the approved school calendar.
-- This Class 4 programme has its own progression, text demand and writing expectations; it must not be substituted for another class level.
+- This Class 4 programme has its own text demand, language focus and writing expectations: a 3–4 paragraph story or information text; expected response: a developed paragraph of 7–9 sentences.
 - Four flexible pathways share the same daily objective. Support changes; the intended learning objective does not.
 - Record the exact current authorized Fiji English outcome, edition, page and reviewer only after checking the school's Ministry-authorized document.
 - Accept appropriate oral, signed, AAC, pointing, dictated or written responses. Do not force speech or penalise accent/disability-related speech differences.
@@ -17,9 +17,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to identity and belonging, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about identity and belonging; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about identity and belonging; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about identity and belonging, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about identity and belonging, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -45,9 +45,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to identity and belonging, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about identity and belonging; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about identity and belonging; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about identity and belonging, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about identity and belonging, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -73,9 +73,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to identity and belonging, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about identity and belonging; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about identity and belonging; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about identity and belonging, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about identity and belonging, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -101,7 +101,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to identity and belonging, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about identity and belonging; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about identity and belonging; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about identity and belonging, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -129,9 +129,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to identity and belonging, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about identity and belonging; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about identity and belonging; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about identity and belonging, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about identity and belonging, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -157,9 +157,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to family and community stories, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about family and community stories; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about family and community stories; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about family and community stories, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about family and community stories, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -185,9 +185,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to family and community stories, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about family and community stories; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about family and community stories; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about family and community stories, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about family and community stories, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -213,9 +213,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to family and community stories, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about family and community stories; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about family and community stories; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about family and community stories, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about family and community stories, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -241,7 +241,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to family and community stories, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about family and community stories; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about family and community stories; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about family and community stories, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -269,9 +269,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to family and community stories, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about family and community stories; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about family and community stories; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about family and community stories, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about family and community stories, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -297,9 +297,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to Fiji places and environments, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about Fiji places and environments; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about Fiji places and environments; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about Fiji places and environments, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about Fiji places and environments, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -325,9 +325,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to Fiji places and environments, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about Fiji places and environments; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about Fiji places and environments; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about Fiji places and environments, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about Fiji places and environments, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -353,9 +353,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to Fiji places and environments, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about Fiji places and environments; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about Fiji places and environments; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about Fiji places and environments, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about Fiji places and environments, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -381,7 +381,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to Fiji places and environments, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about Fiji places and environments; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about Fiji places and environments; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about Fiji places and environments, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -409,9 +409,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to Fiji places and environments, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about Fiji places and environments; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about Fiji places and environments; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about Fiji places and environments, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about Fiji places and environments, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -437,9 +437,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to friendship and cooperation, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about friendship and cooperation; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about friendship and cooperation; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about friendship and cooperation, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about friendship and cooperation, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -465,9 +465,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to friendship and cooperation, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about friendship and cooperation; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about friendship and cooperation; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about friendship and cooperation, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about friendship and cooperation, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -493,9 +493,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to friendship and cooperation, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about friendship and cooperation; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about friendship and cooperation; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about friendship and cooperation, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about friendship and cooperation, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -521,7 +521,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to friendship and cooperation, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about friendship and cooperation; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about friendship and cooperation; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about friendship and cooperation, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -549,9 +549,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to friendship and cooperation, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about friendship and cooperation; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about friendship and cooperation; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about friendship and cooperation, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about friendship and cooperation, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -577,9 +577,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to traditional knowledge and oral histories, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about traditional knowledge and oral histories; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about traditional knowledge and oral histories; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about traditional knowledge and oral histories, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about traditional knowledge and oral histories, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -605,9 +605,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to traditional knowledge and oral histories, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about traditional knowledge and oral histories; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about traditional knowledge and oral histories; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about traditional knowledge and oral histories, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about traditional knowledge and oral histories, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -633,9 +633,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to traditional knowledge and oral histories, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about traditional knowledge and oral histories; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about traditional knowledge and oral histories; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about traditional knowledge and oral histories, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about traditional knowledge and oral histories, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -661,7 +661,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to traditional knowledge and oral histories, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about traditional knowledge and oral histories; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about traditional knowledge and oral histories; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about traditional knowledge and oral histories, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -689,9 +689,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to traditional knowledge and oral histories, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about traditional knowledge and oral histories; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about traditional knowledge and oral histories; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about traditional knowledge and oral histories, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about traditional knowledge and oral histories, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -717,9 +717,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to weather and climate, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about weather and climate; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about weather and climate; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about weather and climate, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about weather and climate, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -745,9 +745,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to weather and climate, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about weather and climate; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about weather and climate; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about weather and climate, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about weather and climate, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -773,9 +773,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to weather and climate, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about weather and climate; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about weather and climate; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about weather and climate, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about weather and climate, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -801,7 +801,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to weather and climate, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about weather and climate; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about weather and climate; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about weather and climate, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -829,9 +829,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to weather and climate, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about weather and climate; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about weather and climate; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about weather and climate, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about weather and climate, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -857,9 +857,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to plants and food systems, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about plants and food systems; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about plants and food systems; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about plants and food systems, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about plants and food systems, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -885,9 +885,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to plants and food systems, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about plants and food systems; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about plants and food systems; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about plants and food systems, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about plants and food systems, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -913,9 +913,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to plants and food systems, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about plants and food systems; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about plants and food systems; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about plants and food systems, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about plants and food systems, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -941,7 +941,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to plants and food systems, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about plants and food systems; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about plants and food systems; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about plants and food systems, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -969,9 +969,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to plants and food systems, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about plants and food systems; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about plants and food systems; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about plants and food systems, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about plants and food systems, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -997,9 +997,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to water and ocean care, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about water and ocean care; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about water and ocean care; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about water and ocean care, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about water and ocean care, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1025,9 +1025,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to water and ocean care, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about water and ocean care; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about water and ocean care; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about water and ocean care, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about water and ocean care, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1053,9 +1053,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to water and ocean care, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about water and ocean care; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about water and ocean care; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about water and ocean care, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about water and ocean care, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1081,7 +1081,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to water and ocean care, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about water and ocean care; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about water and ocean care; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about water and ocean care, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -1109,9 +1109,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to water and ocean care, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about water and ocean care; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about water and ocean care; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about water and ocean care, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about water and ocean care, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1137,9 +1137,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to health and wellbeing, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about health and wellbeing; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about health and wellbeing; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about health and wellbeing, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about health and wellbeing, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1165,9 +1165,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to health and wellbeing, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about health and wellbeing; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about health and wellbeing; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about health and wellbeing, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about health and wellbeing, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1193,9 +1193,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to health and wellbeing, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about health and wellbeing; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about health and wellbeing; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about health and wellbeing, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about health and wellbeing, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1221,7 +1221,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to health and wellbeing, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about health and wellbeing; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about health and wellbeing; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about health and wellbeing, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -1249,9 +1249,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to health and wellbeing, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about health and wellbeing; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about health and wellbeing; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about health and wellbeing, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about health and wellbeing, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1277,9 +1277,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to sports and fair play, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about sports and fair play; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about sports and fair play; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about sports and fair play, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about sports and fair play, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1305,9 +1305,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to sports and fair play, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about sports and fair play; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about sports and fair play; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about sports and fair play, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about sports and fair play, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1333,9 +1333,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to sports and fair play, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about sports and fair play; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about sports and fair play; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about sports and fair play, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about sports and fair play, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1361,7 +1361,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to sports and fair play, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about sports and fair play; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about sports and fair play; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about sports and fair play, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -1389,9 +1389,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to sports and fair play, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about sports and fair play; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about sports and fair play; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about sports and fair play, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about sports and fair play, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1417,9 +1417,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to local occupations, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about local occupations; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about local occupations; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about local occupations, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about local occupations, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1445,9 +1445,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to local occupations, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about local occupations; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about local occupations; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about local occupations, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about local occupations, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1473,9 +1473,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to local occupations, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about local occupations; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about local occupations; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about local occupations, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about local occupations, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1501,7 +1501,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to local occupations, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about local occupations; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about local occupations; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about local occupations, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -1529,9 +1529,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to local occupations, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about local occupations; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about local occupations; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about local occupations, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about local occupations, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1557,9 +1557,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to inventions and technology, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about inventions and technology; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about inventions and technology; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about inventions and technology, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about inventions and technology, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1585,9 +1585,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to inventions and technology, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about inventions and technology; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about inventions and technology; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about inventions and technology, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about inventions and technology, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1613,9 +1613,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to inventions and technology, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about inventions and technology; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about inventions and technology; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about inventions and technology, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about inventions and technology, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1641,7 +1641,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to inventions and technology, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about inventions and technology; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about inventions and technology; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about inventions and technology, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -1669,9 +1669,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to inventions and technology, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about inventions and technology; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about inventions and technology; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about inventions and technology, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about inventions and technology, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1697,9 +1697,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to media and messages, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about media and messages; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about media and messages; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about media and messages, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about media and messages, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1725,9 +1725,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to media and messages, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about media and messages; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about media and messages; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about media and messages, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about media and messages, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1753,9 +1753,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to media and messages, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about media and messages; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about media and messages; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about media and messages, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about media and messages, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1781,7 +1781,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to media and messages, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about media and messages; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about media and messages; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about media and messages, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -1809,9 +1809,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to media and messages, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about media and messages; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about media and messages; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about media and messages, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about media and messages, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1837,9 +1837,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to animals and habitats, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about animals and habitats; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about animals and habitats; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about animals and habitats, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about animals and habitats, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1865,9 +1865,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to animals and habitats, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about animals and habitats; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about animals and habitats; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about animals and habitats, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about animals and habitats, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1893,9 +1893,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to animals and habitats, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about animals and habitats; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about animals and habitats; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about animals and habitats, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about animals and habitats, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1921,7 +1921,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to animals and habitats, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about animals and habitats; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about animals and habitats; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about animals and habitats, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -1949,9 +1949,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to animals and habitats, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about animals and habitats; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about animals and habitats; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about animals and habitats, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about animals and habitats, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -1977,9 +1977,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to celebrations and culture, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about celebrations and culture; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about celebrations and culture; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about celebrations and culture, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about celebrations and culture, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2005,9 +2005,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to celebrations and culture, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about celebrations and culture; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about celebrations and culture; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about celebrations and culture, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about celebrations and culture, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2033,9 +2033,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to celebrations and culture, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about celebrations and culture; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about celebrations and culture; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about celebrations and culture, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about celebrations and culture, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2061,7 +2061,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to celebrations and culture, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about celebrations and culture; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about celebrations and culture; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about celebrations and culture, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -2089,9 +2089,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to celebrations and culture, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about celebrations and culture; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about celebrations and culture; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about celebrations and culture, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about celebrations and culture, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2117,9 +2117,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to problem solving, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about problem solving; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about problem solving; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about problem solving, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about problem solving, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2145,9 +2145,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to problem solving, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about problem solving; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about problem solving; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about problem solving, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about problem solving, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2173,9 +2173,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to problem solving, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about problem solving; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about problem solving; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about problem solving, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about problem solving, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2201,7 +2201,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to problem solving, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about problem solving; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about problem solving; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about problem solving, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -2229,9 +2229,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to problem solving, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about problem solving; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about problem solving; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about problem solving, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about problem solving, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2257,9 +2257,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to journeys and transport, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about journeys and transport; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about journeys and transport; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about journeys and transport, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about journeys and transport, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2285,9 +2285,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to journeys and transport, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about journeys and transport; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about journeys and transport; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about journeys and transport, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about journeys and transport, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2313,9 +2313,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to journeys and transport, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about journeys and transport; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about journeys and transport; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about journeys and transport, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about journeys and transport, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2341,7 +2341,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to journeys and transport, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about journeys and transport; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about journeys and transport; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about journeys and transport, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -2369,9 +2369,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to journeys and transport, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about journeys and transport; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about journeys and transport; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about journeys and transport, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about journeys and transport, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2397,9 +2397,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to stories of courage, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about stories of courage; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about stories of courage; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about stories of courage, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about stories of courage, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2425,9 +2425,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to stories of courage, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about stories of courage; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about stories of courage; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about stories of courage, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about stories of courage, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2453,9 +2453,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to stories of courage, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about stories of courage; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about stories of courage; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about stories of courage, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about stories of courage, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2481,7 +2481,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to stories of courage, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about stories of courage; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about stories of courage; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about stories of courage, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -2509,9 +2509,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to stories of courage, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about stories of courage; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about stories of courage; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about stories of courage, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about stories of courage, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2537,9 +2537,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to rights and responsibilities, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about rights and responsibilities; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about rights and responsibilities; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about rights and responsibilities, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about rights and responsibilities, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2565,9 +2565,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to rights and responsibilities, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about rights and responsibilities; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about rights and responsibilities; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about rights and responsibilities, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about rights and responsibilities, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2593,9 +2593,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to rights and responsibilities, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about rights and responsibilities; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about rights and responsibilities; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about rights and responsibilities, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about rights and responsibilities, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2621,7 +2621,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to rights and responsibilities, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about rights and responsibilities; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about rights and responsibilities; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about rights and responsibilities, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -2649,9 +2649,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to rights and responsibilities, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about rights and responsibilities; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about rights and responsibilities; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about rights and responsibilities, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about rights and responsibilities, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2677,9 +2677,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to local history and change, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about local history and change; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about local history and change; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about local history and change, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about local history and change, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2705,9 +2705,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to local history and change, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about local history and change; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about local history and change; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about local history and change, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about local history and change, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2733,9 +2733,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to local history and change, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about local history and change; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about local history and change; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about local history and change, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about local history and change, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2761,7 +2761,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to local history and change, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about local history and change; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about local history and change; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about local history and change, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -2789,9 +2789,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to local history and change, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about local history and change; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about local history and change; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about local history and change, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about local history and change, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2817,9 +2817,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to arts and performance, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about arts and performance; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about arts and performance; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about arts and performance, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about arts and performance, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2845,9 +2845,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to arts and performance, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about arts and performance; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about arts and performance; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about arts and performance, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about arts and performance, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2873,9 +2873,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to arts and performance, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about arts and performance; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about arts and performance; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about arts and performance, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about arts and performance, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2901,7 +2901,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to arts and performance, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about arts and performance; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about arts and performance; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about arts and performance, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -2929,9 +2929,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to arts and performance, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about arts and performance; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about arts and performance; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about arts and performance, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about arts and performance, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2957,9 +2957,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to sustainability and action, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about sustainability and action; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about sustainability and action; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about sustainability and action, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about sustainability and action, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -2985,9 +2985,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to sustainability and action, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about sustainability and action; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about sustainability and action; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about sustainability and action, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about sustainability and action, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -3013,9 +3013,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to sustainability and action, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about sustainability and action; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about sustainability and action; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about sustainability and action, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about sustainability and action, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -3041,7 +3041,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to sustainability and action, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about sustainability and action; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about sustainability and action; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about sustainability and action, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -3069,9 +3069,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to sustainability and action, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about sustainability and action; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about sustainability and action; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about sustainability and action, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about sustainability and action, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -3097,9 +3097,9 @@
 
 **PacEdu working achievement indicator:** The learner can listen, summarise and respond in relation to future hopes and plans, demonstrating a relevant oral response with one supporting detail.
 
-**Teacher-led activity:** Listen to a short teacher-selected account about future hopes and plans; identify its main message, record two details, then respond to a partner's question. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Listen to a short teacher-selected account about future hopes and plans; identify its main message, record two details, then respond to a partner's question. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher reads a short account about future hopes and plans, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher reads a a 3–4 paragraph story or information text about future hopes and plans, models identifying the main message, notes two details and demonstrates a relevant response. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -3125,9 +3125,9 @@
 
 **PacEdu working achievement indicator:** The learner can interpret and locate evidence in relation to future hopes and plans, demonstrating an accurate inference supported by two details.
 
-**Teacher-led activity:** Read or view a level-appropriate text about future hopes and plans; identify the central idea, locate two supporting details and explain one inference. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Read or view a level-appropriate text about future hopes and plans; identify the central idea, locate two supporting details and explain one inference. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher annotates a a short paragraph or accessible information text about future hopes and plans, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher annotates a a 3–4 paragraph story or information text about future hopes and plans, highlights the central idea and models how to support an inference with details. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -3153,9 +3153,9 @@
 
 **PacEdu working achievement indicator:** The learner can analyse word choice and meaning in relation to future hopes and plans, demonstrating three context-appropriate words explained or used accurately.
 
-**Teacher-led activity:** Select three important words from a text about future hopes and plans; use context to explain each meaning and replace one word with a suitable alternative. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Select three important words from a text about future hopes and plans; use context to explain each meaning and replace one word with a suitable alternative. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher selects three words from a a short paragraph or accessible information text about future hopes and plans, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher selects three words from a a 3–4 paragraph story or information text about future hopes and plans, models using context clues and checks whether a replacement preserves meaning. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
@@ -3181,7 +3181,7 @@
 
 **PacEdu working achievement indicator:** The learner can construct and revise sentences in relation to future hopes and plans, demonstrating two accurate revised sentences showing the target feature.
 
-**Teacher-led activity:** Examine sentence choices in a short text about future hopes and plans; identify the target language feature and revise two sentences for clarity and accuracy. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Examine sentence choices in a short text about future hopes and plans; identify the target language feature and revise two sentences for clarity and accuracy. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
 **Worked example:** Teacher models the target sentence feature in a text about future hopes and plans, explains the effect and revises two sample sentences. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
@@ -3209,9 +3209,9 @@
 
 **PacEdu working achievement indicator:** The learner can plan, draft and improve writing in relation to future hopes and plans, demonstrating a coherent paragraph with a clear purpose and supporting detail.
 
-**Teacher-led activity:** Write a focused paragraph about future hopes and plans; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a short paragraph or accessible information text. Target clear topic sentences, sequence words and familiar vocabulary.
+**Teacher-led activity:** Write a focused paragraph about future hopes and plans; plan the main point, add relevant supporting detail and revise one sentence for clarity. Use a 3–4 paragraph story or information text. Target paragraph cohesion, varied openings and evidence-based inference.
 
-**Worked example:** Teacher models a planning frame for a paragraph about future hopes and plans, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
+**Worked example:** Teacher models a planning frame for a a developed paragraph of 7–9 sentences response about future hopes and plans, develops a clear main point and improves one sentence for precision. Learners then complete a parallel example using a different detail or sentence from the same theme.
 
 **Copper:** Teacher models each step; chunk the task; provide a short accessible text, picture/tactile cues, a vocabulary bank and guided choices. Learner may point, sign, use AAC, dictate or write. Complete one supported example.
 
