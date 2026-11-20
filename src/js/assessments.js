@@ -23,13 +23,14 @@ const assessmentData = {
 
 function escapeHTML(value) { return String(value == null ? "" : value).replace(/[&<>"\']/g, function (ch) { return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","\'":"&#039;"}[ch]; }); }
 
-function speakAssessmentQuestion(question) {    if (typeof speakText === "function") speakText(String(question || ""));}function renderAudioControls(question) {    var safeQuestion = escapeHTML(String(question || ""));    return `<div class="activity-audio-controls"><button type="button" onclick="speakAssessmentQuestion(this.dataset.question)" data-question="${safeQuestion}">🔊 Listen to question</button><label> 🎤 Answer by voice <input id="peActivityAudio" type="file" accept="audio/*" capture></label></div>`;}function readFormalAssessmentAudio(done) {
-    var input=document.getElementById("peActivityAudio"), file=input&&input.files&&input.files[0];
-    if(!file){done("");return;}
-    var reader=new FileReader();
-    reader.onload=function(){done(String(reader.result||""));};
-    reader.onerror=function(){done("");};
-    reader.readAsDataURL(file);
+function speakAssessmentQuestion(question) {    if (typeof speakText === "function") speakText(String(question || ""));}
+function renderAudioControls(question) {
+    var safeQuestion = escapeHTML(String(question || ""));
+    return `<div class="activity-audio-controls"><button type="button" onclick="speakAssessmentQuestion(this.dataset.question)" data-question="${safeQuestion}">🔊 Listen to question</button><p role="status">Voice answers are temporarily unavailable until a teacher-authorisation service verifies permission for this learner. You may use the on-screen answer options or ask your teacher to enter a paper response.</p></div>`;
+}
+function readFormalAssessmentAudio(done) {
+    // Fail closed: this prototype has no trusted per-learner teacher authorisation service.
+    if (typeof done === "function") done("");
 }
 function getAssessmentClassId() { var r=window.PacificEducationTeacherClassRosterContext; return r&&typeof r.getClassId==="function"?String(r.getClassId()||"").trim():""; }
 function saveFormalAssessmentEvidence(type, questionNumber, questionText, selectedAnswer, audioDataUrl) {

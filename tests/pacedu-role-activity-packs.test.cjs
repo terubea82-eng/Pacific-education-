@@ -199,3 +199,16 @@ test("saved learner work carries dated assignment context into the teacher revie
   assert.match(queue, /Prepared \/ submitted:/);
   assert.doesNotMatch(renderer, /studentId:\s*enteredId/);
 });
+
+test("daily worksheet questions open one-by-one in the interactive learner runtime and resume from saved responses", () => {
+  assert.match(source, /Saved daily question sequence/);
+  assert.match(source, /PaceduDailyQuestionSequenceContinue/);
+  assert.match(source, /PacificEducationActivity\.render\(questionType/);
+  assert.match(source, /questionSequenceId/);
+  assert.match(source, /response\.studentId/);
+  assert.match(source, /sequenceStudent\.studentReference/);
+  assert.match(source, /sequenceStudent\.assignmentStatus==="roster-matched-prototype"/);
+  assert.match(source, /sequenceAssignedClass\.studentRefs\.indexOf/);
+  assert.match(source, /first unanswered question/);
+  assert.match(source, /answerEntry\.answer/);
+});

@@ -565,7 +565,7 @@
         lessonPanel.setAttribute("aria-label","Step-by-step see read and hear lesson");
         lessonPanel.style.cssText="margin:14px 0;padding:14px;border:1px solid #b7c9d6;border-radius:9px;";
         var lessonHeading = document.createElement("h4"); lessonHeading.textContent="Learn in steps: See • Read • Hear • Try • Check"; lessonPanel.appendChild(lessonHeading);
-        var lessonNotice = document.createElement("p"); lessonNotice.textContent="Practice lesson example for "+lessonLevel+" "+lessonSubject+". Your teacher must confirm the exact current syllabus indicator and assigned week; this draft is not labelled officially aligned."; lessonPanel.appendChild(lessonNotice);
+        var lessonNotice = document.createElement("p"); lessonNotice.textContent="Practice lesson example for "+lessonLevel+" "+lessonSubject+". The indicator distribution link is shown below when an exact class, subject, term, week and day record has been imported. Browser-imported mapping remains a prototype reference and does not authorize formal assessment."; lessonPanel.appendChild(lessonNotice);
         var scheduleNav=document.createElement("section");
         scheduleNav.setAttribute("aria-label","Choose term and teaching week");
         scheduleNav.style.cssText="margin:10px 0;padding:10px;border:1px solid #c8d5de;border-radius:8px;";
@@ -632,17 +632,84 @@
         var transcriptHeading=document.createElement("h5"); transcriptHeading.textContent="Audio transcript"; lessonPanel.appendChild(transcriptHeading);
         var transcript=document.createElement("p"); transcript.textContent=lesson.dailyLesson.audioNarration.transcript; lessonPanel.appendChild(transcript);
         var questionsHeading=document.createElement("h5"); questionsHeading.textContent="Try these questions"; lessonPanel.appendChild(questionsHeading);
-        var questions=document.createElement("ol");
-        lesson.questions.forEach(function(question){
-          var q=document.createElement("li"); q.textContent=question.prompt;
-          if(question.options && question.options.length){
-            var choices=document.createElement("ul");
-            question.options.forEach(function(option,index){var choice=document.createElement("li");choice.textContent=String.fromCharCode(65+index)+". "+option;choices.appendChild(choice);});
-            q.appendChild(choices);
-          }
-          questions.appendChild(q);
+        var questionSequence=document.createElement("section");
+        questionSequence.setAttribute("aria-label","Saved daily question sequence");
+        var questionProgress=document.createElement("p"); questionProgress.setAttribute("aria-live","polite"); questionSequence.appendChild(questionProgress);
+        var questionPrompt=document.createElement("p"); questionSequence.appendChild(questionPrompt);
+        var questionChoices=document.createElement("ol"); questionSequence.appendChild(questionChoices);
+        var questionAttempt=document.createElement("button"); questionAttempt.type="button"; questionAttempt.textContent="Attempt this question"; questionSequence.appendChild(questionAttempt);
+        var questionAnswerHost=document.createElement("div"); questionAnswerHost.id="paceduDailyQuestionAnswer"; questionSequence.appendChild(questionAnswerHost);
+        var questionResumeNote=document.createElement("p"); questionResumeNote.setAttribute("role","status"); questionSequence.appendChild(questionResumeNote);
+        lessonPanel.appendChild(questionSequence);
+        var sequenceStudent=null;
+        try { sequenceStudent=JSON.parse(global.sessionStorage.getItem("paceduActiveStudentContextV1")||"null"); } catch(sequenceIdentityError) {}
+        var sequenceRoster=global.PacificEducationTeacherClassRosterContext;
+        var sequenceAssignedClass=null;
+        try { sequenceAssignedClass=sequenceStudent && sequenceStudent.classId && sequenceRoster && typeof sequenceRoster.getClass==="function" ? sequenceRoster.getClass(sequenceStudent.classId) : null; } catch(sequenceRosterError) {}
+        var sequenceVerified=!!(sequenceStudent && sequenceStudent.role==="student" && sequenceStudent.identityVerified===true &&
+          sequenceStudent.studentId && sequenceStudent.studentReference && sequenceStudent.classId &&
+          sequenceStudent.assignmentStatus==="roster-matched-prototype" && sequenceAssignedClass &&
+          String(sequenceAssignedClass.level||"")===String(sequenceStudent.classLevel||"") &&
+          Array.isArray(sequenceAssignedClass.studentRefs) &&
+          sequenceAssignedClass.studentRefs.indexOf(String(sequenceStudent.studentReference))>=0);
+        var sequenceResponses=[];
+        try { sequenceResponses=JSON.parse(global.localStorage.getItem("pacificEducationActivityResponses")||"[]"); } catch(sequenceReadError) { sequenceResponses=[]; }
+        if (!Array.isArray(sequenceResponses)) sequenceResponses=[];
+        var completedQuestionIds={};
+        if (sequenceVerified) sequenceResponses.forEach(function(response){
+          if(response && String(response.studentId||"")===String(sequenceStudent.studentId) &&
+             String(response.classId||"")===String(sequenceStudent.classId) &&
+             String(response.activityId||"")===String(lesson.activityId||"") &&
+             String(response.questionSequenceId||"")===String(lesson.questionSequenceId||"") &&
+             Number(response.questionSequenceVersion)===Number(lesson.questionSequenceVersion) &&
+             response.questionId && (String(response.response||"").trim()!=="" || String(response.audioDataUrl||"").trim()!=="")) completedQuestionIds[String(response.questionId)]=true;
         });
-        lessonPanel.appendChild(questions);
+        var activeQuestionIndex=0;
+        while(activeQuestionIndex<lesson.questions.length && completedQuestionIds[String(lesson.questions[activeQuestionIndex].questionId||"")]) activeQuestionIndex++;
+        if(activeQuestionIndex>0) questionResumeNote.textContent="Your saved work was found. Continuing from the first unanswered question.";
+        function openDailyQuestion(index){
+          if(index>=lesson.questions.length){
+            questionProgress.textContent="All questions in this sequence have a saved response. Ask your teacher to review your work.";
+            questionPrompt.textContent="";
+            questionChoices.textContent="";
+            questionAttempt.hidden=true;
+            questionAnswerHost.textContent="";
+            return;
+          }
+          activeQuestionIndex=index;
+          var question=lesson.questions[index];
+          var answerEntry=lesson.answerKey && lesson.answerKey[index] || {};
+          questionProgress.textContent="Question "+(index+1)+" of "+lesson.questions.length;
+          questionPrompt.textContent=question.prompt;
+          while(questionChoices.firstChild) questionChoices.removeChild(questionChoices.firstChild);
+          (question.options||[]).forEach(function(option,optionIndex){var item=document.createElement("li");item.textContent=String.fromCharCode(65+optionIndex)+". "+option;questionChoices.appendChild(item);});
+          questionAnswerHost.textContent="";
+          questionAttempt.hidden=false;
+          questionAttempt.onclick=function(){
+            if(!global.PacificEducationActivity || typeof global.PacificEducationActivity.render!=="function"){
+              questionResumeNote.textContent="The interactive answer screen is unavailable. Please ask your teacher for help."; return;
+            }
+            questionAttempt.hidden=true;
+            var questionType=(question.options||[]).length===4 ? "multiple_choice" : "short_answer";
+            var questionContext={
+              activityId:lesson.activityId, questionId:question.questionId,
+              sequenceId:question.sequenceId || lesson.questionSequenceId,
+              sequencePosition:question.sequencePosition || index+1,
+              sequenceVersion:question.sequenceVersion || lesson.questionSequenceVersion,
+              questionText:question.prompt, audioText:question.prompt,
+              answerKey:answerEntry.answer, options:question.options||[],
+              indicatorIds:Array.isArray(question.indicatorIds)?question.indicatorIds.slice():[],
+              indicatorMappingStatus:question.indicatorMappingStatus||lesson.indicatorMappingStatus||"NOT_MAPPED",
+              subjectId:lessonSubject, term:lessonTerm, renderTargetId:"paceduDailyQuestionAnswer"
+            };
+            global.PaceduDailyQuestionSequenceContinue=function(){
+              completedQuestionIds[String(question.questionId||"")]=true;
+              openDailyQuestion(index+1);
+            };
+            global.PacificEducationActivity.render(questionType,Math.max(1,Number(day)||1),questionContext);
+          };
+        }
+        openDailyQuestion(activeQuestionIndex);
         if (lesson.termLearningPlan) {
           var plan = lesson.termLearningPlan;
           var planSection = document.createElement("section");
@@ -685,9 +752,13 @@
         }
         var alignment=document.createElement("p");
         var candidateIndicator=lesson.dailyLesson.curriculumAlignment.candidateIndicator;
-        alignment.textContent="Curriculum trace: "+lesson.dailyLesson.curriculumAlignment.verificationStatus+". "+
-          (candidateIndicator ? "Candidate indicator for teacher review: "+candidateIndicator.id+" — "+candidateIndicator.text+"; strand: "+candidateIndicator.strand+"; source status: "+candidateIndicator.sourceStatus+". This is not verified alignment." :
-          "Exact official achievement indicator: not yet mapped; teacher review is required.");
+        var mappingStatus=lesson.indicatorMappingStatus||"NO_APPROVED_INDICATOR_SLOT";
+        alignment.textContent="Curriculum trace: "+mappingStatus+". "+
+          (candidateIndicator ? "Indicator "+candidateIndicator.id+" — "+candidateIndicator.text+"; strand: "+candidateIndicator.strand+"; source status: "+candidateIndicator.sourceStatus+"; educator review: "+(candidateIndicator.reviewStatus||"PENDING")+". "+
+            (mappingStatus==="VALIDATED" ? "Source and educator review fields are recorded in this imported prototype distribution; trusted server confirmation is still required before formal assessment." : "This indicator remains pending review and must not be described as verified.") :
+          "No indicator is assigned to this exact class, subject, term, week and day slot. Do not borrow another day's indicator or invent one.")+
+          " Assessment evidence is linked to the indicator ID where available; formal assessment eligibility remains disabled until trusted server authorization.";
+
         lessonPanel.appendChild(alignment);
         card.appendChild(lessonPanel);
       }
@@ -732,8 +803,12 @@
       try { learnerRegistration = JSON.parse(global.sessionStorage.getItem("pacificEducationPilotRegistration") || "null"); } catch (_) {}
       var preparedAt = new Date().toISOString();
       var assignmentId = [context.classReference || "class-pending", context.level || "level-pending", context.subject || "subject-pending", context.term || "term-pending", "day-" + (Math.max(1,Number(day)||1)), preparedAt.slice(0,10)].join(":");
+      var lessonIndicatorIds = Array.isArray(lesson && lesson.indicatorIds) ? lesson.indicatorIds.slice() : [];
+      var lessonIndicatorStatus = lesson && lesson.indicatorMappingStatus || "NOT_MAPPED";
+      var lessonAssessmentMapping = lesson && lesson.assessmentMapping || null;
       records[key] = {
         activityId:activity.id, assignmentId:assignmentId, preparedDate:preparedAt.slice(0,10),
+        indicatorIds:lessonIndicatorIds, indicatorMappingStatus:lessonIndicatorStatus, assessmentMapping:lessonAssessmentMapping,
         learnerReference:learnerRegistration && learnerRegistration.learnerReference || "",
         learnerIdentityStatus:learnerRegistration && learnerRegistration.identityStatus || "identity-not-available",
         learnerIdentityPending:!!(learnerRegistration && learnerRegistration.identityPending),
@@ -769,6 +844,7 @@
             classReference:context.classReference, classLevel:context.level, subject:context.subject,
             term:context.term, capability:context.capability, day:Math.max(1,Number(day)||1),
             type:"daily-activity", questionText:activity.title, response:response,
+            indicatorIds:lessonIndicatorIds, indicatorMappingStatus:lessonIndicatorStatus, assessmentMapping:lessonAssessmentMapping,
             preparedDate:preparedAt.slice(0,10), savedAt:preparedAt,
             reviewStatus:"pending-teacher-review", evidenceType:activity.evidence,
             source:"PacEdu learner workspace; local pilot"
