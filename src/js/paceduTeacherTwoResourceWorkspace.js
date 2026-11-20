@@ -7,11 +7,12 @@
   "use strict";
   var PANEL_ID = "paceduTeacherTwoResourcePanel";
   var RESPONSE_KEY = "pacificEducationActivityResponses";
+  /* Stable internal keys; learner-facing pathways are not score bands. */
   var BANDS = [
-    { id: "support", label: "Foundation" },
-    { id: "developing", label: "Developing" },
-    { id: "expected", label: "Expected" },
-    { id: "extension", label: "Advanced" }
+    { id: "support", label: "Copper" },
+    { id: "developing", label: "Bronze" },
+    { id: "expected", label: "Silver" },
+    { id: "extension", label: "Gold" }
   ];
   function node(tag, value) {
     var el = document.createElement(tag);
@@ -24,34 +25,28 @@
       return Array.isArray(value) ? value : [];
     } catch (_) { return []; }
   }
-  function priorReviewedEvidence(studentRef, classId, subject) {
-    var rows = readResponses();
-    var valid = rows.filter(function (r) {
+  function reviewedEvidenceFor(studentRef, classId, subject) {
+    return readResponses().filter(function (r) {
       var status = String(r.reviewStatus || r.markingStatus || "").toLowerCase();
       var reviewed = ["teacher-reviewed", "reviewed", "teacher-approved", "marked"].indexOf(status) >= 0 ||
         r.teacherReviewed === true || r.teacherApproved === true;
       var rawMark = r.markPercent != null ? r.markPercent : r.scorePercent != null ? r.scorePercent :
         r.mark != null ? r.mark : r.score != null ? r.score : null;
-      var hasMark = rawMark !== null && rawMark !== "" && Number.isFinite(Number(rawMark));
-      return reviewed && hasMark &&
+      var numericMark = rawMark === null || rawMark === "" ? NaN : Number(rawMark);
+      return reviewed && Number.isFinite(numericMark) && numericMark >= 0 && numericMark <= 100 &&
         String(r.studentReference || r.studentRef || "") === String(studentRef) &&
         String(r.classId || "") === String(classId) &&
         String(r.subject || r.subjectId || "").toLowerCase() === String(subject || "").toLowerCase();
-    });
-    if (!valid.length) return null;
-    valid.sort(function (a, b) {
+    }).sort(function (a, b) {
       return Number(b.day || b.dayNumber || 0) - Number(a.day || a.dayNumber || 0);
     });
-    return valid[0];
   }
-  function bandFor(mark) {
-    var n = Number(mark);
-    if (!Number.isFinite(n)) return null;
-    if (n < 40) return "support";
-    if (n < 60) return "developing";
-    if (n < 80) return "expected";
-    return "extension";
+  function priorReviewedEvidence(studentRef, classId, subject) {
+    var rows = reviewedEvidenceFor(studentRef, classId, subject);
+    return rows.length ? rows[0] : null;
   }
+  /* No numerical placement thresholds or minimum evidence count are approved. */
+  function bandFor() { return null; }
   function render() {
     var list = document.getElementById("paceduTeacherClassList");
     var planPanel = document.getElementById("pacificEducationLinkedTeacherPlans");
@@ -64,12 +59,13 @@
     var roster = window.PacificEducationTeacherClassRosterContext;
     var classInfo = null;
     try { classInfo = roster && classId && roster.getClass ? roster.getClass(classId) : null; } catch (_) {}
+    var levelValue = String(classInfo && (classInfo.level || classInfo.className) || selectedClass.textContent.trim());
     var panel = node("section");
     panel.id = PANEL_ID;
     panel.setAttribute("aria-label", "Teacher instructions and student ability worksheets");
     panel.style.cssText = "margin:14px 0;padding:14px;border:2px solid #7bb9e8;border-radius:12px;";
     panel.appendChild(node("h3", subject + " — " + selectedClass.textContent.trim()));
-    panel.appendChild(node("p", "Use the learner's latest reviewed evidence when available; missing or pending work does not mean low ability. Daily downloads and teaching aids stay linked to the selected subject and class."));
+    panel.appendChild(node("p", "Daily downloads and teaching aids stay linked to the selected subject and class. Reviewed evidence is information for teacher consideration only; no mark automatically assigns a learner. A teacher must review the Day 1 baseline and sufficient evidence, then confirm the group. Missing, pending or invalid work stays unconfirmed and never means low ability."));
     /* Keep the visible workspace to the two requested resource types.
        Existing linked-plan actions remain callable by the resource-1 buttons. */
     Array.prototype.forEach.call(planPanel.querySelectorAll("button"), function (b) {
@@ -119,20 +115,19 @@
     var evidence = node("div");
     evidence.setAttribute("aria-label", "Learner roster and previous-day reviewed evidence");
     var students = classInfo && Array.isArray(classInfo.studentRefs) ? classInfo.studentRefs : [];
-    var groupCounts = { support: 0, developing: 0, expected: 0, extension: 0 };
-    var levelValue = String(classInfo && (classInfo.level || classInfo.className) || selectedClass.textContent.trim());
     if (!students.length) {
       evidence.appendChild(node("p", "No learner references are connected to this class roster yet. Do not assign an individual ability group until the roster is linked."));
     } else {
       var rosterList = node("ul");
       students.forEach(function (ref) {
         var row = node("li");
-        var mark = priorReviewedEvidence(ref, classId, subject);
-        var rawMark = mark && (mark.markPercent != null ? mark.markPercent : mark.scorePercent != null ? mark.scorePercent : mark.mark != null ? mark.mark : mark.score);
-        var band = mark ? BANDS.filter(function (b) { return b.id === bandFor(rawMark); })[0] : null;
-        if (band) groupCounts[band.id] += 1;
-        row.textContent = String(ref) + " — " + (mark ?
-          "Reviewed mark found (Day " + String(mark.day || mark.dayNumber || "?") + "); provisional worksheet recommendation: " + (band ? band.label : "manual review required") :
+        var reviewedRows = reviewedEvidenceFor(ref, classId, subject);
+        var hasDayOne = reviewedRows.some(function (r) {
+          return Number(r.day || r.dayNumber || 0) === 1;
+        });
+        row.textContent = String(ref) + " — " + (reviewedRows.length ?
+          "Reviewed evidence: " + reviewedRows.length + " record(s); Day 1 reviewed record: " +
+          (hasDayOne ? "present" : "not found") + "; ability placement remains unconfirmed for teacher review." :
           "No reviewed mark found for this subject; ability group remains unconfirmed.");
         rosterList.appendChild(row);
       });
@@ -159,16 +154,13 @@
       groupStatus.setAttribute("role", "status");
       groupStatus.setAttribute("aria-live", "polite");
       if (!students.length) {
-        groupStatus.textContent = "You can prepare all four class-wide packs now. Link the learner roster and review baseline evidence before assigning individual students.";
-      } else if (!Object.keys(groupCounts).some(function (id) { return groupCounts[id] > 0; })) {
-        groupStatus.textContent = "No reviewed marks are available for this subject yet. All four class-wide practice packs remain available; use the baseline assessment and teacher review before assigning learners.";
+        groupStatus.textContent = "All four class-wide practice packs remain available. Link the roster and complete the Day 1 baseline before considering individual placement.";
       } else {
-        groupStatus.textContent = "Counts show only learners with an explicitly reviewed mark for this subject. They are informational only: a pack can be prepared even when its count is zero. Missing or pending evidence never means low ability.";
+        groupStatus.textContent = "Reviewed records are shown for teacher consideration only. No learner is automatically placed. Numerical placement thresholds and minimum evidence rules are not configured; a teacher must review the Day 1 baseline and sufficient evidence before confirming any group. Missing, pending or invalid work never means low ability.";
       }
       worksheets.appendChild(groupStatus);
       if (worksheetAvailability.available) BANDS.forEach(function (band) {
-        var count = groupCounts[band.id] || 0;
-        var button = node("button", "Prepare " + band.label + " pack: daily activities + revision + mock exam" + (count ? " (" + count + " reviewed learner(s))" : " (no reviewed marks yet)"));
+        var button = node("button", "Prepare " + band.label + " class-wide pack: daily activities + revision + mock exam");
         button.type = "button";
         button.disabled = false;
         button.style.cssText = "display:block;width:100%;min-height:46px;padding:10px;margin:7px 0;text-align:left;";
@@ -186,7 +178,7 @@
         groupStatus.textContent = worksheetAvailability.note || "Subject-specific daily worksheets are not available yet. No other subject will be substituted.";
         groupStatus.setAttribute("data-content-status", "CONTENT_NOT_AVAILABLE");
       }
-      if (worksheetAvailability.available && (!students.length || !Object.keys(groupCounts).some(function (id) { return groupCounts[id] > 0; }))) {
+      if (worksheetAvailability.available && !students.length) {
         var baseline = node("p", "For a new class or Day 1 baseline, prepare any ability pack as needed, then review the baseline activity before assigning individual learners. Do not treat absent work as a low score.");
         worksheets.appendChild(baseline);
       }
