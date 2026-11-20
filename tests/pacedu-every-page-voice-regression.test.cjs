@@ -20,7 +20,8 @@ test("additive voice repair maps every guided step to the actual page sequence",
     '[9,"dailyLesson"',
     '[10,"dailyLessonPracticeStage"',
     '[11,"assessments"',
-    '[12,"teacherCalendarSection"'
+    '[12,"pacificEducationCoverageDashboard"',
+    '[13,"teacherCalendarSection"'
   ];
   for (const mapping of expected) assert.ok(repair.includes(mapping), "missing mapping: " + mapping);
 });
@@ -56,4 +57,40 @@ test("workspace narration is manual replay only and does not compete with protec
 test("the additive repair does not duplicate the protected guided-step narrator", () => {
   assert.doesNotMatch(repair, /announceCurrentStep\("step"\)/);
   assert.match(repair, /protected controller owns guided-step announcements/);
+});
+
+test("guided page replay covers both Coverage and the final Teacher Calendar page", () => {
+  assert.match(repair, /\[12,"pacificEducationCoverageDashboard"/);
+  assert.match(repair, /\[13,"teacherCalendarSection"/);
+  assert.match(repair, /function installGuidedPageControls/);
+  assert.match(repair, /data-pe-guided-page-voice/);
+  assert.match(repair, /installGuidedPageControls\(\)/);
+});
+
+test("guided page replay is manual and does not replace protected automatic narration", () => {
+  assert.match(repair, /button\.addEventListener\("click",function\(event\).*speak\(item\[2\]\)/);
+  assert.match(repair, /protected controller owns guided-step announcements/);
+  assert.doesNotMatch(protectedController, /data-pe-guided-page-voice/);
+});
+
+
+test("voice command directive does not install a competing step-by-step guide", () => {
+  const voiceNext = fs.readFileSync("src/js/pacificEducationVoiceNextDirective.js", "utf8");
+  const stepGuide = fs.readFileSync("src/js/pacificEducationStepByStepGuidance.js", "utf8");
+  assert.doesNotMatch(voiceNext, /function guideHighlight|function guideCandidates|function guidePanelEnsure/);
+  assert.doesNotMatch(voiceNext, /data-pe-step-guide-installed/);
+  assert.doesNotMatch(voiceNext, /pacificEducationStepGuide/);
+  assert.match(stepGuide, /function install\(\)/);
+  assert.match(stepGuide, /data-pe-step-guide-installed/);
+  assert.match(voiceNext, /initGlobalVoiceUI\(\)/);
+  assert.doesNotMatch(voiceNext, /installGuide\(\);/);
+});
+
+test("voice command directive retains Next, Back, Repeat and Stop Speech commands", () => {
+  const voiceNext = fs.readFileSync("src/js/pacificEducationVoiceNextDirective.js", "utf8");
+  for (const command of ["commandBack", "commandRepeat", "commandStopSpeech", "matchesNextCommand"]) {
+    assert.match(voiceNext, new RegExp("function " + command + "\\("));
+  }
+  assert.match(voiceNext, /Start Voice Control/);
+  assert.match(voiceNext, /stopGlobal/);
 });
