@@ -39,3 +39,19 @@ test("handoff recovery releases entry-page isolation before showing workspace", 
   assert.match(guard, /pe-guided-flow-ended/);
   assert.match(guard, /remove\("pe-guided-flow", "pacedu-entry-mode", "pacedu-registration-mode"\)/);
 });
+
+
+test("sequential workspace navigation controls are resolved inside their own shell", () => {
+  const source = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
+  for (const id of [
+    "peSequentialTitle", "peSequentialProgress", "peSequentialPage",
+    "peSequentialBack", "peSequentialNext", "peSequentialStatus",
+    "peSequentialHear", "peSequentialStop"
+  ]) {
+    assert.ok(
+      source.includes('shell.querySelector("#' + id + '")'),
+      id + " must be resolved from the active workspace shell, not the document"
+    );
+  }
+  assert.match(source, /var clicked=event\.target[\s\S]*?closest\("#peSequentialNext"\)/);
+});

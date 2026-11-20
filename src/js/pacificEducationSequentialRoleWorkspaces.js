@@ -638,15 +638,18 @@
     app.insertBefore(shell,app.firstChild);
     placeAppMenuInWorkspace(shell);
 
-    var title=document.getElementById("peSequentialTitle");
-    var progress=document.getElementById("peSequentialProgress");
-    var page=document.getElementById("peSequentialPage");
-    var back=document.getElementById("peSequentialBack");
-    var next=document.getElementById("peSequentialNext");
+    /* These controls belong to this newly-created shell. Resolve them
+       locally: legacy pages may contain duplicate IDs, and document-wide
+       lookups can bind navigation to a stale hidden button instead. */
+    var title=shell.querySelector("#peSequentialTitle");
+    var progress=shell.querySelector("#peSequentialProgress");
+    var page=shell.querySelector("#peSequentialPage");
+    var back=shell.querySelector("#peSequentialBack");
+    var next=shell.querySelector("#peSequentialNext");
     restoreAllMovedTargets();
-    var status=document.getElementById("peSequentialStatus");
-    var hear=document.getElementById("peSequentialHear");
-    var stop=document.getElementById("peSequentialStop");
+    var status=shell.querySelector("#peSequentialStatus");
+    var hear=shell.querySelector("#peSequentialHear");
+    var stop=shell.querySelector("#peSequentialStop");
     var index=0;
     if(hear) hear.onclick=function(){ var item=sequence[index]; speak("Step "+(index+1)+" of "+sequence.length+". "+item[1]+". Follow this page, then press Next."); };
     if(stop) stop.onclick=function(){ try{ if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.stopSpeech==="function") window.PacificEducationSpeech.stopSpeech(); else if(window.speechSynthesis) window.speechSynthesis.cancel(); }catch(e){} };
@@ -1406,7 +1409,7 @@
       /* Do not move focus automatically on the final reading page. */
       if(item[0]!=="paceduSignOutPage"){
         try{
-          var focusTitle=document.getElementById("peSequentialTitle");
+          var focusTitle=shell.querySelector("#peSequentialTitle");
           if(focusTitle){focusTitle.setAttribute("tabindex","-1");focusTitle.focus({preventScroll:true});}
         }catch(e){}
       }
