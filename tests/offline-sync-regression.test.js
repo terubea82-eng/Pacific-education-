@@ -122,3 +122,43 @@ test("offline state blocks retry even after conflicts are reviewed", () => {
   assert.equal(result.allowed, false);
   assert.equal(result.reason, "OFFLINE");
 });
+
+test("server acknowledgement must identify exact queued items; boolean acknowledgement cannot clear the queue", () => {
+  const { window } = loadPrototype();
+  const runtime = window.PacificEducationOfflineRuntime;
+  runtime.queueProgress({ type: "progress", lessonId: "math-ack", dayNumber: 1, completed: true });
+  const result = window.PacificEducationOfflineSyncController.clearAfterServerAcknowledgement(true);
+  assert.equal(result.success, false);
+  assert.equal(result.reason, "SERVER_ACKNOWLEDGEMENT_REQUIRED");
+  assert.equal(runtime.getQueueStatus().count, 1);
+});
+
+test("acknowledging a captured batch removes only those items and preserves later queued work", () => {
+  const { window } = loadPrototype();
+  const runtime = window.PacificEducationOfflineRuntime;
+  const controller = window.PacificEducationOfflineSyncController;
+  runtime.queueProgress({ type: "progress", lessonId: "math-ack", dayNumber: 1, completed: true });
+  const batch = controller.buildSyncBatch();
+  runtime.queueProgress({ type: "progress", lessonId: "english-later", dayNumber: 2, completed: false });
+
+  const result = controller.clearAfterServerAcknowledgement({ acknowledged: true, items: batch.items });
+  assert.equal(result.success, true);
+  assert.equal(result.removedCount, 1);
+  assert.equal(result.remainingCount, 1);
+  const remaining = runtime.getQueueStatus().items;
+  assert.equal(remaining.length, 1);
+  assert.equal(remaining[0].lessonId, "english-later");
+});
+
+test("invalid or unresolved-conflict acknowledgements preserve the entire queue", () => {
+  const { window } = loadPrototype();
+  const runtime = window.PacificEducationOfflineRuntime;
+  const controller = window.PacificEducationOfflineSyncController;
+  runtime.queueProgress({ type: "progress", lessonId: "science-ack", dayNumber: 4, completed: false });
+  runtime.queueProgress({ type: "progress", lessonId: "science-ack", dayNumber: 4, completed: true });
+  const batch = controller.buildSyncBatch();
+  const blocked = controller.clearAfterServerAcknowledgement({ acknowledged: true, items: batch.items });
+  assert.equal(blocked.success, false);
+  assert.equal(blocked.reason, "MANUAL_CONFLICT_REVIEW_REQUIRED");
+  assert.equal(runtime.getQueueStatus().count, 2);
+});
