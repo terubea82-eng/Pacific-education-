@@ -15,6 +15,9 @@ import android.view.View;
 import android.view.WindowManager;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebResourceRequest;
+import android.webkit.WebResourceError;
+import android.webkit.SslErrorHandler;
+import android.net.http.SslError;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -44,6 +47,7 @@ public final class MainActivity extends Activity {
 
     private WebView webView;
     private boolean webPageReady = false;
+    private boolean webLoadFailureDialogShowing = false;
     private SharedPreferences prefs;
     private TextToSpeech textToSpeech;
     private boolean ttsReady = false;
@@ -247,6 +251,13 @@ public final class MainActivity extends Activity {
                     null);
         });
     }
+    private void handleNativeConversationSpeechError() {
+        // Release the active flag but retain the last persisted line and character offset.
+        // A later retry or app resume can continue from the saved position.
+        nativeConversationActive = false;
+        notifyWebVoiceStatus("AI Playback was interrupted. Your saved place is kept. Tap Hear Instructions to retry.");
+    }
+
     private boolean speakConversationNative(String json) {
         if (!ttsReady || textToSpeech == null || json == null || json.trim().isEmpty()) return false;
         // Keep the complete dialogue available for crash/close recovery before speaking.
@@ -279,10 +290,10 @@ public final class MainActivity extends Activity {
                     }
                 }
                 @Override public void onError(String utteranceId) {
-                    notifyWebVoiceStatus("AI Playback could not start speech; tap Hear Welcome to retry.");
+                    handleNativeConversationSpeechError();
                 }
                 @Override public void onError(String utteranceId, int errorCode) {
-                    notifyWebVoiceStatus("AI Playback could not start speech; tap Hear Welcome to retry.");
+                    handleNativeConversationSpeechError();
                 }
             });
             nativeConversationIndex = index[0];
@@ -519,6 +530,26 @@ public final class MainActivity extends Activity {
         }, AUTO_WELCOME_TAG, android.os.SystemClock.uptimeMillis() + 5000L);
     }
 
+    private void showWebLoadFailure(WebView failedView, String message) {
+        if (failedView == null || failedView != webView || isFinishing() || webLoadFailureDialogShowing) return;
+        webPageReady = false;
+        webLoadFailureDialogShowing = true;
+        new android.app.AlertDialog.Builder(this)
+                .setTitle("Pacific Education connection problem")
+                .setMessage(message + "\n\nYour learning data on this device has not been cleared. Check your internet connection, then retry.")
+                .setCancelable(false)
+                .setPositiveButton("Retry", (dialog, which) -> {
+                    webLoadFailureDialogShowing = false;
+                    failedView.reload();
+                })
+                .setNegativeButton("Return to PacEdu Home", (dialog, which) -> {
+                    webLoadFailureDialogShowing = false;
+                    showNativeHome();
+                })
+                .setOnDismissListener(dialog -> webLoadFailureDialogShowing = false)
+                .show();
+    }
+
     private void configureWebView(WebView view) {
         WebSettings settings = view.getSettings();
         settings.setJavaScriptEnabled(true);
@@ -561,9 +592,34 @@ public final class MainActivity extends Activity {
             }
 
             @Override
+            public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
+                super.onReceivedError(view, request, error);
+                if (request != null && request.isForMainFrame()) {
+                    String detail = error == null ? "The learning page could not be loaded." : String.valueOf(error.getDescription());
+                    showWebLoadFailure(view, detail);
+                }
+            }
+
+            @Override
+            public void onReceivedHttpError(WebView view, WebResourceRequest request, android.webkit.WebResourceResponse response) {
+                super.onReceivedHttpError(view, request, response);
+                if (request != null && request.isForMainFrame() && response != null && response.getStatusCode() >= 400) {
+                    showWebLoadFailure(view, "The learning page returned an HTTP " + response.getStatusCode() + " error.");
+                }
+            }
+
+            @Override
+            public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
+                // Never bypass certificate validation.
+                handler.cancel();
+                showWebLoadFailure(view, "Android could not verify the secure connection. Check the phone date, time and network, then retry.");
+            }
+
+            @Override
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
                 webPageReady = true;
+                webLoadFailureDialogShowing = false;
                 // The hosted JavaScript single-navigation controller owns all page
                 // transitions. Do not intercept the Welcome Next button here: an
                 // Android-only click handler can bypass Vision/Mission and Rules.
