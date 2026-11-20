@@ -5,22 +5,22 @@
 (function(global){
   "use strict";
   var bands={
-    support:{label:"Foundation",tasks:[
+    support:{label:"Copper",tasks:[
       "Teacher models the first item and thinks aloud.",
       "Complete the first two core items with a picture, object, word bank, worked example or read-aloud as appropriate.",
       "Explain, point, draw, sign, select or demonstrate one answer; record prompts used."
     ],revision:"Revisit one earlier example with the teacher, then try a similar item with less help.",check:"Can the learner demonstrate the target with the planned support?"},
-    developing:{label:"Developing",tasks:[
+    developing:{label:"Bronze",tasks:[
       "Review one worked example, then attempt the core questions independently before asking for a hint.",
       "Complete the core task and show the important step, detail or evidence.",
       "Correct one response using feedback and explain the correction."
     ],revision:"Answer two retrieval questions from earlier lessons, then correct one using the notes or feedback.",check:"Can the learner complete the core skill with limited prompting?"},
-    expected:{label:"Expected",tasks:[
+    expected:{label:"Silver",tasks:[
       "Complete the class-level task independently using the success criteria.",
       "Show working, evidence, a demonstration or a clear explanation appropriate to the subject.",
       "Check the result against the success criteria and identify one improvement."
     ],revision:"Complete a short mixed review of previously taught skills without a model, then check answers.",check:"Does the evidence meet the stated class-level success criteria independently?"},
-    extension:{label:"Advanced",tasks:[
+    extension:{label:"Gold",tasks:[
       "Complete the core task, then apply the skill to a new or less familiar Fiji-life example.",
       "Compare two approaches or interpretations and justify the stronger one with evidence or working.",
       "Create one related challenge question and provide a reasoned answer or model solution."
