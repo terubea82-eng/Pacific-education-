@@ -1474,3 +1474,53 @@ test("registration save keeps Page 4 visible until Next, then recovers the role 
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toBeVisible();
   expect(pageErrors, "registration-to-workspace handoff must not throw uncaught errors").toEqual([]);
 });
+
+test("five-page public entry numbering matches the Welcome-to-Registration sequence", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL, { waitUntil: "load" });
+
+  const guide = page.locator(".pacedu-page-sequence-number");
+  await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
+  const startupDiagnostic = await page.evaluate(() => {
+    const welcome = document.getElementById("pacificEducationWelcome");
+    const controller = window.PacificEducationSingleNavigation;
+    return {
+      readyState: document.readyState,
+      navigationReady: document.documentElement.getAttribute("data-pacedu-navigation-ready"),
+      navigationStarted: document.body?.getAttribute("data-pe-single-navigation-started"),
+      navigationOwner: document.body?.getAttribute("data-pe-navigation-owner"),
+      activeGuidedPage: document.body?.getAttribute("data-pe-active-guided-page"),
+      entryMode: document.body?.classList.contains("pacedu-entry-mode"),
+      entryPage: document.body?.getAttribute("data-pac-edu-entry-page"),
+      welcomeExists: !!welcome,
+      welcomeVisible: !!welcome && !welcome.hidden && getComputedStyle(welcome).display !== "none",
+      guideCount: welcome?.querySelectorAll(".pacedu-page-sequence-guide").length || 0,
+      sequenceNumberCount: welcome?.querySelectorAll(".pacedu-page-sequence-number").length || 0,
+      controllerAvailable: !!controller,
+      controllerVersion: controller?.version || null,
+      controllerStatus: typeof controller?.status === "function" ? controller.status() : null
+    };
+  });
+  console.log("[PACEDU WELCOME STARTUP DIAGNOSTIC]", JSON.stringify(startupDiagnostic));
+  await expect(guide, "Welcome sequence banner startup diagnostic: " + JSON.stringify(startupDiagnostic))
+    .toHaveText("Page 2 of 5 — Welcome");
+
+  await page.locator("#welcomeNextButton").click();
+  await expect(page.locator("#paceduPageVision")).toBeVisible();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
+  await expect(page.locator("#paceduPageVision .pacedu-page-sequence-number"))
+    .toHaveText("Page 3 of 5 — Country and language");
+
+  await page.locator("#paceduVisionNext").click();
+  await expect(page.locator("#paceduPageRules")).toBeVisible();
+  await expect(page.locator("#paceduPageRules .pacedu-page-sequence-number"))
+    .toHaveText("Page 4 of 5 — Workspaces and rules");
+
+  await page.locator("#paceduRulesAgreement").check();
+  await page.locator("#paceduRulesContinue").click();
+  await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
+  await expect(page.locator("#pacificEducationIdentityRegistration .pacedu-page-sequence-number"))
+    .toHaveText("Page 5 of 5 — User registration");
+  await expect(page.locator("#paceduPageRules")).toBeHidden();
+});
