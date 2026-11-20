@@ -1,6 +1,8 @@
 const { test, expect } = require("@playwright/test");
 
 const baseURL = process.env.PACEDU_TEST_URL || "http://127.0.0.1:4173/src/index.html";
+const registrationURL = new URL(baseURL);
+registrationURL.searchParams.set("entry", "registration");
 
 test("direct Registration handoff releases startup guard and reveals the role workspace and App Menu", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
@@ -11,7 +13,7 @@ test("direct Registration handoff releases startup guard and reveals the role wo
     Object.defineProperty(window, "SpeechSynthesisUtterance", { configurable: true, value: FakeUtterance });
     Object.defineProperty(window, "speechSynthesis", { configurable: true, value: synth });
   });
-  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+  await page.goto(registrationURL.toString(), { waitUntil: "domcontentloaded" });
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
   await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
   await page.locator("#registrationNextButton").click();
@@ -50,9 +52,8 @@ test("guided Rules to Registration opens the role workspace and keeps it visible
   await page.goto(baseURL, { waitUntil: "load" });
   await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
   await page.locator("#welcomeNextButton").click();
-  await expect(page.locator("#paceduPageVision")).toBeVisible();
-  await page.locator("#paceduVisionNext").click();
   await expect(page.locator("#paceduPageRules")).toBeVisible();
+  await expect(page.locator("#paceduPageVision")).toBeHidden();
   await page.locator("#paceduRulesAgreement").check();
   await page.locator("#paceduRulesContinue").click();
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
