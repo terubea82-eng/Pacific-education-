@@ -1643,7 +1643,7 @@
         return;
       }
       if(!state.pacificEducationSequential || state.role!==getRole()) return;
-      var backButton=document.getElementById("peSequentialBack");
+      var backButton=shell.querySelector("#peSequentialBack");
       if(backButton && state.index>=0){
         backButton.click();
       }

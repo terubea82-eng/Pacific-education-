@@ -48,3 +48,12 @@ test("advanced blank-page fallback restores Registration instead of Welcome", ()
   assert.match(index, /target\.style\.setProperty\("display", "block", "important"\)/);
   assert.match(index, /body\.setAttribute\("data-pe-initial-entry-fallback", "advanced-destination-restored"\)/);
 });
+
+test("browser-history Back resolves the active sequential workspace control", () => {
+  const source = fs.readFileSync(path.join(root, "src/js/pacificEducationSequentialRoleWorkspaces.js"), "utf8");
+  const popstate = source.match(/window\.addEventListener\("popstate",function\(event\)\{([\s\S]*?)\n    \}\);/);
+  assert.ok(popstate, "the sequential workspace popstate handler remains connected");
+  assert.match(popstate[1], /var shell=document\.getElementById\("pacificEducationSequentialRoleWorkspace"\);/);
+  assert.match(popstate[1], /var backButton=shell\.querySelector\("#peSequentialBack"\);/);
+  assert.doesNotMatch(popstate[1], /document\.getElementById\("peSequentialBack"\)/);
+});
