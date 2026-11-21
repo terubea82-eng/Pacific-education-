@@ -37,6 +37,13 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 - The inspected printable worksheet bodies have empty fields for learning intention, working indicator, task and worked example. The matching daily activity plans contain usable teacher-led activities, worked examples, pathway scaffolds, evidence, marking guidance and next steps.
 - These worksheet bodies are **NOT READY**. Rebuild each learner worksheet from its matching daily activity and add the full learner stimulus/text, task steps, answer space and accessible response methods.
 
+### Class 8 — first learner-ready batch
+- Days 1–5 have been rebuilt as 20 standalone learner worksheets (five days × Copper/Bronze/Silver/Gold), each with learner identification fields, its own complete passage, learning intention, working indicator, worked example, pathway support, task, answer space, accessible response options and evidence prompt.
+- A separate Week 1 teacher marking guide is linked from the English Subject Box.
+- Days 6–115 remain draft content and still require detailed rebuilding. The five-day batch remains PENDING_TEACHER_REVIEW and PENDING_OFFICIAL_INDICATOR_VERIFICATION.
+
+[Class 8 Week 1 teacher marking guide](english-class8-teacher-guide-days-1-5.md)
+
 ### Forms 4–6
 - 460 pathway headings per level are present.
 - The inspected printable worksheet bodies also have empty learning-intention, indicator, task and worked-example fields.
@@ -49,7 +56,7 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 
 ## New learner-ready drafting batch — 22 November 2026
 
-Class 3, Class 4, Class 5, Class 6 and Class 7 Days 1–5 have now been rebuilt as 20 standalone learner worksheet sections per class (five days × Copper/Bronze/Silver/Gold). Each section embeds its own complete passage, learning intention, PacEdu working indicator, worked example, pathway-specific task, generous answer space, evidence prompt and accessibility options. Separate teacher marking guides were added for each class.
+Class 3, Class 4, Class 5, Class 6, Class 7 and Class 8 Days 1–5 have now been rebuilt as 20 standalone learner worksheet sections per class (five days × Copper/Bronze/Silver/Gold). Each section embeds its own complete passage, learning intention, PacEdu working indicator, worked example, pathway-specific task, generous answer space, evidence prompt and accessibility options. Separate teacher marking guides were added for each class.
 
 The English Subject Box cards now link to the Class 3, Class 4, Class 5, Class 6 and Class 7 Week 1 teacher guides in addition to the four pathway viewer links.
 
@@ -59,11 +66,11 @@ The English Subject Box cards now link to the Class 3, Class 4, Class 5, Class 6
 - [Class 6 Week 1 teacher guide](english-class6-teacher-guide-days-1-5.md)
 - [Class 7 Week 1 teacher guide](english-class7-teacher-guide-days-1-5.md)
 
-These 40 learner worksheet versions are improved PacEdu drafts, not final verified curriculum materials. Both remain `PENDING_TEACHER_REVIEW` and `PENDING_OFFICIAL_INDICATOR_VERIFICATION`. The remaining 110 days for each of these classes still require the same detailed learner-page quality work.
+These 60 learner worksheet versions are improved PacEdu drafts, not final verified curriculum materials. Both remain `PENDING_TEACHER_REVIEW` and `PENDING_OFFICIAL_INDICATOR_VERIFICATION`. The remaining 110 days for each of these classes still require the same detailed learner-page quality work.
 
 ## Release blockers
 
-1. Continue rebuilding incomplete worksheet bodies from their matching daily activity plans. Class 3 and Class 4 Days 1–5 have been rebuilt; remaining days/levels must not be assumed complete. Do not leave blank template fields.
+1. Continue rebuilding incomplete worksheet bodies from their matching daily activity plans. Class 3–Class 8 Days 1–5 have been rebuilt; remaining days/levels must not be assumed complete. Do not leave blank template fields.
 2. Ensure every learner worksheet contains the full stimulus/instructions, worked example, pathway-specific tasks, and response space. Where a reading passage is needed, include it on each pathway worksheet so learners do not need another group's page or a shared sheet.
 3. Add or verify a separate teacher marking guide for each level/week/pathway, with accepted synonyms and equivalent correct responses.
 4. Fiji-qualified educators must review content and suitability; official curriculum source title, edition, exact outcome/indicator and page must be verified separately.
