@@ -7,17 +7,27 @@
 
 ---
 
-## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Copper Worksheet
+## Day 1 — Term 1, Week 1 — The Mangrove Walk — Listening and speaking — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 1  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Listen to an account, summarise its main message and respond with relevant evidence.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can summarise the main message and support my response with two relevant details.
 
-**Worked example:** 
+**Read this complete text — The Mangrove Walk:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> On Saturday, a group of learners visited a mangrove area with their science teacher and a community guide. The guide explained that mangrove roots provide shelter for young fish and crabs. The roots also help hold the muddy shore in place.
+> 
+> The learners noticed plastic caught between some roots. They did not pull at the roots. Instead, they recorded the rubbish they could safely reach and told the guide. The guide explained how a supervised clean-up could protect the habitat.
+> 
+> Before leaving, the group agreed to share what they had learned with other classes. They wanted people to understand that a healthy shoreline supports both wildlife and communities.
+
+**Worked example:** Main message: mangroves support wildlife and help protect shorelines. Detail 1: roots shelter young fish and crabs. Detail 2: roots help hold the muddy shore in place.
+
+**Your task:** With the teacher's model, choose the main message from two options. Match one detail to the mangrove roots. Complete a supported sentence: “The learners told the guide because ____.”
+
+**Copper pathway support:** Follow one step at a time with the worked example and word bank. You may respond in Braille, large print, speech, sign, AAC, pointing, eye gaze, object choice, dictation or writing; an adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -27,27 +37,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** 2–3 sentence summary with two relevant details and a reasoned response; note response mode and prompts. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Bronze Worksheet
+## Day 1 — Term 1, Week 1 — The Mangrove Walk — Listening and speaking — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 1  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Listen to an account, summarise its main message and respond with relevant evidence.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can summarise the main message and support my response with two relevant details.
 
-**Worked example:** 
+**Read this complete text — The Mangrove Walk:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> On Saturday, a group of learners visited a mangrove area with their science teacher and a community guide. The guide explained that mangrove roots provide shelter for young fish and crabs. The roots also help hold the muddy shore in place.
+> 
+> The learners noticed plastic caught between some roots. They did not pull at the roots. Instead, they recorded the rubbish they could safely reach and told the guide. The guide explained how a supervised clean-up could protect the habitat.
+> 
+> Before leaving, the group agreed to share what they had learned with other classes. They wanted people to understand that a healthy shoreline supports both wildlife and communities.
+
+**Worked example:** Main message: mangroves support wildlife and help protect shorelines. Detail 1: roots shelter young fish and crabs. Detail 2: roots help hold the muddy shore in place.
+
+**Your task:** Use the frame: “The passage explains that ____. One detail is ____. Another detail is ____. The learners told the guide because ____.”
+
+**Bronze pathway support:** Use the worked example and planning frame. Complete the supported task, then check your answer. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -57,27 +87,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** 2–3 sentence summary with two relevant details and a reasoned response; note response mode and prompts. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Silver Worksheet
+## Day 1 — Term 1, Week 1 — The Mangrove Walk — Listening and speaking — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 1  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Listen to an account, summarise its main message and respond with relevant evidence.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can summarise the main message and support my response with two relevant details.
 
-**Worked example:** 
+**Read this complete text — The Mangrove Walk:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> On Saturday, a group of learners visited a mangrove area with their science teacher and a community guide. The guide explained that mangrove roots provide shelter for young fish and crabs. The roots also help hold the muddy shore in place.
+> 
+> The learners noticed plastic caught between some roots. They did not pull at the roots. Instead, they recorded the rubbish they could safely reach and told the guide. The guide explained how a supervised clean-up could protect the habitat.
+> 
+> Before leaving, the group agreed to share what they had learned with other classes. They wanted people to understand that a healthy shoreline supports both wildlife and communities.
+
+**Worked example:** Main message: mangroves support wildlife and help protect shorelines. Detail 1: roots shelter young fish and crabs. Detail 2: roots help hold the muddy shore in place.
+
+**Your task:** Give an independent 2–3 sentence summary with two accurate details and explain why the learners acted safely.
+
+**Silver pathway support:** Complete the task independently where possible. Select relevant evidence, explain your thinking and check the success criteria.
 
 **My answer / working:**
 
@@ -87,27 +137,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** 2–3 sentence summary with two relevant details and a reasoned response; note response mode and prompts. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Gold Worksheet
+## Day 1 — Term 1, Week 1 — The Mangrove Walk — Listening and speaking — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 1  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Listen to an account, summarise its main message and respond with relevant evidence.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can summarise the main message and support my response with two relevant details.
 
-**Worked example:** 
+**Read this complete text — The Mangrove Walk:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> On Saturday, a group of learners visited a mangrove area with their science teacher and a community guide. The guide explained that mangrove roots provide shelter for young fish and crabs. The roots also help hold the muddy shore in place.
+> 
+> The learners noticed plastic caught between some roots. They did not pull at the roots. Instead, they recorded the rubbish they could safely reach and told the guide. The guide explained how a supervised clean-up could protect the habitat.
+> 
+> Before leaving, the group agreed to share what they had learned with other classes. They wanted people to understand that a healthy shoreline supports both wildlife and communities.
+
+**Worked example:** Main message: mangroves support wildlife and help protect shorelines. Detail 1: roots shelter young fish and crabs. Detail 2: roots help hold the muddy shore in place.
+
+**Your task:** Compare the environmental and community reasons for protecting mangroves. Give a concise summary and explain why safe reporting was better than pulling rubbish from the roots.
+
+**Gold pathway support:** Extend the same objective with precise comparison, explanation or revision. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -117,27 +187,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** 2–3 sentence summary with two relevant details and a reasoned response; note response mode and prompts. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Copper Worksheet
+## Day 2 — Term 1, Week 1 — A Rainwater Project — Reading and viewing — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 2  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Identify an author's central idea, select supporting evidence and make a supported inference.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can state the central idea, select two details and make one inference supported by the text.
 
-**Worked example:** 
+**Read this complete text — A Rainwater Project:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> A school in a coastal village began collecting rainwater from the roof of its library. Gutters carried the water into a covered storage tank. A teacher showed learners how to check that the tank lid stayed closed and the collection area remained clean.
+> 
+> The water was used for watering the school garden when the weather was dry. The school still followed local health advice about drinking water; collected rainwater was not treated as drinking water. Learners recorded rainfall and how much water the garden used each week.
+> 
+> After several weeks, the class noticed that the garden needed less water from the school tap. The learners presented their chart at assembly and suggested checking the system after heavy rain.
+
+**Worked example:** Central idea: the school uses a safe rainwater collection project to support its garden and monitor water use. Evidence: gutters carry rain into a covered tank; learners record rainfall and garden use.
+
+**Your task:** Choose the central idea from two teacher-provided options. Find one detail about collecting water and one about using it. Complete: “The lid stays closed to ____.”
+
+**Copper pathway support:** Follow one step at a time with the worked example and word bank. You may respond in Braille, large print, speech, sign, AAC, pointing, eye gaze, object choice, dictation or writing; an adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -147,27 +237,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Central idea, two relevant details and an inference explicitly linked to textual evidence. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Bronze Worksheet
+## Day 2 — Term 1, Week 1 — A Rainwater Project — Reading and viewing — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 2  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Identify an author's central idea, select supporting evidence and make a supported inference.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can state the central idea, select two details and make one inference supported by the text.
 
-**Worked example:** 
+**Read this complete text — A Rainwater Project:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> A school in a coastal village began collecting rainwater from the roof of its library. Gutters carried the water into a covered storage tank. A teacher showed learners how to check that the tank lid stayed closed and the collection area remained clean.
+> 
+> The water was used for watering the school garden when the weather was dry. The school still followed local health advice about drinking water; collected rainwater was not treated as drinking water. Learners recorded rainfall and how much water the garden used each week.
+> 
+> After several weeks, the class noticed that the garden needed less water from the school tap. The learners presented their chart at assembly and suggested checking the system after heavy rain.
+
+**Worked example:** Central idea: the school uses a safe rainwater collection project to support its garden and monitor water use. Evidence: gutters carry rain into a covered tank; learners record rainfall and garden use.
+
+**Your task:** Use the frame: “The central idea is ____. Evidence 1 is ____. Evidence 2 is ____. I infer that the lid matters because ____.”
+
+**Bronze pathway support:** Use the worked example and planning frame. Complete the supported task, then check your answer. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -177,27 +287,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Central idea, two relevant details and an inference explicitly linked to textual evidence. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Silver Worksheet
+## Day 2 — Term 1, Week 1 — A Rainwater Project — Reading and viewing — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 2  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Identify an author's central idea, select supporting evidence and make a supported inference.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can state the central idea, select two details and make one inference supported by the text.
 
-**Worked example:** 
+**Read this complete text — A Rainwater Project:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> A school in a coastal village began collecting rainwater from the roof of its library. Gutters carried the water into a covered storage tank. A teacher showed learners how to check that the tank lid stayed closed and the collection area remained clean.
+> 
+> The water was used for watering the school garden when the weather was dry. The school still followed local health advice about drinking water; collected rainwater was not treated as drinking water. Learners recorded rainfall and how much water the garden used each week.
+> 
+> After several weeks, the class noticed that the garden needed less water from the school tap. The learners presented their chart at assembly and suggested checking the system after heavy rain.
+
+**Worked example:** Central idea: the school uses a safe rainwater collection project to support its garden and monitor water use. Evidence: gutters carry rain into a covered tank; learners record rainfall and garden use.
+
+**Your task:** State the central idea, identify two distinct supporting details and make an inference using evidence from the passage.
+
+**Silver pathway support:** Complete the task independently where possible. Select relevant evidence, explain your thinking and check the success criteria.
 
 **My answer / working:**
 
@@ -207,27 +337,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Central idea, two relevant details and an inference explicitly linked to textual evidence. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Gold Worksheet
+## Day 2 — Term 1, Week 1 — A Rainwater Project — Reading and viewing — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 2  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Identify an author's central idea, select supporting evidence and make a supported inference.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can state the central idea, select two details and make one inference supported by the text.
 
-**Worked example:** 
+**Read this complete text — A Rainwater Project:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> A school in a coastal village began collecting rainwater from the roof of its library. Gutters carried the water into a covered storage tank. A teacher showed learners how to check that the tank lid stayed closed and the collection area remained clean.
+> 
+> The water was used for watering the school garden when the weather was dry. The school still followed local health advice about drinking water; collected rainwater was not treated as drinking water. Learners recorded rainfall and how much water the garden used each week.
+> 
+> After several weeks, the class noticed that the garden needed less water from the school tap. The learners presented their chart at assembly and suggested checking the system after heavy rain.
+
+**Worked example:** Central idea: the school uses a safe rainwater collection project to support its garden and monitor water use. Evidence: gutters carry rain into a covered tank; learners record rainfall and garden use.
+
+**Your task:** Explain how the text distinguishes water conservation from drinking-water safety. Support your inference with two details and explain why that distinction matters.
+
+**Gold pathway support:** Extend the same objective with precise comparison, explanation or revision. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -237,27 +387,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Central idea, two relevant details and an inference explicitly linked to textual evidence. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Copper Worksheet
+## Day 3 — Term 1, Week 1 — Preparing for the Cyclone Season — Vocabulary and language — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 3  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Use context and word structure to explain key vocabulary and select precise alternatives.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can explain four context words and choose precise alternatives without changing meaning.
 
-**Worked example:** 
+**Read this complete text — Preparing for the Cyclone Season:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> Before the cyclone season, the village committee organised a preparedness meeting. Residents checked emergency supplies, cleared safe drainage areas and reviewed the community contact list. The committee reminded everyone to follow official weather information.
+> 
+> A clear plan helped families know where to find reliable updates and whom to contact. Volunteers also checked that older residents and people needing assistance knew how to ask for support. No one was expected to enter floodwater or approach damaged power lines.
+> 
+> The committee explained that preparedness does not remove every risk. It helps people make informed decisions, protect one another and respond calmly when warnings are issued.
+
+**Worked example:** “Preparedness” means being ready before an event. “Reliable” means able to be trusted. “Assistance” means help or support. “Informed” means having useful facts before deciding.
+
+**Your task:** Use the word bank: ready beforehand; trustworthy; help; having useful facts. Match each phrase to the four target words. Choose one matching synonym from the word bank.
+
+**Copper pathway support:** Follow one step at a time with the worked example and word bank. You may respond in Braille, large print, speech, sign, AAC, pointing, eye gaze, object choice, dictation or writing; an adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -267,27 +437,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Four accurate context explanations, two appropriate alternatives and one meaning-preserving revision. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Bronze Worksheet
+## Day 3 — Term 1, Week 1 — Preparing for the Cyclone Season — Vocabulary and language — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 3  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Use context and word structure to explain key vocabulary and select precise alternatives.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can explain four context words and choose precise alternatives without changing meaning.
 
-**Worked example:** 
+**Read this complete text — Preparing for the Cyclone Season:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> Before the cyclone season, the village committee organised a preparedness meeting. Residents checked emergency supplies, cleared safe drainage areas and reviewed the community contact list. The committee reminded everyone to follow official weather information.
+> 
+> A clear plan helped families know where to find reliable updates and whom to contact. Volunteers also checked that older residents and people needing assistance knew how to ask for support. No one was expected to enter floodwater or approach damaged power lines.
+> 
+> The committee explained that preparedness does not remove every risk. It helps people make informed decisions, protect one another and respond calmly when warnings are issued.
+
+**Worked example:** “Preparedness” means being ready before an event. “Reliable” means able to be trusted. “Assistance” means help or support. “Informed” means having useful facts before deciding.
+
+**Your task:** Complete four sentence frames using the context. Replace “assistance” with “help” and rewrite the sentence so it still makes sense.
+
+**Bronze pathway support:** Use the worked example and planning frame. Complete the supported task, then check your answer. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -297,27 +487,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Four accurate context explanations, two appropriate alternatives and one meaning-preserving revision. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Silver Worksheet
+## Day 3 — Term 1, Week 1 — Preparing for the Cyclone Season — Vocabulary and language — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 3  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Use context and word structure to explain key vocabulary and select precise alternatives.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can explain four context words and choose precise alternatives without changing meaning.
 
-**Worked example:** 
+**Read this complete text — Preparing for the Cyclone Season:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> Before the cyclone season, the village committee organised a preparedness meeting. Residents checked emergency supplies, cleared safe drainage areas and reviewed the community contact list. The committee reminded everyone to follow official weather information.
+> 
+> A clear plan helped families know where to find reliable updates and whom to contact. Volunteers also checked that older residents and people needing assistance knew how to ask for support. No one was expected to enter floodwater or approach damaged power lines.
+> 
+> The committee explained that preparedness does not remove every risk. It helps people make informed decisions, protect one another and respond calmly when warnings are issued.
+
+**Worked example:** “Preparedness” means being ready before an event. “Reliable” means able to be trusted. “Assistance” means help or support. “Informed” means having useful facts before deciding.
+
+**Your task:** Explain all four words in your own words, choose two precise alternatives and revise one sentence without changing its meaning.
+
+**Silver pathway support:** Complete the task independently where possible. Select relevant evidence, explain your thinking and check the success criteria.
 
 **My answer / working:**
 
@@ -327,27 +537,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Four accurate context explanations, two appropriate alternatives and one meaning-preserving revision. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Gold Worksheet
+## Day 3 — Term 1, Week 1 — Preparing for the Cyclone Season — Vocabulary and language — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 3  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Use context and word structure to explain key vocabulary and select precise alternatives.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can explain four context words and choose precise alternatives without changing meaning.
 
-**Worked example:** 
+**Read this complete text — Preparing for the Cyclone Season:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> Before the cyclone season, the village committee organised a preparedness meeting. Residents checked emergency supplies, cleared safe drainage areas and reviewed the community contact list. The committee reminded everyone to follow official weather information.
+> 
+> A clear plan helped families know where to find reliable updates and whom to contact. Volunteers also checked that older residents and people needing assistance knew how to ask for support. No one was expected to enter floodwater or approach damaged power lines.
+> 
+> The committee explained that preparedness does not remove every risk. It helps people make informed decisions, protect one another and respond calmly when warnings are issued.
+
+**Worked example:** “Preparedness” means being ready before an event. “Reliable” means able to be trusted. “Assistance” means help or support. “Informed” means having useful facts before deciding.
+
+**Your task:** Compare “reliable” with “accurate” and explain why they are not always interchangeable. Revise a sentence using the most precise word and justify your choice.
+
+**Gold pathway support:** Extend the same objective with precise comparison, explanation or revision. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -357,27 +587,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Four accurate context explanations, two appropriate alternatives and one meaning-preserving revision. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Copper Worksheet
+## Day 4 — Term 1, Week 1 — A Clear Community Notice — Grammar and sentence craft — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 4  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Use conjunctions, sentence variety and punctuation to make information clear for a reader.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can revise sentences for clarity, combine related ideas and punctuate a short notice accurately.
 
-**Worked example:** 
+**Read this complete text — A Clear Community Notice:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> Community Notice
+> 
+> The school hall will be open on Friday afternoon. Families can attend the reading afternoon. Learners may bring one book to share. Please arrive by 2.00 pm. Volunteers will guide visitors to the correct room. The event will finish at 4.00 pm.
+> 
+> If a learner needs an accessible copy, the family can contact the class teacher before Thursday. The school will prepare large-print or digital text where requested.
+
+**Worked example:** “Families can attend the reading afternoon, and learners may bring one book to share.” The conjunction “and” joins two related pieces of information.
+
+**Your task:** Join the first two sentences using “and”. Copy the time correctly. Add a full stop to your sentence.
+
+**Copper pathway support:** Follow one step at a time with the worked example and word bank. You may respond in Braille, large print, speech, sign, AAC, pointing, eye gaze, object choice, dictation or writing; an adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -387,27 +637,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Two well-joined sentence pairs, accurate punctuation and one clear polite instruction. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Bronze Worksheet
+## Day 4 — Term 1, Week 1 — A Clear Community Notice — Grammar and sentence craft — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 4  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Use conjunctions, sentence variety and punctuation to make information clear for a reader.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can revise sentences for clarity, combine related ideas and punctuate a short notice accurately.
 
-**Worked example:** 
+**Read this complete text — A Clear Community Notice:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> Community Notice
+> 
+> The school hall will be open on Friday afternoon. Families can attend the reading afternoon. Learners may bring one book to share. Please arrive by 2.00 pm. Volunteers will guide visitors to the correct room. The event will finish at 4.00 pm.
+> 
+> If a learner needs an accessible copy, the family can contact the class teacher before Thursday. The school will prepare large-print or digital text where requested.
+
+**Worked example:** “Families can attend the reading afternoon, and learners may bring one book to share.” The conjunction “and” joins two related pieces of information.
+
+**Your task:** Combine two pairs using and, because or if. Use capital letters and full stops; add the polite instruction frame: “Please ____.”
+
+**Bronze pathway support:** Use the worked example and planning frame. Complete the supported task, then check your answer. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -417,27 +687,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Two well-joined sentence pairs, accurate punctuation and one clear polite instruction. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Silver Worksheet
+## Day 4 — Term 1, Week 1 — A Clear Community Notice — Grammar and sentence craft — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 4  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Use conjunctions, sentence variety and punctuation to make information clear for a reader.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can revise sentences for clarity, combine related ideas and punctuate a short notice accurately.
 
-**Worked example:** 
+**Read this complete text — A Clear Community Notice:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> Community Notice
+> 
+> The school hall will be open on Friday afternoon. Families can attend the reading afternoon. Learners may bring one book to share. Please arrive by 2.00 pm. Volunteers will guide visitors to the correct room. The event will finish at 4.00 pm.
+> 
+> If a learner needs an accessible copy, the family can contact the class teacher before Thursday. The school will prepare large-print or digital text where requested.
+
+**Worked example:** “Families can attend the reading afternoon, and learners may bring one book to share.” The conjunction “and” joins two related pieces of information.
+
+**Your task:** Revise two sentence pairs with suitable conjunctions, check punctuation and add a concise polite instruction for visitors.
+
+**Silver pathway support:** Complete the task independently where possible. Select relevant evidence, explain your thinking and check the success criteria.
 
 **My answer / working:**
 
@@ -447,27 +737,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Two well-joined sentence pairs, accurate punctuation and one clear polite instruction. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Gold Worksheet
+## Day 4 — Term 1, Week 1 — A Clear Community Notice — Grammar and sentence craft — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 4  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Use conjunctions, sentence variety and punctuation to make information clear for a reader.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can revise sentences for clarity, combine related ideas and punctuate a short notice accurately.
 
-**Worked example:** 
+**Read this complete text — A Clear Community Notice:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> Community Notice
+> 
+> The school hall will be open on Friday afternoon. Families can attend the reading afternoon. Learners may bring one book to share. Please arrive by 2.00 pm. Volunteers will guide visitors to the correct room. The event will finish at 4.00 pm.
+> 
+> If a learner needs an accessible copy, the family can contact the class teacher before Thursday. The school will prepare large-print or digital text where requested.
+
+**Worked example:** “Families can attend the reading afternoon, and learners may bring one book to share.” The conjunction “and” joins two related pieces of information.
+
+**Your task:** Produce a polished notice using varied sentence openings and precise conjunctions. Explain one revision that improves clarity for families.
+
+**Gold pathway support:** Extend the same objective with precise comparison, explanation or revision. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -477,27 +787,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Two well-joined sentence pairs, accurate punctuation and one clear polite instruction. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Copper Worksheet
+## Day 5 — Term 1, Week 1 — A Helpful Community Idea — Writing and shaping — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 5  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Plan, draft and revise a developed paragraph for a clear audience and purpose.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can write a developed paragraph with a clear topic sentence, relevant supporting details, cohesion and a closing sentence.
 
-**Worked example:** 
+**Read this complete text — A Helpful Community Idea:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> Communities can become stronger when people notice a shared need and plan a practical response. A small idea might include organising a book exchange, keeping a public path clear or checking that information is accessible to everyone.
+> 
+> A useful plan identifies who the activity is for, what is needed and how people can take part safely. It also considers people who may need large print, audio, sign language, step-free access or extra time.
+> 
+> A clear message explains the idea, gives practical details and invites people to contribute without pressuring them.
+
+**Worked example:** “Our class could organise a book exchange. Learners could bring a book they have finished reading. A labelled table would help everyone find a suitable book. We could also provide large-print labels. Families could visit during the afternoon. This activity would help books reach more readers.”
+
+**Your task:** Choose one idea from the passage or suggest one. Use the frame: “Our idea is ____. It will help _____. We need _____. People can help by _____.”
+
+**Copper pathway support:** Follow one step at a time with the worked example and word bank. You may respond in Braille, large print, speech, sign, AAC, pointing, eye gaze, object choice, dictation or writing; an adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -507,27 +837,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Developed paragraph with a clear purpose, relevant supporting details, logical order and appropriate closing; record response mode and prompts. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Bronze Worksheet
+## Day 5 — Term 1, Week 1 — A Helpful Community Idea — Writing and shaping — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 5  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Plan, draft and revise a developed paragraph for a clear audience and purpose.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can write a developed paragraph with a clear topic sentence, relevant supporting details, cohesion and a closing sentence.
 
-**Worked example:** 
+**Read this complete text — A Helpful Community Idea:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> Communities can become stronger when people notice a shared need and plan a practical response. A small idea might include organising a book exchange, keeping a public path clear or checking that information is accessible to everyone.
+> 
+> A useful plan identifies who the activity is for, what is needed and how people can take part safely. It also considers people who may need large print, audio, sign language, step-free access or extra time.
+> 
+> A clear message explains the idea, gives practical details and invites people to contribute without pressuring them.
+
+**Worked example:** “Our class could organise a book exchange. Learners could bring a book they have finished reading. A labelled table would help everyone find a suitable book. We could also provide large-print labels. Families could visit during the afternoon. This activity would help books reach more readers.”
+
+**Your task:** Use a planning frame: need; idea; who it helps; three practical details; invitation. Write 5–6 connected sentences.
+
+**Bronze pathway support:** Use the worked example and planning frame. Complete the supported task, then check your answer. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -537,27 +887,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Developed paragraph with a clear purpose, relevant supporting details, logical order and appropriate closing; record response mode and prompts. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Silver Worksheet
+## Day 5 — Term 1, Week 1 — A Helpful Community Idea — Writing and shaping — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 5  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Plan, draft and revise a developed paragraph for a clear audience and purpose.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can write a developed paragraph with a clear topic sentence, relevant supporting details, cohesion and a closing sentence.
 
-**Worked example:** 
+**Read this complete text — A Helpful Community Idea:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> Communities can become stronger when people notice a shared need and plan a practical response. A small idea might include organising a book exchange, keeping a public path clear or checking that information is accessible to everyone.
+> 
+> A useful plan identifies who the activity is for, what is needed and how people can take part safely. It also considers people who may need large print, audio, sign language, step-free access or extra time.
+> 
+> A clear message explains the idea, gives practical details and invites people to contribute without pressuring them.
+
+**Worked example:** “Our class could organise a book exchange. Learners could bring a book they have finished reading. A labelled table would help everyone find a suitable book. We could also provide large-print labels. Families could visit during the afternoon. This activity would help books reach more readers.”
+
+**Your task:** Write a developed paragraph with a clear topic sentence, at least three relevant details, cohesive links and a closing invitation.
+
+**Silver pathway support:** Complete the task independently where possible. Select relevant evidence, explain your thinking and check the success criteria.
 
 **My answer / working:**
 
@@ -567,27 +937,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Developed paragraph with a clear purpose, relevant supporting details, logical order and appropriate closing; record response mode and prompts. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Gold Worksheet
+## Day 5 — Term 1, Week 1 — A Helpful Community Idea — Writing and shaping — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 4  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 5  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Plan, draft and revise a developed paragraph for a clear audience and purpose.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can write a developed paragraph with a clear topic sentence, relevant supporting details, cohesion and a closing sentence.
 
-**Worked example:** 
+**Read this complete text — A Helpful Community Idea:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> Communities can become stronger when people notice a shared need and plan a practical response. A small idea might include organising a book exchange, keeping a public path clear or checking that information is accessible to everyone.
+> 
+> A useful plan identifies who the activity is for, what is needed and how people can take part safely. It also considers people who may need large print, audio, sign language, step-free access or extra time.
+> 
+> A clear message explains the idea, gives practical details and invites people to contribute without pressuring them.
+
+**Worked example:** “Our class could organise a book exchange. Learners could bring a book they have finished reading. A labelled table would help everyone find a suitable book. We could also provide large-print labels. Families could visit during the afternoon. This activity would help books reach more readers.”
+
+**Your task:** Write 8–10 purposeful sentences for a defined audience. Anticipate one possible barrier, propose an inclusive solution and revise for precision and persuasive clarity.
+
+**Gold pathway support:** Extend the same objective with precise comparison, explanation or revision. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -597,11 +987,21 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Developed paragraph with a clear purpose, relevant supporting details, logical order and appropriate closing; record response mode and prompts. Record the learner's actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
