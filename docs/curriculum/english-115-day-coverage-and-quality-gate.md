@@ -90,13 +90,15 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 ### Form 1
 - A separate 115-day printable source/viewer entry is staged. Detailed per-day content still requires complete repository-side verification and educator review.
 
-### Form 7 — first standalone batch
-- Form 7 has 460 pathway worksheet headings (115 per pathway). Days 1–5 have been rebuilt as 20 standalone pages with complete original linked-source stimuli, independent critical-synthesis tasks, answer spaces, accessible response methods and pending review status.
-- Added a separate Form 7 Week 1 teacher marking guide and linked it from the English Subject Box.
-- Days 11–115 still require detailed standalone worksheet rebuilding and marking guides. Days 6–10 have now also been rebuilt as 20 standalone pages with original oral-history sources, comparative tasks, response spaces, accessibility options and a separate Week 2 teacher marking guide.
+### Form 7 — Weeks 1–3 standalone batches
+- Form 7 has 460 pathway worksheet pages (115 per pathway). Days 1–5 and Days 6–10 were rebuilt earlier; Days 11–15 have now been rebuilt as 20 standalone pages with two complete original linked practice sources on every page, Bloom's build-up questions, differentiated critical-synthesis tasks, answer spaces, accessibility options and pending review status.
+- Added a separate Form 7 Week 3 teacher marking guide and linked it from the English Subject Box.
+- Days 16–115 still require detailed standalone worksheet rebuilding and matching marking guides. Days 6–10 have also been rebuilt as 20 standalone pages with original oral-history sources, comparative tasks, response spaces, accessibility options and a separate Week 2 teacher marking guide.
 - Verify the current authorised Form 7 syllabus, prescribed texts, research expectations and assessment criteria.
 
 [Form 7 Week 1 teacher marking guide](english-form7-teacher-guide-days-1-5.md)
+
+[Form 7 Week 3 teacher marking guide](english-form7-teacher-guide-days-11-15.md)
 
 [Form 7 Week 2 teacher marking guide](english-form7-teacher-guide-days-6-10.md) Form 1 = Year 7 and Form 2 = Year 8 in the owner's level mapping. Do not use the 2014 Years 9–10 syllabus for those levels.
 - Do not mark these packs final until every day's four worksheets and marking guidance have been inspected.
