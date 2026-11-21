@@ -1,653 +1,1154 @@
 # PacEdu English Subject Box — Form 6 Printable Worksheets (Days 1–115)
 
-**Status:** ORIGINAL PACEDU DRAFT — `PENDING_TEACHER_REVIEW` — `PENDING_OFFICIAL_INDICATOR_VERIFICATION`. Not a Ministry-issued or examination-authorized worksheet pack.
+**Status:** ORIGINAL PACEDU DRAFT — PENDING_TEACHER_REVIEW — PENDING_OFFICIAL_INDICATOR_VERIFICATION. Not a Ministry-issued or examination-authorized worksheet pack.
 
-**Secondary safeguard:** Confirm the current authorized Form 6 syllabus, cohort, prescribed texts, assessment specifications and criteria separately. Forms 5–7 must not be treated as Forms 3–4.
+**Senior-secondary safeguard:** Confirm the current authorised Form 6 cohort syllabus, prescribed texts, assessment specifications and criteria separately. These original linked-source stimuli are practice material, not prescribed texts.
 
-**Printing:** Each day has four separate pathway versions. Print only the selected learner's version. Physical Android Chrome print preview must confirm one selected worksheet per page.
-
+**Printing:** Each day has four standalone pathway versions. Every page repeats all source extracts and its task. Confirm one selected worksheet per page in Android Chrome.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity, language and society — Oral communication — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend a critical interpretation by synthesising evidence from linked sources and responding to a counterargument.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a coherent thesis, synthesise at least two source details, qualify the interpretation and respond to a challenge.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE 1 — Interview extract: A community language worker says that a language archive can help younger people hear expressions used by elders. She argues that recordings are valuable when speakers choose what to share and can correct transcripts.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+SOURCE 2 — Youth forum comment: A student supports the archive but worries that a recording may be shared beyond its original purpose. The student asks who controls access and whether a contributor can withdraw an item later.
+
+> The committee's draft policy proposes voluntary participation, contributor review and a withdrawal process, but the access rules have not yet been finalised.
+
+**Worked example:** Thesis: an archive can support intergenerational learning only if contributors retain meaningful control. Source 1 supports the educational value; Source 2 identifies risks of reuse. The draft policy responds partly through review and withdrawal, but unfinished access rules remain a limitation.
+
+**Your task:** Prompt: Should the committee proceed with the language archive? Present a critical position using both sources, explain a tension between value and risk, qualify your recommendation and answer a counter-question about cost or access.
+
+**Copper pathway support:** Use the source labels and annotated model. Work through one source at a time; the teacher may read the extracts aloud, gloss vocabulary and provide a comparison frame. Oral, signed, AAC, dictated, Braille or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Synthesis of both sources, clear thesis, analysis of a tension, qualification and reasoned response to a counter-question. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity, language and society — Oral communication — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend a critical interpretation by synthesising evidence from linked sources and responding to a counterargument.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a coherent thesis, synthesise at least two source details, qualify the interpretation and respond to a challenge.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE 1 — Interview extract: A community language worker says that a language archive can help younger people hear expressions used by elders. She argues that recordings are valuable when speakers choose what to share and can correct transcripts.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+SOURCE 2 — Youth forum comment: A student supports the archive but worries that a recording may be shared beyond its original purpose. The student asks who controls access and whether a contributor can withdraw an item later.
+
+> The committee's draft policy proposes voluntary participation, contributor review and a withdrawal process, but the access rules have not yet been finalised.
+
+**Worked example:** Thesis: an archive can support intergenerational learning only if contributors retain meaningful control. Source 1 supports the educational value; Source 2 identifies risks of reuse. The draft policy responds partly through review and withdrawal, but unfinished access rules remain a limitation.
+
+**Your task:** Prompt: Should the committee proceed with the language archive? Present a critical position using both sources, explain a tension between value and risk, qualify your recommendation and answer a counter-question about cost or access.
+
+**Bronze pathway support:** Use the comparative planning frame. Record one detail from each source, then explain the relationship between them. Reduce prompts after the first comparison.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Synthesis of both sources, clear thesis, analysis of a tension, qualification and reasoned response to a counter-question. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity, language and society — Oral communication — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend a critical interpretation by synthesising evidence from linked sources and responding to a counterargument.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a coherent thesis, synthesise at least two source details, qualify the interpretation and respond to a challenge.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE 1 — Interview extract: A community language worker says that a language archive can help younger people hear expressions used by elders. She argues that recordings are valuable when speakers choose what to share and can correct transcripts.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+SOURCE 2 — Youth forum comment: A student supports the archive but worries that a recording may be shared beyond its original purpose. The student asks who controls access and whether a contributor can withdraw an item later.
+
+> The committee's draft policy proposes voluntary participation, contributor review and a withdrawal process, but the access rules have not yet been finalised.
+
+**Worked example:** Thesis: an archive can support intergenerational learning only if contributors retain meaningful control. Source 1 supports the educational value; Source 2 identifies risks of reuse. The draft policy responds partly through review and withdrawal, but unfinished access rules remain a limitation.
+
+**Your task:** Prompt: Should the committee proceed with the language archive? Present a critical position using both sources, explain a tension between value and risk, qualify your recommendation and answer a counter-question about cost or access.
+
+**Silver pathway support:** Complete the synthesis independently. Integrate precise details from the sources and explain how they support or limit your interpretation.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Synthesis of both sources, clear thesis, analysis of a tension, qualification and reasoned response to a counter-question. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity, language and society — Oral communication — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend a critical interpretation by synthesising evidence from linked sources and responding to a counterargument.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a coherent thesis, synthesise at least two source details, qualify the interpretation and respond to a challenge.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE 1 — Interview extract: A community language worker says that a language archive can help younger people hear expressions used by elders. She argues that recordings are valuable when speakers choose what to share and can correct transcripts.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+SOURCE 2 — Youth forum comment: A student supports the archive but worries that a recording may be shared beyond its original purpose. The student asks who controls access and whether a contributor can withdraw an item later.
+
+> The committee's draft policy proposes voluntary participation, contributor review and a withdrawal process, but the access rules have not yet been finalised.
+
+**Worked example:** Thesis: an archive can support intergenerational learning only if contributors retain meaningful control. Source 1 supports the educational value; Source 2 identifies risks of reuse. The draft policy responds partly through review and withdrawal, but unfinished access rules remain a limitation.
+
+**Your task:** Prompt: Should the committee proceed with the language archive? Present a critical position using both sources, explain a tension between value and risk, qualify your recommendation and answer a counter-question about cost or access.
+
+**Gold pathway support:** Complete the same task and extend through synthesis of competing interpretations, evaluation of assumptions or a nuanced qualification. Do not replace the shared objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Synthesis of both sources, clear thesis, analysis of a tension, qualification and reasoned response to a counter-question. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 2 — Term 1, Week 1 — identity, language and society — Close reading — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Compare how two writers construct identity and belonging through viewpoint, structure and language.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop a comparative interpretation supported by precise evidence from both texts and analysis of the writers' choices.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+TEXT A — The narrator describes a family gathering as a place where familiar expressions return without explanation. The narrator says the words seem to hold the rhythm of earlier conversations, even when some younger relatives answer in another language.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+TEXT B — A younger relative describes the same gathering as welcoming but sometimes difficult to enter. The relative understands the stories but does not always know the expressions. When an elder explains a phrase, the younger person feels invited into the conversation rather than tested.
+
+> Both narrators value the gathering, but they notice different experiences within it.
+
+**Worked example:** Both texts present the gathering as meaningful, but Text A emphasises continuity while Text B highlights access and explanation. The contrast shows that belonging can involve shared memory and active invitation.
+
+**Your task:** Compare the writers' perspectives. Identify one similarity and one difference, support each with precise details, and analyse how the difference shapes the reader's understanding of belonging.
+
+**Copper pathway support:** Use the source labels and annotated model. Work through one source at a time; the teacher may read the extracts aloud, gloss vocabulary and provide a comparison frame. Oral, signed, AAC, dictated, Braille or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Comparative thesis, precise evidence from both texts, analysis of viewpoint/structure and a reasoned explanation of difference. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 2 — Term 1, Week 1 — identity, language and society — Close reading — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Compare how two writers construct identity and belonging through viewpoint, structure and language.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop a comparative interpretation supported by precise evidence from both texts and analysis of the writers' choices.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+TEXT A — The narrator describes a family gathering as a place where familiar expressions return without explanation. The narrator says the words seem to hold the rhythm of earlier conversations, even when some younger relatives answer in another language.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+TEXT B — A younger relative describes the same gathering as welcoming but sometimes difficult to enter. The relative understands the stories but does not always know the expressions. When an elder explains a phrase, the younger person feels invited into the conversation rather than tested.
+
+> Both narrators value the gathering, but they notice different experiences within it.
+
+**Worked example:** Both texts present the gathering as meaningful, but Text A emphasises continuity while Text B highlights access and explanation. The contrast shows that belonging can involve shared memory and active invitation.
+
+**Your task:** Compare the writers' perspectives. Identify one similarity and one difference, support each with precise details, and analyse how the difference shapes the reader's understanding of belonging.
+
+**Bronze pathway support:** Use the comparative planning frame. Record one detail from each source, then explain the relationship between them. Reduce prompts after the first comparison.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Comparative thesis, precise evidence from both texts, analysis of viewpoint/structure and a reasoned explanation of difference. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 2 — Term 1, Week 1 — identity, language and society — Close reading — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Compare how two writers construct identity and belonging through viewpoint, structure and language.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop a comparative interpretation supported by precise evidence from both texts and analysis of the writers' choices.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+TEXT A — The narrator describes a family gathering as a place where familiar expressions return without explanation. The narrator says the words seem to hold the rhythm of earlier conversations, even when some younger relatives answer in another language.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+TEXT B — A younger relative describes the same gathering as welcoming but sometimes difficult to enter. The relative understands the stories but does not always know the expressions. When an elder explains a phrase, the younger person feels invited into the conversation rather than tested.
+
+> Both narrators value the gathering, but they notice different experiences within it.
+
+**Worked example:** Both texts present the gathering as meaningful, but Text A emphasises continuity while Text B highlights access and explanation. The contrast shows that belonging can involve shared memory and active invitation.
+
+**Your task:** Compare the writers' perspectives. Identify one similarity and one difference, support each with precise details, and analyse how the difference shapes the reader's understanding of belonging.
+
+**Silver pathway support:** Complete the synthesis independently. Integrate precise details from the sources and explain how they support or limit your interpretation.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Comparative thesis, precise evidence from both texts, analysis of viewpoint/structure and a reasoned explanation of difference. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 2 — Term 1, Week 1 — identity, language and society — Close reading — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Compare how two writers construct identity and belonging through viewpoint, structure and language.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop a comparative interpretation supported by precise evidence from both texts and analysis of the writers' choices.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+TEXT A — The narrator describes a family gathering as a place where familiar expressions return without explanation. The narrator says the words seem to hold the rhythm of earlier conversations, even when some younger relatives answer in another language.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+TEXT B — A younger relative describes the same gathering as welcoming but sometimes difficult to enter. The relative understands the stories but does not always know the expressions. When an elder explains a phrase, the younger person feels invited into the conversation rather than tested.
+
+> Both narrators value the gathering, but they notice different experiences within it.
+
+**Worked example:** Both texts present the gathering as meaningful, but Text A emphasises continuity while Text B highlights access and explanation. The contrast shows that belonging can involve shared memory and active invitation.
+
+**Your task:** Compare the writers' perspectives. Identify one similarity and one difference, support each with precise details, and analyse how the difference shapes the reader's understanding of belonging.
+
+**Gold pathway support:** Complete the same task and extend through synthesis of competing interpretations, evaluation of assumptions or a nuanced qualification. Do not replace the shared objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Comparative thesis, precise evidence from both texts, analysis of viewpoint/structure and a reasoned explanation of difference. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 3 — Term 1, Week 1 — identity, language and society — Vocabulary and language — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate how diction, syntax, register and rhetorical patterns position audiences across linked texts.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse at least three language choices across the sources and explain their cumulative effect on audience and purpose.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+TEXT A — A campaign statement says: 'Our stories are a bridge between generations.' It uses an extended metaphor to present language as connection and continuity.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+TEXT B — A policy note states: 'Contributors may submit material subject to review, access controls and withdrawal provisions.' Its formal register foregrounds procedure and accountability.
+
+> A public comment describes the policy as 'cold and complicated'. The phrase expresses frustration but does not identify which procedure causes difficulty.
+
+**Worked example:** The metaphor in Text A appeals to shared identity and emotion. Text B uses formal, technical nouns to communicate rules precisely but may feel distant. The public comment conveys dissatisfaction, although its criticism needs a specific example.
+
+**Your task:** Analyse the metaphor in Text A, the nominalised/formal wording in Text B and the public comment's evaluative phrase. Explain how each positions its audience and suggest one revision that improves clarity without losing purpose.
+
+**Copper pathway support:** Use the source labels and annotated model. Work through one source at a time; the teacher may read the extracts aloud, gloss vocabulary and provide a comparison frame. Oral, signed, AAC, dictated, Braille or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate language analysis across sources, audience positioning and justified revision. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 3 — Term 1, Week 1 — identity, language and society — Vocabulary and language — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate how diction, syntax, register and rhetorical patterns position audiences across linked texts.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse at least three language choices across the sources and explain their cumulative effect on audience and purpose.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+TEXT A — A campaign statement says: 'Our stories are a bridge between generations.' It uses an extended metaphor to present language as connection and continuity.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+TEXT B — A policy note states: 'Contributors may submit material subject to review, access controls and withdrawal provisions.' Its formal register foregrounds procedure and accountability.
+
+> A public comment describes the policy as 'cold and complicated'. The phrase expresses frustration but does not identify which procedure causes difficulty.
+
+**Worked example:** The metaphor in Text A appeals to shared identity and emotion. Text B uses formal, technical nouns to communicate rules precisely but may feel distant. The public comment conveys dissatisfaction, although its criticism needs a specific example.
+
+**Your task:** Analyse the metaphor in Text A, the nominalised/formal wording in Text B and the public comment's evaluative phrase. Explain how each positions its audience and suggest one revision that improves clarity without losing purpose.
+
+**Bronze pathway support:** Use the comparative planning frame. Record one detail from each source, then explain the relationship between them. Reduce prompts after the first comparison.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate language analysis across sources, audience positioning and justified revision. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 3 — Term 1, Week 1 — identity, language and society — Vocabulary and language — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate how diction, syntax, register and rhetorical patterns position audiences across linked texts.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse at least three language choices across the sources and explain their cumulative effect on audience and purpose.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+TEXT A — A campaign statement says: 'Our stories are a bridge between generations.' It uses an extended metaphor to present language as connection and continuity.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+TEXT B — A policy note states: 'Contributors may submit material subject to review, access controls and withdrawal provisions.' Its formal register foregrounds procedure and accountability.
+
+> A public comment describes the policy as 'cold and complicated'. The phrase expresses frustration but does not identify which procedure causes difficulty.
+
+**Worked example:** The metaphor in Text A appeals to shared identity and emotion. Text B uses formal, technical nouns to communicate rules precisely but may feel distant. The public comment conveys dissatisfaction, although its criticism needs a specific example.
+
+**Your task:** Analyse the metaphor in Text A, the nominalised/formal wording in Text B and the public comment's evaluative phrase. Explain how each positions its audience and suggest one revision that improves clarity without losing purpose.
+
+**Silver pathway support:** Complete the synthesis independently. Integrate precise details from the sources and explain how they support or limit your interpretation.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate language analysis across sources, audience positioning and justified revision. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 3 — Term 1, Week 1 — identity, language and society — Vocabulary and language — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate how diction, syntax, register and rhetorical patterns position audiences across linked texts.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse at least three language choices across the sources and explain their cumulative effect on audience and purpose.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+TEXT A — A campaign statement says: 'Our stories are a bridge between generations.' It uses an extended metaphor to present language as connection and continuity.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+TEXT B — A policy note states: 'Contributors may submit material subject to review, access controls and withdrawal provisions.' Its formal register foregrounds procedure and accountability.
+
+> A public comment describes the policy as 'cold and complicated'. The phrase expresses frustration but does not identify which procedure causes difficulty.
+
+**Worked example:** The metaphor in Text A appeals to shared identity and emotion. Text B uses formal, technical nouns to communicate rules precisely but may feel distant. The public comment conveys dissatisfaction, although its criticism needs a specific example.
+
+**Your task:** Analyse the metaphor in Text A, the nominalised/formal wording in Text B and the public comment's evaluative phrase. Explain how each positions its audience and suggest one revision that improves clarity without losing purpose.
+
+**Gold pathway support:** Complete the same task and extend through synthesis of competing interpretations, evaluation of assumptions or a nuanced qualification. Do not replace the shared objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate language analysis across sources, audience positioning and justified revision. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 4 — Term 1, Week 1 — identity, language and society — Critical literacy — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate reliability, perspective, omissions and ethical implications across a multi-source set.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare source authority and evidence, identify omissions and contradictions, and qualify a conclusion using ethical reasoning.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Committee draft: Participation is voluntary. Contributors may review transcripts and request removal before publication. The draft does not yet specify who can access archived audio after publication.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+SOURCE B — Anonymous post: The committee plans to publish all recordings online without permission. No document or named source is provided.
+
+SOURCE C — Meeting minutes: Members agreed that consent and access rules require further discussion. The minutes record no decision to publish all recordings.
+
+> The three sources differ in authority, detail and certainty.
+
+**Worked example:** Source A is an identifiable draft but leaves post-publication access unclear. Source B makes a definite claim without evidence. Source C confirms that the rules remain under discussion and does not support the anonymous post's claim.
+
+**Your task:** Rank the sources for the specific claim about publication without permission. Explain your ranking, identify an omission in Source A, distinguish what Source C confirms from what it does not, and write a qualified conclusion.
+
+**Copper pathway support:** Use the source labels and annotated model. Work through one source at a time; the teacher may read the extracts aloud, gloss vocabulary and provide a comparison frame. Oral, signed, AAC, dictated, Braille or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Reasoned source ranking, distinction between evidence and claim, identification of omissions and limits, and qualified conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 4 — Term 1, Week 1 — identity, language and society — Critical literacy — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate reliability, perspective, omissions and ethical implications across a multi-source set.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare source authority and evidence, identify omissions and contradictions, and qualify a conclusion using ethical reasoning.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Committee draft: Participation is voluntary. Contributors may review transcripts and request removal before publication. The draft does not yet specify who can access archived audio after publication.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+SOURCE B — Anonymous post: The committee plans to publish all recordings online without permission. No document or named source is provided.
+
+SOURCE C — Meeting minutes: Members agreed that consent and access rules require further discussion. The minutes record no decision to publish all recordings.
+
+> The three sources differ in authority, detail and certainty.
+
+**Worked example:** Source A is an identifiable draft but leaves post-publication access unclear. Source B makes a definite claim without evidence. Source C confirms that the rules remain under discussion and does not support the anonymous post's claim.
+
+**Your task:** Rank the sources for the specific claim about publication without permission. Explain your ranking, identify an omission in Source A, distinguish what Source C confirms from what it does not, and write a qualified conclusion.
+
+**Bronze pathway support:** Use the comparative planning frame. Record one detail from each source, then explain the relationship between them. Reduce prompts after the first comparison.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Reasoned source ranking, distinction between evidence and claim, identification of omissions and limits, and qualified conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 4 — Term 1, Week 1 — identity, language and society — Critical literacy — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate reliability, perspective, omissions and ethical implications across a multi-source set.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare source authority and evidence, identify omissions and contradictions, and qualify a conclusion using ethical reasoning.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Committee draft: Participation is voluntary. Contributors may review transcripts and request removal before publication. The draft does not yet specify who can access archived audio after publication.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+SOURCE B — Anonymous post: The committee plans to publish all recordings online without permission. No document or named source is provided.
+
+SOURCE C — Meeting minutes: Members agreed that consent and access rules require further discussion. The minutes record no decision to publish all recordings.
+
+> The three sources differ in authority, detail and certainty.
+
+**Worked example:** Source A is an identifiable draft but leaves post-publication access unclear. Source B makes a definite claim without evidence. Source C confirms that the rules remain under discussion and does not support the anonymous post's claim.
+
+**Your task:** Rank the sources for the specific claim about publication without permission. Explain your ranking, identify an omission in Source A, distinguish what Source C confirms from what it does not, and write a qualified conclusion.
+
+**Silver pathway support:** Complete the synthesis independently. Integrate precise details from the sources and explain how they support or limit your interpretation.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Reasoned source ranking, distinction between evidence and claim, identification of omissions and limits, and qualified conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 4 — Term 1, Week 1 — identity, language and society — Critical literacy — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate reliability, perspective, omissions and ethical implications across a multi-source set.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare source authority and evidence, identify omissions and contradictions, and qualify a conclusion using ethical reasoning.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Committee draft: Participation is voluntary. Contributors may review transcripts and request removal before publication. The draft does not yet specify who can access archived audio after publication.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+SOURCE B — Anonymous post: The committee plans to publish all recordings online without permission. No document or named source is provided.
+
+SOURCE C — Meeting minutes: Members agreed that consent and access rules require further discussion. The minutes record no decision to publish all recordings.
+
+> The three sources differ in authority, detail and certainty.
+
+**Worked example:** Source A is an identifiable draft but leaves post-publication access unclear. Source B makes a definite claim without evidence. Source C confirms that the rules remain under discussion and does not support the anonymous post's claim.
+
+**Your task:** Rank the sources for the specific claim about publication without permission. Explain your ranking, identify an omission in Source A, distinguish what Source C confirms from what it does not, and write a qualified conclusion.
+
+**Gold pathway support:** Complete the same task and extend through synthesis of competing interpretations, evaluation of assumptions or a nuanced qualification. Do not replace the shared objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Reasoned source ranking, distinction between evidence and claim, identification of omissions and limits, and qualified conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 5 — Term 1, Week 1 — identity, language and society — Writing and shaping — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Write a sustained comparative critical essay that synthesises interpretations, evaluates evidence and reaches a nuanced conclusion.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Construct a coherent essay with a comparative thesis, integrated evidence, analysis of authorial choices, evaluation of limitations and nuanced conclusion.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+> A language archive may preserve voices and expressions that are less often heard in public records. One view emphasises the archive's educational value: recordings can support learning between generations and preserve pronunciation, stories and local knowledge. A second view warns that preservation can become extraction if people lose control of how their contributions are stored or reused. A third view argues that consent and access rules can make preservation more ethical, but only when the rules are clear, enforceable and understood by contributors. The central question is therefore not simply whether an archive should exist, but who shapes it, who benefits and who can make decisions about its contents.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Worked example:** Comparative thesis: preservation and contributor control must be treated as interdependent. Paragraph 1 synthesises the educational case; paragraph 2 analyses the risk of extraction; paragraph 3 evaluates whether consent and access safeguards are sufficient; conclusion gives a qualified judgement.
+
+**Your task:** Write a sustained comparative critical essay responding to: 'An archive preserves culture only when contributors retain control.' Develop a nuanced thesis, compare at least two viewpoints in the passage, analyse language or assumptions, evaluate a limitation and reach a reasoned conclusion.
+
+**Copper pathway support:** Use the source labels and annotated model. Work through one source at a time; the teacher may read the extracts aloud, gloss vocabulary and provide a comparison frame. Oral, signed, AAC, dictated, Braille or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Sustained comparative essay with integrated evidence, analysis of perspectives/choices, evaluation of limitations and nuanced conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 5 — Term 1, Week 1 — identity, language and society — Writing and shaping — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Write a sustained comparative critical essay that synthesises interpretations, evaluates evidence and reaches a nuanced conclusion.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Construct a coherent essay with a comparative thesis, integrated evidence, analysis of authorial choices, evaluation of limitations and nuanced conclusion.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+> A language archive may preserve voices and expressions that are less often heard in public records. One view emphasises the archive's educational value: recordings can support learning between generations and preserve pronunciation, stories and local knowledge. A second view warns that preservation can become extraction if people lose control of how their contributions are stored or reused. A third view argues that consent and access rules can make preservation more ethical, but only when the rules are clear, enforceable and understood by contributors. The central question is therefore not simply whether an archive should exist, but who shapes it, who benefits and who can make decisions about its contents.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Worked example:** Comparative thesis: preservation and contributor control must be treated as interdependent. Paragraph 1 synthesises the educational case; paragraph 2 analyses the risk of extraction; paragraph 3 evaluates whether consent and access safeguards are sufficient; conclusion gives a qualified judgement.
+
+**Your task:** Write a sustained comparative critical essay responding to: 'An archive preserves culture only when contributors retain control.' Develop a nuanced thesis, compare at least two viewpoints in the passage, analyse language or assumptions, evaluate a limitation and reach a reasoned conclusion.
+
+**Bronze pathway support:** Use the comparative planning frame. Record one detail from each source, then explain the relationship between them. Reduce prompts after the first comparison.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Sustained comparative essay with integrated evidence, analysis of perspectives/choices, evaluation of limitations and nuanced conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 5 — Term 1, Week 1 — identity, language and society — Writing and shaping — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Write a sustained comparative critical essay that synthesises interpretations, evaluates evidence and reaches a nuanced conclusion.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Construct a coherent essay with a comparative thesis, integrated evidence, analysis of authorial choices, evaluation of limitations and nuanced conclusion.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+> A language archive may preserve voices and expressions that are less often heard in public records. One view emphasises the archive's educational value: recordings can support learning between generations and preserve pronunciation, stories and local knowledge. A second view warns that preservation can become extraction if people lose control of how their contributions are stored or reused. A third view argues that consent and access rules can make preservation more ethical, but only when the rules are clear, enforceable and understood by contributors. The central question is therefore not simply whether an archive should exist, but who shapes it, who benefits and who can make decisions about its contents.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Worked example:** Comparative thesis: preservation and contributor control must be treated as interdependent. Paragraph 1 synthesises the educational case; paragraph 2 analyses the risk of extraction; paragraph 3 evaluates whether consent and access safeguards are sufficient; conclusion gives a qualified judgement.
+
+**Your task:** Write a sustained comparative critical essay responding to: 'An archive preserves culture only when contributors retain control.' Develop a nuanced thesis, compare at least two viewpoints in the passage, analyse language or assumptions, evaluate a limitation and reach a reasoned conclusion.
+
+**Silver pathway support:** Complete the synthesis independently. Integrate precise details from the sources and explain how they support or limit your interpretation.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Sustained comparative essay with integrated evidence, analysis of perspectives/choices, evaluation of limitations and nuanced conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 5 — Term 1, Week 1 — identity, language and society — Writing and shaping — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Write a sustained comparative critical essay that synthesises interpretations, evaluates evidence and reaches a nuanced conclusion.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Construct a coherent essay with a comparative thesis, integrated evidence, analysis of authorial choices, evaluation of limitations and nuanced conclusion.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+> A language archive may preserve voices and expressions that are less often heard in public records. One view emphasises the archive's educational value: recordings can support learning between generations and preserve pronunciation, stories and local knowledge. A second view warns that preservation can become extraction if people lose control of how their contributions are stored or reused. A third view argues that consent and access rules can make preservation more ethical, but only when the rules are clear, enforceable and understood by contributors. The central question is therefore not simply whether an archive should exist, but who shapes it, who benefits and who can make decisions about its contents.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Worked example:** Comparative thesis: preservation and contributor control must be treated as interdependent. Paragraph 1 synthesises the educational case; paragraph 2 analyses the risk of extraction; paragraph 3 evaluates whether consent and access safeguards are sufficient; conclusion gives a qualified judgement.
+
+**Your task:** Write a sustained comparative critical essay responding to: 'An archive preserves culture only when contributors retain control.' Develop a nuanced thesis, compare at least two viewpoints in the passage, analyse language or assumptions, evaluate a limitation and reach a reasoned conclusion.
+
+**Gold pathway support:** Complete the same task and extend through synthesis of competing interpretations, evaluation of assumptions or a nuanced qualification. Do not replace the shared objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Sustained comparative essay with integrated evidence, analysis of perspectives/choices, evaluation of limitations and nuanced conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I compared sources  ☐ I integrated evidence  ☐ I evaluated limitations  ☐ My conclusion is qualified and reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
----
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 6 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ## Day 6 — Term 1, Week 2 — community narratives and oral histories — Oral communication — Copper Worksheet
 
