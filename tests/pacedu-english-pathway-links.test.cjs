@@ -24,7 +24,7 @@ for (const [label, key] of levels) {
 }
 assert.match(workspace, /\["Copper","Bronze","Silver","Gold"\]/, "Each level must expose all four pathways");
 
-for (const key of ["class3", "class4", "class5"]) {
+for (const key of ["class3", "class4", "class5", "class6"]) {
   const worksheetPath = path.join(root, "docs/curriculum/english-" + key + "-printable-worksheets-days-1-115.md");
   const source = fs.readFileSync(worksheetPath, "utf8");
   const firstWeek = source.split(/(?=^## Day \d+ —)/m).filter(part => /^## Day ([1-5]) —/.test(part));
