@@ -108,4 +108,15 @@ for (const part of form7Week1) {
 }
 assert.ok(workspace.includes("english-form7-teacher-guide-days-1-5.md"), "Form 7 teacher guide must be linked from the English Subject Box");
 
-console.log("PASS: all 16 English levels expose four pathway links; Classes 3–8 and Forms 2–7 Week 1 worksheets have complete standalone content.");
+
+const form7Week2 = form7Source.split(/(?=^## Day \d+ —)/m).filter(part => /^## Day (6|7|8|9|10) —/.test(part));
+assert.equal(form7Week2.length, 20, "Form 7 must have 20 standalone worksheets for Days 6–10");
+for (const part of form7Week2) {
+  assert.match(part, /^## Day (6|7|8|9|10) —.*— (Copper|Bronze|Silver|Gold) Worksheet/m);
+  for (const field of ["Learner name", "Class/Form", "Learning intention", "PacEdu working achievement indicator", "complete practice source", "Worked example", "Your task", "My analysis / response", "Accessible response", "PENDING_TEACHER_REVIEW"]) {
+    assert.ok(part.includes(field), "Form 7 Week 2 worksheet needs " + field);
+  }
+}
+assert.ok(workspace.includes("english-form7-teacher-guide-days-6-10.md"), "Form 7 Week 2 teacher guide must be linked from the English Subject Box");
+
+console.log("PASS: all 16 English levels expose four pathway links; Classes 3–8 and Forms 2–7 Week 1 and Week 2 worksheets have complete standalone content.");
