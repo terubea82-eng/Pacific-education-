@@ -36,4 +36,16 @@ for (const key of ["class3", "class4", "class5", "class6", "class7", "class8"]) 
   }
 }
 
-console.log("PASS: all 16 English levels expose four pathway links; Classes 3–8 Week 1 worksheets have complete standalone content.");
+
+const form2Source = fs.readFileSync(path.join(root, "docs/curriculum/english-form2-printable-worksheets-days-1-115.md"), "utf8");
+const form2Week1 = form2Source.split(/(?=^# Day \\d+ —)/m).filter(part => /^# Day ([1-5]) —/.test(part));
+assert.equal(form2Week1.length, 20, "Form 2 (Year 8) must have 20 standalone worksheets for Days 1–5");
+for (const part of form2Week1) {
+  assert.match(part, /^# Day [1-5] —.*— (Copper|Bronze|Silver|Gold) Worksheet/m);
+  for (const field of ["Learner name", "Class/Form", "Ability pathway", "Today's learning goal", "Read this complete passage", "Worked example", "Your questions", "My answer", "Final check", "PENDING_TEACHER_REVIEW"]) {
+    assert.ok(part.includes(field), "Form 2 worksheet needs " + field);
+  }
+}
+assert.ok(workspace.includes("english-form2-teacher-guide-days-1-5.md"), "Form 2 Year 8 teacher guide must be linked from the English Subject Box");
+
+console.log("PASS: all 16 English levels expose four pathway links; Classes 3–8 and Form 2 Week 1 worksheets have complete standalone content.");
