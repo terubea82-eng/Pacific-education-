@@ -7,17 +7,27 @@
 
 ---
 
-## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Copper Worksheet
+## Day 1 — Term 1, Week 1 — Planning a Youth Forum — Listening and speaking — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 1  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Interpret a discussion, synthesise different viewpoints and contribute a relevant response.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can summarise two viewpoints, identify common ground and contribute a relevant question or response.
 
-**Worked example:** 
+**Read this complete text — Planning a Youth Forum:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> The student council planned a youth forum about improving shared community spaces. One group wanted more sports equipment because young people needed safe places to be active. Another group wanted shaded seating and accessible paths so more residents could use the area. A third group suggested asking neighbours what they needed before spending money.
+> 
+> During the meeting, students agreed that the ideas were not necessarily competing. They could collect views, check the available budget and identify changes that would benefit different users. The chairperson asked each speaker to explain who would benefit and how the proposal could be maintained.
+> 
+> The group decided to prepare a short survey and invite residents to a follow-up meeting.
+
+**Worked example:** Viewpoint 1: sports equipment supports activity. Viewpoint 2: shade and accessible paths support wider use. Common ground: improve a shared space after listening to users and checking resources.
+
+**Your task:** Choose two different ideas from the passage. Match each idea to the group that suggested it. Complete: “The groups all wanted ____.”
+
+**Copper pathway support:** Use the model and word bank one step at a time. You may answer in Braille, large print, speech, sign, AAC, pointing, eye gaze, dictation or writing; an adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -27,27 +37,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Two accurately represented viewpoints, common ground and relevant question/contribution. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Bronze Worksheet
+## Day 1 — Term 1, Week 1 — Planning a Youth Forum — Listening and speaking — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 1  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Interpret a discussion, synthesise different viewpoints and contribute a relevant response.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can summarise two viewpoints, identify common ground and contribute a relevant question or response.
 
-**Worked example:** 
+**Read this complete text — Planning a Youth Forum:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> The student council planned a youth forum about improving shared community spaces. One group wanted more sports equipment because young people needed safe places to be active. Another group wanted shaded seating and accessible paths so more residents could use the area. A third group suggested asking neighbours what they needed before spending money.
+> 
+> During the meeting, students agreed that the ideas were not necessarily competing. They could collect views, check the available budget and identify changes that would benefit different users. The chairperson asked each speaker to explain who would benefit and how the proposal could be maintained.
+> 
+> The group decided to prepare a short survey and invite residents to a follow-up meeting.
+
+**Worked example:** Viewpoint 1: sports equipment supports activity. Viewpoint 2: shade and accessible paths support wider use. Common ground: improve a shared space after listening to users and checking resources.
+
+**Your task:** Use the frame: “One group suggested ____. Another group suggested ____. They agreed to ____.” Add one question for the meeting.
+
+**Bronze pathway support:** Use the worked example and sentence frame. Complete the supported task and check your answer. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -57,27 +87,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Two accurately represented viewpoints, common ground and relevant question/contribution. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Silver Worksheet
+## Day 1 — Term 1, Week 1 — Planning a Youth Forum — Listening and speaking — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 1  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Interpret a discussion, synthesise different viewpoints and contribute a relevant response.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can summarise two viewpoints, identify common ground and contribute a relevant question or response.
 
-**Worked example:** 
+**Read this complete text — Planning a Youth Forum:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> The student council planned a youth forum about improving shared community spaces. One group wanted more sports equipment because young people needed safe places to be active. Another group wanted shaded seating and accessible paths so more residents could use the area. A third group suggested asking neighbours what they needed before spending money.
+> 
+> During the meeting, students agreed that the ideas were not necessarily competing. They could collect views, check the available budget and identify changes that would benefit different users. The chairperson asked each speaker to explain who would benefit and how the proposal could be maintained.
+> 
+> The group decided to prepare a short survey and invite residents to a follow-up meeting.
+
+**Worked example:** Viewpoint 1: sports equipment supports activity. Viewpoint 2: shade and accessible paths support wider use. Common ground: improve a shared space after listening to users and checking resources.
+
+**Your task:** Summarise two viewpoints, identify common ground and ask a relevant question about who benefits or how the plan can be maintained.
+
+**Silver pathway support:** Complete independently where possible. Select relevant evidence, explain your thinking and check the success criteria.
 
 **My answer / working:**
 
@@ -87,27 +137,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Two accurately represented viewpoints, common ground and relevant question/contribution. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Gold Worksheet
+## Day 1 — Term 1, Week 1 — Planning a Youth Forum — Listening and speaking — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 1  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Interpret a discussion, synthesise different viewpoints and contribute a relevant response.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can summarise two viewpoints, identify common ground and contribute a relevant question or response.
 
-**Worked example:** 
+**Read this complete text — Planning a Youth Forum:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> The student council planned a youth forum about improving shared community spaces. One group wanted more sports equipment because young people needed safe places to be active. Another group wanted shaded seating and accessible paths so more residents could use the area. A third group suggested asking neighbours what they needed before spending money.
+> 
+> During the meeting, students agreed that the ideas were not necessarily competing. They could collect views, check the available budget and identify changes that would benefit different users. The chairperson asked each speaker to explain who would benefit and how the proposal could be maintained.
+> 
+> The group decided to prepare a short survey and invite residents to a follow-up meeting.
+
+**Worked example:** Viewpoint 1: sports equipment supports activity. Viewpoint 2: shade and accessible paths support wider use. Common ground: improve a shared space after listening to users and checking resources.
+
+**Your task:** Evaluate how the survey and budget check could help resolve competing priorities. Present a balanced summary and propose one fair decision-making criterion.
+
+**Gold pathway support:** Extend the same objective through evaluation, comparison or precise revision. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -117,27 +187,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Two accurately represented viewpoints, common ground and relevant question/contribution. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Copper Worksheet
+## Day 2 — Term 1, Week 1 — Reading a Public Information Report — Reading and viewing — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 2  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse a report's purpose, claims and supporting evidence, and evaluate whether its conclusion is justified.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can identify purpose and claim, select relevant evidence and evaluate the strength of a conclusion.
 
-**Worked example:** 
+**Read this complete text — Reading a Public Information Report:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> A town library trialled extended opening hours on two afternoons each week for one month. The library recorded visitor numbers, the times people arrived and short comments from visitors. Attendance was higher on both trial afternoons than on the same afternoons in the previous month.
+> 
+> Several visitors said the later hours helped them attend after work or school. However, the report noted that the trial took place during a period with several community events. It also recorded that some visitors still could not attend because of transport or caring responsibilities.
+> 
+> The report recommended continuing the trial for another month while collecting more information. It did not claim that later hours would solve every access problem.
+
+**Worked example:** Claim: later opening hours may improve access for some people. Evidence: visitor numbers were higher on trial afternoons and some visitors reported the hours helped them. Limitation: community events may have influenced attendance.
+
+**Your task:** Find one recorded fact and one visitor comment. Choose the report's recommendation from two teacher-read options.
+
+**Copper pathway support:** Use the model and word bank one step at a time. You may answer in Braille, large print, speech, sign, AAC, pointing, eye gaze, dictation or writing; an adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -147,27 +237,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Purpose/claim, accurate evidence, limitation and evaluation proportionate to the data. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Bronze Worksheet
+## Day 2 — Term 1, Week 1 — Reading a Public Information Report — Reading and viewing — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 2  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse a report's purpose, claims and supporting evidence, and evaluate whether its conclusion is justified.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can identify purpose and claim, select relevant evidence and evaluate the strength of a conclusion.
 
-**Worked example:** 
+**Read this complete text — Reading a Public Information Report:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> A town library trialled extended opening hours on two afternoons each week for one month. The library recorded visitor numbers, the times people arrived and short comments from visitors. Attendance was higher on both trial afternoons than on the same afternoons in the previous month.
+> 
+> Several visitors said the later hours helped them attend after work or school. However, the report noted that the trial took place during a period with several community events. It also recorded that some visitors still could not attend because of transport or caring responsibilities.
+> 
+> The report recommended continuing the trial for another month while collecting more information. It did not claim that later hours would solve every access problem.
+
+**Worked example:** Claim: later opening hours may improve access for some people. Evidence: visitor numbers were higher on trial afternoons and some visitors reported the hours helped them. Limitation: community events may have influenced attendance.
+
+**Your task:** Complete: “The report found ____. One visitor comment was ____. The report recommends ____.” Identify one factor that may affect the results.
+
+**Bronze pathway support:** Use the worked example and sentence frame. Complete the supported task and check your answer. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -177,27 +287,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Purpose/claim, accurate evidence, limitation and evaluation proportionate to the data. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Silver Worksheet
+## Day 2 — Term 1, Week 1 — Reading a Public Information Report — Reading and viewing — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 2  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse a report's purpose, claims and supporting evidence, and evaluate whether its conclusion is justified.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can identify purpose and claim, select relevant evidence and evaluate the strength of a conclusion.
 
-**Worked example:** 
+**Read this complete text — Reading a Public Information Report:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> A town library trialled extended opening hours on two afternoons each week for one month. The library recorded visitor numbers, the times people arrived and short comments from visitors. Attendance was higher on both trial afternoons than on the same afternoons in the previous month.
+> 
+> Several visitors said the later hours helped them attend after work or school. However, the report noted that the trial took place during a period with several community events. It also recorded that some visitors still could not attend because of transport or caring responsibilities.
+> 
+> The report recommended continuing the trial for another month while collecting more information. It did not claim that later hours would solve every access problem.
+
+**Worked example:** Claim: later opening hours may improve access for some people. Evidence: visitor numbers were higher on trial afternoons and some visitors reported the hours helped them. Limitation: community events may have influenced attendance.
+
+**Your task:** Explain the report's purpose and claim. Select two pieces of evidence and one limitation that affects the conclusion.
+
+**Silver pathway support:** Complete independently where possible. Select relevant evidence, explain your thinking and check the success criteria.
 
 **My answer / working:**
 
@@ -207,27 +337,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Purpose/claim, accurate evidence, limitation and evaluation proportionate to the data. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Gold Worksheet
+## Day 2 — Term 1, Week 1 — Reading a Public Information Report — Reading and viewing — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 2  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse a report's purpose, claims and supporting evidence, and evaluate whether its conclusion is justified.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can identify purpose and claim, select relevant evidence and evaluate the strength of a conclusion.
 
-**Worked example:** 
+**Read this complete text — Reading a Public Information Report:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> A town library trialled extended opening hours on two afternoons each week for one month. The library recorded visitor numbers, the times people arrived and short comments from visitors. Attendance was higher on both trial afternoons than on the same afternoons in the previous month.
+> 
+> Several visitors said the later hours helped them attend after work or school. However, the report noted that the trial took place during a period with several community events. It also recorded that some visitors still could not attend because of transport or caring responsibilities.
+> 
+> The report recommended continuing the trial for another month while collecting more information. It did not claim that later hours would solve every access problem.
+
+**Worked example:** Claim: later opening hours may improve access for some people. Evidence: visitor numbers were higher on trial afternoons and some visitors reported the hours helped them. Limitation: community events may have influenced attendance.
+
+**Your task:** Evaluate whether the evidence justifies continuing the trial. Identify further data needed to understand who still cannot access the library and why.
+
+**Gold pathway support:** Extend the same objective through evaluation, comparison or precise revision. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -237,27 +387,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Purpose/claim, accurate evidence, limitation and evaluation proportionate to the data. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Copper Worksheet
+## Day 3 — Term 1, Week 1 — Language in a Campaign Message — Vocabulary and language — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 3  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse connotation, tone and persuasive vocabulary, selecting language appropriate to an audience.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can explain connotations of four words and revise a campaign message for a defined audience.
 
-**Worked example:** 
+**Read this complete text — Language in a Campaign Message:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> A youth group prepared a campaign encouraging people to keep a local beach clean. Its first draft said, “Stop being careless and clean up your mess.” Some members felt that the wording blamed readers and might make them ignore the message.
+> 
+> The group revised it: “Help protect our shared beach. Place rubbish in the correct bins and take reusable items home. Small actions by many visitors can reduce litter.” The revised message used an invitation, clear actions and a shared purpose.
+> 
+> The group planned to display the message near the entrance and ask visitors whether the instructions were clear.
+
+**Worked example:** “Careless” can sound blaming. “Shared” suggests collective responsibility. “Protect” presents a positive purpose. “Help” invites participation.
+
+**Your task:** Match shared, protect, invitation and blame to simple meanings. Choose which message sounds more welcoming.
+
+**Copper pathway support:** Use the model and word bank one step at a time. You may answer in Braille, large print, speech, sign, AAC, pointing, eye gaze, dictation or writing; an adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -267,27 +437,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Four contextual explanations, tone/connotation analysis and audience-appropriate revision. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Bronze Worksheet
+## Day 3 — Term 1, Week 1 — Language in a Campaign Message — Vocabulary and language — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 3  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse connotation, tone and persuasive vocabulary, selecting language appropriate to an audience.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can explain connotations of four words and revise a campaign message for a defined audience.
 
-**Worked example:** 
+**Read this complete text — Language in a Campaign Message:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> A youth group prepared a campaign encouraging people to keep a local beach clean. Its first draft said, “Stop being careless and clean up your mess.” Some members felt that the wording blamed readers and might make them ignore the message.
+> 
+> The group revised it: “Help protect our shared beach. Place rubbish in the correct bins and take reusable items home. Small actions by many visitors can reduce litter.” The revised message used an invitation, clear actions and a shared purpose.
+> 
+> The group planned to display the message near the entrance and ask visitors whether the instructions were clear.
+
+**Worked example:** “Careless” can sound blaming. “Shared” suggests collective responsibility. “Protect” presents a positive purpose. “Help” invites participation.
+
+**Your task:** Explain two target words using the passage. Identify one phrase that invites action and one phrase that may sound blaming.
+
+**Bronze pathway support:** Use the worked example and sentence frame. Complete the supported task and check your answer. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -297,27 +487,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Four contextual explanations, tone/connotation analysis and audience-appropriate revision. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Silver Worksheet
+## Day 3 — Term 1, Week 1 — Language in a Campaign Message — Vocabulary and language — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 3  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse connotation, tone and persuasive vocabulary, selecting language appropriate to an audience.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can explain connotations of four words and revise a campaign message for a defined audience.
 
-**Worked example:** 
+**Read this complete text — Language in a Campaign Message:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> A youth group prepared a campaign encouraging people to keep a local beach clean. Its first draft said, “Stop being careless and clean up your mess.” Some members felt that the wording blamed readers and might make them ignore the message.
+> 
+> The group revised it: “Help protect our shared beach. Place rubbish in the correct bins and take reusable items home. Small actions by many visitors can reduce litter.” The revised message used an invitation, clear actions and a shared purpose.
+> 
+> The group planned to display the message near the entrance and ask visitors whether the instructions were clear.
+
+**Worked example:** “Careless” can sound blaming. “Shared” suggests collective responsibility. “Protect” presents a positive purpose. “Help” invites participation.
+
+**Your task:** Analyse the tone of both campaign versions. Explain how two word choices affect the audience and revise one sentence.
+
+**Silver pathway support:** Complete independently where possible. Select relevant evidence, explain your thinking and check the success criteria.
 
 **My answer / working:**
 
@@ -327,27 +537,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Four contextual explanations, tone/connotation analysis and audience-appropriate revision. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Gold Worksheet
+## Day 3 — Term 1, Week 1 — Language in a Campaign Message — Vocabulary and language — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 3  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse connotation, tone and persuasive vocabulary, selecting language appropriate to an audience.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can explain connotations of four words and revise a campaign message for a defined audience.
 
-**Worked example:** 
+**Read this complete text — Language in a Campaign Message:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> A youth group prepared a campaign encouraging people to keep a local beach clean. Its first draft said, “Stop being careless and clean up your mess.” Some members felt that the wording blamed readers and might make them ignore the message.
+> 
+> The group revised it: “Help protect our shared beach. Place rubbish in the correct bins and take reusable items home. Small actions by many visitors can reduce litter.” The revised message used an invitation, clear actions and a shared purpose.
+> 
+> The group planned to display the message near the entrance and ask visitors whether the instructions were clear.
+
+**Worked example:** “Careless” can sound blaming. “Shared” suggests collective responsibility. “Protect” presents a positive purpose. “Help” invites participation.
+
+**Your task:** Compare the persuasive strategies in both versions. Write a third version for a younger audience and justify your choices of tone, connotation and action verbs.
+
+**Gold pathway support:** Extend the same objective through evaluation, comparison or precise revision. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -357,27 +587,45 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Four contextual explanations, tone/connotation analysis and audience-appropriate revision. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Copper Worksheet
+## Day 4 — Term 1, Week 1 — Building a Reasoned Argument — Grammar and sentence craft — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 4  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Use complex clauses, cohesive devices and accurate punctuation to connect claims, reasons and qualifications.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can construct a coherent argument using claims, reasons, concession and accurate sentence punctuation.
 
-**Worked example:** 
+**Read this complete text — Building a Reasoned Argument:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> Schools can encourage learners to read widely. A quiet reading period gives everyone time to read. Some learners prefer audio or shared reading. A flexible reading period can include different formats. Teachers can help learners choose texts that are suitable and interesting.
+> 
+> A reading period needs planning. It should not replace direct teaching. It can support reading habits when it is connected to classroom learning.
+
+**Worked example:** “Although some learners prefer audio or shared reading, a flexible reading period can offer different ways to enjoy texts.” The clause beginning “Although” acknowledges a contrasting point.
+
+**Your task:** Join “A reading period gives time to read. It needs planning.” using “but”. Add correct punctuation.
+
+**Copper pathway support:** Use the model and word bank one step at a time. You may answer in Braille, large print, speech, sign, AAC, pointing, eye gaze, dictation or writing; an adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -387,27 +635,45 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Clear claim/reasons, suitable complex clauses and cohesive devices, accurate punctuation. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Bronze Worksheet
+## Day 4 — Term 1, Week 1 — Building a Reasoned Argument — Grammar and sentence craft — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 4  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Use complex clauses, cohesive devices and accurate punctuation to connect claims, reasons and qualifications.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can construct a coherent argument using claims, reasons, concession and accurate sentence punctuation.
 
-**Worked example:** 
+**Read this complete text — Building a Reasoned Argument:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> Schools can encourage learners to read widely. A quiet reading period gives everyone time to read. Some learners prefer audio or shared reading. A flexible reading period can include different formats. Teachers can help learners choose texts that are suitable and interesting.
+> 
+> A reading period needs planning. It should not replace direct teaching. It can support reading habits when it is connected to classroom learning.
+
+**Worked example:** “Although some learners prefer audio or shared reading, a flexible reading period can offer different ways to enjoy texts.” The clause beginning “Although” acknowledges a contrasting point.
+
+**Your task:** Combine two pairs using although, because or while. Underline the clause that gives a reason or contrast.
+
+**Bronze pathway support:** Use the worked example and sentence frame. Complete the supported task and check your answer. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -417,27 +683,45 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Clear claim/reasons, suitable complex clauses and cohesive devices, accurate punctuation. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Silver Worksheet
+## Day 4 — Term 1, Week 1 — Building a Reasoned Argument — Grammar and sentence craft — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 4  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Use complex clauses, cohesive devices and accurate punctuation to connect claims, reasons and qualifications.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can construct a coherent argument using claims, reasons, concession and accurate sentence punctuation.
 
-**Worked example:** 
+**Read this complete text — Building a Reasoned Argument:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> Schools can encourage learners to read widely. A quiet reading period gives everyone time to read. Some learners prefer audio or shared reading. A flexible reading period can include different formats. Teachers can help learners choose texts that are suitable and interesting.
+> 
+> A reading period needs planning. It should not replace direct teaching. It can support reading habits when it is connected to classroom learning.
+
+**Worked example:** “Although some learners prefer audio or shared reading, a flexible reading period can offer different ways to enjoy texts.” The clause beginning “Although” acknowledges a contrasting point.
+
+**Your task:** Write a coherent paragraph with a claim, two reasons and one qualification. Use at least two cohesive devices and accurate punctuation.
+
+**Silver pathway support:** Complete independently where possible. Select relevant evidence, explain your thinking and check the success criteria.
 
 **My answer / working:**
 
@@ -447,27 +731,45 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Clear claim/reasons, suitable complex clauses and cohesive devices, accurate punctuation. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Gold Worksheet
+## Day 4 — Term 1, Week 1 — Building a Reasoned Argument — Grammar and sentence craft — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 4  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Use complex clauses, cohesive devices and accurate punctuation to connect claims, reasons and qualifications.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can construct a coherent argument using claims, reasons, concession and accurate sentence punctuation.
 
-**Worked example:** 
+**Read this complete text — Building a Reasoned Argument:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> Schools can encourage learners to read widely. A quiet reading period gives everyone time to read. Some learners prefer audio or shared reading. A flexible reading period can include different formats. Teachers can help learners choose texts that are suitable and interesting.
+> 
+> A reading period needs planning. It should not replace direct teaching. It can support reading habits when it is connected to classroom learning.
+
+**Worked example:** “Although some learners prefer audio or shared reading, a flexible reading period can offer different ways to enjoy texts.” The clause beginning “Although” acknowledges a contrasting point.
+
+**Your task:** Revise the paragraph to balance the claim with a counterpoint. Use a concession clause and explain how it strengthens the argument.
+
+**Gold pathway support:** Extend the same objective through evaluation, comparison or precise revision. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -477,27 +779,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Clear claim/reasons, suitable complex clauses and cohesive devices, accurate punctuation. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Copper Worksheet
+## Day 5 — Term 1, Week 1 — A Proposal to Improve Access — Writing and shaping — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 5  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Compose a structured proposal for a defined audience using evidence, inclusive planning and a measurable review step.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can write a proposal with a defined need, evidence, feasible actions, inclusion measures and a way to review impact.
 
-**Worked example:** 
+**Read this complete text — A Proposal to Improve Access:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> A community centre wants more residents to take part in its activities. Some people have said that information about events is difficult to find. Others have asked whether the building and activities can meet different access needs.
+> 
+> The committee is considering clearer signs, notices in more than one format and a simple way for residents to suggest activities. Before choosing changes, it wants to understand which barriers affect people most. The committee also needs to consider cost, staff time and the building's current facilities.
+> 
+> A useful proposal should explain the need, identify who may benefit, suggest practical steps and describe how the committee will know whether the changes helped.
+
+**Worked example:** A proposal should name the access issue, use feedback as evidence, recommend feasible steps, consider cost and staff time, and include a review measure such as checking participation and collecting feedback.
+
+**Your task:** Choose one access improvement. Complete: “The problem is ____. One change is ____. It could help ____.”
+
+**Copper pathway support:** Use the model and word bank one step at a time. You may answer in Braille, large print, speech, sign, AAC, pointing, eye gaze, dictation or writing; an adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -507,27 +829,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Defined need, evidence, feasible action, inclusion and measurable review. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Bronze Worksheet
+## Day 5 — Term 1, Week 1 — A Proposal to Improve Access — Writing and shaping — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 5  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Compose a structured proposal for a defined audience using evidence, inclusive planning and a measurable review step.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can write a proposal with a defined need, evidence, feasible actions, inclusion measures and a way to review impact.
 
-**Worked example:** 
+**Read this complete text — A Proposal to Improve Access:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> A community centre wants more residents to take part in its activities. Some people have said that information about events is difficult to find. Others have asked whether the building and activities can meet different access needs.
+> 
+> The committee is considering clearer signs, notices in more than one format and a simple way for residents to suggest activities. Before choosing changes, it wants to understand which barriers affect people most. The committee also needs to consider cost, staff time and the building's current facilities.
+> 
+> A useful proposal should explain the need, identify who may benefit, suggest practical steps and describe how the committee will know whether the changes helped.
+
+**Worked example:** A proposal should name the access issue, use feedback as evidence, recommend feasible steps, consider cost and staff time, and include a review measure such as checking participation and collecting feedback.
+
+**Your task:** Use the frame: need; people affected; two actions; one cost/time consideration; one way to check whether it helped.
+
+**Bronze pathway support:** Use the worked example and sentence frame. Complete the supported task and check your answer. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -537,27 +879,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Defined need, evidence, feasible action, inclusion and measurable review. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Silver Worksheet
+## Day 5 — Term 1, Week 1 — A Proposal to Improve Access — Writing and shaping — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 5  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Compose a structured proposal for a defined audience using evidence, inclusive planning and a measurable review step.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can write a proposal with a defined need, evidence, feasible actions, inclusion measures and a way to review impact.
 
-**Worked example:** 
+**Read this complete text — A Proposal to Improve Access:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> A community centre wants more residents to take part in its activities. Some people have said that information about events is difficult to find. Others have asked whether the building and activities can meet different access needs.
+> 
+> The committee is considering clearer signs, notices in more than one format and a simple way for residents to suggest activities. Before choosing changes, it wants to understand which barriers affect people most. The committee also needs to consider cost, staff time and the building's current facilities.
+> 
+> A useful proposal should explain the need, identify who may benefit, suggest practical steps and describe how the committee will know whether the changes helped.
+
+**Worked example:** A proposal should name the access issue, use feedback as evidence, recommend feasible steps, consider cost and staff time, and include a review measure such as checking participation and collecting feedback.
+
+**Your task:** Write a structured proposal with evidence from the scenario, practical actions, an inclusion measure and a review step.
+
+**Silver pathway support:** Complete independently where possible. Select relevant evidence, explain your thinking and check the success criteria.
 
 **My answer / working:**
 
@@ -567,27 +929,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Defined need, evidence, feasible action, inclusion and measurable review. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Gold Worksheet
+## Day 5 — Term 1, Week 1 — A Proposal to Improve Access — Writing and shaping — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 7  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 5  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Compose a structured proposal for a defined audience using evidence, inclusive planning and a measurable review step.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can write a proposal with a defined need, evidence, feasible actions, inclusion measures and a way to review impact.
 
-**Worked example:** 
+**Read this complete text — A Proposal to Improve Access:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> A community centre wants more residents to take part in its activities. Some people have said that information about events is difficult to find. Others have asked whether the building and activities can meet different access needs.
+> 
+> The committee is considering clearer signs, notices in more than one format and a simple way for residents to suggest activities. Before choosing changes, it wants to understand which barriers affect people most. The committee also needs to consider cost, staff time and the building's current facilities.
+> 
+> A useful proposal should explain the need, identify who may benefit, suggest practical steps and describe how the committee will know whether the changes helped.
+
+**Worked example:** A proposal should name the access issue, use feedback as evidence, recommend feasible steps, consider cost and staff time, and include a review measure such as checking participation and collecting feedback.
+
+**Your task:** Prepare a persuasive proposal for the committee. Prioritise actions, acknowledge a resource constraint, explain how feedback will be gathered ethically and define a measurable success indicator.
+
+**Gold pathway support:** Extend the same objective through evaluation, comparison or precise revision. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -597,11 +979,21 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Defined need, evidence, feasible action, inclusion and measurable review. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
