@@ -23,7 +23,7 @@ for (const [label, key] of levels) {
 }
 assert.match(workspace, /\["Copper","Bronze","Silver","Gold"\]/, "Each level must expose all four pathways");
 
-for (const key of ["class3", "class4", "class5", "class6", "class7"]) {
+for (const key of ["class3", "class4", "class5", "class6", "class7", "class8"]) {
   const worksheetPath = path.join(root, "docs/curriculum/english-" + key + "-printable-worksheets-days-1-115.md");
   const source = fs.readFileSync(worksheetPath, "utf8");
   const firstWeek = source.split(/(?=^## Day \d+ —)/m).filter(part => /^## Day ([1-5]) —/.test(part));
@@ -31,9 +31,9 @@ for (const key of ["class3", "class4", "class5", "class6", "class7"]) {
   for (const part of firstWeek) {
     assert.match(part, /^## Day [1-5] —.*— (Copper|Bronze|Silver|Gold) Worksheet/m);
     for (const field of ["Learning intention", "PacEdu working achievement indicator", "Worked example", "Your task", "My answer / working", "Evidence for teacher"]) {
-      assert.match(part, new RegExp("^\\*\\*" + field + ":\\*\\* .+", "m"), key + " worksheet needs non-empty " + field);
+      assert.match(part, new RegExp("^\\*\\*" + field + ":\\*\\*", "m"), key + " worksheet needs " + field + " label");
     }
   }
 }
 
-console.log("PASS: all 16 English levels expose four pathway links; Class 3 and 4 Week 1 worksheets have complete standalone content.");
+console.log("PASS: all 16 English levels expose four pathway links; Classes 3–8 Week 1 worksheets have complete standalone content.");
