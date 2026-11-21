@@ -4,7 +4,7 @@
 **Base:** `main` at `37db17295e5b19ed161e81bc9ac40414fcef785c`  
 **Status:** STAGING ONLY — not merged, not deployed, not visible in the live app.
 
-This register is the staging index for the subject-specific worksheet files. It does not claim that a subject is complete merely because a subject exists in the selector/catalog.
+This register is the staging index for subject-specific worksheet files. A subject is not considered complete merely because it exists in the selector/catalog.
 
 ## Required subject-box structure
 
@@ -24,11 +24,11 @@ Each learner worksheet must be independently usable and include learner details,
 
 | Subject box | Staging content file | Status |
 |---|---|---|
-| Agriculture | `docs/worksheets/class3-agriculture-term2-week7.md` | Content drafted in conversation; repository file not yet staged |
-| Arts | `docs/worksheets/class3-arts-term2-week7.md` | Content drafted in conversation; repository file not yet staged |
-| Mathematics | `docs/worksheets/class3-mathematics-term2-week7.md` | Content drafted in conversation; repository file not yet staged |
-| Social Science | `docs/worksheets/class3-social-science-term2-week7.md` | Content drafted in conversation; repository file not yet staged |
-| Technology | `docs/worksheets/class3-technology-term2-week7.md` | Next content pack to produce |
+| Agriculture | `docs/worksheets/class3-agriculture-term2-week7.md` | Drafted in conversation; repository file not staged |
+| Arts | `docs/worksheets/class3-arts-term2-week7.md` | Drafted in conversation; repository file not staged |
+| Mathematics | `docs/worksheets/class3-mathematics-term2-week7.md` | Drafted in conversation; repository file not staged |
+| Social Science | `docs/worksheets/class3-social-science-term2-week7.md` | Drafted in conversation; repository file not staged |
+| Technology | `docs/worksheets/class3-technology-term2-week7.md` | **STAGED** — 20 individual learner papers (5 days × 4 pathways); teacher review pending |
 
 ## Publication and safety gates
 
