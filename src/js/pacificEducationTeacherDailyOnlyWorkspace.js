@@ -273,6 +273,42 @@
       class8EnglishCard.appendChild(class8EnglishPrint);
       list.appendChild(class8EnglishCard);
 
+      var form1EnglishCard=node("section");
+      form1EnglishCard.id="paceduForm1EnglishDailyPackLink";
+      form1EnglishCard.style.cssText="margin:12px 0;padding:12px;border:2px solid #b7791f;border-radius:9px;background:#fffaf0;";
+      form1EnglishCard.appendChild(node("h4","Form 1 English — 115 Daily Activities (Copper–Gold)"));
+      form1EnglishCard.appendChild(node("p","Original PacEdu practice draft. PENDING_TEACHER_REVIEW and PENDING_OFFICIAL_INDICATOR_VERIFICATION; verify the current authorised syllabus before learner release."));
+      var form1EnglishActivity=node("a","Open Form 1 English Days 1–115");
+      form1EnglishActivity.href="https://github.com/terubea82-eng/Pacific-education-/blob/pacedu/english-ece-form7-staging-20261119/docs/curriculum/english-form1-daily-activities-days-1-115.md";
+      form1EnglishActivity.target="_blank";form1EnglishActivity.rel="noopener noreferrer";
+      form1EnglishActivity.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #7b5b25;border-radius:7px;font-weight:700;";
+      form1EnglishCard.appendChild(form1EnglishActivity);
+      form1EnglishCard.appendChild(node("p","460 separate printable worksheets (115 days × four pathways); teacher and official indicator review pending."));
+      var form1EnglishPrint=node("a","Open Form 1 Printable Worksheets — Days 1–115");
+      form1EnglishPrint.href="https://terubea82-eng.github.io/Pacific-education-/src/pacedu-form1-english-printable-worksheets.html";
+      form1EnglishPrint.target="_blank";form1EnglishPrint.rel="noopener noreferrer";
+      form1EnglishPrint.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
+      form1EnglishCard.appendChild(form1EnglishPrint);
+      list.appendChild(form1EnglishCard);
+
+      var form2EnglishCard=node("section");
+      form2EnglishCard.id="paceduForm2EnglishDailyPackLink";
+      form2EnglishCard.style.cssText="margin:12px 0;padding:12px;border:2px solid #b7791f;border-radius:9px;background:#fffaf0;";
+      form2EnglishCard.appendChild(node("h4","Form 2 English — 115 Daily Activities (Copper–Gold)"));
+      form2EnglishCard.appendChild(node("p","Original PacEdu practice draft. PENDING_TEACHER_REVIEW and PENDING_OFFICIAL_INDICATOR_VERIFICATION; verify the current authorised syllabus before learner release."));
+      var form2EnglishActivity=node("a","Open Form 2 English Days 1–115");
+      form2EnglishActivity.href="https://github.com/terubea82-eng/Pacific-education-/blob/pacedu/english-ece-form7-staging-20261119/docs/curriculum/english-form2-daily-activities-days-1-115.md";
+      form2EnglishActivity.target="_blank";form2EnglishActivity.rel="noopener noreferrer";
+      form2EnglishActivity.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #7b5b25;border-radius:7px;font-weight:700;";
+      form2EnglishCard.appendChild(form2EnglishActivity);
+      form2EnglishCard.appendChild(node("p","460 separate printable worksheets (115 days × four pathways); teacher and official indicator review pending."));
+      var form2EnglishPrint=node("a","Open Form 2 Printable Worksheets — Days 1–115");
+      form2EnglishPrint.href="https://terubea82-eng.github.io/Pacific-education-/src/pacedu-form2-english-printable-worksheets.html";
+      form2EnglishPrint.target="_blank";form2EnglishPrint.rel="noopener noreferrer";
+      form2EnglishPrint.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
+      form2EnglishCard.appendChild(form2EnglishPrint);
+      list.appendChild(form2EnglishCard);
+
       var form3EnglishCard=node("section");
       form3EnglishCard.id="paceduForm3EnglishDailyPackLink";
       form3EnglishCard.style.cssText="margin:12px 0;padding:12px;border:2px solid #b7791f;border-radius:9px;background:#fffaf0;";
@@ -373,7 +409,7 @@
     if(!items.length){
       items.push({id:"",label:"ECE",level:"ECE"});
       for(var i=1;i<=8;i++)items.push({id:"",label:"Class "+i,level:"Class "+i});
-      for(var f=3;f<=7;f++)items.push({id:"",label:"Form "+f,level:"Form "+f});
+      for(var f=1;f<=7;f++)items.push({id:"",label:"Form "+f,level:"Form "+f});
       var note=node("p","No registered class list is connected yet. These level choices open the existing pilot daily-activity planner; they do not create school records.");
       note.style.cssText="font-size:.9em;";
       list.appendChild(note);
