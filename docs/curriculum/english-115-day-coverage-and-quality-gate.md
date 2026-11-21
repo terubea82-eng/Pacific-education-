@@ -58,15 +58,16 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 
 Class 3, Class 4, Class 5, Class 6, Class 7 and Class 8 Days 1–5 have now been rebuilt as 20 standalone learner worksheet sections per class (five days × Copper/Bronze/Silver/Gold). Each section embeds its own complete passage, learning intention, PacEdu working indicator, worked example, pathway-specific task, generous answer space, evidence prompt and accessibility options. Separate teacher marking guides were added for each class.
 
-The English Subject Box cards now link to the Class 3, Class 4, Class 5, Class 6 and Class 7 Week 1 teacher guides in addition to the four pathway viewer links.
+The English Subject Box cards now link to the Class 3, Class 4, Class 5, Class 6, Class 7 and Class 8 Week 1 teacher guides in addition to the four pathway viewer links.
 
 - [Class 3 Week 1 teacher guide](english-class3-teacher-guide-days-1-5.md)
 - [Class 4 Week 1 teacher guide](english-class4-teacher-guide-days-1-5.md)
 - [Class 5 Week 1 teacher guide](english-class5-teacher-guide-days-1-5.md)
 - [Class 6 Week 1 teacher guide](english-class6-teacher-guide-days-1-5.md)
 - [Class 7 Week 1 teacher guide](english-class7-teacher-guide-days-1-5.md)
+- [Class 8 Week 1 teacher guide](english-class8-teacher-guide-days-1-5.md)
 
-These 60 learner worksheet versions are improved PacEdu drafts, not final verified curriculum materials. Both remain `PENDING_TEACHER_REVIEW` and `PENDING_OFFICIAL_INDICATOR_VERIFICATION`. The remaining 110 days for each of these classes still require the same detailed learner-page quality work.
+These 120 learner worksheet versions are improved PacEdu drafts, not final verified curriculum materials. Both remain `PENDING_TEACHER_REVIEW` and `PENDING_OFFICIAL_INDICATOR_VERIFICATION`. The remaining 110 days for each of these classes still require the same detailed learner-page quality work.
 
 ## Release blockers
 
