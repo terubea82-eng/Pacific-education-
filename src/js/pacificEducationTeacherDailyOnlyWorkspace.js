@@ -89,6 +89,11 @@
           form6Week4Guide.target="_blank";form6Week4Guide.rel="noopener noreferrer";
           form6Week4Guide.style.cssText="display:block;min-height:44px;padding:9px 0;font-weight:700;";
           wrap.appendChild(form6Week4Guide);
+          var form6Week5Guide=node("a","Open "+level+" Week 5 Teacher Marking Guide");
+          form6Week5Guide.href="https://github.com/terubea82-eng/Pacific-education-/blob/pacedu/english-ece-form7-staging-20261119/docs/curriculum/english-form6-teacher-guide-days-21-25.md";
+          form6Week5Guide.target="_blank";form6Week5Guide.rel="noopener noreferrer";
+          form6Week5Guide.style.cssText="display:block;min-height:44px;padding:9px 0;font-weight:700;";
+          wrap.appendChild(form6Week5Guide);
         }
         if(level==="Form 7"){
           var week3Guide=node("a","Open "+level+" Week 3 Teacher Marking Guide");
