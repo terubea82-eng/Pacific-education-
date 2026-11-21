@@ -155,7 +155,7 @@ assert.ok(workspace.includes("english-form4-teacher-guide-days-6-10.md"), "Form 
 
 
 
-const form7Week3 = form7Source.split(/(?=^## Day \\d+ —)/m).filter(part => /^## Day (11|12|13|14|15) —/.test(part));
+const form7Week3 = form7Source.split(/(?=^## Day \d+ —)/m).filter(part => /^## Day (11|12|13|14|15) —/.test(part));
 assert.equal(form7Week3.length, 20, "Form 7 must have 20 standalone worksheets for Days 11–15");
 for (const part of form7Week3) {
   assert.match(part, /^## Day (11|12|13|14|15) —.*— (Copper|Bronze|Silver|Gold) Worksheet/m);
