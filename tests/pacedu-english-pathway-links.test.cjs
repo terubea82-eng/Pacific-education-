@@ -24,4 +24,18 @@ for (const [label, key] of levels) {
   assert.match(viewer, /\^#\{1,2\} Day \(\\d\+\).*Copper\|Bronze\|Silver\|Gold/, label + " viewer must recognise each ability worksheet");
 }
 assert.match(workspace, /\["Copper","Bronze","Silver","Gold"\]/, "Each level must expose all four pathways");
-console.log("PASS: all 16 English levels expose Copper, Bronze, Silver and Gold pathway links with compatible printable viewers.");
+
+for (const key of ["class3", "class4"]) {
+  const worksheetPath = path.join(root, "docs/curriculum/english-" + key + "-printable-worksheets-days-1-115.md");
+  const source = fs.readFileSync(worksheetPath, "utf8");
+  const firstWeek = source.split(/(?=^## Day \\d+ —)/m).filter(part => /^## Day ([1-5]) —/.test(part));
+  assert.equal(firstWeek.length, 20, key + " must have 20 standalone worksheets for Days 1–5");
+  for (const part of firstWeek) {
+    assert.match(part, /^## Day [1-5] —.*— (Copper|Bronze|Silver|Gold) Worksheet/m);
+    for (const field of ["Learning intention", "PacEdu working achievement indicator", "Worked example", "Your task", "My answer / working", "Evidence for teacher"]) {
+      assert.match(part, new RegExp("\\*\\*" + field.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\\\console.log("PASS: all 16 English levels expose Copper, Bronze, Silver and Gold pathway links with compatible printable viewers.");") + ":\\*\\*\\s*\\S"), key + " worksheet needs non-empty " + field);
+    }
+  }
+}
+
+console.log("PASS: all 16 English levels expose four pathway links; Class 3 and 4 Week 1 worksheets have complete standalone content.");
