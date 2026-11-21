@@ -75,6 +75,8 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 
 [Form 6 Week 1 teacher marking guide](english-form6-teacher-guide-days-1-5.md)
 
+[Form 6 Week 2 teacher marking guide](english-form6-teacher-guide-days-6-10.md)
+
 ### Form 2 (Year 8) — worksheet coverage checked
 - Repository-side blob inspection confirms 460 worksheet pages: 115 each for Copper, Bronze, Silver and Gold.
 - All 460 pages contain learner identification, the learning goal, a complete passage, worked example, questions, answer spaces, final check and pending teacher-review status.
