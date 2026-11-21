@@ -38,7 +38,7 @@ function resolveSubject(subject,level){
  }
  return {subject:subject,sourceSubject:source,available:!!source,note:note};
 }
-var LEVELS=["ECE"];for(var c=1;c<=8;c++)LEVELS.push("Class "+c);for(var f=3;f<=7;f++)LEVELS.push("Form "+f);
+var LEVELS=["ECE"];for(var c=1;c<=8;c++)LEVELS.push("Class "+c);for(var f=1;f<=7;f++)LEVELS.push("Form "+f);
 var ABILITIES=[
  {id:"support",label:"Copper",guidance:"Work toward the same learning objective with a clear model, short steps, concrete or tactile/visual supports, choices and accessible oral, signed, AAC, pointing, drawing or writing responses. Record the support provided."},
  {id:"developing",label:"Bronze",guidance:"Work toward the same learning objective with one worked example, a word bank or planning frame and limited prompts; gradually reduce support."},
