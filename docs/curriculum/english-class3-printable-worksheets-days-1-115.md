@@ -7,17 +7,23 @@
 
 ---
 
-## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Copper Worksheet
+## Day 1 — Term 1, Week 1 — A Place We Belong — Listening and speaking — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 1  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Listen to a short account, identify its main message and respond with one relevant detail.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can tell the main message of a short account and give one detail that supports it.
 
-**Worked example:** 
+**Read or listen to this passage — A Place We Belong:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> Our class made a map of places that are important to us. Mere chose the community hall because her family meets friends there. Jone chose the football field because he practises with his cousins. Ana chose the library because she can read quietly and borrow books. We noticed that people can value different places for different reasons. We listened to one another and asked respectful questions.
+
+**Worked example:** Main message: people value different places for different reasons. Detail: Mere chose the community hall because her family meets friends there.
+
+**Your task:** Choose the main message from: (A) everyone likes the same place; (B) people value different places for different reasons. Match Mere to the community hall. Give, point to, sign or select one detail.
+
+**Copper pathway support:** Use the model and word bank. Complete one step at a time. You may respond by Braille, large print, speech, sign, AAC, pointing, eye gaze, object choice, dictation or writing. An adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -27,27 +33,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Main message identified and one accurate supporting detail given; record communication mode and prompt level. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Bronze Worksheet
+## Day 1 — Term 1, Week 1 — A Place We Belong — Listening and speaking — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 1  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Listen to a short account, identify its main message and respond with one relevant detail.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can tell the main message of a short account and give one detail that supports it.
 
-**Worked example:** 
+**Read or listen to this passage — A Place We Belong:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> Our class made a map of places that are important to us. Mere chose the community hall because her family meets friends there. Jone chose the football field because he practises with his cousins. Ana chose the library because she can read quietly and borrow books. We noticed that people can value different places for different reasons. We listened to one another and asked respectful questions.
+
+**Worked example:** Main message: people value different places for different reasons. Detail: Mere chose the community hall because her family meets friends there.
+
+**Your task:** Use the sentence frame: “The passage is mainly about ____. One detail is ____.” Add one respectful question using “Why” or “What”.
+
+**Bronze pathway support:** Use the worked example and sentence frame. Complete each step, then check your work with the success checklist. You may use any accessible response method.
 
 **My answer / working:**
 
@@ -57,27 +75,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Main message identified and one accurate supporting detail given; record communication mode and prompt level. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Silver Worksheet
+## Day 1 — Term 1, Week 1 — A Place We Belong — Listening and speaking — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 1  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Listen to a short account, identify its main message and respond with one relevant detail.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can tell the main message of a short account and give one detail that supports it.
 
-**Worked example:** 
+**Read or listen to this passage — A Place We Belong:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> Our class made a map of places that are important to us. Mere chose the community hall because her family meets friends there. Jone chose the football field because he practises with his cousins. Ana chose the library because she can read quietly and borrow books. We noticed that people can value different places for different reasons. We listened to one another and asked respectful questions.
+
+**Worked example:** Main message: people value different places for different reasons. Detail: Mere chose the community hall because her family meets friends there.
+
+**Your task:** State the main message in your own words, support it with one accurate detail and ask a respectful follow-up question.
+
+**Silver pathway support:** Complete the task independently where possible. Choose relevant evidence, explain your thinking and check your response against the success criteria. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -87,27 +117,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Main message identified and one accurate supporting detail given; record communication mode and prompt level. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Gold Worksheet
+## Day 1 — Term 1, Week 1 — A Place We Belong — Listening and speaking — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 1  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Listen to a short account, identify its main message and respond with one relevant detail.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can tell the main message of a short account and give one detail that supports it.
 
-**Worked example:** 
+**Read or listen to this passage — A Place We Belong:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> Our class made a map of places that are important to us. Mere chose the community hall because her family meets friends there. Jone chose the football field because he practises with his cousins. Ana chose the library because she can read quietly and borrow books. We noticed that people can value different places for different reasons. We listened to one another and asked respectful questions.
+
+**Worked example:** Main message: people value different places for different reasons. Detail: Mere chose the community hall because her family meets friends there.
+
+**Your task:** Explain how two characters value different places for different reasons. Compare their reasons and ask a question that invites a fuller explanation.
+
+**Gold pathway support:** Extend the same learning objective with comparison, explanation or a more precise response. Do not change the objective. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -117,27 +159,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Main message identified and one accurate supporting detail given; record communication mode and prompt level. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Copper Worksheet
+## Day 2 — Term 1, Week 1 — The School Garden — Reading and viewing — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 2  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Identify a central idea and locate two details that support it in a short information text.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can state the central idea and identify two accurate supporting details.
 
-**Worked example:** 
+**Read or listen to this passage — The School Garden:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> Class 3 started a small garden beside the classroom. First, the learners loosened the soil and removed rubbish. They planted bean seeds in rows and watered them gently. Each group checks the soil and removes weeds. The class keeps a simple growth chart. The garden gives learners a chance to observe plants and practise caring for a shared space.
+
+**Worked example:** Central idea: Class 3 is caring for a school garden. Detail 1: learners planted bean seeds. Detail 2: groups check the soil and remove weeds.
+
+**Your task:** Choose: (A) Class 3 is caring for a garden; (B) Class 3 is building a boat. Find one detail: planted bean seeds / watched a film. Match “watered” to the garden action.
+
+**Copper pathway support:** Use the model and word bank. Complete one step at a time. You may respond by Braille, large print, speech, sign, AAC, pointing, eye gaze, object choice, dictation or writing. An adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -147,27 +201,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Central idea plus two relevant details; learner points to or quotes supporting text. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Bronze Worksheet
+## Day 2 — Term 1, Week 1 — The School Garden — Reading and viewing — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 2  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Identify a central idea and locate two details that support it in a short information text.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can state the central idea and identify two accurate supporting details.
 
-**Worked example:** 
+**Read or listen to this passage — The School Garden:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> Class 3 started a small garden beside the classroom. First, the learners loosened the soil and removed rubbish. They planted bean seeds in rows and watered them gently. Each group checks the soil and removes weeds. The class keeps a simple growth chart. The garden gives learners a chance to observe plants and practise caring for a shared space.
+
+**Worked example:** Central idea: Class 3 is caring for a school garden. Detail 1: learners planted bean seeds. Detail 2: groups check the soil and remove weeds.
+
+**Your task:** Complete: “The central idea is ____. One detail is ____. Another detail is ____.” Use the passage to check each answer.
+
+**Bronze pathway support:** Use the worked example and sentence frame. Complete each step, then check your work with the success checklist. You may use any accessible response method.
 
 **My answer / working:**
 
@@ -177,27 +243,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Central idea plus two relevant details; learner points to or quotes supporting text. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Silver Worksheet
+## Day 2 — Term 1, Week 1 — The School Garden — Reading and viewing — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 2  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Identify a central idea and locate two details that support it in a short information text.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can state the central idea and identify two accurate supporting details.
 
-**Worked example:** 
+**Read or listen to this passage — The School Garden:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> Class 3 started a small garden beside the classroom. First, the learners loosened the soil and removed rubbish. They planted bean seeds in rows and watered them gently. Each group checks the soil and removes weeds. The class keeps a simple growth chart. The garden gives learners a chance to observe plants and practise caring for a shared space.
+
+**Worked example:** Central idea: Class 3 is caring for a school garden. Detail 1: learners planted bean seeds. Detail 2: groups check the soil and remove weeds.
+
+**Your task:** State the central idea in one sentence and select two different supporting details. Explain briefly how each detail supports it.
+
+**Silver pathway support:** Complete the task independently where possible. Choose relevant evidence, explain your thinking and check your response against the success criteria. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -207,27 +285,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Central idea plus two relevant details; learner points to or quotes supporting text. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Gold Worksheet
+## Day 2 — Term 1, Week 1 — The School Garden — Reading and viewing — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 2  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Identify a central idea and locate two details that support it in a short information text.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can state the central idea and identify two accurate supporting details.
 
-**Worked example:** 
+**Read or listen to this passage — The School Garden:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> Class 3 started a small garden beside the classroom. First, the learners loosened the soil and removed rubbish. They planted bean seeds in rows and watered them gently. Each group checks the soil and removes weeds. The class keeps a simple growth chart. The garden gives learners a chance to observe plants and practise caring for a shared space.
+
+**Worked example:** Central idea: Class 3 is caring for a school garden. Detail 1: learners planted bean seeds. Detail 2: groups check the soil and remove weeds.
+
+**Your task:** Explain how the growth chart helps the class care for the garden. Use two details from the passage and distinguish a main idea from a small detail.
+
+**Gold pathway support:** Extend the same learning objective with comparison, explanation or a more precise response. Do not change the objective. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -237,27 +327,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Central idea plus two relevant details; learner points to or quotes supporting text. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Copper Worksheet
+## Day 3 — Term 1, Week 1 — A Busy Market Morning — Vocabulary and language — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 3  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Use context clues to explain three words and choose a suitable synonym without changing the sentence meaning.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can explain three context words and use one suitable synonym accurately.
 
-**Worked example:** 
+**Read or listen to this passage — A Busy Market Morning:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> Before sunrise, the market was already lively. Vendors arranged baskets of cassava, bananas and vegetables. Customers moved carefully between the stalls. A vendor greeted an elderly customer warmly and helped carry a heavy basket. Soon the market became crowded, but people waited patiently for their turn.
+
+**Worked example:** “Crowded” means having many people close together. A suitable synonym here is “busy”.
+
+**Your task:** Match: vendors = people who sell goods; crowded = many people close together; patiently = calmly while waiting. Choose “busy” as a synonym for “lively”.
+
+**Copper pathway support:** Use the model and word bank. Complete one step at a time. You may respond by Braille, large print, speech, sign, AAC, pointing, eye gaze, object choice, dictation or writing. An adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -267,27 +369,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Three context-appropriate explanations and one meaning-preserving synonym in a sentence. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Bronze Worksheet
+## Day 3 — Term 1, Week 1 — A Busy Market Morning — Vocabulary and language — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 3  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Use context clues to explain three words and choose a suitable synonym without changing the sentence meaning.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can explain three context words and use one suitable synonym accurately.
 
-**Worked example:** 
+**Read or listen to this passage — A Busy Market Morning:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> Before sunrise, the market was already lively. Vendors arranged baskets of cassava, bananas and vegetables. Customers moved carefully between the stalls. A vendor greeted an elderly customer warmly and helped carry a heavy basket. Soon the market became crowded, but people waited patiently for their turn.
+
+**Worked example:** “Crowded” means having many people close together. A suitable synonym here is “busy”.
+
+**Your task:** Use context to finish: “Vendors are ____. Patiently means ____. A synonym for lively is ____.” Rewrite “The market was lively” using your synonym.
+
+**Bronze pathway support:** Use the worked example and sentence frame. Complete each step, then check your work with the success checklist. You may use any accessible response method.
 
 **My answer / working:**
 
@@ -297,27 +411,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Three context-appropriate explanations and one meaning-preserving synonym in a sentence. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Silver Worksheet
+## Day 3 — Term 1, Week 1 — A Busy Market Morning — Vocabulary and language — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 3  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Use context clues to explain three words and choose a suitable synonym without changing the sentence meaning.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can explain three context words and use one suitable synonym accurately.
 
-**Worked example:** 
+**Read or listen to this passage — A Busy Market Morning:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> Before sunrise, the market was already lively. Vendors arranged baskets of cassava, bananas and vegetables. Customers moved carefully between the stalls. A vendor greeted an elderly customer warmly and helped carry a heavy basket. Soon the market became crowded, but people waited patiently for their turn.
+
+**Worked example:** “Crowded” means having many people close together. A suitable synonym here is “busy”.
+
+**Your task:** Explain lively, vendors and patiently in your own words. Replace lively with a suitable synonym and rewrite the sentence.
+
+**Silver pathway support:** Complete the task independently where possible. Choose relevant evidence, explain your thinking and check your response against the success criteria. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -327,27 +453,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Three context-appropriate explanations and one meaning-preserving synonym in a sentence. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Gold Worksheet
+## Day 3 — Term 1, Week 1 — A Busy Market Morning — Vocabulary and language — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 3  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Use context clues to explain three words and choose a suitable synonym without changing the sentence meaning.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can explain three context words and use one suitable synonym accurately.
 
-**Worked example:** 
+**Read or listen to this passage — A Busy Market Morning:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> Before sunrise, the market was already lively. Vendors arranged baskets of cassava, bananas and vegetables. Customers moved carefully between the stalls. A vendor greeted an elderly customer warmly and helped carry a heavy basket. Soon the market became crowded, but people waited patiently for their turn.
+
+**Worked example:** “Crowded” means having many people close together. A suitable synonym here is “busy”.
+
+**Your task:** Explain how the word “patiently” shapes the reader’s view of the customers. Give a second possible synonym for “lively” and explain any small difference in meaning.
+
+**Gold pathway support:** Extend the same learning objective with comparison, explanation or a more precise response. Do not change the objective. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -357,27 +495,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Three context-appropriate explanations and one meaning-preserving synonym in a sentence. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Copper Worksheet
+## Day 4 — Term 1, Week 1 — Working Together — Grammar and sentence craft — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 4  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Combine related ideas using a conjunction and punctuate complete sentences accurately.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can combine two related ideas with a suitable conjunction and use capital letters and full stops correctly.
 
-**Worked example:** 
+**Read or listen to this passage — Working Together:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> Litia carried the watering can. Saki filled it with water. They watered the young plants. The soil became damp. The learners put the tools away. They washed their hands.
+
+**Worked example:** Litia carried the watering can, and Saki filled it with water. The conjunction “and” joins two related actions.
+
+**Your task:** Join: “Litia carried the can. Saki filled it.” Use “and”: “Litia carried the can, and ____.” Add a full stop.
+
+**Copper pathway support:** Use the model and word bank. Complete one step at a time. You may respond by Braille, large print, speech, sign, AAC, pointing, eye gaze, object choice, dictation or writing. An adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -387,27 +537,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Two correctly combined sentences; conjunction fits the relationship and punctuation is accurate. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Bronze Worksheet
+## Day 4 — Term 1, Week 1 — Working Together — Grammar and sentence craft — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 4  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Combine related ideas using a conjunction and punctuate complete sentences accurately.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can combine two related ideas with a suitable conjunction and use capital letters and full stops correctly.
 
-**Worked example:** 
+**Read or listen to this passage — Working Together:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> Litia carried the watering can. Saki filled it with water. They watered the young plants. The soil became damp. The learners put the tools away. They washed their hands.
+
+**Worked example:** Litia carried the watering can, and Saki filled it with water. The conjunction “and” joins two related actions.
+
+**Your task:** Combine “They watered the plants. The soil became damp.” Use “so”. Then join another pair using “and” or “because”.
+
+**Bronze pathway support:** Use the worked example and sentence frame. Complete each step, then check your work with the success checklist. You may use any accessible response method.
 
 **My answer / working:**
 
@@ -417,27 +579,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Two correctly combined sentences; conjunction fits the relationship and punctuation is accurate. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Silver Worksheet
+## Day 4 — Term 1, Week 1 — Working Together — Grammar and sentence craft — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 4  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Combine related ideas using a conjunction and punctuate complete sentences accurately.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can combine two related ideas with a suitable conjunction and use capital letters and full stops correctly.
 
-**Worked example:** 
+**Read or listen to this passage — Working Together:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> Litia carried the watering can. Saki filled it with water. They watered the young plants. The soil became damp. The learners put the tools away. They washed their hands.
+
+**Worked example:** Litia carried the watering can, and Saki filled it with water. The conjunction “and” joins two related actions.
+
+**Your task:** Combine two different sentence pairs using suitable conjunctions. Check capitals, commas where needed and full stops.
+
+**Silver pathway support:** Complete the task independently where possible. Choose relevant evidence, explain your thinking and check your response against the success criteria. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -447,27 +621,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Two correctly combined sentences; conjunction fits the relationship and punctuation is accurate. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Gold Worksheet
+## Day 4 — Term 1, Week 1 — Working Together — Grammar and sentence craft — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 4  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Combine related ideas using a conjunction and punctuate complete sentences accurately.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can combine two related ideas with a suitable conjunction and use capital letters and full stops correctly.
 
-**Worked example:** 
+**Read or listen to this passage — Working Together:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> Litia carried the watering can. Saki filled it with water. They watered the young plants. The soil became damp. The learners put the tools away. They washed their hands.
+
+**Worked example:** Litia carried the watering can, and Saki filled it with water. The conjunction “and” joins two related actions.
+
+**Your task:** Write two different versions of one sentence using different conjunctions. Explain how the conjunction changes the relationship between the ideas.
+
+**Gold pathway support:** Extend the same learning objective with comparison, explanation or a more precise response. Do not change the objective. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -477,27 +663,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Two correctly combined sentences; conjunction fits the relationship and punctuation is accurate. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Copper Worksheet
+## Day 5 — Term 1, Week 1 — A Place That Matters — Writing and shaping — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 5  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Plan and write a coherent paragraph about a place or group that is important, using a clear main point and supporting details.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can write a focused paragraph with a topic sentence, at least three relevant details and a closing sentence.
 
-**Worked example:** 
+**Read or listen to this passage — A Place That Matters:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> People can feel that a place matters because of the people, activities or memories connected with it. A place may be a home, playground, library, village hall, beach or garden. Different people may choose different places, and each person can explain their own reason.
+
+**Worked example:** “The library is important to me. I can borrow interesting books there. I enjoy reading in a quiet place. The librarian helps me find new stories. I look forward to visiting each week.”
+
+**Your task:** Choose or name one place. Use this frame: “_____ is important. I go there to _____. I feel _____ there.” Add one more detail by speaking, pointing, signing, AAC or writing.
+
+**Copper pathway support:** Use the model and word bank. Complete one step at a time. You may respond by Braille, large print, speech, sign, AAC, pointing, eye gaze, object choice, dictation or writing. An adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -507,27 +705,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** A coherent paragraph with a clear main point, at least three relevant details and a closing sentence; note support used. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Bronze Worksheet
+## Day 5 — Term 1, Week 1 — A Place That Matters — Writing and shaping — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 5  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Plan and write a coherent paragraph about a place or group that is important, using a clear main point and supporting details.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can write a focused paragraph with a topic sentence, at least three relevant details and a closing sentence.
 
-**Worked example:** 
+**Read or listen to this passage — A Place That Matters:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> People can feel that a place matters because of the people, activities or memories connected with it. A place may be a home, playground, library, village hall, beach or garden. Different people may choose different places, and each person can explain their own reason.
+
+**Worked example:** “The library is important to me. I can borrow interesting books there. I enjoy reading in a quiet place. The librarian helps me find new stories. I look forward to visiting each week.”
+
+**Your task:** Use the plan: place; why it matters; three details; closing sentence. Write 4–5 connected sentences using the word bank: because, also, there, enjoy, important.
+
+**Bronze pathway support:** Use the worked example and sentence frame. Complete each step, then check your work with the success checklist. You may use any accessible response method.
 
 **My answer / working:**
 
@@ -537,27 +747,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** A coherent paragraph with a clear main point, at least three relevant details and a closing sentence; note support used. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Silver Worksheet
+## Day 5 — Term 1, Week 1 — A Place That Matters — Writing and shaping — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 5  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Plan and write a coherent paragraph about a place or group that is important, using a clear main point and supporting details.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can write a focused paragraph with a topic sentence, at least three relevant details and a closing sentence.
 
-**Worked example:** 
+**Read or listen to this passage — A Place That Matters:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> People can feel that a place matters because of the people, activities or memories connected with it. A place may be a home, playground, library, village hall, beach or garden. Different people may choose different places, and each person can explain their own reason.
+
+**Worked example:** “The library is important to me. I can borrow interesting books there. I enjoy reading in a quiet place. The librarian helps me find new stories. I look forward to visiting each week.”
+
+**Your task:** Write a connected paragraph of about 5–7 sentences. Include a clear topic sentence, at least three supporting details and a closing sentence.
+
+**Silver pathway support:** Complete the task independently where possible. Choose relevant evidence, explain your thinking and check your response against the success criteria. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -567,27 +789,39 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** A coherent paragraph with a clear main point, at least three relevant details and a closing sentence; note support used. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Gold Worksheet
+## Day 5 — Term 1, Week 1 — A Place That Matters — Writing and shaping — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 3  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 5  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Plan and write a coherent paragraph about a place or group that is important, using a clear main point and supporting details.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can write a focused paragraph with a topic sentence, at least three relevant details and a closing sentence.
 
-**Worked example:** 
+**Read or listen to this passage — A Place That Matters:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> People can feel that a place matters because of the people, activities or memories connected with it. A place may be a home, playground, library, village hall, beach or garden. Different people may choose different places, and each person can explain their own reason.
+
+**Worked example:** “The library is important to me. I can borrow interesting books there. I enjoy reading in a quiet place. The librarian helps me find new stories. I look forward to visiting each week.”
+
+**Your task:** Write a 7–9 sentence paragraph for a younger learner. Use precise details, varied sentence openings and a concluding sentence that explains why the place matters.
+
+**Gold pathway support:** Extend the same learning objective with comparison, explanation or a more precise response. Do not change the objective. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -597,11 +831,17 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** A coherent paragraph with a clear main point, at least three relevant details and a closing sentence; note support used. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
