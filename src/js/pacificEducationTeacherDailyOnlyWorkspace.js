@@ -70,9 +70,10 @@
         guide.target="_blank";guide.rel="noopener noreferrer";
         guide.style.cssText="display:block;min-height:44px;padding:9px 0;font-weight:700;";
         wrap.appendChild(guide);
-        if(level==="Form 7"){
-          var week2Guide=node("a","Open Form 7 Week 2 Teacher Marking Guide");
-          week2Guide.href="https://github.com/terubea82-eng/Pacific-education-/blob/pacedu/english-ece-form7-staging-20261119/docs/curriculum/english-form7-teacher-guide-days-6-10.md";
+        if(level==="Form 6"||level==="Form 7"){
+          var week2Guide=node("a","Open "+level+" Week 2 Teacher Marking Guide");
+          var week2GuideFile=level==="Form 6"?"english-form6-teacher-guide-days-6-10.md":"english-form7-teacher-guide-days-6-10.md";
+          week2Guide.href="https://github.com/terubea82-eng/Pacific-education-/blob/pacedu/english-ece-form7-staging-20261119/docs/curriculum/"+week2GuideFile;
           week2Guide.target="_blank";week2Guide.rel="noopener noreferrer";
           week2Guide.style.cssText="display:block;min-height:44px;padding:9px 0;font-weight:700;";
           wrap.appendChild(week2Guide);
