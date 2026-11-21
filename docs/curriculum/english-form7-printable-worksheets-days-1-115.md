@@ -6168,865 +6168,1315 @@ ____________________________________________________________________________
 
 **Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
+# PacEdu English Subject Box — Form 7 Printable Worksheets (Days 1–115)
+
+**Status:** ORIGINAL PACEDU DRAFT — PENDING_TEACHER_REVIEW — PENDING_OFFICIAL_INDICATOR_VERIFICATION. Not a Ministry-issued or examination-authorized worksheet pack.
+
+**Senior secondary safeguard:** Verify the current authorised Form 7 cohort syllabus, prescribed texts and assessment specification separately. These original linked practice sources are not prescribed texts or past examination questions.
+
+---
+
 ## Day 26 — Term 1, Week 6 — climate, evidence and public debate — Oral communication — Copper Worksheet
 
-**Learning intention:** present and defend a clear interpretation in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Defend a nuanced interpretation of how climate evidence is communicated and used in public decisions.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a sustained argument, synthesise two sources, qualify uncertainty and respond to a counterargument.
 
-**Task:** Deliver a structured response to a prompt about climate, evidence and public debate; state a position, support it with two relevant details and respond to a counter-question. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a 60–90 second response to a prompt about climate, evidence and public debate: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Island weather service bulletin: The service reports that the number of days with heavy rainfall varied across three monitoring stations during the past decade. The bulletin warns that the stations cover different local conditions and that short-term variation should not be treated as proof of a long-term trend.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community preparedness group statement: Members say that recent intense rainfall damaged gardens and access tracks in their area. They support improved drainage and early warnings but ask that local observations be considered alongside station records. The statement does not provide a systematic rainfall dataset.
 
+**Worked example:** Source A provides measured station records and cautions about coverage. Source B provides local impact accounts but not a systematic dataset. Together they support planning that uses both monitoring and local observations without overstating either.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Recommend how a district should combine climate records and community observations when planning flood preparedness. Use both sources, qualify one limitation and respond to: 'Should local stories influence decisions if they are not scientific measurements?'
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison frame and the worked model. Work through one source at a time; a teacher may read aloud, gloss vocabulary and give one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Sustained recommendation that distinguishes measurement from lived impact, integrates both sources and addresses uncertainty and counterargument. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 26 — Term 1, Week 6 — climate, evidence and public debate — Oral communication — Bronze Worksheet
 
-**Learning intention:** present and defend a clear interpretation in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Defend a nuanced interpretation of how climate evidence is communicated and used in public decisions.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a sustained argument, synthesise two sources, qualify uncertainty and respond to a counterargument.
 
-**Task:** Deliver a structured response to a prompt about climate, evidence and public debate; state a position, support it with two relevant details and respond to a counter-question. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a 60–90 second response to a prompt about climate, evidence and public debate: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Island weather service bulletin: The service reports that the number of days with heavy rainfall varied across three monitoring stations during the past decade. The bulletin warns that the stations cover different local conditions and that short-term variation should not be treated as proof of a long-term trend.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community preparedness group statement: Members say that recent intense rainfall damaged gardens and access tracks in their area. They support improved drainage and early warnings but ask that local observations be considered alongside station records. The statement does not provide a systematic rainfall dataset.
 
+**Worked example:** Source A provides measured station records and cautions about coverage. Source B provides local impact accounts but not a systematic dataset. Together they support planning that uses both monitoring and local observations without overstating either.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Recommend how a district should combine climate records and community observations when planning flood preparedness. Use both sources, qualify one limitation and respond to: 'Should local stories influence decisions if they are not scientific measurements?'
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as claim, evidence, analysis and qualification; reduce prompts gradually.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Sustained recommendation that distinguishes measurement from lived impact, integrates both sources and addresses uncertainty and counterargument. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 26 — Term 1, Week 6 — climate, evidence and public debate — Oral communication — Silver Worksheet
 
-**Learning intention:** present and defend a clear interpretation in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Defend a nuanced interpretation of how climate evidence is communicated and used in public decisions.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a sustained argument, synthesise two sources, qualify uncertainty and respond to a counterargument.
 
-**Task:** Deliver a structured response to a prompt about climate, evidence and public debate; state a position, support it with two relevant details and respond to a counter-question. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a 60–90 second response to a prompt about climate, evidence and public debate: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Island weather service bulletin: The service reports that the number of days with heavy rainfall varied across three monitoring stations during the past decade. The bulletin warns that the stations cover different local conditions and that short-term variation should not be treated as proof of a long-term trend.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community preparedness group statement: Members say that recent intense rainfall damaged gardens and access tracks in their area. They support improved drainage and early warnings but ask that local observations be considered alongside station records. The statement does not provide a systematic rainfall dataset.
 
+**Worked example:** Source A provides measured station records and cautions about coverage. Source B provides local impact accounts but not a systematic dataset. Together they support planning that uses both monitoring and local observations without overstating either.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Recommend how a district should combine climate records and community observations when planning flood preparedness. Use both sources, qualify one limitation and respond to: 'Should local stories influence decisions if they are not scientific measurements?'
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish observations from predictions and evaluate limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Sustained recommendation that distinguishes measurement from lived impact, integrates both sources and addresses uncertainty and counterargument. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 26 — Term 1, Week 6 — climate, evidence and public debate — Oral communication — Gold Worksheet
 
-**Learning intention:** present and defend a clear interpretation in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Defend a nuanced interpretation of how climate evidence is communicated and used in public decisions.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a sustained argument, synthesise two sources, qualify uncertainty and respond to a counterargument.
 
-**Task:** Deliver a structured response to a prompt about climate, evidence and public debate; state a position, support it with two relevant details and respond to a counter-question. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a 60–90 second response to a prompt about climate, evidence and public debate: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Island weather service bulletin: The service reports that the number of days with heavy rainfall varied across three monitoring stations during the past decade. The bulletin warns that the stations cover different local conditions and that short-term variation should not be treated as proof of a long-term trend.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community preparedness group statement: Members say that recent intense rainfall damaged gardens and access tracks in their area. They support improved drainage and early warnings but ask that local observations be considered alongside station records. The statement does not provide a systematic rainfall dataset.
 
+**Worked example:** Source A provides measured station records and cautions about coverage. Source B provides local impact accounts but not a systematic dataset. Together they support planning that uses both monitoring and local observations without overstating either.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Recommend how a district should combine climate records and community observations when planning flood preparedness. Use both sources, qualify one limitation and respond to: 'Should local stories influence decisions if they are not scientific measurements?'
 
-____________________________________________________________________
+**Gold pathway support:** Extend through methodological critique, nuanced qualification or a policy counterargument while retaining the shared objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Sustained recommendation that distinguishes measurement from lived impact, integrates both sources and addresses uncertainty and counterargument. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 27 — Term 1, Week 6 — climate, evidence and public debate — Close reading — Copper Worksheet
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Analyse how metaphor, qualification and structure shape public understanding of climate risk.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare language and structure across two sources, explain effects on readers and evaluate how certainty is signalled.
 
-**Task:** Annotate an authorized text about climate, evidence and public debate; identify the central claim, examine two language choices and explain their effects. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Annotate a passage from a substantial prescribed text, independent research sources and an examination-style prompt; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Editorial extract: 'The coastline is a warning written in sand. Each storm leaves another line, and each new line asks whether the next generation will inherit protection or a problem.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Technical note: 'The shoreline survey recorded localised changes at four sites over two observation periods. The dataset is insufficient to attribute the changes to one cause. Further seasonal measurements are recommended before site-wide conclusions are drawn.'
 
+**Worked example:** Source A uses an extended metaphor and a future-focused question to create urgency. Source B uses precise scope and cautious qualification to limit causal claims.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Compare the sources' language and structure. Analyse the metaphor in Source A, the qualification in Source B and how each positions its audience. Explain why urgency and uncertainty can both be legitimate when used accurately.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison frame and the worked model. Work through one source at a time; a teacher may read aloud, gloss vocabulary and give one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Comparative close reading of metaphor, structure, scope and certainty, with a balanced explanation of audience effect. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 27 — Term 1, Week 6 — climate, evidence and public debate — Close reading — Bronze Worksheet
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Analyse how metaphor, qualification and structure shape public understanding of climate risk.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare language and structure across two sources, explain effects on readers and evaluate how certainty is signalled.
 
-**Task:** Annotate an authorized text about climate, evidence and public debate; identify the central claim, examine two language choices and explain their effects. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Annotate a passage from a substantial prescribed text, independent research sources and an examination-style prompt; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Editorial extract: 'The coastline is a warning written in sand. Each storm leaves another line, and each new line asks whether the next generation will inherit protection or a problem.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Technical note: 'The shoreline survey recorded localised changes at four sites over two observation periods. The dataset is insufficient to attribute the changes to one cause. Further seasonal measurements are recommended before site-wide conclusions are drawn.'
 
+**Worked example:** Source A uses an extended metaphor and a future-focused question to create urgency. Source B uses precise scope and cautious qualification to limit causal claims.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Compare the sources' language and structure. Analyse the metaphor in Source A, the qualification in Source B and how each positions its audience. Explain why urgency and uncertainty can both be legitimate when used accurately.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as claim, evidence, analysis and qualification; reduce prompts gradually.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Comparative close reading of metaphor, structure, scope and certainty, with a balanced explanation of audience effect. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 27 — Term 1, Week 6 — climate, evidence and public debate — Close reading — Silver Worksheet
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Analyse how metaphor, qualification and structure shape public understanding of climate risk.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare language and structure across two sources, explain effects on readers and evaluate how certainty is signalled.
 
-**Task:** Annotate an authorized text about climate, evidence and public debate; identify the central claim, examine two language choices and explain their effects. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Annotate a passage from a substantial prescribed text, independent research sources and an examination-style prompt; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Editorial extract: 'The coastline is a warning written in sand. Each storm leaves another line, and each new line asks whether the next generation will inherit protection or a problem.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Technical note: 'The shoreline survey recorded localised changes at four sites over two observation periods. The dataset is insufficient to attribute the changes to one cause. Further seasonal measurements are recommended before site-wide conclusions are drawn.'
 
+**Worked example:** Source A uses an extended metaphor and a future-focused question to create urgency. Source B uses precise scope and cautious qualification to limit causal claims.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Compare the sources' language and structure. Analyse the metaphor in Source A, the qualification in Source B and how each positions its audience. Explain why urgency and uncertainty can both be legitimate when used accurately.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish observations from predictions and evaluate limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Comparative close reading of metaphor, structure, scope and certainty, with a balanced explanation of audience effect. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 27 — Term 1, Week 6 — climate, evidence and public debate — Close reading — Gold Worksheet
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Analyse how metaphor, qualification and structure shape public understanding of climate risk.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare language and structure across two sources, explain effects on readers and evaluate how certainty is signalled.
 
-**Task:** Annotate an authorized text about climate, evidence and public debate; identify the central claim, examine two language choices and explain their effects. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Annotate a passage from a substantial prescribed text, independent research sources and an examination-style prompt; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Editorial extract: 'The coastline is a warning written in sand. Each storm leaves another line, and each new line asks whether the next generation will inherit protection or a problem.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Technical note: 'The shoreline survey recorded localised changes at four sites over two observation periods. The dataset is insufficient to attribute the changes to one cause. Further seasonal measurements are recommended before site-wide conclusions are drawn.'
 
+**Worked example:** Source A uses an extended metaphor and a future-focused question to create urgency. Source B uses precise scope and cautious qualification to limit causal claims.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Compare the sources' language and structure. Analyse the metaphor in Source A, the qualification in Source B and how each positions its audience. Explain why urgency and uncertainty can both be legitimate when used accurately.
 
-____________________________________________________________________
+**Gold pathway support:** Extend through methodological critique, nuanced qualification or a policy counterargument while retaining the shared objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Comparative close reading of metaphor, structure, scope and certainty, with a balanced explanation of audience effect. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 28 — Term 1, Week 6 — climate, evidence and public debate — Vocabulary and language — Copper Worksheet
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how technical and emotive language frames climate evidence, risk and responsibility.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse connotation, register and certainty across sources and rewrite an emotive claim to match available evidence.
 
-**Task:** Select three significant language choices in a text about climate, evidence and public debate; explain connotations, register and effect on a defined audience. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Compare three expressions from a a substantial prescribed text, independent research sources and an examination-style prompt; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Campaign message: 'Our island is on the front line. Act now before the sea takes everything.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Research summary: 'Observed coastal changes differ between locations. Exposure, shoreline form and local infrastructure may influence impacts. The available summary does not quantify the risk to every settlement.'
 
+**Worked example:** 'Front line' frames the island as facing an urgent threat; 'takes everything' is absolute and emotive. Source B uses qualified technical language and explicitly limits the scope of its summary.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Analyse the phrases 'front line', 'takes everything', 'may influence' and 'does not quantify'. Explain how the sources frame responsibility. Rewrite the campaign message so it remains compelling but does not claim more than the evidence supports.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison frame and the worked model. Work through one source at a time; a teacher may read aloud, gloss vocabulary and give one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate language analysis, audience awareness and a compelling but evidence-calibrated rewrite. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 28 — Term 1, Week 6 — climate, evidence and public debate — Vocabulary and language — Bronze Worksheet
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how technical and emotive language frames climate evidence, risk and responsibility.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse connotation, register and certainty across sources and rewrite an emotive claim to match available evidence.
 
-**Task:** Select three significant language choices in a text about climate, evidence and public debate; explain connotations, register and effect on a defined audience. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Compare three expressions from a a substantial prescribed text, independent research sources and an examination-style prompt; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Campaign message: 'Our island is on the front line. Act now before the sea takes everything.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Research summary: 'Observed coastal changes differ between locations. Exposure, shoreline form and local infrastructure may influence impacts. The available summary does not quantify the risk to every settlement.'
 
+**Worked example:** 'Front line' frames the island as facing an urgent threat; 'takes everything' is absolute and emotive. Source B uses qualified technical language and explicitly limits the scope of its summary.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Analyse the phrases 'front line', 'takes everything', 'may influence' and 'does not quantify'. Explain how the sources frame responsibility. Rewrite the campaign message so it remains compelling but does not claim more than the evidence supports.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as claim, evidence, analysis and qualification; reduce prompts gradually.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate language analysis, audience awareness and a compelling but evidence-calibrated rewrite. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 28 — Term 1, Week 6 — climate, evidence and public debate — Vocabulary and language — Silver Worksheet
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how technical and emotive language frames climate evidence, risk and responsibility.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse connotation, register and certainty across sources and rewrite an emotive claim to match available evidence.
 
-**Task:** Select three significant language choices in a text about climate, evidence and public debate; explain connotations, register and effect on a defined audience. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Compare three expressions from a a substantial prescribed text, independent research sources and an examination-style prompt; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Campaign message: 'Our island is on the front line. Act now before the sea takes everything.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Research summary: 'Observed coastal changes differ between locations. Exposure, shoreline form and local infrastructure may influence impacts. The available summary does not quantify the risk to every settlement.'
 
+**Worked example:** 'Front line' frames the island as facing an urgent threat; 'takes everything' is absolute and emotive. Source B uses qualified technical language and explicitly limits the scope of its summary.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Analyse the phrases 'front line', 'takes everything', 'may influence' and 'does not quantify'. Explain how the sources frame responsibility. Rewrite the campaign message so it remains compelling but does not claim more than the evidence supports.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish observations from predictions and evaluate limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate language analysis, audience awareness and a compelling but evidence-calibrated rewrite. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 28 — Term 1, Week 6 — climate, evidence and public debate — Vocabulary and language — Gold Worksheet
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how technical and emotive language frames climate evidence, risk and responsibility.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse connotation, register and certainty across sources and rewrite an emotive claim to match available evidence.
 
-**Task:** Select three significant language choices in a text about climate, evidence and public debate; explain connotations, register and effect on a defined audience. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Compare three expressions from a a substantial prescribed text, independent research sources and an examination-style prompt; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Campaign message: 'Our island is on the front line. Act now before the sea takes everything.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Research summary: 'Observed coastal changes differ between locations. Exposure, shoreline form and local infrastructure may influence impacts. The available summary does not quantify the risk to every settlement.'
 
+**Worked example:** 'Front line' frames the island as facing an urgent threat; 'takes everything' is absolute and emotive. Source B uses qualified technical language and explicitly limits the scope of its summary.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Analyse the phrases 'front line', 'takes everything', 'may influence' and 'does not quantify'. Explain how the sources frame responsibility. Rewrite the campaign message so it remains compelling but does not claim more than the evidence supports.
 
-____________________________________________________________________
+**Gold pathway support:** Extend through methodological critique, nuanced qualification or a policy counterargument while retaining the shared objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate language analysis, audience awareness and a compelling but evidence-calibrated rewrite. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 29 — Term 1, Week 6 — climate, evidence and public debate — Critical literacy — Copper Worksheet
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how data selection, uncertainty and stakeholder interests shape competing claims about climate impacts.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Assess source methods, scope, uncertainty and interests; distinguish observed data from projections and identify further evidence required.
 
-**Task:** Compare two sources about climate, evidence and public debate; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Use a source comparison grid for two sources on climate, evidence and public debate; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Infrastructure proposal: 'The proposed seawall is expected to reduce wave overtopping at the central road. The design uses a model based on selected wave conditions. The proposal does not include a full assessment of effects on nearby beach movement.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Coastal users' submission: 'Some fishers and families worry that the wall could change beach access and affect boat landing places. The submission includes six accounts and requests an independent review. It does not include coastal measurements or represent every user.'
 
+**Worked example:** Source A uses a model to predict a benefit but leaves possible beach effects unassessed. Source B records concerns but does not measure the physical effects or represent every user.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Evaluate both sources. Distinguish model-based prediction from observed evidence, assess the submission's value and limitations, and identify at least four pieces of further evidence needed before approving the design.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison frame and the worked model. Work through one source at a time; a teacher may read aloud, gloss vocabulary and give one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Method-aware evaluation of model assumptions, stakeholder accounts and missing coastal/access evidence. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 29 — Term 1, Week 6 — climate, evidence and public debate — Critical literacy — Bronze Worksheet
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how data selection, uncertainty and stakeholder interests shape competing claims about climate impacts.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Assess source methods, scope, uncertainty and interests; distinguish observed data from projections and identify further evidence required.
 
-**Task:** Compare two sources about climate, evidence and public debate; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Use a source comparison grid for two sources on climate, evidence and public debate; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Infrastructure proposal: 'The proposed seawall is expected to reduce wave overtopping at the central road. The design uses a model based on selected wave conditions. The proposal does not include a full assessment of effects on nearby beach movement.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Coastal users' submission: 'Some fishers and families worry that the wall could change beach access and affect boat landing places. The submission includes six accounts and requests an independent review. It does not include coastal measurements or represent every user.'
 
+**Worked example:** Source A uses a model to predict a benefit but leaves possible beach effects unassessed. Source B records concerns but does not measure the physical effects or represent every user.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Evaluate both sources. Distinguish model-based prediction from observed evidence, assess the submission's value and limitations, and identify at least four pieces of further evidence needed before approving the design.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as claim, evidence, analysis and qualification; reduce prompts gradually.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Method-aware evaluation of model assumptions, stakeholder accounts and missing coastal/access evidence. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 29 — Term 1, Week 6 — climate, evidence and public debate — Critical literacy — Silver Worksheet
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how data selection, uncertainty and stakeholder interests shape competing claims about climate impacts.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Assess source methods, scope, uncertainty and interests; distinguish observed data from projections and identify further evidence required.
 
-**Task:** Compare two sources about climate, evidence and public debate; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Use a source comparison grid for two sources on climate, evidence and public debate; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Infrastructure proposal: 'The proposed seawall is expected to reduce wave overtopping at the central road. The design uses a model based on selected wave conditions. The proposal does not include a full assessment of effects on nearby beach movement.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Coastal users' submission: 'Some fishers and families worry that the wall could change beach access and affect boat landing places. The submission includes six accounts and requests an independent review. It does not include coastal measurements or represent every user.'
 
+**Worked example:** Source A uses a model to predict a benefit but leaves possible beach effects unassessed. Source B records concerns but does not measure the physical effects or represent every user.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Evaluate both sources. Distinguish model-based prediction from observed evidence, assess the submission's value and limitations, and identify at least four pieces of further evidence needed before approving the design.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish observations from predictions and evaluate limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Method-aware evaluation of model assumptions, stakeholder accounts and missing coastal/access evidence. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 29 — Term 1, Week 6 — climate, evidence and public debate — Critical literacy — Gold Worksheet
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how data selection, uncertainty and stakeholder interests shape competing claims about climate impacts.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Assess source methods, scope, uncertainty and interests; distinguish observed data from projections and identify further evidence required.
 
-**Task:** Compare two sources about climate, evidence and public debate; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Use a source comparison grid for two sources on climate, evidence and public debate; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Infrastructure proposal: 'The proposed seawall is expected to reduce wave overtopping at the central road. The design uses a model based on selected wave conditions. The proposal does not include a full assessment of effects on nearby beach movement.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Coastal users' submission: 'Some fishers and families worry that the wall could change beach access and affect boat landing places. The submission includes six accounts and requests an independent review. It does not include coastal measurements or represent every user.'
 
+**Worked example:** Source A uses a model to predict a benefit but leaves possible beach effects unassessed. Source B records concerns but does not measure the physical effects or represent every user.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Evaluate both sources. Distinguish model-based prediction from observed evidence, assess the submission's value and limitations, and identify at least four pieces of further evidence needed before approving the design.
 
-____________________________________________________________________
+**Gold pathway support:** Extend through methodological critique, nuanced qualification or a policy counterargument while retaining the shared objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Method-aware evaluation of model assumptions, stakeholder accounts and missing coastal/access evidence. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 30 — Term 1, Week 6 — climate, evidence and public debate — Writing and shaping — Copper Worksheet
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Construct a sustained critical recommendation integrating climate evidence, uncertainty, community knowledge and policy trade-offs.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a cohesive recommendation with thesis, integrated evidence, uncertainty analysis, counterargument and reasoned conclusion.
 
-**Task:** Develop an analytical response about climate, evidence and public debate; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a plan for an independently structured critical argument or synthesis on climate, evidence and public debate; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Planning brief: The district is considering drainage improvements, a raised access section and a seawall near the central road. The brief says the seawall may reduce overtopping under selected modelled conditions. It does not include a full assessment of beach movement or a long-term maintenance budget.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community consultation note: Residents support safer access but ask that fishers' landing places, beach movement and maintenance costs be considered. The note records several concerns and suggestions but does not represent every household or include technical measurements.
 
+**Worked example:** A defensible recommendation may support further design work but delay final approval until coastal effects, access, maintenance and consultation are addressed. Source A offers modelled benefits with gaps; Source B records local concerns without technical measurement.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Write a sustained recommendation to the district committee. Integrate both sources, evaluate uncertainty, address the argument that urgent protection should proceed quickly, and propose evidence-based conditions for a fair decision.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison frame and the worked model. Work through one source at a time; a teacher may read aloud, gloss vocabulary and give one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Sustained recommendation integrating both sources, uncertainty, counterargument, community knowledge and practical conditions. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 30 — Term 1, Week 6 — climate, evidence and public debate — Writing and shaping — Bronze Worksheet
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Construct a sustained critical recommendation integrating climate evidence, uncertainty, community knowledge and policy trade-offs.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a cohesive recommendation with thesis, integrated evidence, uncertainty analysis, counterargument and reasoned conclusion.
 
-**Task:** Develop an analytical response about climate, evidence and public debate; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a plan for an independently structured critical argument or synthesis on climate, evidence and public debate; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Planning brief: The district is considering drainage improvements, a raised access section and a seawall near the central road. The brief says the seawall may reduce overtopping under selected modelled conditions. It does not include a full assessment of beach movement or a long-term maintenance budget.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community consultation note: Residents support safer access but ask that fishers' landing places, beach movement and maintenance costs be considered. The note records several concerns and suggestions but does not represent every household or include technical measurements.
 
+**Worked example:** A defensible recommendation may support further design work but delay final approval until coastal effects, access, maintenance and consultation are addressed. Source A offers modelled benefits with gaps; Source B records local concerns without technical measurement.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Write a sustained recommendation to the district committee. Integrate both sources, evaluate uncertainty, address the argument that urgent protection should proceed quickly, and propose evidence-based conditions for a fair decision.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as claim, evidence, analysis and qualification; reduce prompts gradually.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Sustained recommendation integrating both sources, uncertainty, counterargument, community knowledge and practical conditions. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 30 — Term 1, Week 6 — climate, evidence and public debate — Writing and shaping — Silver Worksheet
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Construct a sustained critical recommendation integrating climate evidence, uncertainty, community knowledge and policy trade-offs.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a cohesive recommendation with thesis, integrated evidence, uncertainty analysis, counterargument and reasoned conclusion.
 
-**Task:** Develop an analytical response about climate, evidence and public debate; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a plan for an independently structured critical argument or synthesis on climate, evidence and public debate; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Planning brief: The district is considering drainage improvements, a raised access section and a seawall near the central road. The brief says the seawall may reduce overtopping under selected modelled conditions. It does not include a full assessment of beach movement or a long-term maintenance budget.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community consultation note: Residents support safer access but ask that fishers' landing places, beach movement and maintenance costs be considered. The note records several concerns and suggestions but does not represent every household or include technical measurements.
 
+**Worked example:** A defensible recommendation may support further design work but delay final approval until coastal effects, access, maintenance and consultation are addressed. Source A offers modelled benefits with gaps; Source B records local concerns without technical measurement.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Write a sustained recommendation to the district committee. Integrate both sources, evaluate uncertainty, address the argument that urgent protection should proceed quickly, and propose evidence-based conditions for a fair decision.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish observations from predictions and evaluate limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Sustained recommendation integrating both sources, uncertainty, counterargument, community knowledge and practical conditions. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 30 — Term 1, Week 6 — climate, evidence and public debate — Writing and shaping — Gold Worksheet
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to climate, evidence and public debate.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 6
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to climate, evidence and public debate, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Construct a sustained critical recommendation integrating climate evidence, uncertainty, community knowledge and policy trade-offs.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a cohesive recommendation with thesis, integrated evidence, uncertainty analysis, counterargument and reasoned conclusion.
 
-**Task:** Develop an analytical response about climate, evidence and public debate; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a plan for an independently structured critical argument or synthesis on climate, evidence and public debate; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Planning brief: The district is considering drainage improvements, a raised access section and a seawall near the central road. The brief says the seawall may reduce overtopping under selected modelled conditions. It does not include a full assessment of beach movement or a long-term maintenance budget.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community consultation note: Residents support safer access but ask that fishers' landing places, beach movement and maintenance costs be considered. The note records several concerns and suggestions but does not represent every household or include technical measurements.
 
+**Worked example:** A defensible recommendation may support further design work but delay final approval until coastal effects, access, maintenance and consultation are addressed. Source A offers modelled benefits with gaps; Source B records local concerns without technical measurement.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's main claim and one detail.
+2. **Understand:** Explain the source's perspective and scope.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, data or model assumptions shape meaning.
+5. **Evaluate:** Judge evidence, uncertainty and limitations.
+6. **Create:** Produce a sustained response for the stated audience.
 
-**My analysis / response:**
+**Your task:** Write a sustained recommendation to the district committee. Integrate both sources, evaluate uncertainty, address the argument that urgent protection should proceed quickly, and propose evidence-based conditions for a fair decision.
 
-____________________________________________________________________
+**Gold pathway support:** Extend through methodological critique, nuanced qualification or a policy counterargument while retaining the shared objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Sustained recommendation integrating both sources, uncertainty, counterargument, community knowledge and practical conditions. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I distinguished evidence and inference ☐ I evaluated uncertainty ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
----
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ## Day 31 — Term 1, Week 7 — science communication and ethics — Oral communication — Copper Worksheet
 
