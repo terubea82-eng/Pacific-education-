@@ -1,973 +1,962 @@
 # PacEdu English Subject Box — Form 3 Printable Worksheets (Days 1–115)
 
-**Status:** ORIGINAL PACEDU DRAFT — `PENDING_TEACHER_REVIEW` — `PENDING_OFFICIAL_INDICATOR_VERIFICATION`. Not a Ministry-issued or examination-authorized worksheet pack.
+**Status:** ORIGINAL PACEDU DRAFT — PENDING_TEACHER_REVIEW — PENDING_OFFICIAL_INDICATOR_VERIFICATION. Not a Ministry-issued or examination-authorized worksheet pack.
 
-**Secondary safeguard:** Confirm the current authorized Form 3 syllabus, cohort, prescribed texts, assessment specifications and criteria separately. Forms 5–7 must not be treated as Forms 3–4.
+**Secondary safeguard:** Confirm the current authorised Form 3 syllabus, cohort, prescribed texts and assessment criteria separately. These five original practice stimuli are not prescribed texts.
 
-**Printing:** Each day has four separate pathway versions. Print only the selected learner's version. Physical Android Chrome print preview must confirm one selected worksheet per page.
-
+**Printing:** Each day has four standalone pathway versions. Every page repeats its own stimulus, instructions and response space. Confirm one selected worksheet per page in Android Chrome.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity, language and society — Oral communication — Copper Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Copper
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**Learning intention:** present and defend a clear interpretation in a context connected to identity, language and society.
+**Learning intention:** Present and defend a clear interpretation using relevant details and a response to a counter-question.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Present a clear claim, two relevant details and an explanation; respond respectfully to a counter-question.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Deliver a structured response to a prompt about identity, language and society; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+> At a school community meeting, students discussed whether the school should display stories in more than one language. Sera said that using several languages would help families recognise their experiences and take part in school events. Tomasi agreed that this could build belonging, but he asked how the school would make sure every notice remained clear and accurate. The group suggested checking translations with fluent speakers, keeping an English version alongside them, and inviting families to review important notices. They agreed that language inclusion should improve communication rather than replace careful checking.
 
-**Worked example:** Model a 60–90 second response to a prompt about identity, language and society: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Claim: displaying information in more than one language can help families participate. Detail 1: families may recognise their experiences. Detail 2: the group proposed fluent-speaker checks and family review. Explanation: inclusion and accuracy can support one another.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+**Your task:** Prompt: Should schools provide important information in more than one language? State your position, use two details from the passage, explain your reasoning and answer this counter-question: 'How could the school keep translated notices accurate?'
 
-
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Copper pathway support:** Use the model and complete one step at a time. The teacher may read the stimulus aloud, explain vocabulary and offer an evidence locator or sentence frame. You may respond orally, by sign, AAC, dictation, pointing or writing.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+**Evidence for teacher:** A defensible position, two relevant details, an explanation and a respectful response to the counter-question. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity, language and society — Oral communication — Bronze Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Bronze
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**Learning intention:** present and defend a clear interpretation in a context connected to identity, language and society.
+**Learning intention:** Present and defend a clear interpretation using relevant details and a response to a counter-question.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Present a clear claim, two relevant details and an explanation; respond respectfully to a counter-question.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Deliver a structured response to a prompt about identity, language and society; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+> At a school community meeting, students discussed whether the school should display stories in more than one language. Sera said that using several languages would help families recognise their experiences and take part in school events. Tomasi agreed that this could build belonging, but he asked how the school would make sure every notice remained clear and accurate. The group suggested checking translations with fluent speakers, keeping an English version alongside them, and inviting families to review important notices. They agreed that language inclusion should improve communication rather than replace careful checking.
 
-**Worked example:** Model a 60–90 second response to a prompt about identity, language and society: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Claim: displaying information in more than one language can help families participate. Detail 1: families may recognise their experiences. Detail 2: the group proposed fluent-speaker checks and family review. Explanation: inclusion and accuracy can support one another.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+**Your task:** Prompt: Should schools provide important information in more than one language? State your position, use two details from the passage, explain your reasoning and answer this counter-question: 'How could the school keep translated notices accurate?'
 
-
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Bronze pathway support:** Use the planning frame and identify the relevant sentence before answering. Complete the response with one prompt if needed, then check whether each detail supports your claim.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+**Evidence for teacher:** A defensible position, two relevant details, an explanation and a respectful response to the counter-question. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity, language and society — Oral communication — Silver Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Silver
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**Learning intention:** present and defend a clear interpretation in a context connected to identity, language and society.
+**Learning intention:** Present and defend a clear interpretation using relevant details and a response to a counter-question.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Present a clear claim, two relevant details and an explanation; respond respectfully to a counter-question.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Deliver a structured response to a prompt about identity, language and society; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+> At a school community meeting, students discussed whether the school should display stories in more than one language. Sera said that using several languages would help families recognise their experiences and take part in school events. Tomasi agreed that this could build belonging, but he asked how the school would make sure every notice remained clear and accurate. The group suggested checking translations with fluent speakers, keeping an English version alongside them, and inviting families to review important notices. They agreed that language inclusion should improve communication rather than replace careful checking.
 
-**Worked example:** Model a 60–90 second response to a prompt about identity, language and society: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Claim: displaying information in more than one language can help families participate. Detail 1: families may recognise their experiences. Detail 2: the group proposed fluent-speaker checks and family review. Explanation: inclusion and accuracy can support one another.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+**Your task:** Prompt: Should schools provide important information in more than one language? State your position, use two details from the passage, explain your reasoning and answer this counter-question: 'How could the school keep translated notices accurate?'
 
-
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Silver pathway support:** Complete the task independently. Select precise evidence, explain its significance and check that the response addresses the audience and purpose.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+**Evidence for teacher:** A defensible position, two relevant details, an explanation and a respectful response to the counter-question. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity, language and society — Oral communication — Gold Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Gold
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**Learning intention:** present and defend a clear interpretation in a context connected to identity, language and society.
+**Learning intention:** Present and defend a clear interpretation using relevant details and a response to a counter-question.
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Present a clear claim, two relevant details and an explanation; respond respectfully to a counter-question.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Deliver a structured response to a prompt about identity, language and society; state a position, support it with two relevant details and respond to a counter-question. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+> At a school community meeting, students discussed whether the school should display stories in more than one language. Sera said that using several languages would help families recognise their experiences and take part in school events. Tomasi agreed that this could build belonging, but he asked how the school would make sure every notice remained clear and accurate. The group suggested checking translations with fluent speakers, keeping an English version alongside them, and inviting families to review important notices. They agreed that language inclusion should improve communication rather than replace careful checking.
 
-**Worked example:** Model a 60–90 second response to a prompt about identity, language and society: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Claim: displaying information in more than one language can help families participate. Detail 1: families may recognise their experiences. Detail 2: the group proposed fluent-speaker checks and family review. Explanation: inclusion and accuracy can support one another.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+**Your task:** Prompt: Should schools provide important information in more than one language? State your position, use two details from the passage, explain your reasoning and answer this counter-question: 'How could the school keep translated notices accurate?'
 
-
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Gold pathway support:** Complete the same task, then qualify your interpretation, consider a counterargument or evaluate a limitation in the evidence. Keep the same learning objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+**Evidence for teacher:** A defensible position, two relevant details, an explanation and a respectful response to the counter-question. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 2 — Term 1, Week 1 — identity, language and society — Close reading — Copper Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Copper
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to identity, language and society.
+**Learning intention:** Analyse how textual choices shape meaning and explain the effect of two details or language choices.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Make a clear analytical claim, select two relevant textual details and explain how they shape meaning.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Annotate an authorized text about identity, language and society; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+> The old meeting house stood beside the road, its timber walls marked by years of salt air. Each afternoon, neighbours gathered beneath its wide roof. Some came to discuss fishing conditions; others brought news from school or the clinic. When a new noticeboard was placed near the entrance, people began leaving messages in different languages. A few visitors paused to read them aloud for those who preferred listening. The building had not changed its shape, but the voices around it had grown more varied. It became a place where information travelled through many hands and many forms of expression.
 
-**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Analytical claim: the meeting house represents a shared community space. Detail: neighbours gather there for different purposes. Explanation: the range of activities suggests that the place connects people beyond one single function.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+**Your task:** 1. State an analytical claim about the meeting house. 2. Select two details that support your claim. 3. Explain how one image or phrase shapes the reader's view of the community. 4. Explain one idea that is implied rather than directly stated.
 
-
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Copper pathway support:** Use the model and complete one step at a time. The teacher may read the stimulus aloud, explain vocabulary and offer an evidence locator or sentence frame. You may respond orally, by sign, AAC, dictation, pointing or writing.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+**Evidence for teacher:** A defensible interpretation supported by two precise details, with an explanation of imagery or implied meaning. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 2 — Term 1, Week 1 — identity, language and society — Close reading — Bronze Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Bronze
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to identity, language and society.
+**Learning intention:** Analyse how textual choices shape meaning and explain the effect of two details or language choices.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Make a clear analytical claim, select two relevant textual details and explain how they shape meaning.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Annotate an authorized text about identity, language and society; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+> The old meeting house stood beside the road, its timber walls marked by years of salt air. Each afternoon, neighbours gathered beneath its wide roof. Some came to discuss fishing conditions; others brought news from school or the clinic. When a new noticeboard was placed near the entrance, people began leaving messages in different languages. A few visitors paused to read them aloud for those who preferred listening. The building had not changed its shape, but the voices around it had grown more varied. It became a place where information travelled through many hands and many forms of expression.
 
-**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Analytical claim: the meeting house represents a shared community space. Detail: neighbours gather there for different purposes. Explanation: the range of activities suggests that the place connects people beyond one single function.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+**Your task:** 1. State an analytical claim about the meeting house. 2. Select two details that support your claim. 3. Explain how one image or phrase shapes the reader's view of the community. 4. Explain one idea that is implied rather than directly stated.
 
-
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Bronze pathway support:** Use the planning frame and identify the relevant sentence before answering. Complete the response with one prompt if needed, then check whether each detail supports your claim.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+**Evidence for teacher:** A defensible interpretation supported by two precise details, with an explanation of imagery or implied meaning. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 2 — Term 1, Week 1 — identity, language and society — Close reading — Silver Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Silver
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to identity, language and society.
+**Learning intention:** Analyse how textual choices shape meaning and explain the effect of two details or language choices.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Make a clear analytical claim, select two relevant textual details and explain how they shape meaning.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Annotate an authorized text about identity, language and society; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+> The old meeting house stood beside the road, its timber walls marked by years of salt air. Each afternoon, neighbours gathered beneath its wide roof. Some came to discuss fishing conditions; others brought news from school or the clinic. When a new noticeboard was placed near the entrance, people began leaving messages in different languages. A few visitors paused to read them aloud for those who preferred listening. The building had not changed its shape, but the voices around it had grown more varied. It became a place where information travelled through many hands and many forms of expression.
 
-**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Analytical claim: the meeting house represents a shared community space. Detail: neighbours gather there for different purposes. Explanation: the range of activities suggests that the place connects people beyond one single function.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+**Your task:** 1. State an analytical claim about the meeting house. 2. Select two details that support your claim. 3. Explain how one image or phrase shapes the reader's view of the community. 4. Explain one idea that is implied rather than directly stated.
 
-
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Silver pathway support:** Complete the task independently. Select precise evidence, explain its significance and check that the response addresses the audience and purpose.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+**Evidence for teacher:** A defensible interpretation supported by two precise details, with an explanation of imagery or implied meaning. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 2 — Term 1, Week 1 — identity, language and society — Close reading — Gold Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Gold
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to identity, language and society.
+**Learning intention:** Analyse how textual choices shape meaning and explain the effect of two details or language choices.
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Make a clear analytical claim, select two relevant textual details and explain how they shape meaning.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Annotate an authorized text about identity, language and society; identify the central claim, examine two language choices and explain their effects. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+> The old meeting house stood beside the road, its timber walls marked by years of salt air. Each afternoon, neighbours gathered beneath its wide roof. Some came to discuss fishing conditions; others brought news from school or the clinic. When a new noticeboard was placed near the entrance, people began leaving messages in different languages. A few visitors paused to read them aloud for those who preferred listening. The building had not changed its shape, but the voices around it had grown more varied. It became a place where information travelled through many hands and many forms of expression.
 
-**Worked example:** Annotate a passage from a short literary, media or non-fiction text; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Analytical claim: the meeting house represents a shared community space. Detail: neighbours gather there for different purposes. Explanation: the range of activities suggests that the place connects people beyond one single function.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+**Your task:** 1. State an analytical claim about the meeting house. 2. Select two details that support your claim. 3. Explain how one image or phrase shapes the reader's view of the community. 4. Explain one idea that is implied rather than directly stated.
 
-
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Gold pathway support:** Complete the same task, then qualify your interpretation, consider a counterargument or evaluate a limitation in the evidence. Keep the same learning objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+**Evidence for teacher:** A defensible interpretation supported by two precise details, with an explanation of imagery or implied meaning. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 3 — Term 1, Week 1 — identity, language and society — Vocabulary and language — Copper Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Copper
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to identity, language and society.
+**Learning intention:** Analyse register, syntax and rhetorical choices and explain their effects on an audience.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Explain the meaning and effect of three language choices, including register or connotation, for a defined audience.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Select three significant language choices in a text about identity, language and society; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+> The student newsletter described the language festival as a 'vibrant meeting of voices'. The word 'vibrant' suggested energy and variety, while 'meeting' presented the event as a shared experience rather than a competition. In a later paragraph, the writer urged readers to 'make room for every story'. This phrase invited participation without ordering anyone to speak. The newsletter used an encouraging, inclusive register because its audience included students, families and staff.
 
-**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** 'Vibrant' has a positive connotation of energy and colour. It helps the reader imagine an active event. The phrase 'make room for every story' is figurative; it encourages inclusion and choice.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+**Your task:** 1. Explain the connotations of 'vibrant'. 2. Analyse the phrase 'make room for every story'. 3. Identify the register and intended audience. 4. Rewrite one phrase for a formal report and explain how the register changes.
 
-
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Copper pathway support:** Use the model and complete one step at a time. The teacher may read the stimulus aloud, explain vocabulary and offer an evidence locator or sentence frame. You may respond orally, by sign, AAC, dictation, pointing or writing.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+**Evidence for teacher:** Contextual meanings, explanation of rhetorical effect, appropriate register identification and a justified formal alternative. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 3 — Term 1, Week 1 — identity, language and society — Vocabulary and language — Bronze Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Bronze
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to identity, language and society.
+**Learning intention:** Analyse register, syntax and rhetorical choices and explain their effects on an audience.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Explain the meaning and effect of three language choices, including register or connotation, for a defined audience.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Select three significant language choices in a text about identity, language and society; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+> The student newsletter described the language festival as a 'vibrant meeting of voices'. The word 'vibrant' suggested energy and variety, while 'meeting' presented the event as a shared experience rather than a competition. In a later paragraph, the writer urged readers to 'make room for every story'. This phrase invited participation without ordering anyone to speak. The newsletter used an encouraging, inclusive register because its audience included students, families and staff.
 
-**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** 'Vibrant' has a positive connotation of energy and colour. It helps the reader imagine an active event. The phrase 'make room for every story' is figurative; it encourages inclusion and choice.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+**Your task:** 1. Explain the connotations of 'vibrant'. 2. Analyse the phrase 'make room for every story'. 3. Identify the register and intended audience. 4. Rewrite one phrase for a formal report and explain how the register changes.
 
-
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Bronze pathway support:** Use the planning frame and identify the relevant sentence before answering. Complete the response with one prompt if needed, then check whether each detail supports your claim.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+**Evidence for teacher:** Contextual meanings, explanation of rhetorical effect, appropriate register identification and a justified formal alternative. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 3 — Term 1, Week 1 — identity, language and society — Vocabulary and language — Silver Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Silver
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to identity, language and society.
+**Learning intention:** Analyse register, syntax and rhetorical choices and explain their effects on an audience.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Explain the meaning and effect of three language choices, including register or connotation, for a defined audience.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Select three significant language choices in a text about identity, language and society; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+> The student newsletter described the language festival as a 'vibrant meeting of voices'. The word 'vibrant' suggested energy and variety, while 'meeting' presented the event as a shared experience rather than a competition. In a later paragraph, the writer urged readers to 'make room for every story'. This phrase invited participation without ordering anyone to speak. The newsletter used an encouraging, inclusive register because its audience included students, families and staff.
 
-**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** 'Vibrant' has a positive connotation of energy and colour. It helps the reader imagine an active event. The phrase 'make room for every story' is figurative; it encourages inclusion and choice.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+**Your task:** 1. Explain the connotations of 'vibrant'. 2. Analyse the phrase 'make room for every story'. 3. Identify the register and intended audience. 4. Rewrite one phrase for a formal report and explain how the register changes.
 
-
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Silver pathway support:** Complete the task independently. Select precise evidence, explain its significance and check that the response addresses the audience and purpose.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+**Evidence for teacher:** Contextual meanings, explanation of rhetorical effect, appropriate register identification and a justified formal alternative. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 3 — Term 1, Week 1 — identity, language and society — Vocabulary and language — Gold Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Gold
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to identity, language and society.
+**Learning intention:** Analyse register, syntax and rhetorical choices and explain their effects on an audience.
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Explain the meaning and effect of three language choices, including register or connotation, for a defined audience.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Select three significant language choices in a text about identity, language and society; explain connotations, register and effect on a defined audience. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+> The student newsletter described the language festival as a 'vibrant meeting of voices'. The word 'vibrant' suggested energy and variety, while 'meeting' presented the event as a shared experience rather than a competition. In a later paragraph, the writer urged readers to 'make room for every story'. This phrase invited participation without ordering anyone to speak. The newsletter used an encouraging, inclusive register because its audience included students, families and staff.
 
-**Worked example:** Compare three expressions from a a short literary, media or non-fiction text; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** 'Vibrant' has a positive connotation of energy and colour. It helps the reader imagine an active event. The phrase 'make room for every story' is figurative; it encourages inclusion and choice.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+**Your task:** 1. Explain the connotations of 'vibrant'. 2. Analyse the phrase 'make room for every story'. 3. Identify the register and intended audience. 4. Rewrite one phrase for a formal report and explain how the register changes.
 
-
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Gold pathway support:** Complete the same task, then qualify your interpretation, consider a counterargument or evaluate a limitation in the evidence. Keep the same learning objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+**Evidence for teacher:** Contextual meanings, explanation of rhetorical effect, appropriate register identification and a justified formal alternative. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 4 — Term 1, Week 1 — identity, language and society — Critical literacy — Copper Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Copper
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to identity, language and society.
+**Learning intention:** Evaluate perspective, evidence and reliability in two short information messages.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Identify each message's perspective, assess the evidence provided and justify which message is more reliable or what needs checking.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Compare two sources about identity, language and society; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+MESSAGE A — School notice, signed by the principal: 'The community language evening will be held in the school hall on Thursday at 5.30 pm. Families may contact the office to confirm transport arrangements. The programme will include student readings and family contributions.'
 
-**Worked example:** Use a source comparison grid for two sources on identity, language and society; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+MESSAGE B — Shared social post, author not identified: 'Big language event this week! Everyone gets free transport and prizes. Tell all your friends — no need to check with the school.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+> The school office has not confirmed the transport or prizes mentioned in Message B.
 
+**Worked example:** Message A is more reliable because it identifies an accountable source, gives a specific time and venue, and directs readers to the office for confirmation. Message B makes claims about free transport and prizes without evidence.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Your task:** 1. Identify the perspective or purpose of each message. 2. List two reliability clues. 3. Explain which details need verification. 4. Write one question a careful reader should ask before sharing Message B.
+
+**Copper pathway support:** Use the model and complete one step at a time. The teacher may read the stimulus aloud, explain vocabulary and offer an evidence locator or sentence frame. You may respond orally, by sign, AAC, dictation, pointing or writing.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+**Evidence for teacher:** Evidence-based comparison of source, specificity and unsupported claims; identifies transport/prizes as unconfirmed. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 4 — Term 1, Week 1 — identity, language and society — Critical literacy — Bronze Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Bronze
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to identity, language and society.
+**Learning intention:** Evaluate perspective, evidence and reliability in two short information messages.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Identify each message's perspective, assess the evidence provided and justify which message is more reliable or what needs checking.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Compare two sources about identity, language and society; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+MESSAGE A — School notice, signed by the principal: 'The community language evening will be held in the school hall on Thursday at 5.30 pm. Families may contact the office to confirm transport arrangements. The programme will include student readings and family contributions.'
 
-**Worked example:** Use a source comparison grid for two sources on identity, language and society; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+MESSAGE B — Shared social post, author not identified: 'Big language event this week! Everyone gets free transport and prizes. Tell all your friends — no need to check with the school.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+> The school office has not confirmed the transport or prizes mentioned in Message B.
 
+**Worked example:** Message A is more reliable because it identifies an accountable source, gives a specific time and venue, and directs readers to the office for confirmation. Message B makes claims about free transport and prizes without evidence.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Your task:** 1. Identify the perspective or purpose of each message. 2. List two reliability clues. 3. Explain which details need verification. 4. Write one question a careful reader should ask before sharing Message B.
+
+**Bronze pathway support:** Use the planning frame and identify the relevant sentence before answering. Complete the response with one prompt if needed, then check whether each detail supports your claim.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+**Evidence for teacher:** Evidence-based comparison of source, specificity and unsupported claims; identifies transport/prizes as unconfirmed. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 4 — Term 1, Week 1 — identity, language and society — Critical literacy — Silver Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Silver
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to identity, language and society.
+**Learning intention:** Evaluate perspective, evidence and reliability in two short information messages.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Identify each message's perspective, assess the evidence provided and justify which message is more reliable or what needs checking.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Compare two sources about identity, language and society; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+MESSAGE A — School notice, signed by the principal: 'The community language evening will be held in the school hall on Thursday at 5.30 pm. Families may contact the office to confirm transport arrangements. The programme will include student readings and family contributions.'
 
-**Worked example:** Use a source comparison grid for two sources on identity, language and society; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+MESSAGE B — Shared social post, author not identified: 'Big language event this week! Everyone gets free transport and prizes. Tell all your friends — no need to check with the school.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+> The school office has not confirmed the transport or prizes mentioned in Message B.
 
+**Worked example:** Message A is more reliable because it identifies an accountable source, gives a specific time and venue, and directs readers to the office for confirmation. Message B makes claims about free transport and prizes without evidence.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Your task:** 1. Identify the perspective or purpose of each message. 2. List two reliability clues. 3. Explain which details need verification. 4. Write one question a careful reader should ask before sharing Message B.
+
+**Silver pathway support:** Complete the task independently. Select precise evidence, explain its significance and check that the response addresses the audience and purpose.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+**Evidence for teacher:** Evidence-based comparison of source, specificity and unsupported claims; identifies transport/prizes as unconfirmed. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 4 — Term 1, Week 1 — identity, language and society — Critical literacy — Gold Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Gold
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to identity, language and society.
+**Learning intention:** Evaluate perspective, evidence and reliability in two short information messages.
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Identify each message's perspective, assess the evidence provided and justify which message is more reliable or what needs checking.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Compare two sources about identity, language and society; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+MESSAGE A — School notice, signed by the principal: 'The community language evening will be held in the school hall on Thursday at 5.30 pm. Families may contact the office to confirm transport arrangements. The programme will include student readings and family contributions.'
 
-**Worked example:** Use a source comparison grid for two sources on identity, language and society; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+MESSAGE B — Shared social post, author not identified: 'Big language event this week! Everyone gets free transport and prizes. Tell all your friends — no need to check with the school.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+> The school office has not confirmed the transport or prizes mentioned in Message B.
 
+**Worked example:** Message A is more reliable because it identifies an accountable source, gives a specific time and venue, and directs readers to the office for confirmation. Message B makes claims about free transport and prizes without evidence.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Your task:** 1. Identify the perspective or purpose of each message. 2. List two reliability clues. 3. Explain which details need verification. 4. Write one question a careful reader should ask before sharing Message B.
+
+**Gold pathway support:** Complete the same task, then qualify your interpretation, consider a counterargument or evaluate a limitation in the evidence. Keep the same learning objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+**Evidence for teacher:** Evidence-based comparison of source, specificity and unsupported claims; identifies transport/prizes as unconfirmed. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 5 — Term 1, Week 1 — identity, language and society — Writing and shaping — Copper Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Copper
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to identity, language and society.
+**Learning intention:** Create a coherent, evidence-based response for a defined audience and purpose.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Write a structured response with a clear position, relevant evidence, explanation and purposeful conclusion.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Develop an analytical response about identity, language and society; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+> A community library is planning a small display about languages spoken by local families. The organisers want the display to be welcoming and accurate. They have asked students to recommend how families can contribute without feeling pressured to share private information. Suggestions include voluntary story cards, book recommendations, recorded greetings with permission, drawings and short explanations of words that families choose to share. The organisers will check spelling and translations with contributors before displaying material.
 
-**Worked example:** Model a plan for a structured paragraph or short oral presentation on identity, language and society; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Opening: The library should make contributions voluntary. Evidence: families can choose story cards, drawings or book recommendations. Explanation: different options allow participation without requiring private information. Conclusion: permission and checking help protect contributors and accuracy.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+**Your task:** Write a structured recommendation to the library organisers. State your position, use at least two details from the passage, explain how your suggestions support inclusion and accuracy, and finish with a purposeful conclusion.
 
-
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Copper pathway support:** Use the model and complete one step at a time. The teacher may read the stimulus aloud, explain vocabulary and offer an evidence locator or sentence frame. You may respond orally, by sign, AAC, dictation, pointing or writing.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A coherent structured recommendation with a clear position, two relevant details, explanation and purposeful conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 5 — Term 1, Week 1 — identity, language and society — Writing and shaping — Bronze Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Bronze
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to identity, language and society.
+**Learning intention:** Create a coherent, evidence-based response for a defined audience and purpose.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Write a structured response with a clear position, relevant evidence, explanation and purposeful conclusion.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Develop an analytical response about identity, language and society; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+> A community library is planning a small display about languages spoken by local families. The organisers want the display to be welcoming and accurate. They have asked students to recommend how families can contribute without feeling pressured to share private information. Suggestions include voluntary story cards, book recommendations, recorded greetings with permission, drawings and short explanations of words that families choose to share. The organisers will check spelling and translations with contributors before displaying material.
 
-**Worked example:** Model a plan for a structured paragraph or short oral presentation on identity, language and society; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Opening: The library should make contributions voluntary. Evidence: families can choose story cards, drawings or book recommendations. Explanation: different options allow participation without requiring private information. Conclusion: permission and checking help protect contributors and accuracy.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+**Your task:** Write a structured recommendation to the library organisers. State your position, use at least two details from the passage, explain how your suggestions support inclusion and accuracy, and finish with a purposeful conclusion.
 
-
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Bronze pathway support:** Use the planning frame and identify the relevant sentence before answering. Complete the response with one prompt if needed, then check whether each detail supports your claim.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A coherent structured recommendation with a clear position, two relevant details, explanation and purposeful conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 5 — Term 1, Week 1 — identity, language and society — Writing and shaping — Silver Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Silver
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to identity, language and society.
+**Learning intention:** Create a coherent, evidence-based response for a defined audience and purpose.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Write a structured response with a clear position, relevant evidence, explanation and purposeful conclusion.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Develop an analytical response about identity, language and society; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+> A community library is planning a small display about languages spoken by local families. The organisers want the display to be welcoming and accurate. They have asked students to recommend how families can contribute without feeling pressured to share private information. Suggestions include voluntary story cards, book recommendations, recorded greetings with permission, drawings and short explanations of words that families choose to share. The organisers will check spelling and translations with contributors before displaying material.
 
-**Worked example:** Model a plan for a structured paragraph or short oral presentation on identity, language and society; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Opening: The library should make contributions voluntary. Evidence: families can choose story cards, drawings or book recommendations. Explanation: different options allow participation without requiring private information. Conclusion: permission and checking help protect contributors and accuracy.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+**Your task:** Write a structured recommendation to the library organisers. State your position, use at least two details from the passage, explain how your suggestions support inclusion and accuracy, and finish with a purposeful conclusion.
 
-
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Silver pathway support:** Complete the task independently. Select precise evidence, explain its significance and check that the response addresses the audience and purpose.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A coherent structured recommendation with a clear position, two relevant details, explanation and purposeful conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ---
 
 ## Day 5 — Term 1, Week 1 — identity, language and society — Writing and shaping — Gold Worksheet
 
-**Learner:** ____________________  **School:** ____________________  **Class:** Form 3  **Subject:** English
-**Term / Week:** ____________________  **Date:** ____________________  **Ability group:** Gold
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 3  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to identity, language and society.
+**Learning intention:** Create a coherent, evidence-based response for a defined audience and purpose.
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to identity, language and society, demonstrating a clear claim, one relevant detail and an explanation.
+**PacEdu working achievement indicator:** Write a structured response with a clear position, relevant evidence, explanation and purposeful conclusion.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**Read, listen to or explore this complete stimulus:**
 
-**Task:** Develop an analytical response about identity, language and society; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a short literary, media or non-fiction text. Record the exact authorized text/source and edition used.
+> A community library is planning a small display about languages spoken by local families. The organisers want the display to be welcoming and accurate. They have asked students to recommend how families can contribute without feeling pressured to share private information. Suggestions include voluntary story cards, book recommendations, recorded greetings with permission, drawings and short explanations of words that families choose to share. The organisers will check spelling and translations with contributors before displaying material.
 
-**Worked example:** Model a plan for a structured paragraph or short oral presentation on identity, language and society; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+**Worked example:** Opening: The library should make contributions voluntary. Evidence: families can choose story cards, drawings or book recommendations. Explanation: different options allow participation without requiring private information. Conclusion: permission and checking help protect contributors and accuracy.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+**Your task:** Write a structured recommendation to the library organisers. State your position, use at least two details from the passage, explain how your suggestions support inclusion and accuracy, and finish with a purposeful conclusion.
 
-
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Gold pathway support:** Complete the same task, then qualify your interpretation, consider a counterargument or evaluate a limitation in the evidence. Keep the same learning objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
 
-**Marking notes:** Credit accurate synonyms, equivalent wording and defensible interpretations supported by evidence. Record the learner's response mode and prompting; do not penalise accent or disability-related communication differences. Apply any school-approved rubric only after its current edition is verified.
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A coherent structured recommendation with a clear position, two relevant details, explanation and purposeful conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I made a clear point  ☐ I used relevant evidence  ☐ I explained my thinking  ☐ I checked my response
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
----
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 3 syllabus outcome, source title, edition, page and cohort only after verification. Do not copy Forms 5–7 requirements into Form 3.
 
 ## Day 6 — Term 1, Week 2 — community narratives and oral histories — Oral communication — Copper Worksheet
 
