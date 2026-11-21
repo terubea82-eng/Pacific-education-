@@ -55,6 +55,13 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 - The inspected printable worksheet bodies also have empty learning-intention, indicator, task and worked-example fields.
 - These worksheet bodies are **NOT READY**. Rebuild from the level-specific daily activity plans, using the correct senior-secondary demand and the school's authorised syllabus.
 
+### Forms 2–3 — worksheet coverage checked
+- Form 3 contains 460 pathway pages (115 per pathway). Repository-side inspection confirmed the first 20 pages (Days 1–5) are standalone and include learner details, learning intention, working indicator, complete original stimulus, worked example, task, response space, accessible response methods and pending review status.
+- Added a separate Form 3 Week 1 teacher marking guide and linked it from the English Subject Box.
+- Form 3 Days 6–115 still need standalone stimulus review and detailed teacher marking guides. Its syllabus cohort, prescribed texts and assessment criteria remain subject to official verification.
+
+[Form 3 Week 1 teacher marking guide](english-form3-teacher-guide-days-1-5.md)
+
 ### Form 2 (Year 8) — worksheet coverage checked
 - Repository-side blob inspection confirms 460 worksheet pages: 115 each for Copper, Bronze, Silver and Gold.
 - All 460 pages contain learner identification, the learning goal, a complete passage, worked example, questions, answer spaces, final check and pending teacher-review status.
