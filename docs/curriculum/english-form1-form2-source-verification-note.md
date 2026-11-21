@@ -1,12 +1,12 @@
 # PacEdu English — Form 1 and Form 2 recovery note
 
-**Purpose:** Resolve the missing levels between Class 6 and Form 3, using the owner's Form 1/Form 2 year mapping before adding learner worksheets to the English Subject Box.
+**Purpose:** Resolve the Form 1/Form 2 Year 7 and Year 8 mapping before adding or duplicating learner worksheets in the English Subject Box.
 
 ## Level identity
 
 - **Form 1 corresponds to Year 7.**
 - **Form 2 corresponds to Year 8.**
-- These are secondary levels and must not be substituted with the existing primary Class 1 and Class 2 packs. The Class 1 and Class 2 files remain Year 1 and Year 2 primary resources.
+- The Year 7 and Year 8 equivalence is the owner's confirmed PacEdu level mapping. The Ministry's 2022 Free Educational Resources policy lists English Communication Year 7 and Year 8 resources, and a Ministry-hosted Year 6/Year 8 teachers' guide includes Year 8 English guidance. These references support the year-level context but do not, by themselves, establish every current official outcome for both levels.
 
 ## Source discovery
 
@@ -14,7 +14,7 @@ A copy of the Fiji Ministry of Education, Curriculum Development Unit, *English 
 
 - https://theseeproject.org/wp-content/uploads/2015/05/l2_year910_english_syllabi.pdf
 
-The previously located 2014 *English Syllabi Years 9 & 10* is **not the correct level reference** for Form 1 and Form 2 under the owner's correction. Do not use its Year 9/10 content to build these packs. A separate authorised Fiji English syllabus/teacher-guide source for Year 7 and Year 8 must be located and checked before drafting level-specific official indicators or claiming curriculum alignment.
+The previously located 2014 *English Syllabi Years 9 & 10* is **not the correct level reference** for Form 1 and Form 2 under the owner's correction. Do not use its Year 9/10 content to build these packs. The Ministry-hosted 2022 Year 6/Year 8 English teachers' guide and Ministry resource policy listing Year 7 and Year 8 English resources have been located. The full authorised Year 7 and Year 8 syllabus/outcome sets and their current status still need checking before official indicators are claimed.
 
 ## Curriculum boundary
 
@@ -30,6 +30,7 @@ For each level, produce 115 learning days across the 9/9/5 planning frame. Each 
 ## Current status
 
 - Form 1 = Year 7 and Form 2 = Year 8, as corrected by the owner.
+- Existing Class 7 and Class 8 worksheet entries may cover the same year levels. Do not create duplicate learner resources until the owner confirms whether Form 1/Form 2 should replace, rename or sit alongside those entries.
 - The earlier Year 9/10 source lead is rejected for this mapping; the correct Year 7/8 authorised curriculum source remains to be located.
 - No Form 1 or Form 2 worksheet pack is represented as complete by this note.
 - Keep all work on the existing staging branch and draft PR. Do not merge, deploy, replace the APK, or change live learner data.
