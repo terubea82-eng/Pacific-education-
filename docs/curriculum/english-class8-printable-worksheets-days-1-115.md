@@ -1,37 +1,54 @@
 # PacEdu English Subject Box — Class 8 Printable Worksheets (Days 1–115)
 
-**Status:** ORIGINAL PACEDU DRAFT — `PENDING_TEACHER_REVIEW` — `PENDING_OFFICIAL_INDICATOR_VERIFICATION`. Not a Ministry-issued worksheet pack.
+**Status:** ORIGINAL PACEDU DRAFT — PENDING_TEACHER_REVIEW — PENDING_OFFICIAL_INDICATOR_VERIFICATION. Not a Ministry-issued worksheet pack.
 
-**Printing:** Each day has four separate pathway versions. Print only the selected learner version. Confirm Android Chrome print preview produces one selected worksheet per page. Use the school's approved calendar and configured local timezone; weekends and holidays do not auto-advance the learning sequence.
-
+**Printing:** Each pathway page is a standalone learner worksheet. Each page repeats its own stimulus and task. Select the learner's current flexible pathway; do not treat pathway placement as permanent. Confirm Android Chrome print preview before classroom use.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Listen to, summarise and respond to a short account, using one relevant supporting detail.
 
-**Task:** 
+**PacEdu working achievement indicator:** Give a relevant summary and add one accurate detail from the account.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> Mere joined a new school after her family moved to another island. On the first morning she stood near the library, unsure where to go. Ana noticed her and invited her to sit with a group preparing a welcome display. Mere explained that she missed her old friends but was also excited to learn about her new community. Ana listened without interrupting. She asked what Mere wanted others to know about her old home. Mere shared a story about a community celebration. The group added a space for both communities on the display. By the end of the week, Mere said she felt that she could belong to more than one place.
+
+**Worked example:** Main message: a new learner can begin to feel welcome when others listen and make room for her story. Supporting detail: the group included both communities on the display.
+
+**Your task:** 1. State the main message in your own words. 2. Give one detail that supports it. 3. Respond: What did Ana do that helped Mere? Explain why it mattered.
+
+**Copper pathway support:** Work one step at a time with the model. The teacher may read the passage aloud or provide an accessible version, picture/tactile cues and a small word bank. Choose, point, sign, use AAC, dictate or write. Complete the first question with support, then try the next question.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A clear summary; one accurate supporting detail; explanation that Ana listened, invited Mere and showed interest in her story. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -39,29 +56,47 @@ ____________________________________________________________________
 
 ## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Listen to, summarise and respond to a short account, using one relevant supporting detail.
 
-**Task:** 
+**PacEdu working achievement indicator:** Give a relevant summary and add one accurate detail from the account.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> Mere joined a new school after her family moved to another island. On the first morning she stood near the library, unsure where to go. Ana noticed her and invited her to sit with a group preparing a welcome display. Mere explained that she missed her old friends but was also excited to learn about her new community. Ana listened without interrupting. She asked what Mere wanted others to know about her old home. Mere shared a story about a community celebration. The group added a space for both communities on the display. By the end of the week, Mere said she felt that she could belong to more than one place.
+
+**Worked example:** Main message: a new learner can begin to feel welcome when others listen and make room for her story. Supporting detail: the group included both communities on the display.
+
+**Your task:** 1. State the main message in your own words. 2. Give one detail that supports it. 3. Respond: What did Ana do that helped Mere? Explain why it mattered.
+
+**Bronze pathway support:** Use the worked example and the planning prompts. Identify the key detail before answering. Complete the questions with one prompt if needed, then check your response.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A clear summary; one accurate supporting detail; explanation that Ana listened, invited Mere and showed interest in her story. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -69,29 +104,47 @@ ____________________________________________________________________
 
 ## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Listen to, summarise and respond to a short account, using one relevant supporting detail.
 
-**Task:** 
+**PacEdu working achievement indicator:** Give a relevant summary and add one accurate detail from the account.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> Mere joined a new school after her family moved to another island. On the first morning she stood near the library, unsure where to go. Ana noticed her and invited her to sit with a group preparing a welcome display. Mere explained that she missed her old friends but was also excited to learn about her new community. Ana listened without interrupting. She asked what Mere wanted others to know about her old home. Mere shared a story about a community celebration. The group added a space for both communities on the display. By the end of the week, Mere said she felt that she could belong to more than one place.
+
+**Worked example:** Main message: a new learner can begin to feel welcome when others listen and make room for her story. Supporting detail: the group included both communities on the display.
+
+**Your task:** 1. State the main message in your own words. 2. Give one detail that supports it. 3. Respond: What did Ana do that helped Mere? Explain why it mattered.
+
+**Silver pathway support:** Complete all questions independently. Select precise evidence from the passage and check that each explanation answers the question.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A clear summary; one accurate supporting detail; explanation that Ana listened, invited Mere and showed interest in her story. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -99,29 +152,47 @@ ____________________________________________________________________
 
 ## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Listen to, summarise and respond to a short account, using one relevant supporting detail.
 
-**Task:** 
+**PacEdu working achievement indicator:** Give a relevant summary and add one accurate detail from the account.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> Mere joined a new school after her family moved to another island. On the first morning she stood near the library, unsure where to go. Ana noticed her and invited her to sit with a group preparing a welcome display. Mere explained that she missed her old friends but was also excited to learn about her new community. Ana listened without interrupting. She asked what Mere wanted others to know about her old home. Mere shared a story about a community celebration. The group added a space for both communities on the display. By the end of the week, Mere said she felt that she could belong to more than one place.
+
+**Worked example:** Main message: a new learner can begin to feel welcome when others listen and make room for her story. Supporting detail: the group included both communities on the display.
+
+**Your task:** 1. State the main message in your own words. 2. Give one detail that supports it. 3. Respond: What did Ana do that helped Mere? Explain why it mattered.
+
+**Gold pathway support:** Complete the same core task, then deepen your response by considering an alternative interpretation, explaining the effect on a reader or refining your evidence and wording. Do not replace the shared learning objective.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A clear summary; one accurate supporting detail; explanation that Ana listened, invited Mere and showed interest in her story. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -129,29 +200,47 @@ ____________________________________________________________________
 
 ## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Interpret a text with two perspectives and support an inference with two details.
 
-**Task:** 
+**PacEdu working achievement indicator:** Explain one reasonable inference about belonging and support it with two precise details from the passage.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> At the community hall, two notices invited families to a Saturday gathering. One notice said the event should keep the familiar songs and games that older residents remembered. Another suggested adding new activities chosen by younger families who had recently arrived. At the planning meeting, Litia worried that changing the programme might weaken traditions. Jone replied that a tradition could remain meaningful while welcoming new voices. They compared the two proposals and agreed to begin with the familiar opening song, then invite families to share one activity from their own experience. The final programme did not satisfy every suggestion, but more people offered to help.
+
+**Worked example:** Inference: the organisers tried to balance continuity and inclusion. Detail 1: they kept the familiar opening song. Detail 2: they invited families to contribute an activity.
+
+**Your task:** 1. What concern does Litia express? 2. What is Jone's different view? 3. Infer why the final programme encouraged more people to help. Support your inference with two details.
+
+**Copper pathway support:** Work one step at a time with the model. The teacher may read the passage aloud or provide an accessible version, picture/tactile cues and a small word bank. Choose, point, sign, use AAC, dictate or write. Complete the first question with support, then try the next question.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate contrast between preserving familiar traditions and welcoming new contributions; inference supported by two relevant details. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -159,29 +248,47 @@ ____________________________________________________________________
 
 ## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Interpret a text with two perspectives and support an inference with two details.
 
-**Task:** 
+**PacEdu working achievement indicator:** Explain one reasonable inference about belonging and support it with two precise details from the passage.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> At the community hall, two notices invited families to a Saturday gathering. One notice said the event should keep the familiar songs and games that older residents remembered. Another suggested adding new activities chosen by younger families who had recently arrived. At the planning meeting, Litia worried that changing the programme might weaken traditions. Jone replied that a tradition could remain meaningful while welcoming new voices. They compared the two proposals and agreed to begin with the familiar opening song, then invite families to share one activity from their own experience. The final programme did not satisfy every suggestion, but more people offered to help.
+
+**Worked example:** Inference: the organisers tried to balance continuity and inclusion. Detail 1: they kept the familiar opening song. Detail 2: they invited families to contribute an activity.
+
+**Your task:** 1. What concern does Litia express? 2. What is Jone's different view? 3. Infer why the final programme encouraged more people to help. Support your inference with two details.
+
+**Bronze pathway support:** Use the worked example and the planning prompts. Identify the key detail before answering. Complete the questions with one prompt if needed, then check your response.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate contrast between preserving familiar traditions and welcoming new contributions; inference supported by two relevant details. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -189,29 +296,47 @@ ____________________________________________________________________
 
 ## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Interpret a text with two perspectives and support an inference with two details.
 
-**Task:** 
+**PacEdu working achievement indicator:** Explain one reasonable inference about belonging and support it with two precise details from the passage.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> At the community hall, two notices invited families to a Saturday gathering. One notice said the event should keep the familiar songs and games that older residents remembered. Another suggested adding new activities chosen by younger families who had recently arrived. At the planning meeting, Litia worried that changing the programme might weaken traditions. Jone replied that a tradition could remain meaningful while welcoming new voices. They compared the two proposals and agreed to begin with the familiar opening song, then invite families to share one activity from their own experience. The final programme did not satisfy every suggestion, but more people offered to help.
+
+**Worked example:** Inference: the organisers tried to balance continuity and inclusion. Detail 1: they kept the familiar opening song. Detail 2: they invited families to contribute an activity.
+
+**Your task:** 1. What concern does Litia express? 2. What is Jone's different view? 3. Infer why the final programme encouraged more people to help. Support your inference with two details.
+
+**Silver pathway support:** Complete all questions independently. Select precise evidence from the passage and check that each explanation answers the question.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate contrast between preserving familiar traditions and welcoming new contributions; inference supported by two relevant details. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -219,29 +344,47 @@ ____________________________________________________________________
 
 ## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Interpret a text with two perspectives and support an inference with two details.
 
-**Task:** 
+**PacEdu working achievement indicator:** Explain one reasonable inference about belonging and support it with two precise details from the passage.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> At the community hall, two notices invited families to a Saturday gathering. One notice said the event should keep the familiar songs and games that older residents remembered. Another suggested adding new activities chosen by younger families who had recently arrived. At the planning meeting, Litia worried that changing the programme might weaken traditions. Jone replied that a tradition could remain meaningful while welcoming new voices. They compared the two proposals and agreed to begin with the familiar opening song, then invite families to share one activity from their own experience. The final programme did not satisfy every suggestion, but more people offered to help.
+
+**Worked example:** Inference: the organisers tried to balance continuity and inclusion. Detail 1: they kept the familiar opening song. Detail 2: they invited families to contribute an activity.
+
+**Your task:** 1. What concern does Litia express? 2. What is Jone's different view? 3. Infer why the final programme encouraged more people to help. Support your inference with two details.
+
+**Gold pathway support:** Complete the same core task, then deepen your response by considering an alternative interpretation, explaining the effect on a reader or refining your evidence and wording. Do not replace the shared learning objective.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate contrast between preserving familiar traditions and welcoming new contributions; inference supported by two relevant details. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -249,29 +392,47 @@ ____________________________________________________________________
 
 ## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how word choice shapes meaning and tone in a text.
 
-**Task:** 
+**PacEdu working achievement indicator:** Explain three context-appropriate words or phrases and justify one replacement that preserves or changes the tone.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> The school notice described the new reading corner as a shared space. Students had carefully gathered books in several languages. Some learners were hesitant to choose a book because they thought their home language might not be suitable for school. The librarian reassured them: every book represented a doorway into someone's experience. Soon the corner became lively. Students recommended stories, compared expressions and discovered that familiar ideas could sound different in another language. The space was not simply quiet; it was welcoming, curious and full of conversation.
+
+**Worked example:** The word 'hesitant' means unsure or reluctant. It suggests that learners paused because they lacked confidence, not because they disliked reading.
+
+**Your task:** 1. Explain 'hesitant', 'reassured' and 'represented' using the passage. 2. Replace 'lively' with another suitable word. 3. Explain how your replacement changes or keeps the tone.
+
+**Copper pathway support:** Work one step at a time with the model. The teacher may read the passage aloud or provide an accessible version, picture/tactile cues and a small word bank. Choose, point, sign, use AAC, dictate or write. Complete the first question with support, then try the next question.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Context-based meanings, such as unsure/reluctant, comforted/encouraged, stood for/symbolised; a suitable replacement such as active, animated or energetic with a tone explanation. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -279,29 +440,47 @@ ____________________________________________________________________
 
 ## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how word choice shapes meaning and tone in a text.
 
-**Task:** 
+**PacEdu working achievement indicator:** Explain three context-appropriate words or phrases and justify one replacement that preserves or changes the tone.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> The school notice described the new reading corner as a shared space. Students had carefully gathered books in several languages. Some learners were hesitant to choose a book because they thought their home language might not be suitable for school. The librarian reassured them: every book represented a doorway into someone's experience. Soon the corner became lively. Students recommended stories, compared expressions and discovered that familiar ideas could sound different in another language. The space was not simply quiet; it was welcoming, curious and full of conversation.
+
+**Worked example:** The word 'hesitant' means unsure or reluctant. It suggests that learners paused because they lacked confidence, not because they disliked reading.
+
+**Your task:** 1. Explain 'hesitant', 'reassured' and 'represented' using the passage. 2. Replace 'lively' with another suitable word. 3. Explain how your replacement changes or keeps the tone.
+
+**Bronze pathway support:** Use the worked example and the planning prompts. Identify the key detail before answering. Complete the questions with one prompt if needed, then check your response.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Context-based meanings, such as unsure/reluctant, comforted/encouraged, stood for/symbolised; a suitable replacement such as active, animated or energetic with a tone explanation. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -309,29 +488,47 @@ ____________________________________________________________________
 
 ## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how word choice shapes meaning and tone in a text.
 
-**Task:** 
+**PacEdu working achievement indicator:** Explain three context-appropriate words or phrases and justify one replacement that preserves or changes the tone.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> The school notice described the new reading corner as a shared space. Students had carefully gathered books in several languages. Some learners were hesitant to choose a book because they thought their home language might not be suitable for school. The librarian reassured them: every book represented a doorway into someone's experience. Soon the corner became lively. Students recommended stories, compared expressions and discovered that familiar ideas could sound different in another language. The space was not simply quiet; it was welcoming, curious and full of conversation.
+
+**Worked example:** The word 'hesitant' means unsure or reluctant. It suggests that learners paused because they lacked confidence, not because they disliked reading.
+
+**Your task:** 1. Explain 'hesitant', 'reassured' and 'represented' using the passage. 2. Replace 'lively' with another suitable word. 3. Explain how your replacement changes or keeps the tone.
+
+**Silver pathway support:** Complete all questions independently. Select precise evidence from the passage and check that each explanation answers the question.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Context-based meanings, such as unsure/reluctant, comforted/encouraged, stood for/symbolised; a suitable replacement such as active, animated or energetic with a tone explanation. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -339,29 +536,47 @@ ____________________________________________________________________
 
 ## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how word choice shapes meaning and tone in a text.
 
-**Task:** 
+**PacEdu working achievement indicator:** Explain three context-appropriate words or phrases and justify one replacement that preserves or changes the tone.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> The school notice described the new reading corner as a shared space. Students had carefully gathered books in several languages. Some learners were hesitant to choose a book because they thought their home language might not be suitable for school. The librarian reassured them: every book represented a doorway into someone's experience. Soon the corner became lively. Students recommended stories, compared expressions and discovered that familiar ideas could sound different in another language. The space was not simply quiet; it was welcoming, curious and full of conversation.
+
+**Worked example:** The word 'hesitant' means unsure or reluctant. It suggests that learners paused because they lacked confidence, not because they disliked reading.
+
+**Your task:** 1. Explain 'hesitant', 'reassured' and 'represented' using the passage. 2. Replace 'lively' with another suitable word. 3. Explain how your replacement changes or keeps the tone.
+
+**Gold pathway support:** Complete the same core task, then deepen your response by considering an alternative interpretation, explaining the effect on a reader or refining your evidence and wording. Do not replace the shared learning objective.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Context-based meanings, such as unsure/reluctant, comforted/encouraged, stood for/symbolised; a suitable replacement such as active, animated or energetic with a tone explanation. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -369,29 +584,47 @@ ____________________________________________________________________
 
 ## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Revise sentences to show relationships between ideas clearly and accurately.
 
-**Task:** 
+**PacEdu working achievement indicator:** Produce two accurate revisions using a suitable subordinate or contrast clause and correct punctuation.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> The students planned a display about places that shaped them. They wanted every learner to contribute. Some students preferred photographs. Others chose words, drawings or objects. The teacher reminded the class that no single format could tell every story. The class therefore created several ways to contribute. The display became more complete because different learners could explain their ideas in different ways.
+
+**Worked example:** Original: 'The students wanted every learner to contribute. They created several ways to contribute.' Revised: 'Because the students wanted every learner to contribute, they created several ways to share ideas.' The word 'Because' shows the reason.
+
+**Your task:** 1. Join these ideas using 'although': 'Some students chose photographs. Others chose drawings or objects.' 2. Rewrite the teacher's reminder to make the reason for offering different formats clear. 3. Explain how one joining word changes the relationship between ideas.
+
+**Copper pathway support:** Work one step at a time with the model. The teacher may read the passage aloud or provide an accessible version, picture/tactile cues and a small word bank. Choose, point, sign, use AAC, dictate or write. Complete the first question with support, then try the next question.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Grammatically sound complex sentences, correct punctuation and a clear explanation of contrast or cause. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -399,29 +632,47 @@ ____________________________________________________________________
 
 ## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Revise sentences to show relationships between ideas clearly and accurately.
 
-**Task:** 
+**PacEdu working achievement indicator:** Produce two accurate revisions using a suitable subordinate or contrast clause and correct punctuation.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> The students planned a display about places that shaped them. They wanted every learner to contribute. Some students preferred photographs. Others chose words, drawings or objects. The teacher reminded the class that no single format could tell every story. The class therefore created several ways to contribute. The display became more complete because different learners could explain their ideas in different ways.
+
+**Worked example:** Original: 'The students wanted every learner to contribute. They created several ways to contribute.' Revised: 'Because the students wanted every learner to contribute, they created several ways to share ideas.' The word 'Because' shows the reason.
+
+**Your task:** 1. Join these ideas using 'although': 'Some students chose photographs. Others chose drawings or objects.' 2. Rewrite the teacher's reminder to make the reason for offering different formats clear. 3. Explain how one joining word changes the relationship between ideas.
+
+**Bronze pathway support:** Use the worked example and the planning prompts. Identify the key detail before answering. Complete the questions with one prompt if needed, then check your response.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Grammatically sound complex sentences, correct punctuation and a clear explanation of contrast or cause. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -429,29 +680,47 @@ ____________________________________________________________________
 
 ## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Revise sentences to show relationships between ideas clearly and accurately.
 
-**Task:** 
+**PacEdu working achievement indicator:** Produce two accurate revisions using a suitable subordinate or contrast clause and correct punctuation.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> The students planned a display about places that shaped them. They wanted every learner to contribute. Some students preferred photographs. Others chose words, drawings or objects. The teacher reminded the class that no single format could tell every story. The class therefore created several ways to contribute. The display became more complete because different learners could explain their ideas in different ways.
+
+**Worked example:** Original: 'The students wanted every learner to contribute. They created several ways to contribute.' Revised: 'Because the students wanted every learner to contribute, they created several ways to share ideas.' The word 'Because' shows the reason.
+
+**Your task:** 1. Join these ideas using 'although': 'Some students chose photographs. Others chose drawings or objects.' 2. Rewrite the teacher's reminder to make the reason for offering different formats clear. 3. Explain how one joining word changes the relationship between ideas.
+
+**Silver pathway support:** Complete all questions independently. Select precise evidence from the passage and check that each explanation answers the question.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Grammatically sound complex sentences, correct punctuation and a clear explanation of contrast or cause. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -459,29 +728,47 @@ ____________________________________________________________________
 
 ## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Revise sentences to show relationships between ideas clearly and accurately.
 
-**Task:** 
+**PacEdu working achievement indicator:** Produce two accurate revisions using a suitable subordinate or contrast clause and correct punctuation.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> The students planned a display about places that shaped them. They wanted every learner to contribute. Some students preferred photographs. Others chose words, drawings or objects. The teacher reminded the class that no single format could tell every story. The class therefore created several ways to contribute. The display became more complete because different learners could explain their ideas in different ways.
+
+**Worked example:** Original: 'The students wanted every learner to contribute. They created several ways to contribute.' Revised: 'Because the students wanted every learner to contribute, they created several ways to share ideas.' The word 'Because' shows the reason.
+
+**Your task:** 1. Join these ideas using 'although': 'Some students chose photographs. Others chose drawings or objects.' 2. Rewrite the teacher's reminder to make the reason for offering different formats clear. 3. Explain how one joining word changes the relationship between ideas.
+
+**Gold pathway support:** Complete the same core task, then deepen your response by considering an alternative interpretation, explaining the effect on a reader or refining your evidence and wording. Do not replace the shared learning objective.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Grammatically sound complex sentences, correct punctuation and a clear explanation of contrast or cause. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -489,29 +776,47 @@ ____________________________________________________________________
 
 ## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Plan, draft and improve a focused response using a clear point and supporting details.
 
-**Task:** 
+**PacEdu working achievement indicator:** Write a coherent paragraph with a clear point, at least two relevant supporting details and a reasoned concluding sentence.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> A school becomes more welcoming when learners can share parts of their identity without being pressured to speak or act in the same way. A class might invite learners to contribute a story, a drawing, a song title, a family word or an object that is meaningful to them. Some learners may prefer to observe before contributing. Others may use a home language, sign, AAC or a trusted person's support. The important principle is choice: participation should be invited, not forced. When different contributions are respected, learners can recognise both shared experiences and valuable differences.
+
+**Worked example:** Point: A welcoming class gives learners choices about how to contribute. Detail 1: learners may share a story, drawing or meaningful object. Detail 2: learners may use sign, AAC or a home language. Conclusion: choice makes participation more respectful.
+
+**Your task:** Write one focused paragraph answering: 'How can a school help learners feel that they belong?' Include a clear point, at least two details from the passage and a concluding sentence that explains why your ideas matter. Revise one sentence for clarity.
+
+**Copper pathway support:** Work one step at a time with the model. The teacher may read the passage aloud or provide an accessible version, picture/tactile cues and a small word bank. Choose, point, sign, use AAC, dictate or write. Complete the first question with support, then try the next question.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A coherent paragraph with a defensible point, two relevant details and a reasoned conclusion; accept equivalent wording and accessible dictated/signed/AAC responses. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -519,29 +824,47 @@ ____________________________________________________________________
 
 ## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Plan, draft and improve a focused response using a clear point and supporting details.
 
-**Task:** 
+**PacEdu working achievement indicator:** Write a coherent paragraph with a clear point, at least two relevant supporting details and a reasoned concluding sentence.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> A school becomes more welcoming when learners can share parts of their identity without being pressured to speak or act in the same way. A class might invite learners to contribute a story, a drawing, a song title, a family word or an object that is meaningful to them. Some learners may prefer to observe before contributing. Others may use a home language, sign, AAC or a trusted person's support. The important principle is choice: participation should be invited, not forced. When different contributions are respected, learners can recognise both shared experiences and valuable differences.
+
+**Worked example:** Point: A welcoming class gives learners choices about how to contribute. Detail 1: learners may share a story, drawing or meaningful object. Detail 2: learners may use sign, AAC or a home language. Conclusion: choice makes participation more respectful.
+
+**Your task:** Write one focused paragraph answering: 'How can a school help learners feel that they belong?' Include a clear point, at least two details from the passage and a concluding sentence that explains why your ideas matter. Revise one sentence for clarity.
+
+**Bronze pathway support:** Use the worked example and the planning prompts. Identify the key detail before answering. Complete the questions with one prompt if needed, then check your response.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A coherent paragraph with a defensible point, two relevant details and a reasoned conclusion; accept equivalent wording and accessible dictated/signed/AAC responses. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -549,29 +872,47 @@ ____________________________________________________________________
 
 ## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Plan, draft and improve a focused response using a clear point and supporting details.
 
-**Task:** 
+**PacEdu working achievement indicator:** Write a coherent paragraph with a clear point, at least two relevant supporting details and a reasoned concluding sentence.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> A school becomes more welcoming when learners can share parts of their identity without being pressured to speak or act in the same way. A class might invite learners to contribute a story, a drawing, a song title, a family word or an object that is meaningful to them. Some learners may prefer to observe before contributing. Others may use a home language, sign, AAC or a trusted person's support. The important principle is choice: participation should be invited, not forced. When different contributions are respected, learners can recognise both shared experiences and valuable differences.
+
+**Worked example:** Point: A welcoming class gives learners choices about how to contribute. Detail 1: learners may share a story, drawing or meaningful object. Detail 2: learners may use sign, AAC or a home language. Conclusion: choice makes participation more respectful.
+
+**Your task:** Write one focused paragraph answering: 'How can a school help learners feel that they belong?' Include a clear point, at least two details from the passage and a concluding sentence that explains why your ideas matter. Revise one sentence for clarity.
+
+**Silver pathway support:** Complete all questions independently. Select precise evidence from the passage and check that each explanation answers the question.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A coherent paragraph with a defensible point, two relevant details and a reasoned conclusion; accept equivalent wording and accessible dictated/signed/AAC responses. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
@@ -579,33 +920,49 @@ ____________________________________________________________________
 
 ## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________________________  
+**Class:** 8  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **School:** __________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Plan, draft and improve a focused response using a clear point and supporting details.
 
-**Task:** 
+**PacEdu working achievement indicator:** Write a coherent paragraph with a clear point, at least two relevant supporting details and a reasoned concluding sentence.
 
-**Worked example:** 
+**Read, listen to or explore this passage:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> A school becomes more welcoming when learners can share parts of their identity without being pressured to speak or act in the same way. A class might invite learners to contribute a story, a drawing, a song title, a family word or an object that is meaningful to them. Some learners may prefer to observe before contributing. Others may use a home language, sign, AAC or a trusted person's support. The important principle is choice: participation should be invited, not forced. When different contributions are respected, learners can recognise both shared experiences and valuable differences.
+
+**Worked example:** Point: A welcoming class gives learners choices about how to contribute. Detail 1: learners may share a story, drawing or meaningful object. Detail 2: learners may use sign, AAC or a home language. Conclusion: choice makes participation more respectful.
+
+**Your task:** Write one focused paragraph answering: 'How can a school help learners feel that they belong?' Include a clear point, at least two details from the passage and a concluding sentence that explains why your ideas matter. Revise one sentence for clarity.
+
+**Gold pathway support:** Complete the same core task, then deepen your response by considering an alternative interpretation, explaining the effect on a reader or refining your evidence and wording. Do not replace the shared learning objective.
 
 **My answer / working:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+____________________________________________________________________________
+
+**Self-check:** ☐ I showed the skill  ☐ I used evidence  ☐ I want another model or prompt
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A coherent paragraph with a defensible point, two relevant details and a reasoned conclusion; accept equivalent wording and accessible dictated/signed/AAC responses. Record the learner's actual response, response mode, accuracy and prompt level.
+
+**Teacher marking note:** Credit accurate meaning, relevant evidence and equivalent wording. Accept sensible synonyms, paraphrases and supported alternative interpretations. Do not penalise accent, disability-related communication differences or an approved response mode.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised source, edition, page and reviewer only after checking the school's Ministry-authorised document.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
-
----
 
 ## Day 6 — Term 1, Week 2 — family and community stories — Listening and speaking — Copper Worksheet
 
