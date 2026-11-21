@@ -47,9 +47,20 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 - Detailed per-day content still requires complete repository-side verification and educator review. Form 1 = Year 7 and Form 2 = Year 8 in the owner's level mapping. Do not use the 2014 Years 9–10 syllabus for those levels.
 - Do not mark these packs final until every day's four worksheets and marking guidance have been inspected.
 
+## New learner-ready drafting batch — 22 November 2026
+
+Class 3 and Class 4 Days 1–5 have now been rebuilt as 20 standalone learner worksheet sections per class (five days × Copper/Bronze/Silver/Gold). Each section embeds its own complete passage, learning intention, PacEdu working indicator, worked example, pathway-specific task, generous answer space, evidence prompt and accessibility options. Separate teacher marking guides were added for each class.
+
+The English Subject Box cards now link to the Class 3 and Class 4 Week 1 teacher guides in addition to the four pathway viewer links.
+
+- [Class 3 Week 1 teacher guide](english-class3-teacher-guide-days-1-5.md)
+- [Class 4 Week 1 teacher guide](english-class4-teacher-guide-days-1-5.md)
+
+These 40 learner worksheet versions are improved PacEdu drafts, not final verified curriculum materials. Both remain `PENDING_TEACHER_REVIEW` and `PENDING_OFFICIAL_INDICATOR_VERIFICATION`. The remaining 110 days for each of these classes still require the same detailed learner-page quality work.
+
 ## Release blockers
 
-1. Regenerate incomplete worksheet bodies from their matching daily activity plans; do not leave blank template fields.
+1. Continue rebuilding incomplete worksheet bodies from their matching daily activity plans. Class 3 and Class 4 Days 1–5 have been rebuilt; remaining days/levels must not be assumed complete. Do not leave blank template fields.
 2. Ensure every learner worksheet contains the full stimulus/instructions, worked example, pathway-specific tasks, and response space. Where a reading passage is needed, include it on each pathway worksheet so learners do not need another group's page or a shared sheet.
 3. Add or verify a separate teacher marking guide for each level/week/pathway, with accepted synonyms and equivalent correct responses.
 4. Fiji-qualified educators must review content and suitability; official curriculum source title, edition, exact outcome/indicator and page must be verified separately.
