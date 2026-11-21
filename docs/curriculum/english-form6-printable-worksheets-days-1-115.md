@@ -2274,645 +2274,1277 @@ ____________________________________________________________________________
 
 **Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify the current authorised Form 6 syllabus, prescribed texts and assessment criteria.
 
+# PacEdu English Subject Box — Form 6 Printable Worksheets (Days 1–115)
+
+**Status:** ORIGINAL PACEDU DRAFT — PENDING_TEACHER_REVIEW — PENDING_OFFICIAL_INDICATOR_VERIFICATION. Not a Ministry-issued or examination-authorized worksheet pack.
+
+**Senior-secondary safeguard:** Confirm the current authorised Form 6 cohort syllabus, prescribed texts, assessment specifications and criteria separately. These original linked practice sources are practice material, not prescribed texts or past examination questions.
+
+**Printing:** Each standalone page repeats both linked practice sources and its task. Print one selected learner worksheet per page.
+
+---
+
 ## Day 11 — Term 1, Week 3 — place, environment and belonging — Oral communication — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Defend a comparative interpretation of how different sources represent authority and community decision-making.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a coherent comparative thesis, integrate evidence from two sources, qualify an interpretation and respond to a counterargument.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Council minutes extract: The village council record states that a committee was appointed to review the shared water schedule. Three proposals were discussed, and the council agreed to trial a revised timetable for one month. The minutes record the decision and attendance but do not include the full discussion or individual reasons for agreement.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+SOURCE B — Resident interview extract: A resident recalls that households with long walking distances asked for earlier collection times. The resident says the trial helped some families but created difficulty for workers who leave home before sunrise. The interview reflects one household's experience and was recorded two weeks after the trial began.
 
-**My analysis / response:**
+**Worked example:** The sources show different kinds of evidence: the minutes establish the formal decision and trial period, while the interview describes an effect on one household. Neither alone establishes whether the schedule worked for all households.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Give a structured comparative response: Did the trial timetable represent a fair decision? Integrate one detail from each source, explain what each source can and cannot show, qualify your judgement and answer a counter-question about how the council could gather broader evidence.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison frame and the worked model. Work through one source at a time; the teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A qualified comparative thesis with precise evidence from both sources, source limitations and a practical response about broader consultation. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 11 — Term 1, Week 3 — place, environment and belonging — Oral communication — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Defend a comparative interpretation of how different sources represent authority and community decision-making.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a coherent comparative thesis, integrate evidence from two sources, qualify an interpretation and respond to a counterargument.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Council minutes extract: The village council record states that a committee was appointed to review the shared water schedule. Three proposals were discussed, and the council agreed to trial a revised timetable for one month. The minutes record the decision and attendance but do not include the full discussion or individual reasons for agreement.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+SOURCE B — Resident interview extract: A resident recalls that households with long walking distances asked for earlier collection times. The resident says the trial helped some families but created difficulty for workers who leave home before sunrise. The interview reflects one household's experience and was recorded two weeks after the trial began.
 
-**My analysis / response:**
+**Worked example:** The sources show different kinds of evidence: the minutes establish the formal decision and trial period, while the interview describes an effect on one household. Neither alone establishes whether the schedule worked for all households.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Give a structured comparative response: Did the trial timetable represent a fair decision? Integrate one detail from each source, explain what each source can and cannot show, qualify your judgement and answer a counter-question about how the council could gather broader evidence.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as thesis, source evidence, comparison and limitation; reduce prompts gradually.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A qualified comparative thesis with precise evidence from both sources, source limitations and a practical response about broader consultation. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 11 — Term 1, Week 3 — place, environment and belonging — Oral communication — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Defend a comparative interpretation of how different sources represent authority and community decision-making.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a coherent comparative thesis, integrate evidence from two sources, qualify an interpretation and respond to a counterargument.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Council minutes extract: The village council record states that a committee was appointed to review the shared water schedule. Three proposals were discussed, and the council agreed to trial a revised timetable for one month. The minutes record the decision and attendance but do not include the full discussion or individual reasons for agreement.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+SOURCE B — Resident interview extract: A resident recalls that households with long walking distances asked for earlier collection times. The resident says the trial helped some families but created difficulty for workers who leave home before sunrise. The interview reflects one household's experience and was recorded two weeks after the trial began.
 
-**My analysis / response:**
+**Worked example:** The sources show different kinds of evidence: the minutes establish the formal decision and trial period, while the interview describes an effect on one household. Neither alone establishes whether the schedule worked for all households.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Give a structured comparative response: Did the trial timetable represent a fair decision? Integrate one detail from each source, explain what each source can and cannot show, qualify your judgement and answer a counter-question about how the council could gather broader evidence.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, explain the relationship between sources and qualify the judgement.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A qualified comparative thesis with precise evidence from both sources, source limitations and a practical response about broader consultation. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 11 — Term 1, Week 3 — place, environment and belonging — Oral communication — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Defend a comparative interpretation of how different sources represent authority and community decision-making.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a coherent comparative thesis, integrate evidence from two sources, qualify an interpretation and respond to a counterargument.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Council minutes extract: The village council record states that a committee was appointed to review the shared water schedule. Three proposals were discussed, and the council agreed to trial a revised timetable for one month. The minutes record the decision and attendance but do not include the full discussion or individual reasons for agreement.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+SOURCE B — Resident interview extract: A resident recalls that households with long walking distances asked for earlier collection times. The resident says the trial helped some families but created difficulty for workers who leave home before sunrise. The interview reflects one household's experience and was recorded two weeks after the trial began.
 
-**My analysis / response:**
+**Worked example:** The sources show different kinds of evidence: the minutes establish the formal decision and trial period, while the interview describes an effect on one household. Neither alone establishes whether the schedule worked for all households.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Give a structured comparative response: Did the trial timetable represent a fair decision? Integrate one detail from each source, explain what each source can and cannot show, qualify your judgement and answer a counter-question about how the council could gather broader evidence.
 
-____________________________________________________________________
+**Gold pathway support:** Extend through synthesis, nuanced qualification or a counterargument while retaining the same critical objective.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A qualified comparative thesis with precise evidence from both sources, source limitations and a practical response about broader consultation. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 12 — Term 1, Week 3 — place, environment and belonging — Close reading — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Compare how narrative voice, selection and structure construct contrasting interpretations of collective memory.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse contrasting viewpoints and textual choices across two sources, using precise evidence and explaining the limits of each representation.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Oral-history extract: 'When I think of the old landing, I hear the calls before I see the boats. People waited together, shared food and watched for relatives returning from the outer islands. The landing was more than a place to unload cargo; it was where news arrived.'
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+SOURCE B — Archive catalogue note: 'Landing facility, constructed 1968; repaired 1984; used for passenger and cargo transfer. Records include maintenance schedules, vessel lists and official notices. Personal accounts and informal gatherings are not systematically documented.'
 
-**My analysis / response:**
+**Worked example:** Source A uses first-person sensory memory and a sequence of sounds and actions to foreground lived experience. Source B uses compressed factual catalogue language and dates to foreground institutional history while acknowledging that personal accounts are absent.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Write a comparative close-reading response. Analyse the effect of voice and structure in both sources, explain how each constructs collective memory, and evaluate what is included or excluded. Do not claim either source is automatically more truthful because it is personal or official.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison frame and the worked model. Work through one source at a time; the teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Comparative analysis of voice, register, selection and omission, with balanced evaluation of the evidence each source provides. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 12 — Term 1, Week 3 — place, environment and belonging — Close reading — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Compare how narrative voice, selection and structure construct contrasting interpretations of collective memory.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse contrasting viewpoints and textual choices across two sources, using precise evidence and explaining the limits of each representation.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Oral-history extract: 'When I think of the old landing, I hear the calls before I see the boats. People waited together, shared food and watched for relatives returning from the outer islands. The landing was more than a place to unload cargo; it was where news arrived.'
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+SOURCE B — Archive catalogue note: 'Landing facility, constructed 1968; repaired 1984; used for passenger and cargo transfer. Records include maintenance schedules, vessel lists and official notices. Personal accounts and informal gatherings are not systematically documented.'
 
-**My analysis / response:**
+**Worked example:** Source A uses first-person sensory memory and a sequence of sounds and actions to foreground lived experience. Source B uses compressed factual catalogue language and dates to foreground institutional history while acknowledging that personal accounts are absent.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Write a comparative close-reading response. Analyse the effect of voice and structure in both sources, explain how each constructs collective memory, and evaluate what is included or excluded. Do not claim either source is automatically more truthful because it is personal or official.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as thesis, source evidence, comparison and limitation; reduce prompts gradually.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Comparative analysis of voice, register, selection and omission, with balanced evaluation of the evidence each source provides. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 12 — Term 1, Week 3 — place, environment and belonging — Close reading — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Compare how narrative voice, selection and structure construct contrasting interpretations of collective memory.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse contrasting viewpoints and textual choices across two sources, using precise evidence and explaining the limits of each representation.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Oral-history extract: 'When I think of the old landing, I hear the calls before I see the boats. People waited together, shared food and watched for relatives returning from the outer islands. The landing was more than a place to unload cargo; it was where news arrived.'
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+SOURCE B — Archive catalogue note: 'Landing facility, constructed 1968; repaired 1984; used for passenger and cargo transfer. Records include maintenance schedules, vessel lists and official notices. Personal accounts and informal gatherings are not systematically documented.'
 
-**My analysis / response:**
+**Worked example:** Source A uses first-person sensory memory and a sequence of sounds and actions to foreground lived experience. Source B uses compressed factual catalogue language and dates to foreground institutional history while acknowledging that personal accounts are absent.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Write a comparative close-reading response. Analyse the effect of voice and structure in both sources, explain how each constructs collective memory, and evaluate what is included or excluded. Do not claim either source is automatically more truthful because it is personal or official.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, explain the relationship between sources and qualify the judgement.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Comparative analysis of voice, register, selection and omission, with balanced evaluation of the evidence each source provides. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 12 — Term 1, Week 3 — place, environment and belonging — Close reading — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Compare how narrative voice, selection and structure construct contrasting interpretations of collective memory.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse contrasting viewpoints and textual choices across two sources, using precise evidence and explaining the limits of each representation.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Oral-history extract: 'When I think of the old landing, I hear the calls before I see the boats. People waited together, shared food and watched for relatives returning from the outer islands. The landing was more than a place to unload cargo; it was where news arrived.'
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+SOURCE B — Archive catalogue note: 'Landing facility, constructed 1968; repaired 1984; used for passenger and cargo transfer. Records include maintenance schedules, vessel lists and official notices. Personal accounts and informal gatherings are not systematically documented.'
 
-**My analysis / response:**
+**Worked example:** Source A uses first-person sensory memory and a sequence of sounds and actions to foreground lived experience. Source B uses compressed factual catalogue language and dates to foreground institutional history while acknowledging that personal accounts are absent.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Write a comparative close-reading response. Analyse the effect of voice and structure in both sources, explain how each constructs collective memory, and evaluate what is included or excluded. Do not claim either source is automatically more truthful because it is personal or official.
 
-____________________________________________________________________
+**Gold pathway support:** Extend through synthesis, nuanced qualification or a counterargument while retaining the same critical objective.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Comparative analysis of voice, register, selection and omission, with balanced evaluation of the evidence each source provides. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 13 — Term 1, Week 3 — place, environment and belonging — Vocabulary and language — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate how evaluative, metaphorical and institutional language shapes interpretations of social change.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse language choices and register in linked sources and justify a precise revision that preserves evidence limits.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Opinion column: 'The harbour has become the beating heart of a new economy. Modernisation has unlocked opportunity, but it has also pushed familiar routines to the margins.'
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+SOURCE B — Planning summary: 'The redevelopment increased designated loading capacity and changed pedestrian routes. The summary records projected economic benefits but does not quantify changes in informal trading or daily travel time for nearby households.'
 
-**My analysis / response:**
+**Worked example:** 'Beating heart' is a metaphor that presents the harbour as central and energetic. 'Unlocked opportunity' is positive and evaluative. Source B uses administrative terms and identifies measurable changes, while admitting that some social effects are not quantified.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Analyse the connotations of 'beating heart', 'unlocked opportunity' and 'pushed familiar routines to the margins'. Compare the register of the two sources. Rewrite the opinion column's central claim as a balanced analytical statement that distinguishes documented change from interpretation.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison frame and the worked model. Work through one source at a time; the teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Contextual analysis of metaphor and evaluation, register comparison, and an evidence-calibrated rewrite. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 13 — Term 1, Week 3 — place, environment and belonging — Vocabulary and language — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate how evaluative, metaphorical and institutional language shapes interpretations of social change.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse language choices and register in linked sources and justify a precise revision that preserves evidence limits.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Opinion column: 'The harbour has become the beating heart of a new economy. Modernisation has unlocked opportunity, but it has also pushed familiar routines to the margins.'
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+SOURCE B — Planning summary: 'The redevelopment increased designated loading capacity and changed pedestrian routes. The summary records projected economic benefits but does not quantify changes in informal trading or daily travel time for nearby households.'
 
-**My analysis / response:**
+**Worked example:** 'Beating heart' is a metaphor that presents the harbour as central and energetic. 'Unlocked opportunity' is positive and evaluative. Source B uses administrative terms and identifies measurable changes, while admitting that some social effects are not quantified.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Analyse the connotations of 'beating heart', 'unlocked opportunity' and 'pushed familiar routines to the margins'. Compare the register of the two sources. Rewrite the opinion column's central claim as a balanced analytical statement that distinguishes documented change from interpretation.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as thesis, source evidence, comparison and limitation; reduce prompts gradually.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Contextual analysis of metaphor and evaluation, register comparison, and an evidence-calibrated rewrite. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 13 — Term 1, Week 3 — place, environment and belonging — Vocabulary and language — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate how evaluative, metaphorical and institutional language shapes interpretations of social change.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse language choices and register in linked sources and justify a precise revision that preserves evidence limits.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Opinion column: 'The harbour has become the beating heart of a new economy. Modernisation has unlocked opportunity, but it has also pushed familiar routines to the margins.'
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+SOURCE B — Planning summary: 'The redevelopment increased designated loading capacity and changed pedestrian routes. The summary records projected economic benefits but does not quantify changes in informal trading or daily travel time for nearby households.'
 
-**My analysis / response:**
+**Worked example:** 'Beating heart' is a metaphor that presents the harbour as central and energetic. 'Unlocked opportunity' is positive and evaluative. Source B uses administrative terms and identifies measurable changes, while admitting that some social effects are not quantified.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Analyse the connotations of 'beating heart', 'unlocked opportunity' and 'pushed familiar routines to the margins'. Compare the register of the two sources. Rewrite the opinion column's central claim as a balanced analytical statement that distinguishes documented change from interpretation.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, explain the relationship between sources and qualify the judgement.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Contextual analysis of metaphor and evaluation, register comparison, and an evidence-calibrated rewrite. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 13 — Term 1, Week 3 — place, environment and belonging — Vocabulary and language — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate how evaluative, metaphorical and institutional language shapes interpretations of social change.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse language choices and register in linked sources and justify a precise revision that preserves evidence limits.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Opinion column: 'The harbour has become the beating heart of a new economy. Modernisation has unlocked opportunity, but it has also pushed familiar routines to the margins.'
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+SOURCE B — Planning summary: 'The redevelopment increased designated loading capacity and changed pedestrian routes. The summary records projected economic benefits but does not quantify changes in informal trading or daily travel time for nearby households.'
 
-**My analysis / response:**
+**Worked example:** 'Beating heart' is a metaphor that presents the harbour as central and energetic. 'Unlocked opportunity' is positive and evaluative. Source B uses administrative terms and identifies measurable changes, while admitting that some social effects are not quantified.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Analyse the connotations of 'beating heart', 'unlocked opportunity' and 'pushed familiar routines to the margins'. Compare the register of the two sources. Rewrite the opinion column's central claim as a balanced analytical statement that distinguishes documented change from interpretation.
 
-____________________________________________________________________
+**Gold pathway support:** Extend through synthesis, nuanced qualification or a counterargument while retaining the same critical objective.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Contextual analysis of metaphor and evaluation, register comparison, and an evidence-calibrated rewrite. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 14 — Term 1, Week 3 — place, environment and belonging — Critical literacy — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate how evidence selection, institutional interests and missing perspectives shape competing accounts of development.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare source claims, evidence quality, interests and omissions; distinguish established facts from projections and identify further evidence required.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Port authority statement: 'The new passenger terminal is expected to reduce boarding delays and improve visitor services. The project includes a covered waiting area and a revised traffic plan.' The statement provides projected benefits but no before-and-after waiting-time data.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+SOURCE B — Transport users' submission: 'Some passengers report that the new route adds walking distance, especially for people carrying goods or using mobility aids. The submission asks for shaded rest points and a review of drop-off access.' It includes three short accounts but no full passenger survey or route measurements.
 
-**My analysis / response:**
+**Worked example:** The authority statement identifies design features and expected benefits, but the outcome is not yet measured. The submission identifies access concerns from some users, but three accounts cannot establish the experience of all passengers. Route measurements and a broader user study are needed.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Evaluate both sources. Identify their likely purposes, strongest evidence, limitations and missing perspectives. Separate projected outcomes from observed experiences. Recommend four pieces of evidence needed for a fair evaluation of the terminal's effects.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison frame and the worked model. Work through one source at a time; the teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced source evaluation that distinguishes projections from measured outcomes, recognises sample limitations and proposes relevant further evidence. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 14 — Term 1, Week 3 — place, environment and belonging — Critical literacy — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate how evidence selection, institutional interests and missing perspectives shape competing accounts of development.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare source claims, evidence quality, interests and omissions; distinguish established facts from projections and identify further evidence required.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Port authority statement: 'The new passenger terminal is expected to reduce boarding delays and improve visitor services. The project includes a covered waiting area and a revised traffic plan.' The statement provides projected benefits but no before-and-after waiting-time data.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+SOURCE B — Transport users' submission: 'Some passengers report that the new route adds walking distance, especially for people carrying goods or using mobility aids. The submission asks for shaded rest points and a review of drop-off access.' It includes three short accounts but no full passenger survey or route measurements.
 
-**My analysis / response:**
+**Worked example:** The authority statement identifies design features and expected benefits, but the outcome is not yet measured. The submission identifies access concerns from some users, but three accounts cannot establish the experience of all passengers. Route measurements and a broader user study are needed.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Evaluate both sources. Identify their likely purposes, strongest evidence, limitations and missing perspectives. Separate projected outcomes from observed experiences. Recommend four pieces of evidence needed for a fair evaluation of the terminal's effects.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as thesis, source evidence, comparison and limitation; reduce prompts gradually.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced source evaluation that distinguishes projections from measured outcomes, recognises sample limitations and proposes relevant further evidence. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 14 — Term 1, Week 3 — place, environment and belonging — Critical literacy — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate how evidence selection, institutional interests and missing perspectives shape competing accounts of development.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare source claims, evidence quality, interests and omissions; distinguish established facts from projections and identify further evidence required.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Port authority statement: 'The new passenger terminal is expected to reduce boarding delays and improve visitor services. The project includes a covered waiting area and a revised traffic plan.' The statement provides projected benefits but no before-and-after waiting-time data.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+SOURCE B — Transport users' submission: 'Some passengers report that the new route adds walking distance, especially for people carrying goods or using mobility aids. The submission asks for shaded rest points and a review of drop-off access.' It includes three short accounts but no full passenger survey or route measurements.
 
-**My analysis / response:**
+**Worked example:** The authority statement identifies design features and expected benefits, but the outcome is not yet measured. The submission identifies access concerns from some users, but three accounts cannot establish the experience of all passengers. Route measurements and a broader user study are needed.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Evaluate both sources. Identify their likely purposes, strongest evidence, limitations and missing perspectives. Separate projected outcomes from observed experiences. Recommend four pieces of evidence needed for a fair evaluation of the terminal's effects.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, explain the relationship between sources and qualify the judgement.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced source evaluation that distinguishes projections from measured outcomes, recognises sample limitations and proposes relevant further evidence. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 14 — Term 1, Week 3 — place, environment and belonging — Critical literacy — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate how evidence selection, institutional interests and missing perspectives shape competing accounts of development.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare source claims, evidence quality, interests and omissions; distinguish established facts from projections and identify further evidence required.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Port authority statement: 'The new passenger terminal is expected to reduce boarding delays and improve visitor services. The project includes a covered waiting area and a revised traffic plan.' The statement provides projected benefits but no before-and-after waiting-time data.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+SOURCE B — Transport users' submission: 'Some passengers report that the new route adds walking distance, especially for people carrying goods or using mobility aids. The submission asks for shaded rest points and a review of drop-off access.' It includes three short accounts but no full passenger survey or route measurements.
 
-**My analysis / response:**
+**Worked example:** The authority statement identifies design features and expected benefits, but the outcome is not yet measured. The submission identifies access concerns from some users, but three accounts cannot establish the experience of all passengers. Route measurements and a broader user study are needed.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Evaluate both sources. Identify their likely purposes, strongest evidence, limitations and missing perspectives. Separate projected outcomes from observed experiences. Recommend four pieces of evidence needed for a fair evaluation of the terminal's effects.
 
-____________________________________________________________________
+**Gold pathway support:** Extend through synthesis, nuanced qualification or a counterargument while retaining the same critical objective.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced source evaluation that distinguishes projections from measured outcomes, recognises sample limitations and proposes relevant further evidence. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 15 — Term 1, Week 3 — place, environment and belonging — Writing and shaping — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Construct a sustained critical essay comparing interpretations of development, access and community experience.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a cohesive comparative essay with a defensible thesis, integrated evidence, source evaluation, counterargument and reasoned conclusion.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Community forum summary: Participants welcomed improved visitor facilities but asked that transport changes not make the terminal harder to reach for market vendors, older passengers or people using mobility aids. The summary records recurring concerns but notes that attendance was voluntary and not all user groups were represented.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+SOURCE B — Project review note: The terminal plan includes a covered waiting area and revised traffic routes. The review recommends measuring boarding times, walking distances and user satisfaction after opening. It does not yet contain post-opening results.
 
-**My analysis / response:**
+**Worked example:** A defensible thesis may argue that the project has potential benefits but its success cannot be judged without access and outcome data. Source A records concerns from attendees but is not a complete survey; Source B describes intended features and future measures, not proven outcomes.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Write a sustained critical essay comparing the interpretations in both sources. Establish a thesis, integrate at least two details from each source, evaluate the sources' limitations, address a counterargument and conclude what evidence should determine whether the development has succeeded.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison frame and the worked model. Work through one source at a time; the teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained comparative essay with a clear thesis, integrated evidence, source evaluation, counterargument and reasoned conclusion. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 15 — Term 1, Week 3 — place, environment and belonging — Writing and shaping — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Construct a sustained critical essay comparing interpretations of development, access and community experience.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a cohesive comparative essay with a defensible thesis, integrated evidence, source evaluation, counterargument and reasoned conclusion.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Community forum summary: Participants welcomed improved visitor facilities but asked that transport changes not make the terminal harder to reach for market vendors, older passengers or people using mobility aids. The summary records recurring concerns but notes that attendance was voluntary and not all user groups were represented.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+SOURCE B — Project review note: The terminal plan includes a covered waiting area and revised traffic routes. The review recommends measuring boarding times, walking distances and user satisfaction after opening. It does not yet contain post-opening results.
 
-**My analysis / response:**
+**Worked example:** A defensible thesis may argue that the project has potential benefits but its success cannot be judged without access and outcome data. Source A records concerns from attendees but is not a complete survey; Source B describes intended features and future measures, not proven outcomes.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Write a sustained critical essay comparing the interpretations in both sources. Establish a thesis, integrate at least two details from each source, evaluate the sources' limitations, address a counterargument and conclude what evidence should determine whether the development has succeeded.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as thesis, source evidence, comparison and limitation; reduce prompts gradually.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained comparative essay with a clear thesis, integrated evidence, source evaluation, counterargument and reasoned conclusion. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 15 — Term 1, Week 3 — place, environment and belonging — Writing and shaping — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Construct a sustained critical essay comparing interpretations of development, access and community experience.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a cohesive comparative essay with a defensible thesis, integrated evidence, source evaluation, counterargument and reasoned conclusion.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Community forum summary: Participants welcomed improved visitor facilities but asked that transport changes not make the terminal harder to reach for market vendors, older passengers or people using mobility aids. The summary records recurring concerns but notes that attendance was voluntary and not all user groups were represented.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+SOURCE B — Project review note: The terminal plan includes a covered waiting area and revised traffic routes. The review recommends measuring boarding times, walking distances and user satisfaction after opening. It does not yet contain post-opening results.
 
-**My analysis / response:**
+**Worked example:** A defensible thesis may argue that the project has potential benefits but its success cannot be judged without access and outcome data. Source A records concerns from attendees but is not a complete survey; Source B describes intended features and future measures, not proven outcomes.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Write a sustained critical essay comparing the interpretations in both sources. Establish a thesis, integrate at least two details from each source, evaluate the sources' limitations, address a counterargument and conclude what evidence should determine whether the development has succeeded.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, explain the relationship between sources and qualify the judgement.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained comparative essay with a clear thesis, integrated evidence, source evaluation, counterargument and reasoned conclusion. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ---
 
 ## Day 15 — Term 1, Week 3 — place, environment and belonging — Writing and shaping — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 6  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Construct a sustained critical essay comparing interpretations of development, access and community experience.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a cohesive comparative essay with a defensible thesis, integrated evidence, source evaluation, counterargument and reasoned conclusion.
 
-**Task:** 
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** 
+SOURCE A — Community forum summary: Participants welcomed improved visitor facilities but asked that transport changes not make the terminal harder to reach for market vendors, older passengers or people using mobility aids. The summary records recurring concerns but notes that attendance was voluntary and not all user groups were represented.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+SOURCE B — Project review note: The terminal plan includes a covered waiting area and revised traffic routes. The review recommends measuring boarding times, walking distances and user satisfaction after opening. It does not yet contain post-opening results.
 
-**My analysis / response:**
+**Worked example:** A defensible thesis may argue that the project has potential benefits but its success cannot be judged without access and outcome data. Source A records concerns from attendees but is not a complete survey; Source B describes intended features and future measures, not proven outcomes.
 
-____________________________________________________________________
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central claim or perspective.
+2. **Understand:** Explain each source's purpose and one important detail.
+3. **Apply:** Use the worked example's comparative method on the sources.
+4. **Analyse:** Explain how source form, language or selection shapes interpretation.
+5. **Evaluate:** Judge evidence quality, omissions and limitations.
+6. **Create:** Present a coherent critical comparison for the stated audience.
 
-____________________________________________________________________
+**Your task:** Write a sustained critical essay comparing the interpretations in both sources. Establish a thesis, integrate at least two details from each source, evaluate the sources' limitations, address a counterargument and conclude what evidence should determine whether the development has succeeded.
 
-____________________________________________________________________
+**Gold pathway support:** Extend through synthesis, nuanced qualification or a counterargument while retaining the same critical objective.
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+**My comparative analysis / response:**
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained comparative essay with a clear thesis, integrated evidence, source evaluation, counterargument and reasoned conclusion. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I compared their perspectives ☐ I evaluated limitations ☐ My conclusion follows from evidence
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
----
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 6 cohort outcome, syllabus title, edition, page, prescribed text expectations and assessment specification.
 
 ## Day 16 — Term 1, Week 4 — power, voice and representation — Oral communication — Copper Worksheet
 
