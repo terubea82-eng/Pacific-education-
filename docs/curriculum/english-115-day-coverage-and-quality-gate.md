@@ -37,6 +37,12 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 - The inspected printable worksheet bodies have empty fields for learning intention, working indicator, task and worked example. The matching daily activity plans contain usable teacher-led activities, worked examples, pathway scaffolds, evidence, marking guidance and next steps.
 - These worksheet bodies are **NOT READY**. Rebuild each learner worksheet from its matching daily activity and add the full learner stimulus/text, task steps, answer space and accessible response methods.
 
+### Form 2 (Year 8) — first reviewed coverage batch
+- Form 2 has 460 worksheet pages (115 per pathway) and all pages passed a repository-side field-presence check. This confirms structure and required fields, not the independent accuracy of every answer or official curriculum alignment.
+- The Week 1 teacher marking guide is separate and linked from the English Subject Box; Days 6–115 still need a detailed teacher guide and educator review.
+
+[Form 2 (Year 8) Week 1 teacher marking guide](english-form2-teacher-guide-days-1-5.md)
+
 ### Class 8 — first learner-ready batch
 - Days 1–5 have been rebuilt as 20 standalone learner worksheets (five days × Copper/Bronze/Silver/Gold), each with learner identification fields, its own complete passage, learning intention, working indicator, worked example, pathway support, task, answer space, accessible response options and evidence prompt.
 - A separate Week 1 teacher marking guide is linked from the English Subject Box.
@@ -49,7 +55,13 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 - The inspected printable worksheet bodies also have empty learning-intention, indicator, task and worked-example fields.
 - These worksheet bodies are **NOT READY**. Rebuild from the level-specific daily activity plans, using the correct senior-secondary demand and the school's authorised syllabus.
 
-### Forms 1, 2, 3 and 7
+### Form 2 (Year 8) — worksheet coverage checked
+- Repository-side blob inspection confirms 460 worksheet pages: 115 each for Copper, Bronze, Silver and Gold.
+- All 460 pages contain learner identification, the learning goal, a complete passage, worked example, questions, answer spaces, final check and pending teacher-review status.
+- Days 1–5 are additionally checked as 20 standalone worksheets; a separate Week 1 marking guide has been added and linked from the English Subject Box.
+- A detailed teacher marking guide for Days 6–115 and Fiji educator/source review remain outstanding.
+
+### Forms 1, 3 and 7
 - Separate 115-day printable source/viewer entries are staged.
 - Detailed per-day content still requires complete repository-side verification and educator review. Form 1 = Year 7 and Form 2 = Year 8 in the owner's level mapping. Do not use the 2014 Years 9–10 syllabus for those levels.
 - Do not mark these packs final until every day's four worksheets and marking guidance have been inspected.
