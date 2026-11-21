@@ -52,8 +52,8 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 
 ### Forms 4–6
 - 460 pathway headings per level are present.
-- The inspected printable worksheet bodies also have empty learning-intention, indicator, task and worked-example fields.
-- These worksheet bodies are **NOT READY**. Rebuild from the level-specific daily activity plans, using the correct senior-secondary demand and the school's authorised syllabus.
+- Form 4 Days 1–5 have now been rebuilt as 20 standalone pages with original complete stimuli, developed tasks, answer spaces, accessibility options and a separate Week 1 teacher marking guide.
+- Form 4 Days 6–115 and Forms 5–6 remain incomplete/require detailed standalone worksheet rebuilding and matching marking guides. Use the correct senior-secondary demand and each school's authorised syllabus.
 
 ### Forms 2–3 — worksheet coverage checked
 - Form 3 contains 460 pathway pages (115 per pathway). Repository-side inspection confirmed the first 20 pages (Days 1–5) are standalone and include learner details, learning intention, working indicator, complete original stimulus, worked example, task, response space, accessible response methods and pending review status.
@@ -61,6 +61,13 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 - Form 3 Days 6–115 still need standalone stimulus review and detailed teacher marking guides. Its syllabus cohort, prescribed texts and assessment criteria remain subject to official verification.
 
 [Form 3 Week 1 teacher marking guide](english-form3-teacher-guide-days-1-5.md)
+
+### Form 4 — first standalone batch
+- Form 4 has 460 pathway worksheet headings (115 per pathway). Days 1–5 have been rebuilt and repository-side checked as 20 standalone pages, each with its own stimulus, learning intention, working indicator, worked example, task, answer space, accessible response methods and pending review status.
+- Added a separate Week 1 teacher marking guide and linked it from the English Subject Box.
+- Days 6–115 still need the same detailed rebuild. The current Form 4 syllabus cohort, prescribed texts and assessment criteria require official verification.
+
+[Form 4 Week 1 teacher marking guide](english-form4-teacher-guide-days-1-5.md)
 
 ### Form 2 (Year 8) — worksheet coverage checked
 - Repository-side blob inspection confirms 460 worksheet pages: 115 each for Copper, Bronze, Silver and Gold.
