@@ -1,653 +1,1066 @@
 # PacEdu English Subject Box — Form 4 Printable Worksheets (Days 1–115)
 
-**Status:** ORIGINAL PACEDU DRAFT — `PENDING_TEACHER_REVIEW` — `PENDING_OFFICIAL_INDICATOR_VERIFICATION`. Not a Ministry-issued or examination-authorized worksheet pack.
+**Status:** ORIGINAL PACEDU DRAFT — PENDING_TEACHER_REVIEW — PENDING_OFFICIAL_INDICATOR_VERIFICATION. Not a Ministry-issued or examination-authorized worksheet pack.
 
-**Secondary safeguard:** Confirm the current authorized Form 4 syllabus, cohort, prescribed texts, assessment specifications and criteria separately. Forms 5–7 must not be treated as Forms 3–4.
+**Secondary safeguard:** Confirm the current authorized Form 4 cohort syllabus, prescribed texts, assessment specifications and criteria separately. These original practice stimuli are not prescribed texts. Forms 5–7 must not be treated as Forms 3–4.
 
-**Printing:** Each day has four separate pathway versions. Print only the selected learner's version. Physical Android Chrome print preview must confirm one selected worksheet per page.
-
+**Printing:** Each day has four standalone pathway versions. Every page repeats its own complete stimulus and task. Confirm one selected worksheet per page in Android Chrome.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity, language and society — Oral communication — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend a developed interpretation using purposeful evidence, explanation and a response to a counterargument.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Deliver a coherent argument with a clear position, two or more relevant details, developed explanation and a reasoned response to a counter-question.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+> At the district youth forum, participants considered whether public notices should be published in several community languages. Mere argued that translation could widen participation because families would be more likely to understand meeting times, health updates and school information. She added that translation must be checked, since a poorly translated safety instruction could mislead readers. Ratu supported the proposal but warned that the district had limited staff and could not translate every message immediately. The forum proposed prioritising urgent and high-impact notices, using trained reviewers and inviting community feedback. The chair concluded that access and accuracy were shared responsibilities, not competing goals.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Worked example:** Position: high-impact public notices should be translated into relevant community languages. Evidence: families may better understand school and health information; inaccurate safety translations could cause harm. Qualification: limited staff means prioritising urgent notices. Conclusion: access must be planned alongside quality control.
+
+**Your task:** Prompt: Should the district prioritise translating important public notices? Present a structured response with a position, at least two details, developed reasoning and a reasoned response to the counterargument about limited staff.
+
+**Copper pathway support:** Use the annotated model, vocabulary gloss and short steps. The teacher may read the stimulus aloud and offer a paragraph frame, evidence locator or guided choices. Complete one supported analytical move; oral, signed, AAC, dictated or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A coherent argument with evidence, explanation, qualification or counterargument, and a clear conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity, language and society — Oral communication — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend a developed interpretation using purposeful evidence, explanation and a response to a counterargument.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Deliver a coherent argument with a clear position, two or more relevant details, developed explanation and a reasoned response to a counter-question.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+> At the district youth forum, participants considered whether public notices should be published in several community languages. Mere argued that translation could widen participation because families would be more likely to understand meeting times, health updates and school information. She added that translation must be checked, since a poorly translated safety instruction could mislead readers. Ratu supported the proposal but warned that the district had limited staff and could not translate every message immediately. The forum proposed prioritising urgent and high-impact notices, using trained reviewers and inviting community feedback. The chair concluded that access and accuracy were shared responsibilities, not competing goals.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Worked example:** Position: high-impact public notices should be translated into relevant community languages. Evidence: families may better understand school and health information; inaccurate safety translations could cause harm. Qualification: limited staff means prioritising urgent notices. Conclusion: access must be planned alongside quality control.
+
+**Your task:** Prompt: Should the district prioritise translating important public notices? Present a structured response with a position, at least two details, developed reasoning and a reasoned response to the counterargument about limited staff.
+
+**Bronze pathway support:** Use the paragraph frame and evidence locator. Select relevant details first, then explain how they support your position. Reduce prompts after the first part.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A coherent argument with evidence, explanation, qualification or counterargument, and a clear conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity, language and society — Oral communication — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend a developed interpretation using purposeful evidence, explanation and a response to a counterargument.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Deliver a coherent argument with a clear position, two or more relevant details, developed explanation and a reasoned response to a counter-question.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+> At the district youth forum, participants considered whether public notices should be published in several community languages. Mere argued that translation could widen participation because families would be more likely to understand meeting times, health updates and school information. She added that translation must be checked, since a poorly translated safety instruction could mislead readers. Ratu supported the proposal but warned that the district had limited staff and could not translate every message immediately. The forum proposed prioritising urgent and high-impact notices, using trained reviewers and inviting community feedback. The chair concluded that access and accuracy were shared responsibilities, not competing goals.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Worked example:** Position: high-impact public notices should be translated into relevant community languages. Evidence: families may better understand school and health information; inaccurate safety translations could cause harm. Qualification: limited staff means prioritising urgent notices. Conclusion: access must be planned alongside quality control.
+
+**Your task:** Prompt: Should the district prioritise translating important public notices? Present a structured response with a position, at least two details, developed reasoning and a reasoned response to the counterargument about limited staff.
+
+**Silver pathway support:** Complete the developed response independently. Use precise evidence, explain its significance and check the coherence of your argument.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A coherent argument with evidence, explanation, qualification or counterargument, and a clear conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity, language and society — Oral communication — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend a developed interpretation using purposeful evidence, explanation and a response to a counterargument.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Deliver a coherent argument with a clear position, two or more relevant details, developed explanation and a reasoned response to a counter-question.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+> At the district youth forum, participants considered whether public notices should be published in several community languages. Mere argued that translation could widen participation because families would be more likely to understand meeting times, health updates and school information. She added that translation must be checked, since a poorly translated safety instruction could mislead readers. Ratu supported the proposal but warned that the district had limited staff and could not translate every message immediately. The forum proposed prioritising urgent and high-impact notices, using trained reviewers and inviting community feedback. The chair concluded that access and accuracy were shared responsibilities, not competing goals.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Worked example:** Position: high-impact public notices should be translated into relevant community languages. Evidence: families may better understand school and health information; inaccurate safety translations could cause harm. Qualification: limited staff means prioritising urgent notices. Conclusion: access must be planned alongside quality control.
+
+**Your task:** Prompt: Should the district prioritise translating important public notices? Present a structured response with a position, at least two details, developed reasoning and a reasoned response to the counterargument about limited staff.
+
+**Gold pathway support:** Complete the same task and extend it through qualification, synthesis, counterargument or evaluation of evidence limitations. Do not replace the shared objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A coherent argument with evidence, explanation, qualification or counterargument, and a clear conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 2 — Term 1, Week 1 — identity, language and society — Close reading — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how structure, imagery and viewpoint shape meaning in a developed literary or non-fiction text.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop an interpretation supported by precise textual details and explain how structural or language choices influence meaning.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+> When the council announced a new coastal walkway, the first notice described it as a path for everyone. The second paragraph, however, listed only the benefits for visitors: wider views, easier access to the market and more places to take photographs. It said little about the families whose homes stood beside the proposed route. At the consultation, one resident asked whether the walkway would affect access to fishing areas. The project officer replied that the design was still being reviewed. The notice ended with the phrase, 'A better coast for all.' The words sounded generous, but the unanswered question remained beside the drawing on the wall. A promise can invite hope; it can also make readers ask whose experience has not yet been included.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Worked example:** Interpretation: the writer questions whether the phrase 'for all' is supported by the consultation process. Evidence: the notice lists visitor benefits but says little about nearby families; a resident's question about fishing access remains unanswered. The final contrast makes the reader question the broad promise.
+
+**Your task:** 1. Develop an interpretation of the final sentence. 2. Select two precise details that support it. 3. Explain how the contrast between the broad promise and the unanswered question shapes the reader's response. 4. Consider one alternative interpretation and explain why your reading is stronger.
+
+**Copper pathway support:** Use the annotated model, vocabulary gloss and short steps. The teacher may read the stimulus aloud and offer a paragraph frame, evidence locator or guided choices. Complete one supported analytical move; oral, signed, AAC, dictated or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A developed interpretation, precise textual evidence, analysis of contrast/structure and a reasoned alternative reading. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 2 — Term 1, Week 1 — identity, language and society — Close reading — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how structure, imagery and viewpoint shape meaning in a developed literary or non-fiction text.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop an interpretation supported by precise textual details and explain how structural or language choices influence meaning.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+> When the council announced a new coastal walkway, the first notice described it as a path for everyone. The second paragraph, however, listed only the benefits for visitors: wider views, easier access to the market and more places to take photographs. It said little about the families whose homes stood beside the proposed route. At the consultation, one resident asked whether the walkway would affect access to fishing areas. The project officer replied that the design was still being reviewed. The notice ended with the phrase, 'A better coast for all.' The words sounded generous, but the unanswered question remained beside the drawing on the wall. A promise can invite hope; it can also make readers ask whose experience has not yet been included.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Worked example:** Interpretation: the writer questions whether the phrase 'for all' is supported by the consultation process. Evidence: the notice lists visitor benefits but says little about nearby families; a resident's question about fishing access remains unanswered. The final contrast makes the reader question the broad promise.
+
+**Your task:** 1. Develop an interpretation of the final sentence. 2. Select two precise details that support it. 3. Explain how the contrast between the broad promise and the unanswered question shapes the reader's response. 4. Consider one alternative interpretation and explain why your reading is stronger.
+
+**Bronze pathway support:** Use the paragraph frame and evidence locator. Select relevant details first, then explain how they support your position. Reduce prompts after the first part.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A developed interpretation, precise textual evidence, analysis of contrast/structure and a reasoned alternative reading. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 2 — Term 1, Week 1 — identity, language and society — Close reading — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how structure, imagery and viewpoint shape meaning in a developed literary or non-fiction text.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop an interpretation supported by precise textual details and explain how structural or language choices influence meaning.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+> When the council announced a new coastal walkway, the first notice described it as a path for everyone. The second paragraph, however, listed only the benefits for visitors: wider views, easier access to the market and more places to take photographs. It said little about the families whose homes stood beside the proposed route. At the consultation, one resident asked whether the walkway would affect access to fishing areas. The project officer replied that the design was still being reviewed. The notice ended with the phrase, 'A better coast for all.' The words sounded generous, but the unanswered question remained beside the drawing on the wall. A promise can invite hope; it can also make readers ask whose experience has not yet been included.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Worked example:** Interpretation: the writer questions whether the phrase 'for all' is supported by the consultation process. Evidence: the notice lists visitor benefits but says little about nearby families; a resident's question about fishing access remains unanswered. The final contrast makes the reader question the broad promise.
+
+**Your task:** 1. Develop an interpretation of the final sentence. 2. Select two precise details that support it. 3. Explain how the contrast between the broad promise and the unanswered question shapes the reader's response. 4. Consider one alternative interpretation and explain why your reading is stronger.
+
+**Silver pathway support:** Complete the developed response independently. Use precise evidence, explain its significance and check the coherence of your argument.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A developed interpretation, precise textual evidence, analysis of contrast/structure and a reasoned alternative reading. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 2 — Term 1, Week 1 — identity, language and society — Close reading — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how structure, imagery and viewpoint shape meaning in a developed literary or non-fiction text.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop an interpretation supported by precise textual details and explain how structural or language choices influence meaning.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+> When the council announced a new coastal walkway, the first notice described it as a path for everyone. The second paragraph, however, listed only the benefits for visitors: wider views, easier access to the market and more places to take photographs. It said little about the families whose homes stood beside the proposed route. At the consultation, one resident asked whether the walkway would affect access to fishing areas. The project officer replied that the design was still being reviewed. The notice ended with the phrase, 'A better coast for all.' The words sounded generous, but the unanswered question remained beside the drawing on the wall. A promise can invite hope; it can also make readers ask whose experience has not yet been included.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Worked example:** Interpretation: the writer questions whether the phrase 'for all' is supported by the consultation process. Evidence: the notice lists visitor benefits but says little about nearby families; a resident's question about fishing access remains unanswered. The final contrast makes the reader question the broad promise.
+
+**Your task:** 1. Develop an interpretation of the final sentence. 2. Select two precise details that support it. 3. Explain how the contrast between the broad promise and the unanswered question shapes the reader's response. 4. Consider one alternative interpretation and explain why your reading is stronger.
+
+**Gold pathway support:** Complete the same task and extend it through qualification, synthesis, counterargument or evaluation of evidence limitations. Do not replace the shared objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A developed interpretation, precise textual evidence, analysis of contrast/structure and a reasoned alternative reading. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 3 — Term 1, Week 1 — identity, language and society — Vocabulary and language — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how register, syntax and rhetorical choices influence audience and purpose.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Explain the connotations and effects of three language choices and justify revisions for a specified audience.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+> The campaign brochure called the proposed walkway a 'transformative investment'. The phrase suggested major improvement, although the brochure offered no cost comparison. It described nearby residents as 'stakeholders', a formal term that could make personal concerns sound like items in a project list. In a later section, the brochure stated, 'The community will benefit.' The confident sentence did not identify which community members would benefit or how. A more precise report would name the expected benefits, explain who may experience them and acknowledge any unresolved concerns.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Worked example:** 'Transformative' suggests a major positive change. 'Stakeholders' is formal and may distance the reader from individual residents. 'The community will benefit' is broad because it does not identify who benefits or provide evidence.
+
+**Your task:** 1. Analyse the connotations of 'transformative'. 2. Explain the effect of calling residents 'stakeholders'. 3. Evaluate the sentence 'The community will benefit'. 4. Rewrite one sentence for a balanced public report and justify your register and word choices.
+
+**Copper pathway support:** Use the annotated model, vocabulary gloss and short steps. The teacher may read the stimulus aloud and offer a paragraph frame, evidence locator or guided choices. Complete one supported analytical move; oral, signed, AAC, dictated or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Precise analysis of connotation, register, vagueness and audience effect, with justified revisions. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 3 — Term 1, Week 1 — identity, language and society — Vocabulary and language — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how register, syntax and rhetorical choices influence audience and purpose.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Explain the connotations and effects of three language choices and justify revisions for a specified audience.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+> The campaign brochure called the proposed walkway a 'transformative investment'. The phrase suggested major improvement, although the brochure offered no cost comparison. It described nearby residents as 'stakeholders', a formal term that could make personal concerns sound like items in a project list. In a later section, the brochure stated, 'The community will benefit.' The confident sentence did not identify which community members would benefit or how. A more precise report would name the expected benefits, explain who may experience them and acknowledge any unresolved concerns.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Worked example:** 'Transformative' suggests a major positive change. 'Stakeholders' is formal and may distance the reader from individual residents. 'The community will benefit' is broad because it does not identify who benefits or provide evidence.
+
+**Your task:** 1. Analyse the connotations of 'transformative'. 2. Explain the effect of calling residents 'stakeholders'. 3. Evaluate the sentence 'The community will benefit'. 4. Rewrite one sentence for a balanced public report and justify your register and word choices.
+
+**Bronze pathway support:** Use the paragraph frame and evidence locator. Select relevant details first, then explain how they support your position. Reduce prompts after the first part.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Precise analysis of connotation, register, vagueness and audience effect, with justified revisions. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 3 — Term 1, Week 1 — identity, language and society — Vocabulary and language — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how register, syntax and rhetorical choices influence audience and purpose.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Explain the connotations and effects of three language choices and justify revisions for a specified audience.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+> The campaign brochure called the proposed walkway a 'transformative investment'. The phrase suggested major improvement, although the brochure offered no cost comparison. It described nearby residents as 'stakeholders', a formal term that could make personal concerns sound like items in a project list. In a later section, the brochure stated, 'The community will benefit.' The confident sentence did not identify which community members would benefit or how. A more precise report would name the expected benefits, explain who may experience them and acknowledge any unresolved concerns.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Worked example:** 'Transformative' suggests a major positive change. 'Stakeholders' is formal and may distance the reader from individual residents. 'The community will benefit' is broad because it does not identify who benefits or provide evidence.
+
+**Your task:** 1. Analyse the connotations of 'transformative'. 2. Explain the effect of calling residents 'stakeholders'. 3. Evaluate the sentence 'The community will benefit'. 4. Rewrite one sentence for a balanced public report and justify your register and word choices.
+
+**Silver pathway support:** Complete the developed response independently. Use precise evidence, explain its significance and check the coherence of your argument.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Precise analysis of connotation, register, vagueness and audience effect, with justified revisions. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 3 — Term 1, Week 1 — identity, language and society — Vocabulary and language — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how register, syntax and rhetorical choices influence audience and purpose.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Explain the connotations and effects of three language choices and justify revisions for a specified audience.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+> The campaign brochure called the proposed walkway a 'transformative investment'. The phrase suggested major improvement, although the brochure offered no cost comparison. It described nearby residents as 'stakeholders', a formal term that could make personal concerns sound like items in a project list. In a later section, the brochure stated, 'The community will benefit.' The confident sentence did not identify which community members would benefit or how. A more precise report would name the expected benefits, explain who may experience them and acknowledge any unresolved concerns.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Worked example:** 'Transformative' suggests a major positive change. 'Stakeholders' is formal and may distance the reader from individual residents. 'The community will benefit' is broad because it does not identify who benefits or provide evidence.
+
+**Your task:** 1. Analyse the connotations of 'transformative'. 2. Explain the effect of calling residents 'stakeholders'. 3. Evaluate the sentence 'The community will benefit'. 4. Rewrite one sentence for a balanced public report and justify your register and word choices.
+
+**Gold pathway support:** Complete the same task and extend it through qualification, synthesis, counterargument or evaluation of evidence limitations. Do not replace the shared objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Precise analysis of connotation, register, vagueness and audience effect, with justified revisions. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 4 — Term 1, Week 1 — identity, language and society — Critical literacy — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate competing perspectives, evidence quality and omissions in public information.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare two sources, identify claims and omissions, assess evidence quality and justify a conclusion with qualification.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+SOURCE A — District project summary: The proposed walkway is intended to improve pedestrian access to the market and create a safer route. The summary identifies the project office and states that the final design is under review. It does not include the completed environmental assessment.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+SOURCE B — Anonymous social post: The walkway will definitely remove every fishing access point and the council has already approved the final route. The post includes no document, date or named source.
+
+> A public meeting record confirms that fishing access was raised as a concern and that the design review is continuing. The record does not confirm that any access point will be removed.
+
+**Worked example:** Source A is more accountable because it identifies the project office and admits that the design is still under review. Source B makes definite claims without a named source. The meeting record confirms that access was discussed, but it does not prove that access will be removed.
+
+**Your task:** 1. Identify the main claim in each source. 2. Compare source accountability and evidence. 3. Identify one important omission in Source A. 4. Explain what the meeting record does and does not establish. 5. Write a qualified conclusion.
+
+**Copper pathway support:** Use the annotated model, vocabulary gloss and short steps. The teacher may read the stimulus aloud and offer a paragraph frame, evidence locator or guided choices. Complete one supported analytical move; oral, signed, AAC, dictated or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced comparison of claims, reliability, omission and limits of evidence; avoids treating an unresolved issue as a confirmed fact. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 4 — Term 1, Week 1 — identity, language and society — Critical literacy — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate competing perspectives, evidence quality and omissions in public information.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare two sources, identify claims and omissions, assess evidence quality and justify a conclusion with qualification.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+SOURCE A — District project summary: The proposed walkway is intended to improve pedestrian access to the market and create a safer route. The summary identifies the project office and states that the final design is under review. It does not include the completed environmental assessment.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+SOURCE B — Anonymous social post: The walkway will definitely remove every fishing access point and the council has already approved the final route. The post includes no document, date or named source.
+
+> A public meeting record confirms that fishing access was raised as a concern and that the design review is continuing. The record does not confirm that any access point will be removed.
+
+**Worked example:** Source A is more accountable because it identifies the project office and admits that the design is still under review. Source B makes definite claims without a named source. The meeting record confirms that access was discussed, but it does not prove that access will be removed.
+
+**Your task:** 1. Identify the main claim in each source. 2. Compare source accountability and evidence. 3. Identify one important omission in Source A. 4. Explain what the meeting record does and does not establish. 5. Write a qualified conclusion.
+
+**Bronze pathway support:** Use the paragraph frame and evidence locator. Select relevant details first, then explain how they support your position. Reduce prompts after the first part.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced comparison of claims, reliability, omission and limits of evidence; avoids treating an unresolved issue as a confirmed fact. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 4 — Term 1, Week 1 — identity, language and society — Critical literacy — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate competing perspectives, evidence quality and omissions in public information.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare two sources, identify claims and omissions, assess evidence quality and justify a conclusion with qualification.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+SOURCE A — District project summary: The proposed walkway is intended to improve pedestrian access to the market and create a safer route. The summary identifies the project office and states that the final design is under review. It does not include the completed environmental assessment.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+SOURCE B — Anonymous social post: The walkway will definitely remove every fishing access point and the council has already approved the final route. The post includes no document, date or named source.
+
+> A public meeting record confirms that fishing access was raised as a concern and that the design review is continuing. The record does not confirm that any access point will be removed.
+
+**Worked example:** Source A is more accountable because it identifies the project office and admits that the design is still under review. Source B makes definite claims without a named source. The meeting record confirms that access was discussed, but it does not prove that access will be removed.
+
+**Your task:** 1. Identify the main claim in each source. 2. Compare source accountability and evidence. 3. Identify one important omission in Source A. 4. Explain what the meeting record does and does not establish. 5. Write a qualified conclusion.
+
+**Silver pathway support:** Complete the developed response independently. Use precise evidence, explain its significance and check the coherence of your argument.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced comparison of claims, reliability, omission and limits of evidence; avoids treating an unresolved issue as a confirmed fact. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 4 — Term 1, Week 1 — identity, language and society — Critical literacy — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate competing perspectives, evidence quality and omissions in public information.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare two sources, identify claims and omissions, assess evidence quality and justify a conclusion with qualification.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+SOURCE A — District project summary: The proposed walkway is intended to improve pedestrian access to the market and create a safer route. The summary identifies the project office and states that the final design is under review. It does not include the completed environmental assessment.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+SOURCE B — Anonymous social post: The walkway will definitely remove every fishing access point and the council has already approved the final route. The post includes no document, date or named source.
+
+> A public meeting record confirms that fishing access was raised as a concern and that the design review is continuing. The record does not confirm that any access point will be removed.
+
+**Worked example:** Source A is more accountable because it identifies the project office and admits that the design is still under review. Source B makes definite claims without a named source. The meeting record confirms that access was discussed, but it does not prove that access will be removed.
+
+**Your task:** 1. Identify the main claim in each source. 2. Compare source accountability and evidence. 3. Identify one important omission in Source A. 4. Explain what the meeting record does and does not establish. 5. Write a qualified conclusion.
+
+**Gold pathway support:** Complete the same task and extend it through qualification, synthesis, counterargument or evaluation of evidence limitations. Do not replace the shared objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced comparison of claims, reliability, omission and limits of evidence; avoids treating an unresolved issue as a confirmed fact. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 5 — Term 1, Week 1 — identity, language and society — Writing and shaping — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Create a developed multi-paragraph response that argues a position using evidence, qualification and a purposeful conclusion.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a coherent multi-paragraph response with a clear thesis, organised evidence, developed reasoning, a counterargument or qualification and a reasoned conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+> A district is considering a coastal walkway near a busy market. Supporters believe it could improve pedestrian safety, make the market easier to reach and create a public space for residents and visitors. Some nearby families are concerned about access to fishing areas, privacy and changes to the shoreline. The design is still under review, and the environmental assessment has not yet been published. The council has invited written submissions and promised to report how community concerns are considered before a final decision.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Worked example:** Thesis: the project should proceed only after access, privacy and environmental concerns are assessed openly. Paragraph 1: explain potential safety and access benefits. Paragraph 2: discuss concerns and missing evidence. Paragraph 3: propose consultation and safeguards. Conclusion: recommend a decision after evidence and community feedback are considered.
+
+**Your task:** Write a developed multi-paragraph response to the council. State your position, explain at least two benefits or concerns using details from the passage, address an alternative view, identify evidence still needed and finish with a reasoned recommendation.
+
+**Copper pathway support:** Use the annotated model, vocabulary gloss and short steps. The teacher may read the stimulus aloud and offer a paragraph frame, evidence locator or guided choices. Complete one supported analytical move; oral, signed, AAC, dictated or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A developed multi-paragraph argument with thesis, organised evidence, explanation, counterargument/qualification and a reasoned conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 5 — Term 1, Week 1 — identity, language and society — Writing and shaping — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Create a developed multi-paragraph response that argues a position using evidence, qualification and a purposeful conclusion.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a coherent multi-paragraph response with a clear thesis, organised evidence, developed reasoning, a counterargument or qualification and a reasoned conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+> A district is considering a coastal walkway near a busy market. Supporters believe it could improve pedestrian safety, make the market easier to reach and create a public space for residents and visitors. Some nearby families are concerned about access to fishing areas, privacy and changes to the shoreline. The design is still under review, and the environmental assessment has not yet been published. The council has invited written submissions and promised to report how community concerns are considered before a final decision.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Worked example:** Thesis: the project should proceed only after access, privacy and environmental concerns are assessed openly. Paragraph 1: explain potential safety and access benefits. Paragraph 2: discuss concerns and missing evidence. Paragraph 3: propose consultation and safeguards. Conclusion: recommend a decision after evidence and community feedback are considered.
+
+**Your task:** Write a developed multi-paragraph response to the council. State your position, explain at least two benefits or concerns using details from the passage, address an alternative view, identify evidence still needed and finish with a reasoned recommendation.
+
+**Bronze pathway support:** Use the paragraph frame and evidence locator. Select relevant details first, then explain how they support your position. Reduce prompts after the first part.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A developed multi-paragraph argument with thesis, organised evidence, explanation, counterargument/qualification and a reasoned conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 5 — Term 1, Week 1 — identity, language and society — Writing and shaping — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Create a developed multi-paragraph response that argues a position using evidence, qualification and a purposeful conclusion.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a coherent multi-paragraph response with a clear thesis, organised evidence, developed reasoning, a counterargument or qualification and a reasoned conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+> A district is considering a coastal walkway near a busy market. Supporters believe it could improve pedestrian safety, make the market easier to reach and create a public space for residents and visitors. Some nearby families are concerned about access to fishing areas, privacy and changes to the shoreline. The design is still under review, and the environmental assessment has not yet been published. The council has invited written submissions and promised to report how community concerns are considered before a final decision.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Worked example:** Thesis: the project should proceed only after access, privacy and environmental concerns are assessed openly. Paragraph 1: explain potential safety and access benefits. Paragraph 2: discuss concerns and missing evidence. Paragraph 3: propose consultation and safeguards. Conclusion: recommend a decision after evidence and community feedback are considered.
+
+**Your task:** Write a developed multi-paragraph response to the council. State your position, explain at least two benefits or concerns using details from the passage, address an alternative view, identify evidence still needed and finish with a reasoned recommendation.
+
+**Silver pathway support:** Complete the developed response independently. Use precise evidence, explain its significance and check the coherence of your argument.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A developed multi-paragraph argument with thesis, organised evidence, explanation, counterargument/qualification and a reasoned conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ---
 
 ## Day 5 — Term 1, Week 1 — identity, language and society — Writing and shaping — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Create a developed multi-paragraph response that argues a position using evidence, qualification and a purposeful conclusion.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a coherent multi-paragraph response with a clear thesis, organised evidence, developed reasoning, a counterargument or qualification and a reasoned conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete stimulus:**
 
-**Worked example:** 
+> A district is considering a coastal walkway near a busy market. Supporters believe it could improve pedestrian safety, make the market easier to reach and create a public space for residents and visitors. Some nearby families are concerned about access to fishing areas, privacy and changes to the shoreline. The design is still under review, and the environmental assessment has not yet been published. The council has invited written submissions and promised to report how community concerns are considered before a final decision.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Worked example:** Thesis: the project should proceed only after access, privacy and environmental concerns are assessed openly. Paragraph 1: explain potential safety and access benefits. Paragraph 2: discuss concerns and missing evidence. Paragraph 3: propose consultation and safeguards. Conclusion: recommend a decision after evidence and community feedback are considered.
+
+**Your task:** Write a developed multi-paragraph response to the council. State your position, explain at least two benefits or concerns using details from the passage, address an alternative view, identify evidence still needed and finish with a reasoned recommendation.
+
+**Gold pathway support:** Complete the same task and extend it through qualification, synthesis, counterargument or evaluation of evidence limitations. Do not replace the shared objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A developed multi-paragraph argument with thesis, organised evidence, explanation, counterargument/qualification and a reasoned conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I stated a clear position  ☐ I used precise evidence  ☐ I explained my reasoning  ☐ I considered another view  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
----
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
 ## Day 6 — Term 1, Week 2 — community narratives and oral histories — Oral communication — Copper Worksheet
 
