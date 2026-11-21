@@ -101,10 +101,10 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 
 [Form 6 Week 5 teacher marking guide](english-form6-teacher-guide-days-21-25.md)
 
-### Form 7 — Weeks 1–5 standalone batches
-- Form 7 has 460 pathway worksheet pages (115 per pathway). Days 1–5 and Days 6–10 were rebuilt earlier. Days 11–15, Days 16–20 and Days 21–25 have now also been rebuilt as 60 standalone pages, with two complete original linked practice sources per page, Bloom's build-up questions, differentiated critical-synthesis tasks, answer spaces, accessibility options and pending review status.
-- Added separate Form 7 Week 3, Week 4 and Week 5 teacher marking guides and linked all three from the English Subject Box.
-- Days 26–115 still require detailed standalone worksheet rebuilding and matching marking guides. Days 6–10 have also been rebuilt as 20 standalone pages with original oral-history sources, comparative tasks, response spaces, accessibility options and a separate Week 2 teacher marking guide.
+### Form 7 — Weeks 1–6 standalone batches
+- Form 7 has 460 pathway worksheet pages (115 per pathway). Days 1–5 and Days 6–10 were rebuilt earlier. Days 11–15, Days 16–20, Days 21–25 and Days 26–30 have now also been rebuilt as 80 standalone pages, with two complete original linked practice sources per page, Bloom's build-up questions, differentiated critical-synthesis tasks, answer spaces, accessibility options and pending review status.
+- Added separate Form 7 Week 3, Week 4, Week 5 and Week 6 teacher marking guides and linked all four from the English Subject Box.
+- Days 31–115 still require detailed standalone worksheet rebuilding and matching marking guides. Days 6–10 have also been rebuilt as 20 standalone pages with original oral-history sources, comparative tasks, response spaces, accessibility options and a separate Week 2 teacher marking guide.
 - Verify the current authorised Form 7 syllabus, prescribed texts, research expectations and assessment criteria.
 
 [Form 7 Week 1 teacher marking guide](english-form7-teacher-guide-days-1-5.md)
@@ -114,6 +114,8 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 [Form 7 Week 4 teacher marking guide](english-form7-teacher-guide-days-16-20.md)
 
 [Form 7 Week 5 teacher marking guide](english-form7-teacher-guide-days-21-25.md)
+
+[Form 7 Week 6 teacher marking guide](english-form7-teacher-guide-days-26-30.md)
 
 [Form 7 Week 2 teacher marking guide](english-form7-teacher-guide-days-6-10.md)
 
