@@ -38,7 +38,7 @@ for (const key of ["class3", "class4", "class5", "class6", "class7", "class8"]) 
 
 
 const form2Source = fs.readFileSync(path.join(root, "docs/curriculum/english-form2-printable-worksheets-days-1-115.md"), "utf8");
-const form2Week1 = form2Source.split(/(?=^# Day \\d+ —)/m).filter(part => /^# Day ([1-5]) —/.test(part));
+const form2Week1 = form2Source.split(/(?=^# Day \d+ —)/m).filter(part => /^# Day ([1-5]) —/.test(part));
 assert.equal(form2Week1.length, 20, "Form 2 (Year 8) must have 20 standalone worksheets for Days 1–5");
 for (const part of form2Week1) {
   assert.match(part, /^# Day [1-5] —.*— (Copper|Bronze|Silver|Gold) Worksheet/m);
