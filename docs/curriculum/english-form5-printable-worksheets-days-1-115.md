@@ -1086,645 +1086,1057 @@ ____________________________________________________________________________
 
 **Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
+# Form 5 English — Printable Worksheets Days 6–10 (Term 1, Week 2)
+
+**Status:** ORIGINAL PACEDU PRACTICE DRAFT — PENDING_TEACHER_REVIEW — PENDING_OFFICIAL_INDICATOR_VERIFICATION. These original practice sources are not prescribed texts.
+
+---
+
 ## Day 6 — Term 1, Week 2 — community narratives and oral histories — Oral communication — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend a thesis about community narratives using precise evidence and a response to an alternative view.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a defensible thesis, analyse two details and explain how oral testimony contributes to community understanding.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+ORAL ACCOUNT — A fisher recalls that the old landing place was where people shared weather warnings and helped repair nets. The speaker remembers the sound of boats before sunrise but is unsure of the exact year when a new jetty was built. A younger family member says the account explains why the landing place matters, while maps and council records may help establish dates and changes.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+> The interviewer records that the account is personal testimony and should be compared with other sources for chronology.
+
+**Worked example:** Thesis: oral history explains the social meaning of the landing place, while documentary sources can help check dates. Detail: people shared warnings and repaired nets; the speaker is unsure of the jetty's year.
+
+**Your task:** Present a reasoned response explaining why oral histories matter and why they should sometimes be compared with records. Address the alternative view that uncertain dates make oral accounts unreliable.
+
+**Copper pathway support:** Use the model and source labels. Work one step at a time; the teacher may read the source aloud and offer a thesis frame or vocabulary gloss. Oral, signed, AAC, dictated, Braille or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Defensible thesis, two details, analysis of the value and limits of testimony, and reasoned response to alternative view. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 6 — Term 1, Week 2 — community narratives and oral histories — Oral communication — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend a thesis about community narratives using precise evidence and a response to an alternative view.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a defensible thesis, analyse two details and explain how oral testimony contributes to community understanding.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+ORAL ACCOUNT — A fisher recalls that the old landing place was where people shared weather warnings and helped repair nets. The speaker remembers the sound of boats before sunrise but is unsure of the exact year when a new jetty was built. A younger family member says the account explains why the landing place matters, while maps and council records may help establish dates and changes.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+> The interviewer records that the account is personal testimony and should be compared with other sources for chronology.
+
+**Worked example:** Thesis: oral history explains the social meaning of the landing place, while documentary sources can help check dates. Detail: people shared warnings and repaired nets; the speaker is unsure of the jetty's year.
+
+**Your task:** Present a reasoned response explaining why oral histories matter and why they should sometimes be compared with records. Address the alternative view that uncertain dates make oral accounts unreliable.
+
+**Bronze pathway support:** Use the paragraph frame and evidence locator. Identify one detail before explaining how it supports your thesis.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Defensible thesis, two details, analysis of the value and limits of testimony, and reasoned response to alternative view. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 6 — Term 1, Week 2 — community narratives and oral histories — Oral communication — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend a thesis about community narratives using precise evidence and a response to an alternative view.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a defensible thesis, analyse two details and explain how oral testimony contributes to community understanding.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+ORAL ACCOUNT — A fisher recalls that the old landing place was where people shared weather warnings and helped repair nets. The speaker remembers the sound of boats before sunrise but is unsure of the exact year when a new jetty was built. A younger family member says the account explains why the landing place matters, while maps and council records may help establish dates and changes.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+> The interviewer records that the account is personal testimony and should be compared with other sources for chronology.
+
+**Worked example:** Thesis: oral history explains the social meaning of the landing place, while documentary sources can help check dates. Detail: people shared warnings and repaired nets; the speaker is unsure of the jetty's year.
+
+**Your task:** Present a reasoned response explaining why oral histories matter and why they should sometimes be compared with records. Address the alternative view that uncertain dates make oral accounts unreliable.
+
+**Silver pathway support:** Complete the task independently with precise evidence and a balanced explanation of source value and limitations.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Defensible thesis, two details, analysis of the value and limits of testimony, and reasoned response to alternative view. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 6 — Term 1, Week 2 — community narratives and oral histories — Oral communication — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend a thesis about community narratives using precise evidence and a response to an alternative view.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a defensible thesis, analyse two details and explain how oral testimony contributes to community understanding.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+ORAL ACCOUNT — A fisher recalls that the old landing place was where people shared weather warnings and helped repair nets. The speaker remembers the sound of boats before sunrise but is unsure of the exact year when a new jetty was built. A younger family member says the account explains why the landing place matters, while maps and council records may help establish dates and changes.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+> The interviewer records that the account is personal testimony and should be compared with other sources for chronology.
+
+**Worked example:** Thesis: oral history explains the social meaning of the landing place, while documentary sources can help check dates. Detail: people shared warnings and repaired nets; the speaker is unsure of the jetty's year.
+
+**Your task:** Present a reasoned response explaining why oral histories matter and why they should sometimes be compared with records. Address the alternative view that uncertain dates make oral accounts unreliable.
+
+**Gold pathway support:** Extend the same objective by qualifying the thesis, evaluating source limitations or considering a counterargument.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Defensible thesis, two details, analysis of the value and limits of testimony, and reasoned response to alternative view. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 7 — Term 1, Week 2 — community narratives and oral histories — Close reading — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how narrative viewpoint and structure shape representations of community memory.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop a thesis about a narrative and support it with precise evidence and analysis of viewpoint or structure.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> The narrator describes the village path as a line that connected more than houses. It led to the landing place, the school and the meeting tree. Each turn carried a story: where a neighbour once waited during a storm, where children learned a song, where families gathered after a difficult season. When the path was widened, the narrator welcomed the safer surface but worried that the old landmarks were no longer visible. The narrator concludes that improvement should not require people to forget the stories attached to a place.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Worked example:** The path symbolises connection between places and shared memory. The contrast between safer access and disappearing landmarks shows that development can bring benefits while creating cultural concerns.
+
+**Your task:** Develop a thesis about the narrator's attitude to change. Analyse two details and explain how the path symbolises both practical access and community memory.
+
+**Copper pathway support:** Use the model and source labels. Work one step at a time; the teacher may read the source aloud and offer a thesis frame or vocabulary gloss. Oral, signed, AAC, dictated, Braille or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Clear thesis, precise details, analysis of symbolism and balanced interpretation of change. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 7 — Term 1, Week 2 — community narratives and oral histories — Close reading — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how narrative viewpoint and structure shape representations of community memory.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop a thesis about a narrative and support it with precise evidence and analysis of viewpoint or structure.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> The narrator describes the village path as a line that connected more than houses. It led to the landing place, the school and the meeting tree. Each turn carried a story: where a neighbour once waited during a storm, where children learned a song, where families gathered after a difficult season. When the path was widened, the narrator welcomed the safer surface but worried that the old landmarks were no longer visible. The narrator concludes that improvement should not require people to forget the stories attached to a place.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Worked example:** The path symbolises connection between places and shared memory. The contrast between safer access and disappearing landmarks shows that development can bring benefits while creating cultural concerns.
+
+**Your task:** Develop a thesis about the narrator's attitude to change. Analyse two details and explain how the path symbolises both practical access and community memory.
+
+**Bronze pathway support:** Use the paragraph frame and evidence locator. Identify one detail before explaining how it supports your thesis.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Clear thesis, precise details, analysis of symbolism and balanced interpretation of change. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 7 — Term 1, Week 2 — community narratives and oral histories — Close reading — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how narrative viewpoint and structure shape representations of community memory.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop a thesis about a narrative and support it with precise evidence and analysis of viewpoint or structure.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> The narrator describes the village path as a line that connected more than houses. It led to the landing place, the school and the meeting tree. Each turn carried a story: where a neighbour once waited during a storm, where children learned a song, where families gathered after a difficult season. When the path was widened, the narrator welcomed the safer surface but worried that the old landmarks were no longer visible. The narrator concludes that improvement should not require people to forget the stories attached to a place.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Worked example:** The path symbolises connection between places and shared memory. The contrast between safer access and disappearing landmarks shows that development can bring benefits while creating cultural concerns.
+
+**Your task:** Develop a thesis about the narrator's attitude to change. Analyse two details and explain how the path symbolises both practical access and community memory.
+
+**Silver pathway support:** Complete the task independently with precise evidence and a balanced explanation of source value and limitations.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Clear thesis, precise details, analysis of symbolism and balanced interpretation of change. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 7 — Term 1, Week 2 — community narratives and oral histories — Close reading — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how narrative viewpoint and structure shape representations of community memory.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop a thesis about a narrative and support it with precise evidence and analysis of viewpoint or structure.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> The narrator describes the village path as a line that connected more than houses. It led to the landing place, the school and the meeting tree. Each turn carried a story: where a neighbour once waited during a storm, where children learned a song, where families gathered after a difficult season. When the path was widened, the narrator welcomed the safer surface but worried that the old landmarks were no longer visible. The narrator concludes that improvement should not require people to forget the stories attached to a place.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Worked example:** The path symbolises connection between places and shared memory. The contrast between safer access and disappearing landmarks shows that development can bring benefits while creating cultural concerns.
+
+**Your task:** Develop a thesis about the narrator's attitude to change. Analyse two details and explain how the path symbolises both practical access and community memory.
+
+**Gold pathway support:** Extend the same objective by qualifying the thesis, evaluating source limitations or considering a counterargument.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Clear thesis, precise details, analysis of symbolism and balanced interpretation of change. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 8 — Term 1, Week 2 — community narratives and oral histories — Vocabulary and language — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how word choice, metaphor and register shape the representation of oral histories.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Explain three language choices and their effects on tone, perspective and audience.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> The report calls the elder's account 'a thread through the community's memory'. The metaphor suggests that one story connects different events and people. It describes the interview as 'partial but valuable', acknowledging that no single speaker can represent every experience. The report uses a respectful, measured register and avoids presenting memory as either perfect evidence or meaningless opinion.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Worked example:** 'A thread through memory' suggests connection; 'partial but valuable' acknowledges limits while recognising worth. The measured register avoids exaggerating the account.
+
+**Your task:** Explain the two quoted phrases, identify the report's register and explain how its language balances respect for the speaker with caution about evidence.
+
+**Copper pathway support:** Use the model and source labels. Work one step at a time; the teacher may read the source aloud and offer a thesis frame or vocabulary gloss. Oral, signed, AAC, dictated, Braille or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate contextual meanings, metaphor analysis, register identification and explanation of balance. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 8 — Term 1, Week 2 — community narratives and oral histories — Vocabulary and language — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how word choice, metaphor and register shape the representation of oral histories.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Explain three language choices and their effects on tone, perspective and audience.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> The report calls the elder's account 'a thread through the community's memory'. The metaphor suggests that one story connects different events and people. It describes the interview as 'partial but valuable', acknowledging that no single speaker can represent every experience. The report uses a respectful, measured register and avoids presenting memory as either perfect evidence or meaningless opinion.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Worked example:** 'A thread through memory' suggests connection; 'partial but valuable' acknowledges limits while recognising worth. The measured register avoids exaggerating the account.
+
+**Your task:** Explain the two quoted phrases, identify the report's register and explain how its language balances respect for the speaker with caution about evidence.
+
+**Bronze pathway support:** Use the paragraph frame and evidence locator. Identify one detail before explaining how it supports your thesis.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate contextual meanings, metaphor analysis, register identification and explanation of balance. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 8 — Term 1, Week 2 — community narratives and oral histories — Vocabulary and language — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how word choice, metaphor and register shape the representation of oral histories.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Explain three language choices and their effects on tone, perspective and audience.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> The report calls the elder's account 'a thread through the community's memory'. The metaphor suggests that one story connects different events and people. It describes the interview as 'partial but valuable', acknowledging that no single speaker can represent every experience. The report uses a respectful, measured register and avoids presenting memory as either perfect evidence or meaningless opinion.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Worked example:** 'A thread through memory' suggests connection; 'partial but valuable' acknowledges limits while recognising worth. The measured register avoids exaggerating the account.
+
+**Your task:** Explain the two quoted phrases, identify the report's register and explain how its language balances respect for the speaker with caution about evidence.
+
+**Silver pathway support:** Complete the task independently with precise evidence and a balanced explanation of source value and limitations.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate contextual meanings, metaphor analysis, register identification and explanation of balance. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 8 — Term 1, Week 2 — community narratives and oral histories — Vocabulary and language — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how word choice, metaphor and register shape the representation of oral histories.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Explain three language choices and their effects on tone, perspective and audience.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> The report calls the elder's account 'a thread through the community's memory'. The metaphor suggests that one story connects different events and people. It describes the interview as 'partial but valuable', acknowledging that no single speaker can represent every experience. The report uses a respectful, measured register and avoids presenting memory as either perfect evidence or meaningless opinion.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Worked example:** 'A thread through memory' suggests connection; 'partial but valuable' acknowledges limits while recognising worth. The measured register avoids exaggerating the account.
+
+**Your task:** Explain the two quoted phrases, identify the report's register and explain how its language balances respect for the speaker with caution about evidence.
+
+**Gold pathway support:** Extend the same objective by qualifying the thesis, evaluating source limitations or considering a counterargument.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate contextual meanings, metaphor analysis, register identification and explanation of balance. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 9 — Term 1, Week 2 — community narratives and oral histories — Critical literacy — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate oral testimony and supporting records, distinguishing memory, corroboration and uncertainty.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare source claims and evidence, identify what can be corroborated and qualify a conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+SOURCE A — Oral interview: A resident recalls that the landing place was used for warnings and shared work. The resident is uncertain about the year the jetty was built.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+SOURCE B — Council works record: A document lists the year construction began and names the contractor. It does not describe how the landing place was used by families.
+
+SOURCE C — Photograph: An undated image shows several boats beside the old landing place. The photographer and exact date are unknown.
+
+**Worked example:** The works record can support the construction date. The oral interview describes social uses not included in the record. The photograph supports the presence of boats but cannot establish its date or the people involved.
+
+**Your task:** Evaluate what each source can establish. Identify a detail that can be checked, a personal-memory claim that records do not capture, and one limitation of the photograph. Write a qualified conclusion.
+
+**Copper pathway support:** Use the model and source labels. Work one step at a time; the teacher may read the source aloud and offer a thesis frame or vocabulary gloss. Oral, signed, AAC, dictated, Braille or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced source evaluation, corroboration and uncertainty, with a qualified conclusion. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 9 — Term 1, Week 2 — community narratives and oral histories — Critical literacy — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate oral testimony and supporting records, distinguishing memory, corroboration and uncertainty.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare source claims and evidence, identify what can be corroborated and qualify a conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+SOURCE A — Oral interview: A resident recalls that the landing place was used for warnings and shared work. The resident is uncertain about the year the jetty was built.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+SOURCE B — Council works record: A document lists the year construction began and names the contractor. It does not describe how the landing place was used by families.
+
+SOURCE C — Photograph: An undated image shows several boats beside the old landing place. The photographer and exact date are unknown.
+
+**Worked example:** The works record can support the construction date. The oral interview describes social uses not included in the record. The photograph supports the presence of boats but cannot establish its date or the people involved.
+
+**Your task:** Evaluate what each source can establish. Identify a detail that can be checked, a personal-memory claim that records do not capture, and one limitation of the photograph. Write a qualified conclusion.
+
+**Bronze pathway support:** Use the paragraph frame and evidence locator. Identify one detail before explaining how it supports your thesis.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced source evaluation, corroboration and uncertainty, with a qualified conclusion. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 9 — Term 1, Week 2 — community narratives and oral histories — Critical literacy — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate oral testimony and supporting records, distinguishing memory, corroboration and uncertainty.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare source claims and evidence, identify what can be corroborated and qualify a conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+SOURCE A — Oral interview: A resident recalls that the landing place was used for warnings and shared work. The resident is uncertain about the year the jetty was built.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+SOURCE B — Council works record: A document lists the year construction began and names the contractor. It does not describe how the landing place was used by families.
+
+SOURCE C — Photograph: An undated image shows several boats beside the old landing place. The photographer and exact date are unknown.
+
+**Worked example:** The works record can support the construction date. The oral interview describes social uses not included in the record. The photograph supports the presence of boats but cannot establish its date or the people involved.
+
+**Your task:** Evaluate what each source can establish. Identify a detail that can be checked, a personal-memory claim that records do not capture, and one limitation of the photograph. Write a qualified conclusion.
+
+**Silver pathway support:** Complete the task independently with precise evidence and a balanced explanation of source value and limitations.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced source evaluation, corroboration and uncertainty, with a qualified conclusion. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 9 — Term 1, Week 2 — community narratives and oral histories — Critical literacy — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate oral testimony and supporting records, distinguishing memory, corroboration and uncertainty.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare source claims and evidence, identify what can be corroborated and qualify a conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+SOURCE A — Oral interview: A resident recalls that the landing place was used for warnings and shared work. The resident is uncertain about the year the jetty was built.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+SOURCE B — Council works record: A document lists the year construction began and names the contractor. It does not describe how the landing place was used by families.
+
+SOURCE C — Photograph: An undated image shows several boats beside the old landing place. The photographer and exact date are unknown.
+
+**Worked example:** The works record can support the construction date. The oral interview describes social uses not included in the record. The photograph supports the presence of boats but cannot establish its date or the people involved.
+
+**Your task:** Evaluate what each source can establish. Identify a detail that can be checked, a personal-memory claim that records do not capture, and one limitation of the photograph. Write a qualified conclusion.
+
+**Gold pathway support:** Extend the same objective by qualifying the thesis, evaluating source limitations or considering a counterargument.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced source evaluation, corroboration and uncertainty, with a qualified conclusion. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 10 — Term 1, Week 2 — community narratives and oral histories — Writing and shaping — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Write a coherent analytical essay about community narratives using evidence and acknowledging source limitations.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Construct an analytical essay with a clear thesis, relevant evidence, explanation, coherent paragraphing and reasoned conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> Community narratives preserve more than dates and events. Oral accounts may describe relationships, practical knowledge and the meaning of a place. Written records can help establish chronology and official decisions, while photographs may show physical details. Each source has limits: memory can be uncertain, records may omit informal experiences and images may lack context. Comparing sources allows writers to build a fuller account without claiming that every uncertainty has been resolved.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Worked example:** Thesis: community narratives become stronger when oral testimony is considered alongside records and images. Paragraphs can explain the value of each source type and then evaluate its limits.
+
+**Your task:** Write a coherent analytical essay explaining how community narratives can combine oral testimony, written records and photographs. Use at least two source types, explain their contributions and limitations, and reach a reasoned conclusion.
+
+**Copper pathway support:** Use the model and source labels. Work one step at a time; the teacher may read the source aloud and offer a thesis frame or vocabulary gloss. Oral, signed, AAC, dictated, Braille or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Clear thesis, organised paragraphs, relevant evidence, explanation of source value/limits and reasoned conclusion. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 10 — Term 1, Week 2 — community narratives and oral histories — Writing and shaping — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Write a coherent analytical essay about community narratives using evidence and acknowledging source limitations.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Construct an analytical essay with a clear thesis, relevant evidence, explanation, coherent paragraphing and reasoned conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> Community narratives preserve more than dates and events. Oral accounts may describe relationships, practical knowledge and the meaning of a place. Written records can help establish chronology and official decisions, while photographs may show physical details. Each source has limits: memory can be uncertain, records may omit informal experiences and images may lack context. Comparing sources allows writers to build a fuller account without claiming that every uncertainty has been resolved.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Worked example:** Thesis: community narratives become stronger when oral testimony is considered alongside records and images. Paragraphs can explain the value of each source type and then evaluate its limits.
+
+**Your task:** Write a coherent analytical essay explaining how community narratives can combine oral testimony, written records and photographs. Use at least two source types, explain their contributions and limitations, and reach a reasoned conclusion.
+
+**Bronze pathway support:** Use the paragraph frame and evidence locator. Identify one detail before explaining how it supports your thesis.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Clear thesis, organised paragraphs, relevant evidence, explanation of source value/limits and reasoned conclusion. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 10 — Term 1, Week 2 — community narratives and oral histories — Writing and shaping — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Write a coherent analytical essay about community narratives using evidence and acknowledging source limitations.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Construct an analytical essay with a clear thesis, relevant evidence, explanation, coherent paragraphing and reasoned conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> Community narratives preserve more than dates and events. Oral accounts may describe relationships, practical knowledge and the meaning of a place. Written records can help establish chronology and official decisions, while photographs may show physical details. Each source has limits: memory can be uncertain, records may omit informal experiences and images may lack context. Comparing sources allows writers to build a fuller account without claiming that every uncertainty has been resolved.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Worked example:** Thesis: community narratives become stronger when oral testimony is considered alongside records and images. Paragraphs can explain the value of each source type and then evaluate its limits.
+
+**Your task:** Write a coherent analytical essay explaining how community narratives can combine oral testimony, written records and photographs. Use at least two source types, explain their contributions and limitations, and reach a reasoned conclusion.
+
+**Silver pathway support:** Complete the task independently with precise evidence and a balanced explanation of source value and limitations.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Clear thesis, organised paragraphs, relevant evidence, explanation of source value/limits and reasoned conclusion. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 10 — Term 1, Week 2 — community narratives and oral histories — Writing and shaping — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Write a coherent analytical essay about community narratives using evidence and acknowledging source limitations.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Construct an analytical essay with a clear thesis, relevant evidence, explanation, coherent paragraphing and reasoned conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> Community narratives preserve more than dates and events. Oral accounts may describe relationships, practical knowledge and the meaning of a place. Written records can help establish chronology and official decisions, while photographs may show physical details. Each source has limits: memory can be uncertain, records may omit informal experiences and images may lack context. Comparing sources allows writers to build a fuller account without claiming that every uncertainty has been resolved.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Worked example:** Thesis: community narratives become stronger when oral testimony is considered alongside records and images. Paragraphs can explain the value of each source type and then evaluate its limits.
+
+**Your task:** Write a coherent analytical essay explaining how community narratives can combine oral testimony, written records and photographs. Use at least two source types, explain their contributions and limitations, and reach a reasoned conclusion.
+
+**Gold pathway support:** Extend the same objective by qualifying the thesis, evaluating source limitations or considering a counterargument.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Clear thesis, organised paragraphs, relevant evidence, explanation of source value/limits and reasoned conclusion. Record response mode, evidence, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I used evidence  ☐ I considered source limits  ☐ My conclusion is reasoned
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
----
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 5 syllabus, prescribed texts and assessment criteria.
 
 ## Day 11 — Term 1, Week 3 — place, environment and belonging — Oral communication — Copper Worksheet
 
