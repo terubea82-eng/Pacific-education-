@@ -24,11 +24,12 @@ Each learner worksheet must be independently usable and include learner details,
 
 | Subject box | Staging content file | Status |
 |---|---|---|
-| Agriculture | `docs/worksheets/class3-agriculture-term2-week7.md` | Drafted in conversation; repository file not staged |
-| Arts | `docs/worksheets/class3-arts-term2-week7.md` | Drafted in conversation; repository file not staged |
-| Mathematics | `docs/worksheets/class3-mathematics-term2-week7.md` | Drafted in conversation; repository file not staged |
-| Social Science | `docs/worksheets/class3-social-science-term2-week7.md` | Drafted in conversation; repository file not staged |
+| Agriculture | `docs/worksheets/class3-agriculture-term2-week7.md` | Conversation draft only; exact text not yet staged |
+| Arts | `docs/worksheets/class3-arts-term2-week7.md` | Conversation draft only; exact text not yet staged |
+| Mathematics | `docs/worksheets/class3-mathematics-term2-week7.md` | Conversation draft only; exact text not yet staged |
+| Social Science | `docs/worksheets/class3-social-science-term2-week7.md` | Conversation draft only; exact text not yet staged |
 | Technology | `docs/worksheets/class3-technology-term2-week7.md` | **STAGED** — 20 individual learner papers (5 days × 4 pathways); teacher review pending |
+| Home Economics | `docs/worksheets/class3-home-economics-term2-week7.md` | **STAGED** — 20 individual learner papers (5 days × 4 pathways); teacher review pending |
 
 ## Publication and safety gates
 
