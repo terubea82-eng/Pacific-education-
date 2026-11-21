@@ -7,17 +7,27 @@
 
 ---
 
-## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Copper Worksheet
+## Day 1 — Term 1, Week 1 — Two Stories of Belonging — Listening and speaking — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 1  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Listen to a multi-paragraph account, summarise its central message and respond using relevant details.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can summarise a central message and support my response with two accurate details.
 
-**Worked example:** 
+**Read this complete text — Two Stories of Belonging:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> When the school planned its cultural afternoon, the student council invited learners to share a story, song, craft or object that mattered to them. Some learners wanted to speak about family traditions. Others preferred to display photographs or demonstrate a skill.
+> 
+> The council agreed that no one should be pressured to share private family information. Each learner could choose what to contribute, and every presentation would be treated respectfully. A group of learners prepared short introductions so visitors could understand the meaning of each display.
+> 
+> At the event, people asked thoughtful questions and discovered both shared experiences and different traditions. The council later agreed that belonging grows when people are welcomed and allowed to participate in ways that feel safe to them.
+
+**Worked example:** Central message: belonging grows when people are welcomed and can participate safely. Details: learners could choose what to contribute; visitors asked thoughtful questions and learned about shared and different traditions.
+
+**Your task:** Choose the central message from two choices. Match one detail to the council's decision. Complete: “Learners could choose ____.”
+
+**Copper pathway support:** Work one step at a time with the model and word bank. Respond in Braille, large print, speech, sign, AAC, pointing, eye gaze, object choice, dictation or writing. An adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -27,27 +37,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Central message, two supporting details and a relevant response; record communication mode and prompts. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Bronze Worksheet
+## Day 1 — Term 1, Week 1 — Two Stories of Belonging — Listening and speaking — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 1  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Listen to a multi-paragraph account, summarise its central message and respond using relevant details.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can summarise a central message and support my response with two accurate details.
 
-**Worked example:** 
+**Read this complete text — Two Stories of Belonging:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> When the school planned its cultural afternoon, the student council invited learners to share a story, song, craft or object that mattered to them. Some learners wanted to speak about family traditions. Others preferred to display photographs or demonstrate a skill.
+> 
+> The council agreed that no one should be pressured to share private family information. Each learner could choose what to contribute, and every presentation would be treated respectfully. A group of learners prepared short introductions so visitors could understand the meaning of each display.
+> 
+> At the event, people asked thoughtful questions and discovered both shared experiences and different traditions. The council later agreed that belonging grows when people are welcomed and allowed to participate in ways that feel safe to them.
+
+**Worked example:** Central message: belonging grows when people are welcomed and can participate safely. Details: learners could choose what to contribute; visitors asked thoughtful questions and learned about shared and different traditions.
+
+**Your task:** Use the frame: “The account is mainly about ____. One detail is ____. Another detail is ____. I think this mattered because ____.”
+
+**Bronze pathway support:** Use the worked example and planning frame. Complete the supported task, then check your work. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -57,27 +87,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Central message, two supporting details and a relevant response; record communication mode and prompts. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Silver Worksheet
+## Day 1 — Term 1, Week 1 — Two Stories of Belonging — Listening and speaking — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 1  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Listen to a multi-paragraph account, summarise its central message and respond using relevant details.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can summarise a central message and support my response with two accurate details.
 
-**Worked example:** 
+**Read this complete text — Two Stories of Belonging:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> When the school planned its cultural afternoon, the student council invited learners to share a story, song, craft or object that mattered to them. Some learners wanted to speak about family traditions. Others preferred to display photographs or demonstrate a skill.
+> 
+> The council agreed that no one should be pressured to share private family information. Each learner could choose what to contribute, and every presentation would be treated respectfully. A group of learners prepared short introductions so visitors could understand the meaning of each display.
+> 
+> At the event, people asked thoughtful questions and discovered both shared experiences and different traditions. The council later agreed that belonging grows when people are welcomed and allowed to participate in ways that feel safe to them.
+
+**Worked example:** Central message: belonging grows when people are welcomed and can participate safely. Details: learners could choose what to contribute; visitors asked thoughtful questions and learned about shared and different traditions.
+
+**Your task:** Give a clear spoken, signed or written summary using two accurate details. Respond to a follow-up question with a relevant reason.
+
+**Silver pathway support:** Complete the task independently where possible. Select relevant evidence, explain your thinking and check the success criteria.
 
 **My answer / working:**
 
@@ -87,27 +137,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Central message, two supporting details and a relevant response; record communication mode and prompts. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 1 — Term 1, Week 1 — identity and belonging — Listening and speaking — Gold Worksheet
+## Day 1 — Term 1, Week 1 — Two Stories of Belonging — Listening and speaking — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 1  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Listen to a multi-paragraph account, summarise its central message and respond using relevant details.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can summarise a central message and support my response with two accurate details.
 
-**Worked example:** 
+**Read this complete text — Two Stories of Belonging:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> When the school planned its cultural afternoon, the student council invited learners to share a story, song, craft or object that mattered to them. Some learners wanted to speak about family traditions. Others preferred to display photographs or demonstrate a skill.
+> 
+> The council agreed that no one should be pressured to share private family information. Each learner could choose what to contribute, and every presentation would be treated respectfully. A group of learners prepared short introductions so visitors could understand the meaning of each display.
+> 
+> At the event, people asked thoughtful questions and discovered both shared experiences and different traditions. The council later agreed that belonging grows when people are welcomed and allowed to participate in ways that feel safe to them.
+
+**Worked example:** Central message: belonging grows when people are welcomed and can participate safely. Details: learners could choose what to contribute; visitors asked thoughtful questions and learned about shared and different traditions.
+
+**Your task:** Compare how choice and respectful questions both supported belonging. Summarise the message and evaluate which action had the greatest effect, using two details.
+
+**Gold pathway support:** Extend the same objective with comparison, evaluation or precise revision. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -117,27 +187,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Central message, two supporting details and a relevant response; record communication mode and prompts. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Copper Worksheet
+## Day 2 — Term 1, Week 1 — Restoring a Stream — Reading and viewing — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 2  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Interpret a multi-paragraph information text, distinguish central ideas from details and support an inference with evidence.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can state a central idea, select two details and explain an inference supported by the text.
 
-**Worked example:** 
+**Read this complete text — Restoring a Stream:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> A community group began monitoring a stream that passed near the village. After heavy rain, soil and rubbish sometimes washed into the water. Volunteers recorded where the stream looked cloudy and where rubbish collected, then shared their observations with the local environment officer.
+> 
+> The group learned that plants along the bank can help hold soil in place. They worked with the landowner to plant suitable native vegetation in an agreed area. They did not enter deep or fast-moving water, and they left any dangerous rubbish for trained workers.
+> 
+> Over time, the group compared its observation notes and photographs. The records helped them notice changes after rain and decide where further advice was needed. They understood that one clean-up day would not solve every problem; ongoing care and local guidance were important.
+
+**Worked example:** Central idea: the community is monitoring and caring for a stream safely over time. Evidence: volunteers record cloudy areas and rubbish; they plant suitable vegetation with the landowner; they compare notes and photographs.
+
+**Your task:** Select the central idea. Find one detail about what volunteers recorded and one detail about safe action. Complete: “They kept records so they could ____.”
+
+**Copper pathway support:** Work one step at a time with the model and word bank. Respond in Braille, large print, speech, sign, AAC, pointing, eye gaze, object choice, dictation or writing. An adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -147,27 +237,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Accurate central idea, two relevant details and evidence-linked inference. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Bronze Worksheet
+## Day 2 — Term 1, Week 1 — Restoring a Stream — Reading and viewing — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 2  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Interpret a multi-paragraph information text, distinguish central ideas from details and support an inference with evidence.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can state a central idea, select two details and explain an inference supported by the text.
 
-**Worked example:** 
+**Read this complete text — Restoring a Stream:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> A community group began monitoring a stream that passed near the village. After heavy rain, soil and rubbish sometimes washed into the water. Volunteers recorded where the stream looked cloudy and where rubbish collected, then shared their observations with the local environment officer.
+> 
+> The group learned that plants along the bank can help hold soil in place. They worked with the landowner to plant suitable native vegetation in an agreed area. They did not enter deep or fast-moving water, and they left any dangerous rubbish for trained workers.
+> 
+> Over time, the group compared its observation notes and photographs. The records helped them notice changes after rain and decide where further advice was needed. They understood that one clean-up day would not solve every problem; ongoing care and local guidance were important.
+
+**Worked example:** Central idea: the community is monitoring and caring for a stream safely over time. Evidence: volunteers record cloudy areas and rubbish; they plant suitable vegetation with the landowner; they compare notes and photographs.
+
+**Your task:** Use the frame: “The central idea is ____. Detail 1 is ____. Detail 2 is ____. I infer that ongoing monitoring matters because ____.”
+
+**Bronze pathway support:** Use the worked example and planning frame. Complete the supported task, then check your work. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -177,27 +287,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Accurate central idea, two relevant details and evidence-linked inference. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Silver Worksheet
+## Day 2 — Term 1, Week 1 — Restoring a Stream — Reading and viewing — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 2  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Interpret a multi-paragraph information text, distinguish central ideas from details and support an inference with evidence.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can state a central idea, select two details and explain an inference supported by the text.
 
-**Worked example:** 
+**Read this complete text — Restoring a Stream:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> A community group began monitoring a stream that passed near the village. After heavy rain, soil and rubbish sometimes washed into the water. Volunteers recorded where the stream looked cloudy and where rubbish collected, then shared their observations with the local environment officer.
+> 
+> The group learned that plants along the bank can help hold soil in place. They worked with the landowner to plant suitable native vegetation in an agreed area. They did not enter deep or fast-moving water, and they left any dangerous rubbish for trained workers.
+> 
+> Over time, the group compared its observation notes and photographs. The records helped them notice changes after rain and decide where further advice was needed. They understood that one clean-up day would not solve every problem; ongoing care and local guidance were important.
+
+**Worked example:** Central idea: the community is monitoring and caring for a stream safely over time. Evidence: volunteers record cloudy areas and rubbish; they plant suitable vegetation with the landowner; they compare notes and photographs.
+
+**Your task:** State the central idea, select two different details and explain one inference about why records are useful.
+
+**Silver pathway support:** Complete the task independently where possible. Select relevant evidence, explain your thinking and check the success criteria.
 
 **My answer / working:**
 
@@ -207,27 +337,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Accurate central idea, two relevant details and evidence-linked inference. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 2 — Term 1, Week 1 — identity and belonging — Reading and viewing — Gold Worksheet
+## Day 2 — Term 1, Week 1 — Restoring a Stream — Reading and viewing — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 2  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Interpret a multi-paragraph information text, distinguish central ideas from details and support an inference with evidence.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can state a central idea, select two details and explain an inference supported by the text.
 
-**Worked example:** 
+**Read this complete text — Restoring a Stream:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> A community group began monitoring a stream that passed near the village. After heavy rain, soil and rubbish sometimes washed into the water. Volunteers recorded where the stream looked cloudy and where rubbish collected, then shared their observations with the local environment officer.
+> 
+> The group learned that plants along the bank can help hold soil in place. They worked with the landowner to plant suitable native vegetation in an agreed area. They did not enter deep or fast-moving water, and they left any dangerous rubbish for trained workers.
+> 
+> Over time, the group compared its observation notes and photographs. The records helped them notice changes after rain and decide where further advice was needed. They understood that one clean-up day would not solve every problem; ongoing care and local guidance were important.
+
+**Worked example:** Central idea: the community is monitoring and caring for a stream safely over time. Evidence: volunteers record cloudy areas and rubbish; they plant suitable vegetation with the landowner; they compare notes and photographs.
+
+**Your task:** Explain why the text says one clean-up day is not enough. Use two details and distinguish observed facts from the inference you make.
+
+**Gold pathway support:** Extend the same objective with comparison, evaluation or precise revision. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -237,27 +387,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Accurate central idea, two relevant details and evidence-linked inference. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Copper Worksheet
+## Day 3 — Term 1, Week 1 — A Local Enterprise — Vocabulary and language — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 3  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse vocabulary in context, explain connotation and select precise synonyms for a specific audience.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can explain four context words and justify a precise word choice in a sentence.
 
-**Worked example:** 
+**Read this complete text — A Local Enterprise:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> A group of young people planned a small local enterprise selling reusable cloth bags. They surveyed shoppers to find out what sizes were useful and how much people might reasonably pay. The group calculated the cost of materials before setting a price.
+> 
+> They wanted the bags to be durable, so they tested different cloth samples and strengthened the handles. Their advertising described the bags as practical rather than perfect. They also explained how customers could care for them and reuse them many times.
+> 
+> The group reviewed customer comments after the first market day. Some shoppers suggested a smaller size. The team considered the feedback before deciding what to make next.
+
+**Worked example:** “Durable” means able to last through use. “Practical” suggests useful and suitable for a real purpose. “Feedback” means comments or information that help improve something.
+
+**Your task:** Match durable to “long-lasting”, practical to “useful” and feedback to “comments”. Choose one word and point to its meaning in the passage.
+
+**Copper pathway support:** Work one step at a time with the model and word bank. Respond in Braille, large print, speech, sign, AAC, pointing, eye gaze, object choice, dictation or writing. An adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -267,27 +437,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Four context explanations, a suitable synonym and a justified word choice. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Bronze Worksheet
+## Day 3 — Term 1, Week 1 — A Local Enterprise — Vocabulary and language — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 3  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse vocabulary in context, explain connotation and select precise synonyms for a specific audience.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can explain four context words and justify a precise word choice in a sentence.
 
-**Worked example:** 
+**Read this complete text — A Local Enterprise:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> A group of young people planned a small local enterprise selling reusable cloth bags. They surveyed shoppers to find out what sizes were useful and how much people might reasonably pay. The group calculated the cost of materials before setting a price.
+> 
+> They wanted the bags to be durable, so they tested different cloth samples and strengthened the handles. Their advertising described the bags as practical rather than perfect. They also explained how customers could care for them and reuse them many times.
+> 
+> The group reviewed customer comments after the first market day. Some shoppers suggested a smaller size. The team considered the feedback before deciding what to make next.
+
+**Worked example:** “Durable” means able to last through use. “Practical” suggests useful and suitable for a real purpose. “Feedback” means comments or information that help improve something.
+
+**Your task:** Complete definitions for durable, practical, survey and feedback. Replace one word with a suitable synonym and rewrite the sentence.
+
+**Bronze pathway support:** Use the worked example and planning frame. Complete the supported task, then check your work. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -297,27 +487,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Four context explanations, a suitable synonym and a justified word choice. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Silver Worksheet
+## Day 3 — Term 1, Week 1 — A Local Enterprise — Vocabulary and language — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 3  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse vocabulary in context, explain connotation and select precise synonyms for a specific audience.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can explain four context words and justify a precise word choice in a sentence.
 
-**Worked example:** 
+**Read this complete text — A Local Enterprise:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> A group of young people planned a small local enterprise selling reusable cloth bags. They surveyed shoppers to find out what sizes were useful and how much people might reasonably pay. The group calculated the cost of materials before setting a price.
+> 
+> They wanted the bags to be durable, so they tested different cloth samples and strengthened the handles. Their advertising described the bags as practical rather than perfect. They also explained how customers could care for them and reuse them many times.
+> 
+> The group reviewed customer comments after the first market day. Some shoppers suggested a smaller size. The team considered the feedback before deciding what to make next.
+
+**Worked example:** “Durable” means able to last through use. “Practical” suggests useful and suitable for a real purpose. “Feedback” means comments or information that help improve something.
+
+**Your task:** Explain all four words in context. Choose precise synonyms and explain why one alternative fits the audience and purpose.
+
+**Silver pathway support:** Complete the task independently where possible. Select relevant evidence, explain your thinking and check the success criteria.
 
 **My answer / working:**
 
@@ -327,27 +537,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Four context explanations, a suitable synonym and a justified word choice. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 3 — Term 1, Week 1 — identity and belonging — Vocabulary and language — Gold Worksheet
+## Day 3 — Term 1, Week 1 — A Local Enterprise — Vocabulary and language — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 3  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse vocabulary in context, explain connotation and select precise synonyms for a specific audience.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can explain four context words and justify a precise word choice in a sentence.
 
-**Worked example:** 
+**Read this complete text — A Local Enterprise:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> A group of young people planned a small local enterprise selling reusable cloth bags. They surveyed shoppers to find out what sizes were useful and how much people might reasonably pay. The group calculated the cost of materials before setting a price.
+> 
+> They wanted the bags to be durable, so they tested different cloth samples and strengthened the handles. Their advertising described the bags as practical rather than perfect. They also explained how customers could care for them and reuse them many times.
+> 
+> The group reviewed customer comments after the first market day. Some shoppers suggested a smaller size. The team considered the feedback before deciding what to make next.
+
+**Worked example:** “Durable” means able to last through use. “Practical” suggests useful and suitable for a real purpose. “Feedback” means comments or information that help improve something.
+
+**Your task:** Compare the connotations of “practical” and “perfect”. Explain why “practical” is more suitable in the advertisement and propose another precise word choice.
+
+**Gold pathway support:** Extend the same objective with comparison, evaluation or precise revision. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -357,27 +587,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Four context explanations, a suitable synonym and a justified word choice. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Copper Worksheet
+## Day 4 — Term 1, Week 1 — Improving an Information Report — Grammar and sentence craft — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 4  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Revise sentence structure, use conjunctions and punctuation, and combine ideas to improve cohesion.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can revise sentences for clarity and cohesion and explain one grammatical choice.
 
-**Worked example:** 
+**Read this complete text — Improving an Information Report:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> Information Report: Keeping a Shared Space Clean
+> 
+> A shared space is used by many people. Everyone can help care for it. Rubbish should be placed in the correct bins. Walkways should be kept clear. Signs can remind visitors of the rules. Community members can report hazards to the responsible person.
+> 
+> A clean space is safer. It is also more welcoming. People should not touch dangerous waste or unknown substances.
+
+**Worked example:** “A clean space is safer and more welcoming.” The conjunction “and” joins two related descriptions without repeating the subject.
+
+**Your task:** Join “A clean space is safer. It is more welcoming.” using “and”. Copy one rule from the report with a full stop.
+
+**Copper pathway support:** Work one step at a time with the model and word bank. Respond in Braille, large print, speech, sign, AAC, pointing, eye gaze, object choice, dictation or writing. An adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -387,27 +637,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** At least three accurate revisions, appropriate conjunctions and punctuation, and one explanation. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Bronze Worksheet
+## Day 4 — Term 1, Week 1 — Improving an Information Report — Grammar and sentence craft — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 4  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Revise sentence structure, use conjunctions and punctuation, and combine ideas to improve cohesion.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can revise sentences for clarity and cohesion and explain one grammatical choice.
 
-**Worked example:** 
+**Read this complete text — Improving an Information Report:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> Information Report: Keeping a Shared Space Clean
+> 
+> A shared space is used by many people. Everyone can help care for it. Rubbish should be placed in the correct bins. Walkways should be kept clear. Signs can remind visitors of the rules. Community members can report hazards to the responsible person.
+> 
+> A clean space is safer. It is also more welcoming. People should not touch dangerous waste or unknown substances.
+
+**Worked example:** “A clean space is safer and more welcoming.” The conjunction “and” joins two related descriptions without repeating the subject.
+
+**Your task:** Combine two sentence pairs using and, because or so. Correct capitals and end punctuation.
+
+**Bronze pathway support:** Use the worked example and planning frame. Complete the supported task, then check your work. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -417,27 +687,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** At least three accurate revisions, appropriate conjunctions and punctuation, and one explanation. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Silver Worksheet
+## Day 4 — Term 1, Week 1 — Improving an Information Report — Grammar and sentence craft — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 4  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Revise sentence structure, use conjunctions and punctuation, and combine ideas to improve cohesion.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can revise sentences for clarity and cohesion and explain one grammatical choice.
 
-**Worked example:** 
+**Read this complete text — Improving an Information Report:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> Information Report: Keeping a Shared Space Clean
+> 
+> A shared space is used by many people. Everyone can help care for it. Rubbish should be placed in the correct bins. Walkways should be kept clear. Signs can remind visitors of the rules. Community members can report hazards to the responsible person.
+> 
+> A clean space is safer. It is also more welcoming. People should not touch dangerous waste or unknown substances.
+
+**Worked example:** “A clean space is safer and more welcoming.” The conjunction “and” joins two related descriptions without repeating the subject.
+
+**Your task:** Revise at least three sentences to reduce repetition and improve cohesion. Use suitable conjunctions and punctuation.
+
+**Silver pathway support:** Complete the task independently where possible. Select relevant evidence, explain your thinking and check the success criteria.
 
 **My answer / working:**
 
@@ -447,27 +737,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** At least three accurate revisions, appropriate conjunctions and punctuation, and one explanation. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 4 — Term 1, Week 1 — identity and belonging — Grammar and sentence craft — Gold Worksheet
+## Day 4 — Term 1, Week 1 — Improving an Information Report — Grammar and sentence craft — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 4  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Revise sentence structure, use conjunctions and punctuation, and combine ideas to improve cohesion.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can revise sentences for clarity and cohesion and explain one grammatical choice.
 
-**Worked example:** 
+**Read this complete text — Improving an Information Report:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> Information Report: Keeping a Shared Space Clean
+> 
+> A shared space is used by many people. Everyone can help care for it. Rubbish should be placed in the correct bins. Walkways should be kept clear. Signs can remind visitors of the rules. Community members can report hazards to the responsible person.
+> 
+> A clean space is safer. It is also more welcoming. People should not touch dangerous waste or unknown substances.
+
+**Worked example:** “A clean space is safer and more welcoming.” The conjunction “and” joins two related descriptions without repeating the subject.
+
+**Your task:** Edit the report for a younger audience. Vary sentence openings, use precise conjunctions and explain how one revision improves cohesion.
+
+**Gold pathway support:** Extend the same objective with comparison, evaluation or precise revision. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -477,27 +787,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** At least three accurate revisions, appropriate conjunctions and punctuation, and one explanation. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Copper Worksheet
+## Day 5 — Term 1, Week 1 — A Proposal for Change — Writing and shaping — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 5  **Date:** __________  **Ability pathway:** Copper
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Plan and draft a developed text for a defined audience, support a proposal with reasons and revise for clarity.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can write two linked paragraphs that present a proposal, support it with reasons and include a practical action.
 
-**Worked example:** 
+**Read this complete text — A Proposal for Change:**
 
-**Copper pathway:** Use the model, short accessible text, visual/tactile cue and word bank. Complete one step at a time; pointing, signing, AAC, dictation or writing are accepted.
+> Schools and communities often notice small problems that affect many people. A walkway may be difficult to use after rain, a reading corner may lack suitable books, or important notices may be hard for some people to access.
+> 
+> A useful proposal identifies the problem, explains who is affected and suggests a realistic action. It should include reasons, practical steps and a way to find out whether the action has helped. A proposal should also consider different access needs and avoid blaming people.
+> 
+> Clear writing helps readers understand the issue and decide whether they can support the idea.
+
+**Worked example:** Paragraph 1: “Our school reading corner could be improved by adding books at different reading levels. Some learners need shorter texts, while others are ready for longer stories.” Paragraph 2: “We could invite families to donate suitable books and ask the librarian to organise them. A short learner survey could show whether the new books are useful.”
+
+**Your task:** Choose one problem from the text. Use a frame to state the problem, who it affects and one helpful action. You may dictate or use AAC.
+
+**Copper pathway support:** Work one step at a time with the model and word bank. Respond in Braille, large print, speech, sign, AAC, pointing, eye gaze, object choice, dictation or writing. An adult may scribe your exact words.
 
 **My answer / working:**
 
@@ -507,27 +837,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Two linked paragraphs with clear problem, proposal, supporting reasons, practical action and audience awareness. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Bronze Worksheet
+## Day 5 — Term 1, Week 1 — A Proposal for Change — Writing and shaping — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 5  **Date:** __________  **Ability pathway:** Bronze
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Plan and draft a developed text for a defined audience, support a proposal with reasons and revise for clarity.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can write two linked paragraphs that present a proposal, support it with reasons and include a practical action.
 
-**Worked example:** 
+**Read this complete text — A Proposal for Change:**
 
-**Bronze pathway:** Use the worked example and planning frame. Complete a parallel item, then check it with one prompt if needed.
+> Schools and communities often notice small problems that affect many people. A walkway may be difficult to use after rain, a reading corner may lack suitable books, or important notices may be hard for some people to access.
+> 
+> A useful proposal identifies the problem, explains who is affected and suggests a realistic action. It should include reasons, practical steps and a way to find out whether the action has helped. A proposal should also consider different access needs and avoid blaming people.
+> 
+> Clear writing helps readers understand the issue and decide whether they can support the idea.
+
+**Worked example:** Paragraph 1: “Our school reading corner could be improved by adding books at different reading levels. Some learners need shorter texts, while others are ready for longer stories.” Paragraph 2: “We could invite families to donate suitable books and ask the librarian to organise them. A short learner survey could show whether the new books are useful.”
+
+**Your task:** Plan and write two linked short paragraphs using: problem; people affected; proposed action; two reasons; practical step.
+
+**Bronze pathway support:** Use the worked example and planning frame. Complete the supported task, then check your work. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -537,27 +887,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Two linked paragraphs with clear problem, proposal, supporting reasons, practical action and audience awareness. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Silver Worksheet
+## Day 5 — Term 1, Week 1 — A Proposal for Change — Writing and shaping — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 5  **Date:** __________  **Ability pathway:** Silver
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Plan and draft a developed text for a defined audience, support a proposal with reasons and revise for clarity.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can write two linked paragraphs that present a proposal, support it with reasons and include a practical action.
 
-**Worked example:** 
+**Read this complete text — A Proposal for Change:**
 
-**Silver pathway:** Complete the shared task independently, select relevant evidence and check the success criteria.
+> Schools and communities often notice small problems that affect many people. A walkway may be difficult to use after rain, a reading corner may lack suitable books, or important notices may be hard for some people to access.
+> 
+> A useful proposal identifies the problem, explains who is affected and suggests a realistic action. It should include reasons, practical steps and a way to find out whether the action has helped. A proposal should also consider different access needs and avoid blaming people.
+> 
+> Clear writing helps readers understand the issue and decide whether they can support the idea.
+
+**Worked example:** Paragraph 1: “Our school reading corner could be improved by adding books at different reading levels. Some learners need shorter texts, while others are ready for longer stories.” Paragraph 2: “We could invite families to donate suitable books and ask the librarian to organise them. A short learner survey could show whether the new books are useful.”
+
+**Your task:** Write two linked paragraphs with a clear proposal, at least two supporting reasons, practical action and a closing request to the audience.
+
+**Silver pathway support:** Complete the task independently where possible. Select relevant evidence, explain your thinking and check the success criteria.
 
 **My answer / working:**
 
@@ -567,27 +937,47 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Two linked paragraphs with clear problem, proposal, supporting reasons, practical action and audience awareness. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
 ---
 
-## Day 5 — Term 1, Week 1 — identity and belonging — Writing and shaping — Gold Worksheet
+## Day 5 — Term 1, Week 1 — A Proposal for Change — Writing and shaping — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** ____________________  **Class:** 5  **Subject:** English  **Term/Week:** 1 / 1  **Day:** 5  **Date:** __________  **Ability pathway:** Gold
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Plan and draft a developed text for a defined audience, support a proposal with reasons and revise for clarity.
 
-**Task:** 
+**PacEdu working achievement indicator:** I can write two linked paragraphs that present a proposal, support it with reasons and include a practical action.
 
-**Worked example:** 
+**Read this complete text — A Proposal for Change:**
 
-**Gold pathway:** Extend the same objective with a comparison, alternative interpretation or more precise revision; do not change the learning objective.
+> Schools and communities often notice small problems that affect many people. A walkway may be difficult to use after rain, a reading corner may lack suitable books, or important notices may be hard for some people to access.
+> 
+> A useful proposal identifies the problem, explains who is affected and suggests a realistic action. It should include reasons, practical steps and a way to find out whether the action has helped. A proposal should also consider different access needs and avoid blaming people.
+> 
+> Clear writing helps readers understand the issue and decide whether they can support the idea.
+
+**Worked example:** Paragraph 1: “Our school reading corner could be improved by adding books at different reading levels. Some learners need shorter texts, while others are ready for longer stories.” Paragraph 2: “We could invite families to donate suitable books and ask the librarian to organise them. A short learner survey could show whether the new books are useful.”
+
+**Your task:** Write a persuasive two-paragraph proposal for a named audience. Address one likely concern, include an inclusive access measure and revise for precise evidence-based language.
+
+**Gold pathway support:** Extend the same objective with comparison, evaluation or precise revision. Accessible response methods are welcome.
 
 **My answer / working:**
 
@@ -597,11 +987,21 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-**Evidence for teacher:** Record the learner's response, example/text used, accuracy, communication mode and prompt level. Expected evidence: 
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
 
 **Self-check:** ☐ I can show the skill ☐ I need a prompt ☐ I need another model
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorized source, edition and page only after verification.
+**Evidence for teacher:** Two linked paragraphs with clear problem, proposal, supporting reasons, practical action and audience awareness. Record actual response, response mode and prompt level.
+
+**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — exact authorised source, edition and page still require checking.
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
