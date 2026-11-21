@@ -4858,865 +4858,1315 @@ ____________________________________________________________________________
 
 **Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
+# PacEdu English Subject Box — Form 7 Printable Worksheets (Days 1–115)
+
+**Status:** ORIGINAL PACEDU DRAFT — PENDING_TEACHER_REVIEW — PENDING_OFFICIAL_INDICATOR_VERIFICATION. Not a Ministry-issued or examination-authorized worksheet pack.
+
+**Senior secondary safeguard:** Verify the current authorised Form 7 cohort syllabus, prescribed texts and assessment specifications separately. These original linked practice sources are not prescribed texts or past examination questions.
+
+---
+
 ## Day 21 — Term 1, Week 5 — culture, tradition and change — Oral communication — Copper Worksheet
 
-**Learning intention:** present and defend a clear interpretation in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Defend an interpretation of how cultural practices are maintained, adapted and represented across generations.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a sustained position, synthesise evidence from two sources, qualify a claim and respond to a counterargument.
 
-**Task:** Deliver a structured response to a prompt about culture, tradition and change; state a position, support it with two relevant details and respond to a counter-question. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a 60–90 second response to a prompt about culture, tradition and change: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Youth arts group statement: Young performers have adapted a traditional welcome chant into a contemporary stage piece. The group says it retained the language and central message but changed the rhythm and staging so younger audiences could participate. Elders were invited to review the words before the performance.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Cultural practitioner interview: A practitioner welcomes young people's interest but explains that some chants have a specific context and are not suitable for every public performance. The practitioner says consultation should include the people who hold the relevant knowledge, not only the performers or event organisers.
 
+**Worked example:** The sources suggest that adaptation can support continuity when language and meaning are respected, but consultation must consider context and knowledge holders. Source A describes one group's process; Source B raises a wider principle but does not assess this particular performance.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Recommend how the arts group should decide whether and how to perform adapted material. Use both sources, distinguish the group's reported process from the practitioner's broader concern, and answer: 'Could strict rules discourage young people from learning?'
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison grid and the worked model. Work through one source at a time; the teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A reasoned recommendation that balances continuity, adaptation, context and consultation, using evidence and a qualified counterargument. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 21 — Term 1, Week 5 — culture, tradition and change — Oral communication — Bronze Worksheet
 
-**Learning intention:** present and defend a clear interpretation in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Defend an interpretation of how cultural practices are maintained, adapted and represented across generations.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a sustained position, synthesise evidence from two sources, qualify a claim and respond to a counterargument.
 
-**Task:** Deliver a structured response to a prompt about culture, tradition and change; state a position, support it with two relevant details and respond to a counter-question. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a 60–90 second response to a prompt about culture, tradition and change: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Youth arts group statement: Young performers have adapted a traditional welcome chant into a contemporary stage piece. The group says it retained the language and central message but changed the rhythm and staging so younger audiences could participate. Elders were invited to review the words before the performance.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Cultural practitioner interview: A practitioner welcomes young people's interest but explains that some chants have a specific context and are not suitable for every public performance. The practitioner says consultation should include the people who hold the relevant knowledge, not only the performers or event organisers.
 
+**Worked example:** The sources suggest that adaptation can support continuity when language and meaning are respected, but consultation must consider context and knowledge holders. Source A describes one group's process; Source B raises a wider principle but does not assess this particular performance.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Recommend how the arts group should decide whether and how to perform adapted material. Use both sources, distinguish the group's reported process from the practitioner's broader concern, and answer: 'Could strict rules discourage young people from learning?'
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as claim, evidence, analysis and qualification; reduce prompts gradually.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A reasoned recommendation that balances continuity, adaptation, context and consultation, using evidence and a qualified counterargument. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 21 — Term 1, Week 5 — culture, tradition and change — Oral communication — Silver Worksheet
 
-**Learning intention:** present and defend a clear interpretation in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Defend an interpretation of how cultural practices are maintained, adapted and represented across generations.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a sustained position, synthesise evidence from two sources, qualify a claim and respond to a counterargument.
 
-**Task:** Deliver a structured response to a prompt about culture, tradition and change; state a position, support it with two relevant details and respond to a counter-question. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a 60–90 second response to a prompt about culture, tradition and change: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Youth arts group statement: Young performers have adapted a traditional welcome chant into a contemporary stage piece. The group says it retained the language and central message but changed the rhythm and staging so younger audiences could participate. Elders were invited to review the words before the performance.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Cultural practitioner interview: A practitioner welcomes young people's interest but explains that some chants have a specific context and are not suitable for every public performance. The practitioner says consultation should include the people who hold the relevant knowledge, not only the performers or event organisers.
 
+**Worked example:** The sources suggest that adaptation can support continuity when language and meaning are respected, but consultation must consider context and knowledge holders. Source A describes one group's process; Source B raises a wider principle but does not assess this particular performance.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Recommend how the arts group should decide whether and how to perform adapted material. Use both sources, distinguish the group's reported process from the practitioner's broader concern, and answer: 'Could strict rules discourage young people from learning?'
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish source claims from inference and evaluate limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A reasoned recommendation that balances continuity, adaptation, context and consultation, using evidence and a qualified counterargument. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 21 — Term 1, Week 5 — culture, tradition and change — Oral communication — Gold Worksheet
 
-**Learning intention:** present and defend a clear interpretation in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Defend an interpretation of how cultural practices are maintained, adapted and represented across generations.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a sustained position, synthesise evidence from two sources, qualify a claim and respond to a counterargument.
 
-**Task:** Deliver a structured response to a prompt about culture, tradition and change; state a position, support it with two relevant details and respond to a counter-question. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a 60–90 second response to a prompt about culture, tradition and change: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Youth arts group statement: Young performers have adapted a traditional welcome chant into a contemporary stage piece. The group says it retained the language and central message but changed the rhythm and staging so younger audiences could participate. Elders were invited to review the words before the performance.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Cultural practitioner interview: A practitioner welcomes young people's interest but explains that some chants have a specific context and are not suitable for every public performance. The practitioner says consultation should include the people who hold the relevant knowledge, not only the performers or event organisers.
 
+**Worked example:** The sources suggest that adaptation can support continuity when language and meaning are respected, but consultation must consider context and knowledge holders. Source A describes one group's process; Source B raises a wider principle but does not assess this particular performance.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Recommend how the arts group should decide whether and how to perform adapted material. Use both sources, distinguish the group's reported process from the practitioner's broader concern, and answer: 'Could strict rules discourage young people from learning?'
 
-____________________________________________________________________
+**Gold pathway support:** Extend through nuanced qualification, alternative interpretations or ethical implications while retaining the same objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A reasoned recommendation that balances continuity, adaptation, context and consultation, using evidence and a qualified counterargument. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 22 — Term 1, Week 5 — culture, tradition and change — Close reading — Copper Worksheet
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Analyse how contrasting narrative perspectives represent cultural continuity and change.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare voice, imagery, structure and implied values across two texts, using precise evidence and evaluating alternative readings.
 
-**Task:** Annotate an authorized text about culture, tradition and change; identify the central claim, examine two language choices and explain their effects. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Annotate a passage from a substantial prescribed text, independent research sources and an examination-style prompt; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Personal reflection: 'My grandfather kept the old song in a tin box of letters. He sang it slowly, leaving a pause where the names of places belonged. When I learnt the new version at school, the beat was faster, but I recognised the same opening words. I wondered whether the song had travelled forward or whether I had moved closer to it.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Museum label: 'This song is associated with seasonal gatherings and was traditionally performed by community members in a defined setting. Contemporary versions have appeared in school and festival programmes. The label does not identify all local variations or the views of every knowledge holder.'
 
+**Worked example:** Source A uses first-person memory, metaphor and a reflective question to present change as a personal relationship with inheritance. Source B uses formal descriptive language and limits its claim by acknowledging variations and missing perspectives.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Compare how the sources represent continuity and change. Analyse the effect of the reflective question and the museum label's cautious qualification. Offer one alternative interpretation of the new version, supported by evidence.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison grid and the worked model. Work through one source at a time; the teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Close reading of perspective, imagery, register and qualification, with a supported alternative interpretation. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 22 — Term 1, Week 5 — culture, tradition and change — Close reading — Bronze Worksheet
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Analyse how contrasting narrative perspectives represent cultural continuity and change.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare voice, imagery, structure and implied values across two texts, using precise evidence and evaluating alternative readings.
 
-**Task:** Annotate an authorized text about culture, tradition and change; identify the central claim, examine two language choices and explain their effects. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Annotate a passage from a substantial prescribed text, independent research sources and an examination-style prompt; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Personal reflection: 'My grandfather kept the old song in a tin box of letters. He sang it slowly, leaving a pause where the names of places belonged. When I learnt the new version at school, the beat was faster, but I recognised the same opening words. I wondered whether the song had travelled forward or whether I had moved closer to it.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Museum label: 'This song is associated with seasonal gatherings and was traditionally performed by community members in a defined setting. Contemporary versions have appeared in school and festival programmes. The label does not identify all local variations or the views of every knowledge holder.'
 
+**Worked example:** Source A uses first-person memory, metaphor and a reflective question to present change as a personal relationship with inheritance. Source B uses formal descriptive language and limits its claim by acknowledging variations and missing perspectives.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Compare how the sources represent continuity and change. Analyse the effect of the reflective question and the museum label's cautious qualification. Offer one alternative interpretation of the new version, supported by evidence.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as claim, evidence, analysis and qualification; reduce prompts gradually.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Close reading of perspective, imagery, register and qualification, with a supported alternative interpretation. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 22 — Term 1, Week 5 — culture, tradition and change — Close reading — Silver Worksheet
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Analyse how contrasting narrative perspectives represent cultural continuity and change.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare voice, imagery, structure and implied values across two texts, using precise evidence and evaluating alternative readings.
 
-**Task:** Annotate an authorized text about culture, tradition and change; identify the central claim, examine two language choices and explain their effects. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Annotate a passage from a substantial prescribed text, independent research sources and an examination-style prompt; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Personal reflection: 'My grandfather kept the old song in a tin box of letters. He sang it slowly, leaving a pause where the names of places belonged. When I learnt the new version at school, the beat was faster, but I recognised the same opening words. I wondered whether the song had travelled forward or whether I had moved closer to it.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Museum label: 'This song is associated with seasonal gatherings and was traditionally performed by community members in a defined setting. Contemporary versions have appeared in school and festival programmes. The label does not identify all local variations or the views of every knowledge holder.'
 
+**Worked example:** Source A uses first-person memory, metaphor and a reflective question to present change as a personal relationship with inheritance. Source B uses formal descriptive language and limits its claim by acknowledging variations and missing perspectives.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Compare how the sources represent continuity and change. Analyse the effect of the reflective question and the museum label's cautious qualification. Offer one alternative interpretation of the new version, supported by evidence.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish source claims from inference and evaluate limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Close reading of perspective, imagery, register and qualification, with a supported alternative interpretation. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 22 — Term 1, Week 5 — culture, tradition and change — Close reading — Gold Worksheet
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Analyse how contrasting narrative perspectives represent cultural continuity and change.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare voice, imagery, structure and implied values across two texts, using precise evidence and evaluating alternative readings.
 
-**Task:** Annotate an authorized text about culture, tradition and change; identify the central claim, examine two language choices and explain their effects. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Annotate a passage from a substantial prescribed text, independent research sources and an examination-style prompt; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Personal reflection: 'My grandfather kept the old song in a tin box of letters. He sang it slowly, leaving a pause where the names of places belonged. When I learnt the new version at school, the beat was faster, but I recognised the same opening words. I wondered whether the song had travelled forward or whether I had moved closer to it.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Museum label: 'This song is associated with seasonal gatherings and was traditionally performed by community members in a defined setting. Contemporary versions have appeared in school and festival programmes. The label does not identify all local variations or the views of every knowledge holder.'
 
+**Worked example:** Source A uses first-person memory, metaphor and a reflective question to present change as a personal relationship with inheritance. Source B uses formal descriptive language and limits its claim by acknowledging variations and missing perspectives.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Compare how the sources represent continuity and change. Analyse the effect of the reflective question and the museum label's cautious qualification. Offer one alternative interpretation of the new version, supported by evidence.
 
-____________________________________________________________________
+**Gold pathway support:** Extend through nuanced qualification, alternative interpretations or ethical implications while retaining the same objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Close reading of perspective, imagery, register and qualification, with a supported alternative interpretation. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 23 — Term 1, Week 5 — culture, tradition and change — Vocabulary and language — Copper Worksheet
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how language choices frame cultural practice, authenticity and adaptation for different audiences.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse connotation, register and rhetorical framing in linked sources and justify a precise alternative wording.
 
-**Task:** Select three significant language choices in a text about culture, tradition and change; explain connotations, register and effect on a defined audience. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Compare three expressions from a a substantial prescribed text, independent research sources and an examination-style prompt; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Festival promotion: 'Experience an authentic celebration where ancient traditions come alive for a modern audience.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Curatorial note: 'The programme includes selected contemporary performances developed with participating community groups. Practices vary between families and locations; the programme should not be treated as a complete representation of any one tradition.'
 
+**Worked example:** 'Authentic' implies a single standard of genuineness, while 'ancient traditions come alive' can make living practices sound fixed in the past. Source B uses qualified language such as 'selected' and 'participating' to limit claims about representation.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Analyse 'authentic', 'ancient traditions come alive', 'selected' and 'not a complete representation'. Explain the audiences each source addresses. Rewrite the promotional sentence so it is engaging without implying one fixed version of a culture.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison grid and the worked model. Work through one source at a time; the teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Precise analysis of connotation and framing, audience awareness and a respectful evidence-calibrated rewrite. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 23 — Term 1, Week 5 — culture, tradition and change — Vocabulary and language — Bronze Worksheet
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how language choices frame cultural practice, authenticity and adaptation for different audiences.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse connotation, register and rhetorical framing in linked sources and justify a precise alternative wording.
 
-**Task:** Select three significant language choices in a text about culture, tradition and change; explain connotations, register and effect on a defined audience. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Compare three expressions from a a substantial prescribed text, independent research sources and an examination-style prompt; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Festival promotion: 'Experience an authentic celebration where ancient traditions come alive for a modern audience.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Curatorial note: 'The programme includes selected contemporary performances developed with participating community groups. Practices vary between families and locations; the programme should not be treated as a complete representation of any one tradition.'
 
+**Worked example:** 'Authentic' implies a single standard of genuineness, while 'ancient traditions come alive' can make living practices sound fixed in the past. Source B uses qualified language such as 'selected' and 'participating' to limit claims about representation.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Analyse 'authentic', 'ancient traditions come alive', 'selected' and 'not a complete representation'. Explain the audiences each source addresses. Rewrite the promotional sentence so it is engaging without implying one fixed version of a culture.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as claim, evidence, analysis and qualification; reduce prompts gradually.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Precise analysis of connotation and framing, audience awareness and a respectful evidence-calibrated rewrite. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 23 — Term 1, Week 5 — culture, tradition and change — Vocabulary and language — Silver Worksheet
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how language choices frame cultural practice, authenticity and adaptation for different audiences.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse connotation, register and rhetorical framing in linked sources and justify a precise alternative wording.
 
-**Task:** Select three significant language choices in a text about culture, tradition and change; explain connotations, register and effect on a defined audience. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Compare three expressions from a a substantial prescribed text, independent research sources and an examination-style prompt; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Festival promotion: 'Experience an authentic celebration where ancient traditions come alive for a modern audience.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Curatorial note: 'The programme includes selected contemporary performances developed with participating community groups. Practices vary between families and locations; the programme should not be treated as a complete representation of any one tradition.'
 
+**Worked example:** 'Authentic' implies a single standard of genuineness, while 'ancient traditions come alive' can make living practices sound fixed in the past. Source B uses qualified language such as 'selected' and 'participating' to limit claims about representation.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Analyse 'authentic', 'ancient traditions come alive', 'selected' and 'not a complete representation'. Explain the audiences each source addresses. Rewrite the promotional sentence so it is engaging without implying one fixed version of a culture.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish source claims from inference and evaluate limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Precise analysis of connotation and framing, audience awareness and a respectful evidence-calibrated rewrite. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 23 — Term 1, Week 5 — culture, tradition and change — Vocabulary and language — Gold Worksheet
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how language choices frame cultural practice, authenticity and adaptation for different audiences.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse connotation, register and rhetorical framing in linked sources and justify a precise alternative wording.
 
-**Task:** Select three significant language choices in a text about culture, tradition and change; explain connotations, register and effect on a defined audience. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Compare three expressions from a a substantial prescribed text, independent research sources and an examination-style prompt; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Festival promotion: 'Experience an authentic celebration where ancient traditions come alive for a modern audience.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Curatorial note: 'The programme includes selected contemporary performances developed with participating community groups. Practices vary between families and locations; the programme should not be treated as a complete representation of any one tradition.'
 
+**Worked example:** 'Authentic' implies a single standard of genuineness, while 'ancient traditions come alive' can make living practices sound fixed in the past. Source B uses qualified language such as 'selected' and 'participating' to limit claims about representation.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Analyse 'authentic', 'ancient traditions come alive', 'selected' and 'not a complete representation'. Explain the audiences each source addresses. Rewrite the promotional sentence so it is engaging without implying one fixed version of a culture.
 
-____________________________________________________________________
+**Gold pathway support:** Extend through nuanced qualification, alternative interpretations or ethical implications while retaining the same objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Precise analysis of connotation and framing, audience awareness and a respectful evidence-calibrated rewrite. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 24 — Term 1, Week 5 — culture, tradition and change — Critical literacy — Copper Worksheet
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate claims about cultural representation by examining authority, consent, selection and missing perspectives.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Assess source authority, consent and selection methods, identify missing perspectives and propose evidence needed for responsible representation.
 
-**Task:** Compare two sources about culture, tradition and change; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Use a source comparison grid for two sources on culture, tradition and change; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Event organiser statement: 'The festival programme features performances from six groups and includes introductions written with group representatives. All participating groups approved the descriptions supplied to the organiser.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community network response: 'Some families say they were not invited to contribute and worry that a small number of performances may be presented as representing a whole community. The response does not identify every family consulted or provide a complete list of invitations.'
 
+**Worked example:** Source A establishes that six participating groups approved their descriptions, but does not show that every group or family was represented. Source B raises a concern about selection and representation, but does not quantify the scale of exclusion.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Evaluate both sources. Distinguish consent by participating groups from representation of a wider community. Identify whose perspectives may be missing and propose at least four practical checks before the programme is described as representative.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison grid and the worked model. Work through one source at a time; the teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced evaluation of consent, selection and representativeness with practical evidence-gathering recommendations. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 24 — Term 1, Week 5 — culture, tradition and change — Critical literacy — Bronze Worksheet
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate claims about cultural representation by examining authority, consent, selection and missing perspectives.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Assess source authority, consent and selection methods, identify missing perspectives and propose evidence needed for responsible representation.
 
-**Task:** Compare two sources about culture, tradition and change; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Use a source comparison grid for two sources on culture, tradition and change; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Event organiser statement: 'The festival programme features performances from six groups and includes introductions written with group representatives. All participating groups approved the descriptions supplied to the organiser.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community network response: 'Some families say they were not invited to contribute and worry that a small number of performances may be presented as representing a whole community. The response does not identify every family consulted or provide a complete list of invitations.'
 
+**Worked example:** Source A establishes that six participating groups approved their descriptions, but does not show that every group or family was represented. Source B raises a concern about selection and representation, but does not quantify the scale of exclusion.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Evaluate both sources. Distinguish consent by participating groups from representation of a wider community. Identify whose perspectives may be missing and propose at least four practical checks before the programme is described as representative.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as claim, evidence, analysis and qualification; reduce prompts gradually.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced evaluation of consent, selection and representativeness with practical evidence-gathering recommendations. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 24 — Term 1, Week 5 — culture, tradition and change — Critical literacy — Silver Worksheet
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate claims about cultural representation by examining authority, consent, selection and missing perspectives.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Assess source authority, consent and selection methods, identify missing perspectives and propose evidence needed for responsible representation.
 
-**Task:** Compare two sources about culture, tradition and change; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Use a source comparison grid for two sources on culture, tradition and change; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Event organiser statement: 'The festival programme features performances from six groups and includes introductions written with group representatives. All participating groups approved the descriptions supplied to the organiser.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community network response: 'Some families say they were not invited to contribute and worry that a small number of performances may be presented as representing a whole community. The response does not identify every family consulted or provide a complete list of invitations.'
 
+**Worked example:** Source A establishes that six participating groups approved their descriptions, but does not show that every group or family was represented. Source B raises a concern about selection and representation, but does not quantify the scale of exclusion.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Evaluate both sources. Distinguish consent by participating groups from representation of a wider community. Identify whose perspectives may be missing and propose at least four practical checks before the programme is described as representative.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish source claims from inference and evaluate limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced evaluation of consent, selection and representativeness with practical evidence-gathering recommendations. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 24 — Term 1, Week 5 — culture, tradition and change — Critical literacy — Gold Worksheet
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate claims about cultural representation by examining authority, consent, selection and missing perspectives.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Assess source authority, consent and selection methods, identify missing perspectives and propose evidence needed for responsible representation.
 
-**Task:** Compare two sources about culture, tradition and change; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Use a source comparison grid for two sources on culture, tradition and change; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Event organiser statement: 'The festival programme features performances from six groups and includes introductions written with group representatives. All participating groups approved the descriptions supplied to the organiser.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community network response: 'Some families say they were not invited to contribute and worry that a small number of performances may be presented as representing a whole community. The response does not identify every family consulted or provide a complete list of invitations.'
 
+**Worked example:** Source A establishes that six participating groups approved their descriptions, but does not show that every group or family was represented. Source B raises a concern about selection and representation, but does not quantify the scale of exclusion.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Evaluate both sources. Distinguish consent by participating groups from representation of a wider community. Identify whose perspectives may be missing and propose at least four practical checks before the programme is described as representative.
 
-____________________________________________________________________
+**Gold pathway support:** Extend through nuanced qualification, alternative interpretations or ethical implications while retaining the same objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced evaluation of consent, selection and representativeness with practical evidence-gathering recommendations. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 25 — Term 1, Week 5 — culture, tradition and change — Writing and shaping — Copper Worksheet
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Construct a sustained critical recommendation on cultural representation, consent and responsible adaptation.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a coherent critical essay with thesis, integrated evidence, counterargument, evaluation of limitations and reasoned recommendations.
 
-**Task:** Develop an analytical response about culture, tradition and change; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a plan for an independently structured critical argument or synthesis on culture, tradition and change; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Programme policy: Organisers invite groups to propose performances, review descriptions and request changes before publication. The policy does not specify how groups are selected or how disagreements about context will be resolved.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community advisory note: Advisers support youth participation and creative adaptation but recommend clear consent, context notes, a process for correcting descriptions and a statement that selected performances do not represent every family or variation. The note does not provide a single agreed rule for all cultural practices.
 
+**Worked example:** A defensible thesis may support youth-led adaptation when consent and context are clear, selection is transparent and descriptions avoid claiming to represent everyone. The policy offers review rights but lacks selection and disagreement procedures; the advisory note offers safeguards but not a universal formula.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Write a sustained critical recommendation to the festival board. Integrate at least two details from each source, address the concern that safeguards could restrict creativity, identify limitations and propose transparent procedures for consent, selection, correction and disagreement.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison grid and the worked model. Work through one source at a time; the teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained essay with a defensible thesis, integrated evidence, fair counterargument, nuanced evaluation and practical recommendations. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 25 — Term 1, Week 5 — culture, tradition and change — Writing and shaping — Bronze Worksheet
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Construct a sustained critical recommendation on cultural representation, consent and responsible adaptation.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a coherent critical essay with thesis, integrated evidence, counterargument, evaluation of limitations and reasoned recommendations.
 
-**Task:** Develop an analytical response about culture, tradition and change; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a plan for an independently structured critical argument or synthesis on culture, tradition and change; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Programme policy: Organisers invite groups to propose performances, review descriptions and request changes before publication. The policy does not specify how groups are selected or how disagreements about context will be resolved.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community advisory note: Advisers support youth participation and creative adaptation but recommend clear consent, context notes, a process for correcting descriptions and a statement that selected performances do not represent every family or variation. The note does not provide a single agreed rule for all cultural practices.
 
+**Worked example:** A defensible thesis may support youth-led adaptation when consent and context are clear, selection is transparent and descriptions avoid claiming to represent everyone. The policy offers review rights but lacks selection and disagreement procedures; the advisory note offers safeguards but not a universal formula.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Write a sustained critical recommendation to the festival board. Integrate at least two details from each source, address the concern that safeguards could restrict creativity, identify limitations and propose transparent procedures for consent, selection, correction and disagreement.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as claim, evidence, analysis and qualification; reduce prompts gradually.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained essay with a defensible thesis, integrated evidence, fair counterargument, nuanced evaluation and practical recommendations. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 25 — Term 1, Week 5 — culture, tradition and change — Writing and shaping — Silver Worksheet
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Construct a sustained critical recommendation on cultural representation, consent and responsible adaptation.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a coherent critical essay with thesis, integrated evidence, counterargument, evaluation of limitations and reasoned recommendations.
 
-**Task:** Develop an analytical response about culture, tradition and change; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a plan for an independently structured critical argument or synthesis on culture, tradition and change; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Programme policy: Organisers invite groups to propose performances, review descriptions and request changes before publication. The policy does not specify how groups are selected or how disagreements about context will be resolved.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community advisory note: Advisers support youth participation and creative adaptation but recommend clear consent, context notes, a process for correcting descriptions and a statement that selected performances do not represent every family or variation. The note does not provide a single agreed rule for all cultural practices.
 
+**Worked example:** A defensible thesis may support youth-led adaptation when consent and context are clear, selection is transparent and descriptions avoid claiming to represent everyone. The policy offers review rights but lacks selection and disagreement procedures; the advisory note offers safeguards but not a universal formula.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Write a sustained critical recommendation to the festival board. Integrate at least two details from each source, address the concern that safeguards could restrict creativity, identify limitations and propose transparent procedures for consent, selection, correction and disagreement.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish source claims from inference and evaluate limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained essay with a defensible thesis, integrated evidence, fair counterargument, nuanced evaluation and practical recommendations. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 25 — Term 1, Week 5 — culture, tradition and change — Writing and shaping — Gold Worksheet
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to culture, tradition and change.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 5
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to culture, tradition and change, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Construct a sustained critical recommendation on cultural representation, consent and responsible adaptation.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a coherent critical essay with thesis, integrated evidence, counterargument, evaluation of limitations and reasoned recommendations.
 
-**Task:** Develop an analytical response about culture, tradition and change; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a plan for an independently structured critical argument or synthesis on culture, tradition and change; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Programme policy: Organisers invite groups to propose performances, review descriptions and request changes before publication. The policy does not specify how groups are selected or how disagreements about context will be resolved.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community advisory note: Advisers support youth participation and creative adaptation but recommend clear consent, context notes, a process for correcting descriptions and a statement that selected performances do not represent every family or variation. The note does not provide a single agreed rule for all cultural practices.
 
+**Worked example:** A defensible thesis may support youth-led adaptation when consent and context are clear, selection is transparent and descriptions avoid claiming to represent everyone. The policy offers review rights but lacks selection and disagreement procedures; the advisory note offers safeguards but not a universal formula.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's central idea and one detail.
+2. **Understand:** Explain the perspectives in your own words.
+3. **Apply:** Use the worked example to compare the sources.
+4. **Analyse:** Explain how language, voice or selection shapes meaning.
+5. **Evaluate:** Judge evidence, limitations and missing perspectives.
+6. **Create:** Produce the response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Write a sustained critical recommendation to the festival board. Integrate at least two details from each source, address the concern that safeguards could restrict creativity, identify limitations and propose transparent procedures for consent, selection, correction and disagreement.
 
-____________________________________________________________________
+**Gold pathway support:** Extend through nuanced qualification, alternative interpretations or ethical implications while retaining the same objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained essay with a defensible thesis, integrated evidence, fair counterargument, nuanced evaluation and practical recommendations. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I considered context and consent ☐ I qualified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
----
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ## Day 26 — Term 1, Week 6 — climate, evidence and public debate — Oral communication — Copper Worksheet
 
