@@ -2274,865 +2274,1277 @@ ____________________________________________________________________________
 
 **Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
 
+# PacEdu English Subject Box — Form 7 Printable Worksheets (Days 1–115)
+
+**Status:** ORIGINAL PACEDU DRAFT — PENDING_TEACHER_REVIEW — PENDING_OFFICIAL_INDICATOR_VERIFICATION. Not a Ministry-issued or examination-authorized worksheet pack.
+
+**Senior secondary safeguard:** Confirm the current authorised Form 7 cohort syllabus, prescribed texts, assessment specifications and criteria separately. These original linked practice sources are not prescribed texts or past examination questions.
+
+**Printing:** Each page includes both complete practice sources and its own instructions. Print one selected learner worksheet per page.
+
+---
+
 ## Day 11 — Term 1, Week 3 — place, environment and belonging — Oral communication — Copper Worksheet
 
-**Learning intention:** present and defend a clear interpretation in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Present and defend a nuanced interpretation of how environmental change affects place, identity and belonging, synthesising linked evidence.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a sustained position, synthesise evidence from two sources, qualify a claim and respond to a counterargument.
 
-**Task:** Deliver a structured response to a prompt about place, environment and belonging; state a position, support it with two relevant details and respond to a counter-question. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a 60–90 second response to a prompt about place, environment and belonging: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Community testimony: Residents of Vanu Bay describe the mangrove shoreline as a place where children learn to identify fish habitats and families gather after school. One fisher says the mangroves reduce wave force during ordinary weather, but also notes that some sections have become thinner after repeated boat access and rubbish accumulation.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Coastal monitoring summary: A six-month volunteer survey recorded fewer young mangrove shoots at two access points than at a protected section farther along the bay. The survey did not measure wave height or compare every season. Its authors recommend a longer study before drawing conclusions about the cause of the difference.
 
+**Worked example:** A qualified claim is that mangroves have ecological and social value, while the survey suggests local pressure but cannot prove its cause. Testimony gives lived experience; the survey offers a limited comparison. Both sources support further monitoring and community-led protection, but neither alone proves the full effect.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Should the district prioritise restricting boat access in the two affected areas? Present a reasoned recommendation using both sources, distinguish observation from inference, acknowledge one limitation and respond to the challenge: 'Could restrictions unfairly affect families who depend on the bay?'
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison grid and the worked model. Work through one source at a time. A teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained recommendation using evidence from both sources, qualification of the survey's limits, recognition of livelihood concerns and a practical counterargument response. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 11 — Term 1, Week 3 — place, environment and belonging — Oral communication — Bronze Worksheet
 
-**Learning intention:** present and defend a clear interpretation in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Present and defend a nuanced interpretation of how environmental change affects place, identity and belonging, synthesising linked evidence.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a sustained position, synthesise evidence from two sources, qualify a claim and respond to a counterargument.
 
-**Task:** Deliver a structured response to a prompt about place, environment and belonging; state a position, support it with two relevant details and respond to a counter-question. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a 60–90 second response to a prompt about place, environment and belonging: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Community testimony: Residents of Vanu Bay describe the mangrove shoreline as a place where children learn to identify fish habitats and families gather after school. One fisher says the mangroves reduce wave force during ordinary weather, but also notes that some sections have become thinner after repeated boat access and rubbish accumulation.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Coastal monitoring summary: A six-month volunteer survey recorded fewer young mangrove shoots at two access points than at a protected section farther along the bay. The survey did not measure wave height or compare every season. Its authors recommend a longer study before drawing conclusions about the cause of the difference.
 
+**Worked example:** A qualified claim is that mangroves have ecological and social value, while the survey suggests local pressure but cannot prove its cause. Testimony gives lived experience; the survey offers a limited comparison. Both sources support further monitoring and community-led protection, but neither alone proves the full effect.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Should the district prioritise restricting boat access in the two affected areas? Present a reasoned recommendation using both sources, distinguish observation from inference, acknowledge one limitation and respond to the challenge: 'Could restrictions unfairly affect families who depend on the bay?'
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Compare the sources in an organised sequence, then reduce prompts as the response develops.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained recommendation using evidence from both sources, qualification of the survey's limits, recognition of livelihood concerns and a practical counterargument response. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 11 — Term 1, Week 3 — place, environment and belonging — Oral communication — Silver Worksheet
 
-**Learning intention:** present and defend a clear interpretation in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Present and defend a nuanced interpretation of how environmental change affects place, identity and belonging, synthesising linked evidence.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a sustained position, synthesise evidence from two sources, qualify a claim and respond to a counterargument.
 
-**Task:** Deliver a structured response to a prompt about place, environment and belonging; state a position, support it with two relevant details and respond to a counter-question. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a 60–90 second response to a prompt about place, environment and belonging: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Community testimony: Residents of Vanu Bay describe the mangrove shoreline as a place where children learn to identify fish habitats and families gather after school. One fisher says the mangroves reduce wave force during ordinary weather, but also notes that some sections have become thinner after repeated boat access and rubbish accumulation.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Coastal monitoring summary: A six-month volunteer survey recorded fewer young mangrove shoots at two access points than at a protected section farther along the bay. The survey did not measure wave height or compare every season. Its authors recommend a longer study before drawing conclusions about the cause of the difference.
 
+**Worked example:** A qualified claim is that mangroves have ecological and social value, while the survey suggests local pressure but cannot prove its cause. Testimony gives lived experience; the survey offers a limited comparison. Both sources support further monitoring and community-led protection, but neither alone proves the full effect.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Should the district prioritise restricting boat access in the two affected areas? Present a reasoned recommendation using both sources, distinguish observation from inference, acknowledge one limitation and respond to the challenge: 'Could restrictions unfairly affect families who depend on the bay?'
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish observation from inference and explain limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained recommendation using evidence from both sources, qualification of the survey's limits, recognition of livelihood concerns and a practical counterargument response. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 11 — Term 1, Week 3 — place, environment and belonging — Oral communication — Gold Worksheet
 
-**Learning intention:** present and defend a clear interpretation in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Present and defend a nuanced interpretation of how environmental change affects place, identity and belonging, synthesising linked evidence.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a sustained position, synthesise evidence from two sources, qualify a claim and respond to a counterargument.
 
-**Task:** Deliver a structured response to a prompt about place, environment and belonging; state a position, support it with two relevant details and respond to a counter-question. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a 60–90 second response to a prompt about place, environment and belonging: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Community testimony: Residents of Vanu Bay describe the mangrove shoreline as a place where children learn to identify fish habitats and families gather after school. One fisher says the mangroves reduce wave force during ordinary weather, but also notes that some sections have become thinner after repeated boat access and rubbish accumulation.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Coastal monitoring summary: A six-month volunteer survey recorded fewer young mangrove shoots at two access points than at a protected section farther along the bay. The survey did not measure wave height or compare every season. Its authors recommend a longer study before drawing conclusions about the cause of the difference.
 
+**Worked example:** A qualified claim is that mangroves have ecological and social value, while the survey suggests local pressure but cannot prove its cause. Testimony gives lived experience; the survey offers a limited comparison. Both sources support further monitoring and community-led protection, but neither alone proves the full effect.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Should the district prioritise restricting boat access in the two affected areas? Present a reasoned recommendation using both sources, distinguish observation from inference, acknowledge one limitation and respond to the challenge: 'Could restrictions unfairly affect families who depend on the bay?'
 
-____________________________________________________________________
+**Gold pathway support:** Work independently and extend through nuanced qualification, competing interpretations or an ethical counterargument. Retain the same objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained recommendation using evidence from both sources, qualification of the survey's limits, recognition of livelihood concerns and a practical counterargument response. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 12 — Term 1, Week 3 — place, environment and belonging — Close reading — Copper Worksheet
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Analyse how voice, imagery, structure and omission shape representations of place and belonging.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop a comparative close reading that explains how textual choices shape representation, using precise evidence and attention to omission.
 
-**Task:** Annotate an authorized text about place, environment and belonging; identify the central claim, examine two language choices and explain their effects. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Annotate a passage from a substantial prescribed text, independent research sources and an examination-style prompt; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Personal essay extract: At low tide, the reef flats open like a familiar map. My aunt names the channels by the stories attached to them, not by the lines on a chart. When I moved away, I remembered the names but forgot the smell of wet coral after rain. Returning, I found a new fence beside the access path. The sea was still there, but reaching it required permission.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Planning notice extract: The proposed visitor facility will improve access, provide marked pathways and create safer viewing points. The project summary lists construction stages, estimated visitor numbers and maintenance responsibilities. It does not describe how residents currently use the reef path or whether customary access arrangements have been discussed.
 
+**Worked example:** Source A uses first-person memory, sensory imagery and a contrast between the open reef and the new fence to suggest that access is part of belonging. Source B uses administrative language and measurable planning details, but its omission of current local use limits its account of access.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Compare how the two sources represent access to place. Analyse one image or structural contrast in Source A, one language or organisational choice in Source B, and explain what each source leaves unexamined. Avoid assuming the planning notice is false simply because it is selective.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison grid and the worked model. Work through one source at a time. A teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Precise comparative analysis of voice, imagery, register, structure and omission, with balanced explanation rather than unsupported accusation. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 12 — Term 1, Week 3 — place, environment and belonging — Close reading — Bronze Worksheet
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Analyse how voice, imagery, structure and omission shape representations of place and belonging.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop a comparative close reading that explains how textual choices shape representation, using precise evidence and attention to omission.
 
-**Task:** Annotate an authorized text about place, environment and belonging; identify the central claim, examine two language choices and explain their effects. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Annotate a passage from a substantial prescribed text, independent research sources and an examination-style prompt; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Personal essay extract: At low tide, the reef flats open like a familiar map. My aunt names the channels by the stories attached to them, not by the lines on a chart. When I moved away, I remembered the names but forgot the smell of wet coral after rain. Returning, I found a new fence beside the access path. The sea was still there, but reaching it required permission.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Planning notice extract: The proposed visitor facility will improve access, provide marked pathways and create safer viewing points. The project summary lists construction stages, estimated visitor numbers and maintenance responsibilities. It does not describe how residents currently use the reef path or whether customary access arrangements have been discussed.
 
+**Worked example:** Source A uses first-person memory, sensory imagery and a contrast between the open reef and the new fence to suggest that access is part of belonging. Source B uses administrative language and measurable planning details, but its omission of current local use limits its account of access.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Compare how the two sources represent access to place. Analyse one image or structural contrast in Source A, one language or organisational choice in Source B, and explain what each source leaves unexamined. Avoid assuming the planning notice is false simply because it is selective.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Compare the sources in an organised sequence, then reduce prompts as the response develops.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Precise comparative analysis of voice, imagery, register, structure and omission, with balanced explanation rather than unsupported accusation. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 12 — Term 1, Week 3 — place, environment and belonging — Close reading — Silver Worksheet
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Analyse how voice, imagery, structure and omission shape representations of place and belonging.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop a comparative close reading that explains how textual choices shape representation, using precise evidence and attention to omission.
 
-**Task:** Annotate an authorized text about place, environment and belonging; identify the central claim, examine two language choices and explain their effects. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Annotate a passage from a substantial prescribed text, independent research sources and an examination-style prompt; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Personal essay extract: At low tide, the reef flats open like a familiar map. My aunt names the channels by the stories attached to them, not by the lines on a chart. When I moved away, I remembered the names but forgot the smell of wet coral after rain. Returning, I found a new fence beside the access path. The sea was still there, but reaching it required permission.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Planning notice extract: The proposed visitor facility will improve access, provide marked pathways and create safer viewing points. The project summary lists construction stages, estimated visitor numbers and maintenance responsibilities. It does not describe how residents currently use the reef path or whether customary access arrangements have been discussed.
 
+**Worked example:** Source A uses first-person memory, sensory imagery and a contrast between the open reef and the new fence to suggest that access is part of belonging. Source B uses administrative language and measurable planning details, but its omission of current local use limits its account of access.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Compare how the two sources represent access to place. Analyse one image or structural contrast in Source A, one language or organisational choice in Source B, and explain what each source leaves unexamined. Avoid assuming the planning notice is false simply because it is selective.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish observation from inference and explain limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Precise comparative analysis of voice, imagery, register, structure and omission, with balanced explanation rather than unsupported accusation. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 12 — Term 1, Week 3 — place, environment and belonging — Close reading — Gold Worksheet
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Analyse how voice, imagery, structure and omission shape representations of place and belonging.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop a comparative close reading that explains how textual choices shape representation, using precise evidence and attention to omission.
 
-**Task:** Annotate an authorized text about place, environment and belonging; identify the central claim, examine two language choices and explain their effects. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Annotate a passage from a substantial prescribed text, independent research sources and an examination-style prompt; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Personal essay extract: At low tide, the reef flats open like a familiar map. My aunt names the channels by the stories attached to them, not by the lines on a chart. When I moved away, I remembered the names but forgot the smell of wet coral after rain. Returning, I found a new fence beside the access path. The sea was still there, but reaching it required permission.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Planning notice extract: The proposed visitor facility will improve access, provide marked pathways and create safer viewing points. The project summary lists construction stages, estimated visitor numbers and maintenance responsibilities. It does not describe how residents currently use the reef path or whether customary access arrangements have been discussed.
 
+**Worked example:** Source A uses first-person memory, sensory imagery and a contrast between the open reef and the new fence to suggest that access is part of belonging. Source B uses administrative language and measurable planning details, but its omission of current local use limits its account of access.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Compare how the two sources represent access to place. Analyse one image or structural contrast in Source A, one language or organisational choice in Source B, and explain what each source leaves unexamined. Avoid assuming the planning notice is false simply because it is selective.
 
-____________________________________________________________________
+**Gold pathway support:** Work independently and extend through nuanced qualification, competing interpretations or an ethical counterargument. Retain the same objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Precise comparative analysis of voice, imagery, register, structure and omission, with balanced explanation rather than unsupported accusation. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 13 — Term 1, Week 3 — place, environment and belonging — Vocabulary and language — Copper Worksheet
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how technical, emotive and evaluative language frames environmental decisions for different audiences.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse at least three language choices, explain connotation/register and adapt a claim accurately for a different audience.
 
-**Task:** Select three significant language choices in a text about place, environment and belonging; explain connotations, register and effect on a defined audience. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Compare three expressions from a a substantial prescribed text, independent research sources and an examination-style prompt; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Campaign leaflet: 'Protect our living shoreline before it is too late. A thriving coast gives families security, beauty and a future. Every careless action leaves a mark.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Technical briefing: 'The shoreline assessment identifies three areas of vegetation loss and recommends repeat measurements over two wet seasons. The available observations indicate change at selected sites; they do not establish a single cause or quantify long-term risk.'
 
+**Worked example:** 'Living shoreline' personifies the coast and encourages an emotional connection. 'Before it is too late' creates urgency but does not specify a deadline. The technical briefing uses cautious terms such as 'selected sites' and 'do not establish' to limit the strength of its claim.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Analyse the connotations and register of 'living shoreline', 'before it is too late', 'selected sites' and 'do not establish'. Explain how the two sources position their audiences. Rewrite the leaflet's central claim for a district technical report without exaggerating the evidence.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison grid and the worked model. Work through one source at a time. A teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Contextual analysis of emotive and technical language, audience effects, and a precise evidence-calibrated rewrite. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 13 — Term 1, Week 3 — place, environment and belonging — Vocabulary and language — Bronze Worksheet
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how technical, emotive and evaluative language frames environmental decisions for different audiences.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse at least three language choices, explain connotation/register and adapt a claim accurately for a different audience.
 
-**Task:** Select three significant language choices in a text about place, environment and belonging; explain connotations, register and effect on a defined audience. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Compare three expressions from a a substantial prescribed text, independent research sources and an examination-style prompt; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Campaign leaflet: 'Protect our living shoreline before it is too late. A thriving coast gives families security, beauty and a future. Every careless action leaves a mark.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Technical briefing: 'The shoreline assessment identifies three areas of vegetation loss and recommends repeat measurements over two wet seasons. The available observations indicate change at selected sites; they do not establish a single cause or quantify long-term risk.'
 
+**Worked example:** 'Living shoreline' personifies the coast and encourages an emotional connection. 'Before it is too late' creates urgency but does not specify a deadline. The technical briefing uses cautious terms such as 'selected sites' and 'do not establish' to limit the strength of its claim.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Analyse the connotations and register of 'living shoreline', 'before it is too late', 'selected sites' and 'do not establish'. Explain how the two sources position their audiences. Rewrite the leaflet's central claim for a district technical report without exaggerating the evidence.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Compare the sources in an organised sequence, then reduce prompts as the response develops.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Contextual analysis of emotive and technical language, audience effects, and a precise evidence-calibrated rewrite. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 13 — Term 1, Week 3 — place, environment and belonging — Vocabulary and language — Silver Worksheet
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how technical, emotive and evaluative language frames environmental decisions for different audiences.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse at least three language choices, explain connotation/register and adapt a claim accurately for a different audience.
 
-**Task:** Select three significant language choices in a text about place, environment and belonging; explain connotations, register and effect on a defined audience. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Compare three expressions from a a substantial prescribed text, independent research sources and an examination-style prompt; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Campaign leaflet: 'Protect our living shoreline before it is too late. A thriving coast gives families security, beauty and a future. Every careless action leaves a mark.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Technical briefing: 'The shoreline assessment identifies three areas of vegetation loss and recommends repeat measurements over two wet seasons. The available observations indicate change at selected sites; they do not establish a single cause or quantify long-term risk.'
 
+**Worked example:** 'Living shoreline' personifies the coast and encourages an emotional connection. 'Before it is too late' creates urgency but does not specify a deadline. The technical briefing uses cautious terms such as 'selected sites' and 'do not establish' to limit the strength of its claim.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Analyse the connotations and register of 'living shoreline', 'before it is too late', 'selected sites' and 'do not establish'. Explain how the two sources position their audiences. Rewrite the leaflet's central claim for a district technical report without exaggerating the evidence.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish observation from inference and explain limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Contextual analysis of emotive and technical language, audience effects, and a precise evidence-calibrated rewrite. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 13 — Term 1, Week 3 — place, environment and belonging — Vocabulary and language — Gold Worksheet
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how technical, emotive and evaluative language frames environmental decisions for different audiences.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse at least three language choices, explain connotation/register and adapt a claim accurately for a different audience.
 
-**Task:** Select three significant language choices in a text about place, environment and belonging; explain connotations, register and effect on a defined audience. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Compare three expressions from a a substantial prescribed text, independent research sources and an examination-style prompt; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Campaign leaflet: 'Protect our living shoreline before it is too late. A thriving coast gives families security, beauty and a future. Every careless action leaves a mark.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Technical briefing: 'The shoreline assessment identifies three areas of vegetation loss and recommends repeat measurements over two wet seasons. The available observations indicate change at selected sites; they do not establish a single cause or quantify long-term risk.'
 
+**Worked example:** 'Living shoreline' personifies the coast and encourages an emotional connection. 'Before it is too late' creates urgency but does not specify a deadline. The technical briefing uses cautious terms such as 'selected sites' and 'do not establish' to limit the strength of its claim.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Analyse the connotations and register of 'living shoreline', 'before it is too late', 'selected sites' and 'do not establish'. Explain how the two sources position their audiences. Rewrite the leaflet's central claim for a district technical report without exaggerating the evidence.
 
-____________________________________________________________________
+**Gold pathway support:** Work independently and extend through nuanced qualification, competing interpretations or an ethical counterargument. Retain the same objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Contextual analysis of emotive and technical language, audience effects, and a precise evidence-calibrated rewrite. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 14 — Term 1, Week 3 — place, environment and belonging — Critical literacy — Copper Worksheet
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate competing claims about coastal development by examining source authority, evidence, interests and missing perspectives.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare source authority and evidence, identify stakeholder interests and omissions, and reach a qualified conclusion with further evidence needed.
 
-**Task:** Compare two sources about place, environment and belonging; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Use a source comparison grid for two sources on place, environment and belonging; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Developer statement: 'The proposed access road will improve visitor movement and create seasonal work. The design team has included drainage channels and a planting strip. Final construction details will be confirmed after consultation.' The statement does not provide the full drainage design or an employment estimate.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Residents' association note: 'Some households are concerned that the road may increase runoff near gardens and reduce quiet access to the shoreline. Members request publication of the drainage plan and a meeting before construction.' The note records concerns but does not include hydrological measurements or represent every resident.
 
+**Worked example:** Both sources have a perspective. The developer describes expected benefits but omits detailed evidence for drainage and employment. The residents' note records concerns and requests, but it does not prove runoff effects or represent every household. A fair judgement needs the design, measurements and broader consultation.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Evaluate both sources. Identify each source's likely interest, strongest evidence and limitation. Explain which claims are established, which remain predictions, whose perspectives may be missing, and what three pieces of further evidence should be obtained before a decision.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison grid and the worked model. Work through one source at a time. A teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced source evaluation, distinction between evidence and prediction, identification of omissions/interest and justified further evidence requests. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 14 — Term 1, Week 3 — place, environment and belonging — Critical literacy — Bronze Worksheet
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate competing claims about coastal development by examining source authority, evidence, interests and missing perspectives.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare source authority and evidence, identify stakeholder interests and omissions, and reach a qualified conclusion with further evidence needed.
 
-**Task:** Compare two sources about place, environment and belonging; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Use a source comparison grid for two sources on place, environment and belonging; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Developer statement: 'The proposed access road will improve visitor movement and create seasonal work. The design team has included drainage channels and a planting strip. Final construction details will be confirmed after consultation.' The statement does not provide the full drainage design or an employment estimate.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Residents' association note: 'Some households are concerned that the road may increase runoff near gardens and reduce quiet access to the shoreline. Members request publication of the drainage plan and a meeting before construction.' The note records concerns but does not include hydrological measurements or represent every resident.
 
+**Worked example:** Both sources have a perspective. The developer describes expected benefits but omits detailed evidence for drainage and employment. The residents' note records concerns and requests, but it does not prove runoff effects or represent every household. A fair judgement needs the design, measurements and broader consultation.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Evaluate both sources. Identify each source's likely interest, strongest evidence and limitation. Explain which claims are established, which remain predictions, whose perspectives may be missing, and what three pieces of further evidence should be obtained before a decision.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Compare the sources in an organised sequence, then reduce prompts as the response develops.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced source evaluation, distinction between evidence and prediction, identification of omissions/interest and justified further evidence requests. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 14 — Term 1, Week 3 — place, environment and belonging — Critical literacy — Silver Worksheet
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate competing claims about coastal development by examining source authority, evidence, interests and missing perspectives.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare source authority and evidence, identify stakeholder interests and omissions, and reach a qualified conclusion with further evidence needed.
 
-**Task:** Compare two sources about place, environment and belonging; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Use a source comparison grid for two sources on place, environment and belonging; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Developer statement: 'The proposed access road will improve visitor movement and create seasonal work. The design team has included drainage channels and a planting strip. Final construction details will be confirmed after consultation.' The statement does not provide the full drainage design or an employment estimate.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Residents' association note: 'Some households are concerned that the road may increase runoff near gardens and reduce quiet access to the shoreline. Members request publication of the drainage plan and a meeting before construction.' The note records concerns but does not include hydrological measurements or represent every resident.
 
+**Worked example:** Both sources have a perspective. The developer describes expected benefits but omits detailed evidence for drainage and employment. The residents' note records concerns and requests, but it does not prove runoff effects or represent every household. A fair judgement needs the design, measurements and broader consultation.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Evaluate both sources. Identify each source's likely interest, strongest evidence and limitation. Explain which claims are established, which remain predictions, whose perspectives may be missing, and what three pieces of further evidence should be obtained before a decision.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish observation from inference and explain limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced source evaluation, distinction between evidence and prediction, identification of omissions/interest and justified further evidence requests. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 14 — Term 1, Week 3 — place, environment and belonging — Critical literacy — Gold Worksheet
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate competing claims about coastal development by examining source authority, evidence, interests and missing perspectives.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare source authority and evidence, identify stakeholder interests and omissions, and reach a qualified conclusion with further evidence needed.
 
-**Task:** Compare two sources about place, environment and belonging; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Use a source comparison grid for two sources on place, environment and belonging; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Developer statement: 'The proposed access road will improve visitor movement and create seasonal work. The design team has included drainage channels and a planting strip. Final construction details will be confirmed after consultation.' The statement does not provide the full drainage design or an employment estimate.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Residents' association note: 'Some households are concerned that the road may increase runoff near gardens and reduce quiet access to the shoreline. Members request publication of the drainage plan and a meeting before construction.' The note records concerns but does not include hydrological measurements or represent every resident.
 
+**Worked example:** Both sources have a perspective. The developer describes expected benefits but omits detailed evidence for drainage and employment. The residents' note records concerns and requests, but it does not prove runoff effects or represent every household. A fair judgement needs the design, measurements and broader consultation.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Evaluate both sources. Identify each source's likely interest, strongest evidence and limitation. Explain which claims are established, which remain predictions, whose perspectives may be missing, and what three pieces of further evidence should be obtained before a decision.
 
-____________________________________________________________________
+**Gold pathway support:** Work independently and extend through nuanced qualification, competing interpretations or an ethical counterargument. Retain the same objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced source evaluation, distinction between evidence and prediction, identification of omissions/interest and justified further evidence requests. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 15 — Term 1, Week 3 — place, environment and belonging — Writing and shaping — Copper Worksheet
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Construct a sustained critical recommendation that integrates linked evidence, counterarguments and ethical consideration of community access.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a coherent multi-paragraph recommendation with thesis, synthesis of both sources, counterargument, limitations and reasoned conclusion.
 
-**Task:** Develop an analytical response about place, environment and belonging; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a plan for an independently structured critical argument or synthesis on place, environment and belonging; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Community meeting record: Participants described the shoreline as a place for fishing, family gathering and learning about local habitats. Several asked for safe access to remain available during any works. The record notes that not every household attended and that the discussion did not reach a final agreement.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Environmental planning brief: The draft plan proposes a marked access route, a planting buffer and repeat monitoring of vegetation. It states that the route may be adjusted after technical review. The brief does not yet include final costings, a completed drainage assessment or a detailed schedule for community access during construction.
 
+**Worked example:** A strong recommendation can support planning only if access, drainage and monitoring are resolved before construction. Source A establishes several community uses but is not a complete survey. Source B describes proposed safeguards but leaves cost, drainage and construction access unresolved.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Write a sustained recommendation to the district planning committee. Establish a thesis, synthesise at least two details from each source, address the strongest counterargument, identify evidence limitations and recommend practical conditions for a fair decision. Include a reasoned conclusion.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison grid and the worked model. Work through one source at a time. A teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained, coherent argument that integrates both sources, treats community records and planning briefs critically, addresses a counterargument and proposes evidence-based conditions. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 15 — Term 1, Week 3 — place, environment and belonging — Writing and shaping — Bronze Worksheet
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Construct a sustained critical recommendation that integrates linked evidence, counterarguments and ethical consideration of community access.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a coherent multi-paragraph recommendation with thesis, synthesis of both sources, counterargument, limitations and reasoned conclusion.
 
-**Task:** Develop an analytical response about place, environment and belonging; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a plan for an independently structured critical argument or synthesis on place, environment and belonging; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Community meeting record: Participants described the shoreline as a place for fishing, family gathering and learning about local habitats. Several asked for safe access to remain available during any works. The record notes that not every household attended and that the discussion did not reach a final agreement.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Environmental planning brief: The draft plan proposes a marked access route, a planting buffer and repeat monitoring of vegetation. It states that the route may be adjusted after technical review. The brief does not yet include final costings, a completed drainage assessment or a detailed schedule for community access during construction.
 
+**Worked example:** A strong recommendation can support planning only if access, drainage and monitoring are resolved before construction. Source A establishes several community uses but is not a complete survey. Source B describes proposed safeguards but leaves cost, drainage and construction access unresolved.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Write a sustained recommendation to the district planning committee. Establish a thesis, synthesise at least two details from each source, address the strongest counterargument, identify evidence limitations and recommend practical conditions for a fair decision. Include a reasoned conclusion.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Compare the sources in an organised sequence, then reduce prompts as the response develops.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained, coherent argument that integrates both sources, treats community records and planning briefs critically, addresses a counterargument and proposes evidence-based conditions. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 15 — Term 1, Week 3 — place, environment and belonging — Writing and shaping — Silver Worksheet
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Construct a sustained critical recommendation that integrates linked evidence, counterarguments and ethical consideration of community access.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a coherent multi-paragraph recommendation with thesis, synthesis of both sources, counterargument, limitations and reasoned conclusion.
 
-**Task:** Develop an analytical response about place, environment and belonging; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a plan for an independently structured critical argument or synthesis on place, environment and belonging; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Community meeting record: Participants described the shoreline as a place for fishing, family gathering and learning about local habitats. Several asked for safe access to remain available during any works. The record notes that not every household attended and that the discussion did not reach a final agreement.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Environmental planning brief: The draft plan proposes a marked access route, a planting buffer and repeat monitoring of vegetation. It states that the route may be adjusted after technical review. The brief does not yet include final costings, a completed drainage assessment or a detailed schedule for community access during construction.
 
+**Worked example:** A strong recommendation can support planning only if access, drainage and monitoring are resolved before construction. Source A establishes several community uses but is not a complete survey. Source B describes proposed safeguards but leaves cost, drainage and construction access unresolved.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Write a sustained recommendation to the district planning committee. Establish a thesis, synthesise at least two details from each source, address the strongest counterargument, identify evidence limitations and recommend practical conditions for a fair decision. Include a reasoned conclusion.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish observation from inference and explain limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained, coherent argument that integrates both sources, treats community records and planning briefs critically, addresses a counterargument and proposes evidence-based conditions. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 15 — Term 1, Week 3 — place, environment and belonging — Writing and shaping — Gold Worksheet
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to place, environment and belonging.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 3
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to place, environment and belonging, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Construct a sustained critical recommendation that integrates linked evidence, counterarguments and ethical consideration of community access.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a coherent multi-paragraph recommendation with thesis, synthesis of both sources, counterargument, limitations and reasoned conclusion.
 
-**Task:** Develop an analytical response about place, environment and belonging; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a plan for an independently structured critical argument or synthesis on place, environment and belonging; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Community meeting record: Participants described the shoreline as a place for fishing, family gathering and learning about local habitats. Several asked for safe access to remain available during any works. The record notes that not every household attended and that the discussion did not reach a final agreement.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Environmental planning brief: The draft plan proposes a marked access route, a planting buffer and repeat monitoring of vegetation. It states that the route may be adjusted after technical review. The brief does not yet include final costings, a completed drainage assessment or a detailed schedule for community access during construction.
 
+**Worked example:** A strong recommendation can support planning only if access, drainage and monitoring are resolved before construction. Source A establishes several community uses but is not a complete survey. Source B describes proposed safeguards but leaves cost, drainage and construction access unresolved.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify the central issue and one key detail from each source.
+2. **Understand:** Explain the main claim or perspective in each source in your own words.
+3. **Apply:** Use the worked example's method to compare the two sources.
+4. **Analyse:** Explain how evidence, language or omissions shape each source's representation.
+5. **Evaluate:** Judge the strength and limitations of the claims; justify your judgement.
+6. **Create:** Produce the oral, analytical or written response for the stated audience and purpose.
 
-**My analysis / response:**
+**Your task:** Write a sustained recommendation to the district planning committee. Establish a thesis, synthesise at least two details from each source, address the strongest counterargument, identify evidence limitations and recommend practical conditions for a fair decision. Include a reasoned conclusion.
 
-____________________________________________________________________
+**Gold pathway support:** Work independently and extend through nuanced qualification, competing interpretations or an ethical counterargument. Retain the same objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained, coherent argument that integrates both sources, treats community records and planning briefs critically, addresses a counterargument and proposes evidence-based conditions. Record source details used, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I explained evidence ☐ I evaluated a limitation ☐ I addressed the audience and task
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
----
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ## Day 16 — Term 1, Week 4 — power, voice and representation — Oral communication — Copper Worksheet
 
