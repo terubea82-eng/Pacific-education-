@@ -111,6 +111,11 @@
           week5Guide.target="_blank";week5Guide.rel="noopener noreferrer";
           week5Guide.style.cssText="display:block;min-height:44px;padding:9px 0;font-weight:700;";
           wrap.appendChild(week5Guide);
+          var week6Guide=node("a","Open "+level+" Week 6 Teacher Marking Guide");
+          week6Guide.href="https://github.com/terubea82-eng/Pacific-education-/blob/pacedu/english-ece-form7-staging-20261119/docs/curriculum/english-form7-teacher-guide-days-26-30.md";
+          week6Guide.target="_blank";week6Guide.rel="noopener noreferrer";
+          week6Guide.style.cssText="display:block;min-height:44px;padding:9px 0;font-weight:700;";
+          wrap.appendChild(week6Guide);
         }
       }
       card.appendChild(wrap);
