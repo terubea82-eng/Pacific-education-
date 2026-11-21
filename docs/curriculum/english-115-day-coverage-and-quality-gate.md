@@ -53,7 +53,8 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 ### Forms 4–6
 - 460 pathway headings per level are present.
 - Form 4 Days 1–5 have now been rebuilt as 20 standalone pages with original complete stimuli, developed tasks, answer spaces, accessibility options and a separate Week 1 teacher marking guide.
-- Form 4 Days 6–115 and Forms 5–6 remain incomplete/require detailed standalone worksheet rebuilding and matching marking guides. Use the correct senior-secondary demand and each school's authorised syllabus.
+- Form 4 Days 6–115 and Forms 5–6 beyond their first-week batch remain incomplete/require detailed standalone worksheet rebuilding and matching marking guides. Use the correct senior-secondary demand and each school's authorised syllabus.
+- Form 5 Days 1–5 have also been rebuilt as 20 standalone pages with original practice stimuli, thesis-led analytical tasks, answer spaces, accessible response methods and a separate Week 1 teacher marking guide linked from the English Subject Box. Days 6–115 remain draft/incomplete and the current senior Form 5 syllabus and prescribed text list require verification.
 
 ### Forms 2–3 — worksheet coverage checked
 - Form 3 contains 460 pathway pages (115 per pathway). Repository-side inspection confirmed the first 20 pages (Days 1–5) are standalone and include learner details, learning intention, working indicator, complete original stimulus, worked example, task, response space, accessible response methods and pending review status.
@@ -68,6 +69,8 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 - Days 6–115 still need the same detailed rebuild. The current Form 4 syllabus cohort, prescribed texts and assessment criteria require official verification.
 
 [Form 4 Week 1 teacher marking guide](english-form4-teacher-guide-days-1-5.md)
+
+[Form 5 Week 1 teacher marking guide](english-form5-teacher-guide-days-1-5.md)
 
 ### Form 2 (Year 8) — worksheet coverage checked
 - Repository-side blob inspection confirms 460 worksheet pages: 115 each for Copper, Bronze, Silver and Gold.
