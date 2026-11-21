@@ -14,7 +14,7 @@ A copy of the Fiji Ministry of Education, Curriculum Development Unit, *English 
 
 - https://theseeproject.org/wp-content/uploads/2015/05/l2_year910_english_syllabi.pdf
 
-The previously located 2014 *English Syllabi Years 9 & 10* is **not the correct level reference** for Form 1 and Form 2 under the owner's correction. Do not use its Year 9/10 content to build these packs. The Ministry-hosted 2022 Year 6/Year 8 English teachers' guide and Ministry resource policy listing Year 7 and Year 8 English resources have been located. The full authorised Year 7 and Year 8 syllabus/outcome sets and their current status still need checking before official indicators are claimed.
+The previously located 2014 *English Syllabi Years 9 & 10* is **not the correct level reference** for Form 1 and Form 2 under the owner's correction. Do not use its Year 9/10 content to build these packs. The Ministry-hosted 2022 Free Educational Resources policy lists English Communication resources for Years 7 and 8. A Ministry-hosted Year 6/Year 8 Teachers' Guide contains Year 8 English reading outcomes and achievement indicators. A Year 7 English textbook copy is discoverable on a third-party flipbook host and identifies Ministry/CDU ownership, but its hosting location is not an official Ministry domain. Therefore, it is a source lead only, not independent proof of current authorised Year 7 indicators. Full authorised outcome sets and current status for both years still require verification before official indicators are claimed.
 
 ## Curriculum boundary
 
@@ -31,7 +31,7 @@ For each level, produce 115 learning days across the 9/9/5 planning frame. Each 
 
 - Form 1 = Year 7 and Form 2 = Year 8, as corrected by the owner.
 - Agreed workspace approach: use one English entry per year level and display both labels, **Form 1 — Year 7** and **Form 2 — Year 8**. Preserve existing Class 7 and Class 8 files during transition; audit and map content before any rename or replacement. Do not create duplicate learner-facing entries.
-- The earlier Year 9/10 source lead is rejected for this mapping; the correct Year 7/8 authorised curriculum source remains to be located.
+- The earlier Year 9/10 source lead is rejected for this mapping. Year 8 has Ministry-hosted teacher guidance; Year 7 has a third-party-hosted textbook copy whose content must be checked against an authorised school/Ministry copy. Both levels retain `PENDING_OFFICIAL_INDICATOR_VERIFICATION`.
 - Form 1 Day 1 has an initial standalone worksheet prototype for Copper, Bronze, Silver and Gold, with a separate matching teacher marking guide for each pathway. This is a one-day prototype only, not a completed 115-day pack.
 - Form 2 worksheet production has not yet started.
 - Keep all work on the existing staging branch and draft PR. Do not merge, deploy, replace the APK, or change live learner data.
