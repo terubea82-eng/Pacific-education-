@@ -50,7 +50,7 @@ assert.ok(workspace.includes("english-form2-teacher-guide-days-1-5.md"), "Form 2
 
 
 const form3Source = fs.readFileSync(path.join(root, "docs/curriculum/english-form3-printable-worksheets-days-1-115.md"), "utf8");
-const form3Week1 = form3Source.split(/(?=^## Day \\d+ —)/m).filter(part => /^## Day ([1-5]) —/.test(part));
+const form3Week1 = form3Source.split(/(?=^## Day \d+ —)/m).filter(part => /^## Day ([1-5]) —/.test(part));
 assert.equal(form3Week1.length, 20, "Form 3 must have 20 standalone worksheets for Days 1–5");
 for (const part of form3Week1) {
   assert.match(part, /^## Day [1-5] —.*— (Copper|Bronze|Silver|Gold) Worksheet/m);
