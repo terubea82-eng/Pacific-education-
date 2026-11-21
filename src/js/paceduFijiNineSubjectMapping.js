@@ -1,12 +1,12 @@
 /* PacEdu Fiji 15-box subject mapping — non-activating pilot registry.
- * Preserves the requested 15 subject boxes and ECE, Classes 1–8, Forms 3–7.
+ * Preserves the requested 15 subject boxes and ECE, Classes 1–8, Forms 1–7.
  * Missing/partial content stays explicit; this registry never certifies Ministry alignment.
  */
 (function (global) {
   "use strict";
   var LEVELS = ["ECE"];
   for (var c = 1; c <= 8; c += 1) LEVELS.push("Class " + c);
-  for (var f = 3; f <= 7; f += 1) LEVELS.push("Form " + f);
+  for (var f = 1; f <= 7; f += 1) LEVELS.push("Form " + f);
 
   var SUBJECTS = [
     { id:"English", label:"English", worksheet:["English"], weekly:["English"], status:"partial", note:"Original English practice content is available; exact current Fiji syllabus outcomes, school adoption and daily sequence remain pending teacher verification." },
