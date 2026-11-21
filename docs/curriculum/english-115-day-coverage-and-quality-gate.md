@@ -81,9 +81,16 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 - Days 1–5 are additionally checked as 20 standalone worksheets; a separate Week 1 marking guide has been added and linked from the English Subject Box.
 - A detailed teacher marking guide for Days 6–115 and Fiji educator/source review remain outstanding.
 
-### Forms 1, 3 and 7
+### Forms 1 and 3
 - Separate 115-day printable source/viewer entries are staged.
-- Detailed per-day content still requires complete repository-side verification and educator review. Form 1 = Year 7 and Form 2 = Year 8 in the owner's level mapping. Do not use the 2014 Years 9–10 syllabus for those levels.
+- Detailed per-day content still requires complete repository-side verification and educator review.
+
+### Form 7 — first standalone batch
+- Form 7 has 460 pathway worksheet headings (115 per pathway). Days 1–5 have been rebuilt as 20 standalone pages with complete original linked-source stimuli, independent critical-synthesis tasks, answer spaces, accessible response methods and pending review status.
+- Added a separate Form 7 Week 1 teacher marking guide and linked it from the English Subject Box.
+- Days 6–115 still require detailed standalone worksheet rebuilding and marking guides. Verify the current authorised Form 7 syllabus, prescribed texts, research expectations and assessment criteria.
+
+[Form 7 Week 1 teacher marking guide](english-form7-teacher-guide-days-1-5.md) Form 1 = Year 7 and Form 2 = Year 8 in the owner's level mapping. Do not use the 2014 Years 9–10 syllabus for those levels.
 - Do not mark these packs final until every day's four worksheets and marking guidance have been inspected.
 
 ## New learner-ready drafting batch — 22 November 2026
