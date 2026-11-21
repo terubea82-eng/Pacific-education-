@@ -18,10 +18,10 @@ assert.deepEqual(Array.from(api.subjectBoxes, item => item.label), [
 ]);
 assert.deepEqual(Array.from(api.levels), [
   "ECE", "Class 1", "Class 2", "Class 3", "Class 4", "Class 5",
-  "Class 6", "Class 7", "Class 8", "Form 3", "Form 4", "Form 5", "Form 6", "Form 7"
+  "Class 6", "Class 7", "Class 8", "Form 1", "Form 2", "Form 3", "Form 4", "Form 5", "Form 6", "Form 7"
 ]);
-assert.equal(api.levels.includes("Form 1"), false);
-assert.equal(api.levels.includes("Form 2"), false);
+assert.equal(api.levels.includes("Form 1"), true);
+assert.equal(api.levels.includes("Form 2"), true);
 
 for (const level of api.levels) {
   for (const subject of api.subjectBoxes) {
@@ -58,12 +58,19 @@ for (const subject of ["Urdu", "Rotuman"]) {
 }
 assert.equal(api.resolve("Vosa Vakaviti (iTaukei)", "Class 3").contentStatus, "CONTENT_PARTIAL");
 assert.equal(api.resolve("Fiji Hindi", "Class 3").contentStatus, "CONTENT_PARTIAL");
-assert.equal(api.resolve("English", "Form 1").status, "level-gap");
+assert.equal(api.resolve("English", "Form 1").status, "partial");
+assert.equal(api.resolve("English", "Form 1").contentStatus, "CONTENT_PARTIAL");
+assert.equal(api.resolve("English", "Form 2").status, "partial");
+assert.equal(api.resolve("English", "Form 2").contentStatus, "CONTENT_PARTIAL");
 assert.equal(api.resolve("unknown", "Class 1").status, "SUBJECT_NOT_MAPPED");
 
-console.log("PASS: exact 15 Fiji subject boxes; ECE, Classes 1–8, Forms 3–7; explicit partial/missing content; legacy API alias; no unsupported subject substitution.");
+console.log("PASS: exact 15 Fiji subject boxes; ECE, Classes 1–8, Forms 1–7; explicit partial/missing content; legacy API alias; no unsupported subject substitution.");
 assert.match(teacherWorkspace, /var displaySubject=mapping&&mapping\.label\?mapping\.label:subject/);
 assert.match(teacherWorkspace, /selectedButton\)selectedButton\.textContent=displaySubject/);
 assert.match(teacherWorkspace, /displaySubject\+" — "\+item\.level\+" Daily Activities"/);
+assert.match(teacherWorkspace, /paceduForm1EnglishDailyPackLink/);
+assert.match(teacherWorkspace, /paceduForm2EnglishDailyPackLink/);
+assert.match(teacherWorkspace, /pacedu-form1-english-printable-worksheets\.html/);
+assert.match(teacherWorkspace, /pacedu-form2-english-printable-worksheets\.html/);
 console.log("PASS: teacher subject box uses level-specific Fiji science labels and keeps unsupported generic Science content blocked.");
 
