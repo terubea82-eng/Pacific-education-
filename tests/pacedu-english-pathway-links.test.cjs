@@ -153,7 +153,7 @@ for (const part of form4Week2) {
 assert.ok(workspace.includes("english-form4-teacher-guide-days-6-10.md"), "Form 4 Week 2 teacher guide must be linked from the English Subject Box");
 
 
-const form4Week1 = form4Source.split(/(?=^## Day \\d+ —)/m).filter(part => /^## Day ([1-5]) —/.test(part));
+const form4Week1 = form4Source.split(/(?=^## Day \d+ —)/m).filter(part => /^## Day ([1-5]) —/.test(part));
 assert.equal(form4Week1.length, 20, "Form 4 must have 20 standalone worksheets for Days 1–5");
 for (const part of form4Week1) {
   assert.match(part, /^## Day [1-5] —.*— (Copper|Bronze|Silver|Gold) Worksheet/m);
