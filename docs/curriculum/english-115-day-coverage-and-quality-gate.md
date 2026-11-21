@@ -33,9 +33,9 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 - Improve standalone task specificity and provide matching teacher-only marking guides before calling these final learner downloads.
 
 ### Classes 3–8
-- 460 pathway headings per level are present.
-- The inspected printable worksheet bodies have empty fields for learning intention, working indicator, task and worked example. The matching daily activity plans contain usable teacher-led activities, worked examples, pathway scaffolds, evidence, marking guidance and next steps.
-- These worksheet bodies are **NOT READY**. Rebuild each learner worksheet from its matching daily activity and add the full learner stimulus/text, task steps, answer space and accessible response methods.
+- 460 pathway pages per level are present.
+- Days 1–5 have been rebuilt as 20 standalone learner pages per class (five days × four pathways), with matching separate teacher marking guides and English Subject Box links.
+- Days 6–115 still require detailed standalone worksheet rebuilding and matching marking guides. The earlier incomplete body findings remain relevant to those unreconstructed days.
 
 ### Form 2 (Year 8) — first reviewed coverage batch
 - Form 2 has 460 worksheet pages (115 per pathway) and all pages passed a repository-side field-presence check. This confirms structure and required fields, not the independent accuracy of every answer or official curriculum alignment.
@@ -64,10 +64,10 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 
 [Form 3 Week 1 teacher marking guide](english-form3-teacher-guide-days-1-5.md)
 
-### Form 4 — first standalone batch
-- Form 4 has 460 pathway worksheet headings (115 per pathway). Days 1–5 have been rebuilt and repository-side checked as 20 standalone pages, each with its own stimulus, learning intention, working indicator, worked example, task, answer space, accessible response methods and pending review status.
-- Added a separate Week 1 teacher marking guide and linked it from the English Subject Box.
-- Days 6–115 still need the same detailed rebuild. The current Form 4 syllabus cohort, prescribed texts and assessment criteria require official verification.
+### Form 4 — Week 1 and Week 2 batches
+- Form 4 has 460 pathway pages (115 per pathway). Days 1–5 and Days 6–10 have been rebuilt as 40 standalone pages in total, with original complete stimuli, learning intentions, working indicators, worked examples, differentiated tasks, answer spaces and accessible response methods.
+- Separate Week 1 and Week 2 teacher marking guides are linked from the English Subject Box.
+- Days 11–115 remain draft/incomplete and require the same detailed rebuild. The current Form 4 syllabus cohort, prescribed texts and assessment criteria require official verification.
 
 [Form 4 Week 1 teacher marking guide](english-form4-teacher-guide-days-1-5.md)
 
@@ -87,9 +87,8 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 - Days 1–5 are additionally checked as 20 standalone worksheets; a separate Week 1 marking guide has been added and linked from the English Subject Box.
 - A detailed teacher marking guide for Days 6–115 and Fiji educator/source review remain outstanding.
 
-### Forms 1 and 3
-- Separate 115-day printable source/viewer entries are staged.
-- Detailed per-day content still requires complete repository-side verification and educator review.
+### Form 1
+- A separate 115-day printable source/viewer entry is staged. Detailed per-day content still requires complete repository-side verification and educator review.
 
 ### Form 7 — first standalone batch
 - Form 7 has 460 pathway worksheet headings (115 per pathway). Days 1–5 have been rebuilt as 20 standalone pages with complete original linked-source stimuli, independent critical-synthesis tasks, answer spaces, accessible response methods and pending review status.
