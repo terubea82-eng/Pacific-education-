@@ -50,7 +50,7 @@ button{min-height:48px;padding:10px 16px;font:inherit;font-weight:700;margin:8px
 var source="../docs/curriculum/english-class3-printable-worksheets-days-1-115.md";
 var host=document.getElementById("worksheetHost"),daySelect=document.getElementById("day"),abilitySelect=document.getElementById("ability");
 var zoneInput=document.getElementById("zone"),zoneStatus=document.getElementById("zoneStatus"),loadStatus=document.getElementById("loadStatus");
-var sheets=[];
+var sheets=[];var requestedAbility=(window.location.search.match(/[?&]ability=(Copper|Bronze|Silver|Gold)(?:&|$)/)||[])[1];if(requestedAbility)abilitySelect.value=requestedAbility;
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
 function inline(s){return esc(s).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/\*(.+?)\*/g,"<em>$1</em>");}
 function markdown(s){
