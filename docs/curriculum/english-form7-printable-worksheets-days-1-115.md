@@ -2034,6 +2034,1106 @@ ____________________________________________________________________
 
 ---
 
+# Form 7 English — Printable Worksheets Days 6–10 (Term 1, Week 2)
+
+**Status:** ORIGINAL PACEDU PRACTICE DRAFT — PENDING_TEACHER_REVIEW — PENDING_OFFICIAL_INDICATOR_VERIFICATION. These are original practice sources, not prescribed texts or official examination materials.
+
+---
+
+## Day 6 — Term 1, Week 2 — community narratives and oral histories — Oral communication — Copper Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
+
+**Learning intention:** Present and defend an interpretation of community narratives by synthesising oral-history evidence and responding to a challenge.
+
+**PacEdu working achievement indicator:** Present a nuanced claim, integrate two relevant details from the source and respond to a question about memory and reliability.
+
+**Read, listen to or explore this complete practice source:**
+
+ORAL HISTORY EXTRACT — Interviewer: What do you remember about the old market? Elder: I remember the sound before I remember the buildings. People called across the stalls, and news travelled with the baskets. Some details may have changed in my memory, but I know the market was where families exchanged more than goods. Younger relative: I have heard the story many times, but I want to compare it with photographs and records so I can understand what changed.
+
+> The interview notes that the account is a personal memory and has not been independently checked against every date or event.
+
+**Worked example:** Claim: the market was an important social space as well as a place of trade. Detail 1: news travelled between stalls. Detail 2: families exchanged more than goods. Qualification: the speaker recognises that some details may have changed in memory.
+
+**Your task:** Present a short response explaining what the oral history helps us understand and what should be checked before treating it as a complete historical record. Respond to: 'Does checking records make the elder's memory less valuable?'
+
+**Copper pathway support:** Use the model and source labels. Work through one question at a time; the teacher may read the source aloud and provide a glossary or evidence frame. Oral, signed, AAC, dictated, Braille or written responses are accepted.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Interpretation supported by two details, respectful treatment of personal memory, recognition of limits and reasoned response to the question. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 6 — Term 1, Week 2 — community narratives and oral histories — Oral communication — Bronze Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
+
+**Learning intention:** Present and defend an interpretation of community narratives by synthesising oral-history evidence and responding to a challenge.
+
+**PacEdu working achievement indicator:** Present a nuanced claim, integrate two relevant details from the source and respond to a question about memory and reliability.
+
+**Read, listen to or explore this complete practice source:**
+
+ORAL HISTORY EXTRACT — Interviewer: What do you remember about the old market? Elder: I remember the sound before I remember the buildings. People called across the stalls, and news travelled with the baskets. Some details may have changed in my memory, but I know the market was where families exchanged more than goods. Younger relative: I have heard the story many times, but I want to compare it with photographs and records so I can understand what changed.
+
+> The interview notes that the account is a personal memory and has not been independently checked against every date or event.
+
+**Worked example:** Claim: the market was an important social space as well as a place of trade. Detail 1: news travelled between stalls. Detail 2: families exchanged more than goods. Qualification: the speaker recognises that some details may have changed in memory.
+
+**Your task:** Present a short response explaining what the oral history helps us understand and what should be checked before treating it as a complete historical record. Respond to: 'Does checking records make the elder's memory less valuable?'
+
+**Bronze pathway support:** Use the planning frame to identify the claim and supporting detail before explaining it. Reduce prompts after the first response.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Interpretation supported by two details, respectful treatment of personal memory, recognition of limits and reasoned response to the question. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 6 — Term 1, Week 2 — community narratives and oral histories — Oral communication — Silver Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
+
+**Learning intention:** Present and defend an interpretation of community narratives by synthesising oral-history evidence and responding to a challenge.
+
+**PacEdu working achievement indicator:** Present a nuanced claim, integrate two relevant details from the source and respond to a question about memory and reliability.
+
+**Read, listen to or explore this complete practice source:**
+
+ORAL HISTORY EXTRACT — Interviewer: What do you remember about the old market? Elder: I remember the sound before I remember the buildings. People called across the stalls, and news travelled with the baskets. Some details may have changed in my memory, but I know the market was where families exchanged more than goods. Younger relative: I have heard the story many times, but I want to compare it with photographs and records so I can understand what changed.
+
+> The interview notes that the account is a personal memory and has not been independently checked against every date or event.
+
+**Worked example:** Claim: the market was an important social space as well as a place of trade. Detail 1: news travelled between stalls. Detail 2: families exchanged more than goods. Qualification: the speaker recognises that some details may have changed in memory.
+
+**Your task:** Present a short response explaining what the oral history helps us understand and what should be checked before treating it as a complete historical record. Respond to: 'Does checking records make the elder's memory less valuable?'
+
+**Silver pathway support:** Complete the task independently with precise evidence, clear explanation and an explicit note about source limitations.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Interpretation supported by two details, respectful treatment of personal memory, recognition of limits and reasoned response to the question. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 6 — Term 1, Week 2 — community narratives and oral histories — Oral communication — Gold Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
+
+**Learning intention:** Present and defend an interpretation of community narratives by synthesising oral-history evidence and responding to a challenge.
+
+**PacEdu working achievement indicator:** Present a nuanced claim, integrate two relevant details from the source and respond to a question about memory and reliability.
+
+**Read, listen to or explore this complete practice source:**
+
+ORAL HISTORY EXTRACT — Interviewer: What do you remember about the old market? Elder: I remember the sound before I remember the buildings. People called across the stalls, and news travelled with the baskets. Some details may have changed in my memory, but I know the market was where families exchanged more than goods. Younger relative: I have heard the story many times, but I want to compare it with photographs and records so I can understand what changed.
+
+> The interview notes that the account is a personal memory and has not been independently checked against every date or event.
+
+**Worked example:** Claim: the market was an important social space as well as a place of trade. Detail 1: news travelled between stalls. Detail 2: families exchanged more than goods. Qualification: the speaker recognises that some details may have changed in memory.
+
+**Your task:** Present a short response explaining what the oral history helps us understand and what should be checked before treating it as a complete historical record. Respond to: 'Does checking records make the elder's memory less valuable?'
+
+**Gold pathway support:** Extend the same objective through synthesis of competing interpretations, methodological evaluation or a nuanced qualification.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Interpretation supported by two details, respectful treatment of personal memory, recognition of limits and reasoned response to the question. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 7 — Term 1, Week 2 — community narratives and oral histories — Close reading — Copper Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
+
+**Learning intention:** Analyse how a narrator's perspective and language shape an account of community memory.
+
+**PacEdu working achievement indicator:** Develop an interpretation of the narrator's perspective using precise details and explain one structural or language choice.
+
+**Read, listen to or explore this complete practice source:**
+
+> The narrator says the river was never silent. In the dry months, its stones clicked beneath shallow water; after heavy rain, it spoke in a deeper voice that covered the sound of the road. The narrator remembers walking there with an aunt who named the bends and explained which plants grew along the banks. Years later, the narrator returned with a phone and took photographs, but the images did not record the names or the pauses in the aunt's explanations. The narrator writes that a place can be photographed in a moment, while its meaning is carried through stories told over time.
+
+**Worked example:** The contrast between photographs and spoken stories suggests that images preserve appearance but may not preserve local knowledge or relationships.
+
+**Your task:** 1. State the narrator's central idea. 2. Select two details. 3. Analyse the contrast between photographs and stories. 4. Explain what the narrator suggests is lost when a place is recorded without its stories.
+
+**Copper pathway support:** Use the model and source labels. Work through one question at a time; the teacher may read the source aloud and provide a glossary or evidence frame. Oral, signed, AAC, dictated, Braille or written responses are accepted.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Interpretation of memory and place, precise evidence, analysis of contrast and explanation of implied meaning. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 7 — Term 1, Week 2 — community narratives and oral histories — Close reading — Bronze Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
+
+**Learning intention:** Analyse how a narrator's perspective and language shape an account of community memory.
+
+**PacEdu working achievement indicator:** Develop an interpretation of the narrator's perspective using precise details and explain one structural or language choice.
+
+**Read, listen to or explore this complete practice source:**
+
+> The narrator says the river was never silent. In the dry months, its stones clicked beneath shallow water; after heavy rain, it spoke in a deeper voice that covered the sound of the road. The narrator remembers walking there with an aunt who named the bends and explained which plants grew along the banks. Years later, the narrator returned with a phone and took photographs, but the images did not record the names or the pauses in the aunt's explanations. The narrator writes that a place can be photographed in a moment, while its meaning is carried through stories told over time.
+
+**Worked example:** The contrast between photographs and spoken stories suggests that images preserve appearance but may not preserve local knowledge or relationships.
+
+**Your task:** 1. State the narrator's central idea. 2. Select two details. 3. Analyse the contrast between photographs and stories. 4. Explain what the narrator suggests is lost when a place is recorded without its stories.
+
+**Bronze pathway support:** Use the planning frame to identify the claim and supporting detail before explaining it. Reduce prompts after the first response.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Interpretation of memory and place, precise evidence, analysis of contrast and explanation of implied meaning. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 7 — Term 1, Week 2 — community narratives and oral histories — Close reading — Silver Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
+
+**Learning intention:** Analyse how a narrator's perspective and language shape an account of community memory.
+
+**PacEdu working achievement indicator:** Develop an interpretation of the narrator's perspective using precise details and explain one structural or language choice.
+
+**Read, listen to or explore this complete practice source:**
+
+> The narrator says the river was never silent. In the dry months, its stones clicked beneath shallow water; after heavy rain, it spoke in a deeper voice that covered the sound of the road. The narrator remembers walking there with an aunt who named the bends and explained which plants grew along the banks. Years later, the narrator returned with a phone and took photographs, but the images did not record the names or the pauses in the aunt's explanations. The narrator writes that a place can be photographed in a moment, while its meaning is carried through stories told over time.
+
+**Worked example:** The contrast between photographs and spoken stories suggests that images preserve appearance but may not preserve local knowledge or relationships.
+
+**Your task:** 1. State the narrator's central idea. 2. Select two details. 3. Analyse the contrast between photographs and stories. 4. Explain what the narrator suggests is lost when a place is recorded without its stories.
+
+**Silver pathway support:** Complete the task independently with precise evidence, clear explanation and an explicit note about source limitations.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Interpretation of memory and place, precise evidence, analysis of contrast and explanation of implied meaning. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 7 — Term 1, Week 2 — community narratives and oral histories — Close reading — Gold Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
+
+**Learning intention:** Analyse how a narrator's perspective and language shape an account of community memory.
+
+**PacEdu working achievement indicator:** Develop an interpretation of the narrator's perspective using precise details and explain one structural or language choice.
+
+**Read, listen to or explore this complete practice source:**
+
+> The narrator says the river was never silent. In the dry months, its stones clicked beneath shallow water; after heavy rain, it spoke in a deeper voice that covered the sound of the road. The narrator remembers walking there with an aunt who named the bends and explained which plants grew along the banks. Years later, the narrator returned with a phone and took photographs, but the images did not record the names or the pauses in the aunt's explanations. The narrator writes that a place can be photographed in a moment, while its meaning is carried through stories told over time.
+
+**Worked example:** The contrast between photographs and spoken stories suggests that images preserve appearance but may not preserve local knowledge or relationships.
+
+**Your task:** 1. State the narrator's central idea. 2. Select two details. 3. Analyse the contrast between photographs and stories. 4. Explain what the narrator suggests is lost when a place is recorded without its stories.
+
+**Gold pathway support:** Extend the same objective through synthesis of competing interpretations, methodological evaluation or a nuanced qualification.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Interpretation of memory and place, precise evidence, analysis of contrast and explanation of implied meaning. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 8 — Term 1, Week 2 — community narratives and oral histories — Vocabulary and language — Copper Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
+
+**Learning intention:** Analyse how language choices shape tone, memory and authority in oral-history writing.
+
+**PacEdu working achievement indicator:** Explain three context-specific words or phrases and evaluate their effect on tone or authority.
+
+**Read, listen to or explore this complete practice source:**
+
+> The interviewer describes the account as 'fragmented but vivid'. The word 'fragmented' acknowledges gaps and changes in memory, while 'vivid' suggests strong sensory detail. The elder calls the market a 'meeting place disguised as a row of stalls'. This metaphor challenges a narrow economic view of the market. The notes use cautious language because a personal account can be valuable without proving every date or detail.
+
+**Worked example:** 'Fragmented' signals that the memory is incomplete; 'vivid' signals sensory clarity. The metaphor suggests that social relationships were as important as buying and selling.
+
+**Your task:** Explain 'fragmented' and 'vivid', analyse the metaphor 'meeting place disguised as a row of stalls', and explain why the notes use cautious language about evidence.
+
+**Copper pathway support:** Use the model and source labels. Work through one question at a time; the teacher may read the source aloud and provide a glossary or evidence frame. Oral, signed, AAC, dictated, Braille or written responses are accepted.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Contextual definitions, metaphor analysis and a reasoned explanation of how cautious language balances value with reliability. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 8 — Term 1, Week 2 — community narratives and oral histories — Vocabulary and language — Bronze Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
+
+**Learning intention:** Analyse how language choices shape tone, memory and authority in oral-history writing.
+
+**PacEdu working achievement indicator:** Explain three context-specific words or phrases and evaluate their effect on tone or authority.
+
+**Read, listen to or explore this complete practice source:**
+
+> The interviewer describes the account as 'fragmented but vivid'. The word 'fragmented' acknowledges gaps and changes in memory, while 'vivid' suggests strong sensory detail. The elder calls the market a 'meeting place disguised as a row of stalls'. This metaphor challenges a narrow economic view of the market. The notes use cautious language because a personal account can be valuable without proving every date or detail.
+
+**Worked example:** 'Fragmented' signals that the memory is incomplete; 'vivid' signals sensory clarity. The metaphor suggests that social relationships were as important as buying and selling.
+
+**Your task:** Explain 'fragmented' and 'vivid', analyse the metaphor 'meeting place disguised as a row of stalls', and explain why the notes use cautious language about evidence.
+
+**Bronze pathway support:** Use the planning frame to identify the claim and supporting detail before explaining it. Reduce prompts after the first response.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Contextual definitions, metaphor analysis and a reasoned explanation of how cautious language balances value with reliability. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 8 — Term 1, Week 2 — community narratives and oral histories — Vocabulary and language — Silver Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
+
+**Learning intention:** Analyse how language choices shape tone, memory and authority in oral-history writing.
+
+**PacEdu working achievement indicator:** Explain three context-specific words or phrases and evaluate their effect on tone or authority.
+
+**Read, listen to or explore this complete practice source:**
+
+> The interviewer describes the account as 'fragmented but vivid'. The word 'fragmented' acknowledges gaps and changes in memory, while 'vivid' suggests strong sensory detail. The elder calls the market a 'meeting place disguised as a row of stalls'. This metaphor challenges a narrow economic view of the market. The notes use cautious language because a personal account can be valuable without proving every date or detail.
+
+**Worked example:** 'Fragmented' signals that the memory is incomplete; 'vivid' signals sensory clarity. The metaphor suggests that social relationships were as important as buying and selling.
+
+**Your task:** Explain 'fragmented' and 'vivid', analyse the metaphor 'meeting place disguised as a row of stalls', and explain why the notes use cautious language about evidence.
+
+**Silver pathway support:** Complete the task independently with precise evidence, clear explanation and an explicit note about source limitations.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Contextual definitions, metaphor analysis and a reasoned explanation of how cautious language balances value with reliability. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 8 — Term 1, Week 2 — community narratives and oral histories — Vocabulary and language — Gold Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
+
+**Learning intention:** Analyse how language choices shape tone, memory and authority in oral-history writing.
+
+**PacEdu working achievement indicator:** Explain three context-specific words or phrases and evaluate their effect on tone or authority.
+
+**Read, listen to or explore this complete practice source:**
+
+> The interviewer describes the account as 'fragmented but vivid'. The word 'fragmented' acknowledges gaps and changes in memory, while 'vivid' suggests strong sensory detail. The elder calls the market a 'meeting place disguised as a row of stalls'. This metaphor challenges a narrow economic view of the market. The notes use cautious language because a personal account can be valuable without proving every date or detail.
+
+**Worked example:** 'Fragmented' signals that the memory is incomplete; 'vivid' signals sensory clarity. The metaphor suggests that social relationships were as important as buying and selling.
+
+**Your task:** Explain 'fragmented' and 'vivid', analyse the metaphor 'meeting place disguised as a row of stalls', and explain why the notes use cautious language about evidence.
+
+**Gold pathway support:** Extend the same objective through synthesis of competing interpretations, methodological evaluation or a nuanced qualification.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Contextual definitions, metaphor analysis and a reasoned explanation of how cautious language balances value with reliability. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 9 — Term 1, Week 2 — community narratives and oral histories — Critical literacy — Copper Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
+
+**Learning intention:** Evaluate oral testimony alongside documentary and visual sources, distinguishing corroboration from contradiction.
+
+**PacEdu working achievement indicator:** Compare source type, perspective and limitations, and explain which details can be corroborated and which remain personal memory.
+
+**Read, listen to or explore this complete practice source:**
+
+SOURCE A — Oral interview: An elder recalls that the market was a place where families exchanged news and goods. The speaker notes that some dates may be uncertain.
+
+SOURCE B — Dated photograph: A photograph shows market stalls beside the river. It confirms the location and arrangement visible on the date shown, but it cannot establish what people said or how they felt.
+
+SOURCE C — Community ledger: A surviving ledger records stall fees for several years. It provides dated evidence of market activity but does not record informal gatherings or oral exchanges.
+
+> The sources describe different aspects of the same place.
+
+**Worked example:** The photograph can corroborate the visible location and layout on its date; the ledger can support claims about recorded market activity. Neither source disproves the oral account of social exchange, because neither records conversation or relationships.
+
+**Your task:** Compare what each source can establish. Identify one point that may be corroborated, one claim that remains personal testimony, and one limitation in each source. Write a qualified conclusion about how the sources should be used together.
+
+**Copper pathway support:** Use the model and source labels. Work through one question at a time; the teacher may read the source aloud and provide a glossary or evidence frame. Oral, signed, AAC, dictated, Braille or written responses are accepted.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate comparison of oral, visual and documentary evidence; distinguishes corroboration from unrecorded experience and gives qualified conclusion. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 9 — Term 1, Week 2 — community narratives and oral histories — Critical literacy — Bronze Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
+
+**Learning intention:** Evaluate oral testimony alongside documentary and visual sources, distinguishing corroboration from contradiction.
+
+**PacEdu working achievement indicator:** Compare source type, perspective and limitations, and explain which details can be corroborated and which remain personal memory.
+
+**Read, listen to or explore this complete practice source:**
+
+SOURCE A — Oral interview: An elder recalls that the market was a place where families exchanged news and goods. The speaker notes that some dates may be uncertain.
+
+SOURCE B — Dated photograph: A photograph shows market stalls beside the river. It confirms the location and arrangement visible on the date shown, but it cannot establish what people said or how they felt.
+
+SOURCE C — Community ledger: A surviving ledger records stall fees for several years. It provides dated evidence of market activity but does not record informal gatherings or oral exchanges.
+
+> The sources describe different aspects of the same place.
+
+**Worked example:** The photograph can corroborate the visible location and layout on its date; the ledger can support claims about recorded market activity. Neither source disproves the oral account of social exchange, because neither records conversation or relationships.
+
+**Your task:** Compare what each source can establish. Identify one point that may be corroborated, one claim that remains personal testimony, and one limitation in each source. Write a qualified conclusion about how the sources should be used together.
+
+**Bronze pathway support:** Use the planning frame to identify the claim and supporting detail before explaining it. Reduce prompts after the first response.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate comparison of oral, visual and documentary evidence; distinguishes corroboration from unrecorded experience and gives qualified conclusion. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 9 — Term 1, Week 2 — community narratives and oral histories — Critical literacy — Silver Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
+
+**Learning intention:** Evaluate oral testimony alongside documentary and visual sources, distinguishing corroboration from contradiction.
+
+**PacEdu working achievement indicator:** Compare source type, perspective and limitations, and explain which details can be corroborated and which remain personal memory.
+
+**Read, listen to or explore this complete practice source:**
+
+SOURCE A — Oral interview: An elder recalls that the market was a place where families exchanged news and goods. The speaker notes that some dates may be uncertain.
+
+SOURCE B — Dated photograph: A photograph shows market stalls beside the river. It confirms the location and arrangement visible on the date shown, but it cannot establish what people said or how they felt.
+
+SOURCE C — Community ledger: A surviving ledger records stall fees for several years. It provides dated evidence of market activity but does not record informal gatherings or oral exchanges.
+
+> The sources describe different aspects of the same place.
+
+**Worked example:** The photograph can corroborate the visible location and layout on its date; the ledger can support claims about recorded market activity. Neither source disproves the oral account of social exchange, because neither records conversation or relationships.
+
+**Your task:** Compare what each source can establish. Identify one point that may be corroborated, one claim that remains personal testimony, and one limitation in each source. Write a qualified conclusion about how the sources should be used together.
+
+**Silver pathway support:** Complete the task independently with precise evidence, clear explanation and an explicit note about source limitations.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate comparison of oral, visual and documentary evidence; distinguishes corroboration from unrecorded experience and gives qualified conclusion. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 9 — Term 1, Week 2 — community narratives and oral histories — Critical literacy — Gold Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
+
+**Learning intention:** Evaluate oral testimony alongside documentary and visual sources, distinguishing corroboration from contradiction.
+
+**PacEdu working achievement indicator:** Compare source type, perspective and limitations, and explain which details can be corroborated and which remain personal memory.
+
+**Read, listen to or explore this complete practice source:**
+
+SOURCE A — Oral interview: An elder recalls that the market was a place where families exchanged news and goods. The speaker notes that some dates may be uncertain.
+
+SOURCE B — Dated photograph: A photograph shows market stalls beside the river. It confirms the location and arrangement visible on the date shown, but it cannot establish what people said or how they felt.
+
+SOURCE C — Community ledger: A surviving ledger records stall fees for several years. It provides dated evidence of market activity but does not record informal gatherings or oral exchanges.
+
+> The sources describe different aspects of the same place.
+
+**Worked example:** The photograph can corroborate the visible location and layout on its date; the ledger can support claims about recorded market activity. Neither source disproves the oral account of social exchange, because neither records conversation or relationships.
+
+**Your task:** Compare what each source can establish. Identify one point that may be corroborated, one claim that remains personal testimony, and one limitation in each source. Write a qualified conclusion about how the sources should be used together.
+
+**Gold pathway support:** Extend the same objective through synthesis of competing interpretations, methodological evaluation or a nuanced qualification.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate comparison of oral, visual and documentary evidence; distinguishes corroboration from unrecorded experience and gives qualified conclusion. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 10 — Term 1, Week 2 — community narratives and oral histories — Writing and shaping — Copper Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
+
+**Learning intention:** Construct an analytical account that synthesises oral, visual and documentary evidence while respecting source limitations.
+
+**PacEdu working achievement indicator:** Write a coherent synthesis with a clear thesis, integrated evidence from at least two source types, evaluation of limitations and reasoned conclusion.
+
+**Read, listen to or explore this complete practice source:**
+
+> An oral history, a photograph and a community ledger each preserve a different part of the old market's story. The interview records memory, relationships and the movement of news between families. The photograph shows the physical arrangement of stalls beside the river on one dated occasion. The ledger records stall fees and market activity over several years. None of the sources is complete on its own. Together, they can provide a richer account if the writer explains what each source can and cannot show.
+
+**Worked example:** Thesis: combining sources gives a fuller account because each preserves different evidence. The interview contributes relationships and memory; the photograph shows physical layout; the ledger supplies dated records of activity. The conclusion should acknowledge that some experiences remain undocumented.
+
+**Your task:** Write a structured analytical response explaining how oral history, photographs and records can be combined to understand a community place. Use at least two source types, evaluate a limitation and reach a reasoned conclusion.
+
+**Copper pathway support:** Use the model and source labels. Work through one question at a time; the teacher may read the source aloud and provide a glossary or evidence frame. Oral, signed, AAC, dictated, Braille or written responses are accepted.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Coherent synthesis, integrated evidence, source evaluation and acknowledgement of undocumented experience. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 10 — Term 1, Week 2 — community narratives and oral histories — Writing and shaping — Bronze Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
+
+**Learning intention:** Construct an analytical account that synthesises oral, visual and documentary evidence while respecting source limitations.
+
+**PacEdu working achievement indicator:** Write a coherent synthesis with a clear thesis, integrated evidence from at least two source types, evaluation of limitations and reasoned conclusion.
+
+**Read, listen to or explore this complete practice source:**
+
+> An oral history, a photograph and a community ledger each preserve a different part of the old market's story. The interview records memory, relationships and the movement of news between families. The photograph shows the physical arrangement of stalls beside the river on one dated occasion. The ledger records stall fees and market activity over several years. None of the sources is complete on its own. Together, they can provide a richer account if the writer explains what each source can and cannot show.
+
+**Worked example:** Thesis: combining sources gives a fuller account because each preserves different evidence. The interview contributes relationships and memory; the photograph shows physical layout; the ledger supplies dated records of activity. The conclusion should acknowledge that some experiences remain undocumented.
+
+**Your task:** Write a structured analytical response explaining how oral history, photographs and records can be combined to understand a community place. Use at least two source types, evaluate a limitation and reach a reasoned conclusion.
+
+**Bronze pathway support:** Use the planning frame to identify the claim and supporting detail before explaining it. Reduce prompts after the first response.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Coherent synthesis, integrated evidence, source evaluation and acknowledgement of undocumented experience. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 10 — Term 1, Week 2 — community narratives and oral histories — Writing and shaping — Silver Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
+
+**Learning intention:** Construct an analytical account that synthesises oral, visual and documentary evidence while respecting source limitations.
+
+**PacEdu working achievement indicator:** Write a coherent synthesis with a clear thesis, integrated evidence from at least two source types, evaluation of limitations and reasoned conclusion.
+
+**Read, listen to or explore this complete practice source:**
+
+> An oral history, a photograph and a community ledger each preserve a different part of the old market's story. The interview records memory, relationships and the movement of news between families. The photograph shows the physical arrangement of stalls beside the river on one dated occasion. The ledger records stall fees and market activity over several years. None of the sources is complete on its own. Together, they can provide a richer account if the writer explains what each source can and cannot show.
+
+**Worked example:** Thesis: combining sources gives a fuller account because each preserves different evidence. The interview contributes relationships and memory; the photograph shows physical layout; the ledger supplies dated records of activity. The conclusion should acknowledge that some experiences remain undocumented.
+
+**Your task:** Write a structured analytical response explaining how oral history, photographs and records can be combined to understand a community place. Use at least two source types, evaluate a limitation and reach a reasoned conclusion.
+
+**Silver pathway support:** Complete the task independently with precise evidence, clear explanation and an explicit note about source limitations.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Coherent synthesis, integrated evidence, source evaluation and acknowledgement of undocumented experience. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
+---
+
+## Day 10 — Term 1, Week 2 — community narratives and oral histories — Writing and shaping — Gold Worksheet
+
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
+
+**Learning intention:** Construct an analytical account that synthesises oral, visual and documentary evidence while respecting source limitations.
+
+**PacEdu working achievement indicator:** Write a coherent synthesis with a clear thesis, integrated evidence from at least two source types, evaluation of limitations and reasoned conclusion.
+
+**Read, listen to or explore this complete practice source:**
+
+> An oral history, a photograph and a community ledger each preserve a different part of the old market's story. The interview records memory, relationships and the movement of news between families. The photograph shows the physical arrangement of stalls beside the river on one dated occasion. The ledger records stall fees and market activity over several years. None of the sources is complete on its own. Together, they can provide a richer account if the writer explains what each source can and cannot show.
+
+**Worked example:** Thesis: combining sources gives a fuller account because each preserves different evidence. The interview contributes relationships and memory; the photograph shows physical layout; the ledger supplies dated records of activity. The conclusion should acknowledge that some experiences remain undocumented.
+
+**Your task:** Write a structured analytical response explaining how oral history, photographs and records can be combined to understand a community place. Use at least two source types, evaluate a limitation and reach a reasoned conclusion.
+
+**Gold pathway support:** Extend the same objective through synthesis of competing interpretations, methodological evaluation or a nuanced qualification.
+
+**My analysis / response:**
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Coherent synthesis, integrated evidence, source evaluation and acknowledgement of undocumented experience. Record response mode, source use, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used source evidence  ☐ I explained source limits  ☐ I considered another perspective  ☐ My conclusion is supported
+
+**Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 syllabus outcome, prescribed texts, cohort and assessment criteria.
+
 ## Day 11 — Term 1, Week 3 — place, environment and belonging — Oral communication — Copper Worksheet
 
 **Learning intention:** present and defend a clear interpretation in a context connected to place, environment and belonging.
