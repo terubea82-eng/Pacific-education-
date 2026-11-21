@@ -90,6 +90,13 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 ### Form 1
 - A separate 115-day printable source/viewer entry is staged. Detailed per-day content still requires complete repository-side verification and educator review.
 
+### Form 6 — Weeks 1–3 standalone batches
+- Form 6 Days 1–5 and Days 6–10 were rebuilt earlier. Days 11–15 have now been rebuilt as 20 standalone comparative worksheets, each with two complete original linked practice sources, Bloom's build-up questions, a differentiated critical task, answer space, accessibility methods and pending-review status.
+- Added a separate Form 6 Week 3 teacher marking guide and linked it from the English Subject Box.
+- Days 16–115 remain draft/incomplete and require further standalone worksheet rebuilding and marking guides. The current authorised Form 6 syllabus, prescribed text list and assessment specification still require verification.
+
+[Form 6 Week 3 teacher marking guide](english-form6-teacher-guide-days-11-15.md)
+
 ### Form 7 — Weeks 1–3 standalone batches
 - Form 7 has 460 pathway worksheet pages (115 per pathway). Days 1–5 and Days 6–10 were rebuilt earlier; Days 11–15 have now been rebuilt as 20 standalone pages with two complete original linked practice sources on every page, Bloom's build-up questions, differentiated critical-synthesis tasks, answer spaces, accessibility options and pending review status.
 - Added a separate Form 7 Week 3 teacher marking guide and linked it from the English Subject Box.
