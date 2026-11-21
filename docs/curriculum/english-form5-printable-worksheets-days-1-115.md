@@ -1,653 +1,1090 @@
 # PacEdu English Subject Box — Form 5 Printable Worksheets (Days 1–115)
 
-**Status:** ORIGINAL PACEDU DRAFT — `PENDING_TEACHER_REVIEW` — `PENDING_OFFICIAL_INDICATOR_VERIFICATION`. Not a Ministry-issued or examination-authorized worksheet pack.
+**Status:** ORIGINAL PACEDU DRAFT — PENDING_TEACHER_REVIEW — PENDING_OFFICIAL_INDICATOR_VERIFICATION. Not a Ministry-issued or examination-authorized worksheet pack.
 
-**Secondary safeguard:** Confirm the current authorized Form 5 syllabus, cohort, prescribed texts, assessment specifications and criteria separately. Forms 5–7 must not be treated as Forms 3–4.
+**Senior-secondary safeguard:** Confirm the current authorised Form 5 cohort syllabus, prescribed text list, assessment specification and marking criteria separately. These original practice stimuli are not prescribed texts and must not be represented as syllabus-prescribed material.
 
-**Printing:** Each day has four separate pathway versions. Print only the selected learner's version. Physical Android Chrome print preview must confirm one selected worksheet per page.
-
+**Printing:** Each day has four standalone pathway versions. Every page repeats its own stimulus and task. Confirm one selected worksheet per page in Android Chrome.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity, language and society — Oral communication — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend a thesis about identity, language and society using close analysis and a coherent line of reasoning.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a defensible thesis, analyse two relevant details and respond coherently to a challenge or counterargument.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+> In the interview, the speaker describes moving between the language used at home and the language used in formal meetings. At home, familiar expressions carry humour, memory and relationships that are difficult to translate word for word. In formal settings, the speaker chooses more standard phrasing because it is expected and often understood by a wider audience. The speaker rejects the idea that one register is more intelligent than another. Instead, each choice depends on audience, purpose and power. The interview ends by asking whether institutions should make more room for the languages people already use to explain their experiences.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Worked example:** Thesis: language choices are shaped by audience and power, not by a simple ranking of intelligence. Detail 1: home expressions carry relationships and memory. Detail 2: formal phrasing is expected in wider institutions. Explanation: the contrast shows how context influences language choice.
+
+**Your task:** Prompt: Do institutions have a responsibility to recognise the languages people use in everyday life? Present a reasoned position, analyse two details, qualify your claim and respond to one counterargument.
+
+**Copper pathway support:** Use the annotated model, vocabulary gloss and a thesis/evidence frame. Work through one analytical move at a time. The teacher may read the stimulus or offer an accessible format. Oral, signed, AAC, dictated, Braille or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Defensible thesis, close analysis of two details, coherent reasoning, qualification and response to a counterargument. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity, language and society — Oral communication — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend a thesis about identity, language and society using close analysis and a coherent line of reasoning.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a defensible thesis, analyse two relevant details and respond coherently to a challenge or counterargument.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+> In the interview, the speaker describes moving between the language used at home and the language used in formal meetings. At home, familiar expressions carry humour, memory and relationships that are difficult to translate word for word. In formal settings, the speaker chooses more standard phrasing because it is expected and often understood by a wider audience. The speaker rejects the idea that one register is more intelligent than another. Instead, each choice depends on audience, purpose and power. The interview ends by asking whether institutions should make more room for the languages people already use to explain their experiences.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Worked example:** Thesis: language choices are shaped by audience and power, not by a simple ranking of intelligence. Detail 1: home expressions carry relationships and memory. Detail 2: formal phrasing is expected in wider institutions. Explanation: the contrast shows how context influences language choice.
+
+**Your task:** Prompt: Do institutions have a responsibility to recognise the languages people use in everyday life? Present a reasoned position, analyse two details, qualify your claim and respond to one counterargument.
+
+**Bronze pathway support:** Use a paragraph plan and evidence locator. Develop the thesis first, then connect each selected detail to the claim. Reduce prompts after the first paragraph.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Defensible thesis, close analysis of two details, coherent reasoning, qualification and response to a counterargument. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity, language and society — Oral communication — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend a thesis about identity, language and society using close analysis and a coherent line of reasoning.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a defensible thesis, analyse two relevant details and respond coherently to a challenge or counterargument.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+> In the interview, the speaker describes moving between the language used at home and the language used in formal meetings. At home, familiar expressions carry humour, memory and relationships that are difficult to translate word for word. In formal settings, the speaker chooses more standard phrasing because it is expected and often understood by a wider audience. The speaker rejects the idea that one register is more intelligent than another. Instead, each choice depends on audience, purpose and power. The interview ends by asking whether institutions should make more room for the languages people already use to explain their experiences.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Worked example:** Thesis: language choices are shaped by audience and power, not by a simple ranking of intelligence. Detail 1: home expressions carry relationships and memory. Detail 2: formal phrasing is expected in wider institutions. Explanation: the contrast shows how context influences language choice.
+
+**Your task:** Prompt: Do institutions have a responsibility to recognise the languages people use in everyday life? Present a reasoned position, analyse two details, qualify your claim and respond to one counterargument.
+
+**Silver pathway support:** Complete the analytical task independently. Use precise textual evidence, explain how choices shape meaning and maintain a coherent line of reasoning.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Defensible thesis, close analysis of two details, coherent reasoning, qualification and response to a counterargument. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 1 — Term 1, Week 1 — identity, language and society — Oral communication — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend a thesis about identity, language and society using close analysis and a coherent line of reasoning.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a defensible thesis, analyse two relevant details and respond coherently to a challenge or counterargument.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+> In the interview, the speaker describes moving between the language used at home and the language used in formal meetings. At home, familiar expressions carry humour, memory and relationships that are difficult to translate word for word. In formal settings, the speaker chooses more standard phrasing because it is expected and often understood by a wider audience. The speaker rejects the idea that one register is more intelligent than another. Instead, each choice depends on audience, purpose and power. The interview ends by asking whether institutions should make more room for the languages people already use to explain their experiences.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Worked example:** Thesis: language choices are shaped by audience and power, not by a simple ranking of intelligence. Detail 1: home expressions carry relationships and memory. Detail 2: formal phrasing is expected in wider institutions. Explanation: the contrast shows how context influences language choice.
+
+**Your task:** Prompt: Do institutions have a responsibility to recognise the languages people use in everyday life? Present a reasoned position, analyse two details, qualify your claim and respond to one counterargument.
+
+**Gold pathway support:** Complete the same task and extend through synthesis, qualification, evaluation of ambiguity or a counterargument. Do not replace the shared objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Defensible thesis, close analysis of two details, coherent reasoning, qualification and response to a counterargument. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 2 — Term 1, Week 1 — identity, language and society — Close reading — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how narrative perspective, structure and language choices construct meaning in a text.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop a thesis about the text and support it with close analysis of at least two precise textual choices.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+> The narrator kept the old dictionary on the highest shelf. Its pages had softened at the edges, and several words were underlined in different inks. When visitors asked why it mattered, the narrator said it belonged to a relative who had recorded words that were disappearing from daily conversation. Yet the narrator rarely opened it. One evening, a younger cousin asked to borrow it for a school project. The narrator hesitated, then passed it down. The cousin read a word aloud, mispronounced it, laughed and tried again. The narrator corrected the sound gently. For the first time in years, the dictionary was not a record of what had been lost; it became part of a conversation still taking place.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Worked example:** The shift from the dictionary as an object on a high shelf to an active part of a conversation suggests that language preservation depends on use and exchange, not storage alone.
+
+**Your task:** Develop a thesis about the narrator's changing attitude. Analyse two details or structural choices that support your reading, and explain how the ending reshapes the meaning of the dictionary.
+
+**Copper pathway support:** Use the annotated model, vocabulary gloss and a thesis/evidence frame. Work through one analytical move at a time. The teacher may read the stimulus or offer an accessible format. Oral, signed, AAC, dictated, Braille or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A clear thesis, precise textual evidence, analysis of narrative development and explanation of the ending. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 2 — Term 1, Week 1 — identity, language and society — Close reading — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how narrative perspective, structure and language choices construct meaning in a text.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop a thesis about the text and support it with close analysis of at least two precise textual choices.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+> The narrator kept the old dictionary on the highest shelf. Its pages had softened at the edges, and several words were underlined in different inks. When visitors asked why it mattered, the narrator said it belonged to a relative who had recorded words that were disappearing from daily conversation. Yet the narrator rarely opened it. One evening, a younger cousin asked to borrow it for a school project. The narrator hesitated, then passed it down. The cousin read a word aloud, mispronounced it, laughed and tried again. The narrator corrected the sound gently. For the first time in years, the dictionary was not a record of what had been lost; it became part of a conversation still taking place.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Worked example:** The shift from the dictionary as an object on a high shelf to an active part of a conversation suggests that language preservation depends on use and exchange, not storage alone.
+
+**Your task:** Develop a thesis about the narrator's changing attitude. Analyse two details or structural choices that support your reading, and explain how the ending reshapes the meaning of the dictionary.
+
+**Bronze pathway support:** Use a paragraph plan and evidence locator. Develop the thesis first, then connect each selected detail to the claim. Reduce prompts after the first paragraph.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A clear thesis, precise textual evidence, analysis of narrative development and explanation of the ending. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 2 — Term 1, Week 1 — identity, language and society — Close reading — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how narrative perspective, structure and language choices construct meaning in a text.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop a thesis about the text and support it with close analysis of at least two precise textual choices.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+> The narrator kept the old dictionary on the highest shelf. Its pages had softened at the edges, and several words were underlined in different inks. When visitors asked why it mattered, the narrator said it belonged to a relative who had recorded words that were disappearing from daily conversation. Yet the narrator rarely opened it. One evening, a younger cousin asked to borrow it for a school project. The narrator hesitated, then passed it down. The cousin read a word aloud, mispronounced it, laughed and tried again. The narrator corrected the sound gently. For the first time in years, the dictionary was not a record of what had been lost; it became part of a conversation still taking place.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Worked example:** The shift from the dictionary as an object on a high shelf to an active part of a conversation suggests that language preservation depends on use and exchange, not storage alone.
+
+**Your task:** Develop a thesis about the narrator's changing attitude. Analyse two details or structural choices that support your reading, and explain how the ending reshapes the meaning of the dictionary.
+
+**Silver pathway support:** Complete the analytical task independently. Use precise textual evidence, explain how choices shape meaning and maintain a coherent line of reasoning.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A clear thesis, precise textual evidence, analysis of narrative development and explanation of the ending. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 2 — Term 1, Week 1 — identity, language and society — Close reading — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how narrative perspective, structure and language choices construct meaning in a text.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop a thesis about the text and support it with close analysis of at least two precise textual choices.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+> The narrator kept the old dictionary on the highest shelf. Its pages had softened at the edges, and several words were underlined in different inks. When visitors asked why it mattered, the narrator said it belonged to a relative who had recorded words that were disappearing from daily conversation. Yet the narrator rarely opened it. One evening, a younger cousin asked to borrow it for a school project. The narrator hesitated, then passed it down. The cousin read a word aloud, mispronounced it, laughed and tried again. The narrator corrected the sound gently. For the first time in years, the dictionary was not a record of what had been lost; it became part of a conversation still taking place.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Worked example:** The shift from the dictionary as an object on a high shelf to an active part of a conversation suggests that language preservation depends on use and exchange, not storage alone.
+
+**Your task:** Develop a thesis about the narrator's changing attitude. Analyse two details or structural choices that support your reading, and explain how the ending reshapes the meaning of the dictionary.
+
+**Gold pathway support:** Complete the same task and extend through synthesis, qualification, evaluation of ambiguity or a counterargument. Do not replace the shared objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A clear thesis, precise textual evidence, analysis of narrative development and explanation of the ending. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 3 — Term 1, Week 1 — identity, language and society — Vocabulary and language — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate how diction, syntax, register and rhetorical devices position a specific audience.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse at least three language choices and explain their cumulative effect on audience, tone and purpose.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+> A campaign leaflet states: 'Our language heritage is not a museum piece. It is a living resource, carried in conversation, song and everyday decisions.' The leaflet then declares that 'every voice must be heard', before inviting residents to volunteer for a language archive. Its tone is confident and inclusive, but the phrase 'must be heard' could sound compulsory to people who prefer privacy. The leaflet offers no detail about consent, storage or who may access recordings. Its persuasive energy therefore sits beside unanswered questions about participation and control.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Worked example:** The metaphor 'not a museum piece' contrasts static display with living use. 'Every voice must be heard' creates urgency and inclusion but may imply pressure. The missing consent information limits the leaflet's reassurance.
+
+**Your task:** Analyse the metaphor, the phrase 'every voice must be heard' and one sentence structure or register choice. Explain how these choices position the audience. Suggest a revision that keeps the persuasive purpose while making consent clearer.
+
+**Copper pathway support:** Use the annotated model, vocabulary gloss and a thesis/evidence frame. Work through one analytical move at a time. The teacher may read the stimulus or offer an accessible format. Oral, signed, AAC, dictated, Braille or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Analysis of diction/metaphor, audience positioning and tone, with a justified revision addressing consent. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 3 — Term 1, Week 1 — identity, language and society — Vocabulary and language — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate how diction, syntax, register and rhetorical devices position a specific audience.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse at least three language choices and explain their cumulative effect on audience, tone and purpose.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+> A campaign leaflet states: 'Our language heritage is not a museum piece. It is a living resource, carried in conversation, song and everyday decisions.' The leaflet then declares that 'every voice must be heard', before inviting residents to volunteer for a language archive. Its tone is confident and inclusive, but the phrase 'must be heard' could sound compulsory to people who prefer privacy. The leaflet offers no detail about consent, storage or who may access recordings. Its persuasive energy therefore sits beside unanswered questions about participation and control.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Worked example:** The metaphor 'not a museum piece' contrasts static display with living use. 'Every voice must be heard' creates urgency and inclusion but may imply pressure. The missing consent information limits the leaflet's reassurance.
+
+**Your task:** Analyse the metaphor, the phrase 'every voice must be heard' and one sentence structure or register choice. Explain how these choices position the audience. Suggest a revision that keeps the persuasive purpose while making consent clearer.
+
+**Bronze pathway support:** Use a paragraph plan and evidence locator. Develop the thesis first, then connect each selected detail to the claim. Reduce prompts after the first paragraph.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Analysis of diction/metaphor, audience positioning and tone, with a justified revision addressing consent. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 3 — Term 1, Week 1 — identity, language and society — Vocabulary and language — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate how diction, syntax, register and rhetorical devices position a specific audience.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse at least three language choices and explain their cumulative effect on audience, tone and purpose.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+> A campaign leaflet states: 'Our language heritage is not a museum piece. It is a living resource, carried in conversation, song and everyday decisions.' The leaflet then declares that 'every voice must be heard', before inviting residents to volunteer for a language archive. Its tone is confident and inclusive, but the phrase 'must be heard' could sound compulsory to people who prefer privacy. The leaflet offers no detail about consent, storage or who may access recordings. Its persuasive energy therefore sits beside unanswered questions about participation and control.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Worked example:** The metaphor 'not a museum piece' contrasts static display with living use. 'Every voice must be heard' creates urgency and inclusion but may imply pressure. The missing consent information limits the leaflet's reassurance.
+
+**Your task:** Analyse the metaphor, the phrase 'every voice must be heard' and one sentence structure or register choice. Explain how these choices position the audience. Suggest a revision that keeps the persuasive purpose while making consent clearer.
+
+**Silver pathway support:** Complete the analytical task independently. Use precise textual evidence, explain how choices shape meaning and maintain a coherent line of reasoning.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Analysis of diction/metaphor, audience positioning and tone, with a justified revision addressing consent. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 3 — Term 1, Week 1 — identity, language and society — Vocabulary and language — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate how diction, syntax, register and rhetorical devices position a specific audience.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse at least three language choices and explain their cumulative effect on audience, tone and purpose.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+> A campaign leaflet states: 'Our language heritage is not a museum piece. It is a living resource, carried in conversation, song and everyday decisions.' The leaflet then declares that 'every voice must be heard', before inviting residents to volunteer for a language archive. Its tone is confident and inclusive, but the phrase 'must be heard' could sound compulsory to people who prefer privacy. The leaflet offers no detail about consent, storage or who may access recordings. Its persuasive energy therefore sits beside unanswered questions about participation and control.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Worked example:** The metaphor 'not a museum piece' contrasts static display with living use. 'Every voice must be heard' creates urgency and inclusion but may imply pressure. The missing consent information limits the leaflet's reassurance.
+
+**Your task:** Analyse the metaphor, the phrase 'every voice must be heard' and one sentence structure or register choice. Explain how these choices position the audience. Suggest a revision that keeps the persuasive purpose while making consent clearer.
+
+**Gold pathway support:** Complete the same task and extend through synthesis, qualification, evaluation of ambiguity or a counterargument. Do not replace the shared objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Analysis of diction/metaphor, audience positioning and tone, with a justified revision addressing consent. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 4 — Term 1, Week 1 — identity, language and society — Critical literacy — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate source authority, purpose, evidence, omissions and ethical implications in a focused source set.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare two sources and qualify a conclusion using source authority, evidence quality, omissions and ethical considerations.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+SOURCE A — Community archive proposal, issued by a named local committee: The archive would collect voluntary recordings and written stories. Contributors would approve each item before public access. The proposal names a review group but does not explain how long recordings would be stored.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+SOURCE B — Anonymous online post: The archive will publish every recording automatically and sell copies to outside companies. The post provides no document or named source.
+
+> The committee's meeting minutes confirm that storage arrangements are still being discussed. They do not mention any sale of recordings.
+
+**Worked example:** Source A is more accountable because it identifies the committee and describes voluntary participation and contributor approval. Its storage policy remains incomplete. Source B makes a serious claim without evidence. The minutes confirm that storage is unresolved, not that recordings will be sold.
+
+**Your task:** Compare the two sources. Evaluate their authority and evidence, identify omissions, and discuss the ethical importance of consent and storage. Write a qualified conclusion that separates what is confirmed from what remains unknown.
+
+**Copper pathway support:** Use the annotated model, vocabulary gloss and a thesis/evidence frame. Work through one analytical move at a time. The teacher may read the stimulus or offer an accessible format. Oral, signed, AAC, dictated, Braille or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced source evaluation, ethical reasoning about consent/storage, clear distinction between evidence and speculation, and qualified conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 4 — Term 1, Week 1 — identity, language and society — Critical literacy — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate source authority, purpose, evidence, omissions and ethical implications in a focused source set.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare two sources and qualify a conclusion using source authority, evidence quality, omissions and ethical considerations.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+SOURCE A — Community archive proposal, issued by a named local committee: The archive would collect voluntary recordings and written stories. Contributors would approve each item before public access. The proposal names a review group but does not explain how long recordings would be stored.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+SOURCE B — Anonymous online post: The archive will publish every recording automatically and sell copies to outside companies. The post provides no document or named source.
+
+> The committee's meeting minutes confirm that storage arrangements are still being discussed. They do not mention any sale of recordings.
+
+**Worked example:** Source A is more accountable because it identifies the committee and describes voluntary participation and contributor approval. Its storage policy remains incomplete. Source B makes a serious claim without evidence. The minutes confirm that storage is unresolved, not that recordings will be sold.
+
+**Your task:** Compare the two sources. Evaluate their authority and evidence, identify omissions, and discuss the ethical importance of consent and storage. Write a qualified conclusion that separates what is confirmed from what remains unknown.
+
+**Bronze pathway support:** Use a paragraph plan and evidence locator. Develop the thesis first, then connect each selected detail to the claim. Reduce prompts after the first paragraph.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced source evaluation, ethical reasoning about consent/storage, clear distinction between evidence and speculation, and qualified conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 4 — Term 1, Week 1 — identity, language and society — Critical literacy — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate source authority, purpose, evidence, omissions and ethical implications in a focused source set.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare two sources and qualify a conclusion using source authority, evidence quality, omissions and ethical considerations.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+SOURCE A — Community archive proposal, issued by a named local committee: The archive would collect voluntary recordings and written stories. Contributors would approve each item before public access. The proposal names a review group but does not explain how long recordings would be stored.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+SOURCE B — Anonymous online post: The archive will publish every recording automatically and sell copies to outside companies. The post provides no document or named source.
+
+> The committee's meeting minutes confirm that storage arrangements are still being discussed. They do not mention any sale of recordings.
+
+**Worked example:** Source A is more accountable because it identifies the committee and describes voluntary participation and contributor approval. Its storage policy remains incomplete. Source B makes a serious claim without evidence. The minutes confirm that storage is unresolved, not that recordings will be sold.
+
+**Your task:** Compare the two sources. Evaluate their authority and evidence, identify omissions, and discuss the ethical importance of consent and storage. Write a qualified conclusion that separates what is confirmed from what remains unknown.
+
+**Silver pathway support:** Complete the analytical task independently. Use precise textual evidence, explain how choices shape meaning and maintain a coherent line of reasoning.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced source evaluation, ethical reasoning about consent/storage, clear distinction between evidence and speculation, and qualified conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 4 — Term 1, Week 1 — identity, language and society — Critical literacy — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Evaluate source authority, purpose, evidence, omissions and ethical implications in a focused source set.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare two sources and qualify a conclusion using source authority, evidence quality, omissions and ethical considerations.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+SOURCE A — Community archive proposal, issued by a named local committee: The archive would collect voluntary recordings and written stories. Contributors would approve each item before public access. The proposal names a review group but does not explain how long recordings would be stored.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+SOURCE B — Anonymous online post: The archive will publish every recording automatically and sell copies to outside companies. The post provides no document or named source.
+
+> The committee's meeting minutes confirm that storage arrangements are still being discussed. They do not mention any sale of recordings.
+
+**Worked example:** Source A is more accountable because it identifies the committee and describes voluntary participation and contributor approval. Its storage policy remains incomplete. Source B makes a serious claim without evidence. The minutes confirm that storage is unresolved, not that recordings will be sold.
+
+**Your task:** Compare the two sources. Evaluate their authority and evidence, identify omissions, and discuss the ethical importance of consent and storage. Write a qualified conclusion that separates what is confirmed from what remains unknown.
+
+**Gold pathway support:** Complete the same task and extend through synthesis, qualification, evaluation of ambiguity or a counterargument. Do not replace the shared objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced source evaluation, ethical reasoning about consent/storage, clear distinction between evidence and speculation, and qualified conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 5 — Term 1, Week 1 — identity, language and society — Writing and shaping — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Construct a coherent analytical essay with a clear thesis, close textual analysis, synthesis and a reasoned conclusion.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a structured analytical essay with a defensible thesis, close analysis of evidence, coherent paragraphing, qualification and a purposeful conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+> A community language archive could preserve recordings, stories and written expressions for future learners. Supporters argue that it may strengthen intergenerational learning and make overlooked experiences more visible. Others raise concerns about privacy, consent, ownership and the risk that recordings could be separated from their original context. A responsible archive would need clear permission, contributor review, access rules and a process for withdrawal. The value of preservation therefore depends not only on what is collected, but also on who controls it and how it is used.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Worked example:** Thesis: a language archive can be valuable only when preservation is matched by contributor control. Paragraph 1: explain educational and cultural value. Paragraph 2: analyse privacy, consent and context concerns. Paragraph 3: propose safeguards and weigh the alternatives. Conclusion: state a qualified judgement.
+
+**Your task:** Write an analytical essay responding to: 'Preserving language is as much about protecting people's rights as recording words.' Develop a thesis, analyse at least two details from the passage, synthesise benefits and concerns, and reach a reasoned conclusion.
+
+**Copper pathway support:** Use the annotated model, vocabulary gloss and a thesis/evidence frame. Work through one analytical move at a time. The teacher may read the stimulus or offer an accessible format. Oral, signed, AAC, dictated, Braille or written responses are accepted.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A coherent analytical essay with thesis, close analysis, synthesis of benefits/concerns, qualification and reasoned conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 5 — Term 1, Week 1 — identity, language and society — Writing and shaping — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Construct a coherent analytical essay with a clear thesis, close textual analysis, synthesis and a reasoned conclusion.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a structured analytical essay with a defensible thesis, close analysis of evidence, coherent paragraphing, qualification and a purposeful conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+> A community language archive could preserve recordings, stories and written expressions for future learners. Supporters argue that it may strengthen intergenerational learning and make overlooked experiences more visible. Others raise concerns about privacy, consent, ownership and the risk that recordings could be separated from their original context. A responsible archive would need clear permission, contributor review, access rules and a process for withdrawal. The value of preservation therefore depends not only on what is collected, but also on who controls it and how it is used.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Worked example:** Thesis: a language archive can be valuable only when preservation is matched by contributor control. Paragraph 1: explain educational and cultural value. Paragraph 2: analyse privacy, consent and context concerns. Paragraph 3: propose safeguards and weigh the alternatives. Conclusion: state a qualified judgement.
+
+**Your task:** Write an analytical essay responding to: 'Preserving language is as much about protecting people's rights as recording words.' Develop a thesis, analyse at least two details from the passage, synthesise benefits and concerns, and reach a reasoned conclusion.
+
+**Bronze pathway support:** Use a paragraph plan and evidence locator. Develop the thesis first, then connect each selected detail to the claim. Reduce prompts after the first paragraph.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A coherent analytical essay with thesis, close analysis, synthesis of benefits/concerns, qualification and reasoned conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 5 — Term 1, Week 1 — identity, language and society — Writing and shaping — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Construct a coherent analytical essay with a clear thesis, close textual analysis, synthesis and a reasoned conclusion.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a structured analytical essay with a defensible thesis, close analysis of evidence, coherent paragraphing, qualification and a purposeful conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+> A community language archive could preserve recordings, stories and written expressions for future learners. Supporters argue that it may strengthen intergenerational learning and make overlooked experiences more visible. Others raise concerns about privacy, consent, ownership and the risk that recordings could be separated from their original context. A responsible archive would need clear permission, contributor review, access rules and a process for withdrawal. The value of preservation therefore depends not only on what is collected, but also on who controls it and how it is used.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Worked example:** Thesis: a language archive can be valuable only when preservation is matched by contributor control. Paragraph 1: explain educational and cultural value. Paragraph 2: analyse privacy, consent and context concerns. Paragraph 3: propose safeguards and weigh the alternatives. Conclusion: state a qualified judgement.
+
+**Your task:** Write an analytical essay responding to: 'Preserving language is as much about protecting people's rights as recording words.' Develop a thesis, analyse at least two details from the passage, synthesise benefits and concerns, and reach a reasoned conclusion.
+
+**Silver pathway support:** Complete the analytical task independently. Use precise textual evidence, explain how choices shape meaning and maintain a coherent line of reasoning.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A coherent analytical essay with thesis, close analysis, synthesis of benefits/concerns, qualification and reasoned conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ---
 
 ## Day 5 — Term 1, Week 1 — identity, language and society — Writing and shaping — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 5  **Subject:** English  **Term/Week:** Term 1 / Week 1  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Construct a coherent analytical essay with a clear thesis, close textual analysis, synthesis and a reasoned conclusion.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a structured analytical essay with a defensible thesis, close analysis of evidence, coherent paragraphing, qualification and a purposeful conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete practice stimulus:**
 
-**Worked example:** 
+> A community language archive could preserve recordings, stories and written expressions for future learners. Supporters argue that it may strengthen intergenerational learning and make overlooked experiences more visible. Others raise concerns about privacy, consent, ownership and the risk that recordings could be separated from their original context. A responsible archive would need clear permission, contributor review, access rules and a process for withdrawal. The value of preservation therefore depends not only on what is collected, but also on who controls it and how it is used.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Worked example:** Thesis: a language archive can be valuable only when preservation is matched by contributor control. Paragraph 1: explain educational and cultural value. Paragraph 2: analyse privacy, consent and context concerns. Paragraph 3: propose safeguards and weigh the alternatives. Conclusion: state a qualified judgement.
+
+**Your task:** Write an analytical essay responding to: 'Preserving language is as much about protecting people's rights as recording words.' Develop a thesis, analyse at least two details from the passage, synthesise benefits and concerns, and reach a reasoned conclusion.
+
+**Gold pathway support:** Complete the same task and extend through synthesis, qualification, evaluation of ambiguity or a counterargument. Do not replace the shared objective.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** A coherent analytical essay with thesis, close analysis, synthesis of benefits/concerns, qualification and reasoned conclusion. Record the learner's actual response, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ My thesis is clear  ☐ I analysed precise evidence  ☐ I explained the effect  ☐ I considered complexity  ☐ My conclusion follows from my reasoning
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
----
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — add exact authorised Form 5 syllabus title, cohort, edition, prescribed text/assessment criteria and page only after verification.
 
 ## Day 6 — Term 1, Week 2 — community narratives and oral histories — Oral communication — Copper Worksheet
 
