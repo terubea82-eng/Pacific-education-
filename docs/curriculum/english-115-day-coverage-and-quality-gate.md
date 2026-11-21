@@ -90,14 +90,16 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 ### Form 1
 - A separate 115-day printable source/viewer entry is staged. Detailed per-day content still requires complete repository-side verification and educator review.
 
-### Form 6 — Weeks 1–4 standalone batches
-- Form 6 Days 1–5 and Days 6–10 were rebuilt earlier. Days 11–15 and Days 16–20 have now been rebuilt as 40 standalone comparative worksheets, each with two complete original linked practice sources, Bloom's build-up questions, a differentiated critical task, answer space, accessibility methods and pending-review status.
-- Added separate Form 6 Week 3 and Week 4 teacher marking guides and linked both from the English Subject Box.
-- Days 21–115 remain draft/incomplete and require further standalone worksheet rebuilding and marking guides. The current authorised Form 6 syllabus, prescribed text list and assessment specification still require verification.
+### Form 6 — Weeks 1–5 standalone batches
+- Form 6 Days 1–5 and Days 6–10 were rebuilt earlier. Days 11–15, Days 16–20 and Days 21–25 have now been rebuilt as 60 standalone comparative worksheets, each with two complete original linked practice sources, Bloom's build-up questions, a differentiated critical task, answer space, accessibility methods and pending-review status.
+- Added separate Form 6 Week 3, Week 4 and Week 5 teacher marking guides and linked all three from the English Subject Box.
+- Days 26–115 remain draft/incomplete and require further standalone worksheet rebuilding and marking guides. The current authorised Form 6 syllabus, prescribed text list and assessment specification still require verification.
 
 [Form 6 Week 3 teacher marking guide](english-form6-teacher-guide-days-11-15.md)
 
 [Form 6 Week 4 teacher marking guide](english-form6-teacher-guide-days-16-20.md)
+
+[Form 6 Week 5 teacher marking guide](english-form6-teacher-guide-days-21-25.md)
 
 ### Form 7 — Weeks 1–5 standalone batches
 - Form 7 has 460 pathway worksheet pages (115 per pathway). Days 1–5 and Days 6–10 were rebuilt earlier. Days 11–15, Days 16–20 and Days 21–25 have now also been rebuilt as 60 standalone pages, with two complete original linked practice sources per page, Bloom's build-up questions, differentiated critical-synthesis tasks, answer spaces, accessibility options and pending review status.
