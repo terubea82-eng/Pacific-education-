@@ -1062,645 +1062,1057 @@ ____________________________________________________________________________
 
 **Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — record exact authorised Form 4 syllabus title, cohort, edition, outcome and page only after verification.
 
+# Form 4 English — Printable Worksheets Days 6–10 (Term 1, Week 2)
+
+**Status:** ORIGINAL PACEDU PRACTICE DRAFT — PENDING_TEACHER_REVIEW — PENDING_OFFICIAL_INDICATOR_VERIFICATION. These are original practice sources, not prescribed texts.
+
+---
+
 ## Day 6 — Term 1, Week 2 — community narratives and oral histories — Oral communication — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend an interpretation of a community narrative using two relevant details and a response to a question.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a clear position, two supporting details and an explanation of what the oral account helps the community understand.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+ORAL ACCOUNT — A resident remembers that the old bridge was more than a crossing. People waited there for news, helped one another carry goods and watched the river during heavy rain. The resident is unsure of the exact year the bridge was repaired but remembers that neighbours worked together after a flood.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+> The interviewer notes that dates should be checked against council records, while the account can help explain how people experienced the place.
+
+**Worked example:** Position: the bridge was both a practical crossing and a meeting place. Details: people exchanged news and helped carry goods; neighbours worked together after a flood.
+
+**Your task:** Explain what the oral account tells us about the bridge and why a record may still be needed to check dates. Respond to: 'If the year is uncertain, can the story still be useful?'
+
+**Copper pathway support:** Use the model and source labels. The teacher may read the passage aloud, explain vocabulary and provide a sentence frame. Respond orally, by sign, AAC, pointing, dictation or writing.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Clear position, two details, explanation of social meaning and recognition that dates can be checked separately. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 6 — Term 1, Week 2 — community narratives and oral histories — Oral communication — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend an interpretation of a community narrative using two relevant details and a response to a question.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a clear position, two supporting details and an explanation of what the oral account helps the community understand.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+ORAL ACCOUNT — A resident remembers that the old bridge was more than a crossing. People waited there for news, helped one another carry goods and watched the river during heavy rain. The resident is unsure of the exact year the bridge was repaired but remembers that neighbours worked together after a flood.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+> The interviewer notes that dates should be checked against council records, while the account can help explain how people experienced the place.
+
+**Worked example:** Position: the bridge was both a practical crossing and a meeting place. Details: people exchanged news and helped carry goods; neighbours worked together after a flood.
+
+**Your task:** Explain what the oral account tells us about the bridge and why a record may still be needed to check dates. Respond to: 'If the year is uncertain, can the story still be useful?'
+
+**Bronze pathway support:** Use a paragraph frame and evidence locator. Identify one detail before explaining it; reduce prompts after the first answer.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Clear position, two details, explanation of social meaning and recognition that dates can be checked separately. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 6 — Term 1, Week 2 — community narratives and oral histories — Oral communication — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend an interpretation of a community narrative using two relevant details and a response to a question.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a clear position, two supporting details and an explanation of what the oral account helps the community understand.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+ORAL ACCOUNT — A resident remembers that the old bridge was more than a crossing. People waited there for news, helped one another carry goods and watched the river during heavy rain. The resident is unsure of the exact year the bridge was repaired but remembers that neighbours worked together after a flood.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+> The interviewer notes that dates should be checked against council records, while the account can help explain how people experienced the place.
+
+**Worked example:** Position: the bridge was both a practical crossing and a meeting place. Details: people exchanged news and helped carry goods; neighbours worked together after a flood.
+
+**Your task:** Explain what the oral account tells us about the bridge and why a record may still be needed to check dates. Respond to: 'If the year is uncertain, can the story still be useful?'
+
+**Silver pathway support:** Complete the task independently with precise details and a clear explanation of how they support your interpretation.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Clear position, two details, explanation of social meaning and recognition that dates can be checked separately. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 6 — Term 1, Week 2 — community narratives and oral histories — Oral communication — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Present and defend an interpretation of a community narrative using two relevant details and a response to a question.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a clear position, two supporting details and an explanation of what the oral account helps the community understand.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+ORAL ACCOUNT — A resident remembers that the old bridge was more than a crossing. People waited there for news, helped one another carry goods and watched the river during heavy rain. The resident is unsure of the exact year the bridge was repaired but remembers that neighbours worked together after a flood.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+> The interviewer notes that dates should be checked against council records, while the account can help explain how people experienced the place.
+
+**Worked example:** Position: the bridge was both a practical crossing and a meeting place. Details: people exchanged news and helped carry goods; neighbours worked together after a flood.
+
+**Your task:** Explain what the oral account tells us about the bridge and why a record may still be needed to check dates. Respond to: 'If the year is uncertain, can the story still be useful?'
+
+**Gold pathway support:** Extend the same objective by considering an alternative interpretation or evaluating what the source does not show.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Clear position, two details, explanation of social meaning and recognition that dates can be checked separately. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 7 — Term 1, Week 2 — community narratives and oral histories — Close reading — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how a narrator's viewpoint and language shape an account of community memory.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop an interpretation using two precise details and explain one language or structural choice.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> The narrator remembers the old bridge by its sounds. In the morning, wheels rattled over the boards; after rain, the river moved loudly beneath it. The narrator's grandfather used to stop halfway across and point out the water marks on the nearby trees. Years later, a concrete crossing replaced the bridge. The new crossing is safer, but the narrator says the old bridge taught people to notice the river. The final sentence reads: 'We crossed the river more quickly, but we learned to look at it less often.'
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Worked example:** The final sentence contrasts faster travel with reduced attention to the river. It suggests that practical improvement may change how people experience a place.
+
+**Your task:** 1. Explain the narrator's attitude to the new crossing. 2. Select two supporting details. 3. Analyse the contrast in the final sentence. 4. Explain what the narrator suggests may have been lost.
+
+**Copper pathway support:** Use the model and source labels. The teacher may read the passage aloud, explain vocabulary and provide a sentence frame. Respond orally, by sign, AAC, pointing, dictation or writing.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced interpretation, two details, analysis of contrast and implied meaning. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 7 — Term 1, Week 2 — community narratives and oral histories — Close reading — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how a narrator's viewpoint and language shape an account of community memory.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop an interpretation using two precise details and explain one language or structural choice.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> The narrator remembers the old bridge by its sounds. In the morning, wheels rattled over the boards; after rain, the river moved loudly beneath it. The narrator's grandfather used to stop halfway across and point out the water marks on the nearby trees. Years later, a concrete crossing replaced the bridge. The new crossing is safer, but the narrator says the old bridge taught people to notice the river. The final sentence reads: 'We crossed the river more quickly, but we learned to look at it less often.'
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Worked example:** The final sentence contrasts faster travel with reduced attention to the river. It suggests that practical improvement may change how people experience a place.
+
+**Your task:** 1. Explain the narrator's attitude to the new crossing. 2. Select two supporting details. 3. Analyse the contrast in the final sentence. 4. Explain what the narrator suggests may have been lost.
+
+**Bronze pathway support:** Use a paragraph frame and evidence locator. Identify one detail before explaining it; reduce prompts after the first answer.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced interpretation, two details, analysis of contrast and implied meaning. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 7 — Term 1, Week 2 — community narratives and oral histories — Close reading — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how a narrator's viewpoint and language shape an account of community memory.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop an interpretation using two precise details and explain one language or structural choice.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> The narrator remembers the old bridge by its sounds. In the morning, wheels rattled over the boards; after rain, the river moved loudly beneath it. The narrator's grandfather used to stop halfway across and point out the water marks on the nearby trees. Years later, a concrete crossing replaced the bridge. The new crossing is safer, but the narrator says the old bridge taught people to notice the river. The final sentence reads: 'We crossed the river more quickly, but we learned to look at it less often.'
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Worked example:** The final sentence contrasts faster travel with reduced attention to the river. It suggests that practical improvement may change how people experience a place.
+
+**Your task:** 1. Explain the narrator's attitude to the new crossing. 2. Select two supporting details. 3. Analyse the contrast in the final sentence. 4. Explain what the narrator suggests may have been lost.
+
+**Silver pathway support:** Complete the task independently with precise details and a clear explanation of how they support your interpretation.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced interpretation, two details, analysis of contrast and implied meaning. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 7 — Term 1, Week 2 — community narratives and oral histories — Close reading — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how a narrator's viewpoint and language shape an account of community memory.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Develop an interpretation using two precise details and explain one language or structural choice.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> The narrator remembers the old bridge by its sounds. In the morning, wheels rattled over the boards; after rain, the river moved loudly beneath it. The narrator's grandfather used to stop halfway across and point out the water marks on the nearby trees. Years later, a concrete crossing replaced the bridge. The new crossing is safer, but the narrator says the old bridge taught people to notice the river. The final sentence reads: 'We crossed the river more quickly, but we learned to look at it less often.'
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Worked example:** The final sentence contrasts faster travel with reduced attention to the river. It suggests that practical improvement may change how people experience a place.
+
+**Your task:** 1. Explain the narrator's attitude to the new crossing. 2. Select two supporting details. 3. Analyse the contrast in the final sentence. 4. Explain what the narrator suggests may have been lost.
+
+**Gold pathway support:** Extend the same objective by considering an alternative interpretation or evaluating what the source does not show.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Balanced interpretation, two details, analysis of contrast and implied meaning. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 8 — Term 1, Week 2 — community narratives and oral histories — Vocabulary and language — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how metaphor, connotation and register shape a community narrative.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Explain three word choices and their effect on tone, perspective and audience.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> The community report describes the bridge as 'a witness to many journeys'. The metaphor gives the structure a symbolic role in the community's history. It calls the replacement crossing 'a practical improvement', a phrase that values safety and function but says little about memory. The report uses a reflective register to recognise both the benefits of change and the meaning people attach to familiar places.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Worked example:** 'A witness to many journeys' suggests that the bridge has seen many important events. 'Practical improvement' focuses on usefulness rather than memory.
+
+**Your task:** Explain both quoted phrases, identify the report's register and explain how the writer balances practical benefits with community memory.
+
+**Copper pathway support:** Use the model and source labels. The teacher may read the passage aloud, explain vocabulary and provide a sentence frame. Respond orally, by sign, AAC, pointing, dictation or writing.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Contextual meanings, metaphor analysis, register identification and balanced explanation. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 8 — Term 1, Week 2 — community narratives and oral histories — Vocabulary and language — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how metaphor, connotation and register shape a community narrative.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Explain three word choices and their effect on tone, perspective and audience.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> The community report describes the bridge as 'a witness to many journeys'. The metaphor gives the structure a symbolic role in the community's history. It calls the replacement crossing 'a practical improvement', a phrase that values safety and function but says little about memory. The report uses a reflective register to recognise both the benefits of change and the meaning people attach to familiar places.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Worked example:** 'A witness to many journeys' suggests that the bridge has seen many important events. 'Practical improvement' focuses on usefulness rather than memory.
+
+**Your task:** Explain both quoted phrases, identify the report's register and explain how the writer balances practical benefits with community memory.
+
+**Bronze pathway support:** Use a paragraph frame and evidence locator. Identify one detail before explaining it; reduce prompts after the first answer.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Contextual meanings, metaphor analysis, register identification and balanced explanation. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 8 — Term 1, Week 2 — community narratives and oral histories — Vocabulary and language — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how metaphor, connotation and register shape a community narrative.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Explain three word choices and their effect on tone, perspective and audience.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> The community report describes the bridge as 'a witness to many journeys'. The metaphor gives the structure a symbolic role in the community's history. It calls the replacement crossing 'a practical improvement', a phrase that values safety and function but says little about memory. The report uses a reflective register to recognise both the benefits of change and the meaning people attach to familiar places.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Worked example:** 'A witness to many journeys' suggests that the bridge has seen many important events. 'Practical improvement' focuses on usefulness rather than memory.
+
+**Your task:** Explain both quoted phrases, identify the report's register and explain how the writer balances practical benefits with community memory.
+
+**Silver pathway support:** Complete the task independently with precise details and a clear explanation of how they support your interpretation.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Contextual meanings, metaphor analysis, register identification and balanced explanation. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 8 — Term 1, Week 2 — community narratives and oral histories — Vocabulary and language — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Analyse how metaphor, connotation and register shape a community narrative.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Explain three word choices and their effect on tone, perspective and audience.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> The community report describes the bridge as 'a witness to many journeys'. The metaphor gives the structure a symbolic role in the community's history. It calls the replacement crossing 'a practical improvement', a phrase that values safety and function but says little about memory. The report uses a reflective register to recognise both the benefits of change and the meaning people attach to familiar places.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Worked example:** 'A witness to many journeys' suggests that the bridge has seen many important events. 'Practical improvement' focuses on usefulness rather than memory.
+
+**Your task:** Explain both quoted phrases, identify the report's register and explain how the writer balances practical benefits with community memory.
+
+**Gold pathway support:** Extend the same objective by considering an alternative interpretation or evaluating what the source does not show.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Contextual meanings, metaphor analysis, register identification and balanced explanation. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 9 — Term 1, Week 2 — community narratives and oral histories — Critical literacy — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Compare oral testimony, written records and visual evidence, identifying what each can establish.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare two or more sources, identify a corroborated detail and explain limitations in the evidence.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+SOURCE A — Oral interview: A resident recalls that neighbours gathered on the old bridge after a flood. The year is uncertain.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+SOURCE B — Council record: A dated report confirms that the bridge was repaired after a flood but does not describe informal gatherings.
+
+SOURCE C — Photograph: An image shows people standing on the bridge. It has no date or caption.
+
+> The sources offer different kinds of evidence about the same place.
+
+**Worked example:** The council record can confirm that repairs followed a flood. The interview describes a gathering but the date is uncertain. The photograph shows people on the bridge but cannot identify when or why they gathered.
+
+**Your task:** Identify what each source can establish, one detail that can be corroborated and one limitation in the photograph. Explain why the sources should be considered together.
+
+**Copper pathway support:** Use the model and source labels. The teacher may read the passage aloud, explain vocabulary and provide a sentence frame. Respond orally, by sign, AAC, pointing, dictation or writing.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate comparison, corroboration, recognition of limitations and reasoned explanation. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 9 — Term 1, Week 2 — community narratives and oral histories — Critical literacy — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Compare oral testimony, written records and visual evidence, identifying what each can establish.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare two or more sources, identify a corroborated detail and explain limitations in the evidence.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+SOURCE A — Oral interview: A resident recalls that neighbours gathered on the old bridge after a flood. The year is uncertain.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+SOURCE B — Council record: A dated report confirms that the bridge was repaired after a flood but does not describe informal gatherings.
+
+SOURCE C — Photograph: An image shows people standing on the bridge. It has no date or caption.
+
+> The sources offer different kinds of evidence about the same place.
+
+**Worked example:** The council record can confirm that repairs followed a flood. The interview describes a gathering but the date is uncertain. The photograph shows people on the bridge but cannot identify when or why they gathered.
+
+**Your task:** Identify what each source can establish, one detail that can be corroborated and one limitation in the photograph. Explain why the sources should be considered together.
+
+**Bronze pathway support:** Use a paragraph frame and evidence locator. Identify one detail before explaining it; reduce prompts after the first answer.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate comparison, corroboration, recognition of limitations and reasoned explanation. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 9 — Term 1, Week 2 — community narratives and oral histories — Critical literacy — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Compare oral testimony, written records and visual evidence, identifying what each can establish.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare two or more sources, identify a corroborated detail and explain limitations in the evidence.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+SOURCE A — Oral interview: A resident recalls that neighbours gathered on the old bridge after a flood. The year is uncertain.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+SOURCE B — Council record: A dated report confirms that the bridge was repaired after a flood but does not describe informal gatherings.
+
+SOURCE C — Photograph: An image shows people standing on the bridge. It has no date or caption.
+
+> The sources offer different kinds of evidence about the same place.
+
+**Worked example:** The council record can confirm that repairs followed a flood. The interview describes a gathering but the date is uncertain. The photograph shows people on the bridge but cannot identify when or why they gathered.
+
+**Your task:** Identify what each source can establish, one detail that can be corroborated and one limitation in the photograph. Explain why the sources should be considered together.
+
+**Silver pathway support:** Complete the task independently with precise details and a clear explanation of how they support your interpretation.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate comparison, corroboration, recognition of limitations and reasoned explanation. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 9 — Term 1, Week 2 — community narratives and oral histories — Critical literacy — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Compare oral testimony, written records and visual evidence, identifying what each can establish.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare two or more sources, identify a corroborated detail and explain limitations in the evidence.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+SOURCE A — Oral interview: A resident recalls that neighbours gathered on the old bridge after a flood. The year is uncertain.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+SOURCE B — Council record: A dated report confirms that the bridge was repaired after a flood but does not describe informal gatherings.
+
+SOURCE C — Photograph: An image shows people standing on the bridge. It has no date or caption.
+
+> The sources offer different kinds of evidence about the same place.
+
+**Worked example:** The council record can confirm that repairs followed a flood. The interview describes a gathering but the date is uncertain. The photograph shows people on the bridge but cannot identify when or why they gathered.
+
+**Your task:** Identify what each source can establish, one detail that can be corroborated and one limitation in the photograph. Explain why the sources should be considered together.
+
+**Gold pathway support:** Extend the same objective by considering an alternative interpretation or evaluating what the source does not show.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Accurate comparison, corroboration, recognition of limitations and reasoned explanation. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 10 — Term 1, Week 2 — community narratives and oral histories — Writing and shaping — Copper Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Write a developed response explaining how community narratives combine memory and evidence.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a structured multi-paragraph response with a clear point, relevant evidence, explanation and reasoned conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> Community stories help people explain why a place matters. Oral accounts can describe feelings, relationships and events that official records may not include. Written records can help check dates and decisions. Photographs can show visible details but may not explain why people gathered or what they felt. A careful account uses more than one source and explains what remains uncertain.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Worked example:** Point: a fuller community history uses different source types. Paragraph 1: explain what oral accounts add. Paragraph 2: explain what records and photographs add. Conclusion: explain why limits should be stated.
+
+**Your task:** Write a developed multi-paragraph response explaining how oral accounts, written records and photographs can be used together to describe a community place. Use at least two source types and include a reasoned conclusion.
+
+**Copper pathway support:** Use the model and source labels. The teacher may read the passage aloud, explain vocabulary and provide a sentence frame. Respond orally, by sign, AAC, pointing, dictation or writing.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Structured multi-paragraph response with clear point, evidence, explanation and reasoned conclusion. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 10 — Term 1, Week 2 — community narratives and oral histories — Writing and shaping — Bronze Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Write a developed response explaining how community narratives combine memory and evidence.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a structured multi-paragraph response with a clear point, relevant evidence, explanation and reasoned conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> Community stories help people explain why a place matters. Oral accounts can describe feelings, relationships and events that official records may not include. Written records can help check dates and decisions. Photographs can show visible details but may not explain why people gathered or what they felt. A careful account uses more than one source and explains what remains uncertain.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Worked example:** Point: a fuller community history uses different source types. Paragraph 1: explain what oral accounts add. Paragraph 2: explain what records and photographs add. Conclusion: explain why limits should be stated.
+
+**Your task:** Write a developed multi-paragraph response explaining how oral accounts, written records and photographs can be used together to describe a community place. Use at least two source types and include a reasoned conclusion.
+
+**Bronze pathway support:** Use a paragraph frame and evidence locator. Identify one detail before explaining it; reduce prompts after the first answer.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Structured multi-paragraph response with clear point, evidence, explanation and reasoned conclusion. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 10 — Term 1, Week 2 — community narratives and oral histories — Writing and shaping — Silver Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Write a developed response explaining how community narratives combine memory and evidence.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a structured multi-paragraph response with a clear point, relevant evidence, explanation and reasoned conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> Community stories help people explain why a place matters. Oral accounts can describe feelings, relationships and events that official records may not include. Written records can help check dates and decisions. Photographs can show visible details but may not explain why people gathered or what they felt. A careful account uses more than one source and explains what remains uncertain.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Worked example:** Point: a fuller community history uses different source types. Paragraph 1: explain what oral accounts add. Paragraph 2: explain what records and photographs add. Conclusion: explain why limits should be stated.
+
+**Your task:** Write a developed multi-paragraph response explaining how oral accounts, written records and photographs can be used together to describe a community place. Use at least two source types and include a reasoned conclusion.
+
+**Silver pathway support:** Complete the task independently with precise details and a clear explanation of how they support your interpretation.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Structured multi-paragraph response with clear point, evidence, explanation and reasoned conclusion. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ---
 
 ## Day 10 — Term 1, Week 2 — community narratives and oral histories — Writing and shaping — Gold Worksheet
 
-**Learning intention:** 
+**Learner name:** __________________________________  **School:** ______________________________  
+**Class/Form:** Form 4  **Subject:** English  **Term/Week:** Term 1 / Week 2  
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** 
+**Learning intention:** Write a developed response explaining how community narratives combine memory and evidence.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a structured multi-paragraph response with a clear point, relevant evidence, explanation and reasoned conclusion.
 
-**Task:** 
+**Read, listen to or explore this complete practice source:**
 
-**Worked example:** 
+> Community stories help people explain why a place matters. Oral accounts can describe feelings, relationships and events that official records may not include. Written records can help check dates and decisions. Photographs can show visible details but may not explain why people gathered or what they felt. A careful account uses more than one source and explains what remains uncertain.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Worked example:** Point: a fuller community history uses different source types. Paragraph 1: explain what oral accounts add. Paragraph 2: explain what records and photographs add. Conclusion: explain why limits should be stated.
+
+**Your task:** Write a developed multi-paragraph response explaining how oral accounts, written records and photographs can be used together to describe a community place. Use at least two source types and include a reasoned conclusion.
+
+**Gold pathway support:** Extend the same objective by considering an alternative interpretation or evaluating what the source does not show.
 
 **My analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing are accepted. Adapted tools, extra time and sensory breaks may be used. Do not force speech or handwriting.
+
+**Evidence for teacher:** Structured multi-paragraph response with clear point, evidence, explanation and reasoned conclusion. Record response mode, accuracy, evidence and prompt level.
+
+**Self-check:** ☐ I stated my point  ☐ I used details  ☐ I explained my thinking  ☐ I checked my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
----
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify current authorised Form 4 syllabus cohort, prescribed texts and assessment criteria.
 
 ## Day 11 — Term 1, Week 3 — place, environment and belonging — Oral communication — Copper Worksheet
 
