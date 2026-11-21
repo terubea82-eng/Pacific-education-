@@ -30,7 +30,8 @@ For each level, produce 115 learning days across the 9/9/5 planning frame. Each 
 ## Current status
 
 - Form 1 = Year 7 and Form 2 = Year 8, as corrected by the owner.
-- Existing Class 7 and Class 8 worksheet entries may cover the same year levels. Do not create duplicate learner resources until the owner confirms whether Form 1/Form 2 should replace, rename or sit alongside those entries.
+- Agreed workspace approach: use one English entry per year level and display both labels, **Form 1 — Year 7** and **Form 2 — Year 8**. Preserve existing Class 7 and Class 8 files during transition; audit and map content before any rename or replacement. Do not create duplicate learner-facing entries.
 - The earlier Year 9/10 source lead is rejected for this mapping; the correct Year 7/8 authorised curriculum source remains to be located.
-- No Form 1 or Form 2 worksheet pack is represented as complete by this note.
+- Form 1 Day 1 has an initial standalone worksheet prototype for Copper, Bronze, Silver and Gold, with a separate matching teacher marking guide for each pathway. This is a one-day prototype only, not a completed 115-day pack.
+- Form 2 worksheet production has not yet started.
 - Keep all work on the existing staging branch and draft PR. Do not merge, deploy, replace the APK, or change live learner data.
