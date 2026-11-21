@@ -100,7 +100,10 @@ The existing worksheet source files for ECE, Classes 1–8 and Forms 4–6 were 
 
 [Form 7 Week 3 teacher marking guide](english-form7-teacher-guide-days-11-15.md)
 
-[Form 7 Week 2 teacher marking guide](english-form7-teacher-guide-days-6-10.md) Form 1 = Year 7 and Form 2 = Year 8 in the owner's level mapping. Do not use the 2014 Years 9–10 syllabus for those levels.
+[Form 7 Week 2 teacher marking guide](english-form7-teacher-guide-days-6-10.md)
+
+### Level mapping safeguard
+- Form 1 = Year 7 and Form 2 = Year 8 in the owner's level mapping. Do not use the 2014 Years 9–10 syllabus for those levels.
 - Do not mark these packs final until every day's four worksheets and marking guidance have been inspected.
 
 ## New learner-ready drafting batch — 22 November 2026
