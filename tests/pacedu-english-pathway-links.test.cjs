@@ -19,7 +19,7 @@ for (const [label, key] of levels) {
   const viewerPath = path.join(root, "src", "pacedu-" + key + "-english-printable-worksheets.html");
   const viewer = fs.readFileSync(viewerPath, "utf8");
   assert.match(viewer, /requestedAbility=.*ability=/, label + " viewer must accept a pathway deep link");
-  assert.match(viewer, /md\\.split\\(/, label + " viewer must split the daily worksheet source");
+  assert.match(viewer, /md\.split\(/, label + " viewer must split the daily worksheet source");
   assert.match(viewer, /\^#\{1,2\} Day/, label + " viewer must parse one- or two-level Day headings");
   assert.match(viewer, /\^#\{1,2\} Day \\(\\d\\+\\) .*Copper\\|Bronze\\|Silver\\|Gold/, label + " viewer must recognise each ability worksheet");
 }
