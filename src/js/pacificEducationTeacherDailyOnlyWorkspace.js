@@ -46,6 +46,25 @@
     var resourceGuide=node("p","Choose the matching class to open its daily activities, lesson/workplan and approved teacher resources. Worksheets and teaching aids must match the same subject, class, term and learning objective.");
     resourceGuide.setAttribute("role","note");
     list.appendChild(resourceGuide);
+    function addEnglishAbilityLinks(card,level,viewerFile){
+      var wrap=node("div");
+      wrap.style.cssText="margin-top:12px;padding:10px;border:1px solid #c8d6df;border-radius:8px;background:#fff;";
+      var heading=node("p",level+" — separate pathway worksheets (Days 1–115). Choose one pathway:");
+      heading.style.cssText="font-weight:700;margin:4px 0 8px;";
+      wrap.appendChild(heading);
+      ["Copper","Bronze","Silver","Gold"].forEach(function(group){
+        var a=node("a","Open "+group+" Worksheets");
+        a.href="https://terubea82-eng.github.io/Pacific-education-/src/"+viewerFile+"?ability="+group;
+        a.setAttribute("aria-label","Open "+level+" English "+group+" pathway worksheets for Days 1 to 115");
+        a.target="_blank";a.rel="noopener noreferrer";
+        a.style.cssText="display:inline-block;min-height:44px;padding:9px 11px;margin:4px 6px 4px 0;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
+        wrap.appendChild(a);
+      });
+      var note=node("p","Each link opens the selected pathway. Choose a learning day, then print or save that learner worksheet as PDF.");
+      note.style.cssText="font-size:.92em;margin:6px 0 2px;";
+      wrap.appendChild(note);card.appendChild(wrap);
+    }
+
     /* Keep English daily packs inside the English subject box. These links
        use the current branch so the draft can be reviewed without changing main. */
     if(subject==="English"){
@@ -71,6 +90,7 @@
       eceWorksheetLink.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
       eceCard.appendChild(eceWorksheetLink);
       list.appendChild(eceCard);
+      addEnglishAbilityLinks(eceCard,"ECE","pacedu-ece-english-printable-worksheets.html");
 
       var packCard=node("section");
       packCard.id="paceduClass1EnglishWorksheetPackLink";
@@ -141,6 +161,7 @@
       printLink.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
       printableCard.appendChild(printLink);
       list.appendChild(printableCard);
+      addEnglishAbilityLinks(printableCard,"Class 1","pacedu-class1-english-printable-worksheets.html");
       if(window.PacEduWorksheetLocalDate)window.PacEduWorksheetLocalDate.fill(printableCard);
 
       var starterNote=node("p","Existing Class 1 five-day diagnostic starter pack remains available for comparison; the new 115-day draft is the expanded programme.");
@@ -164,6 +185,7 @@
       class2PrintLink.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
       class2Card.appendChild(class2PrintLink);
       list.appendChild(class2Card);
+      addEnglishAbilityLinks(class2Card,"Class 2","pacedu-class2-english-printable-worksheets.html");
 
       var class3EnglishCard=node("section");
       class3EnglishCard.id="paceduClass3EnglishDailyPackLink";
@@ -182,6 +204,7 @@
       class3EnglishPrint.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
       class3EnglishCard.appendChild(class3EnglishPrint);
       list.appendChild(class3EnglishCard);
+      addEnglishAbilityLinks(class3EnglishCard,"Class 3","pacedu-class3-english-printable-worksheets.html");
 
       var class4EnglishCard=node("section");
       class4EnglishCard.id="paceduClass4EnglishDailyPackLink";
@@ -200,6 +223,7 @@
       class4EnglishPrint.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
       class4EnglishCard.appendChild(class4EnglishPrint);
       list.appendChild(class4EnglishCard);
+      addEnglishAbilityLinks(class4EnglishCard,"Class 4","pacedu-class4-english-printable-worksheets.html");
 
       var class5EnglishCard=node("section");
       class5EnglishCard.id="paceduClass5EnglishDailyPackLink";
@@ -218,6 +242,7 @@
       class5EnglishPrint.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
       class5EnglishCard.appendChild(class5EnglishPrint);
       list.appendChild(class5EnglishCard);
+      addEnglishAbilityLinks(class5EnglishCard,"Class 5","pacedu-class5-english-printable-worksheets.html");
 
       var class6EnglishCard=node("section");
       class6EnglishCard.id="paceduClass6EnglishDailyPackLink";
@@ -236,6 +261,7 @@
       class6EnglishPrint.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
       class6EnglishCard.appendChild(class6EnglishPrint);
       list.appendChild(class6EnglishCard);
+      addEnglishAbilityLinks(class6EnglishCard,"Class 6","pacedu-class6-english-printable-worksheets.html");
 
       var class7EnglishCard=node("section");
       class7EnglishCard.id="paceduClass7EnglishDailyPackLink";
@@ -254,6 +280,7 @@
       class7EnglishPrint.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
       class7EnglishCard.appendChild(class7EnglishPrint);
       list.appendChild(class7EnglishCard);
+      addEnglishAbilityLinks(class7EnglishCard,"Class 7","pacedu-class7-english-printable-worksheets.html");
 
       var class8EnglishCard=node("section");
       class8EnglishCard.id="paceduClass8EnglishDailyPackLink";
@@ -272,6 +299,7 @@
       class8EnglishPrint.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
       class8EnglishCard.appendChild(class8EnglishPrint);
       list.appendChild(class8EnglishCard);
+      addEnglishAbilityLinks(class8EnglishCard,"Class 8","pacedu-class8-english-printable-worksheets.html");
 
       var form1EnglishCard=node("section");
       form1EnglishCard.id="paceduForm1EnglishDailyPackLink";
@@ -290,6 +318,7 @@
       form1EnglishPrint.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
       form1EnglishCard.appendChild(form1EnglishPrint);
       list.appendChild(form1EnglishCard);
+      addEnglishAbilityLinks(form1EnglishCard,"Form 1 — Year 7","pacedu-form1-english-printable-worksheets.html");
 
       var form2EnglishCard=node("section");
       form2EnglishCard.id="paceduForm2EnglishDailyPackLink";
@@ -308,6 +337,7 @@
       form2EnglishPrint.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
       form2EnglishCard.appendChild(form2EnglishPrint);
       list.appendChild(form2EnglishCard);
+      addEnglishAbilityLinks(form2EnglishCard,"Form 2 — Year 8","pacedu-form2-english-printable-worksheets.html");
 
       var form3EnglishCard=node("section");
       form3EnglishCard.id="paceduForm3EnglishDailyPackLink";
@@ -326,6 +356,7 @@
       form3EnglishPrint.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
       form3EnglishCard.appendChild(form3EnglishPrint);
       list.appendChild(form3EnglishCard);
+      addEnglishAbilityLinks(form3EnglishCard,"Form 3","pacedu-form3-english-printable-worksheets.html");
 
       var form4EnglishCard=node("section");
       form4EnglishCard.id="paceduForm4EnglishDailyPackLink";
@@ -344,6 +375,7 @@
       form4EnglishPrint.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
       form4EnglishCard.appendChild(form4EnglishPrint);
       list.appendChild(form4EnglishCard);
+      addEnglishAbilityLinks(form4EnglishCard,"Form 4","pacedu-form4-english-printable-worksheets.html");
 
       var form5EnglishCard=node("section");
       form5EnglishCard.id="paceduForm5EnglishDailyPackLink";
@@ -362,6 +394,7 @@
       form5EnglishPrint.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
       form5EnglishCard.appendChild(form5EnglishPrint);
       list.appendChild(form5EnglishCard);
+      addEnglishAbilityLinks(form5EnglishCard,"Form 5","pacedu-form5-english-printable-worksheets.html");
 
       var form6EnglishCard=node("section");
       form6EnglishCard.id="paceduForm6EnglishDailyPackLink";
@@ -380,6 +413,7 @@
       form6EnglishPrint.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
       form6EnglishCard.appendChild(form6EnglishPrint);
       list.appendChild(form6EnglishCard);
+      addEnglishAbilityLinks(form6EnglishCard,"Form 6","pacedu-form6-english-printable-worksheets.html");
 
       var form7EnglishCard=node("section");
       form7EnglishCard.id="paceduForm7EnglishDailyPackLink";
@@ -398,6 +432,7 @@
       form7EnglishPrint.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
       form7EnglishCard.appendChild(form7EnglishPrint);
       list.appendChild(form7EnglishCard);
+      addEnglishAbilityLinks(form7EnglishCard,"Form 7","pacedu-form7-english-printable-worksheets.html");
     }
     var classes=rosterClasses(),items=[];
     Object.keys(classes).forEach(function(id){
