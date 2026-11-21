@@ -80,9 +80,9 @@ function show(){
 }
 function load(){
  fetch(source,{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error("Worksheet source could not be loaded ("+r.status+").");return r.text();}).then(function(md){
-  var parts=md.split(/(?=^# Day \d+ —)/m);
+  var parts=md.split(/(?=^#{1,2} Day \d+ —)/m);
   parts.forEach(function(part){
-   var m=part.match(/^# Day (\d+) — .* — (Copper|Bronze|Silver|Gold) Worksheet/m);
+   var m=part.match(/^#{1,2} Day (\d+) — .* — (Copper|Bronze|Silver|Gold) Worksheet/m);
    if(!m)return;
    var d=Number(m[1]),g=m[2],article=document.createElement("article");
    article.className="worksheet";
