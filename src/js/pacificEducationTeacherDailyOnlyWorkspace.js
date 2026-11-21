@@ -63,9 +63,9 @@
       var note=node("p","Each link opens the selected pathway. Choose a learning day, then print or save that learner worksheet as PDF.");
       note.style.cssText="font-size:.92em;margin:6px 0 2px;";
       wrap.appendChild(note);
-      if(level==="Class 3"||level==="Class 4"||level==="Class 5"||level==="Class 6"||level==="Class 7"||level==="Class 8"){
+      if(level==="Class 3"||level==="Class 4"||level==="Class 5"||level==="Class 6"||level==="Class 7"||level==="Class 8"||level==="Form 2 — Year 8"){
         var guide=node("a","Open "+level+" Week 1 Teacher Marking Guide");
-        var guideFile=level==="Class 3"?"english-class3-teacher-guide-days-1-5.md":level==="Class 4"?"english-class4-teacher-guide-days-1-5.md":level==="Class 5"?"english-class5-teacher-guide-days-1-5.md":level==="Class 6"?"english-class6-teacher-guide-days-1-5.md":level==="Class 7"?"english-class7-teacher-guide-days-1-5.md":"english-class8-teacher-guide-days-1-5.md";
+        var guideFile=level==="Class 3"?"english-class3-teacher-guide-days-1-5.md":level==="Class 4"?"english-class4-teacher-guide-days-1-5.md":level==="Class 5"?"english-class5-teacher-guide-days-1-5.md":level==="Class 6"?"english-class6-teacher-guide-days-1-5.md":level==="Class 7"?"english-class7-teacher-guide-days-1-5.md":level==="Class 8"?"english-class8-teacher-guide-days-1-5.md":"english-form2-teacher-guide-days-1-5.md";
         guide.href="https://github.com/terubea82-eng/Pacific-education-/blob/pacedu/english-ece-form7-staging-20261119/docs/curriculum/"+guideFile;
         guide.target="_blank";guide.rel="noopener noreferrer";
         guide.style.cssText="display:block;min-height:44px;padding:9px 0;font-weight:700;";
