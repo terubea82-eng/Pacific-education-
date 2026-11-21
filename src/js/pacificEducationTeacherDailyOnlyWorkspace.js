@@ -62,7 +62,16 @@
       });
       var note=node("p","Each link opens the selected pathway. Choose a learning day, then print or save that learner worksheet as PDF.");
       note.style.cssText="font-size:.92em;margin:6px 0 2px;";
-      wrap.appendChild(note);card.appendChild(wrap);
+      wrap.appendChild(note);
+      if(level==="Class 3"||level==="Class 4"){
+        var guide=node("a","Open "+level+" Week 1 Teacher Marking Guide");
+        var guideFile=level==="Class 3"?"english-class3-teacher-guide-days-1-5.md":"english-class4-teacher-guide-days-1-5.md";
+        guide.href="https://github.com/terubea82-eng/Pacific-education-/blob/pacedu/english-ece-form7-staging-20261119/docs/curriculum/"+guideFile;
+        guide.target="_blank";guide.rel="noopener noreferrer";
+        guide.style.cssText="display:block;min-height:44px;padding:9px 0;font-weight:700;";
+        wrap.appendChild(guide);
+      }
+      card.appendChild(wrap);
     }
 
     /* Keep English daily packs inside the English subject box. These links
