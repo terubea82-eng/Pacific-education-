@@ -3546,865 +3546,1317 @@ ____________________________________________________________________________
 
 **Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
+# PacEdu English Subject Box — Form 7 Printable Worksheets (Days 1–115)
+
+**Status:** ORIGINAL PACEDU DRAFT — PENDING_TEACHER_REVIEW — PENDING_OFFICIAL_INDICATOR_VERIFICATION. Not a Ministry-issued or examination-authorized worksheet pack.
+
+**Senior secondary safeguard:** Confirm the current authorised Form 7 cohort syllabus, prescribed texts, assessment specifications and criteria separately. These original linked practice sources are not prescribed texts or past examination questions.
+
+**Printing:** Each standalone worksheet repeats both complete practice sources, its task and answer space.
+
+---
+
 ## Day 16 — Term 1, Week 4 — power, voice and representation — Oral communication — Copper Worksheet
 
-**Learning intention:** present and defend a clear interpretation in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Defend a nuanced interpretation of how institutions and communities distribute voice and decision-making.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a sustained argument, synthesise evidence from two sources, qualify claims and respond to a counterargument.
 
-**Task:** Deliver a structured response to a prompt about power, voice and representation; state a position, support it with two relevant details and respond to a counter-question. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a 60–90 second response to a prompt about power, voice and representation: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Public consultation summary: The municipal committee received 84 written submissions about a proposed town-centre redesign. The summary groups comments into transport, business access, heritage and public-space themes. It reports that most submissions supported safer walking routes, while several asked for clearer access arrangements for market vendors. The summary does not publish the full submissions or explain how duplicate responses were counted.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Vendor association statement: The association says that some members were unsure where to send feedback and that two meeting times conflicted with market hours. It welcomes safer walking routes but asks for a direct meeting and a published response to each major concern. The statement represents the association's members, not every trader or resident.
 
+**Worked example:** A qualified interpretation is that formal consultation gathered substantial feedback, but the summary's grouping and the vendor statement's account of barriers raise questions about whose voices were easiest to record. Both sources have limits: the summary omits raw submissions; the association speaks for its members.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Present a recommendation about how the committee should demonstrate that consultation was fair. Integrate both sources, distinguish recorded submissions from access barriers, acknowledge one counterargument and answer: 'Does the number of submissions alone prove that all groups were heard?'
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison grid and the worked model. Work through one source at a time; the teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A nuanced argument about representation, with evidence from both sources, limitations and practical improvements to participation and reporting. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 16 — Term 1, Week 4 — power, voice and representation — Oral communication — Bronze Worksheet
 
-**Learning intention:** present and defend a clear interpretation in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Defend a nuanced interpretation of how institutions and communities distribute voice and decision-making.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a sustained argument, synthesise evidence from two sources, qualify claims and respond to a counterargument.
 
-**Task:** Deliver a structured response to a prompt about power, voice and representation; state a position, support it with two relevant details and respond to a counter-question. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a 60–90 second response to a prompt about power, voice and representation: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Public consultation summary: The municipal committee received 84 written submissions about a proposed town-centre redesign. The summary groups comments into transport, business access, heritage and public-space themes. It reports that most submissions supported safer walking routes, while several asked for clearer access arrangements for market vendors. The summary does not publish the full submissions or explain how duplicate responses were counted.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Vendor association statement: The association says that some members were unsure where to send feedback and that two meeting times conflicted with market hours. It welcomes safer walking routes but asks for a direct meeting and a published response to each major concern. The statement represents the association's members, not every trader or resident.
 
+**Worked example:** A qualified interpretation is that formal consultation gathered substantial feedback, but the summary's grouping and the vendor statement's account of barriers raise questions about whose voices were easiest to record. Both sources have limits: the summary omits raw submissions; the association speaks for its members.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Present a recommendation about how the committee should demonstrate that consultation was fair. Integrate both sources, distinguish recorded submissions from access barriers, acknowledge one counterargument and answer: 'Does the number of submissions alone prove that all groups were heard?'
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as claim, evidence, analysis and qualification; reduce prompts gradually.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A nuanced argument about representation, with evidence from both sources, limitations and practical improvements to participation and reporting. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 16 — Term 1, Week 4 — power, voice and representation — Oral communication — Silver Worksheet
 
-**Learning intention:** present and defend a clear interpretation in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Defend a nuanced interpretation of how institutions and communities distribute voice and decision-making.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a sustained argument, synthesise evidence from two sources, qualify claims and respond to a counterargument.
 
-**Task:** Deliver a structured response to a prompt about power, voice and representation; state a position, support it with two relevant details and respond to a counter-question. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a 60–90 second response to a prompt about power, voice and representation: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Public consultation summary: The municipal committee received 84 written submissions about a proposed town-centre redesign. The summary groups comments into transport, business access, heritage and public-space themes. It reports that most submissions supported safer walking routes, while several asked for clearer access arrangements for market vendors. The summary does not publish the full submissions or explain how duplicate responses were counted.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Vendor association statement: The association says that some members were unsure where to send feedback and that two meeting times conflicted with market hours. It welcomes safer walking routes but asks for a direct meeting and a published response to each major concern. The statement represents the association's members, not every trader or resident.
 
+**Worked example:** A qualified interpretation is that formal consultation gathered substantial feedback, but the summary's grouping and the vendor statement's account of barriers raise questions about whose voices were easiest to record. Both sources have limits: the summary omits raw submissions; the association speaks for its members.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Present a recommendation about how the committee should demonstrate that consultation was fair. Integrate both sources, distinguish recorded submissions from access barriers, acknowledge one counterargument and answer: 'Does the number of submissions alone prove that all groups were heard?'
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish source claims from inference and evaluate limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A nuanced argument about representation, with evidence from both sources, limitations and practical improvements to participation and reporting. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 16 — Term 1, Week 4 — power, voice and representation — Oral communication — Gold Worksheet
 
-**Learning intention:** present and defend a clear interpretation in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can present and defend a clear interpretation in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Defend a nuanced interpretation of how institutions and communities distribute voice and decision-making.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Present a sustained argument, synthesise evidence from two sources, qualify claims and respond to a counterargument.
 
-**Task:** Deliver a structured response to a prompt about power, voice and representation; state a position, support it with two relevant details and respond to a counter-question. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a 60–90 second response to a prompt about power, voice and representation: establish a position, select two details and answer a challenge question. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Public consultation summary: The municipal committee received 84 written submissions about a proposed town-centre redesign. The summary groups comments into transport, business access, heritage and public-space themes. It reports that most submissions supported safer walking routes, while several asked for clearer access arrangements for market vendors. The summary does not publish the full submissions or explain how duplicate responses were counted.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Vendor association statement: The association says that some members were unsure where to send feedback and that two meeting times conflicted with market hours. It welcomes safer walking routes but asks for a direct meeting and a published response to each major concern. The statement represents the association's members, not every trader or resident.
 
+**Worked example:** A qualified interpretation is that formal consultation gathered substantial feedback, but the summary's grouping and the vendor statement's account of barriers raise questions about whose voices were easiest to record. Both sources have limits: the summary omits raw submissions; the association speaks for its members.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Present a recommendation about how the committee should demonstrate that consultation was fair. Integrate both sources, distinguish recorded submissions from access barriers, acknowledge one counterargument and answer: 'Does the number of submissions alone prove that all groups were heard?'
 
-____________________________________________________________________
+**Gold pathway support:** Extend the response through nuanced qualification, methodological critique or an ethical counterargument while retaining the same objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A nuanced argument about representation, with evidence from both sources, limitations and practical improvements to participation and reporting. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 17 — Term 1, Week 4 — power, voice and representation — Close reading — Copper Worksheet
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Analyse how framing, voice and omission construct authority and represent marginalised perspectives.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare framing and voice across two sources, analyse omissions and explain how textual choices shape perceived authority.
 
-**Task:** Annotate an authorized text about power, voice and representation; identify the central claim, examine two language choices and explain their effects. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Annotate a passage from a substantial prescribed text, independent research sources and an examination-style prompt; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Official profile extract: 'The renewal programme has transformed the district through coordinated planning, improved public facilities and a shared vision for progress. The programme's success reflects strong leadership and effective partnerships.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Personal account extract: 'The new walkway is easier for visitors, but the ramp near our homes is often blocked by delivery vehicles. At meetings, the plans are shown on a large screen, yet residents who cannot attend are rarely quoted in the final report. I want the improvements to work; I also want the report to show what remains difficult.'
 
+**Worked example:** Source A uses abstract positive terms such as 'transformed' and 'shared vision' and attributes success to leadership. Source B uses first-person detail and contrast to acknowledge benefits while identifying unresolved access and representation issues.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Compare how each source establishes authority and frames the programme. Analyse two language choices, explain the effect of first-person voice in Source B and identify an omission in Source A. Explain why an omission is not automatically proof of deliberate concealment.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison grid and the worked model. Work through one source at a time; the teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Comparative close reading of framing, voice, diction and omission with careful distinction between textual effect and claims about author intent. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 17 — Term 1, Week 4 — power, voice and representation — Close reading — Bronze Worksheet
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Analyse how framing, voice and omission construct authority and represent marginalised perspectives.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare framing and voice across two sources, analyse omissions and explain how textual choices shape perceived authority.
 
-**Task:** Annotate an authorized text about power, voice and representation; identify the central claim, examine two language choices and explain their effects. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Annotate a passage from a substantial prescribed text, independent research sources and an examination-style prompt; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Official profile extract: 'The renewal programme has transformed the district through coordinated planning, improved public facilities and a shared vision for progress. The programme's success reflects strong leadership and effective partnerships.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Personal account extract: 'The new walkway is easier for visitors, but the ramp near our homes is often blocked by delivery vehicles. At meetings, the plans are shown on a large screen, yet residents who cannot attend are rarely quoted in the final report. I want the improvements to work; I also want the report to show what remains difficult.'
 
+**Worked example:** Source A uses abstract positive terms such as 'transformed' and 'shared vision' and attributes success to leadership. Source B uses first-person detail and contrast to acknowledge benefits while identifying unresolved access and representation issues.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Compare how each source establishes authority and frames the programme. Analyse two language choices, explain the effect of first-person voice in Source B and identify an omission in Source A. Explain why an omission is not automatically proof of deliberate concealment.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as claim, evidence, analysis and qualification; reduce prompts gradually.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Comparative close reading of framing, voice, diction and omission with careful distinction between textual effect and claims about author intent. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 17 — Term 1, Week 4 — power, voice and representation — Close reading — Silver Worksheet
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Analyse how framing, voice and omission construct authority and represent marginalised perspectives.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare framing and voice across two sources, analyse omissions and explain how textual choices shape perceived authority.
 
-**Task:** Annotate an authorized text about power, voice and representation; identify the central claim, examine two language choices and explain their effects. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Annotate a passage from a substantial prescribed text, independent research sources and an examination-style prompt; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Official profile extract: 'The renewal programme has transformed the district through coordinated planning, improved public facilities and a shared vision for progress. The programme's success reflects strong leadership and effective partnerships.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Personal account extract: 'The new walkway is easier for visitors, but the ramp near our homes is often blocked by delivery vehicles. At meetings, the plans are shown on a large screen, yet residents who cannot attend are rarely quoted in the final report. I want the improvements to work; I also want the report to show what remains difficult.'
 
+**Worked example:** Source A uses abstract positive terms such as 'transformed' and 'shared vision' and attributes success to leadership. Source B uses first-person detail and contrast to acknowledge benefits while identifying unresolved access and representation issues.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Compare how each source establishes authority and frames the programme. Analyse two language choices, explain the effect of first-person voice in Source B and identify an omission in Source A. Explain why an omission is not automatically proof of deliberate concealment.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish source claims from inference and evaluate limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Comparative close reading of framing, voice, diction and omission with careful distinction between textual effect and claims about author intent. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 17 — Term 1, Week 4 — power, voice and representation — Close reading — Gold Worksheet
 
-**Learning intention:** analyse how textual choices shape meaning in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse how textual choices shape meaning in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Analyse how framing, voice and omission construct authority and represent marginalised perspectives.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Compare framing and voice across two sources, analyse omissions and explain how textual choices shape perceived authority.
 
-**Task:** Annotate an authorized text about power, voice and representation; identify the central claim, examine two language choices and explain their effects. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Annotate a passage from a substantial prescribed text, independent research sources and an examination-style prompt; identify a claim or controlling idea, mark two language choices and explain their effects. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Official profile extract: 'The renewal programme has transformed the district through coordinated planning, improved public facilities and a shared vision for progress. The programme's success reflects strong leadership and effective partnerships.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Personal account extract: 'The new walkway is easier for visitors, but the ramp near our homes is often blocked by delivery vehicles. At meetings, the plans are shown on a large screen, yet residents who cannot attend are rarely quoted in the final report. I want the improvements to work; I also want the report to show what remains difficult.'
 
+**Worked example:** Source A uses abstract positive terms such as 'transformed' and 'shared vision' and attributes success to leadership. Source B uses first-person detail and contrast to acknowledge benefits while identifying unresolved access and representation issues.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Compare how each source establishes authority and frames the programme. Analyse two language choices, explain the effect of first-person voice in Source B and identify an omission in Source A. Explain why an omission is not automatically proof of deliberate concealment.
 
-____________________________________________________________________
+**Gold pathway support:** Extend the response through nuanced qualification, methodological critique or an ethical counterargument while retaining the same objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Comparative close reading of framing, voice, diction and omission with careful distinction between textual effect and claims about author intent. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 18 — Term 1, Week 4 — power, voice and representation — Vocabulary and language — Copper Worksheet
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how institutional, emotive and qualifying language shapes perceptions of participation and accountability.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse connotation, register and certainty in linked sources and rewrite a claim with accurate qualification.
 
-**Task:** Select three significant language choices in a text about power, voice and representation; explain connotations, register and effect on a defined audience. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Compare three expressions from a a substantial prescribed text, independent research sources and an examination-style prompt; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Campaign slogan: 'Nothing about us without us — real participation, not a tick-box exercise.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Committee report: 'Engagement activities were completed in accordance with the published timetable. Attendance was recorded at three meetings. The report does not evaluate whether participants influenced the final design or whether non-attendees had accessible alternatives.'
 
+**Worked example:** The slogan uses repetition and contrast to demand meaningful involvement. 'Tick-box' is dismissive and suggests superficial compliance. The report uses procedural language: it confirms activities and attendance but does not establish influence on decisions.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Analyse 'real participation', 'tick-box exercise', 'completed' and 'does not evaluate'. Explain how the slogan and report position their audiences. Rewrite the report's central claim to distinguish procedural completion from evidence of influence.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison grid and the worked model. Work through one source at a time; the teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Precise language analysis and an accurate rewrite that does not equate attendance with meaningful influence. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 18 — Term 1, Week 4 — power, voice and representation — Vocabulary and language — Bronze Worksheet
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how institutional, emotive and qualifying language shapes perceptions of participation and accountability.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse connotation, register and certainty in linked sources and rewrite a claim with accurate qualification.
 
-**Task:** Select three significant language choices in a text about power, voice and representation; explain connotations, register and effect on a defined audience. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Compare three expressions from a a substantial prescribed text, independent research sources and an examination-style prompt; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Campaign slogan: 'Nothing about us without us — real participation, not a tick-box exercise.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Committee report: 'Engagement activities were completed in accordance with the published timetable. Attendance was recorded at three meetings. The report does not evaluate whether participants influenced the final design or whether non-attendees had accessible alternatives.'
 
+**Worked example:** The slogan uses repetition and contrast to demand meaningful involvement. 'Tick-box' is dismissive and suggests superficial compliance. The report uses procedural language: it confirms activities and attendance but does not establish influence on decisions.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Analyse 'real participation', 'tick-box exercise', 'completed' and 'does not evaluate'. Explain how the slogan and report position their audiences. Rewrite the report's central claim to distinguish procedural completion from evidence of influence.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as claim, evidence, analysis and qualification; reduce prompts gradually.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Precise language analysis and an accurate rewrite that does not equate attendance with meaningful influence. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 18 — Term 1, Week 4 — power, voice and representation — Vocabulary and language — Silver Worksheet
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how institutional, emotive and qualifying language shapes perceptions of participation and accountability.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse connotation, register and certainty in linked sources and rewrite a claim with accurate qualification.
 
-**Task:** Select three significant language choices in a text about power, voice and representation; explain connotations, register and effect on a defined audience. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Compare three expressions from a a substantial prescribed text, independent research sources and an examination-style prompt; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Campaign slogan: 'Nothing about us without us — real participation, not a tick-box exercise.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Committee report: 'Engagement activities were completed in accordance with the published timetable. Attendance was recorded at three meetings. The report does not evaluate whether participants influenced the final design or whether non-attendees had accessible alternatives.'
 
+**Worked example:** The slogan uses repetition and contrast to demand meaningful involvement. 'Tick-box' is dismissive and suggests superficial compliance. The report uses procedural language: it confirms activities and attendance but does not establish influence on decisions.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Analyse 'real participation', 'tick-box exercise', 'completed' and 'does not evaluate'. Explain how the slogan and report position their audiences. Rewrite the report's central claim to distinguish procedural completion from evidence of influence.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish source claims from inference and evaluate limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Precise language analysis and an accurate rewrite that does not equate attendance with meaningful influence. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 18 — Term 1, Week 4 — power, voice and representation — Vocabulary and language — Gold Worksheet
 
-**Learning intention:** analyse register, syntax and rhetorical choices in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can analyse register, syntax and rhetorical choices in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate how institutional, emotive and qualifying language shapes perceptions of participation and accountability.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Analyse connotation, register and certainty in linked sources and rewrite a claim with accurate qualification.
 
-**Task:** Select three significant language choices in a text about power, voice and representation; explain connotations, register and effect on a defined audience. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Compare three expressions from a a substantial prescribed text, independent research sources and an examination-style prompt; explain connotation, register and audience effect, then justify a more precise alternative. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Campaign slogan: 'Nothing about us without us — real participation, not a tick-box exercise.'
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Committee report: 'Engagement activities were completed in accordance with the published timetable. Attendance was recorded at three meetings. The report does not evaluate whether participants influenced the final design or whether non-attendees had accessible alternatives.'
 
+**Worked example:** The slogan uses repetition and contrast to demand meaningful involvement. 'Tick-box' is dismissive and suggests superficial compliance. The report uses procedural language: it confirms activities and attendance but does not establish influence on decisions.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Analyse 'real participation', 'tick-box exercise', 'completed' and 'does not evaluate'. Explain how the slogan and report position their audiences. Rewrite the report's central claim to distinguish procedural completion from evidence of influence.
 
-____________________________________________________________________
+**Gold pathway support:** Extend the response through nuanced qualification, methodological critique or an ethical counterargument while retaining the same objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Precise language analysis and an accurate rewrite that does not equate attendance with meaningful influence. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 19 — Term 1, Week 4 — power, voice and representation — Critical literacy — Copper Worksheet
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate competing accounts of representation by examining methods, evidence, interests and missing voices.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Evaluate source methods and interests, distinguish quantitative coverage from representativeness and propose evidence needed for a fair conclusion.
 
-**Task:** Compare two sources about power, voice and representation; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Use a source comparison grid for two sources on power, voice and representation; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Survey summary: An online survey received 312 responses. Of these, 71% supported the proposed library redesign. The summary does not state how the survey link was distributed, how many people were invited or whether responses were weighted by age, location or access needs.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community network note: Several community groups report that members without reliable internet access did not see the survey link. The note includes comments from four group coordinators but does not provide a systematic count of people who missed the survey or the views of all groups.
 
+**Worked example:** Source A provides a numerical result but insufficient information about the sampling frame and response rate. Source B identifies a possible access gap but is not a representative survey. Together they show that the 71% result describes respondents, not necessarily the whole community.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Evaluate both sources. Explain what the 71% figure can and cannot establish, assess the community note's evidential value and identify at least four further details or methods needed before claiming that the result represents the whole community.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison grid and the worked model. Work through one source at a time; the teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Methodologically sound evaluation distinguishing respondents from population, with source limitations and suitable follow-up evidence. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 19 — Term 1, Week 4 — power, voice and representation — Critical literacy — Bronze Worksheet
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate competing accounts of representation by examining methods, evidence, interests and missing voices.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Evaluate source methods and interests, distinguish quantitative coverage from representativeness and propose evidence needed for a fair conclusion.
 
-**Task:** Compare two sources about power, voice and representation; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Use a source comparison grid for two sources on power, voice and representation; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Survey summary: An online survey received 312 responses. Of these, 71% supported the proposed library redesign. The summary does not state how the survey link was distributed, how many people were invited or whether responses were weighted by age, location or access needs.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community network note: Several community groups report that members without reliable internet access did not see the survey link. The note includes comments from four group coordinators but does not provide a systematic count of people who missed the survey or the views of all groups.
 
+**Worked example:** Source A provides a numerical result but insufficient information about the sampling frame and response rate. Source B identifies a possible access gap but is not a representative survey. Together they show that the 71% result describes respondents, not necessarily the whole community.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Evaluate both sources. Explain what the 71% figure can and cannot establish, assess the community note's evidential value and identify at least four further details or methods needed before claiming that the result represents the whole community.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as claim, evidence, analysis and qualification; reduce prompts gradually.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Methodologically sound evaluation distinguishing respondents from population, with source limitations and suitable follow-up evidence. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 19 — Term 1, Week 4 — power, voice and representation — Critical literacy — Silver Worksheet
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate competing accounts of representation by examining methods, evidence, interests and missing voices.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Evaluate source methods and interests, distinguish quantitative coverage from representativeness and propose evidence needed for a fair conclusion.
 
-**Task:** Compare two sources about power, voice and representation; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Use a source comparison grid for two sources on power, voice and representation; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Survey summary: An online survey received 312 responses. Of these, 71% supported the proposed library redesign. The summary does not state how the survey link was distributed, how many people were invited or whether responses were weighted by age, location or access needs.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community network note: Several community groups report that members without reliable internet access did not see the survey link. The note includes comments from four group coordinators but does not provide a systematic count of people who missed the survey or the views of all groups.
 
+**Worked example:** Source A provides a numerical result but insufficient information about the sampling frame and response rate. Source B identifies a possible access gap but is not a representative survey. Together they show that the 71% result describes respondents, not necessarily the whole community.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Evaluate both sources. Explain what the 71% figure can and cannot establish, assess the community note's evidential value and identify at least four further details or methods needed before claiming that the result represents the whole community.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish source claims from inference and evaluate limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Methodologically sound evaluation distinguishing respondents from population, with source limitations and suitable follow-up evidence. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 19 — Term 1, Week 4 — power, voice and representation — Critical literacy — Gold Worksheet
 
-**Learning intention:** evaluate perspective, evidence and reliability in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can evaluate perspective, evidence and reliability in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Evaluate competing accounts of representation by examining methods, evidence, interests and missing voices.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Evaluate source methods and interests, distinguish quantitative coverage from representativeness and propose evidence needed for a fair conclusion.
 
-**Task:** Compare two sources about power, voice and representation; identify perspective, distinguish evidence from assertion and evaluate one limitation in each source. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Use a source comparison grid for two sources on power, voice and representation; mark claim, evidence, perspective and limitation before making a supported judgement. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Survey summary: An online survey received 312 responses. Of these, 71% supported the proposed library redesign. The summary does not state how the survey link was distributed, how many people were invited or whether responses were weighted by age, location or access needs.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community network note: Several community groups report that members without reliable internet access did not see the survey link. The note includes comments from four group coordinators but does not provide a systematic count of people who missed the survey or the views of all groups.
 
+**Worked example:** Source A provides a numerical result but insufficient information about the sampling frame and response rate. Source B identifies a possible access gap but is not a representative survey. Together they show that the 71% result describes respondents, not necessarily the whole community.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Evaluate both sources. Explain what the 71% figure can and cannot establish, assess the community note's evidential value and identify at least four further details or methods needed before claiming that the result represents the whole community.
 
-____________________________________________________________________
+**Gold pathway support:** Extend the response through nuanced qualification, methodological critique or an ethical counterargument while retaining the same objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** Methodologically sound evaluation distinguishing respondents from population, with source limitations and suitable follow-up evidence. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 20 — Term 1, Week 4 — power, voice and representation — Writing and shaping — Copper Worksheet
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Copper  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Construct a sustained critical essay evaluating voice, representation and institutional accountability across linked sources.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a cohesive critical essay with a defensible thesis, integrated evidence, evaluation of methods and omissions, counterargument and reasoned conclusion.
 
-**Task:** Develop an analytical response about power, voice and representation; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a plan for an independently structured critical argument or synthesis on power, voice and representation; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Project review extract: The review states that consultation was completed before the redesign decision. It records 312 online survey responses and three public meetings. It recommends publishing a summary of design changes and a contact address for further comments. It does not include the survey distribution method or a record showing how individual concerns affected the final design.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community coalition response: The coalition welcomes the new contact address but argues that consultation should be judged by whether people could participate and whether their evidence influenced decisions. It asks for accessible non-digital options, translated summaries where needed, a response log and a follow-up review. The coalition acknowledges that the project improved some public facilities.
 
+**Worked example:** A strong thesis may argue that recorded consultation activity is necessary but insufficient to demonstrate accountable participation. Source A documents meetings and survey responses but lacks method and influence records; Source B proposes accountability measures while acknowledging improvements.
 
-**Copper pathway:** Use the annotated model, accessible excerpt, vocabulary gloss and short steps. Complete one supported analytical move; an oral, signed, AAC, dictated or written response is acceptable.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Write a sustained critical essay evaluating whether the project can claim meaningful participation. Integrate at least two details from each source, evaluate their limitations, address the strongest counterargument and recommend transparent measures for showing how community evidence shaped decisions.
 
-____________________________________________________________________
+**Copper pathway support:** Use source labels, a comparison grid and the worked model. Work through one source at a time; the teacher may read aloud, gloss vocabulary and provide one prompt at a time.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained, balanced essay with a clear thesis, source synthesis, methodological evaluation, counterargument and practical accountability recommendations. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 20 — Term 1, Week 4 — power, voice and representation — Writing and shaping — Bronze Worksheet
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Bronze  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Construct a sustained critical essay evaluating voice, representation and institutional accountability across linked sources.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a cohesive critical essay with a defensible thesis, integrated evidence, evaluation of methods and omissions, counterargument and reasoned conclusion.
 
-**Task:** Develop an analytical response about power, voice and representation; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a plan for an independently structured critical argument or synthesis on power, voice and representation; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Project review extract: The review states that consultation was completed before the redesign decision. It records 312 online survey responses and three public meetings. It recommends publishing a summary of design changes and a contact address for further comments. It does not include the survey distribution method or a record showing how individual concerns affected the final design.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community coalition response: The coalition welcomes the new contact address but argues that consultation should be judged by whether people could participate and whether their evidence influenced decisions. It asks for accessible non-digital options, translated summaries where needed, a response log and a follow-up review. The coalition acknowledges that the project improved some public facilities.
 
+**Worked example:** A strong thesis may argue that recorded consultation activity is necessary but insufficient to demonstrate accountable participation. Source A documents meetings and survey responses but lacks method and influence records; Source B proposes accountability measures while acknowledging improvements.
 
-**Bronze pathway:** Use the paragraph frame, evidence locator and guided questions. Complete a parallel response, reducing prompts as confidence grows.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Write a sustained critical essay evaluating whether the project can claim meaningful participation. Integrate at least two details from each source, evaluate their limitations, address the strongest counterargument and recommend transparent measures for showing how community evidence shaped decisions.
 
-____________________________________________________________________
+**Bronze pathway support:** Use the planning frame and evidence locator. Organise the response as claim, evidence, analysis and qualification; reduce prompts gradually.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained, balanced essay with a clear thesis, source synthesis, methodological evaluation, counterargument and practical accountability recommendations. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 20 — Term 1, Week 4 — power, voice and representation — Writing and shaping — Silver Worksheet
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Silver  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Construct a sustained critical essay evaluating voice, representation and institutional accountability across linked sources.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a cohesive critical essay with a defensible thesis, integrated evidence, evaluation of methods and omissions, counterargument and reasoned conclusion.
 
-**Task:** Develop an analytical response about power, voice and representation; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a plan for an independently structured critical argument or synthesis on power, voice and representation; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Project review extract: The review states that consultation was completed before the redesign decision. It records 312 online survey responses and three public meetings. It recommends publishing a summary of design changes and a contact address for further comments. It does not include the survey distribution method or a record showing how individual concerns affected the final design.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community coalition response: The coalition welcomes the new contact address but argues that consultation should be judged by whether people could participate and whether their evidence influenced decisions. It asks for accessible non-digital options, translated summaries where needed, a response log and a follow-up review. The coalition acknowledges that the project improved some public facilities.
 
+**Worked example:** A strong thesis may argue that recorded consultation activity is necessary but insufficient to demonstrate accountable participation. Source A documents meetings and survey responses but lacks method and influence records; Source B proposes accountability measures while acknowledging improvements.
 
-**Silver pathway:** Complete the shared task independently; select relevant evidence and explain its significance against the success criteria.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Write a sustained critical essay evaluating whether the project can claim meaningful participation. Integrate at least two details from each source, evaluate their limitations, address the strongest counterargument and recommend transparent measures for showing how community evidence shaped decisions.
 
-____________________________________________________________________
+**Silver pathway support:** Work independently. Integrate precise evidence, distinguish source claims from inference and evaluate limitations.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained, balanced essay with a clear thesis, source synthesis, methodological evaluation, counterargument and practical accountability recommendations. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
+
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ---
 
 ## Day 20 — Term 1, Week 4 — power, voice and representation — Writing and shaping — Gold Worksheet
 
-**Learning intention:** construct and revise a purposeful analytical text in a context connected to power, voice and representation.
+**Learner name:** __________________________________  **School:** ______________________________
+**Class/Form:** Form 7  **Subject:** English  **Term/Week:** Term 1 / Week 4
+**Date:** __________________  **Ability pathway:** Gold  **Teacher:** ______________________________
 
-**PacEdu working achievement indicator:** The learner can construct and revise a purposeful analytical text in relation to power, voice and representation, demonstrating independent critical judgement, synthesis, nuance and precise academic register.
+**Learning intention:** Construct a sustained critical essay evaluating voice, representation and institutional accountability across linked sources.
 
-**Text / source used:** Teacher records authorized text, author/source, edition and page: ____________________
+**PacEdu working achievement indicator:** Write a cohesive critical essay with a defensible thesis, integrated evidence, evaluation of methods and omissions, counterargument and reasoned conclusion.
 
-**Task:** Develop an analytical response about power, voice and representation; establish a thesis, organise evidence and revise for audience, register and cohesion. Work from a substantial prescribed text, independent research sources and an examination-style prompt. Record the exact authorized text/source and edition used.
+**Read, listen to or explore these complete linked practice sources:**
 
-**Worked example:** Model a plan for an independently structured critical argument or synthesis on power, voice and representation; develop a thesis, organise evidence and revise one paragraph for precision and cohesion. Learners then apply the same analytical move to a different passage, source or prompt.
+SOURCE A — Project review extract: The review states that consultation was completed before the redesign decision. It records 312 online survey responses and three public meetings. It recommends publishing a summary of design changes and a contact address for further comments. It does not include the survey distribution method or a record showing how individual concerns affected the final design.
 
-**Build-up questions — Bloom's Taxonomy**
-1. **Remember:** Identify the main claim, idea or key detail in the selected text or prompt.
-2. **Understand:** Explain the claim or idea in your own words and identify a relevant detail.
-3. **Apply:** Use the worked example's approach to respond to a new, related prompt.
-4. **Analyse:** Explain how the selected evidence supports or challenges the interpretation.
-5. **Evaluate:** Judge the strength of the interpretation and justify your judgement with evidence.
-6. **Create:** Present a coherent response for the stated audience and purpose, using relevant evidence.
+SOURCE B — Community coalition response: The coalition welcomes the new contact address but argues that consultation should be judged by whether people could participate and whether their evidence influenced decisions. It asks for accessible non-digital options, translated summaries where needed, a response log and a follow-up review. The coalition acknowledges that the project improved some public facilities.
 
+**Worked example:** A strong thesis may argue that recorded consultation activity is necessary but insufficient to demonstrate accountable participation. Source A documents meetings and survey responses but lacks method and influence records; Source B proposes accountability measures while acknowledging improvements.
 
-**Gold pathway:** Extend the same objective through synthesis, qualification, counterargument or nuanced evaluation; do not change the learning objective.
+**Build-up questions — Bloom's Taxonomy:**
+1. **Remember:** Identify each source's claim, purpose or key detail.
+2. **Understand:** Explain each source's perspective and evidence in your own words.
+3. **Apply:** Use the worked model to compare the sources.
+4. **Analyse:** Explain how language, framing, method or omission shapes meaning.
+5. **Evaluate:** Judge reliability, representativeness and limitations with reasons.
+6. **Create:** Produce a sustained response for the specified audience and purpose.
 
-**My analysis / response:**
+**Your task:** Write a sustained critical essay evaluating whether the project can claim meaningful participation. Integrate at least two details from each source, evaluate their limitations, address the strongest counterargument and recommend transparent measures for showing how community evidence shaped decisions.
 
-____________________________________________________________________
+**Gold pathway support:** Extend the response through nuanced qualification, methodological critique or an ethical counterargument while retaining the same objective.
 
-____________________________________________________________________
+**My critical analysis / response:**
 
-____________________________________________________________________
+____________________________________________________________________________
 
-**Evidence for teacher:** Record claim/interpretation, relevant evidence, explanation, audience/register choices, response mode and support used. Expected indicator: 
+____________________________________________________________________________
 
-**Self-check:** ☐ I used relevant evidence ☐ I explained its significance ☐ I reviewed my response
+____________________________________________________________________________
 
-**Official indicator mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — insert exact current authorized outcome, source title, edition, page and cohort only after verification.
+____________________________________________________________________________
 
-**Matching marking guide:** Credit a defensible interpretation supported by relevant evidence; accept equivalent wording and well-reasoned alternative conclusions. Reward explanation, not unsupported assertion. Use the school's approved assessment criteria once verified.
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+____________________________________________________________________________
+
+**Accessible response methods:** Braille, screen reader, large print/high contrast, speech, sign, AAC, pointing, gesture, drawing, eye gaze, dictation or writing. Adapted tools, extra time and sensory breaks are permitted. Do not force speech or handwriting.
+
+**Evidence for teacher:** A sustained, balanced essay with a clear thesis, source synthesis, methodological evaluation, counterargument and practical accountability recommendations. Record source details, response mode, accuracy, independence and prompt level.
+
+**Self-check:** ☐ I used both sources ☐ I evaluated evidence ☐ I considered missing voices ☐ I justified my conclusion
 
 **Teacher review:** PENDING_TEACHER_REVIEW
 
----
+**Official syllabus mapping:** PENDING_OFFICIAL_INDICATOR_VERIFICATION — verify exact authorised Form 7 cohort outcome, syllabus title, edition, page and assessment specification.
 
 ## Day 21 — Term 1, Week 5 — culture, tradition and change — Oral communication — Copper Worksheet
 
