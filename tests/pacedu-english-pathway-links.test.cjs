@@ -21,7 +21,7 @@ for (const [label, key] of levels) {
   assert.match(viewer, /requestedAbility=.*ability=/, label + " viewer must accept a pathway deep link");
   assert.match(viewer, /md\.split\(/, label + " viewer must split the daily worksheet source");
   assert.match(viewer, /\^#\{1,2\} Day/, label + " viewer must parse one- or two-level Day headings");
-  assert.match(viewer, /\^#\{1,2\} Day \\(\\d\\+\\) .*Copper\\|Bronze\\|Silver\\|Gold/, label + " viewer must recognise each ability worksheet");
+  assert.match(viewer, /\^#\{1,2\} Day \(\\d\+\).*Copper\|Bronze\|Silver\|Gold/, label + " viewer must recognise each ability worksheet");
 }
 assert.match(workspace, /\["Copper","Bronze","Silver","Gold"\]/, "Each level must expose all four pathways");
 console.log("PASS: all 16 English levels expose Copper, Bronze, Silver and Gold pathway links with compatible printable viewers.");
