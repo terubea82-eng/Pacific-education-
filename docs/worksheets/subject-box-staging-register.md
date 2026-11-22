@@ -28,7 +28,7 @@ Each learner worksheet must be independently usable and include learner details,
 | Arts | `docs/worksheets/class3-arts-term2-week7.md` | Conversation draft only; exact text not yet staged |
 | Mathematics | `docs/worksheets/class3-mathematics-term2-week7.md` | Conversation draft only; exact text not yet staged |
 | Social Science | `docs/worksheets/class3-social-science-term2-week7.md` | Conversation draft only; exact text not yet staged |
-| Technology | `docs/worksheets/class3-technology-term2-week7.md` | **STAGED** — 20 individual learner papers (5 days × 4 pathways); teacher review pending |
+| Technology | `docs/worksheets/class3-technology-term2-week7.md` plus `docs/worksheets/class3-technology-term2-week7/day-1/` | **PARTIALLY STAGED** — full five-day content exists in one combined draft; Day 1 now split into four separate learner downloads and four separate matching teacher guides; Days 2–5 still need splitting; teacher review pending |
 | Home Economics | `docs/worksheets/class3-home-economics-term2-week7.md` | **STAGED** — 20 individual learner papers (5 days × 4 pathways); teacher review pending |
 
 ## Publication and safety gates
