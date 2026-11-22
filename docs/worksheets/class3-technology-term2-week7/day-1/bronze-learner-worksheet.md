@@ -12,23 +12,39 @@ The class has no safe place to keep its storybooks during reading time. Books ar
 ### Worked example
 A design begins with a need. The need is to keep books upright. A material must be strong enough for the job. A wide base can help the stand stay steady. The first test shows whether the design works.
 
+
+### How you may respond
+You may write, draw, speak, sign, point, type, use Braille or use an agreed communication aid. Ask the teacher to read the passage or instructions aloud if that helps. Your answer is assessed for its Technology meaning, not for handwriting or spelling unless those are part of a verified objective.
+
 ### Questions — build your thinking
 1. **Remember:** Name the material Jone plans to use.  
 Answer: __________________________________________________________
+____________________________________________________________
+____________________________________________________________
 2. **Understand:** Explain why thin paper may not be suitable.  
 Answer: __________________________________________________________
+____________________________________________________________
+____________________________________________________________
 ____________________________________________________________
 3. **Apply:** Write one safe step Jone should take before cutting the carton.  
 Answer: __________________________________________________________
 ____________________________________________________________
+____________________________________________________________
+____________________________________________________________
 4. **Analyse:** How do the raised back and wide base help the book stand?  
 Answer: __________________________________________________________
+____________________________________________________________
+____________________________________________________________
 ____________________________________________________________
 5. **Evaluate:** Which is a better first test: placing two books carefully on the stand or stacking many books on it at once? Explain.  
 Answer: __________________________________________________________
 ____________________________________________________________
+____________________________________________________________
+____________________________________________________________
 6. **Create:** Describe a book stand with two labelled parts and explain what each part does.  
 Design: __________________________________________________________
+____________________________________________________________
+____________________________________________________________
 ____________________________________________________________
 ____________________________________________________________
 
