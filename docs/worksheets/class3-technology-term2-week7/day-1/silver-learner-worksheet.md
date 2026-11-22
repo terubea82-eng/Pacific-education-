@@ -15,25 +15,41 @@ After a rainy break, the class notices that its shared pencils roll off a smooth
 **Safety:** Adult help for cutting and cover rough edges.  
 **Test:** Add pencils and gently check whether they stay inside.
 
+
+### How you may respond
+You may write, draw, speak, sign, point, type, use Braille or use an agreed communication aid. Ask the teacher to read the passage or instructions aloud if that helps. Your answer is assessed for its Technology meaning, not for handwriting or spelling unless those are part of a verified objective.
+
 ### Questions — build your thinking
 1. **Remember:** State two requirements for Ana's pencil tray.  
 Answer: __________________________________________________________
 ____________________________________________________________
+____________________________________________________________
+____________________________________________________________
 2. **Understand:** Why is firm carton cardboard more suitable than thin paper?  
 Answer: __________________________________________________________
 ____________________________________________________________
+____________________________________________________________
+____________________________________________________________
 3. **Apply:** Write a safe sequence of two actions Ana should follow when preparing the cardboard.  
 Answer: __________________________________________________________
+____________________________________________________________
+____________________________________________________________
 ____________________________________________________________
 4. **Analyse:** Match each feature to its purpose: raised sides, flat base, covered corners. Explain how each contributes to the tray.  
 Answer: __________________________________________________________
 ____________________________________________________________
 ____________________________________________________________
+____________________________________________________________
+____________________________________________________________
 5. **Evaluate:** Does gently moving the desk provide useful test evidence? State what it can show and one limit of the test.  
 Answer: __________________________________________________________
 ____________________________________________________________
+____________________________________________________________
+____________________________________________________________
 6. **Create:** Propose one improvement to Ana's tray and explain which requirement it improves.  
 Answer: __________________________________________________________
+____________________________________________________________
+____________________________________________________________
 ____________________________________________________________
 ____________________________________________________________
 
