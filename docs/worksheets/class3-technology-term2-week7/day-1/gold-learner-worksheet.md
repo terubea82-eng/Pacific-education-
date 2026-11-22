@@ -12,27 +12,43 @@ The class wants a portable organiser for pencils, rulers and erasers. It must be
 ### Worked example
 A fair comparison keeps the test conditions the same. If both models hold the same items and are carried the same short distance, the class can compare stability and damage. A design should be judged against its criteria, not just its appearance.
 
+
+### How you may respond
+You may write, draw, speak, sign, point, type, use Braille or use an agreed communication aid. Ask the teacher to read the passage or instructions aloud if that helps. Your answer is assessed for its Technology meaning, not for handwriting or spelling unless those are part of a verified objective.
+
 ### Questions — build your thinking
 1. **Remember:** List three design criteria from the passage.  
 Answer: __________________________________________________________
 ____________________________________________________________
+____________________________________________________________
+____________________________________________________________
 2. **Understand:** Explain one advantage and one limitation of each material.  
 Answer: __________________________________________________________
+____________________________________________________________
+____________________________________________________________
 ____________________________________________________________
 ____________________________________________________________
 3. **Apply:** Write a safe preparation plan for the material you would choose. Include adult support where needed.  
 Answer: __________________________________________________________
 ____________________________________________________________
 ____________________________________________________________
+____________________________________________________________
+____________________________________________________________
 4. **Analyse:** Which design risks could cause the organiser to fail during carrying? Link each risk to a design feature that could reduce it.  
 Answer: __________________________________________________________
+____________________________________________________________
+____________________________________________________________
 ____________________________________________________________
 ____________________________________________________________
 5. **Evaluate:** Explain how using the same items in both models makes the comparison fair. Identify one additional condition that should stay the same.  
 Answer: __________________________________________________________
 ____________________________________________________________
+____________________________________________________________
+____________________________________________________________
 6. **Create:** Sketch or describe your own organiser. Label at least three features and explain how they meet the criteria.  
 Design: __________________________________________________________
+____________________________________________________________
+____________________________________________________________
 ____________________________________________________________
 ____________________________________________________________
 ____________________________________________________________
