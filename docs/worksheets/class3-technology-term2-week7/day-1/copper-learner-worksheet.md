@@ -16,23 +16,39 @@ Mere keeps her exercise books in a pile. When the wind comes through the classro
 **Safe action:** Ask an adult before cutting.  
 **Test:** Put one book in the holder and check whether it stands.
 
+
+### How you may respond
+You may write, draw, speak, sign, point, type, use Braille or use an agreed communication aid. Ask the teacher to read the passage or instructions aloud if that helps. Your answer is assessed for its Technology meaning, not for handwriting or spelling unless those are part of a verified objective.
+
 ### Questions — build your thinking
 1. **Remember:** What does Mere want to make?  
 Answer: __________________________________________________________
+____________________________________________________________
+____________________________________________________________
 2. **Understand:** Why does Mere choose cardboard?  
 Answer: __________________________________________________________
 ____________________________________________________________
-3. **Apply:** Circle the safer action: (A) ask the teacher before cutting (B) run with scissors. Explain your choice.  
+____________________________________________________________
+____________________________________________________________
+3. **Apply:** Circle the safer action: (A) ask the teacher before cutting (B) run while holding scissors (C) cut close to your fingers (D) use a damaged pair of scissors. Explain your choice.  
 Answer: __________________________________________________________
+____________________________________________________________
+____________________________________________________________
 ____________________________________________________________
 4. **Analyse:** What might happen if the base is too narrow?  
 Answer: __________________________________________________________
 ____________________________________________________________
+____________________________________________________________
+____________________________________________________________
 5. **Evaluate:** Is testing with one book a sensible first test? Give one reason.  
 Answer: __________________________________________________________
 ____________________________________________________________
+____________________________________________________________
+____________________________________________________________
 6. **Create:** Draw or describe a simple book holder. Label one material and one safety action.  
 My design: ________________________________________________________
+____________________________________________________________
+____________________________________________________________
 ____________________________________________________________
 ____________________________________________________________
 
