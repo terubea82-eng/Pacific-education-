@@ -9,6 +9,14 @@
 
 ---
 
+## Separate Day 1 subject-box downloads
+
+The Day 1 Copper, Bronze, Silver and Gold learner worksheets and their matching teacher-only marking guides are now split into separate files:
+
+[Open the Day 1 download index](class3-technology-term2-week7/day-1/README.md).
+
+The full five-day draft below remains available as the source pack. Days 2–5 still need to be split into separate learner downloads and matching marking guides.
+
 # DAY 1 — A NEED AND A USEFUL DESIGN
 
 ## C3-TECH-T2W7-D1-CU — Copper worksheet
