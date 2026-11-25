@@ -67,7 +67,7 @@ test("teacher subject selection shows every class and links the class to matchin
   await expect(page.locator("#paceduTeacherSubjectMappingNotice")).toContainText("teacher review required");
   await expect(page.locator("#pacificEducationLinkedTeacherPlans")).toBeVisible();
   await expect(page.locator("#paceduTeacherTwoResourcePanel")).toBeVisible();
-  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("PENDING_TEACHER_REVIEW");
+  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Curriculum mapping remains pending teacher review");
 
   await page.getByRole("button", { name: "English", exact: true }).click();
   await expect(page.locator("#paceduTeacherClassList")).toContainText("Class 1");
@@ -81,7 +81,7 @@ test("teacher subject selection shows every class and links the class to matchin
   await expect(page.locator("#paceduTeacherClassList h3")).toHaveText("Elementary Science — Choose a Class");
 
   await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Science — Class 2");
-  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("PENDING_TEACHER_REVIEW");
+  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Curriculum mapping remains pending teacher review");
   await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Teacher Instructions");
   await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Daily Activities + Revision + Practice Exam");
   await expect(page.getByRole("button", { name: "Print teacher instructions / Save as PDF", exact: true })).toBeEnabled();
