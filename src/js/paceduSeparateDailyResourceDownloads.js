@@ -82,6 +82,30 @@ function learnerDownload(options,group,shared){
  body+="<h2>Show what you learned</h2><p>"+esc(d.successCheck||"Show or explain your learning using an accessible response method.")+"</p><p>Answer space: __________________________________________________________</p><p>________________________________________________________________________</p><p>________________________________________________________________________</p><p>Accessible response options may include writing, speech, sign, pointing, drawing, objects or practical demonstration where appropriate.</p>";
  save("Student Activity — "+group.name+" Group",options,body,"STUDENT-"+group.name);
 }
+function teachingAidBody(options,shared){
+ var sheet=shared.base||{},lesson=shared.lesson||{},schedule=sheet.curriculumSchedule||{};
+ var qs=sheet.questions||[],keys=sheet.answerKey||[],steps=lesson.steps||[];
+ function items(values){return (Array.isArray(values)?values:[]).map(function(v){return "<li>"+esc(typeof v==="string"?v:(v.label||v.name||v.text||v.description||JSON.stringify(v)))+"</li>";}).join("");}
+ var example=lesson.workedExample||lesson.exampleText||lesson.visualExample||sheet.readingText||"No worked example is stored for this lesson yet. Teacher must prepare and review one before use.";
+ var concept=lesson.learningConcept||lesson.concept||sheet.topic||"Teacher to confirm the lesson concept.";
+ var vocab=lesson.keyVocabulary||lesson.vocabulary||[];
+ var materials=lesson.materials||lesson.teachingAids||[];
+ var sourceStatus=String(schedule.verificationStatus||"NOT_RECORDED");
+ var sourceTitle=schedule.candidateSource&&schedule.candidateSource.title||schedule.syllabusTitle||"No authorized curriculum source recorded";
+ var sourceReference=schedule.candidateSource&&schedule.candidateSource.reference||schedule.pageOrSection||"No exact page/section recorded";
+ var body="<h2>Selected lesson</h2><p><strong>Class:</strong> "+esc(options.level)+" · <strong>Subject:</strong> "+esc(options.subject)+" · <strong>Term:</strong> "+esc(options.term)+" · <strong>Week:</strong> "+esc(options.week)+" · <strong>Day:</strong> "+esc(options.day)+"</p>"+
+ "<h2>Shared learning objective</h2><p>"+esc(shared.objective)+"</p><h2>Lesson concept and teaching focus</h2><p>"+esc(concept)+"</p>"+
+ "<h2>Teaching demonstration / worked example</h2><p>"+esc(example)+"</p>"+
+ "<h2>Teaching sequence</h2><ol>"+(steps.length?steps.map(function(s){return "<li><strong>"+esc(s.mode||s.step||"Teacher step")+"</strong>: "+esc(s.learnerAction||s.onScreen||s.narration||s.description||"Teacher models the lesson focus.")+"</li>";}).join(""):"<li>Introduce the concept and state the shared objective.</li><li>Model the worked example while describing each step aloud.</li><li>Demonstrate with a visual, tactile or concrete representation where appropriate.</li><li>Guide learners through a similar example, then check understanding.</li>")+"</ol>"+
+ "<h2>Prepare these teaching aids</h2><ul>"+(materials.length?items(materials):"<li>Prepare a subject-specific chart, labelled diagram or picture cards for the concept above.</li><li>Prepare concrete local objects or a safe teacher demonstration that represents the concept.</li><li>Prepare a large-print copy and a tactile or audio-described alternative where needed.</li><li>Keep an offline, non-digital version ready.</li>")+"</ul>"+
+ "<h2>Vocabulary and key ideas</h2><p>"+esc(Array.isArray(vocab)?vocab.join(", "):vocab||"Teacher to confirm key vocabulary.")+"</p>"+
+ "<h2>Questions to use with the teaching aids</h2><ol>"+(qs.length?qs.map(function(q,i){var k=keys[i]||{};return "<li>"+esc(q.prompt||q.question||q.text||"Teacher question")+(q.options&&q.options.length?"<ul>"+items(q.options)+"</ul>":"")+"<p><strong>Teacher guidance:</strong> "+esc(k.answer||k.explanation||"Teacher to confirm a correct response and accept an equivalent accessible response.")+"</p></li>";}).join(""):"<li>What do you notice in the model, chart or object?</li><li>Explain or demonstrate one step in the process.</li><li>How does the example help you meet today's objective?</li>")+"</ol>"+
+ "<h2>Check learning and adapt</h2><p>"+esc(lesson.assessment||lesson.successCriteria||"Ask learners to explain, point to, draw, sign, write or demonstrate the target idea. Record evidence against the shared objective.")+"</p>"+
+ "<h2>Accessibility and safety check</h2><ul><li>Describe every important visual aloud; do not rely on colour alone.</li><li>Provide large print, tactile, audio, signed or equivalent response options as appropriate.</li><li>Check objects, tools, hygiene and classroom movement for safety before use.</li><li>Do not require a learner to handle hazardous, sharp, hot or unknown materials.</li></ul>"+
+ "<h2>Curriculum source and verification</h2><p><strong>Recorded source:</strong> "+esc(sourceTitle)+"</p><p><strong>Reference:</strong> "+esc(sourceReference)+"</p><p><strong>Recorded verification status:</strong> "+esc(sourceStatus)+"</p><p>Do not describe this resource as officially curriculum-aligned unless an authorized Fiji Ministry source, exact syllabus outcome/achievement indicator and class/term placement have been checked and recorded by an authorized reviewer.</p>"+
+ "<h2>Teacher review record</h2><p>Reviewer: ____________________ Date: ____________________</p><p>Corrections / local materials / school sequence: ______________________________________________</p>";
+ return body;
+}
 function teacherDownload(options,file,shared){
  var sheet=shared.base,lesson=shared.lesson,steps=lesson.steps||[],qs=sheet.questions||[],keys=sheet.answerKey||[];
  var body="";
@@ -91,6 +115,8 @@ function teacherDownload(options,file,shared){
   body="<h2>Shared learning objective</h2><p>"+esc(shared.objective)+"</p><h2>Teacher explanation / notes</h2><p>"+esc(lesson.teacherNotes||lesson.explanation||lesson.concept||lesson.exampleText||"Teacher to add a checked explanation for this lesson.")+"</p><h2>Worked example</h2><p>"+esc(lesson.workedExample||lesson.exampleText||"Teacher to prepare a subject-specific worked example.")+"</p><h2>Key vocabulary</h2><p>"+esc((lesson.keyVocabulary||lesson.vocabulary||[]).join? (lesson.keyVocabulary||lesson.vocabulary||[]).join(", "):lesson.keyVocabulary||"Teacher to verify key terms.")+"</p><h2>Common misconceptions</h2><p>"+esc(lesson.misconceptions||"Record misconceptions observed during teaching.")+"</p>";
  }else if(file.id==="answer-guide"){
   body="<h2>Shared learning objective</h2><p>"+esc(shared.objective)+"</p><h2>Answer guide</h2><ol>"+qs.map(function(q,i){var k=keys[i]||{};return "<li>"+esc(q.prompt||q.question||q.text||"Question "+(i+1))+"<p><strong>Suggested answer / marking note:</strong> "+esc(k.answer||k.explanation||"Teacher to verify against the approved subject rubric.")+"</p></li>";}).join("")+"</ol><h2>Marking criteria</h2><p>Assess accuracy, method/process, evidence and communication as appropriate to the subject and task. Record support or accommodations used. Do not penalise an inaccessible response mode when the target skill allows an equivalent response.</p><p><strong>Teacher marks / feedback:</strong> __________________________________________</p>";
+ }else if(file.id==="teaching-aids"){
+  body=teachingAidBody(options,shared);
  }else{
   body="<h2>Shared learning objective</h2><p>"+esc(shared.objective)+"</p><h2>Teaching aids and preparation</h2><ul><li>Visual chart or diagram illustrating the lesson concept.</li><li>Worked example or teacher demonstration.</li><li>Safe, low-cost local objects or printed picture cards where suitable.</li><li>Large-print, tactile, audio or signed alternatives according to learner access needs.</li><li>Offline alternative for any digital resource.</li></ul><h2>Existing lesson visuals / examples</h2><p>"+esc(lesson.visualExample||lesson.exampleText||lesson.concept||"Teacher to attach a verified subject-specific chart, diagram or demonstration.")+"</p><h2>Safety and accessibility</h2><p>Check materials, safe use, readable contrast, clear verbal description and accessible alternatives before the lesson.</p>";
  }
@@ -129,5 +155,5 @@ function renderControls(container,context){
  TEACHER_FILES.forEach(function(f){var b=node("button","Download "+f.label);b.type="button";b.style.cssText="min-height:46px;padding:10px;font:inherit;font-weight:700;";b.addEventListener("click",function(){try{var o=selectedOptions();teacherDownload(o,f,commonData(o));status.textContent=f.label+" download started.";}catch(e){status.textContent="Teacher file not prepared: "+String(e.message||e);}});teacherGrid.appendChild(b);});
  box.appendChild(teacherGrid);box.appendChild(status);container.appendChild(box);return true;
 }
-global.PacEduSeparateDailyResourceDownloads=Object.freeze({groups:GROUPS.map(function(g){return {id:g.id,name:g.name};}),teacherFiles:TEACHER_FILES.map(function(f){return f.id;}),downloadWeeklyBook:weeklyBookDownload,renderControls:renderControls});
+global.PacEduSeparateDailyResourceDownloads=Object.freeze({groups:GROUPS.map(function(g){return {id:g.id,name:g.name};}),teacherFiles:TEACHER_FILES.map(function(f){return f.id;}),downloadWeeklyBook:weeklyBookDownload,buildTeachingAidBody:teachingAidBody,renderControls:renderControls});
 })(window,document);
