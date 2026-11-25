@@ -55,3 +55,11 @@ test("teaching-aid pack escapes lesson data and explicitly flags missing example
   assert.match(html, /No worked example is stored for this lesson yet/);
   assert.match(html, /NOT_RECORDED/);
 });
+
+test("teacher workspace uses one lesson-linked download workflow and passes the selected class and subject", () => {
+  const workspace = fs.readFileSync("src/js/paceduTeacherTwoResourceWorkspace.js", "utf8");
+  assert.match(workspace, /Lesson-linked Teacher Resources & Teaching Aids/);
+  assert.match(workspace, /renderControls\(dailyDownloadsHost,\{level:levelValue,subject:subject,term:dailyDownloadTerm,useSelectedContext:true\}\)/);
+  assert.doesNotMatch(workspace, /Enter the verified curriculum reference and learning objective before downloading/);
+  assert.doesNotMatch(workspace, /Choose a teaching aid/);
+});
