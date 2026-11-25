@@ -19,6 +19,10 @@ A clear recount follows the events in time order and includes relevant details: 
 3. Mere wrote a list after lunch.
 4. Mere helped wash the vegetables.
 
+## Passage ordering answer key
+
+Expected chronology: 2 (bought vegetables), 4 (washed vegetables), 3 (wrote a list), 1 (thanked her aunt before going home). Accept equivalent ordering where a learner reasonably interprets overlapping events, and ask the learner to explain their choice.
+
 ## Day-by-day evidence and marking guidance
 
 | Day | Evidence | Teacher guidance |
