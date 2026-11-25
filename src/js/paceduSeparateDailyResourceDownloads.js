@@ -32,6 +32,14 @@ function commonData(options){
  var lesson=base.dailyLesson||{};
  return {base:base,lesson:lesson,objective:lesson.classLevelObjective||lesson.learnerAction||base.topic||"Teacher-approved objective required",resolved:resolved};
 }
+function questionOptionsHtml(question){
+ var options=question&&Array.isArray(question.options)?question.options:[];
+ if(!options.length)return "";
+ if(options.length!==4||options.some(function(option){return option==null||String(option).trim()==="";})){
+  throw new Error("This multiple-choice question must have exactly four non-empty options (A, B, C and D). Teacher correction is required before download.");
+ }
+ return "<ol type=\"A\">"+options.map(function(option){return "<li>"+esc(option)+"</li>";}).join("")+"</ol>";
+}
 function docHtml(title,meta,body){
  return "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>"+esc(title)+"</title><style>body{font:16px/1.5 Arial,sans-serif;max-width:850px;margin:auto;padding:20px;color:#17212b}h1,h2{line-height:1.2}.meta{background:#f2f5f7;padding:12px;border-radius:8px}li{margin:7px 0}@media print{body{max-width:none;padding:0}}</style></head><body><h1>"+esc(title)+"</h1><div class=\"meta\">"+meta+"</div>"+body+"<p><strong>PacEdu status:</strong> PENDING_TEACHER_REVIEW. Verify the current authorised Fiji syllabus, outcome, achievement indicator and school sequence before teaching or release.</p></body></html>";
 }
@@ -61,7 +69,7 @@ function weeklyBookDownload(options,group){
    "<h3>Learning focus</h3><p>"+esc(lesson.learningConcept||lesson.concept||sheet.topic||"Teacher to confirm")+"</p>"+
    "<h3>Learn and practise</h3><p>"+esc(lesson.exampleText||lesson.workedExample||sheet.readingText||"Teacher models a suitable example.")+"</p>"+
    "<p>"+esc(daily.subjectTask||lesson.learnerAction||sheet.instructions||"Complete the classwork activity.")+"</p><ol>"+(daily.steps||[]).map(function(x){return "<li>"+esc(x)+"</li>";}).join("")+"</ol>"+
-   "<h3>Classwork</h3><ol>"+questions.map(function(q){return "<li>"+esc(q.prompt||q.question||q.text||"Complete the task.")+(q.options&&q.options.length?"<ul>"+q.options.map(function(v,i){return "<li>"+String.fromCharCode(65+i)+". "+esc(v)+"</li>";}).join("")+"</ul>":"")+"<p>Answer: __________________________________________________</p></li>";}).join("")+"</ol>"+
+   "<h3>Classwork</h3><ol>"+questions.map(function(q){return "<li>"+esc(q.prompt||q.question||q.text||"Complete the task.")+questionOptionsHtml(q)+"<p>Answer: __________________________________________________</p></li>";}).join("")+"</ol>"+
    "<h3>Show what you learned</h3><p>"+esc(success)+"</p><p>Teacher feedback: ______________________________________________</p></section>";
   pages.push(page);
  }
@@ -78,7 +86,7 @@ function learnerDownload(options,group,shared){
  if(!sheet||sheet.status==="NOT_FOUND")throw new Error("This ability group's daily activity is not available.");
  var a=sheet.abilityActivities||{},d=a.daily||{},lesson=sheet.dailyLesson||{};
  var body="<h2>Learning objective</h2><p>"+esc(shared.objective)+"</p><h2>Concept / learning focus</h2><p>"+esc(lesson.concept||sheet.topic||"Teacher to confirm")+"</p><h2>Learn and try</h2><p>"+esc(lesson.exampleText||lesson.visualExample||lesson.workedExample||"Teacher-provided example.")+"</p><p>"+esc(d.subjectTask||"Complete the class activity.")+"</p><ol>"+(d.steps||[]).map(function(x){return "<li>"+esc(x)+"</li>";}).join("")+"</ol><h2>Questions / activity</h2>";
- var qs=sheet.questions||[];body+="<ol>"+qs.map(function(q){return "<li>"+esc(q.prompt||q.question||q.text||"Complete the activity.")+(q.options&&q.options.length?"<ul>"+q.options.map(function(o){return "<li>"+esc(o)+"</li>";}).join("")+"</ul>":"")+"</li>";}).join("")+"</ol>";
+ var qs=sheet.questions||[];body+="<ol>"+qs.map(function(q){return "<li>"+esc(q.prompt||q.question||q.text||"Complete the activity.")+questionOptionsHtml(q)+"</li>";}).join("")+"</ol>";
  body+="<h2>Show what you learned</h2><p>"+esc(d.successCheck||"Show or explain your learning using an accessible response method.")+"</p><p>Answer space: __________________________________________________________</p><p>________________________________________________________________________</p><p>________________________________________________________________________</p><p>Accessible response options may include writing, speech, sign, pointing, drawing, objects or practical demonstration where appropriate.</p>";
  save("Student Activity — "+group.name+" Group",options,body,"STUDENT-"+group.name);
 }
@@ -129,5 +137,5 @@ function renderControls(container,context){
  TEACHER_FILES.forEach(function(f){var b=node("button","Download "+f.label);b.type="button";b.style.cssText="min-height:46px;padding:10px;font:inherit;font-weight:700;";b.addEventListener("click",function(){try{var o=selectedOptions();teacherDownload(o,f,commonData(o));status.textContent=f.label+" download started.";}catch(e){status.textContent="Teacher file not prepared: "+String(e.message||e);}});teacherGrid.appendChild(b);});
  box.appendChild(teacherGrid);box.appendChild(status);container.appendChild(box);return true;
 }
-global.PacEduSeparateDailyResourceDownloads=Object.freeze({groups:GROUPS.map(function(g){return {id:g.id,name:g.name};}),teacherFiles:TEACHER_FILES.map(function(f){return f.id;}),downloadWeeklyBook:weeklyBookDownload,renderControls:renderControls});
+global.PacEduSeparateDailyResourceDownloads=Object.freeze({groups:GROUPS.map(function(g){return {id:g.id,name:g.name};}),teacherFiles:TEACHER_FILES.map(function(f){return f.id;}),formatQuestionOptions:questionOptionsHtml,downloadWeeklyBook:weeklyBookDownload,renderControls:renderControls});
 })(window,document);

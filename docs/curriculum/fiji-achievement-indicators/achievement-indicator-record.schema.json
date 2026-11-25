@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pacific-education.example/schemas/fiji-achievement-indicator-record.schema.json",
+  "title": "PacEdu Fiji Achievement Indicator Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "indicatorId",
+    "jurisdiction",
+    "curriculumVersion",
+    "level",
+    "subjectId",
+    "term",
+    "week",
+    "day",
+    "indicatorText",
+    "sourceDocumentTitle",
+    "issuingAuthority",
+    "sourceVersion",
+    "sourceLocation",
+    "sourceUrl",
+    "sourceStatus",
+    "reviewStatus"
+  ],
+  "properties": {
+    "indicatorId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "jurisdiction": {
+      "const": "Fiji"
+    },
+    "curriculumVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "level": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subjectId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "term": {
+      "enum": [
+        "Term 1",
+        "Term 2",
+        "Term 3"
+      ]
+    },
+    "week": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "day": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "indicatorText": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Exact source wording; do not invent or silently paraphrase."
+    },
+    "strand": {
+      "type": "string"
+    },
+    "subStrand": {
+      "type": "string"
+    },
+    "learningObjective": {
+      "type": "string"
+    },
+    "sourceDocumentTitle": {
+      "type": "string",
+      "minLength": 1
+    },
+    "issuingAuthority": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceLocation": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Page, section, outcome code or table reference."
+    },
+    "sourceUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "sourceStatus": {
+      "enum": [
+        "PENDING_SOURCE_VERIFICATION",
+        "SOURCE_VERIFIED",
+        "RETIRED"
+      ]
+    },
+    "reviewStatus": {
+      "enum": [
+        "PENDING",
+        "SOURCE_VERIFIED_PENDING_EDUCATOR_REVIEW",
+        "VALIDATED",
+        "RETIRED"
+      ]
+    },
+    "activityIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "assessmentEvidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approvedBy": {
+      "type": "string"
+    },
+    "approvedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "term": {
+            "const": "Term 1"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "week": {
+            "maximum": 9
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "term": {
+            "const": "Term 2"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "week": {
+            "maximum": 9
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "term": {
+            "const": "Term 3"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "week": {
+            "maximum": 5
+          }
+        }
+      }
+    }
+  ]
+}

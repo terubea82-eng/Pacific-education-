@@ -1,4 +1,5 @@
 /* PacEdu — two-resource teacher subject/class workspace.
+ * Simple-page presentation: Gold, Silver, Bronze and Copper stay together in the selected subject.
  * Keeps teacher instructions, ability worksheets and activity-linked teaching aids together after subject -> class selection.
  * Learner evidence is used only when an explicit reviewed mark exists for the same roster learner.
  * Camera photos remain pending until reviewed; no AI-marking claim is made.
@@ -8,10 +9,10 @@
   var PANEL_ID = "paceduTeacherTwoResourcePanel";
   var RESPONSE_KEY = "pacificEducationActivityResponses";
   var BANDS = [
-    { id: "support", label: "Foundation" },
-    { id: "developing", label: "Developing" },
-    { id: "expected", label: "Expected" },
-    { id: "extension", label: "Advanced" }
+    { id: "extension", label: "Gold" },
+    { id: "expected", label: "Silver" },
+    { id: "developing", label: "Bronze" },
+    { id: "support", label: "Copper" }
   ];
   function node(tag, value) {
     var el = document.createElement(tag);
@@ -119,7 +120,7 @@
     var evidence = node("div");
     evidence.setAttribute("aria-label", "Learner roster and previous-day reviewed evidence");
     var students = classInfo && Array.isArray(classInfo.studentRefs) ? classInfo.studentRefs : [];
-    var groupCounts = { support: 0, developing: 0, expected: 0, extension: 0 };
+    var hasReviewedEvidence = false;
     var levelValue = String(classInfo && (classInfo.level || classInfo.className) || selectedClass.textContent.trim());
     if (!students.length) {
       evidence.appendChild(node("p", "No learner references are connected to this class roster yet. Do not assign an individual ability group until the roster is linked."));
@@ -128,11 +129,9 @@
       students.forEach(function (ref) {
         var row = node("li");
         var mark = priorReviewedEvidence(ref, classId, subject);
-        var rawMark = mark && (mark.markPercent != null ? mark.markPercent : mark.scorePercent != null ? mark.scorePercent : mark.mark != null ? mark.mark : mark.score);
-        var band = mark ? BANDS.filter(function (b) { return b.id === bandFor(rawMark); })[0] : null;
-        if (band) groupCounts[band.id] += 1;
+        if (mark) hasReviewedEvidence = true;
         row.textContent = String(ref) + " — " + (mark ?
-          "Reviewed mark found (Day " + String(mark.day || mark.dayNumber || "?") + "); provisional worksheet recommendation: " + (band ? band.label : "manual review required") :
+          "Teacher-reviewed evidence recorded (Day " + String(mark.day || mark.dayNumber || "?") + "); group placement still requires repeated skill evidence and teacher review." :
           "No reviewed mark found for this subject; ability group remains unconfirmed.");
         rosterList.appendChild(row);
       });
@@ -149,8 +148,17 @@
       [["T1","Term 1 — 9 weeks"],["T2","Term 2 — 9 weeks"],["T3","Term 3 — 5 weeks"]].forEach(function (item) {
         var option = node("option", item[1]); option.value = item[0]; termSelect.appendChild(option);
       });
-      var savedTerm = String(window.localStorage.getItem("pacificEducationTerm") || "T1");
-      if (/^T[123]$/.test(savedTerm)) termSelect.value = savedTerm;
+      var savedTerm = String(window.localStorage.getItem("pacificEducationTerm") || "T1").trim();
+      var savedTermMatch = savedTerm.match(/^T([123])$/i) || savedTerm.match(/^Term\s*([123])$/i);
+      termSelect.value = savedTermMatch ? "T" + savedTermMatch[1] : "T1";
+      function syncTermContext() {
+        var termLabelValue = "Term " + termSelect.value.slice(1);
+        try { window.localStorage.setItem("pacificEducationTerm", termLabelValue); } catch (_) {}
+        var quickAnswerTerm = document.getElementById("peQuickAnswerTerm");
+        if (quickAnswerTerm) quickAnswerTerm.value = termLabelValue;
+      }
+      syncTermContext();
+      termSelect.addEventListener("change", syncTermContext);
       termLabel.appendChild(termSelect);
       worksheets.appendChild(termLabel);
       var groupHeading = node("h5", "Prepare a pack for any ability group");
@@ -160,15 +168,14 @@
       groupStatus.setAttribute("aria-live", "polite");
       if (!students.length) {
         groupStatus.textContent = "You can prepare all four class-wide packs now. Link the learner roster and review baseline evidence before assigning individual students.";
-      } else if (!Object.keys(groupCounts).some(function (id) { return groupCounts[id] > 0; })) {
-        groupStatus.textContent = "No reviewed marks are available for this subject yet. All four class-wide practice packs remain available; use the baseline assessment and teacher review before assigning learners.";
+      } else if (!hasReviewedEvidence) {
+        groupStatus.textContent = "No reviewed marks are available for this subject yet. All four class-wide practice packs remain available; use a baseline assessment and review repeated skill evidence before considering group placement.";
       } else {
-        groupStatus.textContent = "Counts show only learners with an explicitly reviewed mark for this subject. They are informational only: a pack can be prepared even when its count is zero. Missing or pending evidence never means low ability.";
+        groupStatus.textContent = "Reviewed evidence exists, but one mark does not assign a learner to a group. Review repeated skill evidence and the support used before confirming a subject-specific pathway. All four class-wide packs remain available.";
       }
       worksheets.appendChild(groupStatus);
       if (worksheetAvailability.available) BANDS.forEach(function (band) {
-        var count = groupCounts[band.id] || 0;
-        var button = node("button", "Prepare " + band.label + " pack: daily activities + revision + mock exam" + (count ? " (" + count + " reviewed learner(s))" : " (no reviewed marks yet)"));
+        var button = node("button", "Prepare " + band.label + " pack: daily activities + revision + mock exam (class-wide practice; not an individual placement)");
         button.type = "button";
         button.disabled = false;
         button.style.cssText = "display:block;width:100%;min-height:46px;padding:10px;margin:7px 0;text-align:left;";
@@ -186,12 +193,55 @@
         groupStatus.textContent = worksheetAvailability.note || "Subject-specific daily worksheets are not available yet. No other subject will be substituted.";
         groupStatus.setAttribute("data-content-status", "CONTENT_NOT_AVAILABLE");
       }
-      if (worksheetAvailability.available && (!students.length || !Object.keys(groupCounts).some(function (id) { return groupCounts[id] > 0; }))) {
+      if (worksheetAvailability.available && (!students.length || !hasReviewedEvidence)) {
         var baseline = node("p", "For a new class or Day 1 baseline, prepare any ability pack as needed, then review the baseline activity before assigning individual learners. Do not treat absent work as a low score.");
         worksheets.appendChild(baseline);
       }
     } else worksheets.appendChild(node("p", "The worksheet download builder is not available in this session."));
     panel.appendChild(worksheets);
+    /* Progressive Cognitive Learning Pathway: framework only. It never invents
+       curriculum objectives, current-affairs facts, questions or answer keys. */
+    var pathway = node("section");
+    pathway.id = "paceduProgressiveCognitiveLearningPathway";
+    pathway.setAttribute("aria-label", "Progressive Cognitive Learning Pathway");
+    pathway.style.cssText = "margin-top:14px;padding-top:12px;border-top:1px solid #c8d7e2;";
+    var pathwayDetails = node("details");
+    var pathwaySummary = node("summary", "3. Progressive Cognitive Learning Pathway — open teacher guide");
+    pathwaySummary.style.cssText = "min-height:44px;padding:10px 0;font-weight:700;cursor:pointer;";
+    pathwayDetails.appendChild(pathwaySummary);
+    pathwayDetails.appendChild(node("p", "Use the same approved class learning objective for Copper, Bronze, Silver and Gold. Change the amount of support and depth of thinking, not the curriculum sequence. Start each day from evidence of the previous activity."));
+    var bloom = node("ol");
+    [
+      "Remember — retrieve key facts, words or steps",
+      "Understand — explain, describe or interpret in the learner's own words",
+      "Apply — use the learning in a familiar or new situation",
+      "Analyse — compare, classify, find patterns, causes or evidence",
+      "Evaluate — judge options and give reasons using evidence",
+      "Create — design, compose, investigate or produce an original response"
+    ].forEach(function (label) { bloom.appendChild(node("li", label)); });
+    pathwayDetails.appendChild(node("h5", "Thinking sequence — Bloom's revised taxonomy"));
+    pathwayDetails.appendChild(bloom);
+    var groupPath = node("ul");
+    [
+      "Copper — foundation access: pictures, oral responses, word banks, worked examples and one clear step at a time; build recall and understanding first",
+      "Bronze — guided development: explain in short sentences, sort and compare, apply to familiar examples, and give a simple reason",
+      "Silver — independent application: apply to less familiar situations, analyse evidence and cause/effect, and justify a choice",
+      "Gold — extended challenge: evaluate evidence, solve open-ended problems, create original work and defend conclusions"
+    ].forEach(function (label) { groupPath.appendChild(node("li", label)); });
+    pathwayDetails.appendChild(node("h5", "Differentiation — one objective, four routes"));
+    pathwayDetails.appendChild(groupPath);
+    pathwayDetails.appendChild(node("p", "Consecutive lesson cycle: check prior learning → teach and model → practise with support → apply → explain or analyse → justify or create → record evidence → plan the next day's step. Do not force all six thinking levels into every short lesson."));
+    pathwayDetails.appendChild(node("h5", "Writing and composition planner"));
+    pathwayDetails.appendChild(node("p", "Understand the topic → brainstorm ideas → group related ideas → make an outline → draft → revise meaning and order → edit spelling and punctuation → publish. Adjust the length and support to the learner's class and approved objective."));
+    pathwayDetails.appendChild(node("h5", "Question bank and answer bank — required teacher checks"));
+    pathwayDetails.appendChild(node("p", "Before release, each item should record: question ID and version; class; subject; term/week/day; approved learning objective; skill; Bloom level; difficulty; question type; marks; acceptable answer(s); explanation; rubric; common misconception; source; and teacher approval. Multiple-choice questions must have exactly A, B, C and D."));
+    pathwayDetails.appendChild(node("p", "Objective items may be auto-marked only against a reviewed answer key. Essays, compositions, explanations, drawings, practical and oral work require rubric-guided teacher review. Manual answer entry remains available."));
+    pathwayDetails.appendChild(node("h5", "Current-affairs reading — verified source required"));
+    pathwayDetails.appendChild(node("p", "Use dated Fiji/Pacific and international education or subject sources. Record publisher, publication date, source link and learning objective. Keep every new reading and related question marked PENDING_TEACHER_REVIEW with approved=false until a teacher checks its accuracy and age suitability. No live facts or source links are invented by this guide."));
+    pathwayDetails.appendChild(node("h5", "Progress and next-step report"));
+    pathwayDetails.appendChild(node("p", "Record evidence by skill across consecutive activities, including what the learner did independently and what support was used. Recommend the next skill step for teacher review. Missing work is not a low score; one mark must not promote or demote a learner or assign a permanent group."));
+    pathway.appendChild(pathwayDetails);
+    panel.appendChild(pathway);
 
     var aids = node("section");
     aids.setAttribute("aria-label", "Teacher resource library and teaching aid builder");
@@ -251,6 +301,10 @@
       aidStatus.textContent="Teaching aid brief downloaded. Status remains PENDING_TEACHER_REVIEW until checked.";
     });
     aids.appendChild(aidDownload);
+    /* Keep the advanced teaching-aid builder available in code, but off this
+       simple page so teachers see only workplans, ability activities and answers. */
+    aids.hidden = true;
+    aids.setAttribute("aria-hidden", "true");
     panel.appendChild(aids);
     planPanel.appendChild(panel);
   }
