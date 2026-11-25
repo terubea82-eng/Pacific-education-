@@ -20,6 +20,10 @@ Beginning: Last Friday, Saki went to the field with his class. Middle: They play
 4. They collected the equipment.
 5. The class walked back to the room.
 
+## Passage ordering answer key
+
+Expected chronology: 2 (lined up), 3 (played passing game), 4 (collected equipment), 5 (walked back), 1 (washed hands). Accept equivalent ordering where a learner reasonably interprets overlapping events, and ask the learner to explain their choice.
+
 ## Day-by-day evidence and marking guidance
 
 | Day | Evidence | Teacher guidance |
