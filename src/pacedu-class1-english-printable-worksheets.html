@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PacEdu Class 1 English — Daily Printable Worksheets</title>
+<style>
+:root{color-scheme:light}body{font:16px/1.5 Arial,sans-serif;margin:0;padding:16px;color:#17212b;background:#f5f8fa}
+main{max-width:900px;margin:auto}.controls,.worksheet{background:#fff;border:1px solid #b9c9d4;border-radius:10px;padding:16px;margin:12px 0}
+label{display:block;font-weight:700;margin:10px 0}select,input{display:block;width:100%;min-height:44px;padding:8px;box-sizing:border-box;font:inherit;margin-top:4px}
+button{min-height:48px;padding:10px 16px;font:inherit;font-weight:700;margin:8px 8px 0 0}
+.notice{padding:10px;border-left:4px solid #a56b16;background:#fff8e8}.worksheet{display:none}.worksheet.active{display:block}
+.meta{font-size:.92em;border-bottom:1px solid #ccd5dc;padding-bottom:8px}
+.worksheet h2{margin-top:0}.worksheet h3{margin-bottom:4px}.worksheet p{margin:7px 0}.worksheet li{margin:5px 0}
+.worksheet .student-space{min-height:54px;border-bottom:1px solid #777;margin:12px 0}
+[hidden]{display:none!important}
+@media print{
+ body{background:#fff;padding:0}.controls,.screen-only{display:none!important}
+ main{max-width:none;margin:0}.worksheet{border:0;border-radius:0;margin:0;padding:10mm;display:none!important}
+ .worksheet.active{display:block!important;page-break-after:always;break-after:page}
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Class 1 English — Daily Printable Worksheets</h1>
+<div class="controls">
+<p>Choose one learning day and one ability group. PacEdu will display one worksheet for printing.</p>
+<label for="day">Learning day</label><select id="day"></select>
+<label for="ability">Ability group</label>
+<select id="ability"><option>Copper</option><option>Bronze</option><option>Silver</option><option>Gold</option></select>
+<label for="zone">School time zone (IANA name, e.g. Pacific/Fiji)</label>
+<input id="zone" type="text" placeholder="e.g. Pacific/Fiji or Europe/Paris">
+<button id="saveZone" type="button">Save school time zone</button>
+<p id="zoneStatus" class="notice" role="status" aria-live="polite">Checking school time zone…</p>
+<button id="print" type="button">Print selected worksheet</button>
+<p id="loadStatus" role="status" aria-live="polite">Loading the 115-day worksheet set…</p>
+</div>
+<div id="worksheetHost" aria-live="polite"></div>
+</main>
+<script src="./js/pacificEducationCountryConfig.js"></script>
+<script>
+/* Restore the school country linked to this PacEdu account before resolving its local date. */
+(function(){try{var linkedCountry=localStorage.getItem("pacificEducationLinkedCurriculumCountry")||"";var linkedCode=localStorage.getItem("pacificEducationLinkedCurriculumCountryCode")||localStorage.getItem("pacificEducationCurriculumCountryCode")||"";if(window.PacificEducationCountryConfig&&(linkedCountry||linkedCode)){window.PacificEducationCountryConfig.load({country:linkedCountry||linkedCode});}}catch(e){}})();
+</script>
+<script src="./js/paceduWorksheetLocalDate.js?v=20261119-country-time-zones-v2"></script>
+<script>
+(function(){
+"use strict";
+var source="../docs/curriculum/english-class-1-printable-worksheets-days-1-115.md";
+var host=document.getElementById("worksheetHost"),daySelect=document.getElementById("day"),abilitySelect=document.getElementById("ability");
+var zoneInput=document.getElementById("zone"),zoneStatus=document.getElementById("zoneStatus"),loadStatus=document.getElementById("loadStatus");
+var sheets=[];var requestedAbility=(window.location.search.match(/[?&]ability=(Copper|Bronze|Silver|Gold)(?:&|$)/)||[])[1];if(requestedAbility)abilitySelect.value=requestedAbility;
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function inline(s){return esc(s).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/\*(.+?)\*/g,"<em>$1</em>");}
+function markdown(s){
+ var out=[],list=false;
+ s.split("\n").forEach(function(line){
+  var t=line.trim();
+  if(!t||t==="---"||t==='<div class="page-break"></div>'){if(list){out.push("</ul>");list=false;}return;}
+  if(/^#{1,4} /.test(t)){if(list){out.push("</ul>");list=false;}var n=t.match(/^#+/)[0].length;out.push("<h"+n+">"+inline(t.replace(/^#{1,4} /,""))+"</h"+n+">");return;}
+  if(/^[-*] /.test(t)){if(!list){out.push("<ul>");list=true;}out.push("<li>"+inline(t.slice(2))+"</li>");return;}
+  if(list){out.push("</ul>");list=false;}
+  out.push("<p>"+inline(t)+"</p>");
+ });
+ if(list)out.push("</ul>");
+ return out.join("");
+}
+function updateDate(){
+ if(window.PacEduWorksheetLocalDate){
+  window.PacEduWorksheetLocalDate.fill(host);
+  var snap=window.PacEduWorksheetLocalDate.getSnapshot();
+  zoneStatus.textContent=snap.status+" · "+snap.country+" · "+snap.timeZone+" · "+snap.date;
+ }
+}
+function show(){
+ var d=Number(daySelect.value),g=abilitySelect.value;
+ sheets.forEach(function(s){s.el.classList.toggle("active",s.day===d&&s.ability===g);});
+ updateDate();
+}
+function load(){
+ fetch(source,{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error("Worksheet source could not be loaded ("+r.status+").");return r.text();}).then(function(md){
+  var parts=md.split(/(?=^#{1,2} Day \d+ —)/m);
+  parts.forEach(function(part){
+   var m=part.match(/^#{1,2} Day (\d+) — .* — (Copper|Bronze|Silver|Gold) Worksheet/m);
+   if(!m)return;
+   var d=Number(m[1]),g=m[2],article=document.createElement("article");
+   article.className="worksheet";
+   article.dataset.day=String(d);article.dataset.ability=g;
+   var printablePart=part.replace(/^.*\{\{PACEDU_[^}]+\}\}.*(?:\r?\n|$)/gm,"");
+   article.innerHTML='<div class="meta"><strong>Country:</strong> <span data-pacedu-country-name></span> · <strong>Local date:</strong> <span data-pacedu-local-date></span> · <strong>Local time:</strong> <span data-pacedu-local-time></span><br><strong>School time zone:</strong> <span data-pacedu-time-zone></span> · <span data-pacedu-date-status></span></div>'+markdown(printablePart.replace(/^# Day[^\n]*\n/,""));
+   host.appendChild(article);sheets.push({day:d,ability:g,el:article});
+  });
+  for(var i=1;i<=115;i++){var o=document.createElement("option");o.value=String(i);o.textContent="Day "+i;daySelect.appendChild(o);}
+  loadStatus.textContent=sheets.length+" separate worksheets loaded (115 days × 4 ability groups). Choose a day and group.";
+  show();
+ }).catch(function(e){loadStatus.textContent="Could not load worksheets: "+e.message;});
+}
+document.getElementById("saveZone").addEventListener("click",function(){
+ var zone=String(zoneInput.value||"").trim();
+ try{if(!zone)throw new Error("Enter an IANA time zone, for example Pacific/Fiji.");if(!window.PacEduWorksheetLocalDate)throw new Error("PacEdu local-date service is unavailable.");window.PacEduWorksheetLocalDate.setSchoolTimeZone(zone);window.PacEduWorksheetLocalDate.refresh();zoneStatus.textContent="School time zone saved for "+window.PacEduWorksheetLocalDate.getSnapshot().country+": "+zone;updateDate();}
+ catch(e){zoneStatus.textContent=e.message||"Invalid IANA time zone. Please check the name.";}
+});
+document.getElementById("print").addEventListener("click",function(){show();window.print();});
+daySelect.addEventListener("change",show);abilitySelect.addEventListener("change",show);
+try{zoneInput.value=window.PacEduWorksheetLocalDate?window.PacEduWorksheetLocalDate.getSchoolTimeZone():(localStorage.getItem("pacificEducationSchoolTimeZone")||"");}catch(e){}
+window.addEventListener("beforeprint",show);window.addEventListener("focus",updateDate);
+load();updateDate();
+})();
+</script>
+</body>
+</html>
