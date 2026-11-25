@@ -53,5 +53,5 @@ test("teaching-aid pack escapes lesson data and explicitly flags missing example
   assert.match(html, /&lt;script&gt;alert\(1\)&lt;\/script&gt;/);
   assert.doesNotMatch(html, /<script>alert/);
   assert.match(html, /No worked example is stored for this lesson yet/);
-  assert.match(html, /PENDING_TEACHER_REVIEW/);
+  assert.match(html, /NOT_RECORDED/);
 });
