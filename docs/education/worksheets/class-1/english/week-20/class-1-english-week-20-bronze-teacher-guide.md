@@ -19,6 +19,10 @@ First, Ana visited her grandmother. Next, they watered the garden and prepared l
 3. Ana visited her grandmother.
 4. Ana helped prepare lunch.
 
+## Passage ordering answer key
+
+Expected chronology: 3 (visited grandmother), 2 (watered garden), 4 (helped prepare lunch), 1 (returned home). Accept equivalent ordering where a learner reasonably interprets overlapping events, and ask the learner to explain their choice.
+
 ## Day-by-day evidence and marking guidance
 
 | Day | Evidence | Teacher guidance |
