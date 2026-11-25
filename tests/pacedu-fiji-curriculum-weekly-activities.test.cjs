@@ -20,7 +20,7 @@ assert.ok(api.levels.includes("ECE"), "ECE label is preserved");
 assert.ok(api.levels.includes("Class 8"), "upper primary levels are included");
 assert.ok(api.levels.includes("Form 7"), "Form 7 is included");
 assert.equal(api.abilities.length, 4, "four ability bands are present");
-assert.deepEqual(Array.from(api.abilities, band => band.label), ["Foundation", "Developing", "Expected", "Advanced"]);
+assert.deepEqual(Array.from(api.abilities, band => band.label), ["Copper", "Bronze", "Silver", "Gold"]);
 assert.ok(api.subjects.includes("English") && api.subjects.includes("Mathematics"), "core subjects exist");
 assert.equal(api.weeklyDistribution.length, 33, "nine-week Term 1 and Term 2 plus five-week Term 3 and support blocks have 33 entries");
 for (const term of ["T1", "T2", "T3", "ASSESSMENT", "INTERVENTION", "REVISION", "EXAMS"]) {
@@ -36,7 +36,9 @@ for (const level of api.levels) {
       assert.equal(activity.ability, ability);
       assert.ok(activity.learningTask.task.length > 10);
       assert.ok(activity.questions.length >= 3);
-      assert.equal(activity.curriculumTrace.verificationStatus, "NOT_YET_MAPPED");
+      assert.equal(activity.indicatorStatus, "PENDING_SUBJECT_SPECIFIC_INDICATOR");
+      assert.equal(activity.curriculumTrace.verificationStatus, "PENDING_SUBJECT_SPECIFIC_INDICATOR");
+      assert.match(activity.curriculumTrace.note, /not class-and-subject syllabus indicators/i);
     }
   }
 }

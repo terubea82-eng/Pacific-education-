@@ -8,10 +8,10 @@
   var PANEL_ID = "paceduTeacherTwoResourcePanel";
   var RESPONSE_KEY = "pacificEducationActivityResponses";
   var BANDS = [
-    { id: "support", label: "Foundation" },
-    { id: "developing", label: "Developing" },
-    { id: "expected", label: "Expected" },
-    { id: "extension", label: "Advanced" }
+    { id: "support", label: "Copper" },
+    { id: "developing", label: "Bronze" },
+    { id: "expected", label: "Silver" },
+    { id: "extension", label: "Gold" }
   ];
   function node(tag, value) {
     var el = document.createElement(tag);
@@ -115,7 +115,11 @@
     worksheets.setAttribute("aria-label", "Resource type 2: student ability worksheets");
     worksheets.style.cssText = "margin-top:14px;padding-top:12px;border-top:1px solid #c8d7e2;";
     worksheets.appendChild(node("h4", "2. Daily Activities + Revision + Practice Exam — By Ability"));
-    worksheets.appendChild(node("p", "Choose a term, then prepare a separate printable pack for any of the four ability groups. Each pack includes daily activities, term revision practice and a mock practice examination for this selected class and subject. Class-wide files never include learner IDs."));
+    worksheets.appendChild(node("p", "Choose a term, then prepare a separate printable pack for Copper, Bronze, Silver or Gold. Each pack includes daily activities, term revision practice and a mock practice examination for this selected class and subject. Class-wide files never include learner IDs."));
+    var alignmentGate = node("p", "INDICATOR ALIGNMENT: PENDING SUBJECT-SPECIFIC SOURCE VERIFICATION. The PacEdu Indicators Master File currently contains framework-level NCF outcomes for this class, not verified class-and-subject syllabus indicators. These worksheets are PacEdu planning drafts; do not label them officially curriculum-aligned or assign as verified until the exact subject indicator, source edition and page are linked and reviewed.");
+    alignmentGate.setAttribute("role", "note");
+    alignmentGate.setAttribute("data-curriculum-status", "PENDING_SUBJECT_SPECIFIC_INDICATOR");
+    worksheets.appendChild(alignmentGate);
     var evidence = node("div");
     evidence.setAttribute("aria-label", "Learner roster and previous-day reviewed evidence");
     var students = classInfo && Array.isArray(classInfo.studentRefs) ? classInfo.studentRefs : [];
@@ -175,7 +179,7 @@
         button.addEventListener("click", function () {
           try {
             var pack = api.download({ level: levelValue, subject: subject, term: termSelect.value, ability: band.id });
-            groupStatus.textContent = "Prepared " + pack.dailyActivities + " daily activities plus term revision practice and a mock practice examination for " + band.label + ". " + (pack.missingSlots ? pack.missingSlots + " daily slots were unavailable. " : "") + "Review the answer guidance and verify current Fiji syllabus mapping before assigning.";
+            groupStatus.textContent = "Prepared " + pack.dailyActivities + " daily activities plus term revision practice and a mock practice examination for " + band.label + ". " + (pack.missingSlots ? pack.missingSlots + " daily slots were unavailable. " : "") + "DRAFT — PENDING_SUBJECT_SPECIFIC_INDICATOR and PENDING_TEACHER_REVIEW. Review answer guidance and attach the exact Fiji syllabus indicator before assigning as curriculum-aligned.";
           } catch (error) {
             groupStatus.textContent = "Could not prepare this worksheet pack: " + String(error && error.message || error);
           }
