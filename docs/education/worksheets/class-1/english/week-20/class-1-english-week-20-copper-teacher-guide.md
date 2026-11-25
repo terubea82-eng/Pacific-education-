@@ -18,6 +18,10 @@ Beginning: I went to the park. Middle: I played on the swing. End: I went home. 
 2. I went to the park.
 3. I played on the swing.
 
+## Passage ordering answer key
+
+Expected chronology: 2 (park), 3 (played on the swing), 1 (went home). Accept equivalent ordering where a learner reasonably interprets overlapping events, and ask the learner to explain their choice.
+
 ## Day-by-day evidence and marking guidance
 
 | Day | Evidence | Teacher guidance |
