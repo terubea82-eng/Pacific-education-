@@ -12,6 +12,8 @@ on:
       - "tests/pacedu-voice-switch-every-page.test.cjs"
       - "package.json"
   workflow_dispatch:
+  push:
+    branches: [pacedu/welcome-numbering-staging-20261111]
 permissions:
   contents: read
 jobs:
