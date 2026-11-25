@@ -37,11 +37,33 @@ function getQueueStatus(){
 }
 function getQueue(){return{items:q(),count:q().length,prototype:true};}
 function clearQueue(){return{success:save([]),prototype:true};}
+function eventId(item){
+ var s=[item&&item.type||"",item&&item.lessonId||"",item&&item.dayNumber||"",item&&item.completed?"1":"0"].join("|"),h=2166136261;
+ for(var i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}
+ return "pe-"+(h>>>0).toString(16);
+}
+function removeAcknowledgedItems(acknowledgedItems){
+ if(!Array.isArray(acknowledgedItems)||!acknowledgedItems.length)return{success:false,reason:"ACKNOWLEDGED_ITEMS_REQUIRED",removedCount:0,prototype:true};
+ var current=q(),requested=[],seen={};
+ for(var i=0;i<acknowledgedItems.length;i++){
+  var ack=acknowledgedItems[i];
+  if(!ack||typeof ack.eventId!=="string"||!ack.eventId||typeof ack.queuedAt!=="string"||!ack.queuedAt)return{success:false,reason:"INVALID_ACKNOWLEDGED_ITEM",removedCount:0,prototype:true};
+  var key=ack.eventId+"|"+ack.queuedAt;
+  if(seen[key])return{success:false,reason:"DUPLICATE_ACKNOWLEDGED_ITEM",removedCount:0,prototype:true};
+  seen[key]=true;requested.push(key);
+ }
+ var found={};
+ current.forEach(function(item){var key=eventId(item)+"|"+String(item&&item.queuedAt||"");if(seen[key])found[key]=true;});
+ if(requested.some(function(key){return !found[key];}))return{success:false,reason:"ACKNOWLEDGED_ITEM_NOT_FOUND",removedCount:0,queuePreserved:true,prototype:true};
+ var remaining=current.filter(function(item){var key=eventId(item)+"|"+String(item&&item.queuedAt||"");return !seen[key];});
+ if(!save(remaining))return{success:false,reason:"QUEUE_PERSISTENCE_FAILED",removedCount:0,queuePreserved:true,prototype:true};
+ return{success:true,removedCount:current.length-remaining.length,remainingCount:remaining.length,prototype:true};
+}
 function registerServiceWorker(){if(!("serviceWorker"in navigator))return Promise.resolve({registered:false,reason:"SERVICE_WORKER_UNAVAILABLE",prototype:true});/* The pilot entry page is under /src while dependencies also live under /js; use the root-scoped prototype worker consistently. */return navigator.serviceWorker.register("../service-worker.js").then(function(r){return{registered:true,scope:r.scope,prototype:true};}).catch(function(){return{registered:false,reason:"SERVICE_WORKER_REGISTRATION_FAILED",prototype:true};});}
 function connection(){var c=navigator.connection||navigator.mozConnection||navigator.webkitConnection;return c?{effectiveType:c.effectiveType||null,downlinkMbps:typeof c.downlink==="number"?c.downlink:null,rttMs:typeof c.rtt==="number"?c.rtt:null,saveData:c.saveData===true}:null;}
 function status(){return{version:VERSION,online:navigator.onLine,queuedProgressCount:q().length,serviceWorkerSupported:"serviceWorker"in navigator,serviceWorkerControlled:!!(navigator.serviceWorker&&navigator.serviceWorker.controller),connection:connection(),lowBandwidthFallback:true,queueContainsLessonMetadataOnly:true,clientCacheMustNotContainSecrets:true,productionApproved:false,realDeviceTestingRequired:true};}
 function listenConnectivity(callback){if(typeof callback!=="function")return function(){};var handler=function(){callback(status());};window.addEventListener("online",handler);window.addEventListener("offline",handler);var c=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(c&&c.addEventListener)c.addEventListener("change",handler);return function(){window.removeEventListener("online",handler);window.removeEventListener("offline",handler);if(c&&c.removeEventListener)c.removeEventListener("change",handler);};}
 window.PacificEducationOfflineRuntime=Object.freeze({name:"PacificEducationOfflineRuntime",version:VERSION,queueProgress:queueProgress,getQueue:getQueue,
  getQueueStatus:getQueueStatus,
- getQueueConflictCandidates:getQueueConflictCandidates,clearQueue:clearQueue,registerServiceWorker:registerServiceWorker,status:status,listenConnectivity:listenConnectivity});
+ getQueueConflictCandidates:getQueueConflictCandidates,clearQueue:clearQueue,removeAcknowledgedItems:removeAcknowledgedItems,registerServiceWorker:registerServiceWorker,status:status,listenConnectivity:listenConnectivity});
 })(window);
