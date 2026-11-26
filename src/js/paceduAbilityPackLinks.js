@@ -18,7 +18,7 @@
     "Class 4|Mathematics": "class4-mathematics-ability-pack.md",
     "Form 3|Science": "form3-basic-science-ability-pack.md"
   };
-  var GOLD_DAY1_URL = "https://github.com/terubea82-eng/Pacific-education-/blob/pacedu/english-gold-class1-day1-staging-20261127/docs/worksheets/english-gold/class-1/day-001.md";
+  var GOLD_DAY1_URL = "https://github.com/terubea82-eng/Pacific-education-/blob/main/docs/worksheets/english-gold/class-1/day-001.md";
   function getUrl(level, subject) {
     var file = FILES[String(level || "") + "|" + String(subject || "")];
     return file ? ROOT + file : "";
