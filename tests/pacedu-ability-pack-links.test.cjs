@@ -22,6 +22,8 @@ test('matching draft packs resolve only for authored class and subject combinati
   assert.match(api.getUrl('Form 3', 'Science'), /form3-basic-science-ability-pack\.md$/);
   assert.equal(api.getUrl('Form 7', 'Chemistry'), '');
   assert.equal(api.getUrl('Class 5', 'English'), '');
+  assert.match(api.getGoldUrl('Class 1', 'English'), /english-gold\/class-1\/day-001\.md$/);
+  assert.equal(api.getGoldUrl('Class 2', 'English'), '');
 });
 
 test('teacher controls explain review status and hide unavailable links', () => {
@@ -37,6 +39,9 @@ test('teacher controls explain review status and hide unavailable links', () => 
   assert.match(link.href, /class1-english-ability-pack\.md$/);
   assert.match(status.textContent, /A matching draft is available/i);
   assert.match(box.children[1].textContent, /teacher review/i);
+  const goldLink = box.children.find(x => x.tagName === 'a' && /Gold/.test(x.textContent));
+  assert.match(goldLink.href, /english-gold\/class-1\/day-001\.md$/);
+  assert.equal(goldLink.hidden, false);
   level.value = 'Class 5';
   level.listeners.change();
   assert.equal(link.hidden, true);

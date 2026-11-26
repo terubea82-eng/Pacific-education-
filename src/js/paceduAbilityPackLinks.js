@@ -18,9 +18,13 @@
     "Class 4|Mathematics": "class4-mathematics-ability-pack.md",
     "Form 3|Science": "form3-basic-science-ability-pack.md"
   };
+  var GOLD_DAY1_URL = "https://github.com/terubea82-eng/Pacific-education-/blob/pacedu/english-gold-class1-day1-staging-20261127/docs/worksheets/english-gold/class-1/day-001.md";
   function getUrl(level, subject) {
     var file = FILES[String(level || "") + "|" + String(subject || "")];
     return file ? ROOT + file : "";
+  }
+  function getGoldUrl(level, subject) {
+    return String(level || "") === "Class 1" && String(subject || "") === "English" ? GOLD_DAY1_URL : "";
   }
   function renderControls(container, selectors) {
     if (!container || !document || !document.createElement) return false;
@@ -39,11 +43,21 @@
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     link.style.cssText = "display:inline-block;padding:10px;border:1px solid #527184;border-radius:6px;font-weight:700;";
+    var goldLink = document.createElement("a");
+    goldLink.textContent = "Open Class 1 English Gold — Day 1";
+    goldLink.target = "_blank";
+    goldLink.rel = "noopener noreferrer";
+    goldLink.style.cssText = "display:inline-block;margin-top:8px;padding:10px;border:1px solid #527184;border-radius:6px;font-weight:700;";
     var status = document.createElement("p");
     status.setAttribute("role", "status");
     status.setAttribute("aria-live", "polite");
     function refresh() {
-      var url = getUrl(selectors.level && selectors.level.value, selectors.subject && selectors.subject.value);
+      var level = selectors.level && selectors.level.value;
+      var subject = selectors.subject && selectors.subject.value;
+      var url = getUrl(level, subject);
+      var goldUrl = getGoldUrl(level, subject);
+      if (goldUrl) { goldLink.href = goldUrl; goldLink.hidden = false; }
+      else { goldLink.removeAttribute("href"); goldLink.hidden = true; }
       if (url) {
         link.href = url;
         link.hidden = false;
@@ -57,10 +71,11 @@
     if (selectors.level && selectors.level.addEventListener) selectors.level.addEventListener("change", refresh);
     if (selectors.subject && selectors.subject.addEventListener) selectors.subject.addEventListener("change", refresh);
     box.appendChild(link);
+    box.appendChild(goldLink);
     box.appendChild(status);
     container.appendChild(box);
     refresh();
     return true;
   }
-  global.PacEduAbilityPackLinks = Object.freeze({ getUrl: getUrl, renderControls: renderControls });
+  global.PacEduAbilityPackLinks = Object.freeze({ getUrl: getUrl, getGoldUrl: getGoldUrl, renderControls: renderControls });
 })(window, document);
