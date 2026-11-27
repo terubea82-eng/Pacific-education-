@@ -22,7 +22,9 @@ test("Student registration save and green Next open a visible workspace and dail
       }));
     } catch (_) {}
   });
-  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+  const registrationURL = new URL(baseURL);
+  registrationURL.searchParams.set("entry", "registration");
+  await page.goto(registrationURL.toString(), { waitUntil: "domcontentloaded" });
   // Disable animation only in the test so touch targets remain stable.
   await page.addStyleTag({
     content: "*, *::before, *::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; }"

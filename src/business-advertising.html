@@ -130,7 +130,7 @@
         <label for="paceduBillingPeriod">Billing period *</label>
         <select id="paceduBillingPeriod" name="paceduBillingPeriod"><option value="monthly">Monthly</option><option value="annual">Annual (12 months)</option></select>
         <p><strong>Selected PacEdu advertising fee:</strong> <output id="paceduSelectedFee">US$5.00 per month</output></p>
-        <p class="payment-state" id="paceduPaymentState" role="status" aria-live="polite">Payment is not connected yet. No payment will be taken.</p>
+        <p class="payment-state" id="paceduPaymentState" role="status" aria-live="polite">No payment is currently processed here. Payment is not connected yet, and no payment will be taken.</p>
         <p class="muted">After secure payment integration is activated, this selection will connect to PacEdu's own checkout. Advertiser product checkout links are separate and pay the business, not PacEdu. Never enter card or bank details into this form.</p>
       </div>
       <label for="businessName">Business or seller name *</label><input id="businessName" name="businessName" required maxlength="100" autocomplete="organization">
@@ -234,7 +234,7 @@
     <p><strong>Payment setup:</strong> PacEdu must configure and test its own trusted payment provider and server-side payment verification before collecting advertising fees. Advertisers' checkout links are separate and do not pay PacEdu.</p>
     <p class="muted">No advertising package is for sale through this prototype, and no payment is currently processed here. Prices exclude any applicable taxes and provider fees until these are assessed and disclosed.</p>
   </section>
-  <p><a href="./index.html">Return to PacEdu</a></p>
+  <p><a href="./index.html?entry=welcome">Continue to PacEdu Welcome</a></p>
 </main>
 <footer><small>PacEdu controlled pilot · Advertisements require review · No endorsement or payment guarantee is implied.</small></footer>
 <script>

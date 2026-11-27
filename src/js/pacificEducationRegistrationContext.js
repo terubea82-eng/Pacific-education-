@@ -16,6 +16,24 @@
     var language=document.getElementById("pacificEducationLanguageSelect");
     return {country:country,language:language,countryCode:country?country.value:"",languageCode:language?language.value:""};
   }
+  function countryName(code){
+    try{
+      if(localStorage.getItem("pacificEducationWelcomeCountryCode")===code){
+        var saved=localStorage.getItem("pacificEducationWelcomeCountryName");
+        if(saved)return saved;
+      }
+    }catch(e){}
+    return COUNTRY_NAMES[code]||code;
+  }
+  function languageName(code,control){
+    try{
+      if(localStorage.getItem("pacificEducationWelcomeLanguageCode")===code){
+        var saved=localStorage.getItem("pacificEducationWelcomeLanguageName");
+        if(saved)return saved;
+      }
+    }catch(e){}
+    return control&&control.options[control.selectedIndex]?control.options[control.selectedIndex].text:code;
+  }
   function saveContext(){
     var s=selected(), country=s.country, language=s.language, countryCode=s.countryCode, languageCode=s.languageCode;
     if(!country||!language)return {saved:false,reason:"setup boxes not found"};
@@ -23,20 +41,21 @@
       if(countryCode){
         localStorage.setItem("pacificEducationCurriculumCountryCode",countryCode);
         localStorage.setItem("pacificEducationRegistrationCountryCode",countryCode);
-        localStorage.setItem("pacificEducationRegistrationCountry",COUNTRY_NAMES[countryCode]||countryCode);
+        localStorage.setItem("pacificEducationRegistrationCountry",countryName(countryCode));
         if(window.PacificEducationCountryConfig && typeof window.PacificEducationCountryConfig.setRegisteredCurriculumLink==="function"){
           window.PacificEducationCountryConfig.setRegisteredCurriculumLink(countryCode);
         }
       }
       if(languageCode){
         localStorage.setItem("pacificEducationRegistrationLanguage",languageCode);
+        localStorage.setItem("pacificEducationRegistrationLanguageName",languageName(languageCode,language));
         localStorage.setItem("pacificEducationVoiceLocale",languageCode==="en-AU"||languageCode==="en-FJ"?"en-AU":languageCode);
       }
     }catch(e){ return {saved:false,reason:"browser storage unavailable"}; }
     var cs=document.getElementById("pacificEducationCountryStatus");
     var ls=document.getElementById("pacificEducationLanguageStatus");
-    if(cs)cs.textContent=countryCode?"✓ Selected country: "+(COUNTRY_NAMES[countryCode]||countryCode):"⚠ Country required.";
-    if(ls)ls.textContent=languageCode?"✓ Selected language: "+(language.options[language.selectedIndex]||{}).text:"⚠ Language required.";
+    if(cs)cs.textContent=countryCode?"✓ Selected country: "+countryName(countryCode):"⚠ Country required.";
+    if(ls)ls.textContent=languageCode?"✓ Selected language: "+languageName(languageCode,language):"⚠ Language required.";
     return {saved:true,countryCode:countryCode,languageCode:languageCode,country:COUNTRY_NAMES[countryCode]||countryCode};
   }
   function validate(){
@@ -53,9 +72,9 @@
   function announceSelection(kind){
     var s=selected();
     if(kind==="country"){
-      announce(s.countryCode?"Country selected: "+(COUNTRY_NAMES[s.countryCode]||s.countryCode)+".":"Please choose your country.");
+      announce(s.countryCode?"Country selected: "+countryName(s.countryCode)+".":"Please choose your country.");
     }else{
-      announce(s.languageCode?"Language selected: "+(s.language.options[s.language.selectedIndex]||{}).text+".":"Please choose your language.");
+      announce(s.languageCode?"Language selected: "+languageName(s.languageCode,s.language)+".":"Please choose your language.");
     }
   }
   function restore(){
@@ -73,12 +92,12 @@
     if(!c||!l)return false;
     if(c.getAttribute("data-pe-context-bound")!=="true"){
       c.setAttribute("data-pe-context-bound","true");
-      c.addEventListener("change",function(){saveContext();announceSelection("country");});
+      c.addEventListener("change",function(){if(c.getAttribute("data-pe-welcome-sync")!=="true"){try{localStorage.removeItem("pacificEducationWelcomeCountryName");localStorage.removeItem("pacificEducationWelcomeCountryCode");}catch(e){}}saveContext();announceSelection("country");});
       c.addEventListener("input",function(){saveContext();});
     }
     if(l.getAttribute("data-pe-context-bound")!=="true"){
       l.setAttribute("data-pe-context-bound","true");
-      l.addEventListener("change",function(){saveContext();announceSelection("language");});
+      l.addEventListener("change",function(){if(l.getAttribute("data-pe-welcome-sync")!=="true"){try{localStorage.removeItem("pacificEducationWelcomeLanguageName");localStorage.removeItem("pacificEducationWelcomeLanguageCode");}catch(e){}}saveContext();announceSelection("language");});
       l.addEventListener("input",function(){saveContext();});
     }
     var save=document.getElementById("pilotRegistrationSaveButton");
