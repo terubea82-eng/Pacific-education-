@@ -244,7 +244,12 @@
   }
   function make(level, subject, day, ability) {
     level=levels.indexOf(level)>=0?level:"Class 1";
-    var pack=(packs[subject]||packs.English);
+    var pack=packs[subject];
+    if(!pack) return {
+      status:"NOT_FOUND",
+      message:"No dedicated subject-specific worksheet bank exists for "+String(subject||"this subject")+". Do not substitute another subject.",
+      level:level,subject:String(subject||""),ability:ability,day:Number(day)||2
+    };
     var index=Math.max(0,(Math.floor((Number(day)||2)-2))%pack.length);
     var chosen=pack[index];
     var st=stage(level), questions=chosen.questions.map(function(q,i){
@@ -556,7 +561,15 @@
       return String(item.term).toUpperCase() === block && Number(item.week) === week;
     })[0] || null;
     var level = levels.indexOf(options.level) >= 0 ? options.level : "Class 1";
-    var subject = Object.prototype.hasOwnProperty.call(packs, options.subject) ? options.subject : "English";
+    var subject = String(options.subject || "");
+    if (!Object.prototype.hasOwnProperty.call(packs, subject)) {
+      return {
+        status: "NOT_FOUND",
+        message: "No dedicated subject-specific worksheet bank exists for " + (subject || "this subject") + ". Do not substitute another subject.",
+        level: level,
+        subject: subject
+      };
+    }
     var ability = ["support", "developing", "expected", "extension"].indexOf(options.ability) >= 0 ? options.ability : "developing";
     // Day 1 is reserved by the existing registration flow for baseline identification.
     // This API is for subsequent scheduled teaching worksheets, so the selected daily
@@ -674,6 +687,6 @@
     subjects:Object.keys(packs),
     getWorksheet:make,
     getCurriculumWorksheet:getCurriculumWorksheet,
-    hasAnswerKey:function(level,subject,day,ability){var w=make(level,subject,day,ability);return w.questions.length===4&&w.answerKey.length===4&&w.answerKey.every(function(a){return !!a.answer&&!!a.explanation;});}
+    hasAnswerKey:function(level,subject,day,ability){var w=make(level,subject,day,ability);return !!w&&Array.isArray(w.questions)&&Array.isArray(w.answerKey)&&w.questions.length===4&&w.answerKey.length===4&&w.answerKey.every(function(a){return !!a.answer&&!!a.explanation;});}
   });
 })(window);
