@@ -18,7 +18,8 @@
     [9,"dailyLesson","Welcome to Daily Activities. Complete today's activity. Listen to the question and instructions whenever you need help."],
     [10,"dailyLessonPracticeStage","Welcome to Practice. Complete the practice task carefully. Use Hear Instructions whenever you need the question or choices read aloud."],
     [11,"assessments","Welcome to Assessments. Follow the spoken instructions, review each question and choice carefully, then submit when ready."],
-    [12,"teacherCalendarSection","Welcome to Teacher Calendar and Review. Review school dates, teaching days, holidays, revision and examinations carefully."]
+    [12,"pacificEducationCoverageDashboard","Welcome to Coverage and Progress. Review completed learning, practice, assessment evidence and learning coverage."],
+    [13,"teacherCalendarSection","Welcome to Teacher Calendar and Review. Review school dates, teaching days, holidays, revision and examinations carefully."]
   ];
   var workspaces = [
     ["pacificEducationAppTools","Learning Tools","Welcome to Learning Tools. Choose the learning tool you want to use."],
@@ -69,14 +70,29 @@
       host.insertBefore(button,host.firstChild);
     });
   }
+  function installGuidedPageControls(){
+    guided.forEach(function(item){
+      var host=document.getElementById(item[1]);
+      if(!host||!visible(host)||host.querySelector("[data-pe-guided-page-voice]"))return;
+      var button=document.createElement("button");
+      button.type="button";
+      button.textContent="🔊 Hear This Page";
+      button.setAttribute("aria-label","Hear instructions for "+item[1]);
+      button.setAttribute("data-pe-guided-page-voice","true");
+      button.style.cssText="min-height:44px;margin:8px 4px;padding:10px 14px;";
+      button.addEventListener("click",function(event){if(event)event.preventDefault();speak(item[2]);});
+      host.insertBefore(button,host.firstChild);
+    });
+  }
   function init(){
     /* Never rewrite the protected guided-page map; #856 owns step IDs and narration. */
     installWorkspaceControls();
+    installGuidedPageControls();
     /* Workspace controls are installed once and reinstalled only when new DOM
        content appears. This helper never auto-narrates; the protected controller
        owns automatic page speech, and replay is always an explicit user action. */
-    var observer=new MutationObserver(function(){installWorkspaceControls();});
-    if(document.body)observer.observe(document.body,{childList:true,subtree:true});
+    var observer=new MutationObserver(function(){installWorkspaceControls();installGuidedPageControls();});
+    if(document.body)observer.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:["hidden","aria-hidden","style","data-pe-flow-step","data-pac-edu-entry-page"]});
     /* The protected controller owns guided-step announcements; do not start a second narrator here. */
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});else init();
